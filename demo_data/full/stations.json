@@ -1,0 +1,142 @@
+[
+  {
+    "entry_walk": 120,
+    "exit_walk": 120,
+    "min_transfer": 120,
+    "name": "Station 01",
+    "station": "S01"
+  },
+  {
+    "entry_walk": 120,
+    "exit_walk": 120,
+    "min_transfer": 120,
+    "name": "Station 02",
+    "station": "S02"
+  },
+  {
+    "entry_walk": 120,
+    "exit_walk": 120,
+    "min_transfer": 120,
+    "name": "Station 03",
+    "station": "S03"
+  },
+  {
+    "entry_walk": 120,
+    "exit_walk": 120,
+    "min_transfer": 120,
+    "name": "Station 04",
+    "station": "S04"
+  },
+  {
+    "entry_walk": 120,
+    "exit_walk": 120,
+    "min_transfer": 240,
+    "name": "Station 05",
+    "station": "S05"
+  },
+  {
+    "entry_walk": 120,
+    "exit_walk": 120,
+    "min_transfer": 240,
+    "name": "Station 06",
+    "station": "S06"
+  },
+  {
+    "entry_walk": 120,
+    "exit_walk": 120,
+    "min_transfer": 120,
+    "name": "Station 07",
+    "station": "S07"
+  },
+  {
+    "entry_walk": 120,
+    "exit_walk": 120,
+    "min_transfer": 120,
+    "name": "Station 08",
+    "station": "S08"
+  },
+  {
+    "entry_walk": 120,
+    "exit_walk": 120,
+    "min_transfer": 240,
+    "name": "Station 09",
+    "station": "S09"
+  },
+  {
+    "entry_walk": 120,
+    "exit_walk": 120,
+    "min_transfer": 240,
+    "name": "Station 10",
+    "station": "S10"
+  },
+  {
+    "entry_walk": 120,
+    "exit_walk": 120,
+    "min_transfer": 240,
+    "name": "Station 11",
+    "station": "S11"
+  },
+  {
+    "entry_walk": 120,
+    "exit_walk": 120,
+    "min_transfer": 240,
+    "name": "Station 12",
+    "station": "S12"
+  },
+  {
+    "entry_walk": 120,
+    "exit_walk": 120,
+    "min_transfer": 240,
+    "name": "Station 13",
+    "station": "S13"
+  },
+  {
+    "entry_walk": 120,
+    "exit_walk": 120,
+    "min_transfer": 240,
+    "name": "Station 14",
+    "station": "S14"
+  },
+  {
+    "entry_walk": 120,
+    "exit_walk": 120,
+    "min_transfer": 240,
+    "name": "Station 15",
+    "station": "S15"
+  },
+  {
+    "entry_walk": 120,
+    "exit_walk": 120,
+    "min_transfer": 240,
+    "name": "Station 16",
+    "station": "S16"
+  },
+  {
+    "entry_walk": 120,
+    "exit_walk": 120,
+    "min_transfer": 120,
+    "name": "Station 17",
+    "station": "S17"
+  },
+  {
+    "entry_walk": 120,
+    "exit_walk": 120,
+    "min_transfer": 120,
+    "name": "Station 18",
+    "station": "S18"
+  },
+  {
+    "entry_walk": 120,
+    "exit_walk": 120,
+    "min_transfer": 120,
+    "name": "Station 19",
+    "station": "S19"
+  },
+  {
+    "entry_walk": 120,
+    "exit_walk": 120,
+    "min_transfer": 120,
+    "name": "Station 20",
+    "station": "S20"
+  }
+]

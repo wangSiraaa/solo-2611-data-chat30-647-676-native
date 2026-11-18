@@ -1,0 +1,117 @@
+{
+  "events": [
+    {
+      "card_id": "SMALL-STALE",
+      "direction": "IN",
+      "event_id": "S-STALE-IN1",
+      "station": "X1",
+      "ts": 800
+    },
+    {
+      "card_id": "SMALL-DIRECT",
+      "direction": "IN",
+      "event_id": "S-D1-IN",
+      "station": "X1",
+      "ts": 900
+    },
+    {
+      "card_id": "SMALL-DUP",
+      "direction": "IN",
+      "event_id": "S-DUP-IN",
+      "station": "X1",
+      "ts": 900
+    },
+    {
+      "card_id": "SMALL-DUP",
+      "direction": "IN",
+      "event_id": "S-DUP-IN",
+      "station": "X1",
+      "ts": 900
+    },
+    {
+      "card_id": "SMALL-TRANSFER",
+      "direction": "IN",
+      "event_id": "S-TR-IN",
+      "station": "X1",
+      "ts": 900
+    },
+    {
+      "card_id": "SMALL-NOEXIT",
+      "direction": "IN",
+      "event_id": "S-NOEXIT-IN",
+      "station": "X3",
+      "ts": 1200
+    },
+    {
+      "card_id": "SMALL-STALE",
+      "direction": "IN",
+      "event_id": "S-STALE-IN2",
+      "station": "X2",
+      "ts": 1400
+    },
+    {
+      "card_id": "SMALL-LOOP",
+      "direction": "IN",
+      "event_id": "S-LOOP-IN",
+      "station": "X4",
+      "ts": 1950
+    },
+    {
+      "card_id": "SMALL-DUP",
+      "direction": "OUT",
+      "event_id": "S-DUP-OUT",
+      "station": "X2",
+      "ts": 2000
+    },
+    {
+      "card_id": "SMALL-ORPHAN",
+      "direction": "OUT",
+      "event_id": "S-ORPHAN-OUT",
+      "station": "X3",
+      "ts": 2500
+    },
+    {
+      "card_id": "SMALL-STALE",
+      "direction": "OUT",
+      "event_id": "S-STALE-OUT",
+      "station": "X4",
+      "ts": 3000
+    },
+    {
+      "card_id": "SMALL-LOOP",
+      "direction": "OUT",
+      "event_id": "S-LOOP-OUT",
+      "station": "X4",
+      "ts": 4200
+    },
+    {
+      "card_id": "SMALL-TRANSFER",
+      "direction": "OUT",
+      "event_id": "S-TR-OUT",
+      "station": "X5",
+      "ts": 5000
+    },
+    {
+      "card_id": "SMALL-DIRECT",
+      "direction": "OUT",
+      "event_id": "S-D1-OUT",
+      "station": "X4",
+      "ts": 6000
+    },
+    {
+      "card_id": "SMALL-LATE",
+      "direction": "IN",
+      "event_id": "S-LATE-IN",
+      "station": "X1",
+      "ts": 9000
+    },
+    {
+      "card_id": "SMALL-LATE",
+      "direction": "OUT",
+      "event_id": "S-LATE-OUT",
+      "station": "X2",
+      "ts": 10000
+    }
+  ],
+  "name": "small"
+}

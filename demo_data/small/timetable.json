@@ -1,0 +1,131 @@
+{
+  "name": "small",
+  "stops": [
+    {
+      "arr_ts": 1000,
+      "dep_ts": 1030,
+      "seq": 1,
+      "station": "X1",
+      "train_id": "D1"
+    },
+    {
+      "arr_ts": 1330,
+      "dep_ts": 1360,
+      "seq": 2,
+      "station": "X2",
+      "train_id": "D1"
+    },
+    {
+      "arr_ts": 1660,
+      "dep_ts": 1690,
+      "seq": 3,
+      "station": "X3",
+      "train_id": "D1"
+    },
+    {
+      "arr_ts": 1990,
+      "dep_ts": 2020,
+      "seq": 4,
+      "station": "X4",
+      "train_id": "D1"
+    },
+    {
+      "arr_ts": 1000,
+      "dep_ts": 1030,
+      "seq": 1,
+      "station": "X1",
+      "train_id": "T1"
+    },
+    {
+      "arr_ts": 1330,
+      "dep_ts": 1360,
+      "seq": 2,
+      "station": "X2",
+      "train_id": "T1"
+    },
+    {
+      "arr_ts": 1450,
+      "dep_ts": 1480,
+      "seq": 1,
+      "station": "X2",
+      "train_id": "T2"
+    },
+    {
+      "arr_ts": 1780,
+      "dep_ts": 1810,
+      "seq": 2,
+      "station": "X3",
+      "train_id": "T2"
+    },
+    {
+      "arr_ts": 2110,
+      "dep_ts": 2140,
+      "seq": 3,
+      "station": "X4",
+      "train_id": "T2"
+    },
+    {
+      "arr_ts": 2440,
+      "dep_ts": 2470,
+      "seq": 4,
+      "station": "X5",
+      "train_id": "T2"
+    },
+    {
+      "arr_ts": 2000,
+      "dep_ts": 2030,
+      "seq": 1,
+      "station": "X4",
+      "train_id": "L1"
+    },
+    {
+      "arr_ts": 2330,
+      "dep_ts": 2360,
+      "seq": 2,
+      "station": "X5",
+      "train_id": "L1"
+    },
+    {
+      "arr_ts": 2660,
+      "dep_ts": 2690,
+      "seq": 3,
+      "station": "X6",
+      "train_id": "L1"
+    },
+    {
+      "arr_ts": 2990,
+      "dep_ts": 3020,
+      "seq": 4,
+      "station": "X4",
+      "train_id": "L1"
+    },
+    {
+      "arr_ts": 3320,
+      "dep_ts": 3350,
+      "seq": 5,
+      "station": "X5",
+      "train_id": "L1"
+    },
+    {
+      "arr_ts": 3650,
+      "dep_ts": 3680,
+      "seq": 6,
+      "station": "X6",
+      "train_id": "L1"
+    },
+    {
+      "arr_ts": 0,
+      "dep_ts": 30,
+      "seq": 1,
+      "station": "X1",
+      "train_id": "EARLY"
+    },
+    {
+      "arr_ts": 330,
+      "dep_ts": 360,
+      "seq": 2,
+      "station": "X2",
+      "train_id": "EARLY"
+    }
+  ]
+}

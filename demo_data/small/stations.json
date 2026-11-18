@@ -1,0 +1,44 @@
+[
+  {
+    "entry_walk": 60,
+    "exit_walk": 60,
+    "min_transfer": 120,
+    "name": "Alpha",
+    "station": "X1"
+  },
+  {
+    "entry_walk": 60,
+    "exit_walk": 60,
+    "min_transfer": 120,
+    "name": "Bravo",
+    "station": "X2"
+  },
+  {
+    "entry_walk": 60,
+    "exit_walk": 60,
+    "min_transfer": 60,
+    "name": "Charlie",
+    "station": "X3"
+  },
+  {
+    "entry_walk": 60,
+    "exit_walk": 60,
+    "min_transfer": 120,
+    "name": "Delta",
+    "station": "X4"
+  },
+  {
+    "entry_walk": 60,
+    "exit_walk": 60,
+    "min_transfer": 120,
+    "name": "Echo",
+    "station": "X5"
+  },
+  {
+    "entry_walk": 60,
+    "exit_walk": 60,
+    "min_transfer": 120,
+    "name": "Foxtrot",
+    "station": "X6"
+  }
+]
