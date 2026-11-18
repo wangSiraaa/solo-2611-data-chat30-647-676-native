@@ -1,0 +1,55 @@
+{
+  "rules": {
+    "base": 80,
+    "reorder_lpm": 80,
+    "revised": 80,
+    "deleted": 79
+  },
+  "ruleset_digests": {
+    "base": "a5977a285ae7773546e04c68b1cc78400698faaf6515416847b6e2545215edd3",
+    "reorder_lpm": "0043e64edc21bbe7c78c9832adab91ebc39687b5f50c0cb6450a4e81a1f029b6",
+    "revised": "1b9ae805ffa4c0fe4ab77afab0db0e456c3d71e9dc9ea99efa16fbf989d0ac42",
+    "deleted": "d196f27bb46185b73b7b6c84846742cbbb59dc2d5d88686032731f5363f7b651"
+  },
+  "packets": 100000,
+  "high_bit_packets": 95685,
+  "interesting_rule_ids": [
+    "U_A",
+    "U_B",
+    "U_C",
+    "O_DENY",
+    "O_ACCEPT",
+    "N1",
+    "N2",
+    "N3",
+    "N4",
+    "N5",
+    "N6",
+    "B1",
+    "B2",
+    "B3",
+    "B4",
+    "B5",
+    "B6",
+    "B7",
+    "P1",
+    "P2",
+    "P3",
+    "I1",
+    "I2",
+    "I3",
+    "I4",
+    "I5A",
+    "I5B",
+    "M1",
+    "H1",
+    "H2",
+    "H3",
+    "H4",
+    "H5"
+  ],
+  "paths": {
+    "data": "/workspace/data",
+    "artifacts": "/workspace/artifacts"
+  }
+}

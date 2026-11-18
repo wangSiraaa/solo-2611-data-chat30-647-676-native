@@ -1,0 +1,4288 @@
+{
+  "analysis": [
+    {
+      "counterexample": {
+        "dport": 80,
+        "dst": "172.16.0.0",
+        "protocol": "TCP",
+        "sport": 0,
+        "src": "10.1.0.0"
+      },
+      "counterexample_raw": [
+        167837696,
+        2886729728,
+        "TCP",
+        0,
+        80
+      ],
+      "fully_shadowed": false,
+      "index": 0,
+      "notes": [
+        "存在 1 个未覆盖区域片段"
+      ],
+      "residual": [
+        {
+          "dport": [
+            [
+              80,
+              80
+            ]
+          ],
+          "dst": [
+            "172.16.0.0/16"
+          ],
+          "protocols": [
+            "TCP"
+          ],
+          "sport": [
+            [
+              0,
+              1023
+            ]
+          ],
+          "src": [
+            "10.1.0.0/16"
+          ]
+        }
+      ],
+      "rule_id": "U_A"
+    },
+    {
+      "counterexample": {
+        "dport": 80,
+        "dst": "172.16.0.0",
+        "protocol": "TCP",
+        "sport": 1024,
+        "src": "10.1.0.0"
+      },
+      "counterexample_raw": [
+        167837696,
+        2886729728,
+        "TCP",
+        1024,
+        80
+      ],
+      "fully_shadowed": false,
+      "index": 1,
+      "notes": [
+        "存在 1 个未覆盖区域片段"
+      ],
+      "residual": [
+        {
+          "dport": [
+            [
+              80,
+              80
+            ]
+          ],
+          "dst": [
+            "172.16.0.0/16"
+          ],
+          "protocols": [
+            "TCP"
+          ],
+          "sport": [
+            [
+              1024,
+              65535
+            ]
+          ],
+          "src": [
+            "10.1.0.0/16"
+          ]
+        }
+      ],
+      "rule_id": "U_B"
+    },
+    {
+      "evidence": {
+        "cover": [
+          {
+            "regions": [
+              {
+                "dport": [
+                  [
+                    80,
+                    80
+                  ]
+                ],
+                "dst": [
+                  "172.16.0.0/16"
+                ],
+                "protocols": [
+                  "TCP"
+                ],
+                "sport": [
+                  [
+                    0,
+                    1023
+                  ]
+                ],
+                "src": [
+                  "10.1.0.0/16"
+                ]
+              }
+            ],
+            "rule_id": "U_A"
+          },
+          {
+            "regions": [
+              {
+                "dport": [
+                  [
+                    80,
+                    80
+                  ]
+                ],
+                "dst": [
+                  "172.16.0.0/16"
+                ],
+                "protocols": [
+                  "TCP"
+                ],
+                "sport": [
+                  [
+                    1024,
+                    65535
+                  ]
+                ],
+                "src": [
+                  "10.1.0.0/16"
+                ]
+              }
+            ],
+            "rule_id": "U_B"
+          }
+        ],
+        "covered_region": null,
+        "kind": "union"
+      },
+      "fully_shadowed": true,
+      "index": 2,
+      "notes": [
+        "由 2 条前序规则的并集完全遮蔽（联合覆盖，非单条包含）"
+      ],
+      "rule_id": "U_C"
+    },
+    {
+      "counterexample": {
+        "dport": 443,
+        "dst": "172.19.0.0",
+        "protocol": "TCP",
+        "sport": 0,
+        "src": "10.5.0.0"
+      },
+      "counterexample_raw": [
+        168099840,
+        2886926336,
+        "TCP",
+        0,
+        443
+      ],
+      "fully_shadowed": false,
+      "index": 3,
+      "notes": [
+        "存在 1 个未覆盖区域片段"
+      ],
+      "residual": [
+        {
+          "dport": [
+            [
+              443,
+              443
+            ]
+          ],
+          "dst": [
+            "172.19.0.0/16"
+          ],
+          "protocols": [
+            "TCP"
+          ],
+          "sport": [
+            [
+              0,
+              65535
+            ]
+          ],
+          "src": [
+            "10.5.0.0/16"
+          ]
+        }
+      ],
+      "rule_id": "O_DENY"
+    },
+    {
+      "evidence": {
+        "cover": [
+          {
+            "regions": [
+              {
+                "dport": [
+                  [
+                    443,
+                    443
+                  ]
+                ],
+                "dst": [
+                  "172.19.0.0/16"
+                ],
+                "protocols": [
+                  "TCP"
+                ],
+                "sport": [
+                  [
+                    0,
+                    65535
+                  ]
+                ],
+                "src": [
+                  "10.5.5.0/24"
+                ]
+              }
+            ],
+            "rule_id": "O_DENY"
+          }
+        ],
+        "covered_region": null,
+        "kind": "single"
+      },
+      "fully_shadowed": true,
+      "index": 4,
+      "notes": [
+        "由 1 条前序规则的并集完全遮蔽（单条包含）"
+      ],
+      "rule_id": "O_ACCEPT"
+    },
+    {
+      "counterexample": {
+        "dport": 8080,
+        "dst": "172.16.0.0",
+        "protocol": "TCP",
+        "sport": 0,
+        "src": "10.2.0.0"
+      },
+      "counterexample_raw": [
+        167903232,
+        2886729728,
+        "TCP",
+        0,
+        8080
+      ],
+      "fully_shadowed": false,
+      "index": 5,
+      "notes": [
+        "存在 1 个未覆盖区域片段"
+      ],
+      "residual": [
+        {
+          "dport": [
+            [
+              8080,
+              8080
+            ]
+          ],
+          "dst": [
+            "172.16.0.0/16"
+          ],
+          "protocols": [
+            "TCP"
+          ],
+          "sport": [
+            [
+              0,
+              65535
+            ]
+          ],
+          "src": [
+            "10.2.0.0/16"
+          ]
+        }
+      ],
+      "rule_id": "N1"
+    },
+    {
+      "evidence": {
+        "cover": [
+          {
+            "regions": [
+              {
+                "dport": [
+                  [
+                    8080,
+                    8080
+                  ]
+                ],
+                "dst": [
+                  "172.16.1.0/24"
+                ],
+                "protocols": [
+                  "TCP"
+                ],
+                "sport": [
+                  [
+                    0,
+                    65535
+                  ]
+                ],
+                "src": [
+                  "10.2.3.0/24"
+                ]
+              }
+            ],
+            "rule_id": "N1"
+          }
+        ],
+        "covered_region": null,
+        "kind": "single"
+      },
+      "fully_shadowed": true,
+      "index": 6,
+      "notes": [
+        "由 1 条前序规则的并集完全遮蔽（单条包含）"
+      ],
+      "rule_id": "N2"
+    },
+    {
+      "evidence": {
+        "cover": [
+          {
+            "regions": [
+              {
+                "dport": [
+                  [
+                    8080,
+                    8080
+                  ]
+                ],
+                "dst": [
+                  "172.16.1.0/24"
+                ],
+                "protocols": [
+                  "TCP"
+                ],
+                "sport": [
+                  [
+                    0,
+                    65535
+                  ]
+                ],
+                "src": [
+                  "10.2.3.128/25"
+                ]
+              }
+            ],
+            "rule_id": "N1"
+          }
+        ],
+        "covered_region": null,
+        "kind": "single"
+      },
+      "fully_shadowed": true,
+      "index": 7,
+      "notes": [
+        "由 1 条前序规则的并集完全遮蔽（单条包含）"
+      ],
+      "rule_id": "N3"
+    },
+    {
+      "counterexample": {
+        "dport": 8080,
+        "dst": "172.16.0.0",
+        "protocol": "UDP",
+        "sport": 0,
+        "src": "10.2.0.0"
+      },
+      "counterexample_raw": [
+        167903232,
+        2886729728,
+        "UDP",
+        0,
+        8080
+      ],
+      "fully_shadowed": false,
+      "index": 8,
+      "notes": [
+        "存在 1 个未覆盖区域片段"
+      ],
+      "residual": [
+        {
+          "dport": [
+            [
+              8080,
+              8080
+            ]
+          ],
+          "dst": [
+            "172.16.0.0/16"
+          ],
+          "protocols": [
+            "UDP"
+          ],
+          "sport": [
+            [
+              0,
+              65535
+            ]
+          ],
+          "src": [
+            "10.2.0.0/16"
+          ]
+        }
+      ],
+      "rule_id": "N4"
+    },
+    {
+      "evidence": {
+        "cover": [
+          {
+            "regions": [
+              {
+                "dport": [
+                  [
+                    8080,
+                    8080
+                  ]
+                ],
+                "dst": [
+                  "172.16.0.0/18"
+                ],
+                "protocols": [
+                  "TCP"
+                ],
+                "sport": [
+                  [
+                    0,
+                    65535
+                  ]
+                ],
+                "src": [
+                  "10.2.0.0/17"
+                ]
+              }
+            ],
+            "rule_id": "N1"
+          }
+        ],
+        "covered_region": null,
+        "kind": "single"
+      },
+      "fully_shadowed": true,
+      "index": 9,
+      "notes": [
+        "由 1 条前序规则的并集完全遮蔽（单条包含）"
+      ],
+      "rule_id": "N5"
+    },
+    {
+      "counterexample": {
+        "dport": 8080,
+        "dst": "172.16.0.0",
+        "protocol": "TCP",
+        "sport": 0,
+        "src": "10.3.0.0"
+      },
+      "counterexample_raw": [
+        167968768,
+        2886729728,
+        "TCP",
+        0,
+        8080
+      ],
+      "fully_shadowed": false,
+      "index": 10,
+      "notes": [
+        "存在 1 个未覆盖区域片段"
+      ],
+      "residual": [
+        {
+          "dport": [
+            [
+              8080,
+              8080
+            ]
+          ],
+          "dst": [
+            "172.16.0.0/16"
+          ],
+          "protocols": [
+            "TCP"
+          ],
+          "sport": [
+            [
+              0,
+              65535
+            ]
+          ],
+          "src": [
+            "10.3.0.0/16"
+          ]
+        }
+      ],
+      "rule_id": "N6"
+    },
+    {
+      "counterexample": {
+        "dport": 100,
+        "dst": "172.18.0.0",
+        "protocol": "TCP",
+        "sport": 0,
+        "src": "10.4.0.0"
+      },
+      "counterexample_raw": [
+        168034304,
+        2886860800,
+        "TCP",
+        0,
+        100
+      ],
+      "fully_shadowed": false,
+      "index": 11,
+      "notes": [
+        "存在 1 个未覆盖区域片段"
+      ],
+      "residual": [
+        {
+          "dport": [
+            [
+              100,
+              200
+            ]
+          ],
+          "dst": [
+            "172.18.0.0/16"
+          ],
+          "protocols": [
+            "TCP"
+          ],
+          "sport": [
+            [
+              0,
+              65535
+            ]
+          ],
+          "src": [
+            "10.4.0.0/16"
+          ]
+        }
+      ],
+      "rule_id": "B1"
+    },
+    {
+      "counterexample": {
+        "dport": 201,
+        "dst": "172.18.0.0",
+        "protocol": "TCP",
+        "sport": 0,
+        "src": "10.4.0.0"
+      },
+      "counterexample_raw": [
+        168034304,
+        2886860800,
+        "TCP",
+        0,
+        201
+      ],
+      "fully_shadowed": false,
+      "index": 12,
+      "notes": [
+        "存在 1 个未覆盖区域片段"
+      ],
+      "residual": [
+        {
+          "dport": [
+            [
+              201,
+              300
+            ]
+          ],
+          "dst": [
+            "172.18.0.0/16"
+          ],
+          "protocols": [
+            "TCP"
+          ],
+          "sport": [
+            [
+              0,
+              65535
+            ]
+          ],
+          "src": [
+            "10.4.0.0/16"
+          ]
+        }
+      ],
+      "rule_id": "B2"
+    },
+    {
+      "evidence": {
+        "cover": [
+          {
+            "regions": [
+              {
+                "dport": [
+                  [
+                    100,
+                    200
+                  ]
+                ],
+                "dst": [
+                  "172.18.0.0/16"
+                ],
+                "protocols": [
+                  "TCP"
+                ],
+                "sport": [
+                  [
+                    0,
+                    65535
+                  ]
+                ],
+                "src": [
+                  "10.4.0.0/16"
+                ]
+              }
+            ],
+            "rule_id": "B1"
+          },
+          {
+            "regions": [
+              {
+                "dport": [
+                  [
+                    201,
+                    300
+                  ]
+                ],
+                "dst": [
+                  "172.18.0.0/16"
+                ],
+                "protocols": [
+                  "TCP"
+                ],
+                "sport": [
+                  [
+                    0,
+                    65535
+                  ]
+                ],
+                "src": [
+                  "10.4.0.0/16"
+                ]
+              }
+            ],
+            "rule_id": "B2"
+          }
+        ],
+        "covered_region": null,
+        "kind": "union"
+      },
+      "fully_shadowed": true,
+      "index": 13,
+      "notes": [
+        "由 2 条前序规则的并集完全遮蔽（联合覆盖，非单条包含）"
+      ],
+      "rule_id": "B3"
+    },
+    {
+      "counterexample": {
+        "dport": 99,
+        "dst": "172.18.0.0",
+        "protocol": "TCP",
+        "sport": 0,
+        "src": "10.4.0.0"
+      },
+      "counterexample_raw": [
+        168034304,
+        2886860800,
+        "TCP",
+        0,
+        99
+      ],
+      "fully_shadowed": false,
+      "index": 14,
+      "notes": [
+        "存在 1 个未覆盖区域片段"
+      ],
+      "residual": [
+        {
+          "dport": [
+            [
+              99,
+              99
+            ],
+            [
+              301,
+              301
+            ]
+          ],
+          "dst": [
+            "172.18.0.0/16"
+          ],
+          "protocols": [
+            "TCP"
+          ],
+          "sport": [
+            [
+              0,
+              65535
+            ]
+          ],
+          "src": [
+            "10.4.0.0/16"
+          ]
+        }
+      ],
+      "rule_id": "B4"
+    },
+    {
+      "counterexample": {
+        "dport": 5432,
+        "dst": "172.18.1.0",
+        "protocol": "TCP",
+        "sport": 0,
+        "src": "10.4.1.0"
+      },
+      "counterexample_raw": [
+        168034560,
+        2886861056,
+        "TCP",
+        0,
+        5432
+      ],
+      "fully_shadowed": false,
+      "index": 15,
+      "notes": [
+        "存在 1 个未覆盖区域片段"
+      ],
+      "residual": [
+        {
+          "dport": [
+            [
+              5432,
+              5432
+            ]
+          ],
+          "dst": [
+            "172.18.1.0/24"
+          ],
+          "protocols": [
+            "TCP"
+          ],
+          "sport": [
+            [
+              0,
+              1023
+            ]
+          ],
+          "src": [
+            "10.4.1.0/24"
+          ]
+        }
+      ],
+      "rule_id": "B5"
+    },
+    {
+      "counterexample": {
+        "dport": 5432,
+        "dst": "172.18.1.0",
+        "protocol": "TCP",
+        "sport": 1024,
+        "src": "10.4.1.0"
+      },
+      "counterexample_raw": [
+        168034560,
+        2886861056,
+        "TCP",
+        1024,
+        5432
+      ],
+      "fully_shadowed": false,
+      "index": 16,
+      "notes": [
+        "存在 1 个未覆盖区域片段"
+      ],
+      "residual": [
+        {
+          "dport": [
+            [
+              5432,
+              5432
+            ]
+          ],
+          "dst": [
+            "172.18.1.0/24"
+          ],
+          "protocols": [
+            "TCP"
+          ],
+          "sport": [
+            [
+              1024,
+              65535
+            ]
+          ],
+          "src": [
+            "10.4.1.0/24"
+          ]
+        }
+      ],
+      "rule_id": "B6"
+    },
+    {
+      "evidence": {
+        "cover": [
+          {
+            "regions": [
+              {
+                "dport": [
+                  [
+                    5432,
+                    5432
+                  ]
+                ],
+                "dst": [
+                  "172.18.1.0/24"
+                ],
+                "protocols": [
+                  "TCP"
+                ],
+                "sport": [
+                  [
+                    0,
+                    1023
+                  ]
+                ],
+                "src": [
+                  "10.4.1.0/24"
+                ]
+              }
+            ],
+            "rule_id": "B5"
+          },
+          {
+            "regions": [
+              {
+                "dport": [
+                  [
+                    5432,
+                    5432
+                  ]
+                ],
+                "dst": [
+                  "172.18.1.0/24"
+                ],
+                "protocols": [
+                  "TCP"
+                ],
+                "sport": [
+                  [
+                    1024,
+                    65535
+                  ]
+                ],
+                "src": [
+                  "10.4.1.0/24"
+                ]
+              }
+            ],
+            "rule_id": "B6"
+          }
+        ],
+        "covered_region": null,
+        "kind": "union"
+      },
+      "fully_shadowed": true,
+      "index": 17,
+      "notes": [
+        "由 2 条前序规则的并集完全遮蔽（联合覆盖，非单条包含）"
+      ],
+      "rule_id": "B7"
+    },
+    {
+      "counterexample": {
+        "dport": 0,
+        "dst": "172.17.0.0",
+        "protocol": "TCP",
+        "sport": 0,
+        "src": "10.3.0.0"
+      },
+      "counterexample_raw": [
+        167968768,
+        2886795264,
+        "TCP",
+        0,
+        0
+      ],
+      "fully_shadowed": false,
+      "index": 18,
+      "notes": [
+        "存在 1 个未覆盖区域片段"
+      ],
+      "residual": [
+        {
+          "dport": [
+            [
+              0,
+              65535
+            ]
+          ],
+          "dst": [
+            "172.17.0.0/16"
+          ],
+          "protocols": [
+            "TCP"
+          ],
+          "sport": [
+            [
+              0,
+              65535
+            ]
+          ],
+          "src": [
+            "10.3.0.0/16"
+          ]
+        }
+      ],
+      "rule_id": "P1"
+    },
+    {
+      "counterexample": {
+        "dport": 0,
+        "dst": "172.17.0.0",
+        "protocol": "UDP",
+        "sport": 0,
+        "src": "10.3.0.0"
+      },
+      "counterexample_raw": [
+        167968768,
+        2886795264,
+        "UDP",
+        0,
+        0
+      ],
+      "fully_shadowed": false,
+      "index": 19,
+      "notes": [
+        "存在 1 个未覆盖区域片段"
+      ],
+      "residual": [
+        {
+          "dport": [
+            [
+              0,
+              65535
+            ]
+          ],
+          "dst": [
+            "172.17.0.0/16"
+          ],
+          "protocols": [
+            "UDP"
+          ],
+          "sport": [
+            [
+              0,
+              65535
+            ]
+          ],
+          "src": [
+            "10.3.0.0/16"
+          ]
+        }
+      ],
+      "rule_id": "P2"
+    },
+    {
+      "evidence": {
+        "cover": [
+          {
+            "regions": [
+              {
+                "dport": [
+                  [
+                    0,
+                    65535
+                  ]
+                ],
+                "dst": [
+                  "172.17.0.0/16"
+                ],
+                "protocols": [
+                  "TCP"
+                ],
+                "sport": [
+                  [
+                    0,
+                    65535
+                  ]
+                ],
+                "src": [
+                  "10.3.0.0/16"
+                ]
+              }
+            ],
+            "rule_id": "P1"
+          },
+          {
+            "regions": [
+              {
+                "dport": [
+                  [
+                    0,
+                    65535
+                  ]
+                ],
+                "dst": [
+                  "172.17.0.0/16"
+                ],
+                "protocols": [
+                  "UDP"
+                ],
+                "sport": [
+                  [
+                    0,
+                    65535
+                  ]
+                ],
+                "src": [
+                  "10.3.0.0/16"
+                ]
+              }
+            ],
+            "rule_id": "P2"
+          }
+        ],
+        "covered_region": null,
+        "kind": "union"
+      },
+      "fully_shadowed": true,
+      "index": 20,
+      "notes": [
+        "由 2 条前序规则的并集完全遮蔽（联合覆盖，非单条包含）"
+      ],
+      "rule_id": "P3"
+    },
+    {
+      "counterexample": {
+        "dport": 25,
+        "dst": "172.21.0.0",
+        "protocol": "TCP",
+        "sport": 0,
+        "src": "10.6.0.0"
+      },
+      "counterexample_raw": [
+        168165376,
+        2887057408,
+        "TCP",
+        0,
+        25
+      ],
+      "fully_shadowed": false,
+      "index": 21,
+      "notes": [
+        "存在 1 个未覆盖区域片段"
+      ],
+      "residual": [
+        {
+          "dport": [
+            [
+              25,
+              25
+            ]
+          ],
+          "dst": [
+            "172.21.0.0/16"
+          ],
+          "protocols": [
+            "TCP"
+          ],
+          "sport": [
+            [
+              0,
+              65535
+            ]
+          ],
+          "src": [
+            "10.6.0.0/16"
+          ]
+        }
+      ],
+      "rule_id": "I1"
+    },
+    {
+      "counterexample": {
+        "dport": 25,
+        "dst": "172.22.0.0",
+        "protocol": "TCP",
+        "sport": 0,
+        "src": "10.7.0.0"
+      },
+      "counterexample_raw": [
+        168230912,
+        2887122944,
+        "TCP",
+        0,
+        25
+      ],
+      "fully_shadowed": false,
+      "index": 22,
+      "notes": [
+        "存在 1 个未覆盖区域片段"
+      ],
+      "residual": [
+        {
+          "dport": [
+            [
+              25,
+              25
+            ]
+          ],
+          "dst": [
+            "172.22.0.0/16"
+          ],
+          "protocols": [
+            "TCP"
+          ],
+          "sport": [
+            [
+              0,
+              65535
+            ]
+          ],
+          "src": [
+            "10.7.0.0/16"
+          ]
+        }
+      ],
+      "rule_id": "I2"
+    },
+    {
+      "counterexample": {
+        "dport": 25,
+        "dst": "172.22.0.0",
+        "protocol": "TCP",
+        "sport": 0,
+        "src": "10.6.0.0"
+      },
+      "counterexample_raw": [
+        168165376,
+        2887122944,
+        "TCP",
+        0,
+        25
+      ],
+      "fully_shadowed": false,
+      "index": 23,
+      "notes": [
+        "存在 1 个未覆盖区域片段"
+      ],
+      "residual": [
+        {
+          "dport": [
+            [
+              25,
+              25
+            ]
+          ],
+          "dst": [
+            "172.22.0.0/16"
+          ],
+          "protocols": [
+            "TCP"
+          ],
+          "sport": [
+            [
+              0,
+              65535
+            ]
+          ],
+          "src": [
+            "10.6.0.0/16"
+          ]
+        }
+      ],
+      "rule_id": "I3"
+    },
+    {
+      "counterexample": {
+        "dport": 25,
+        "dst": "172.21.0.0",
+        "protocol": "TCP",
+        "sport": 0,
+        "src": "10.7.0.0"
+      },
+      "counterexample_raw": [
+        168230912,
+        2887057408,
+        "TCP",
+        0,
+        25
+      ],
+      "fully_shadowed": false,
+      "index": 24,
+      "notes": [
+        "存在 1 个未覆盖区域片段"
+      ],
+      "residual": [
+        {
+          "dport": [
+            [
+              25,
+              25
+            ]
+          ],
+          "dst": [
+            "172.21.0.0/16"
+          ],
+          "protocols": [
+            "TCP"
+          ],
+          "sport": [
+            [
+              0,
+              65535
+            ]
+          ],
+          "src": [
+            "10.7.0.0/16"
+          ]
+        }
+      ],
+      "rule_id": "I4"
+    },
+    {
+      "evidence": {
+        "cover": [
+          {
+            "regions": [
+              {
+                "dport": [
+                  [
+                    25,
+                    25
+                  ]
+                ],
+                "dst": [
+                  "172.21.0.0/16"
+                ],
+                "protocols": [
+                  "TCP"
+                ],
+                "sport": [
+                  [
+                    0,
+                    65535
+                  ]
+                ],
+                "src": [
+                  "10.6.0.0/16"
+                ]
+              }
+            ],
+            "rule_id": "I1"
+          },
+          {
+            "regions": [
+              {
+                "dport": [
+                  [
+                    25,
+                    25
+                  ]
+                ],
+                "dst": [
+                  "172.21.0.0/16"
+                ],
+                "protocols": [
+                  "TCP"
+                ],
+                "sport": [
+                  [
+                    0,
+                    65535
+                  ]
+                ],
+                "src": [
+                  "10.7.0.0/16"
+                ]
+              }
+            ],
+            "rule_id": "I4"
+          }
+        ],
+        "covered_region": null,
+        "kind": "union"
+      },
+      "fully_shadowed": true,
+      "index": 25,
+      "notes": [
+        "由 2 条前序规则的并集完全遮蔽（联合覆盖，非单条包含）"
+      ],
+      "rule_id": "I5A"
+    },
+    {
+      "evidence": {
+        "cover": [
+          {
+            "regions": [
+              {
+                "dport": [
+                  [
+                    25,
+                    25
+                  ]
+                ],
+                "dst": [
+                  "172.22.0.0/16"
+                ],
+                "protocols": [
+                  "TCP"
+                ],
+                "sport": [
+                  [
+                    0,
+                    65535
+                  ]
+                ],
+                "src": [
+                  "10.7.0.0/16"
+                ]
+              }
+            ],
+            "rule_id": "I2"
+          },
+          {
+            "regions": [
+              {
+                "dport": [
+                  [
+                    25,
+                    25
+                  ]
+                ],
+                "dst": [
+                  "172.22.0.0/16"
+                ],
+                "protocols": [
+                  "TCP"
+                ],
+                "sport": [
+                  [
+                    0,
+                    65535
+                  ]
+                ],
+                "src": [
+                  "10.6.0.0/16"
+                ]
+              }
+            ],
+            "rule_id": "I3"
+          }
+        ],
+        "covered_region": null,
+        "kind": "union"
+      },
+      "fully_shadowed": true,
+      "index": 26,
+      "notes": [
+        "由 2 条前序规则的并集完全遮蔽（联合覆盖，非单条包含）"
+      ],
+      "rule_id": "I5B"
+    },
+    {
+      "counterexample": {
+        "dport": 0,
+        "dst": "224.0.0.0",
+        "protocol": "UDP",
+        "sport": 0,
+        "src": "0.0.0.0"
+      },
+      "counterexample_raw": [
+        0,
+        3758096384,
+        "UDP",
+        0,
+        0
+      ],
+      "fully_shadowed": false,
+      "index": 27,
+      "notes": [
+        "存在 1 个未覆盖区域片段"
+      ],
+      "residual": [
+        {
+          "dport": [
+            [
+              0,
+              65535
+            ]
+          ],
+          "dst": [
+            "224.0.0.0/4"
+          ],
+          "protocols": [
+            "UDP"
+          ],
+          "sport": [
+            [
+              0,
+              65535
+            ]
+          ],
+          "src": [
+            "0.0.0.0/0"
+          ]
+        }
+      ],
+      "rule_id": "M1"
+    },
+    {
+      "counterexample": {
+        "dport": 443,
+        "dst": "198.51.100.0",
+        "protocol": "TCP",
+        "sport": 0,
+        "src": "203.0.113.0"
+      },
+      "counterexample_raw": [
+        3405803776,
+        3325256704,
+        "TCP",
+        0,
+        443
+      ],
+      "fully_shadowed": false,
+      "index": 28,
+      "notes": [
+        "存在 1 个未覆盖区域片段"
+      ],
+      "residual": [
+        {
+          "dport": [
+            [
+              443,
+              443
+            ]
+          ],
+          "dst": [
+            "198.51.100.0/24"
+          ],
+          "protocols": [
+            "TCP"
+          ],
+          "sport": [
+            [
+              0,
+              65535
+            ]
+          ],
+          "src": [
+            "203.0.113.0/24"
+          ]
+        }
+      ],
+      "rule_id": "H1"
+    },
+    {
+      "counterexample": {
+        "dport": 8443,
+        "dst": "198.51.100.0",
+        "protocol": "TCP",
+        "sport": 0,
+        "src": "203.0.113.0"
+      },
+      "counterexample_raw": [
+        3405803776,
+        3325256704,
+        "TCP",
+        0,
+        8443
+      ],
+      "fully_shadowed": false,
+      "index": 29,
+      "notes": [
+        "存在 1 个未覆盖区域片段"
+      ],
+      "residual": [
+        {
+          "dport": [
+            [
+              8443,
+              8443
+            ]
+          ],
+          "dst": [
+            "198.51.100.0/24"
+          ],
+          "protocols": [
+            "TCP"
+          ],
+          "sport": [
+            [
+              0,
+              65535
+            ]
+          ],
+          "src": [
+            "203.0.113.0/24"
+          ]
+        }
+      ],
+      "rule_id": "H2"
+    },
+    {
+      "counterexample": {
+        "dport": 0,
+        "dst": "0.0.0.0",
+        "protocol": "UDP",
+        "sport": 0,
+        "src": "240.0.0.0"
+      },
+      "counterexample_raw": [
+        4026531840,
+        0,
+        "UDP",
+        0,
+        0
+      ],
+      "fully_shadowed": false,
+      "index": 30,
+      "notes": [
+        "存在 1 个未覆盖区域片段"
+      ],
+      "residual": [
+        {
+          "dport": [
+            [
+              0,
+              65535
+            ]
+          ],
+          "dst": [
+            "0.0.0.0/1",
+            "128.0.0.0/2",
+            "192.0.0.0/3",
+            "240.0.0.0/4"
+          ],
+          "protocols": [
+            "UDP"
+          ],
+          "sport": [
+            [
+              0,
+              65535
+            ]
+          ],
+          "src": [
+            "240.0.0.0/4"
+          ]
+        }
+      ],
+      "rule_id": "H3"
+    },
+    {
+      "counterexample": {
+        "dport": 80,
+        "dst": "172.20.0.0",
+        "protocol": "TCP",
+        "sport": 0,
+        "src": "128.0.0.0"
+      },
+      "counterexample_raw": [
+        2147483648,
+        2886991872,
+        "TCP",
+        0,
+        80
+      ],
+      "fully_shadowed": false,
+      "index": 31,
+      "notes": [
+        "存在 1 个未覆盖区域片段"
+      ],
+      "residual": [
+        {
+          "dport": [
+            [
+              80,
+              80
+            ]
+          ],
+          "dst": [
+            "172.20.0.0/16"
+          ],
+          "protocols": [
+            "TCP"
+          ],
+          "sport": [
+            [
+              0,
+              65535
+            ]
+          ],
+          "src": [
+            "128.0.0.0/1"
+          ]
+        }
+      ],
+      "rule_id": "H4"
+    },
+    {
+      "evidence": {
+        "cover": [
+          {
+            "regions": [
+              {
+                "dport": [
+                  [
+                    80,
+                    80
+                  ]
+                ],
+                "dst": [
+                  "172.20.0.0/16"
+                ],
+                "protocols": [
+                  "TCP"
+                ],
+                "sport": [
+                  [
+                    0,
+                    65535
+                  ]
+                ],
+                "src": [
+                  "128.0.1.0/24"
+                ]
+              }
+            ],
+            "rule_id": "H4"
+          }
+        ],
+        "covered_region": null,
+        "kind": "single"
+      },
+      "fully_shadowed": true,
+      "index": 32,
+      "notes": [
+        "由 1 条前序规则的并集完全遮蔽（单条包含）"
+      ],
+      "rule_id": "H5"
+    },
+    {
+      "counterexample": {
+        "dport": 20000,
+        "dst": "172.100.0.0",
+        "protocol": "UDP",
+        "sport": 0,
+        "src": "10.100.0.0"
+      },
+      "counterexample_raw": [
+        174325760,
+        2892234752,
+        "UDP",
+        0,
+        20000
+      ],
+      "fully_shadowed": false,
+      "index": 33,
+      "notes": [
+        "存在 1 个未覆盖区域片段"
+      ],
+      "residual": [
+        {
+          "dport": [
+            [
+              20000,
+              20000
+            ]
+          ],
+          "dst": [
+            "172.100.0.0/16"
+          ],
+          "protocols": [
+            "UDP"
+          ],
+          "sport": [
+            [
+              0,
+              65535
+            ]
+          ],
+          "src": [
+            "10.100.0.0/16"
+          ]
+        }
+      ],
+      "rule_id": "F000"
+    },
+    {
+      "counterexample": {
+        "dport": 20001,
+        "dst": "172.101.0.0",
+        "protocol": "TCP",
+        "sport": 0,
+        "src": "10.101.0.0"
+      },
+      "counterexample_raw": [
+        174391296,
+        2892300288,
+        "TCP",
+        0,
+        20001
+      ],
+      "fully_shadowed": false,
+      "index": 34,
+      "notes": [
+        "存在 1 个未覆盖区域片段"
+      ],
+      "residual": [
+        {
+          "dport": [
+            [
+              20001,
+              20001
+            ]
+          ],
+          "dst": [
+            "172.101.0.0/16"
+          ],
+          "protocols": [
+            "TCP"
+          ],
+          "sport": [
+            [
+              0,
+              65535
+            ]
+          ],
+          "src": [
+            "10.101.0.0/16"
+          ]
+        }
+      ],
+      "rule_id": "F001"
+    },
+    {
+      "counterexample": {
+        "dport": 20002,
+        "dst": "172.102.0.0",
+        "protocol": "TCP",
+        "sport": 0,
+        "src": "10.102.0.0"
+      },
+      "counterexample_raw": [
+        174456832,
+        2892365824,
+        "TCP",
+        0,
+        20002
+      ],
+      "fully_shadowed": false,
+      "index": 35,
+      "notes": [
+        "存在 1 个未覆盖区域片段"
+      ],
+      "residual": [
+        {
+          "dport": [
+            [
+              20002,
+              20002
+            ]
+          ],
+          "dst": [
+            "172.102.0.0/16"
+          ],
+          "protocols": [
+            "TCP"
+          ],
+          "sport": [
+            [
+              0,
+              65535
+            ]
+          ],
+          "src": [
+            "10.102.0.0/16"
+          ]
+        }
+      ],
+      "rule_id": "F002"
+    },
+    {
+      "counterexample": {
+        "dport": 20003,
+        "dst": "172.103.0.0",
+        "protocol": "UDP",
+        "sport": 0,
+        "src": "10.103.0.0"
+      },
+      "counterexample_raw": [
+        174522368,
+        2892431360,
+        "UDP",
+        0,
+        20003
+      ],
+      "fully_shadowed": false,
+      "index": 36,
+      "notes": [
+        "存在 1 个未覆盖区域片段"
+      ],
+      "residual": [
+        {
+          "dport": [
+            [
+              20003,
+              20003
+            ]
+          ],
+          "dst": [
+            "172.103.0.0/16"
+          ],
+          "protocols": [
+            "UDP"
+          ],
+          "sport": [
+            [
+              0,
+              65535
+            ]
+          ],
+          "src": [
+            "10.103.0.0/16"
+          ]
+        }
+      ],
+      "rule_id": "F003"
+    },
+    {
+      "counterexample": {
+        "dport": 20004,
+        "dst": "172.104.0.0",
+        "protocol": "TCP",
+        "sport": 0,
+        "src": "10.104.0.0"
+      },
+      "counterexample_raw": [
+        174587904,
+        2892496896,
+        "TCP",
+        0,
+        20004
+      ],
+      "fully_shadowed": false,
+      "index": 37,
+      "notes": [
+        "存在 1 个未覆盖区域片段"
+      ],
+      "residual": [
+        {
+          "dport": [
+            [
+              20004,
+              20004
+            ]
+          ],
+          "dst": [
+            "172.104.0.0/16"
+          ],
+          "protocols": [
+            "TCP"
+          ],
+          "sport": [
+            [
+              0,
+              65535
+            ]
+          ],
+          "src": [
+            "10.104.0.0/16"
+          ]
+        }
+      ],
+      "rule_id": "F004"
+    },
+    {
+      "counterexample": {
+        "dport": 20005,
+        "dst": "172.105.0.0",
+        "protocol": "TCP",
+        "sport": 0,
+        "src": "10.105.0.0"
+      },
+      "counterexample_raw": [
+        174653440,
+        2892562432,
+        "TCP",
+        0,
+        20005
+      ],
+      "fully_shadowed": false,
+      "index": 38,
+      "notes": [
+        "存在 1 个未覆盖区域片段"
+      ],
+      "residual": [
+        {
+          "dport": [
+            [
+              20005,
+              20005
+            ]
+          ],
+          "dst": [
+            "172.105.0.0/16"
+          ],
+          "protocols": [
+            "TCP"
+          ],
+          "sport": [
+            [
+              0,
+              65535
+            ]
+          ],
+          "src": [
+            "10.105.0.0/16"
+          ]
+        }
+      ],
+      "rule_id": "F005"
+    },
+    {
+      "counterexample": {
+        "dport": 20006,
+        "dst": "172.106.0.0",
+        "protocol": "UDP",
+        "sport": 0,
+        "src": "10.106.0.0"
+      },
+      "counterexample_raw": [
+        174718976,
+        2892627968,
+        "UDP",
+        0,
+        20006
+      ],
+      "fully_shadowed": false,
+      "index": 39,
+      "notes": [
+        "存在 1 个未覆盖区域片段"
+      ],
+      "residual": [
+        {
+          "dport": [
+            [
+              20006,
+              20006
+            ]
+          ],
+          "dst": [
+            "172.106.0.0/16"
+          ],
+          "protocols": [
+            "UDP"
+          ],
+          "sport": [
+            [
+              0,
+              65535
+            ]
+          ],
+          "src": [
+            "10.106.0.0/16"
+          ]
+        }
+      ],
+      "rule_id": "F006"
+    },
+    {
+      "counterexample": {
+        "dport": 20007,
+        "dst": "172.107.0.0",
+        "protocol": "TCP",
+        "sport": 0,
+        "src": "10.107.0.0"
+      },
+      "counterexample_raw": [
+        174784512,
+        2892693504,
+        "TCP",
+        0,
+        20007
+      ],
+      "fully_shadowed": false,
+      "index": 40,
+      "notes": [
+        "存在 1 个未覆盖区域片段"
+      ],
+      "residual": [
+        {
+          "dport": [
+            [
+              20007,
+              20007
+            ]
+          ],
+          "dst": [
+            "172.107.0.0/16"
+          ],
+          "protocols": [
+            "TCP"
+          ],
+          "sport": [
+            [
+              0,
+              65535
+            ]
+          ],
+          "src": [
+            "10.107.0.0/16"
+          ]
+        }
+      ],
+      "rule_id": "F007"
+    },
+    {
+      "counterexample": {
+        "dport": 20008,
+        "dst": "172.108.0.0",
+        "protocol": "TCP",
+        "sport": 0,
+        "src": "10.108.0.0"
+      },
+      "counterexample_raw": [
+        174850048,
+        2892759040,
+        "TCP",
+        0,
+        20008
+      ],
+      "fully_shadowed": false,
+      "index": 41,
+      "notes": [
+        "存在 1 个未覆盖区域片段"
+      ],
+      "residual": [
+        {
+          "dport": [
+            [
+              20008,
+              20008
+            ]
+          ],
+          "dst": [
+            "172.108.0.0/16"
+          ],
+          "protocols": [
+            "TCP"
+          ],
+          "sport": [
+            [
+              0,
+              65535
+            ]
+          ],
+          "src": [
+            "10.108.0.0/16"
+          ]
+        }
+      ],
+      "rule_id": "F008"
+    },
+    {
+      "counterexample": {
+        "dport": 20009,
+        "dst": "172.109.0.0",
+        "protocol": "UDP",
+        "sport": 0,
+        "src": "10.109.0.0"
+      },
+      "counterexample_raw": [
+        174915584,
+        2892824576,
+        "UDP",
+        0,
+        20009
+      ],
+      "fully_shadowed": false,
+      "index": 42,
+      "notes": [
+        "存在 1 个未覆盖区域片段"
+      ],
+      "residual": [
+        {
+          "dport": [
+            [
+              20009,
+              20009
+            ]
+          ],
+          "dst": [
+            "172.109.0.0/16"
+          ],
+          "protocols": [
+            "UDP"
+          ],
+          "sport": [
+            [
+              0,
+              65535
+            ]
+          ],
+          "src": [
+            "10.109.0.0/16"
+          ]
+        }
+      ],
+      "rule_id": "F009"
+    },
+    {
+      "counterexample": {
+        "dport": 20010,
+        "dst": "172.110.0.0",
+        "protocol": "TCP",
+        "sport": 0,
+        "src": "10.110.0.0"
+      },
+      "counterexample_raw": [
+        174981120,
+        2892890112,
+        "TCP",
+        0,
+        20010
+      ],
+      "fully_shadowed": false,
+      "index": 43,
+      "notes": [
+        "存在 1 个未覆盖区域片段"
+      ],
+      "residual": [
+        {
+          "dport": [
+            [
+              20010,
+              20010
+            ]
+          ],
+          "dst": [
+            "172.110.0.0/16"
+          ],
+          "protocols": [
+            "TCP"
+          ],
+          "sport": [
+            [
+              0,
+              65535
+            ]
+          ],
+          "src": [
+            "10.110.0.0/16"
+          ]
+        }
+      ],
+      "rule_id": "F010"
+    },
+    {
+      "counterexample": {
+        "dport": 20011,
+        "dst": "172.111.0.0",
+        "protocol": "TCP",
+        "sport": 0,
+        "src": "10.111.0.0"
+      },
+      "counterexample_raw": [
+        175046656,
+        2892955648,
+        "TCP",
+        0,
+        20011
+      ],
+      "fully_shadowed": false,
+      "index": 44,
+      "notes": [
+        "存在 1 个未覆盖区域片段"
+      ],
+      "residual": [
+        {
+          "dport": [
+            [
+              20011,
+              20011
+            ]
+          ],
+          "dst": [
+            "172.111.0.0/16"
+          ],
+          "protocols": [
+            "TCP"
+          ],
+          "sport": [
+            [
+              0,
+              65535
+            ]
+          ],
+          "src": [
+            "10.111.0.0/16"
+          ]
+        }
+      ],
+      "rule_id": "F011"
+    },
+    {
+      "counterexample": {
+        "dport": 20012,
+        "dst": "172.112.0.0",
+        "protocol": "UDP",
+        "sport": 0,
+        "src": "10.112.0.0"
+      },
+      "counterexample_raw": [
+        175112192,
+        2893021184,
+        "UDP",
+        0,
+        20012
+      ],
+      "fully_shadowed": false,
+      "index": 45,
+      "notes": [
+        "存在 1 个未覆盖区域片段"
+      ],
+      "residual": [
+        {
+          "dport": [
+            [
+              20012,
+              20012
+            ]
+          ],
+          "dst": [
+            "172.112.0.0/16"
+          ],
+          "protocols": [
+            "UDP"
+          ],
+          "sport": [
+            [
+              0,
+              65535
+            ]
+          ],
+          "src": [
+            "10.112.0.0/16"
+          ]
+        }
+      ],
+      "rule_id": "F012"
+    },
+    {
+      "counterexample": {
+        "dport": 20013,
+        "dst": "172.113.0.0",
+        "protocol": "TCP",
+        "sport": 0,
+        "src": "10.113.0.0"
+      },
+      "counterexample_raw": [
+        175177728,
+        2893086720,
+        "TCP",
+        0,
+        20013
+      ],
+      "fully_shadowed": false,
+      "index": 46,
+      "notes": [
+        "存在 1 个未覆盖区域片段"
+      ],
+      "residual": [
+        {
+          "dport": [
+            [
+              20013,
+              20013
+            ]
+          ],
+          "dst": [
+            "172.113.0.0/16"
+          ],
+          "protocols": [
+            "TCP"
+          ],
+          "sport": [
+            [
+              0,
+              65535
+            ]
+          ],
+          "src": [
+            "10.113.0.0/16"
+          ]
+        }
+      ],
+      "rule_id": "F013"
+    },
+    {
+      "counterexample": {
+        "dport": 20014,
+        "dst": "172.114.0.0",
+        "protocol": "TCP",
+        "sport": 0,
+        "src": "10.114.0.0"
+      },
+      "counterexample_raw": [
+        175243264,
+        2893152256,
+        "TCP",
+        0,
+        20014
+      ],
+      "fully_shadowed": false,
+      "index": 47,
+      "notes": [
+        "存在 1 个未覆盖区域片段"
+      ],
+      "residual": [
+        {
+          "dport": [
+            [
+              20014,
+              20014
+            ]
+          ],
+          "dst": [
+            "172.114.0.0/16"
+          ],
+          "protocols": [
+            "TCP"
+          ],
+          "sport": [
+            [
+              0,
+              65535
+            ]
+          ],
+          "src": [
+            "10.114.0.0/16"
+          ]
+        }
+      ],
+      "rule_id": "F014"
+    },
+    {
+      "counterexample": {
+        "dport": 20015,
+        "dst": "172.115.0.0",
+        "protocol": "UDP",
+        "sport": 0,
+        "src": "10.115.0.0"
+      },
+      "counterexample_raw": [
+        175308800,
+        2893217792,
+        "UDP",
+        0,
+        20015
+      ],
+      "fully_shadowed": false,
+      "index": 48,
+      "notes": [
+        "存在 1 个未覆盖区域片段"
+      ],
+      "residual": [
+        {
+          "dport": [
+            [
+              20015,
+              20015
+            ]
+          ],
+          "dst": [
+            "172.115.0.0/16"
+          ],
+          "protocols": [
+            "UDP"
+          ],
+          "sport": [
+            [
+              0,
+              65535
+            ]
+          ],
+          "src": [
+            "10.115.0.0/16"
+          ]
+        }
+      ],
+      "rule_id": "F015"
+    },
+    {
+      "counterexample": {
+        "dport": 20016,
+        "dst": "172.116.0.0",
+        "protocol": "TCP",
+        "sport": 0,
+        "src": "10.116.0.0"
+      },
+      "counterexample_raw": [
+        175374336,
+        2893283328,
+        "TCP",
+        0,
+        20016
+      ],
+      "fully_shadowed": false,
+      "index": 49,
+      "notes": [
+        "存在 1 个未覆盖区域片段"
+      ],
+      "residual": [
+        {
+          "dport": [
+            [
+              20016,
+              20016
+            ]
+          ],
+          "dst": [
+            "172.116.0.0/16"
+          ],
+          "protocols": [
+            "TCP"
+          ],
+          "sport": [
+            [
+              0,
+              65535
+            ]
+          ],
+          "src": [
+            "10.116.0.0/16"
+          ]
+        }
+      ],
+      "rule_id": "F016"
+    },
+    {
+      "counterexample": {
+        "dport": 20017,
+        "dst": "172.117.0.0",
+        "protocol": "TCP",
+        "sport": 0,
+        "src": "10.117.0.0"
+      },
+      "counterexample_raw": [
+        175439872,
+        2893348864,
+        "TCP",
+        0,
+        20017
+      ],
+      "fully_shadowed": false,
+      "index": 50,
+      "notes": [
+        "存在 1 个未覆盖区域片段"
+      ],
+      "residual": [
+        {
+          "dport": [
+            [
+              20017,
+              20017
+            ]
+          ],
+          "dst": [
+            "172.117.0.0/16"
+          ],
+          "protocols": [
+            "TCP"
+          ],
+          "sport": [
+            [
+              0,
+              65535
+            ]
+          ],
+          "src": [
+            "10.117.0.0/16"
+          ]
+        }
+      ],
+      "rule_id": "F017"
+    },
+    {
+      "counterexample": {
+        "dport": 20018,
+        "dst": "172.118.0.0",
+        "protocol": "UDP",
+        "sport": 0,
+        "src": "10.118.0.0"
+      },
+      "counterexample_raw": [
+        175505408,
+        2893414400,
+        "UDP",
+        0,
+        20018
+      ],
+      "fully_shadowed": false,
+      "index": 51,
+      "notes": [
+        "存在 1 个未覆盖区域片段"
+      ],
+      "residual": [
+        {
+          "dport": [
+            [
+              20018,
+              20018
+            ]
+          ],
+          "dst": [
+            "172.118.0.0/16"
+          ],
+          "protocols": [
+            "UDP"
+          ],
+          "sport": [
+            [
+              0,
+              65535
+            ]
+          ],
+          "src": [
+            "10.118.0.0/16"
+          ]
+        }
+      ],
+      "rule_id": "F018"
+    },
+    {
+      "counterexample": {
+        "dport": 20019,
+        "dst": "172.119.0.0",
+        "protocol": "TCP",
+        "sport": 0,
+        "src": "10.119.0.0"
+      },
+      "counterexample_raw": [
+        175570944,
+        2893479936,
+        "TCP",
+        0,
+        20019
+      ],
+      "fully_shadowed": false,
+      "index": 52,
+      "notes": [
+        "存在 1 个未覆盖区域片段"
+      ],
+      "residual": [
+        {
+          "dport": [
+            [
+              20019,
+              20019
+            ]
+          ],
+          "dst": [
+            "172.119.0.0/16"
+          ],
+          "protocols": [
+            "TCP"
+          ],
+          "sport": [
+            [
+              0,
+              65535
+            ]
+          ],
+          "src": [
+            "10.119.0.0/16"
+          ]
+        }
+      ],
+      "rule_id": "F019"
+    },
+    {
+      "counterexample": {
+        "dport": 20020,
+        "dst": "172.120.0.0",
+        "protocol": "TCP",
+        "sport": 0,
+        "src": "10.120.0.0"
+      },
+      "counterexample_raw": [
+        175636480,
+        2893545472,
+        "TCP",
+        0,
+        20020
+      ],
+      "fully_shadowed": false,
+      "index": 53,
+      "notes": [
+        "存在 1 个未覆盖区域片段"
+      ],
+      "residual": [
+        {
+          "dport": [
+            [
+              20020,
+              20020
+            ]
+          ],
+          "dst": [
+            "172.120.0.0/16"
+          ],
+          "protocols": [
+            "TCP"
+          ],
+          "sport": [
+            [
+              0,
+              65535
+            ]
+          ],
+          "src": [
+            "10.120.0.0/16"
+          ]
+        }
+      ],
+      "rule_id": "F020"
+    },
+    {
+      "counterexample": {
+        "dport": 20021,
+        "dst": "172.121.0.0",
+        "protocol": "UDP",
+        "sport": 0,
+        "src": "10.121.0.0"
+      },
+      "counterexample_raw": [
+        175702016,
+        2893611008,
+        "UDP",
+        0,
+        20021
+      ],
+      "fully_shadowed": false,
+      "index": 54,
+      "notes": [
+        "存在 1 个未覆盖区域片段"
+      ],
+      "residual": [
+        {
+          "dport": [
+            [
+              20021,
+              20021
+            ]
+          ],
+          "dst": [
+            "172.121.0.0/16"
+          ],
+          "protocols": [
+            "UDP"
+          ],
+          "sport": [
+            [
+              0,
+              65535
+            ]
+          ],
+          "src": [
+            "10.121.0.0/16"
+          ]
+        }
+      ],
+      "rule_id": "F021"
+    },
+    {
+      "counterexample": {
+        "dport": 20022,
+        "dst": "172.122.0.0",
+        "protocol": "TCP",
+        "sport": 0,
+        "src": "10.122.0.0"
+      },
+      "counterexample_raw": [
+        175767552,
+        2893676544,
+        "TCP",
+        0,
+        20022
+      ],
+      "fully_shadowed": false,
+      "index": 55,
+      "notes": [
+        "存在 1 个未覆盖区域片段"
+      ],
+      "residual": [
+        {
+          "dport": [
+            [
+              20022,
+              20022
+            ]
+          ],
+          "dst": [
+            "172.122.0.0/16"
+          ],
+          "protocols": [
+            "TCP"
+          ],
+          "sport": [
+            [
+              0,
+              65535
+            ]
+          ],
+          "src": [
+            "10.122.0.0/16"
+          ]
+        }
+      ],
+      "rule_id": "F022"
+    },
+    {
+      "counterexample": {
+        "dport": 20023,
+        "dst": "172.123.0.0",
+        "protocol": "TCP",
+        "sport": 0,
+        "src": "10.123.0.0"
+      },
+      "counterexample_raw": [
+        175833088,
+        2893742080,
+        "TCP",
+        0,
+        20023
+      ],
+      "fully_shadowed": false,
+      "index": 56,
+      "notes": [
+        "存在 1 个未覆盖区域片段"
+      ],
+      "residual": [
+        {
+          "dport": [
+            [
+              20023,
+              20023
+            ]
+          ],
+          "dst": [
+            "172.123.0.0/16"
+          ],
+          "protocols": [
+            "TCP"
+          ],
+          "sport": [
+            [
+              0,
+              65535
+            ]
+          ],
+          "src": [
+            "10.123.0.0/16"
+          ]
+        }
+      ],
+      "rule_id": "F023"
+    },
+    {
+      "counterexample": {
+        "dport": 20024,
+        "dst": "172.124.0.0",
+        "protocol": "UDP",
+        "sport": 0,
+        "src": "10.124.0.0"
+      },
+      "counterexample_raw": [
+        175898624,
+        2893807616,
+        "UDP",
+        0,
+        20024
+      ],
+      "fully_shadowed": false,
+      "index": 57,
+      "notes": [
+        "存在 1 个未覆盖区域片段"
+      ],
+      "residual": [
+        {
+          "dport": [
+            [
+              20024,
+              20024
+            ]
+          ],
+          "dst": [
+            "172.124.0.0/16"
+          ],
+          "protocols": [
+            "UDP"
+          ],
+          "sport": [
+            [
+              0,
+              65535
+            ]
+          ],
+          "src": [
+            "10.124.0.0/16"
+          ]
+        }
+      ],
+      "rule_id": "F024"
+    },
+    {
+      "counterexample": {
+        "dport": 20025,
+        "dst": "172.125.0.0",
+        "protocol": "TCP",
+        "sport": 0,
+        "src": "10.125.0.0"
+      },
+      "counterexample_raw": [
+        175964160,
+        2893873152,
+        "TCP",
+        0,
+        20025
+      ],
+      "fully_shadowed": false,
+      "index": 58,
+      "notes": [
+        "存在 1 个未覆盖区域片段"
+      ],
+      "residual": [
+        {
+          "dport": [
+            [
+              20025,
+              20025
+            ]
+          ],
+          "dst": [
+            "172.125.0.0/16"
+          ],
+          "protocols": [
+            "TCP"
+          ],
+          "sport": [
+            [
+              0,
+              65535
+            ]
+          ],
+          "src": [
+            "10.125.0.0/16"
+          ]
+        }
+      ],
+      "rule_id": "F025"
+    },
+    {
+      "counterexample": {
+        "dport": 20026,
+        "dst": "172.126.0.0",
+        "protocol": "TCP",
+        "sport": 0,
+        "src": "10.126.0.0"
+      },
+      "counterexample_raw": [
+        176029696,
+        2893938688,
+        "TCP",
+        0,
+        20026
+      ],
+      "fully_shadowed": false,
+      "index": 59,
+      "notes": [
+        "存在 1 个未覆盖区域片段"
+      ],
+      "residual": [
+        {
+          "dport": [
+            [
+              20026,
+              20026
+            ]
+          ],
+          "dst": [
+            "172.126.0.0/16"
+          ],
+          "protocols": [
+            "TCP"
+          ],
+          "sport": [
+            [
+              0,
+              65535
+            ]
+          ],
+          "src": [
+            "10.126.0.0/16"
+          ]
+        }
+      ],
+      "rule_id": "F026"
+    },
+    {
+      "counterexample": {
+        "dport": 20027,
+        "dst": "172.127.0.0",
+        "protocol": "UDP",
+        "sport": 0,
+        "src": "10.127.0.0"
+      },
+      "counterexample_raw": [
+        176095232,
+        2894004224,
+        "UDP",
+        0,
+        20027
+      ],
+      "fully_shadowed": false,
+      "index": 60,
+      "notes": [
+        "存在 1 个未覆盖区域片段"
+      ],
+      "residual": [
+        {
+          "dport": [
+            [
+              20027,
+              20027
+            ]
+          ],
+          "dst": [
+            "172.127.0.0/16"
+          ],
+          "protocols": [
+            "UDP"
+          ],
+          "sport": [
+            [
+              0,
+              65535
+            ]
+          ],
+          "src": [
+            "10.127.0.0/16"
+          ]
+        }
+      ],
+      "rule_id": "F027"
+    },
+    {
+      "counterexample": {
+        "dport": 20028,
+        "dst": "172.128.0.0",
+        "protocol": "TCP",
+        "sport": 0,
+        "src": "10.128.0.0"
+      },
+      "counterexample_raw": [
+        176160768,
+        2894069760,
+        "TCP",
+        0,
+        20028
+      ],
+      "fully_shadowed": false,
+      "index": 61,
+      "notes": [
+        "存在 1 个未覆盖区域片段"
+      ],
+      "residual": [
+        {
+          "dport": [
+            [
+              20028,
+              20028
+            ]
+          ],
+          "dst": [
+            "172.128.0.0/16"
+          ],
+          "protocols": [
+            "TCP"
+          ],
+          "sport": [
+            [
+              0,
+              65535
+            ]
+          ],
+          "src": [
+            "10.128.0.0/16"
+          ]
+        }
+      ],
+      "rule_id": "F028"
+    },
+    {
+      "counterexample": {
+        "dport": 20029,
+        "dst": "172.129.0.0",
+        "protocol": "TCP",
+        "sport": 0,
+        "src": "10.129.0.0"
+      },
+      "counterexample_raw": [
+        176226304,
+        2894135296,
+        "TCP",
+        0,
+        20029
+      ],
+      "fully_shadowed": false,
+      "index": 62,
+      "notes": [
+        "存在 1 个未覆盖区域片段"
+      ],
+      "residual": [
+        {
+          "dport": [
+            [
+              20029,
+              20029
+            ]
+          ],
+          "dst": [
+            "172.129.0.0/16"
+          ],
+          "protocols": [
+            "TCP"
+          ],
+          "sport": [
+            [
+              0,
+              65535
+            ]
+          ],
+          "src": [
+            "10.129.0.0/16"
+          ]
+        }
+      ],
+      "rule_id": "F029"
+    },
+    {
+      "counterexample": {
+        "dport": 20030,
+        "dst": "172.130.0.0",
+        "protocol": "UDP",
+        "sport": 0,
+        "src": "10.130.0.0"
+      },
+      "counterexample_raw": [
+        176291840,
+        2894200832,
+        "UDP",
+        0,
+        20030
+      ],
+      "fully_shadowed": false,
+      "index": 63,
+      "notes": [
+        "存在 1 个未覆盖区域片段"
+      ],
+      "residual": [
+        {
+          "dport": [
+            [
+              20030,
+              20030
+            ]
+          ],
+          "dst": [
+            "172.130.0.0/16"
+          ],
+          "protocols": [
+            "UDP"
+          ],
+          "sport": [
+            [
+              0,
+              65535
+            ]
+          ],
+          "src": [
+            "10.130.0.0/16"
+          ]
+        }
+      ],
+      "rule_id": "F030"
+    },
+    {
+      "counterexample": {
+        "dport": 20031,
+        "dst": "172.131.0.0",
+        "protocol": "TCP",
+        "sport": 0,
+        "src": "10.131.0.0"
+      },
+      "counterexample_raw": [
+        176357376,
+        2894266368,
+        "TCP",
+        0,
+        20031
+      ],
+      "fully_shadowed": false,
+      "index": 64,
+      "notes": [
+        "存在 1 个未覆盖区域片段"
+      ],
+      "residual": [
+        {
+          "dport": [
+            [
+              20031,
+              20031
+            ]
+          ],
+          "dst": [
+            "172.131.0.0/16"
+          ],
+          "protocols": [
+            "TCP"
+          ],
+          "sport": [
+            [
+              0,
+              65535
+            ]
+          ],
+          "src": [
+            "10.131.0.0/16"
+          ]
+        }
+      ],
+      "rule_id": "F031"
+    },
+    {
+      "counterexample": {
+        "dport": 20032,
+        "dst": "172.132.0.0",
+        "protocol": "TCP",
+        "sport": 0,
+        "src": "10.132.0.0"
+      },
+      "counterexample_raw": [
+        176422912,
+        2894331904,
+        "TCP",
+        0,
+        20032
+      ],
+      "fully_shadowed": false,
+      "index": 65,
+      "notes": [
+        "存在 1 个未覆盖区域片段"
+      ],
+      "residual": [
+        {
+          "dport": [
+            [
+              20032,
+              20032
+            ]
+          ],
+          "dst": [
+            "172.132.0.0/16"
+          ],
+          "protocols": [
+            "TCP"
+          ],
+          "sport": [
+            [
+              0,
+              65535
+            ]
+          ],
+          "src": [
+            "10.132.0.0/16"
+          ]
+        }
+      ],
+      "rule_id": "F032"
+    },
+    {
+      "counterexample": {
+        "dport": 20033,
+        "dst": "172.133.0.0",
+        "protocol": "UDP",
+        "sport": 0,
+        "src": "10.133.0.0"
+      },
+      "counterexample_raw": [
+        176488448,
+        2894397440,
+        "UDP",
+        0,
+        20033
+      ],
+      "fully_shadowed": false,
+      "index": 66,
+      "notes": [
+        "存在 1 个未覆盖区域片段"
+      ],
+      "residual": [
+        {
+          "dport": [
+            [
+              20033,
+              20033
+            ]
+          ],
+          "dst": [
+            "172.133.0.0/16"
+          ],
+          "protocols": [
+            "UDP"
+          ],
+          "sport": [
+            [
+              0,
+              65535
+            ]
+          ],
+          "src": [
+            "10.133.0.0/16"
+          ]
+        }
+      ],
+      "rule_id": "F033"
+    },
+    {
+      "counterexample": {
+        "dport": 20034,
+        "dst": "172.134.0.0",
+        "protocol": "TCP",
+        "sport": 0,
+        "src": "10.134.0.0"
+      },
+      "counterexample_raw": [
+        176553984,
+        2894462976,
+        "TCP",
+        0,
+        20034
+      ],
+      "fully_shadowed": false,
+      "index": 67,
+      "notes": [
+        "存在 1 个未覆盖区域片段"
+      ],
+      "residual": [
+        {
+          "dport": [
+            [
+              20034,
+              20034
+            ]
+          ],
+          "dst": [
+            "172.134.0.0/16"
+          ],
+          "protocols": [
+            "TCP"
+          ],
+          "sport": [
+            [
+              0,
+              65535
+            ]
+          ],
+          "src": [
+            "10.134.0.0/16"
+          ]
+        }
+      ],
+      "rule_id": "F034"
+    },
+    {
+      "counterexample": {
+        "dport": 20035,
+        "dst": "172.135.0.0",
+        "protocol": "TCP",
+        "sport": 0,
+        "src": "10.135.0.0"
+      },
+      "counterexample_raw": [
+        176619520,
+        2894528512,
+        "TCP",
+        0,
+        20035
+      ],
+      "fully_shadowed": false,
+      "index": 68,
+      "notes": [
+        "存在 1 个未覆盖区域片段"
+      ],
+      "residual": [
+        {
+          "dport": [
+            [
+              20035,
+              20035
+            ]
+          ],
+          "dst": [
+            "172.135.0.0/16"
+          ],
+          "protocols": [
+            "TCP"
+          ],
+          "sport": [
+            [
+              0,
+              65535
+            ]
+          ],
+          "src": [
+            "10.135.0.0/16"
+          ]
+        }
+      ],
+      "rule_id": "F035"
+    },
+    {
+      "counterexample": {
+        "dport": 20036,
+        "dst": "172.136.0.0",
+        "protocol": "UDP",
+        "sport": 0,
+        "src": "10.136.0.0"
+      },
+      "counterexample_raw": [
+        176685056,
+        2894594048,
+        "UDP",
+        0,
+        20036
+      ],
+      "fully_shadowed": false,
+      "index": 69,
+      "notes": [
+        "存在 1 个未覆盖区域片段"
+      ],
+      "residual": [
+        {
+          "dport": [
+            [
+              20036,
+              20036
+            ]
+          ],
+          "dst": [
+            "172.136.0.0/16"
+          ],
+          "protocols": [
+            "UDP"
+          ],
+          "sport": [
+            [
+              0,
+              65535
+            ]
+          ],
+          "src": [
+            "10.136.0.0/16"
+          ]
+        }
+      ],
+      "rule_id": "F036"
+    },
+    {
+      "counterexample": {
+        "dport": 20037,
+        "dst": "172.137.0.0",
+        "protocol": "TCP",
+        "sport": 0,
+        "src": "10.137.0.0"
+      },
+      "counterexample_raw": [
+        176750592,
+        2894659584,
+        "TCP",
+        0,
+        20037
+      ],
+      "fully_shadowed": false,
+      "index": 70,
+      "notes": [
+        "存在 1 个未覆盖区域片段"
+      ],
+      "residual": [
+        {
+          "dport": [
+            [
+              20037,
+              20037
+            ]
+          ],
+          "dst": [
+            "172.137.0.0/16"
+          ],
+          "protocols": [
+            "TCP"
+          ],
+          "sport": [
+            [
+              0,
+              65535
+            ]
+          ],
+          "src": [
+            "10.137.0.0/16"
+          ]
+        }
+      ],
+      "rule_id": "F037"
+    },
+    {
+      "counterexample": {
+        "dport": 20038,
+        "dst": "172.138.0.0",
+        "protocol": "TCP",
+        "sport": 0,
+        "src": "10.138.0.0"
+      },
+      "counterexample_raw": [
+        176816128,
+        2894725120,
+        "TCP",
+        0,
+        20038
+      ],
+      "fully_shadowed": false,
+      "index": 71,
+      "notes": [
+        "存在 1 个未覆盖区域片段"
+      ],
+      "residual": [
+        {
+          "dport": [
+            [
+              20038,
+              20038
+            ]
+          ],
+          "dst": [
+            "172.138.0.0/16"
+          ],
+          "protocols": [
+            "TCP"
+          ],
+          "sport": [
+            [
+              0,
+              65535
+            ]
+          ],
+          "src": [
+            "10.138.0.0/16"
+          ]
+        }
+      ],
+      "rule_id": "F038"
+    },
+    {
+      "counterexample": {
+        "dport": 20039,
+        "dst": "172.139.0.0",
+        "protocol": "UDP",
+        "sport": 0,
+        "src": "10.139.0.0"
+      },
+      "counterexample_raw": [
+        176881664,
+        2894790656,
+        "UDP",
+        0,
+        20039
+      ],
+      "fully_shadowed": false,
+      "index": 72,
+      "notes": [
+        "存在 1 个未覆盖区域片段"
+      ],
+      "residual": [
+        {
+          "dport": [
+            [
+              20039,
+              20039
+            ]
+          ],
+          "dst": [
+            "172.139.0.0/16"
+          ],
+          "protocols": [
+            "UDP"
+          ],
+          "sport": [
+            [
+              0,
+              65535
+            ]
+          ],
+          "src": [
+            "10.139.0.0/16"
+          ]
+        }
+      ],
+      "rule_id": "F039"
+    },
+    {
+      "counterexample": {
+        "dport": 20040,
+        "dst": "172.140.0.0",
+        "protocol": "TCP",
+        "sport": 0,
+        "src": "10.140.0.0"
+      },
+      "counterexample_raw": [
+        176947200,
+        2894856192,
+        "TCP",
+        0,
+        20040
+      ],
+      "fully_shadowed": false,
+      "index": 73,
+      "notes": [
+        "存在 1 个未覆盖区域片段"
+      ],
+      "residual": [
+        {
+          "dport": [
+            [
+              20040,
+              20040
+            ]
+          ],
+          "dst": [
+            "172.140.0.0/16"
+          ],
+          "protocols": [
+            "TCP"
+          ],
+          "sport": [
+            [
+              0,
+              65535
+            ]
+          ],
+          "src": [
+            "10.140.0.0/16"
+          ]
+        }
+      ],
+      "rule_id": "F040"
+    },
+    {
+      "counterexample": {
+        "dport": 20041,
+        "dst": "172.141.0.0",
+        "protocol": "TCP",
+        "sport": 0,
+        "src": "10.141.0.0"
+      },
+      "counterexample_raw": [
+        177012736,
+        2894921728,
+        "TCP",
+        0,
+        20041
+      ],
+      "fully_shadowed": false,
+      "index": 74,
+      "notes": [
+        "存在 1 个未覆盖区域片段"
+      ],
+      "residual": [
+        {
+          "dport": [
+            [
+              20041,
+              20041
+            ]
+          ],
+          "dst": [
+            "172.141.0.0/16"
+          ],
+          "protocols": [
+            "TCP"
+          ],
+          "sport": [
+            [
+              0,
+              65535
+            ]
+          ],
+          "src": [
+            "10.141.0.0/16"
+          ]
+        }
+      ],
+      "rule_id": "F041"
+    },
+    {
+      "counterexample": {
+        "dport": 20042,
+        "dst": "172.142.0.0",
+        "protocol": "UDP",
+        "sport": 0,
+        "src": "10.142.0.0"
+      },
+      "counterexample_raw": [
+        177078272,
+        2894987264,
+        "UDP",
+        0,
+        20042
+      ],
+      "fully_shadowed": false,
+      "index": 75,
+      "notes": [
+        "存在 1 个未覆盖区域片段"
+      ],
+      "residual": [
+        {
+          "dport": [
+            [
+              20042,
+              20042
+            ]
+          ],
+          "dst": [
+            "172.142.0.0/16"
+          ],
+          "protocols": [
+            "UDP"
+          ],
+          "sport": [
+            [
+              0,
+              65535
+            ]
+          ],
+          "src": [
+            "10.142.0.0/16"
+          ]
+        }
+      ],
+      "rule_id": "F042"
+    },
+    {
+      "counterexample": {
+        "dport": 20043,
+        "dst": "172.143.0.0",
+        "protocol": "TCP",
+        "sport": 0,
+        "src": "10.143.0.0"
+      },
+      "counterexample_raw": [
+        177143808,
+        2895052800,
+        "TCP",
+        0,
+        20043
+      ],
+      "fully_shadowed": false,
+      "index": 76,
+      "notes": [
+        "存在 1 个未覆盖区域片段"
+      ],
+      "residual": [
+        {
+          "dport": [
+            [
+              20043,
+              20043
+            ]
+          ],
+          "dst": [
+            "172.143.0.0/16"
+          ],
+          "protocols": [
+            "TCP"
+          ],
+          "sport": [
+            [
+              0,
+              65535
+            ]
+          ],
+          "src": [
+            "10.143.0.0/16"
+          ]
+        }
+      ],
+      "rule_id": "F043"
+    },
+    {
+      "counterexample": {
+        "dport": 20044,
+        "dst": "172.144.0.0",
+        "protocol": "TCP",
+        "sport": 0,
+        "src": "10.144.0.0"
+      },
+      "counterexample_raw": [
+        177209344,
+        2895118336,
+        "TCP",
+        0,
+        20044
+      ],
+      "fully_shadowed": false,
+      "index": 77,
+      "notes": [
+        "存在 1 个未覆盖区域片段"
+      ],
+      "residual": [
+        {
+          "dport": [
+            [
+              20044,
+              20044
+            ]
+          ],
+          "dst": [
+            "172.144.0.0/16"
+          ],
+          "protocols": [
+            "TCP"
+          ],
+          "sport": [
+            [
+              0,
+              65535
+            ]
+          ],
+          "src": [
+            "10.144.0.0/16"
+          ]
+        }
+      ],
+      "rule_id": "F044"
+    },
+    {
+      "counterexample": {
+        "dport": 20045,
+        "dst": "172.145.0.0",
+        "protocol": "UDP",
+        "sport": 0,
+        "src": "10.145.0.0"
+      },
+      "counterexample_raw": [
+        177274880,
+        2895183872,
+        "UDP",
+        0,
+        20045
+      ],
+      "fully_shadowed": false,
+      "index": 78,
+      "notes": [
+        "存在 1 个未覆盖区域片段"
+      ],
+      "residual": [
+        {
+          "dport": [
+            [
+              20045,
+              20045
+            ]
+          ],
+          "dst": [
+            "172.145.0.0/16"
+          ],
+          "protocols": [
+            "UDP"
+          ],
+          "sport": [
+            [
+              0,
+              65535
+            ]
+          ],
+          "src": [
+            "10.145.0.0/16"
+          ]
+        }
+      ],
+      "rule_id": "F045"
+    },
+    {
+      "counterexample": {
+        "dport": 20046,
+        "dst": "172.146.0.0",
+        "protocol": "TCP",
+        "sport": 0,
+        "src": "10.146.0.0"
+      },
+      "counterexample_raw": [
+        177340416,
+        2895249408,
+        "TCP",
+        0,
+        20046
+      ],
+      "fully_shadowed": false,
+      "index": 79,
+      "notes": [
+        "存在 1 个未覆盖区域片段"
+      ],
+      "residual": [
+        {
+          "dport": [
+            [
+              20046,
+              20046
+            ]
+          ],
+          "dst": [
+            "172.146.0.0/16"
+          ],
+          "protocols": [
+            "TCP"
+          ],
+          "sport": [
+            [
+              0,
+              65535
+            ]
+          ],
+          "src": [
+            "10.146.0.0/16"
+          ]
+        }
+      ],
+      "rule_id": "F046"
+    }
+  ],
+  "ruleset_digest": "a5977a285ae7773546e04c68b1cc78400698faaf6515416847b6e2545215edd3",
+  "ruleset_name": "synthetic-base",
+  "verification": [
+    {
+      "issues": [],
+      "rule_id": "U_A",
+      "verified": true
+    },
+    {
+      "issues": [],
+      "rule_id": "U_B",
+      "verified": true
+    },
+    {
+      "issues": [],
+      "rule_id": "U_C",
+      "verified": true
+    },
+    {
+      "issues": [],
+      "rule_id": "O_DENY",
+      "verified": true
+    },
+    {
+      "issues": [],
+      "rule_id": "O_ACCEPT",
+      "verified": true
+    },
+    {
+      "issues": [],
+      "rule_id": "N1",
+      "verified": true
+    },
+    {
+      "issues": [],
+      "rule_id": "N2",
+      "verified": true
+    },
+    {
+      "issues": [],
+      "rule_id": "N3",
+      "verified": true
+    },
+    {
+      "issues": [],
+      "rule_id": "N4",
+      "verified": true
+    },
+    {
+      "issues": [],
+      "rule_id": "N5",
+      "verified": true
+    },
+    {
+      "issues": [],
+      "rule_id": "N6",
+      "verified": true
+    },
+    {
+      "issues": [],
+      "rule_id": "B1",
+      "verified": true
+    },
+    {
+      "issues": [],
+      "rule_id": "B2",
+      "verified": true
+    },
+    {
+      "issues": [],
+      "rule_id": "B3",
+      "verified": true
+    },
+    {
+      "issues": [],
+      "rule_id": "B4",
+      "verified": true
+    },
+    {
+      "issues": [],
+      "rule_id": "B5",
+      "verified": true
+    },
+    {
+      "issues": [],
+      "rule_id": "B6",
+      "verified": true
+    },
+    {
+      "issues": [],
+      "rule_id": "B7",
+      "verified": true
+    },
+    {
+      "issues": [],
+      "rule_id": "P1",
+      "verified": true
+    },
+    {
+      "issues": [],
+      "rule_id": "P2",
+      "verified": true
+    },
+    {
+      "issues": [],
+      "rule_id": "P3",
+      "verified": true
+    },
+    {
+      "issues": [],
+      "rule_id": "I1",
+      "verified": true
+    },
+    {
+      "issues": [],
+      "rule_id": "I2",
+      "verified": true
+    },
+    {
+      "issues": [],
+      "rule_id": "I3",
+      "verified": true
+    },
+    {
+      "issues": [],
+      "rule_id": "I4",
+      "verified": true
+    },
+    {
+      "issues": [],
+      "rule_id": "I5A",
+      "verified": true
+    },
+    {
+      "issues": [],
+      "rule_id": "I5B",
+      "verified": true
+    },
+    {
+      "issues": [],
+      "rule_id": "M1",
+      "verified": true
+    },
+    {
+      "issues": [],
+      "rule_id": "H1",
+      "verified": true
+    },
+    {
+      "issues": [],
+      "rule_id": "H2",
+      "verified": true
+    },
+    {
+      "issues": [],
+      "rule_id": "H3",
+      "verified": true
+    },
+    {
+      "issues": [],
+      "rule_id": "H4",
+      "verified": true
+    },
+    {
+      "issues": [],
+      "rule_id": "H5",
+      "verified": true
+    },
+    {
+      "issues": [],
+      "rule_id": "F000",
+      "verified": true
+    },
+    {
+      "issues": [],
+      "rule_id": "F001",
+      "verified": true
+    },
+    {
+      "issues": [],
+      "rule_id": "F002",
+      "verified": true
+    },
+    {
+      "issues": [],
+      "rule_id": "F003",
+      "verified": true
+    },
+    {
+      "issues": [],
+      "rule_id": "F004",
+      "verified": true
+    },
+    {
+      "issues": [],
+      "rule_id": "F005",
+      "verified": true
+    },
+    {
+      "issues": [],
+      "rule_id": "F006",
+      "verified": true
+    },
+    {
+      "issues": [],
+      "rule_id": "F007",
+      "verified": true
+    },
+    {
+      "issues": [],
+      "rule_id": "F008",
+      "verified": true
+    },
+    {
+      "issues": [],
+      "rule_id": "F009",
+      "verified": true
+    },
+    {
+      "issues": [],
+      "rule_id": "F010",
+      "verified": true
+    },
+    {
+      "issues": [],
+      "rule_id": "F011",
+      "verified": true
+    },
+    {
+      "issues": [],
+      "rule_id": "F012",
+      "verified": true
+    },
+    {
+      "issues": [],
+      "rule_id": "F013",
+      "verified": true
+    },
+    {
+      "issues": [],
+      "rule_id": "F014",
+      "verified": true
+    },
+    {
+      "issues": [],
+      "rule_id": "F015",
+      "verified": true
+    },
+    {
+      "issues": [],
+      "rule_id": "F016",
+      "verified": true
+    },
+    {
+      "issues": [],
+      "rule_id": "F017",
+      "verified": true
+    },
+    {
+      "issues": [],
+      "rule_id": "F018",
+      "verified": true
+    },
+    {
+      "issues": [],
+      "rule_id": "F019",
+      "verified": true
+    },
+    {
+      "issues": [],
+      "rule_id": "F020",
+      "verified": true
+    },
+    {
+      "issues": [],
+      "rule_id": "F021",
+      "verified": true
+    },
+    {
+      "issues": [],
+      "rule_id": "F022",
+      "verified": true
+    },
+    {
+      "issues": [],
+      "rule_id": "F023",
+      "verified": true
+    },
+    {
+      "issues": [],
+      "rule_id": "F024",
+      "verified": true
+    },
+    {
+      "issues": [],
+      "rule_id": "F025",
+      "verified": true
+    },
+    {
+      "issues": [],
+      "rule_id": "F026",
+      "verified": true
+    },
+    {
+      "issues": [],
+      "rule_id": "F027",
+      "verified": true
+    },
+    {
+      "issues": [],
+      "rule_id": "F028",
+      "verified": true
+    },
+    {
+      "issues": [],
+      "rule_id": "F029",
+      "verified": true
+    },
+    {
+      "issues": [],
+      "rule_id": "F030",
+      "verified": true
+    },
+    {
+      "issues": [],
+      "rule_id": "F031",
+      "verified": true
+    },
+    {
+      "issues": [],
+      "rule_id": "F032",
+      "verified": true
+    },
+    {
+      "issues": [],
+      "rule_id": "F033",
+      "verified": true
+    },
+    {
+      "issues": [],
+      "rule_id": "F034",
+      "verified": true
+    },
+    {
+      "issues": [],
+      "rule_id": "F035",
+      "verified": true
+    },
+    {
+      "issues": [],
+      "rule_id": "F036",
+      "verified": true
+    },
+    {
+      "issues": [],
+      "rule_id": "F037",
+      "verified": true
+    },
+    {
+      "issues": [],
+      "rule_id": "F038",
+      "verified": true
+    },
+    {
+      "issues": [],
+      "rule_id": "F039",
+      "verified": true
+    },
+    {
+      "issues": [],
+      "rule_id": "F040",
+      "verified": true
+    },
+    {
+      "issues": [],
+      "rule_id": "F041",
+      "verified": true
+    },
+    {
+      "issues": [],
+      "rule_id": "F042",
+      "verified": true
+    },
+    {
+      "issues": [],
+      "rule_id": "F043",
+      "verified": true
+    },
+    {
+      "issues": [],
+      "rule_id": "F044",
+      "verified": true
+    },
+    {
+      "issues": [],
+      "rule_id": "F045",
+      "verified": true
+    },
+    {
+      "issues": [],
+      "rule_id": "F046",
+      "verified": true
+    }
+  ]
+}

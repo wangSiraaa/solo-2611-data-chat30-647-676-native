@@ -1,0 +1,8728 @@
+{
+  "cells": [
+    {
+      "action": "ACCEPT",
+      "category": "web",
+      "cell_id": 0,
+      "dport": [
+        [
+          80,
+          80
+        ]
+      ],
+      "dst": [
+        "172.16.0.0/16"
+      ],
+      "priority": 0,
+      "protocols": [
+        "TCP"
+      ],
+      "rule_id": "U_A",
+      "sport": [
+        [
+          0,
+          1023
+        ]
+      ],
+      "src": [
+        "10.1.0.0/16"
+      ]
+    },
+    {
+      "action": "ACCEPT",
+      "category": "web",
+      "cell_id": 1,
+      "dport": [
+        [
+          80,
+          80
+        ]
+      ],
+      "dst": [
+        "172.16.0.0/16"
+      ],
+      "priority": 1,
+      "protocols": [
+        "TCP"
+      ],
+      "rule_id": "U_B",
+      "sport": [
+        [
+          1024,
+          65535
+        ]
+      ],
+      "src": [
+        "10.1.0.0/16"
+      ]
+    },
+    {
+      "action": "DENY",
+      "category": "blocked",
+      "cell_id": 2,
+      "dport": [
+        [
+          443,
+          443
+        ]
+      ],
+      "dst": [
+        "172.19.0.0/16"
+      ],
+      "priority": 2,
+      "protocols": [
+        "TCP"
+      ],
+      "rule_id": "O_DENY",
+      "sport": [
+        [
+          0,
+          65535
+        ]
+      ],
+      "src": [
+        "10.5.0.0/16"
+      ]
+    },
+    {
+      "action": "ACCEPT",
+      "category": "app",
+      "cell_id": 3,
+      "dport": [
+        [
+          8080,
+          8080
+        ]
+      ],
+      "dst": [
+        "172.16.0.0/16"
+      ],
+      "priority": 3,
+      "protocols": [
+        "TCP"
+      ],
+      "rule_id": "N1",
+      "sport": [
+        [
+          0,
+          65535
+        ]
+      ],
+      "src": [
+        "10.2.0.0/16"
+      ]
+    },
+    {
+      "action": "ACCEPT",
+      "category": "app",
+      "cell_id": 4,
+      "dport": [
+        [
+          8080,
+          8080
+        ]
+      ],
+      "dst": [
+        "172.16.0.0/16"
+      ],
+      "priority": 4,
+      "protocols": [
+        "UDP"
+      ],
+      "rule_id": "N4",
+      "sport": [
+        [
+          0,
+          65535
+        ]
+      ],
+      "src": [
+        "10.2.0.0/16"
+      ]
+    },
+    {
+      "action": "DENY",
+      "category": "blocked",
+      "cell_id": 5,
+      "dport": [
+        [
+          8080,
+          8080
+        ]
+      ],
+      "dst": [
+        "172.16.0.0/16"
+      ],
+      "priority": 5,
+      "protocols": [
+        "TCP"
+      ],
+      "rule_id": "N6",
+      "sport": [
+        [
+          0,
+          65535
+        ]
+      ],
+      "src": [
+        "10.3.0.0/16"
+      ]
+    },
+    {
+      "action": "ACCEPT",
+      "category": "db",
+      "cell_id": 6,
+      "dport": [
+        [
+          100,
+          150
+        ]
+      ],
+      "dst": [
+        "172.18.0.0/16"
+      ],
+      "priority": 6,
+      "protocols": [
+        "TCP"
+      ],
+      "rule_id": "B1",
+      "sport": [
+        [
+          0,
+          65535
+        ]
+      ],
+      "src": [
+        "10.4.0.0/16"
+      ]
+    },
+    {
+      "action": "ACCEPT",
+      "category": "db",
+      "cell_id": 7,
+      "dport": [
+        [
+          201,
+          300
+        ]
+      ],
+      "dst": [
+        "172.18.0.0/16"
+      ],
+      "priority": 7,
+      "protocols": [
+        "TCP"
+      ],
+      "rule_id": "B2",
+      "sport": [
+        [
+          0,
+          65535
+        ]
+      ],
+      "src": [
+        "10.4.0.0/16"
+      ]
+    },
+    {
+      "action": "DENY",
+      "category": "blocked",
+      "cell_id": 8,
+      "dport": [
+        [
+          151,
+          200
+        ]
+      ],
+      "dst": [
+        "172.18.0.0/16"
+      ],
+      "priority": 8,
+      "protocols": [
+        "TCP"
+      ],
+      "rule_id": "B3",
+      "sport": [
+        [
+          0,
+          65535
+        ]
+      ],
+      "src": [
+        "10.4.0.0/16"
+      ]
+    },
+    {
+      "action": "DENY",
+      "category": "blocked",
+      "cell_id": 9,
+      "dport": [
+        [
+          99,
+          99
+        ],
+        [
+          301,
+          301
+        ]
+      ],
+      "dst": [
+        "172.18.0.0/16"
+      ],
+      "priority": 9,
+      "protocols": [
+        "TCP"
+      ],
+      "rule_id": "B4",
+      "sport": [
+        [
+          0,
+          65535
+        ]
+      ],
+      "src": [
+        "10.4.0.0/16"
+      ]
+    },
+    {
+      "action": "ACCEPT",
+      "category": "db",
+      "cell_id": 10,
+      "dport": [
+        [
+          5432,
+          5432
+        ]
+      ],
+      "dst": [
+        "172.18.1.0/24"
+      ],
+      "priority": 10,
+      "protocols": [
+        "TCP"
+      ],
+      "rule_id": "B5",
+      "sport": [
+        [
+          0,
+          1023
+        ]
+      ],
+      "src": [
+        "10.4.1.0/24"
+      ]
+    },
+    {
+      "action": "ACCEPT",
+      "category": "db",
+      "cell_id": 11,
+      "dport": [
+        [
+          5432,
+          5432
+        ]
+      ],
+      "dst": [
+        "172.18.1.0/24"
+      ],
+      "priority": 11,
+      "protocols": [
+        "TCP"
+      ],
+      "rule_id": "B6",
+      "sport": [
+        [
+          1024,
+          65535
+        ]
+      ],
+      "src": [
+        "10.4.1.0/24"
+      ]
+    },
+    {
+      "action": "DENY",
+      "category": "blocked",
+      "cell_id": 12,
+      "dport": [
+        [
+          0,
+          65535
+        ]
+      ],
+      "dst": [
+        "172.17.0.0/16"
+      ],
+      "priority": 12,
+      "protocols": [
+        "TCP"
+      ],
+      "rule_id": "P1",
+      "sport": [
+        [
+          0,
+          65535
+        ]
+      ],
+      "src": [
+        "10.3.0.0/16"
+      ]
+    },
+    {
+      "action": "ACCEPT",
+      "category": "dns",
+      "cell_id": 13,
+      "dport": [
+        [
+          0,
+          65535
+        ]
+      ],
+      "dst": [
+        "172.17.0.0/16"
+      ],
+      "priority": 13,
+      "protocols": [
+        "UDP"
+      ],
+      "rule_id": "P2",
+      "sport": [
+        [
+          0,
+          65535
+        ]
+      ],
+      "src": [
+        "10.3.0.0/16"
+      ]
+    },
+    {
+      "action": "ACCEPT",
+      "category": "mail",
+      "cell_id": 14,
+      "dport": [
+        [
+          25,
+          25
+        ]
+      ],
+      "dst": [
+        "172.21.0.0/16"
+      ],
+      "priority": 14,
+      "protocols": [
+        "TCP"
+      ],
+      "rule_id": "I1",
+      "sport": [
+        [
+          0,
+          65535
+        ]
+      ],
+      "src": [
+        "10.6.0.0/16"
+      ]
+    },
+    {
+      "action": "ACCEPT",
+      "category": "mail",
+      "cell_id": 15,
+      "dport": [
+        [
+          25,
+          25
+        ]
+      ],
+      "dst": [
+        "172.22.0.0/16"
+      ],
+      "priority": 15,
+      "protocols": [
+        "TCP"
+      ],
+      "rule_id": "I2",
+      "sport": [
+        [
+          0,
+          65535
+        ]
+      ],
+      "src": [
+        "10.7.0.0/16"
+      ]
+    },
+    {
+      "action": "ACCEPT",
+      "category": "mail",
+      "cell_id": 16,
+      "dport": [
+        [
+          25,
+          25
+        ]
+      ],
+      "dst": [
+        "172.22.0.0/16"
+      ],
+      "priority": 16,
+      "protocols": [
+        "TCP"
+      ],
+      "rule_id": "I3",
+      "sport": [
+        [
+          0,
+          65535
+        ]
+      ],
+      "src": [
+        "10.6.0.0/16"
+      ]
+    },
+    {
+      "action": "ACCEPT",
+      "category": "mail",
+      "cell_id": 17,
+      "dport": [
+        [
+          25,
+          25
+        ]
+      ],
+      "dst": [
+        "172.21.0.0/16"
+      ],
+      "priority": 17,
+      "protocols": [
+        "TCP"
+      ],
+      "rule_id": "I4",
+      "sport": [
+        [
+          0,
+          65535
+        ]
+      ],
+      "src": [
+        "10.7.0.0/16"
+      ]
+    },
+    {
+      "action": "DENY",
+      "category": "multicast",
+      "cell_id": 18,
+      "dport": [
+        [
+          0,
+          65535
+        ]
+      ],
+      "dst": [
+        "224.0.0.0/4"
+      ],
+      "priority": 18,
+      "protocols": [
+        "UDP"
+      ],
+      "rule_id": "M1",
+      "sport": [
+        [
+          0,
+          65535
+        ]
+      ],
+      "src": [
+        "0.0.0.0/0"
+      ]
+    },
+    {
+      "action": "ACCEPT",
+      "category": "web",
+      "cell_id": 19,
+      "dport": [
+        [
+          443,
+          443
+        ]
+      ],
+      "dst": [
+        "198.51.100.0/24"
+      ],
+      "priority": 19,
+      "protocols": [
+        "TCP"
+      ],
+      "rule_id": "H1",
+      "sport": [
+        [
+          0,
+          65535
+        ]
+      ],
+      "src": [
+        "203.0.113.0/24"
+      ]
+    },
+    {
+      "action": "DENY",
+      "category": "blocked",
+      "cell_id": 20,
+      "dport": [
+        [
+          8443,
+          8443
+        ]
+      ],
+      "dst": [
+        "198.51.100.0/24"
+      ],
+      "priority": 20,
+      "protocols": [
+        "TCP"
+      ],
+      "rule_id": "H2",
+      "sport": [
+        [
+          0,
+          65535
+        ]
+      ],
+      "src": [
+        "203.0.113.0/24"
+      ]
+    },
+    {
+      "action": "DENY",
+      "category": "reserved",
+      "cell_id": 21,
+      "dport": [
+        [
+          0,
+          65535
+        ]
+      ],
+      "dst": [
+        "0.0.0.0/1",
+        "128.0.0.0/2",
+        "192.0.0.0/3",
+        "240.0.0.0/4"
+      ],
+      "priority": 21,
+      "protocols": [
+        "UDP"
+      ],
+      "rule_id": "H3",
+      "sport": [
+        [
+          0,
+          65535
+        ]
+      ],
+      "src": [
+        "240.0.0.0/4"
+      ]
+    },
+    {
+      "action": "ACCEPT",
+      "category": "web",
+      "cell_id": 22,
+      "dport": [
+        [
+          80,
+          80
+        ]
+      ],
+      "dst": [
+        "172.20.0.0/16"
+      ],
+      "priority": 22,
+      "protocols": [
+        "TCP"
+      ],
+      "rule_id": "H4",
+      "sport": [
+        [
+          0,
+          65535
+        ]
+      ],
+      "src": [
+        "128.0.0.0/1"
+      ]
+    },
+    {
+      "action": "ACCEPT",
+      "category": "fill0",
+      "cell_id": 23,
+      "dport": [
+        [
+          20000,
+          20000
+        ]
+      ],
+      "dst": [
+        "172.100.0.0/16"
+      ],
+      "priority": 23,
+      "protocols": [
+        "UDP"
+      ],
+      "rule_id": "F000",
+      "sport": [
+        [
+          0,
+          65535
+        ]
+      ],
+      "src": [
+        "10.100.0.0/16"
+      ]
+    },
+    {
+      "action": "ACCEPT",
+      "category": "fill1",
+      "cell_id": 24,
+      "dport": [
+        [
+          20001,
+          20001
+        ]
+      ],
+      "dst": [
+        "172.101.0.0/16"
+      ],
+      "priority": 24,
+      "protocols": [
+        "TCP"
+      ],
+      "rule_id": "F001",
+      "sport": [
+        [
+          0,
+          65535
+        ]
+      ],
+      "src": [
+        "10.101.0.0/16"
+      ]
+    },
+    {
+      "action": "ACCEPT",
+      "category": "fill2",
+      "cell_id": 25,
+      "dport": [
+        [
+          20002,
+          20002
+        ]
+      ],
+      "dst": [
+        "172.102.0.0/16"
+      ],
+      "priority": 25,
+      "protocols": [
+        "TCP"
+      ],
+      "rule_id": "F002",
+      "sport": [
+        [
+          0,
+          65535
+        ]
+      ],
+      "src": [
+        "10.102.0.0/16"
+      ]
+    },
+    {
+      "action": "ACCEPT",
+      "category": "fill3",
+      "cell_id": 26,
+      "dport": [
+        [
+          20003,
+          20003
+        ]
+      ],
+      "dst": [
+        "172.103.0.0/16"
+      ],
+      "priority": 26,
+      "protocols": [
+        "UDP"
+      ],
+      "rule_id": "F003",
+      "sport": [
+        [
+          0,
+          65535
+        ]
+      ],
+      "src": [
+        "10.103.0.0/16"
+      ]
+    },
+    {
+      "action": "ACCEPT",
+      "category": "fill4",
+      "cell_id": 27,
+      "dport": [
+        [
+          20004,
+          20004
+        ]
+      ],
+      "dst": [
+        "172.104.0.0/16"
+      ],
+      "priority": 27,
+      "protocols": [
+        "TCP"
+      ],
+      "rule_id": "F004",
+      "sport": [
+        [
+          0,
+          65535
+        ]
+      ],
+      "src": [
+        "10.104.0.0/16"
+      ]
+    },
+    {
+      "action": "ACCEPT",
+      "category": "fill0",
+      "cell_id": 28,
+      "dport": [
+        [
+          20005,
+          20005
+        ]
+      ],
+      "dst": [
+        "172.105.0.0/16"
+      ],
+      "priority": 28,
+      "protocols": [
+        "TCP"
+      ],
+      "rule_id": "F005",
+      "sport": [
+        [
+          0,
+          65535
+        ]
+      ],
+      "src": [
+        "10.105.0.0/16"
+      ]
+    },
+    {
+      "action": "ACCEPT",
+      "category": "fill1",
+      "cell_id": 29,
+      "dport": [
+        [
+          20006,
+          20006
+        ]
+      ],
+      "dst": [
+        "172.106.0.0/16"
+      ],
+      "priority": 29,
+      "protocols": [
+        "UDP"
+      ],
+      "rule_id": "F006",
+      "sport": [
+        [
+          0,
+          65535
+        ]
+      ],
+      "src": [
+        "10.106.0.0/16"
+      ]
+    },
+    {
+      "action": "ACCEPT",
+      "category": "fill2",
+      "cell_id": 30,
+      "dport": [
+        [
+          20007,
+          20007
+        ]
+      ],
+      "dst": [
+        "172.107.0.0/16"
+      ],
+      "priority": 30,
+      "protocols": [
+        "TCP"
+      ],
+      "rule_id": "F007",
+      "sport": [
+        [
+          0,
+          65535
+        ]
+      ],
+      "src": [
+        "10.107.0.0/16"
+      ]
+    },
+    {
+      "action": "ACCEPT",
+      "category": "fill3",
+      "cell_id": 31,
+      "dport": [
+        [
+          20008,
+          20008
+        ]
+      ],
+      "dst": [
+        "172.108.0.0/16"
+      ],
+      "priority": 31,
+      "protocols": [
+        "TCP"
+      ],
+      "rule_id": "F008",
+      "sport": [
+        [
+          0,
+          65535
+        ]
+      ],
+      "src": [
+        "10.108.0.0/16"
+      ]
+    },
+    {
+      "action": "ACCEPT",
+      "category": "fill4",
+      "cell_id": 32,
+      "dport": [
+        [
+          20009,
+          20009
+        ]
+      ],
+      "dst": [
+        "172.109.0.0/16"
+      ],
+      "priority": 32,
+      "protocols": [
+        "UDP"
+      ],
+      "rule_id": "F009",
+      "sport": [
+        [
+          0,
+          65535
+        ]
+      ],
+      "src": [
+        "10.109.0.0/16"
+      ]
+    },
+    {
+      "action": "ACCEPT",
+      "category": "fill0",
+      "cell_id": 33,
+      "dport": [
+        [
+          20010,
+          20010
+        ]
+      ],
+      "dst": [
+        "172.110.0.0/16"
+      ],
+      "priority": 33,
+      "protocols": [
+        "TCP"
+      ],
+      "rule_id": "F010",
+      "sport": [
+        [
+          0,
+          65535
+        ]
+      ],
+      "src": [
+        "10.110.0.0/16"
+      ]
+    },
+    {
+      "action": "ACCEPT",
+      "category": "fill1",
+      "cell_id": 34,
+      "dport": [
+        [
+          20011,
+          20011
+        ]
+      ],
+      "dst": [
+        "172.111.0.0/16"
+      ],
+      "priority": 34,
+      "protocols": [
+        "TCP"
+      ],
+      "rule_id": "F011",
+      "sport": [
+        [
+          0,
+          65535
+        ]
+      ],
+      "src": [
+        "10.111.0.0/16"
+      ]
+    },
+    {
+      "action": "ACCEPT",
+      "category": "fill2",
+      "cell_id": 35,
+      "dport": [
+        [
+          20012,
+          20012
+        ]
+      ],
+      "dst": [
+        "172.112.0.0/16"
+      ],
+      "priority": 35,
+      "protocols": [
+        "UDP"
+      ],
+      "rule_id": "F012",
+      "sport": [
+        [
+          0,
+          65535
+        ]
+      ],
+      "src": [
+        "10.112.0.0/16"
+      ]
+    },
+    {
+      "action": "ACCEPT",
+      "category": "fill3",
+      "cell_id": 36,
+      "dport": [
+        [
+          20013,
+          20013
+        ]
+      ],
+      "dst": [
+        "172.113.0.0/16"
+      ],
+      "priority": 36,
+      "protocols": [
+        "TCP"
+      ],
+      "rule_id": "F013",
+      "sport": [
+        [
+          0,
+          65535
+        ]
+      ],
+      "src": [
+        "10.113.0.0/16"
+      ]
+    },
+    {
+      "action": "ACCEPT",
+      "category": "fill4",
+      "cell_id": 37,
+      "dport": [
+        [
+          20014,
+          20014
+        ]
+      ],
+      "dst": [
+        "172.114.0.0/16"
+      ],
+      "priority": 37,
+      "protocols": [
+        "TCP"
+      ],
+      "rule_id": "F014",
+      "sport": [
+        [
+          0,
+          65535
+        ]
+      ],
+      "src": [
+        "10.114.0.0/16"
+      ]
+    },
+    {
+      "action": "ACCEPT",
+      "category": "fill0",
+      "cell_id": 38,
+      "dport": [
+        [
+          20015,
+          20015
+        ]
+      ],
+      "dst": [
+        "172.115.0.0/16"
+      ],
+      "priority": 38,
+      "protocols": [
+        "UDP"
+      ],
+      "rule_id": "F015",
+      "sport": [
+        [
+          0,
+          65535
+        ]
+      ],
+      "src": [
+        "10.115.0.0/16"
+      ]
+    },
+    {
+      "action": "ACCEPT",
+      "category": "fill1",
+      "cell_id": 39,
+      "dport": [
+        [
+          20016,
+          20016
+        ]
+      ],
+      "dst": [
+        "172.116.0.0/16"
+      ],
+      "priority": 39,
+      "protocols": [
+        "TCP"
+      ],
+      "rule_id": "F016",
+      "sport": [
+        [
+          0,
+          65535
+        ]
+      ],
+      "src": [
+        "10.116.0.0/16"
+      ]
+    },
+    {
+      "action": "ACCEPT",
+      "category": "fill2",
+      "cell_id": 40,
+      "dport": [
+        [
+          20017,
+          20017
+        ]
+      ],
+      "dst": [
+        "172.117.0.0/16"
+      ],
+      "priority": 40,
+      "protocols": [
+        "TCP"
+      ],
+      "rule_id": "F017",
+      "sport": [
+        [
+          0,
+          65535
+        ]
+      ],
+      "src": [
+        "10.117.0.0/16"
+      ]
+    },
+    {
+      "action": "ACCEPT",
+      "category": "fill3",
+      "cell_id": 41,
+      "dport": [
+        [
+          20018,
+          20018
+        ]
+      ],
+      "dst": [
+        "172.118.0.0/16"
+      ],
+      "priority": 41,
+      "protocols": [
+        "UDP"
+      ],
+      "rule_id": "F018",
+      "sport": [
+        [
+          0,
+          65535
+        ]
+      ],
+      "src": [
+        "10.118.0.0/16"
+      ]
+    },
+    {
+      "action": "ACCEPT",
+      "category": "fill4",
+      "cell_id": 42,
+      "dport": [
+        [
+          20019,
+          20019
+        ]
+      ],
+      "dst": [
+        "172.119.0.0/16"
+      ],
+      "priority": 42,
+      "protocols": [
+        "TCP"
+      ],
+      "rule_id": "F019",
+      "sport": [
+        [
+          0,
+          65535
+        ]
+      ],
+      "src": [
+        "10.119.0.0/16"
+      ]
+    },
+    {
+      "action": "ACCEPT",
+      "category": "fill0",
+      "cell_id": 43,
+      "dport": [
+        [
+          20020,
+          20020
+        ]
+      ],
+      "dst": [
+        "172.120.0.0/16"
+      ],
+      "priority": 43,
+      "protocols": [
+        "TCP"
+      ],
+      "rule_id": "F020",
+      "sport": [
+        [
+          0,
+          65535
+        ]
+      ],
+      "src": [
+        "10.120.0.0/16"
+      ]
+    },
+    {
+      "action": "ACCEPT",
+      "category": "fill1",
+      "cell_id": 44,
+      "dport": [
+        [
+          20021,
+          20021
+        ]
+      ],
+      "dst": [
+        "172.121.0.0/16"
+      ],
+      "priority": 44,
+      "protocols": [
+        "UDP"
+      ],
+      "rule_id": "F021",
+      "sport": [
+        [
+          0,
+          65535
+        ]
+      ],
+      "src": [
+        "10.121.0.0/16"
+      ]
+    },
+    {
+      "action": "ACCEPT",
+      "category": "fill2",
+      "cell_id": 45,
+      "dport": [
+        [
+          20022,
+          20022
+        ]
+      ],
+      "dst": [
+        "172.122.0.0/16"
+      ],
+      "priority": 45,
+      "protocols": [
+        "TCP"
+      ],
+      "rule_id": "F022",
+      "sport": [
+        [
+          0,
+          65535
+        ]
+      ],
+      "src": [
+        "10.122.0.0/16"
+      ]
+    },
+    {
+      "action": "ACCEPT",
+      "category": "fill3",
+      "cell_id": 46,
+      "dport": [
+        [
+          20023,
+          20023
+        ]
+      ],
+      "dst": [
+        "172.123.0.0/16"
+      ],
+      "priority": 46,
+      "protocols": [
+        "TCP"
+      ],
+      "rule_id": "F023",
+      "sport": [
+        [
+          0,
+          65535
+        ]
+      ],
+      "src": [
+        "10.123.0.0/16"
+      ]
+    },
+    {
+      "action": "ACCEPT",
+      "category": "fill4",
+      "cell_id": 47,
+      "dport": [
+        [
+          20024,
+          20024
+        ]
+      ],
+      "dst": [
+        "172.124.0.0/16"
+      ],
+      "priority": 47,
+      "protocols": [
+        "UDP"
+      ],
+      "rule_id": "F024",
+      "sport": [
+        [
+          0,
+          65535
+        ]
+      ],
+      "src": [
+        "10.124.0.0/16"
+      ]
+    },
+    {
+      "action": "ACCEPT",
+      "category": "fill0",
+      "cell_id": 48,
+      "dport": [
+        [
+          20025,
+          20025
+        ]
+      ],
+      "dst": [
+        "172.125.0.0/16"
+      ],
+      "priority": 48,
+      "protocols": [
+        "TCP"
+      ],
+      "rule_id": "F025",
+      "sport": [
+        [
+          0,
+          65535
+        ]
+      ],
+      "src": [
+        "10.125.0.0/16"
+      ]
+    },
+    {
+      "action": "ACCEPT",
+      "category": "fill1",
+      "cell_id": 49,
+      "dport": [
+        [
+          20026,
+          20026
+        ]
+      ],
+      "dst": [
+        "172.126.0.0/16"
+      ],
+      "priority": 49,
+      "protocols": [
+        "TCP"
+      ],
+      "rule_id": "F026",
+      "sport": [
+        [
+          0,
+          65535
+        ]
+      ],
+      "src": [
+        "10.126.0.0/16"
+      ]
+    },
+    {
+      "action": "ACCEPT",
+      "category": "fill2",
+      "cell_id": 50,
+      "dport": [
+        [
+          20027,
+          20027
+        ]
+      ],
+      "dst": [
+        "172.127.0.0/16"
+      ],
+      "priority": 50,
+      "protocols": [
+        "UDP"
+      ],
+      "rule_id": "F027",
+      "sport": [
+        [
+          0,
+          65535
+        ]
+      ],
+      "src": [
+        "10.127.0.0/16"
+      ]
+    },
+    {
+      "action": "ACCEPT",
+      "category": "fill3",
+      "cell_id": 51,
+      "dport": [
+        [
+          20028,
+          20028
+        ]
+      ],
+      "dst": [
+        "172.128.0.0/16"
+      ],
+      "priority": 51,
+      "protocols": [
+        "TCP"
+      ],
+      "rule_id": "F028",
+      "sport": [
+        [
+          0,
+          65535
+        ]
+      ],
+      "src": [
+        "10.128.0.0/16"
+      ]
+    },
+    {
+      "action": "ACCEPT",
+      "category": "fill4",
+      "cell_id": 52,
+      "dport": [
+        [
+          20029,
+          20029
+        ]
+      ],
+      "dst": [
+        "172.129.0.0/16"
+      ],
+      "priority": 52,
+      "protocols": [
+        "TCP"
+      ],
+      "rule_id": "F029",
+      "sport": [
+        [
+          0,
+          65535
+        ]
+      ],
+      "src": [
+        "10.129.0.0/16"
+      ]
+    },
+    {
+      "action": "ACCEPT",
+      "category": "fill0",
+      "cell_id": 53,
+      "dport": [
+        [
+          20030,
+          20030
+        ]
+      ],
+      "dst": [
+        "172.130.0.0/16"
+      ],
+      "priority": 53,
+      "protocols": [
+        "UDP"
+      ],
+      "rule_id": "F030",
+      "sport": [
+        [
+          0,
+          65535
+        ]
+      ],
+      "src": [
+        "10.130.0.0/16"
+      ]
+    },
+    {
+      "action": "ACCEPT",
+      "category": "fill1",
+      "cell_id": 54,
+      "dport": [
+        [
+          20031,
+          20031
+        ]
+      ],
+      "dst": [
+        "172.131.0.0/16"
+      ],
+      "priority": 54,
+      "protocols": [
+        "TCP"
+      ],
+      "rule_id": "F031",
+      "sport": [
+        [
+          0,
+          65535
+        ]
+      ],
+      "src": [
+        "10.131.0.0/16"
+      ]
+    },
+    {
+      "action": "ACCEPT",
+      "category": "fill2",
+      "cell_id": 55,
+      "dport": [
+        [
+          20032,
+          20032
+        ]
+      ],
+      "dst": [
+        "172.132.0.0/16"
+      ],
+      "priority": 55,
+      "protocols": [
+        "TCP"
+      ],
+      "rule_id": "F032",
+      "sport": [
+        [
+          0,
+          65535
+        ]
+      ],
+      "src": [
+        "10.132.0.0/16"
+      ]
+    },
+    {
+      "action": "ACCEPT",
+      "category": "fill3",
+      "cell_id": 56,
+      "dport": [
+        [
+          20033,
+          20033
+        ]
+      ],
+      "dst": [
+        "172.133.0.0/16"
+      ],
+      "priority": 56,
+      "protocols": [
+        "UDP"
+      ],
+      "rule_id": "F033",
+      "sport": [
+        [
+          0,
+          65535
+        ]
+      ],
+      "src": [
+        "10.133.0.0/16"
+      ]
+    },
+    {
+      "action": "ACCEPT",
+      "category": "fill4",
+      "cell_id": 57,
+      "dport": [
+        [
+          20034,
+          20034
+        ]
+      ],
+      "dst": [
+        "172.134.0.0/16"
+      ],
+      "priority": 57,
+      "protocols": [
+        "TCP"
+      ],
+      "rule_id": "F034",
+      "sport": [
+        [
+          0,
+          65535
+        ]
+      ],
+      "src": [
+        "10.134.0.0/16"
+      ]
+    },
+    {
+      "action": "ACCEPT",
+      "category": "fill0",
+      "cell_id": 58,
+      "dport": [
+        [
+          20035,
+          20035
+        ]
+      ],
+      "dst": [
+        "172.135.0.0/16"
+      ],
+      "priority": 58,
+      "protocols": [
+        "TCP"
+      ],
+      "rule_id": "F035",
+      "sport": [
+        [
+          0,
+          65535
+        ]
+      ],
+      "src": [
+        "10.135.0.0/16"
+      ]
+    },
+    {
+      "action": "ACCEPT",
+      "category": "fill1",
+      "cell_id": 59,
+      "dport": [
+        [
+          20036,
+          20036
+        ]
+      ],
+      "dst": [
+        "172.136.0.0/16"
+      ],
+      "priority": 59,
+      "protocols": [
+        "UDP"
+      ],
+      "rule_id": "F036",
+      "sport": [
+        [
+          0,
+          65535
+        ]
+      ],
+      "src": [
+        "10.136.0.0/16"
+      ]
+    },
+    {
+      "action": "ACCEPT",
+      "category": "fill2",
+      "cell_id": 60,
+      "dport": [
+        [
+          20037,
+          20037
+        ]
+      ],
+      "dst": [
+        "172.137.0.0/16"
+      ],
+      "priority": 60,
+      "protocols": [
+        "TCP"
+      ],
+      "rule_id": "F037",
+      "sport": [
+        [
+          0,
+          65535
+        ]
+      ],
+      "src": [
+        "10.137.0.0/16"
+      ]
+    },
+    {
+      "action": "ACCEPT",
+      "category": "fill3",
+      "cell_id": 61,
+      "dport": [
+        [
+          20038,
+          20038
+        ]
+      ],
+      "dst": [
+        "172.138.0.0/16"
+      ],
+      "priority": 61,
+      "protocols": [
+        "TCP"
+      ],
+      "rule_id": "F038",
+      "sport": [
+        [
+          0,
+          65535
+        ]
+      ],
+      "src": [
+        "10.138.0.0/16"
+      ]
+    },
+    {
+      "action": "ACCEPT",
+      "category": "fill4",
+      "cell_id": 62,
+      "dport": [
+        [
+          20039,
+          20039
+        ]
+      ],
+      "dst": [
+        "172.139.0.0/16"
+      ],
+      "priority": 62,
+      "protocols": [
+        "UDP"
+      ],
+      "rule_id": "F039",
+      "sport": [
+        [
+          0,
+          65535
+        ]
+      ],
+      "src": [
+        "10.139.0.0/16"
+      ]
+    },
+    {
+      "action": "ACCEPT",
+      "category": "fill0",
+      "cell_id": 63,
+      "dport": [
+        [
+          20040,
+          20040
+        ]
+      ],
+      "dst": [
+        "172.140.0.0/16"
+      ],
+      "priority": 63,
+      "protocols": [
+        "TCP"
+      ],
+      "rule_id": "F040",
+      "sport": [
+        [
+          0,
+          65535
+        ]
+      ],
+      "src": [
+        "10.140.0.0/16"
+      ]
+    },
+    {
+      "action": "ACCEPT",
+      "category": "fill1",
+      "cell_id": 64,
+      "dport": [
+        [
+          20041,
+          20041
+        ]
+      ],
+      "dst": [
+        "172.141.0.0/16"
+      ],
+      "priority": 64,
+      "protocols": [
+        "TCP"
+      ],
+      "rule_id": "F041",
+      "sport": [
+        [
+          0,
+          65535
+        ]
+      ],
+      "src": [
+        "10.141.0.0/16"
+      ]
+    },
+    {
+      "action": "ACCEPT",
+      "category": "fill2",
+      "cell_id": 65,
+      "dport": [
+        [
+          20042,
+          20042
+        ]
+      ],
+      "dst": [
+        "172.142.0.0/16"
+      ],
+      "priority": 65,
+      "protocols": [
+        "UDP"
+      ],
+      "rule_id": "F042",
+      "sport": [
+        [
+          0,
+          65535
+        ]
+      ],
+      "src": [
+        "10.142.0.0/16"
+      ]
+    },
+    {
+      "action": "ACCEPT",
+      "category": "fill3",
+      "cell_id": 66,
+      "dport": [
+        [
+          20043,
+          20043
+        ]
+      ],
+      "dst": [
+        "172.143.0.0/16"
+      ],
+      "priority": 66,
+      "protocols": [
+        "TCP"
+      ],
+      "rule_id": "F043",
+      "sport": [
+        [
+          0,
+          65535
+        ]
+      ],
+      "src": [
+        "10.143.0.0/16"
+      ]
+    },
+    {
+      "action": "ACCEPT",
+      "category": "fill4",
+      "cell_id": 67,
+      "dport": [
+        [
+          20044,
+          20044
+        ]
+      ],
+      "dst": [
+        "172.144.0.0/16"
+      ],
+      "priority": 67,
+      "protocols": [
+        "TCP"
+      ],
+      "rule_id": "F044",
+      "sport": [
+        [
+          0,
+          65535
+        ]
+      ],
+      "src": [
+        "10.144.0.0/16"
+      ]
+    },
+    {
+      "action": "ACCEPT",
+      "category": "fill0",
+      "cell_id": 68,
+      "dport": [
+        [
+          20045,
+          20045
+        ]
+      ],
+      "dst": [
+        "172.145.0.0/16"
+      ],
+      "priority": 68,
+      "protocols": [
+        "UDP"
+      ],
+      "rule_id": "F045",
+      "sport": [
+        [
+          0,
+          65535
+        ]
+      ],
+      "src": [
+        "10.145.0.0/16"
+      ]
+    },
+    {
+      "action": "ACCEPT",
+      "category": "fill1",
+      "cell_id": 69,
+      "dport": [
+        [
+          20046,
+          20046
+        ]
+      ],
+      "dst": [
+        "172.146.0.0/16"
+      ],
+      "priority": 69,
+      "protocols": [
+        "TCP"
+      ],
+      "rule_id": "F046",
+      "sport": [
+        [
+          0,
+          65535
+        ]
+      ],
+      "src": [
+        "10.146.0.0/16"
+      ]
+    },
+    {
+      "action": "ACCEPT",
+      "category": "default",
+      "cell_id": 70,
+      "dport": [
+        [
+          0,
+          65535
+        ]
+      ],
+      "dst": [
+        "0.0.0.0/1",
+        "128.0.0.0/2",
+        "192.0.0.0/3",
+        "240.0.0.0/4"
+      ],
+      "priority": 70,
+      "protocols": [
+        "TCP",
+        "UDP"
+      ],
+      "rule_id": "DEFAULT",
+      "sport": [
+        [
+          0,
+          65535
+        ]
+      ],
+      "src": [
+        "0.0.0.0/5",
+        "8.0.0.0/7",
+        "10.0.0.0/16",
+        "10.8.0.0/13",
+        "10.16.0.0/12",
+        "10.32.0.0/11",
+        "10.64.0.0/11",
+        "10.96.0.0/14",
+        "10.147.0.0/16",
+        "10.148.0.0/14",
+        "10.152.0.0/13",
+        "10.160.0.0/11",
+        "10.192.0.0/10",
+        "11.0.0.0/8",
+        "12.0.0.0/6",
+        "16.0.0.0/4",
+        "32.0.0.0/3",
+        "64.0.0.0/2"
+      ]
+    },
+    {
+      "action": "ACCEPT",
+      "category": "default",
+      "cell_id": 71,
+      "dport": [
+        [
+          0,
+          65535
+        ]
+      ],
+      "dst": [
+        "0.0.0.0/1",
+        "128.0.0.0/3",
+        "160.0.0.0/5",
+        "168.0.0.0/6",
+        "172.0.0.0/9",
+        "172.128.0.0/12",
+        "172.144.0.0/15",
+        "172.147.0.0/16",
+        "172.148.0.0/14",
+        "172.152.0.0/13",
+        "172.160.0.0/11",
+        "172.192.0.0/10",
+        "173.0.0.0/8",
+        "174.0.0.0/7",
+        "176.0.0.0/4",
+        "192.0.0.0/3",
+        "240.0.0.0/4"
+      ],
+      "priority": 71,
+      "protocols": [
+        "TCP",
+        "UDP"
+      ],
+      "rule_id": "DEFAULT",
+      "sport": [
+        [
+          0,
+          65535
+        ]
+      ],
+      "src": [
+        "10.146.0.0/16"
+      ]
+    },
+    {
+      "action": "ACCEPT",
+      "category": "default",
+      "cell_id": 72,
+      "dport": [
+        [
+          0,
+          65535
+        ]
+      ],
+      "dst": [
+        "172.146.0.0/16"
+      ],
+      "priority": 72,
+      "protocols": [
+        "UDP"
+      ],
+      "rule_id": "DEFAULT",
+      "sport": [
+        [
+          0,
+          65535
+        ]
+      ],
+      "src": [
+        "10.146.0.0/16"
+      ]
+    },
+    {
+      "action": "ACCEPT",
+      "category": "default",
+      "cell_id": 73,
+      "dport": [
+        [
+          0,
+          20045
+        ],
+        [
+          20047,
+          65535
+        ]
+      ],
+      "dst": [
+        "172.146.0.0/16"
+      ],
+      "priority": 73,
+      "protocols": [
+        "TCP"
+      ],
+      "rule_id": "DEFAULT",
+      "sport": [
+        [
+          0,
+          65535
+        ]
+      ],
+      "src": [
+        "10.146.0.0/16"
+      ]
+    },
+    {
+      "action": "ACCEPT",
+      "category": "default",
+      "cell_id": 74,
+      "dport": [
+        [
+          0,
+          65535
+        ]
+      ],
+      "dst": [
+        "0.0.0.0/1",
+        "128.0.0.0/3",
+        "160.0.0.0/5",
+        "168.0.0.0/6",
+        "172.0.0.0/9",
+        "172.128.0.0/12",
+        "172.144.0.0/16",
+        "172.146.0.0/15",
+        "172.148.0.0/14",
+        "172.152.0.0/13",
+        "172.160.0.0/11",
+        "172.192.0.0/10",
+        "173.0.0.0/8",
+        "174.0.0.0/7",
+        "176.0.0.0/4",
+        "192.0.0.0/3",
+        "240.0.0.0/4"
+      ],
+      "priority": 74,
+      "protocols": [
+        "TCP",
+        "UDP"
+      ],
+      "rule_id": "DEFAULT",
+      "sport": [
+        [
+          0,
+          65535
+        ]
+      ],
+      "src": [
+        "10.145.0.0/16"
+      ]
+    },
+    {
+      "action": "ACCEPT",
+      "category": "default",
+      "cell_id": 75,
+      "dport": [
+        [
+          0,
+          65535
+        ]
+      ],
+      "dst": [
+        "172.145.0.0/16"
+      ],
+      "priority": 75,
+      "protocols": [
+        "TCP"
+      ],
+      "rule_id": "DEFAULT",
+      "sport": [
+        [
+          0,
+          65535
+        ]
+      ],
+      "src": [
+        "10.145.0.0/16"
+      ]
+    },
+    {
+      "action": "ACCEPT",
+      "category": "default",
+      "cell_id": 76,
+      "dport": [
+        [
+          0,
+          20044
+        ],
+        [
+          20046,
+          65535
+        ]
+      ],
+      "dst": [
+        "172.145.0.0/16"
+      ],
+      "priority": 76,
+      "protocols": [
+        "UDP"
+      ],
+      "rule_id": "DEFAULT",
+      "sport": [
+        [
+          0,
+          65535
+        ]
+      ],
+      "src": [
+        "10.145.0.0/16"
+      ]
+    },
+    {
+      "action": "ACCEPT",
+      "category": "default",
+      "cell_id": 77,
+      "dport": [
+        [
+          0,
+          65535
+        ]
+      ],
+      "dst": [
+        "0.0.0.0/1",
+        "128.0.0.0/3",
+        "160.0.0.0/5",
+        "168.0.0.0/6",
+        "172.0.0.0/9",
+        "172.128.0.0/12",
+        "172.145.0.0/16",
+        "172.146.0.0/15",
+        "172.148.0.0/14",
+        "172.152.0.0/13",
+        "172.160.0.0/11",
+        "172.192.0.0/10",
+        "173.0.0.0/8",
+        "174.0.0.0/7",
+        "176.0.0.0/4",
+        "192.0.0.0/3",
+        "240.0.0.0/4"
+      ],
+      "priority": 77,
+      "protocols": [
+        "TCP",
+        "UDP"
+      ],
+      "rule_id": "DEFAULT",
+      "sport": [
+        [
+          0,
+          65535
+        ]
+      ],
+      "src": [
+        "10.144.0.0/16"
+      ]
+    },
+    {
+      "action": "ACCEPT",
+      "category": "default",
+      "cell_id": 78,
+      "dport": [
+        [
+          0,
+          65535
+        ]
+      ],
+      "dst": [
+        "172.144.0.0/16"
+      ],
+      "priority": 78,
+      "protocols": [
+        "UDP"
+      ],
+      "rule_id": "DEFAULT",
+      "sport": [
+        [
+          0,
+          65535
+        ]
+      ],
+      "src": [
+        "10.144.0.0/16"
+      ]
+    },
+    {
+      "action": "ACCEPT",
+      "category": "default",
+      "cell_id": 79,
+      "dport": [
+        [
+          0,
+          20043
+        ],
+        [
+          20045,
+          65535
+        ]
+      ],
+      "dst": [
+        "172.144.0.0/16"
+      ],
+      "priority": 79,
+      "protocols": [
+        "TCP"
+      ],
+      "rule_id": "DEFAULT",
+      "sport": [
+        [
+          0,
+          65535
+        ]
+      ],
+      "src": [
+        "10.144.0.0/16"
+      ]
+    },
+    {
+      "action": "ACCEPT",
+      "category": "default",
+      "cell_id": 80,
+      "dport": [
+        [
+          0,
+          65535
+        ]
+      ],
+      "dst": [
+        "0.0.0.0/1",
+        "128.0.0.0/3",
+        "160.0.0.0/5",
+        "168.0.0.0/6",
+        "172.0.0.0/9",
+        "172.128.0.0/13",
+        "172.136.0.0/14",
+        "172.140.0.0/15",
+        "172.142.0.0/16",
+        "172.144.0.0/12",
+        "172.160.0.0/11",
+        "172.192.0.0/10",
+        "173.0.0.0/8",
+        "174.0.0.0/7",
+        "176.0.0.0/4",
+        "192.0.0.0/3",
+        "240.0.0.0/4"
+      ],
+      "priority": 80,
+      "protocols": [
+        "TCP",
+        "UDP"
+      ],
+      "rule_id": "DEFAULT",
+      "sport": [
+        [
+          0,
+          65535
+        ]
+      ],
+      "src": [
+        "10.143.0.0/16"
+      ]
+    },
+    {
+      "action": "ACCEPT",
+      "category": "default",
+      "cell_id": 81,
+      "dport": [
+        [
+          0,
+          65535
+        ]
+      ],
+      "dst": [
+        "172.143.0.0/16"
+      ],
+      "priority": 81,
+      "protocols": [
+        "UDP"
+      ],
+      "rule_id": "DEFAULT",
+      "sport": [
+        [
+          0,
+          65535
+        ]
+      ],
+      "src": [
+        "10.143.0.0/16"
+      ]
+    },
+    {
+      "action": "ACCEPT",
+      "category": "default",
+      "cell_id": 82,
+      "dport": [
+        [
+          0,
+          20042
+        ],
+        [
+          20044,
+          65535
+        ]
+      ],
+      "dst": [
+        "172.143.0.0/16"
+      ],
+      "priority": 82,
+      "protocols": [
+        "TCP"
+      ],
+      "rule_id": "DEFAULT",
+      "sport": [
+        [
+          0,
+          65535
+        ]
+      ],
+      "src": [
+        "10.143.0.0/16"
+      ]
+    },
+    {
+      "action": "ACCEPT",
+      "category": "default",
+      "cell_id": 83,
+      "dport": [
+        [
+          0,
+          65535
+        ]
+      ],
+      "dst": [
+        "0.0.0.0/1",
+        "128.0.0.0/3",
+        "160.0.0.0/5",
+        "168.0.0.0/6",
+        "172.0.0.0/9",
+        "172.128.0.0/13",
+        "172.136.0.0/14",
+        "172.140.0.0/15",
+        "172.143.0.0/16",
+        "172.144.0.0/12",
+        "172.160.0.0/11",
+        "172.192.0.0/10",
+        "173.0.0.0/8",
+        "174.0.0.0/7",
+        "176.0.0.0/4",
+        "192.0.0.0/3",
+        "240.0.0.0/4"
+      ],
+      "priority": 83,
+      "protocols": [
+        "TCP",
+        "UDP"
+      ],
+      "rule_id": "DEFAULT",
+      "sport": [
+        [
+          0,
+          65535
+        ]
+      ],
+      "src": [
+        "10.142.0.0/16"
+      ]
+    },
+    {
+      "action": "ACCEPT",
+      "category": "default",
+      "cell_id": 84,
+      "dport": [
+        [
+          0,
+          65535
+        ]
+      ],
+      "dst": [
+        "172.142.0.0/16"
+      ],
+      "priority": 84,
+      "protocols": [
+        "TCP"
+      ],
+      "rule_id": "DEFAULT",
+      "sport": [
+        [
+          0,
+          65535
+        ]
+      ],
+      "src": [
+        "10.142.0.0/16"
+      ]
+    },
+    {
+      "action": "ACCEPT",
+      "category": "default",
+      "cell_id": 85,
+      "dport": [
+        [
+          0,
+          20041
+        ],
+        [
+          20043,
+          65535
+        ]
+      ],
+      "dst": [
+        "172.142.0.0/16"
+      ],
+      "priority": 85,
+      "protocols": [
+        "UDP"
+      ],
+      "rule_id": "DEFAULT",
+      "sport": [
+        [
+          0,
+          65535
+        ]
+      ],
+      "src": [
+        "10.142.0.0/16"
+      ]
+    },
+    {
+      "action": "ACCEPT",
+      "category": "default",
+      "cell_id": 86,
+      "dport": [
+        [
+          0,
+          65535
+        ]
+      ],
+      "dst": [
+        "0.0.0.0/1",
+        "128.0.0.0/3",
+        "160.0.0.0/5",
+        "168.0.0.0/6",
+        "172.0.0.0/9",
+        "172.128.0.0/13",
+        "172.136.0.0/14",
+        "172.140.0.0/16",
+        "172.142.0.0/15",
+        "172.144.0.0/12",
+        "172.160.0.0/11",
+        "172.192.0.0/10",
+        "173.0.0.0/8",
+        "174.0.0.0/7",
+        "176.0.0.0/4",
+        "192.0.0.0/3",
+        "240.0.0.0/4"
+      ],
+      "priority": 86,
+      "protocols": [
+        "TCP",
+        "UDP"
+      ],
+      "rule_id": "DEFAULT",
+      "sport": [
+        [
+          0,
+          65535
+        ]
+      ],
+      "src": [
+        "10.141.0.0/16"
+      ]
+    },
+    {
+      "action": "ACCEPT",
+      "category": "default",
+      "cell_id": 87,
+      "dport": [
+        [
+          0,
+          65535
+        ]
+      ],
+      "dst": [
+        "172.141.0.0/16"
+      ],
+      "priority": 87,
+      "protocols": [
+        "UDP"
+      ],
+      "rule_id": "DEFAULT",
+      "sport": [
+        [
+          0,
+          65535
+        ]
+      ],
+      "src": [
+        "10.141.0.0/16"
+      ]
+    },
+    {
+      "action": "ACCEPT",
+      "category": "default",
+      "cell_id": 88,
+      "dport": [
+        [
+          0,
+          20040
+        ],
+        [
+          20042,
+          65535
+        ]
+      ],
+      "dst": [
+        "172.141.0.0/16"
+      ],
+      "priority": 88,
+      "protocols": [
+        "TCP"
+      ],
+      "rule_id": "DEFAULT",
+      "sport": [
+        [
+          0,
+          65535
+        ]
+      ],
+      "src": [
+        "10.141.0.0/16"
+      ]
+    },
+    {
+      "action": "ACCEPT",
+      "category": "default",
+      "cell_id": 89,
+      "dport": [
+        [
+          0,
+          65535
+        ]
+      ],
+      "dst": [
+        "0.0.0.0/1",
+        "128.0.0.0/3",
+        "160.0.0.0/5",
+        "168.0.0.0/6",
+        "172.0.0.0/9",
+        "172.128.0.0/13",
+        "172.136.0.0/14",
+        "172.141.0.0/16",
+        "172.142.0.0/15",
+        "172.144.0.0/12",
+        "172.160.0.0/11",
+        "172.192.0.0/10",
+        "173.0.0.0/8",
+        "174.0.0.0/7",
+        "176.0.0.0/4",
+        "192.0.0.0/3",
+        "240.0.0.0/4"
+      ],
+      "priority": 89,
+      "protocols": [
+        "TCP",
+        "UDP"
+      ],
+      "rule_id": "DEFAULT",
+      "sport": [
+        [
+          0,
+          65535
+        ]
+      ],
+      "src": [
+        "10.140.0.0/16"
+      ]
+    },
+    {
+      "action": "ACCEPT",
+      "category": "default",
+      "cell_id": 90,
+      "dport": [
+        [
+          0,
+          65535
+        ]
+      ],
+      "dst": [
+        "172.140.0.0/16"
+      ],
+      "priority": 90,
+      "protocols": [
+        "UDP"
+      ],
+      "rule_id": "DEFAULT",
+      "sport": [
+        [
+          0,
+          65535
+        ]
+      ],
+      "src": [
+        "10.140.0.0/16"
+      ]
+    },
+    {
+      "action": "ACCEPT",
+      "category": "default",
+      "cell_id": 91,
+      "dport": [
+        [
+          0,
+          20039
+        ],
+        [
+          20041,
+          65535
+        ]
+      ],
+      "dst": [
+        "172.140.0.0/16"
+      ],
+      "priority": 91,
+      "protocols": [
+        "TCP"
+      ],
+      "rule_id": "DEFAULT",
+      "sport": [
+        [
+          0,
+          65535
+        ]
+      ],
+      "src": [
+        "10.140.0.0/16"
+      ]
+    },
+    {
+      "action": "ACCEPT",
+      "category": "default",
+      "cell_id": 92,
+      "dport": [
+        [
+          0,
+          65535
+        ]
+      ],
+      "dst": [
+        "0.0.0.0/1",
+        "128.0.0.0/3",
+        "160.0.0.0/5",
+        "168.0.0.0/6",
+        "172.0.0.0/9",
+        "172.128.0.0/13",
+        "172.136.0.0/15",
+        "172.138.0.0/16",
+        "172.140.0.0/14",
+        "172.144.0.0/12",
+        "172.160.0.0/11",
+        "172.192.0.0/10",
+        "173.0.0.0/8",
+        "174.0.0.0/7",
+        "176.0.0.0/4",
+        "192.0.0.0/3",
+        "240.0.0.0/4"
+      ],
+      "priority": 92,
+      "protocols": [
+        "TCP",
+        "UDP"
+      ],
+      "rule_id": "DEFAULT",
+      "sport": [
+        [
+          0,
+          65535
+        ]
+      ],
+      "src": [
+        "10.139.0.0/16"
+      ]
+    },
+    {
+      "action": "ACCEPT",
+      "category": "default",
+      "cell_id": 93,
+      "dport": [
+        [
+          0,
+          65535
+        ]
+      ],
+      "dst": [
+        "172.139.0.0/16"
+      ],
+      "priority": 93,
+      "protocols": [
+        "TCP"
+      ],
+      "rule_id": "DEFAULT",
+      "sport": [
+        [
+          0,
+          65535
+        ]
+      ],
+      "src": [
+        "10.139.0.0/16"
+      ]
+    },
+    {
+      "action": "ACCEPT",
+      "category": "default",
+      "cell_id": 94,
+      "dport": [
+        [
+          0,
+          20038
+        ],
+        [
+          20040,
+          65535
+        ]
+      ],
+      "dst": [
+        "172.139.0.0/16"
+      ],
+      "priority": 94,
+      "protocols": [
+        "UDP"
+      ],
+      "rule_id": "DEFAULT",
+      "sport": [
+        [
+          0,
+          65535
+        ]
+      ],
+      "src": [
+        "10.139.0.0/16"
+      ]
+    },
+    {
+      "action": "ACCEPT",
+      "category": "default",
+      "cell_id": 95,
+      "dport": [
+        [
+          0,
+          65535
+        ]
+      ],
+      "dst": [
+        "0.0.0.0/1",
+        "128.0.0.0/3",
+        "160.0.0.0/5",
+        "168.0.0.0/6",
+        "172.0.0.0/9",
+        "172.128.0.0/13",
+        "172.136.0.0/15",
+        "172.139.0.0/16",
+        "172.140.0.0/14",
+        "172.144.0.0/12",
+        "172.160.0.0/11",
+        "172.192.0.0/10",
+        "173.0.0.0/8",
+        "174.0.0.0/7",
+        "176.0.0.0/4",
+        "192.0.0.0/3",
+        "240.0.0.0/4"
+      ],
+      "priority": 95,
+      "protocols": [
+        "TCP",
+        "UDP"
+      ],
+      "rule_id": "DEFAULT",
+      "sport": [
+        [
+          0,
+          65535
+        ]
+      ],
+      "src": [
+        "10.138.0.0/16"
+      ]
+    },
+    {
+      "action": "ACCEPT",
+      "category": "default",
+      "cell_id": 96,
+      "dport": [
+        [
+          0,
+          65535
+        ]
+      ],
+      "dst": [
+        "172.138.0.0/16"
+      ],
+      "priority": 96,
+      "protocols": [
+        "UDP"
+      ],
+      "rule_id": "DEFAULT",
+      "sport": [
+        [
+          0,
+          65535
+        ]
+      ],
+      "src": [
+        "10.138.0.0/16"
+      ]
+    },
+    {
+      "action": "ACCEPT",
+      "category": "default",
+      "cell_id": 97,
+      "dport": [
+        [
+          0,
+          20037
+        ],
+        [
+          20039,
+          65535
+        ]
+      ],
+      "dst": [
+        "172.138.0.0/16"
+      ],
+      "priority": 97,
+      "protocols": [
+        "TCP"
+      ],
+      "rule_id": "DEFAULT",
+      "sport": [
+        [
+          0,
+          65535
+        ]
+      ],
+      "src": [
+        "10.138.0.0/16"
+      ]
+    },
+    {
+      "action": "ACCEPT",
+      "category": "default",
+      "cell_id": 98,
+      "dport": [
+        [
+          0,
+          65535
+        ]
+      ],
+      "dst": [
+        "0.0.0.0/1",
+        "128.0.0.0/3",
+        "160.0.0.0/5",
+        "168.0.0.0/6",
+        "172.0.0.0/9",
+        "172.128.0.0/13",
+        "172.136.0.0/16",
+        "172.138.0.0/15",
+        "172.140.0.0/14",
+        "172.144.0.0/12",
+        "172.160.0.0/11",
+        "172.192.0.0/10",
+        "173.0.0.0/8",
+        "174.0.0.0/7",
+        "176.0.0.0/4",
+        "192.0.0.0/3",
+        "240.0.0.0/4"
+      ],
+      "priority": 98,
+      "protocols": [
+        "TCP",
+        "UDP"
+      ],
+      "rule_id": "DEFAULT",
+      "sport": [
+        [
+          0,
+          65535
+        ]
+      ],
+      "src": [
+        "10.137.0.0/16"
+      ]
+    },
+    {
+      "action": "ACCEPT",
+      "category": "default",
+      "cell_id": 99,
+      "dport": [
+        [
+          0,
+          65535
+        ]
+      ],
+      "dst": [
+        "172.137.0.0/16"
+      ],
+      "priority": 99,
+      "protocols": [
+        "UDP"
+      ],
+      "rule_id": "DEFAULT",
+      "sport": [
+        [
+          0,
+          65535
+        ]
+      ],
+      "src": [
+        "10.137.0.0/16"
+      ]
+    },
+    {
+      "action": "ACCEPT",
+      "category": "default",
+      "cell_id": 100,
+      "dport": [
+        [
+          0,
+          20036
+        ],
+        [
+          20038,
+          65535
+        ]
+      ],
+      "dst": [
+        "172.137.0.0/16"
+      ],
+      "priority": 100,
+      "protocols": [
+        "TCP"
+      ],
+      "rule_id": "DEFAULT",
+      "sport": [
+        [
+          0,
+          65535
+        ]
+      ],
+      "src": [
+        "10.137.0.0/16"
+      ]
+    },
+    {
+      "action": "ACCEPT",
+      "category": "default",
+      "cell_id": 101,
+      "dport": [
+        [
+          0,
+          65535
+        ]
+      ],
+      "dst": [
+        "0.0.0.0/1",
+        "128.0.0.0/3",
+        "160.0.0.0/5",
+        "168.0.0.0/6",
+        "172.0.0.0/9",
+        "172.128.0.0/13",
+        "172.137.0.0/16",
+        "172.138.0.0/15",
+        "172.140.0.0/14",
+        "172.144.0.0/12",
+        "172.160.0.0/11",
+        "172.192.0.0/10",
+        "173.0.0.0/8",
+        "174.0.0.0/7",
+        "176.0.0.0/4",
+        "192.0.0.0/3",
+        "240.0.0.0/4"
+      ],
+      "priority": 101,
+      "protocols": [
+        "TCP",
+        "UDP"
+      ],
+      "rule_id": "DEFAULT",
+      "sport": [
+        [
+          0,
+          65535
+        ]
+      ],
+      "src": [
+        "10.136.0.0/16"
+      ]
+    },
+    {
+      "action": "ACCEPT",
+      "category": "default",
+      "cell_id": 102,
+      "dport": [
+        [
+          0,
+          65535
+        ]
+      ],
+      "dst": [
+        "172.136.0.0/16"
+      ],
+      "priority": 102,
+      "protocols": [
+        "TCP"
+      ],
+      "rule_id": "DEFAULT",
+      "sport": [
+        [
+          0,
+          65535
+        ]
+      ],
+      "src": [
+        "10.136.0.0/16"
+      ]
+    },
+    {
+      "action": "ACCEPT",
+      "category": "default",
+      "cell_id": 103,
+      "dport": [
+        [
+          0,
+          20035
+        ],
+        [
+          20037,
+          65535
+        ]
+      ],
+      "dst": [
+        "172.136.0.0/16"
+      ],
+      "priority": 103,
+      "protocols": [
+        "UDP"
+      ],
+      "rule_id": "DEFAULT",
+      "sport": [
+        [
+          0,
+          65535
+        ]
+      ],
+      "src": [
+        "10.136.0.0/16"
+      ]
+    },
+    {
+      "action": "ACCEPT",
+      "category": "default",
+      "cell_id": 104,
+      "dport": [
+        [
+          0,
+          65535
+        ]
+      ],
+      "dst": [
+        "0.0.0.0/1",
+        "128.0.0.0/3",
+        "160.0.0.0/5",
+        "168.0.0.0/6",
+        "172.0.0.0/9",
+        "172.128.0.0/14",
+        "172.132.0.0/15",
+        "172.134.0.0/16",
+        "172.136.0.0/13",
+        "172.144.0.0/12",
+        "172.160.0.0/11",
+        "172.192.0.0/10",
+        "173.0.0.0/8",
+        "174.0.0.0/7",
+        "176.0.0.0/4",
+        "192.0.0.0/3",
+        "240.0.0.0/4"
+      ],
+      "priority": 104,
+      "protocols": [
+        "TCP",
+        "UDP"
+      ],
+      "rule_id": "DEFAULT",
+      "sport": [
+        [
+          0,
+          65535
+        ]
+      ],
+      "src": [
+        "10.135.0.0/16"
+      ]
+    },
+    {
+      "action": "ACCEPT",
+      "category": "default",
+      "cell_id": 105,
+      "dport": [
+        [
+          0,
+          65535
+        ]
+      ],
+      "dst": [
+        "172.135.0.0/16"
+      ],
+      "priority": 105,
+      "protocols": [
+        "UDP"
+      ],
+      "rule_id": "DEFAULT",
+      "sport": [
+        [
+          0,
+          65535
+        ]
+      ],
+      "src": [
+        "10.135.0.0/16"
+      ]
+    },
+    {
+      "action": "ACCEPT",
+      "category": "default",
+      "cell_id": 106,
+      "dport": [
+        [
+          0,
+          20034
+        ],
+        [
+          20036,
+          65535
+        ]
+      ],
+      "dst": [
+        "172.135.0.0/16"
+      ],
+      "priority": 106,
+      "protocols": [
+        "TCP"
+      ],
+      "rule_id": "DEFAULT",
+      "sport": [
+        [
+          0,
+          65535
+        ]
+      ],
+      "src": [
+        "10.135.0.0/16"
+      ]
+    },
+    {
+      "action": "ACCEPT",
+      "category": "default",
+      "cell_id": 107,
+      "dport": [
+        [
+          0,
+          65535
+        ]
+      ],
+      "dst": [
+        "0.0.0.0/1",
+        "128.0.0.0/3",
+        "160.0.0.0/5",
+        "168.0.0.0/6",
+        "172.0.0.0/9",
+        "172.128.0.0/14",
+        "172.132.0.0/15",
+        "172.135.0.0/16",
+        "172.136.0.0/13",
+        "172.144.0.0/12",
+        "172.160.0.0/11",
+        "172.192.0.0/10",
+        "173.0.0.0/8",
+        "174.0.0.0/7",
+        "176.0.0.0/4",
+        "192.0.0.0/3",
+        "240.0.0.0/4"
+      ],
+      "priority": 107,
+      "protocols": [
+        "TCP",
+        "UDP"
+      ],
+      "rule_id": "DEFAULT",
+      "sport": [
+        [
+          0,
+          65535
+        ]
+      ],
+      "src": [
+        "10.134.0.0/16"
+      ]
+    },
+    {
+      "action": "ACCEPT",
+      "category": "default",
+      "cell_id": 108,
+      "dport": [
+        [
+          0,
+          65535
+        ]
+      ],
+      "dst": [
+        "172.134.0.0/16"
+      ],
+      "priority": 108,
+      "protocols": [
+        "UDP"
+      ],
+      "rule_id": "DEFAULT",
+      "sport": [
+        [
+          0,
+          65535
+        ]
+      ],
+      "src": [
+        "10.134.0.0/16"
+      ]
+    },
+    {
+      "action": "ACCEPT",
+      "category": "default",
+      "cell_id": 109,
+      "dport": [
+        [
+          0,
+          20033
+        ],
+        [
+          20035,
+          65535
+        ]
+      ],
+      "dst": [
+        "172.134.0.0/16"
+      ],
+      "priority": 109,
+      "protocols": [
+        "TCP"
+      ],
+      "rule_id": "DEFAULT",
+      "sport": [
+        [
+          0,
+          65535
+        ]
+      ],
+      "src": [
+        "10.134.0.0/16"
+      ]
+    },
+    {
+      "action": "ACCEPT",
+      "category": "default",
+      "cell_id": 110,
+      "dport": [
+        [
+          0,
+          65535
+        ]
+      ],
+      "dst": [
+        "0.0.0.0/1",
+        "128.0.0.0/3",
+        "160.0.0.0/5",
+        "168.0.0.0/6",
+        "172.0.0.0/9",
+        "172.128.0.0/14",
+        "172.132.0.0/16",
+        "172.134.0.0/15",
+        "172.136.0.0/13",
+        "172.144.0.0/12",
+        "172.160.0.0/11",
+        "172.192.0.0/10",
+        "173.0.0.0/8",
+        "174.0.0.0/7",
+        "176.0.0.0/4",
+        "192.0.0.0/3",
+        "240.0.0.0/4"
+      ],
+      "priority": 110,
+      "protocols": [
+        "TCP",
+        "UDP"
+      ],
+      "rule_id": "DEFAULT",
+      "sport": [
+        [
+          0,
+          65535
+        ]
+      ],
+      "src": [
+        "10.133.0.0/16"
+      ]
+    },
+    {
+      "action": "ACCEPT",
+      "category": "default",
+      "cell_id": 111,
+      "dport": [
+        [
+          0,
+          65535
+        ]
+      ],
+      "dst": [
+        "172.133.0.0/16"
+      ],
+      "priority": 111,
+      "protocols": [
+        "TCP"
+      ],
+      "rule_id": "DEFAULT",
+      "sport": [
+        [
+          0,
+          65535
+        ]
+      ],
+      "src": [
+        "10.133.0.0/16"
+      ]
+    },
+    {
+      "action": "ACCEPT",
+      "category": "default",
+      "cell_id": 112,
+      "dport": [
+        [
+          0,
+          20032
+        ],
+        [
+          20034,
+          65535
+        ]
+      ],
+      "dst": [
+        "172.133.0.0/16"
+      ],
+      "priority": 112,
+      "protocols": [
+        "UDP"
+      ],
+      "rule_id": "DEFAULT",
+      "sport": [
+        [
+          0,
+          65535
+        ]
+      ],
+      "src": [
+        "10.133.0.0/16"
+      ]
+    },
+    {
+      "action": "ACCEPT",
+      "category": "default",
+      "cell_id": 113,
+      "dport": [
+        [
+          0,
+          65535
+        ]
+      ],
+      "dst": [
+        "0.0.0.0/1",
+        "128.0.0.0/3",
+        "160.0.0.0/5",
+        "168.0.0.0/6",
+        "172.0.0.0/9",
+        "172.128.0.0/14",
+        "172.133.0.0/16",
+        "172.134.0.0/15",
+        "172.136.0.0/13",
+        "172.144.0.0/12",
+        "172.160.0.0/11",
+        "172.192.0.0/10",
+        "173.0.0.0/8",
+        "174.0.0.0/7",
+        "176.0.0.0/4",
+        "192.0.0.0/3",
+        "240.0.0.0/4"
+      ],
+      "priority": 113,
+      "protocols": [
+        "TCP",
+        "UDP"
+      ],
+      "rule_id": "DEFAULT",
+      "sport": [
+        [
+          0,
+          65535
+        ]
+      ],
+      "src": [
+        "10.132.0.0/16"
+      ]
+    },
+    {
+      "action": "ACCEPT",
+      "category": "default",
+      "cell_id": 114,
+      "dport": [
+        [
+          0,
+          65535
+        ]
+      ],
+      "dst": [
+        "172.132.0.0/16"
+      ],
+      "priority": 114,
+      "protocols": [
+        "UDP"
+      ],
+      "rule_id": "DEFAULT",
+      "sport": [
+        [
+          0,
+          65535
+        ]
+      ],
+      "src": [
+        "10.132.0.0/16"
+      ]
+    },
+    {
+      "action": "ACCEPT",
+      "category": "default",
+      "cell_id": 115,
+      "dport": [
+        [
+          0,
+          20031
+        ],
+        [
+          20033,
+          65535
+        ]
+      ],
+      "dst": [
+        "172.132.0.0/16"
+      ],
+      "priority": 115,
+      "protocols": [
+        "TCP"
+      ],
+      "rule_id": "DEFAULT",
+      "sport": [
+        [
+          0,
+          65535
+        ]
+      ],
+      "src": [
+        "10.132.0.0/16"
+      ]
+    },
+    {
+      "action": "ACCEPT",
+      "category": "default",
+      "cell_id": 116,
+      "dport": [
+        [
+          0,
+          65535
+        ]
+      ],
+      "dst": [
+        "0.0.0.0/1",
+        "128.0.0.0/3",
+        "160.0.0.0/5",
+        "168.0.0.0/6",
+        "172.0.0.0/9",
+        "172.128.0.0/15",
+        "172.130.0.0/16",
+        "172.132.0.0/14",
+        "172.136.0.0/13",
+        "172.144.0.0/12",
+        "172.160.0.0/11",
+        "172.192.0.0/10",
+        "173.0.0.0/8",
+        "174.0.0.0/7",
+        "176.0.0.0/4",
+        "192.0.0.0/3",
+        "240.0.0.0/4"
+      ],
+      "priority": 116,
+      "protocols": [
+        "TCP",
+        "UDP"
+      ],
+      "rule_id": "DEFAULT",
+      "sport": [
+        [
+          0,
+          65535
+        ]
+      ],
+      "src": [
+        "10.131.0.0/16"
+      ]
+    },
+    {
+      "action": "ACCEPT",
+      "category": "default",
+      "cell_id": 117,
+      "dport": [
+        [
+          0,
+          65535
+        ]
+      ],
+      "dst": [
+        "172.131.0.0/16"
+      ],
+      "priority": 117,
+      "protocols": [
+        "UDP"
+      ],
+      "rule_id": "DEFAULT",
+      "sport": [
+        [
+          0,
+          65535
+        ]
+      ],
+      "src": [
+        "10.131.0.0/16"
+      ]
+    },
+    {
+      "action": "ACCEPT",
+      "category": "default",
+      "cell_id": 118,
+      "dport": [
+        [
+          0,
+          20030
+        ],
+        [
+          20032,
+          65535
+        ]
+      ],
+      "dst": [
+        "172.131.0.0/16"
+      ],
+      "priority": 118,
+      "protocols": [
+        "TCP"
+      ],
+      "rule_id": "DEFAULT",
+      "sport": [
+        [
+          0,
+          65535
+        ]
+      ],
+      "src": [
+        "10.131.0.0/16"
+      ]
+    },
+    {
+      "action": "ACCEPT",
+      "category": "default",
+      "cell_id": 119,
+      "dport": [
+        [
+          0,
+          65535
+        ]
+      ],
+      "dst": [
+        "0.0.0.0/1",
+        "128.0.0.0/3",
+        "160.0.0.0/5",
+        "168.0.0.0/6",
+        "172.0.0.0/9",
+        "172.128.0.0/15",
+        "172.131.0.0/16",
+        "172.132.0.0/14",
+        "172.136.0.0/13",
+        "172.144.0.0/12",
+        "172.160.0.0/11",
+        "172.192.0.0/10",
+        "173.0.0.0/8",
+        "174.0.0.0/7",
+        "176.0.0.0/4",
+        "192.0.0.0/3",
+        "240.0.0.0/4"
+      ],
+      "priority": 119,
+      "protocols": [
+        "TCP",
+        "UDP"
+      ],
+      "rule_id": "DEFAULT",
+      "sport": [
+        [
+          0,
+          65535
+        ]
+      ],
+      "src": [
+        "10.130.0.0/16"
+      ]
+    },
+    {
+      "action": "ACCEPT",
+      "category": "default",
+      "cell_id": 120,
+      "dport": [
+        [
+          0,
+          65535
+        ]
+      ],
+      "dst": [
+        "172.130.0.0/16"
+      ],
+      "priority": 120,
+      "protocols": [
+        "TCP"
+      ],
+      "rule_id": "DEFAULT",
+      "sport": [
+        [
+          0,
+          65535
+        ]
+      ],
+      "src": [
+        "10.130.0.0/16"
+      ]
+    },
+    {
+      "action": "ACCEPT",
+      "category": "default",
+      "cell_id": 121,
+      "dport": [
+        [
+          0,
+          20029
+        ],
+        [
+          20031,
+          65535
+        ]
+      ],
+      "dst": [
+        "172.130.0.0/16"
+      ],
+      "priority": 121,
+      "protocols": [
+        "UDP"
+      ],
+      "rule_id": "DEFAULT",
+      "sport": [
+        [
+          0,
+          65535
+        ]
+      ],
+      "src": [
+        "10.130.0.0/16"
+      ]
+    },
+    {
+      "action": "ACCEPT",
+      "category": "default",
+      "cell_id": 122,
+      "dport": [
+        [
+          0,
+          65535
+        ]
+      ],
+      "dst": [
+        "0.0.0.0/1",
+        "128.0.0.0/3",
+        "160.0.0.0/5",
+        "168.0.0.0/6",
+        "172.0.0.0/9",
+        "172.128.0.0/16",
+        "172.130.0.0/15",
+        "172.132.0.0/14",
+        "172.136.0.0/13",
+        "172.144.0.0/12",
+        "172.160.0.0/11",
+        "172.192.0.0/10",
+        "173.0.0.0/8",
+        "174.0.0.0/7",
+        "176.0.0.0/4",
+        "192.0.0.0/3",
+        "240.0.0.0/4"
+      ],
+      "priority": 122,
+      "protocols": [
+        "TCP",
+        "UDP"
+      ],
+      "rule_id": "DEFAULT",
+      "sport": [
+        [
+          0,
+          65535
+        ]
+      ],
+      "src": [
+        "10.129.0.0/16"
+      ]
+    },
+    {
+      "action": "ACCEPT",
+      "category": "default",
+      "cell_id": 123,
+      "dport": [
+        [
+          0,
+          65535
+        ]
+      ],
+      "dst": [
+        "172.129.0.0/16"
+      ],
+      "priority": 123,
+      "protocols": [
+        "UDP"
+      ],
+      "rule_id": "DEFAULT",
+      "sport": [
+        [
+          0,
+          65535
+        ]
+      ],
+      "src": [
+        "10.129.0.0/16"
+      ]
+    },
+    {
+      "action": "ACCEPT",
+      "category": "default",
+      "cell_id": 124,
+      "dport": [
+        [
+          0,
+          20028
+        ],
+        [
+          20030,
+          65535
+        ]
+      ],
+      "dst": [
+        "172.129.0.0/16"
+      ],
+      "priority": 124,
+      "protocols": [
+        "TCP"
+      ],
+      "rule_id": "DEFAULT",
+      "sport": [
+        [
+          0,
+          65535
+        ]
+      ],
+      "src": [
+        "10.129.0.0/16"
+      ]
+    },
+    {
+      "action": "ACCEPT",
+      "category": "default",
+      "cell_id": 125,
+      "dport": [
+        [
+          0,
+          65535
+        ]
+      ],
+      "dst": [
+        "0.0.0.0/1",
+        "128.0.0.0/3",
+        "160.0.0.0/5",
+        "168.0.0.0/6",
+        "172.0.0.0/9",
+        "172.129.0.0/16",
+        "172.130.0.0/15",
+        "172.132.0.0/14",
+        "172.136.0.0/13",
+        "172.144.0.0/12",
+        "172.160.0.0/11",
+        "172.192.0.0/10",
+        "173.0.0.0/8",
+        "174.0.0.0/7",
+        "176.0.0.0/4",
+        "192.0.0.0/3",
+        "240.0.0.0/4"
+      ],
+      "priority": 125,
+      "protocols": [
+        "TCP",
+        "UDP"
+      ],
+      "rule_id": "DEFAULT",
+      "sport": [
+        [
+          0,
+          65535
+        ]
+      ],
+      "src": [
+        "10.128.0.0/16"
+      ]
+    },
+    {
+      "action": "ACCEPT",
+      "category": "default",
+      "cell_id": 126,
+      "dport": [
+        [
+          0,
+          65535
+        ]
+      ],
+      "dst": [
+        "172.128.0.0/16"
+      ],
+      "priority": 126,
+      "protocols": [
+        "UDP"
+      ],
+      "rule_id": "DEFAULT",
+      "sport": [
+        [
+          0,
+          65535
+        ]
+      ],
+      "src": [
+        "10.128.0.0/16"
+      ]
+    },
+    {
+      "action": "ACCEPT",
+      "category": "default",
+      "cell_id": 127,
+      "dport": [
+        [
+          0,
+          20027
+        ],
+        [
+          20029,
+          65535
+        ]
+      ],
+      "dst": [
+        "172.128.0.0/16"
+      ],
+      "priority": 127,
+      "protocols": [
+        "TCP"
+      ],
+      "rule_id": "DEFAULT",
+      "sport": [
+        [
+          0,
+          65535
+        ]
+      ],
+      "src": [
+        "10.128.0.0/16"
+      ]
+    },
+    {
+      "action": "ACCEPT",
+      "category": "default",
+      "cell_id": 128,
+      "dport": [
+        [
+          0,
+          65535
+        ]
+      ],
+      "dst": [
+        "0.0.0.0/1",
+        "128.0.0.0/3",
+        "160.0.0.0/5",
+        "168.0.0.0/6",
+        "172.0.0.0/10",
+        "172.64.0.0/11",
+        "172.96.0.0/12",
+        "172.112.0.0/13",
+        "172.120.0.0/14",
+        "172.124.0.0/15",
+        "172.126.0.0/16",
+        "172.128.0.0/9",
+        "173.0.0.0/8",
+        "174.0.0.0/7",
+        "176.0.0.0/4",
+        "192.0.0.0/3",
+        "240.0.0.0/4"
+      ],
+      "priority": 128,
+      "protocols": [
+        "TCP",
+        "UDP"
+      ],
+      "rule_id": "DEFAULT",
+      "sport": [
+        [
+          0,
+          65535
+        ]
+      ],
+      "src": [
+        "10.127.0.0/16"
+      ]
+    },
+    {
+      "action": "ACCEPT",
+      "category": "default",
+      "cell_id": 129,
+      "dport": [
+        [
+          0,
+          65535
+        ]
+      ],
+      "dst": [
+        "172.127.0.0/16"
+      ],
+      "priority": 129,
+      "protocols": [
+        "TCP"
+      ],
+      "rule_id": "DEFAULT",
+      "sport": [
+        [
+          0,
+          65535
+        ]
+      ],
+      "src": [
+        "10.127.0.0/16"
+      ]
+    },
+    {
+      "action": "ACCEPT",
+      "category": "default",
+      "cell_id": 130,
+      "dport": [
+        [
+          0,
+          20026
+        ],
+        [
+          20028,
+          65535
+        ]
+      ],
+      "dst": [
+        "172.127.0.0/16"
+      ],
+      "priority": 130,
+      "protocols": [
+        "UDP"
+      ],
+      "rule_id": "DEFAULT",
+      "sport": [
+        [
+          0,
+          65535
+        ]
+      ],
+      "src": [
+        "10.127.0.0/16"
+      ]
+    },
+    {
+      "action": "ACCEPT",
+      "category": "default",
+      "cell_id": 131,
+      "dport": [
+        [
+          0,
+          65535
+        ]
+      ],
+      "dst": [
+        "0.0.0.0/1",
+        "128.0.0.0/3",
+        "160.0.0.0/5",
+        "168.0.0.0/6",
+        "172.0.0.0/10",
+        "172.64.0.0/11",
+        "172.96.0.0/12",
+        "172.112.0.0/13",
+        "172.120.0.0/14",
+        "172.124.0.0/15",
+        "172.127.0.0/16",
+        "172.128.0.0/9",
+        "173.0.0.0/8",
+        "174.0.0.0/7",
+        "176.0.0.0/4",
+        "192.0.0.0/3",
+        "240.0.0.0/4"
+      ],
+      "priority": 131,
+      "protocols": [
+        "TCP",
+        "UDP"
+      ],
+      "rule_id": "DEFAULT",
+      "sport": [
+        [
+          0,
+          65535
+        ]
+      ],
+      "src": [
+        "10.126.0.0/16"
+      ]
+    },
+    {
+      "action": "ACCEPT",
+      "category": "default",
+      "cell_id": 132,
+      "dport": [
+        [
+          0,
+          65535
+        ]
+      ],
+      "dst": [
+        "172.126.0.0/16"
+      ],
+      "priority": 132,
+      "protocols": [
+        "UDP"
+      ],
+      "rule_id": "DEFAULT",
+      "sport": [
+        [
+          0,
+          65535
+        ]
+      ],
+      "src": [
+        "10.126.0.0/16"
+      ]
+    },
+    {
+      "action": "ACCEPT",
+      "category": "default",
+      "cell_id": 133,
+      "dport": [
+        [
+          0,
+          20025
+        ],
+        [
+          20027,
+          65535
+        ]
+      ],
+      "dst": [
+        "172.126.0.0/16"
+      ],
+      "priority": 133,
+      "protocols": [
+        "TCP"
+      ],
+      "rule_id": "DEFAULT",
+      "sport": [
+        [
+          0,
+          65535
+        ]
+      ],
+      "src": [
+        "10.126.0.0/16"
+      ]
+    },
+    {
+      "action": "ACCEPT",
+      "category": "default",
+      "cell_id": 134,
+      "dport": [
+        [
+          0,
+          65535
+        ]
+      ],
+      "dst": [
+        "0.0.0.0/1",
+        "128.0.0.0/3",
+        "160.0.0.0/5",
+        "168.0.0.0/6",
+        "172.0.0.0/10",
+        "172.64.0.0/11",
+        "172.96.0.0/12",
+        "172.112.0.0/13",
+        "172.120.0.0/14",
+        "172.124.0.0/16",
+        "172.126.0.0/15",
+        "172.128.0.0/9",
+        "173.0.0.0/8",
+        "174.0.0.0/7",
+        "176.0.0.0/4",
+        "192.0.0.0/3",
+        "240.0.0.0/4"
+      ],
+      "priority": 134,
+      "protocols": [
+        "TCP",
+        "UDP"
+      ],
+      "rule_id": "DEFAULT",
+      "sport": [
+        [
+          0,
+          65535
+        ]
+      ],
+      "src": [
+        "10.125.0.0/16"
+      ]
+    },
+    {
+      "action": "ACCEPT",
+      "category": "default",
+      "cell_id": 135,
+      "dport": [
+        [
+          0,
+          65535
+        ]
+      ],
+      "dst": [
+        "172.125.0.0/16"
+      ],
+      "priority": 135,
+      "protocols": [
+        "UDP"
+      ],
+      "rule_id": "DEFAULT",
+      "sport": [
+        [
+          0,
+          65535
+        ]
+      ],
+      "src": [
+        "10.125.0.0/16"
+      ]
+    },
+    {
+      "action": "ACCEPT",
+      "category": "default",
+      "cell_id": 136,
+      "dport": [
+        [
+          0,
+          20024
+        ],
+        [
+          20026,
+          65535
+        ]
+      ],
+      "dst": [
+        "172.125.0.0/16"
+      ],
+      "priority": 136,
+      "protocols": [
+        "TCP"
+      ],
+      "rule_id": "DEFAULT",
+      "sport": [
+        [
+          0,
+          65535
+        ]
+      ],
+      "src": [
+        "10.125.0.0/16"
+      ]
+    },
+    {
+      "action": "ACCEPT",
+      "category": "default",
+      "cell_id": 137,
+      "dport": [
+        [
+          0,
+          65535
+        ]
+      ],
+      "dst": [
+        "0.0.0.0/1",
+        "128.0.0.0/3",
+        "160.0.0.0/5",
+        "168.0.0.0/6",
+        "172.0.0.0/10",
+        "172.64.0.0/11",
+        "172.96.0.0/12",
+        "172.112.0.0/13",
+        "172.120.0.0/14",
+        "172.125.0.0/16",
+        "172.126.0.0/15",
+        "172.128.0.0/9",
+        "173.0.0.0/8",
+        "174.0.0.0/7",
+        "176.0.0.0/4",
+        "192.0.0.0/3",
+        "240.0.0.0/4"
+      ],
+      "priority": 137,
+      "protocols": [
+        "TCP",
+        "UDP"
+      ],
+      "rule_id": "DEFAULT",
+      "sport": [
+        [
+          0,
+          65535
+        ]
+      ],
+      "src": [
+        "10.124.0.0/16"
+      ]
+    },
+    {
+      "action": "ACCEPT",
+      "category": "default",
+      "cell_id": 138,
+      "dport": [
+        [
+          0,
+          65535
+        ]
+      ],
+      "dst": [
+        "172.124.0.0/16"
+      ],
+      "priority": 138,
+      "protocols": [
+        "TCP"
+      ],
+      "rule_id": "DEFAULT",
+      "sport": [
+        [
+          0,
+          65535
+        ]
+      ],
+      "src": [
+        "10.124.0.0/16"
+      ]
+    },
+    {
+      "action": "ACCEPT",
+      "category": "default",
+      "cell_id": 139,
+      "dport": [
+        [
+          0,
+          20023
+        ],
+        [
+          20025,
+          65535
+        ]
+      ],
+      "dst": [
+        "172.124.0.0/16"
+      ],
+      "priority": 139,
+      "protocols": [
+        "UDP"
+      ],
+      "rule_id": "DEFAULT",
+      "sport": [
+        [
+          0,
+          65535
+        ]
+      ],
+      "src": [
+        "10.124.0.0/16"
+      ]
+    },
+    {
+      "action": "ACCEPT",
+      "category": "default",
+      "cell_id": 140,
+      "dport": [
+        [
+          0,
+          65535
+        ]
+      ],
+      "dst": [
+        "0.0.0.0/1",
+        "128.0.0.0/3",
+        "160.0.0.0/5",
+        "168.0.0.0/6",
+        "172.0.0.0/10",
+        "172.64.0.0/11",
+        "172.96.0.0/12",
+        "172.112.0.0/13",
+        "172.120.0.0/15",
+        "172.122.0.0/16",
+        "172.124.0.0/14",
+        "172.128.0.0/9",
+        "173.0.0.0/8",
+        "174.0.0.0/7",
+        "176.0.0.0/4",
+        "192.0.0.0/3",
+        "240.0.0.0/4"
+      ],
+      "priority": 140,
+      "protocols": [
+        "TCP",
+        "UDP"
+      ],
+      "rule_id": "DEFAULT",
+      "sport": [
+        [
+          0,
+          65535
+        ]
+      ],
+      "src": [
+        "10.123.0.0/16"
+      ]
+    },
+    {
+      "action": "ACCEPT",
+      "category": "default",
+      "cell_id": 141,
+      "dport": [
+        [
+          0,
+          65535
+        ]
+      ],
+      "dst": [
+        "172.123.0.0/16"
+      ],
+      "priority": 141,
+      "protocols": [
+        "UDP"
+      ],
+      "rule_id": "DEFAULT",
+      "sport": [
+        [
+          0,
+          65535
+        ]
+      ],
+      "src": [
+        "10.123.0.0/16"
+      ]
+    },
+    {
+      "action": "ACCEPT",
+      "category": "default",
+      "cell_id": 142,
+      "dport": [
+        [
+          0,
+          20022
+        ],
+        [
+          20024,
+          65535
+        ]
+      ],
+      "dst": [
+        "172.123.0.0/16"
+      ],
+      "priority": 142,
+      "protocols": [
+        "TCP"
+      ],
+      "rule_id": "DEFAULT",
+      "sport": [
+        [
+          0,
+          65535
+        ]
+      ],
+      "src": [
+        "10.123.0.0/16"
+      ]
+    },
+    {
+      "action": "ACCEPT",
+      "category": "default",
+      "cell_id": 143,
+      "dport": [
+        [
+          0,
+          65535
+        ]
+      ],
+      "dst": [
+        "0.0.0.0/1",
+        "128.0.0.0/3",
+        "160.0.0.0/5",
+        "168.0.0.0/6",
+        "172.0.0.0/10",
+        "172.64.0.0/11",
+        "172.96.0.0/12",
+        "172.112.0.0/13",
+        "172.120.0.0/15",
+        "172.123.0.0/16",
+        "172.124.0.0/14",
+        "172.128.0.0/9",
+        "173.0.0.0/8",
+        "174.0.0.0/7",
+        "176.0.0.0/4",
+        "192.0.0.0/3",
+        "240.0.0.0/4"
+      ],
+      "priority": 143,
+      "protocols": [
+        "TCP",
+        "UDP"
+      ],
+      "rule_id": "DEFAULT",
+      "sport": [
+        [
+          0,
+          65535
+        ]
+      ],
+      "src": [
+        "10.122.0.0/16"
+      ]
+    },
+    {
+      "action": "ACCEPT",
+      "category": "default",
+      "cell_id": 144,
+      "dport": [
+        [
+          0,
+          65535
+        ]
+      ],
+      "dst": [
+        "172.122.0.0/16"
+      ],
+      "priority": 144,
+      "protocols": [
+        "UDP"
+      ],
+      "rule_id": "DEFAULT",
+      "sport": [
+        [
+          0,
+          65535
+        ]
+      ],
+      "src": [
+        "10.122.0.0/16"
+      ]
+    },
+    {
+      "action": "ACCEPT",
+      "category": "default",
+      "cell_id": 145,
+      "dport": [
+        [
+          0,
+          20021
+        ],
+        [
+          20023,
+          65535
+        ]
+      ],
+      "dst": [
+        "172.122.0.0/16"
+      ],
+      "priority": 145,
+      "protocols": [
+        "TCP"
+      ],
+      "rule_id": "DEFAULT",
+      "sport": [
+        [
+          0,
+          65535
+        ]
+      ],
+      "src": [
+        "10.122.0.0/16"
+      ]
+    },
+    {
+      "action": "ACCEPT",
+      "category": "default",
+      "cell_id": 146,
+      "dport": [
+        [
+          0,
+          65535
+        ]
+      ],
+      "dst": [
+        "0.0.0.0/1",
+        "128.0.0.0/3",
+        "160.0.0.0/5",
+        "168.0.0.0/6",
+        "172.0.0.0/10",
+        "172.64.0.0/11",
+        "172.96.0.0/12",
+        "172.112.0.0/13",
+        "172.120.0.0/16",
+        "172.122.0.0/15",
+        "172.124.0.0/14",
+        "172.128.0.0/9",
+        "173.0.0.0/8",
+        "174.0.0.0/7",
+        "176.0.0.0/4",
+        "192.0.0.0/3",
+        "240.0.0.0/4"
+      ],
+      "priority": 146,
+      "protocols": [
+        "TCP",
+        "UDP"
+      ],
+      "rule_id": "DEFAULT",
+      "sport": [
+        [
+          0,
+          65535
+        ]
+      ],
+      "src": [
+        "10.121.0.0/16"
+      ]
+    },
+    {
+      "action": "ACCEPT",
+      "category": "default",
+      "cell_id": 147,
+      "dport": [
+        [
+          0,
+          65535
+        ]
+      ],
+      "dst": [
+        "172.121.0.0/16"
+      ],
+      "priority": 147,
+      "protocols": [
+        "TCP"
+      ],
+      "rule_id": "DEFAULT",
+      "sport": [
+        [
+          0,
+          65535
+        ]
+      ],
+      "src": [
+        "10.121.0.0/16"
+      ]
+    },
+    {
+      "action": "ACCEPT",
+      "category": "default",
+      "cell_id": 148,
+      "dport": [
+        [
+          0,
+          20020
+        ],
+        [
+          20022,
+          65535
+        ]
+      ],
+      "dst": [
+        "172.121.0.0/16"
+      ],
+      "priority": 148,
+      "protocols": [
+        "UDP"
+      ],
+      "rule_id": "DEFAULT",
+      "sport": [
+        [
+          0,
+          65535
+        ]
+      ],
+      "src": [
+        "10.121.0.0/16"
+      ]
+    },
+    {
+      "action": "ACCEPT",
+      "category": "default",
+      "cell_id": 149,
+      "dport": [
+        [
+          0,
+          65535
+        ]
+      ],
+      "dst": [
+        "0.0.0.0/1",
+        "128.0.0.0/3",
+        "160.0.0.0/5",
+        "168.0.0.0/6",
+        "172.0.0.0/10",
+        "172.64.0.0/11",
+        "172.96.0.0/12",
+        "172.112.0.0/13",
+        "172.121.0.0/16",
+        "172.122.0.0/15",
+        "172.124.0.0/14",
+        "172.128.0.0/9",
+        "173.0.0.0/8",
+        "174.0.0.0/7",
+        "176.0.0.0/4",
+        "192.0.0.0/3",
+        "240.0.0.0/4"
+      ],
+      "priority": 149,
+      "protocols": [
+        "TCP",
+        "UDP"
+      ],
+      "rule_id": "DEFAULT",
+      "sport": [
+        [
+          0,
+          65535
+        ]
+      ],
+      "src": [
+        "10.120.0.0/16"
+      ]
+    },
+    {
+      "action": "ACCEPT",
+      "category": "default",
+      "cell_id": 150,
+      "dport": [
+        [
+          0,
+          65535
+        ]
+      ],
+      "dst": [
+        "172.120.0.0/16"
+      ],
+      "priority": 150,
+      "protocols": [
+        "UDP"
+      ],
+      "rule_id": "DEFAULT",
+      "sport": [
+        [
+          0,
+          65535
+        ]
+      ],
+      "src": [
+        "10.120.0.0/16"
+      ]
+    },
+    {
+      "action": "ACCEPT",
+      "category": "default",
+      "cell_id": 151,
+      "dport": [
+        [
+          0,
+          20019
+        ],
+        [
+          20021,
+          65535
+        ]
+      ],
+      "dst": [
+        "172.120.0.0/16"
+      ],
+      "priority": 151,
+      "protocols": [
+        "TCP"
+      ],
+      "rule_id": "DEFAULT",
+      "sport": [
+        [
+          0,
+          65535
+        ]
+      ],
+      "src": [
+        "10.120.0.0/16"
+      ]
+    },
+    {
+      "action": "ACCEPT",
+      "category": "default",
+      "cell_id": 152,
+      "dport": [
+        [
+          0,
+          65535
+        ]
+      ],
+      "dst": [
+        "0.0.0.0/1",
+        "128.0.0.0/3",
+        "160.0.0.0/5",
+        "168.0.0.0/6",
+        "172.0.0.0/10",
+        "172.64.0.0/11",
+        "172.96.0.0/12",
+        "172.112.0.0/14",
+        "172.116.0.0/15",
+        "172.118.0.0/16",
+        "172.120.0.0/13",
+        "172.128.0.0/9",
+        "173.0.0.0/8",
+        "174.0.0.0/7",
+        "176.0.0.0/4",
+        "192.0.0.0/3",
+        "240.0.0.0/4"
+      ],
+      "priority": 152,
+      "protocols": [
+        "TCP",
+        "UDP"
+      ],
+      "rule_id": "DEFAULT",
+      "sport": [
+        [
+          0,
+          65535
+        ]
+      ],
+      "src": [
+        "10.119.0.0/16"
+      ]
+    },
+    {
+      "action": "ACCEPT",
+      "category": "default",
+      "cell_id": 153,
+      "dport": [
+        [
+          0,
+          65535
+        ]
+      ],
+      "dst": [
+        "172.119.0.0/16"
+      ],
+      "priority": 153,
+      "protocols": [
+        "UDP"
+      ],
+      "rule_id": "DEFAULT",
+      "sport": [
+        [
+          0,
+          65535
+        ]
+      ],
+      "src": [
+        "10.119.0.0/16"
+      ]
+    },
+    {
+      "action": "ACCEPT",
+      "category": "default",
+      "cell_id": 154,
+      "dport": [
+        [
+          0,
+          20018
+        ],
+        [
+          20020,
+          65535
+        ]
+      ],
+      "dst": [
+        "172.119.0.0/16"
+      ],
+      "priority": 154,
+      "protocols": [
+        "TCP"
+      ],
+      "rule_id": "DEFAULT",
+      "sport": [
+        [
+          0,
+          65535
+        ]
+      ],
+      "src": [
+        "10.119.0.0/16"
+      ]
+    },
+    {
+      "action": "ACCEPT",
+      "category": "default",
+      "cell_id": 155,
+      "dport": [
+        [
+          0,
+          65535
+        ]
+      ],
+      "dst": [
+        "0.0.0.0/1",
+        "128.0.0.0/3",
+        "160.0.0.0/5",
+        "168.0.0.0/6",
+        "172.0.0.0/10",
+        "172.64.0.0/11",
+        "172.96.0.0/12",
+        "172.112.0.0/14",
+        "172.116.0.0/15",
+        "172.119.0.0/16",
+        "172.120.0.0/13",
+        "172.128.0.0/9",
+        "173.0.0.0/8",
+        "174.0.0.0/7",
+        "176.0.0.0/4",
+        "192.0.0.0/3",
+        "240.0.0.0/4"
+      ],
+      "priority": 155,
+      "protocols": [
+        "TCP",
+        "UDP"
+      ],
+      "rule_id": "DEFAULT",
+      "sport": [
+        [
+          0,
+          65535
+        ]
+      ],
+      "src": [
+        "10.118.0.0/16"
+      ]
+    },
+    {
+      "action": "ACCEPT",
+      "category": "default",
+      "cell_id": 156,
+      "dport": [
+        [
+          0,
+          65535
+        ]
+      ],
+      "dst": [
+        "172.118.0.0/16"
+      ],
+      "priority": 156,
+      "protocols": [
+        "TCP"
+      ],
+      "rule_id": "DEFAULT",
+      "sport": [
+        [
+          0,
+          65535
+        ]
+      ],
+      "src": [
+        "10.118.0.0/16"
+      ]
+    },
+    {
+      "action": "ACCEPT",
+      "category": "default",
+      "cell_id": 157,
+      "dport": [
+        [
+          0,
+          20017
+        ],
+        [
+          20019,
+          65535
+        ]
+      ],
+      "dst": [
+        "172.118.0.0/16"
+      ],
+      "priority": 157,
+      "protocols": [
+        "UDP"
+      ],
+      "rule_id": "DEFAULT",
+      "sport": [
+        [
+          0,
+          65535
+        ]
+      ],
+      "src": [
+        "10.118.0.0/16"
+      ]
+    },
+    {
+      "action": "ACCEPT",
+      "category": "default",
+      "cell_id": 158,
+      "dport": [
+        [
+          0,
+          65535
+        ]
+      ],
+      "dst": [
+        "0.0.0.0/1",
+        "128.0.0.0/3",
+        "160.0.0.0/5",
+        "168.0.0.0/6",
+        "172.0.0.0/10",
+        "172.64.0.0/11",
+        "172.96.0.0/12",
+        "172.112.0.0/14",
+        "172.116.0.0/16",
+        "172.118.0.0/15",
+        "172.120.0.0/13",
+        "172.128.0.0/9",
+        "173.0.0.0/8",
+        "174.0.0.0/7",
+        "176.0.0.0/4",
+        "192.0.0.0/3",
+        "240.0.0.0/4"
+      ],
+      "priority": 158,
+      "protocols": [
+        "TCP",
+        "UDP"
+      ],
+      "rule_id": "DEFAULT",
+      "sport": [
+        [
+          0,
+          65535
+        ]
+      ],
+      "src": [
+        "10.117.0.0/16"
+      ]
+    },
+    {
+      "action": "ACCEPT",
+      "category": "default",
+      "cell_id": 159,
+      "dport": [
+        [
+          0,
+          65535
+        ]
+      ],
+      "dst": [
+        "172.117.0.0/16"
+      ],
+      "priority": 159,
+      "protocols": [
+        "UDP"
+      ],
+      "rule_id": "DEFAULT",
+      "sport": [
+        [
+          0,
+          65535
+        ]
+      ],
+      "src": [
+        "10.117.0.0/16"
+      ]
+    },
+    {
+      "action": "ACCEPT",
+      "category": "default",
+      "cell_id": 160,
+      "dport": [
+        [
+          0,
+          20016
+        ],
+        [
+          20018,
+          65535
+        ]
+      ],
+      "dst": [
+        "172.117.0.0/16"
+      ],
+      "priority": 160,
+      "protocols": [
+        "TCP"
+      ],
+      "rule_id": "DEFAULT",
+      "sport": [
+        [
+          0,
+          65535
+        ]
+      ],
+      "src": [
+        "10.117.0.0/16"
+      ]
+    },
+    {
+      "action": "ACCEPT",
+      "category": "default",
+      "cell_id": 161,
+      "dport": [
+        [
+          0,
+          65535
+        ]
+      ],
+      "dst": [
+        "0.0.0.0/1",
+        "128.0.0.0/3",
+        "160.0.0.0/5",
+        "168.0.0.0/6",
+        "172.0.0.0/10",
+        "172.64.0.0/11",
+        "172.96.0.0/12",
+        "172.112.0.0/14",
+        "172.117.0.0/16",
+        "172.118.0.0/15",
+        "172.120.0.0/13",
+        "172.128.0.0/9",
+        "173.0.0.0/8",
+        "174.0.0.0/7",
+        "176.0.0.0/4",
+        "192.0.0.0/3",
+        "240.0.0.0/4"
+      ],
+      "priority": 161,
+      "protocols": [
+        "TCP",
+        "UDP"
+      ],
+      "rule_id": "DEFAULT",
+      "sport": [
+        [
+          0,
+          65535
+        ]
+      ],
+      "src": [
+        "10.116.0.0/16"
+      ]
+    },
+    {
+      "action": "ACCEPT",
+      "category": "default",
+      "cell_id": 162,
+      "dport": [
+        [
+          0,
+          65535
+        ]
+      ],
+      "dst": [
+        "172.116.0.0/16"
+      ],
+      "priority": 162,
+      "protocols": [
+        "UDP"
+      ],
+      "rule_id": "DEFAULT",
+      "sport": [
+        [
+          0,
+          65535
+        ]
+      ],
+      "src": [
+        "10.116.0.0/16"
+      ]
+    },
+    {
+      "action": "ACCEPT",
+      "category": "default",
+      "cell_id": 163,
+      "dport": [
+        [
+          0,
+          20015
+        ],
+        [
+          20017,
+          65535
+        ]
+      ],
+      "dst": [
+        "172.116.0.0/16"
+      ],
+      "priority": 163,
+      "protocols": [
+        "TCP"
+      ],
+      "rule_id": "DEFAULT",
+      "sport": [
+        [
+          0,
+          65535
+        ]
+      ],
+      "src": [
+        "10.116.0.0/16"
+      ]
+    },
+    {
+      "action": "ACCEPT",
+      "category": "default",
+      "cell_id": 164,
+      "dport": [
+        [
+          0,
+          65535
+        ]
+      ],
+      "dst": [
+        "0.0.0.0/1",
+        "128.0.0.0/3",
+        "160.0.0.0/5",
+        "168.0.0.0/6",
+        "172.0.0.0/10",
+        "172.64.0.0/11",
+        "172.96.0.0/12",
+        "172.112.0.0/15",
+        "172.114.0.0/16",
+        "172.116.0.0/14",
+        "172.120.0.0/13",
+        "172.128.0.0/9",
+        "173.0.0.0/8",
+        "174.0.0.0/7",
+        "176.0.0.0/4",
+        "192.0.0.0/3",
+        "240.0.0.0/4"
+      ],
+      "priority": 164,
+      "protocols": [
+        "TCP",
+        "UDP"
+      ],
+      "rule_id": "DEFAULT",
+      "sport": [
+        [
+          0,
+          65535
+        ]
+      ],
+      "src": [
+        "10.115.0.0/16"
+      ]
+    },
+    {
+      "action": "ACCEPT",
+      "category": "default",
+      "cell_id": 165,
+      "dport": [
+        [
+          0,
+          65535
+        ]
+      ],
+      "dst": [
+        "172.115.0.0/16"
+      ],
+      "priority": 165,
+      "protocols": [
+        "TCP"
+      ],
+      "rule_id": "DEFAULT",
+      "sport": [
+        [
+          0,
+          65535
+        ]
+      ],
+      "src": [
+        "10.115.0.0/16"
+      ]
+    },
+    {
+      "action": "ACCEPT",
+      "category": "default",
+      "cell_id": 166,
+      "dport": [
+        [
+          0,
+          20014
+        ],
+        [
+          20016,
+          65535
+        ]
+      ],
+      "dst": [
+        "172.115.0.0/16"
+      ],
+      "priority": 166,
+      "protocols": [
+        "UDP"
+      ],
+      "rule_id": "DEFAULT",
+      "sport": [
+        [
+          0,
+          65535
+        ]
+      ],
+      "src": [
+        "10.115.0.0/16"
+      ]
+    },
+    {
+      "action": "ACCEPT",
+      "category": "default",
+      "cell_id": 167,
+      "dport": [
+        [
+          0,
+          65535
+        ]
+      ],
+      "dst": [
+        "0.0.0.0/1",
+        "128.0.0.0/3",
+        "160.0.0.0/5",
+        "168.0.0.0/6",
+        "172.0.0.0/10",
+        "172.64.0.0/11",
+        "172.96.0.0/12",
+        "172.112.0.0/15",
+        "172.115.0.0/16",
+        "172.116.0.0/14",
+        "172.120.0.0/13",
+        "172.128.0.0/9",
+        "173.0.0.0/8",
+        "174.0.0.0/7",
+        "176.0.0.0/4",
+        "192.0.0.0/3",
+        "240.0.0.0/4"
+      ],
+      "priority": 167,
+      "protocols": [
+        "TCP",
+        "UDP"
+      ],
+      "rule_id": "DEFAULT",
+      "sport": [
+        [
+          0,
+          65535
+        ]
+      ],
+      "src": [
+        "10.114.0.0/16"
+      ]
+    },
+    {
+      "action": "ACCEPT",
+      "category": "default",
+      "cell_id": 168,
+      "dport": [
+        [
+          0,
+          65535
+        ]
+      ],
+      "dst": [
+        "172.114.0.0/16"
+      ],
+      "priority": 168,
+      "protocols": [
+        "UDP"
+      ],
+      "rule_id": "DEFAULT",
+      "sport": [
+        [
+          0,
+          65535
+        ]
+      ],
+      "src": [
+        "10.114.0.0/16"
+      ]
+    },
+    {
+      "action": "ACCEPT",
+      "category": "default",
+      "cell_id": 169,
+      "dport": [
+        [
+          0,
+          20013
+        ],
+        [
+          20015,
+          65535
+        ]
+      ],
+      "dst": [
+        "172.114.0.0/16"
+      ],
+      "priority": 169,
+      "protocols": [
+        "TCP"
+      ],
+      "rule_id": "DEFAULT",
+      "sport": [
+        [
+          0,
+          65535
+        ]
+      ],
+      "src": [
+        "10.114.0.0/16"
+      ]
+    },
+    {
+      "action": "ACCEPT",
+      "category": "default",
+      "cell_id": 170,
+      "dport": [
+        [
+          0,
+          65535
+        ]
+      ],
+      "dst": [
+        "0.0.0.0/1",
+        "128.0.0.0/3",
+        "160.0.0.0/5",
+        "168.0.0.0/6",
+        "172.0.0.0/10",
+        "172.64.0.0/11",
+        "172.96.0.0/12",
+        "172.112.0.0/16",
+        "172.114.0.0/15",
+        "172.116.0.0/14",
+        "172.120.0.0/13",
+        "172.128.0.0/9",
+        "173.0.0.0/8",
+        "174.0.0.0/7",
+        "176.0.0.0/4",
+        "192.0.0.0/3",
+        "240.0.0.0/4"
+      ],
+      "priority": 170,
+      "protocols": [
+        "TCP",
+        "UDP"
+      ],
+      "rule_id": "DEFAULT",
+      "sport": [
+        [
+          0,
+          65535
+        ]
+      ],
+      "src": [
+        "10.113.0.0/16"
+      ]
+    },
+    {
+      "action": "ACCEPT",
+      "category": "default",
+      "cell_id": 171,
+      "dport": [
+        [
+          0,
+          65535
+        ]
+      ],
+      "dst": [
+        "172.113.0.0/16"
+      ],
+      "priority": 171,
+      "protocols": [
+        "UDP"
+      ],
+      "rule_id": "DEFAULT",
+      "sport": [
+        [
+          0,
+          65535
+        ]
+      ],
+      "src": [
+        "10.113.0.0/16"
+      ]
+    },
+    {
+      "action": "ACCEPT",
+      "category": "default",
+      "cell_id": 172,
+      "dport": [
+        [
+          0,
+          20012
+        ],
+        [
+          20014,
+          65535
+        ]
+      ],
+      "dst": [
+        "172.113.0.0/16"
+      ],
+      "priority": 172,
+      "protocols": [
+        "TCP"
+      ],
+      "rule_id": "DEFAULT",
+      "sport": [
+        [
+          0,
+          65535
+        ]
+      ],
+      "src": [
+        "10.113.0.0/16"
+      ]
+    },
+    {
+      "action": "ACCEPT",
+      "category": "default",
+      "cell_id": 173,
+      "dport": [
+        [
+          0,
+          65535
+        ]
+      ],
+      "dst": [
+        "0.0.0.0/1",
+        "128.0.0.0/3",
+        "160.0.0.0/5",
+        "168.0.0.0/6",
+        "172.0.0.0/10",
+        "172.64.0.0/11",
+        "172.96.0.0/12",
+        "172.113.0.0/16",
+        "172.114.0.0/15",
+        "172.116.0.0/14",
+        "172.120.0.0/13",
+        "172.128.0.0/9",
+        "173.0.0.0/8",
+        "174.0.0.0/7",
+        "176.0.0.0/4",
+        "192.0.0.0/3",
+        "240.0.0.0/4"
+      ],
+      "priority": 173,
+      "protocols": [
+        "TCP",
+        "UDP"
+      ],
+      "rule_id": "DEFAULT",
+      "sport": [
+        [
+          0,
+          65535
+        ]
+      ],
+      "src": [
+        "10.112.0.0/16"
+      ]
+    },
+    {
+      "action": "ACCEPT",
+      "category": "default",
+      "cell_id": 174,
+      "dport": [
+        [
+          0,
+          65535
+        ]
+      ],
+      "dst": [
+        "172.112.0.0/16"
+      ],
+      "priority": 174,
+      "protocols": [
+        "TCP"
+      ],
+      "rule_id": "DEFAULT",
+      "sport": [
+        [
+          0,
+          65535
+        ]
+      ],
+      "src": [
+        "10.112.0.0/16"
+      ]
+    },
+    {
+      "action": "ACCEPT",
+      "category": "default",
+      "cell_id": 175,
+      "dport": [
+        [
+          0,
+          20011
+        ],
+        [
+          20013,
+          65535
+        ]
+      ],
+      "dst": [
+        "172.112.0.0/16"
+      ],
+      "priority": 175,
+      "protocols": [
+        "UDP"
+      ],
+      "rule_id": "DEFAULT",
+      "sport": [
+        [
+          0,
+          65535
+        ]
+      ],
+      "src": [
+        "10.112.0.0/16"
+      ]
+    },
+    {
+      "action": "ACCEPT",
+      "category": "default",
+      "cell_id": 176,
+      "dport": [
+        [
+          0,
+          65535
+        ]
+      ],
+      "dst": [
+        "0.0.0.0/1",
+        "128.0.0.0/3",
+        "160.0.0.0/5",
+        "168.0.0.0/6",
+        "172.0.0.0/10",
+        "172.64.0.0/11",
+        "172.96.0.0/13",
+        "172.104.0.0/14",
+        "172.108.0.0/15",
+        "172.110.0.0/16",
+        "172.112.0.0/12",
+        "172.128.0.0/9",
+        "173.0.0.0/8",
+        "174.0.0.0/7",
+        "176.0.0.0/4",
+        "192.0.0.0/3",
+        "240.0.0.0/4"
+      ],
+      "priority": 176,
+      "protocols": [
+        "TCP",
+        "UDP"
+      ],
+      "rule_id": "DEFAULT",
+      "sport": [
+        [
+          0,
+          65535
+        ]
+      ],
+      "src": [
+        "10.111.0.0/16"
+      ]
+    },
+    {
+      "action": "ACCEPT",
+      "category": "default",
+      "cell_id": 177,
+      "dport": [
+        [
+          0,
+          65535
+        ]
+      ],
+      "dst": [
+        "172.111.0.0/16"
+      ],
+      "priority": 177,
+      "protocols": [
+        "UDP"
+      ],
+      "rule_id": "DEFAULT",
+      "sport": [
+        [
+          0,
+          65535
+        ]
+      ],
+      "src": [
+        "10.111.0.0/16"
+      ]
+    },
+    {
+      "action": "ACCEPT",
+      "category": "default",
+      "cell_id": 178,
+      "dport": [
+        [
+          0,
+          20010
+        ],
+        [
+          20012,
+          65535
+        ]
+      ],
+      "dst": [
+        "172.111.0.0/16"
+      ],
+      "priority": 178,
+      "protocols": [
+        "TCP"
+      ],
+      "rule_id": "DEFAULT",
+      "sport": [
+        [
+          0,
+          65535
+        ]
+      ],
+      "src": [
+        "10.111.0.0/16"
+      ]
+    },
+    {
+      "action": "ACCEPT",
+      "category": "default",
+      "cell_id": 179,
+      "dport": [
+        [
+          0,
+          65535
+        ]
+      ],
+      "dst": [
+        "0.0.0.0/1",
+        "128.0.0.0/3",
+        "160.0.0.0/5",
+        "168.0.0.0/6",
+        "172.0.0.0/10",
+        "172.64.0.0/11",
+        "172.96.0.0/13",
+        "172.104.0.0/14",
+        "172.108.0.0/15",
+        "172.111.0.0/16",
+        "172.112.0.0/12",
+        "172.128.0.0/9",
+        "173.0.0.0/8",
+        "174.0.0.0/7",
+        "176.0.0.0/4",
+        "192.0.0.0/3",
+        "240.0.0.0/4"
+      ],
+      "priority": 179,
+      "protocols": [
+        "TCP",
+        "UDP"
+      ],
+      "rule_id": "DEFAULT",
+      "sport": [
+        [
+          0,
+          65535
+        ]
+      ],
+      "src": [
+        "10.110.0.0/16"
+      ]
+    },
+    {
+      "action": "ACCEPT",
+      "category": "default",
+      "cell_id": 180,
+      "dport": [
+        [
+          0,
+          65535
+        ]
+      ],
+      "dst": [
+        "172.110.0.0/16"
+      ],
+      "priority": 180,
+      "protocols": [
+        "UDP"
+      ],
+      "rule_id": "DEFAULT",
+      "sport": [
+        [
+          0,
+          65535
+        ]
+      ],
+      "src": [
+        "10.110.0.0/16"
+      ]
+    },
+    {
+      "action": "ACCEPT",
+      "category": "default",
+      "cell_id": 181,
+      "dport": [
+        [
+          0,
+          20009
+        ],
+        [
+          20011,
+          65535
+        ]
+      ],
+      "dst": [
+        "172.110.0.0/16"
+      ],
+      "priority": 181,
+      "protocols": [
+        "TCP"
+      ],
+      "rule_id": "DEFAULT",
+      "sport": [
+        [
+          0,
+          65535
+        ]
+      ],
+      "src": [
+        "10.110.0.0/16"
+      ]
+    },
+    {
+      "action": "ACCEPT",
+      "category": "default",
+      "cell_id": 182,
+      "dport": [
+        [
+          0,
+          65535
+        ]
+      ],
+      "dst": [
+        "0.0.0.0/1",
+        "128.0.0.0/3",
+        "160.0.0.0/5",
+        "168.0.0.0/6",
+        "172.0.0.0/10",
+        "172.64.0.0/11",
+        "172.96.0.0/13",
+        "172.104.0.0/14",
+        "172.108.0.0/16",
+        "172.110.0.0/15",
+        "172.112.0.0/12",
+        "172.128.0.0/9",
+        "173.0.0.0/8",
+        "174.0.0.0/7",
+        "176.0.0.0/4",
+        "192.0.0.0/3",
+        "240.0.0.0/4"
+      ],
+      "priority": 182,
+      "protocols": [
+        "TCP",
+        "UDP"
+      ],
+      "rule_id": "DEFAULT",
+      "sport": [
+        [
+          0,
+          65535
+        ]
+      ],
+      "src": [
+        "10.109.0.0/16"
+      ]
+    },
+    {
+      "action": "ACCEPT",
+      "category": "default",
+      "cell_id": 183,
+      "dport": [
+        [
+          0,
+          65535
+        ]
+      ],
+      "dst": [
+        "172.109.0.0/16"
+      ],
+      "priority": 183,
+      "protocols": [
+        "TCP"
+      ],
+      "rule_id": "DEFAULT",
+      "sport": [
+        [
+          0,
+          65535
+        ]
+      ],
+      "src": [
+        "10.109.0.0/16"
+      ]
+    },
+    {
+      "action": "ACCEPT",
+      "category": "default",
+      "cell_id": 184,
+      "dport": [
+        [
+          0,
+          20008
+        ],
+        [
+          20010,
+          65535
+        ]
+      ],
+      "dst": [
+        "172.109.0.0/16"
+      ],
+      "priority": 184,
+      "protocols": [
+        "UDP"
+      ],
+      "rule_id": "DEFAULT",
+      "sport": [
+        [
+          0,
+          65535
+        ]
+      ],
+      "src": [
+        "10.109.0.0/16"
+      ]
+    },
+    {
+      "action": "ACCEPT",
+      "category": "default",
+      "cell_id": 185,
+      "dport": [
+        [
+          0,
+          65535
+        ]
+      ],
+      "dst": [
+        "0.0.0.0/1",
+        "128.0.0.0/3",
+        "160.0.0.0/5",
+        "168.0.0.0/6",
+        "172.0.0.0/10",
+        "172.64.0.0/11",
+        "172.96.0.0/13",
+        "172.104.0.0/14",
+        "172.109.0.0/16",
+        "172.110.0.0/15",
+        "172.112.0.0/12",
+        "172.128.0.0/9",
+        "173.0.0.0/8",
+        "174.0.0.0/7",
+        "176.0.0.0/4",
+        "192.0.0.0/3",
+        "240.0.0.0/4"
+      ],
+      "priority": 185,
+      "protocols": [
+        "TCP",
+        "UDP"
+      ],
+      "rule_id": "DEFAULT",
+      "sport": [
+        [
+          0,
+          65535
+        ]
+      ],
+      "src": [
+        "10.108.0.0/16"
+      ]
+    },
+    {
+      "action": "ACCEPT",
+      "category": "default",
+      "cell_id": 186,
+      "dport": [
+        [
+          0,
+          65535
+        ]
+      ],
+      "dst": [
+        "172.108.0.0/16"
+      ],
+      "priority": 186,
+      "protocols": [
+        "UDP"
+      ],
+      "rule_id": "DEFAULT",
+      "sport": [
+        [
+          0,
+          65535
+        ]
+      ],
+      "src": [
+        "10.108.0.0/16"
+      ]
+    },
+    {
+      "action": "ACCEPT",
+      "category": "default",
+      "cell_id": 187,
+      "dport": [
+        [
+          0,
+          20007
+        ],
+        [
+          20009,
+          65535
+        ]
+      ],
+      "dst": [
+        "172.108.0.0/16"
+      ],
+      "priority": 187,
+      "protocols": [
+        "TCP"
+      ],
+      "rule_id": "DEFAULT",
+      "sport": [
+        [
+          0,
+          65535
+        ]
+      ],
+      "src": [
+        "10.108.0.0/16"
+      ]
+    },
+    {
+      "action": "ACCEPT",
+      "category": "default",
+      "cell_id": 188,
+      "dport": [
+        [
+          0,
+          65535
+        ]
+      ],
+      "dst": [
+        "0.0.0.0/1",
+        "128.0.0.0/3",
+        "160.0.0.0/5",
+        "168.0.0.0/6",
+        "172.0.0.0/10",
+        "172.64.0.0/11",
+        "172.96.0.0/13",
+        "172.104.0.0/15",
+        "172.106.0.0/16",
+        "172.108.0.0/14",
+        "172.112.0.0/12",
+        "172.128.0.0/9",
+        "173.0.0.0/8",
+        "174.0.0.0/7",
+        "176.0.0.0/4",
+        "192.0.0.0/3",
+        "240.0.0.0/4"
+      ],
+      "priority": 188,
+      "protocols": [
+        "TCP",
+        "UDP"
+      ],
+      "rule_id": "DEFAULT",
+      "sport": [
+        [
+          0,
+          65535
+        ]
+      ],
+      "src": [
+        "10.107.0.0/16"
+      ]
+    },
+    {
+      "action": "ACCEPT",
+      "category": "default",
+      "cell_id": 189,
+      "dport": [
+        [
+          0,
+          65535
+        ]
+      ],
+      "dst": [
+        "172.107.0.0/16"
+      ],
+      "priority": 189,
+      "protocols": [
+        "UDP"
+      ],
+      "rule_id": "DEFAULT",
+      "sport": [
+        [
+          0,
+          65535
+        ]
+      ],
+      "src": [
+        "10.107.0.0/16"
+      ]
+    },
+    {
+      "action": "ACCEPT",
+      "category": "default",
+      "cell_id": 190,
+      "dport": [
+        [
+          0,
+          20006
+        ],
+        [
+          20008,
+          65535
+        ]
+      ],
+      "dst": [
+        "172.107.0.0/16"
+      ],
+      "priority": 190,
+      "protocols": [
+        "TCP"
+      ],
+      "rule_id": "DEFAULT",
+      "sport": [
+        [
+          0,
+          65535
+        ]
+      ],
+      "src": [
+        "10.107.0.0/16"
+      ]
+    },
+    {
+      "action": "ACCEPT",
+      "category": "default",
+      "cell_id": 191,
+      "dport": [
+        [
+          0,
+          65535
+        ]
+      ],
+      "dst": [
+        "0.0.0.0/1",
+        "128.0.0.0/3",
+        "160.0.0.0/5",
+        "168.0.0.0/6",
+        "172.0.0.0/10",
+        "172.64.0.0/11",
+        "172.96.0.0/13",
+        "172.104.0.0/15",
+        "172.107.0.0/16",
+        "172.108.0.0/14",
+        "172.112.0.0/12",
+        "172.128.0.0/9",
+        "173.0.0.0/8",
+        "174.0.0.0/7",
+        "176.0.0.0/4",
+        "192.0.0.0/3",
+        "240.0.0.0/4"
+      ],
+      "priority": 191,
+      "protocols": [
+        "TCP",
+        "UDP"
+      ],
+      "rule_id": "DEFAULT",
+      "sport": [
+        [
+          0,
+          65535
+        ]
+      ],
+      "src": [
+        "10.106.0.0/16"
+      ]
+    },
+    {
+      "action": "ACCEPT",
+      "category": "default",
+      "cell_id": 192,
+      "dport": [
+        [
+          0,
+          65535
+        ]
+      ],
+      "dst": [
+        "172.106.0.0/16"
+      ],
+      "priority": 192,
+      "protocols": [
+        "TCP"
+      ],
+      "rule_id": "DEFAULT",
+      "sport": [
+        [
+          0,
+          65535
+        ]
+      ],
+      "src": [
+        "10.106.0.0/16"
+      ]
+    },
+    {
+      "action": "ACCEPT",
+      "category": "default",
+      "cell_id": 193,
+      "dport": [
+        [
+          0,
+          20005
+        ],
+        [
+          20007,
+          65535
+        ]
+      ],
+      "dst": [
+        "172.106.0.0/16"
+      ],
+      "priority": 193,
+      "protocols": [
+        "UDP"
+      ],
+      "rule_id": "DEFAULT",
+      "sport": [
+        [
+          0,
+          65535
+        ]
+      ],
+      "src": [
+        "10.106.0.0/16"
+      ]
+    },
+    {
+      "action": "ACCEPT",
+      "category": "default",
+      "cell_id": 194,
+      "dport": [
+        [
+          0,
+          65535
+        ]
+      ],
+      "dst": [
+        "0.0.0.0/1",
+        "128.0.0.0/3",
+        "160.0.0.0/5",
+        "168.0.0.0/6",
+        "172.0.0.0/10",
+        "172.64.0.0/11",
+        "172.96.0.0/13",
+        "172.104.0.0/16",
+        "172.106.0.0/15",
+        "172.108.0.0/14",
+        "172.112.0.0/12",
+        "172.128.0.0/9",
+        "173.0.0.0/8",
+        "174.0.0.0/7",
+        "176.0.0.0/4",
+        "192.0.0.0/3",
+        "240.0.0.0/4"
+      ],
+      "priority": 194,
+      "protocols": [
+        "TCP",
+        "UDP"
+      ],
+      "rule_id": "DEFAULT",
+      "sport": [
+        [
+          0,
+          65535
+        ]
+      ],
+      "src": [
+        "10.105.0.0/16"
+      ]
+    },
+    {
+      "action": "ACCEPT",
+      "category": "default",
+      "cell_id": 195,
+      "dport": [
+        [
+          0,
+          65535
+        ]
+      ],
+      "dst": [
+        "172.105.0.0/16"
+      ],
+      "priority": 195,
+      "protocols": [
+        "UDP"
+      ],
+      "rule_id": "DEFAULT",
+      "sport": [
+        [
+          0,
+          65535
+        ]
+      ],
+      "src": [
+        "10.105.0.0/16"
+      ]
+    },
+    {
+      "action": "ACCEPT",
+      "category": "default",
+      "cell_id": 196,
+      "dport": [
+        [
+          0,
+          20004
+        ],
+        [
+          20006,
+          65535
+        ]
+      ],
+      "dst": [
+        "172.105.0.0/16"
+      ],
+      "priority": 196,
+      "protocols": [
+        "TCP"
+      ],
+      "rule_id": "DEFAULT",
+      "sport": [
+        [
+          0,
+          65535
+        ]
+      ],
+      "src": [
+        "10.105.0.0/16"
+      ]
+    },
+    {
+      "action": "ACCEPT",
+      "category": "default",
+      "cell_id": 197,
+      "dport": [
+        [
+          0,
+          65535
+        ]
+      ],
+      "dst": [
+        "0.0.0.0/1",
+        "128.0.0.0/3",
+        "160.0.0.0/5",
+        "168.0.0.0/6",
+        "172.0.0.0/10",
+        "172.64.0.0/11",
+        "172.96.0.0/13",
+        "172.105.0.0/16",
+        "172.106.0.0/15",
+        "172.108.0.0/14",
+        "172.112.0.0/12",
+        "172.128.0.0/9",
+        "173.0.0.0/8",
+        "174.0.0.0/7",
+        "176.0.0.0/4",
+        "192.0.0.0/3",
+        "240.0.0.0/4"
+      ],
+      "priority": 197,
+      "protocols": [
+        "TCP",
+        "UDP"
+      ],
+      "rule_id": "DEFAULT",
+      "sport": [
+        [
+          0,
+          65535
+        ]
+      ],
+      "src": [
+        "10.104.0.0/16"
+      ]
+    },
+    {
+      "action": "ACCEPT",
+      "category": "default",
+      "cell_id": 198,
+      "dport": [
+        [
+          0,
+          65535
+        ]
+      ],
+      "dst": [
+        "172.104.0.0/16"
+      ],
+      "priority": 198,
+      "protocols": [
+        "UDP"
+      ],
+      "rule_id": "DEFAULT",
+      "sport": [
+        [
+          0,
+          65535
+        ]
+      ],
+      "src": [
+        "10.104.0.0/16"
+      ]
+    },
+    {
+      "action": "ACCEPT",
+      "category": "default",
+      "cell_id": 199,
+      "dport": [
+        [
+          0,
+          20003
+        ],
+        [
+          20005,
+          65535
+        ]
+      ],
+      "dst": [
+        "172.104.0.0/16"
+      ],
+      "priority": 199,
+      "protocols": [
+        "TCP"
+      ],
+      "rule_id": "DEFAULT",
+      "sport": [
+        [
+          0,
+          65535
+        ]
+      ],
+      "src": [
+        "10.104.0.0/16"
+      ]
+    },
+    {
+      "action": "ACCEPT",
+      "category": "default",
+      "cell_id": 200,
+      "dport": [
+        [
+          0,
+          65535
+        ]
+      ],
+      "dst": [
+        "0.0.0.0/1",
+        "128.0.0.0/3",
+        "160.0.0.0/5",
+        "168.0.0.0/6",
+        "172.0.0.0/10",
+        "172.64.0.0/11",
+        "172.96.0.0/14",
+        "172.100.0.0/15",
+        "172.102.0.0/16",
+        "172.104.0.0/13",
+        "172.112.0.0/12",
+        "172.128.0.0/9",
+        "173.0.0.0/8",
+        "174.0.0.0/7",
+        "176.0.0.0/4",
+        "192.0.0.0/3",
+        "240.0.0.0/4"
+      ],
+      "priority": 200,
+      "protocols": [
+        "TCP",
+        "UDP"
+      ],
+      "rule_id": "DEFAULT",
+      "sport": [
+        [
+          0,
+          65535
+        ]
+      ],
+      "src": [
+        "10.103.0.0/16"
+      ]
+    },
+    {
+      "action": "ACCEPT",
+      "category": "default",
+      "cell_id": 201,
+      "dport": [
+        [
+          0,
+          65535
+        ]
+      ],
+      "dst": [
+        "172.103.0.0/16"
+      ],
+      "priority": 201,
+      "protocols": [
+        "TCP"
+      ],
+      "rule_id": "DEFAULT",
+      "sport": [
+        [
+          0,
+          65535
+        ]
+      ],
+      "src": [
+        "10.103.0.0/16"
+      ]
+    },
+    {
+      "action": "ACCEPT",
+      "category": "default",
+      "cell_id": 202,
+      "dport": [
+        [
+          0,
+          20002
+        ],
+        [
+          20004,
+          65535
+        ]
+      ],
+      "dst": [
+        "172.103.0.0/16"
+      ],
+      "priority": 202,
+      "protocols": [
+        "UDP"
+      ],
+      "rule_id": "DEFAULT",
+      "sport": [
+        [
+          0,
+          65535
+        ]
+      ],
+      "src": [
+        "10.103.0.0/16"
+      ]
+    },
+    {
+      "action": "ACCEPT",
+      "category": "default",
+      "cell_id": 203,
+      "dport": [
+        [
+          0,
+          65535
+        ]
+      ],
+      "dst": [
+        "0.0.0.0/1",
+        "128.0.0.0/3",
+        "160.0.0.0/5",
+        "168.0.0.0/6",
+        "172.0.0.0/10",
+        "172.64.0.0/11",
+        "172.96.0.0/14",
+        "172.100.0.0/15",
+        "172.103.0.0/16",
+        "172.104.0.0/13",
+        "172.112.0.0/12",
+        "172.128.0.0/9",
+        "173.0.0.0/8",
+        "174.0.0.0/7",
+        "176.0.0.0/4",
+        "192.0.0.0/3",
+        "240.0.0.0/4"
+      ],
+      "priority": 203,
+      "protocols": [
+        "TCP",
+        "UDP"
+      ],
+      "rule_id": "DEFAULT",
+      "sport": [
+        [
+          0,
+          65535
+        ]
+      ],
+      "src": [
+        "10.102.0.0/16"
+      ]
+    },
+    {
+      "action": "ACCEPT",
+      "category": "default",
+      "cell_id": 204,
+      "dport": [
+        [
+          0,
+          65535
+        ]
+      ],
+      "dst": [
+        "172.102.0.0/16"
+      ],
+      "priority": 204,
+      "protocols": [
+        "UDP"
+      ],
+      "rule_id": "DEFAULT",
+      "sport": [
+        [
+          0,
+          65535
+        ]
+      ],
+      "src": [
+        "10.102.0.0/16"
+      ]
+    },
+    {
+      "action": "ACCEPT",
+      "category": "default",
+      "cell_id": 205,
+      "dport": [
+        [
+          0,
+          20001
+        ],
+        [
+          20003,
+          65535
+        ]
+      ],
+      "dst": [
+        "172.102.0.0/16"
+      ],
+      "priority": 205,
+      "protocols": [
+        "TCP"
+      ],
+      "rule_id": "DEFAULT",
+      "sport": [
+        [
+          0,
+          65535
+        ]
+      ],
+      "src": [
+        "10.102.0.0/16"
+      ]
+    },
+    {
+      "action": "ACCEPT",
+      "category": "default",
+      "cell_id": 206,
+      "dport": [
+        [
+          0,
+          65535
+        ]
+      ],
+      "dst": [
+        "0.0.0.0/1",
+        "128.0.0.0/3",
+        "160.0.0.0/5",
+        "168.0.0.0/6",
+        "172.0.0.0/10",
+        "172.64.0.0/11",
+        "172.96.0.0/14",
+        "172.100.0.0/16",
+        "172.102.0.0/15",
+        "172.104.0.0/13",
+        "172.112.0.0/12",
+        "172.128.0.0/9",
+        "173.0.0.0/8",
+        "174.0.0.0/7",
+        "176.0.0.0/4",
+        "192.0.0.0/3",
+        "240.0.0.0/4"
+      ],
+      "priority": 206,
+      "protocols": [
+        "TCP",
+        "UDP"
+      ],
+      "rule_id": "DEFAULT",
+      "sport": [
+        [
+          0,
+          65535
+        ]
+      ],
+      "src": [
+        "10.101.0.0/16"
+      ]
+    },
+    {
+      "action": "ACCEPT",
+      "category": "default",
+      "cell_id": 207,
+      "dport": [
+        [
+          0,
+          65535
+        ]
+      ],
+      "dst": [
+        "172.101.0.0/16"
+      ],
+      "priority": 207,
+      "protocols": [
+        "UDP"
+      ],
+      "rule_id": "DEFAULT",
+      "sport": [
+        [
+          0,
+          65535
+        ]
+      ],
+      "src": [
+        "10.101.0.0/16"
+      ]
+    },
+    {
+      "action": "ACCEPT",
+      "category": "default",
+      "cell_id": 208,
+      "dport": [
+        [
+          0,
+          20000
+        ],
+        [
+          20002,
+          65535
+        ]
+      ],
+      "dst": [
+        "172.101.0.0/16"
+      ],
+      "priority": 208,
+      "protocols": [
+        "TCP"
+      ],
+      "rule_id": "DEFAULT",
+      "sport": [
+        [
+          0,
+          65535
+        ]
+      ],
+      "src": [
+        "10.101.0.0/16"
+      ]
+    },
+    {
+      "action": "ACCEPT",
+      "category": "default",
+      "cell_id": 209,
+      "dport": [
+        [
+          0,
+          65535
+        ]
+      ],
+      "dst": [
+        "0.0.0.0/1",
+        "128.0.0.0/3",
+        "160.0.0.0/5",
+        "168.0.0.0/6",
+        "172.0.0.0/10",
+        "172.64.0.0/11",
+        "172.96.0.0/14",
+        "172.101.0.0/16",
+        "172.102.0.0/15",
+        "172.104.0.0/13",
+        "172.112.0.0/12",
+        "172.128.0.0/9",
+        "173.0.0.0/8",
+        "174.0.0.0/7",
+        "176.0.0.0/4",
+        "192.0.0.0/3",
+        "240.0.0.0/4"
+      ],
+      "priority": 209,
+      "protocols": [
+        "TCP",
+        "UDP"
+      ],
+      "rule_id": "DEFAULT",
+      "sport": [
+        [
+          0,
+          65535
+        ]
+      ],
+      "src": [
+        "10.100.0.0/16"
+      ]
+    },
+    {
+      "action": "ACCEPT",
+      "category": "default",
+      "cell_id": 210,
+      "dport": [
+        [
+          0,
+          65535
+        ]
+      ],
+      "dst": [
+        "172.100.0.0/16"
+      ],
+      "priority": 210,
+      "protocols": [
+        "TCP"
+      ],
+      "rule_id": "DEFAULT",
+      "sport": [
+        [
+          0,
+          65535
+        ]
+      ],
+      "src": [
+        "10.100.0.0/16"
+      ]
+    },
+    {
+      "action": "ACCEPT",
+      "category": "default",
+      "cell_id": 211,
+      "dport": [
+        [
+          0,
+          19999
+        ],
+        [
+          20001,
+          65535
+        ]
+      ],
+      "dst": [
+        "172.100.0.0/16"
+      ],
+      "priority": 211,
+      "protocols": [
+        "UDP"
+      ],
+      "rule_id": "DEFAULT",
+      "sport": [
+        [
+          0,
+          65535
+        ]
+      ],
+      "src": [
+        "10.100.0.0/16"
+      ]
+    },
+    {
+      "action": "ACCEPT",
+      "category": "default",
+      "cell_id": 212,
+      "dport": [
+        [
+          0,
+          65535
+        ]
+      ],
+      "dst": [
+        "0.0.0.0/1",
+        "128.0.0.0/3",
+        "160.0.0.0/5",
+        "168.0.0.0/6",
+        "172.0.0.0/12",
+        "172.16.0.0/14",
+        "172.21.0.0/16",
+        "172.22.0.0/15",
+        "172.24.0.0/13",
+        "172.32.0.0/11",
+        "172.64.0.0/10",
+        "172.128.0.0/9",
+        "173.0.0.0/8",
+        "174.0.0.0/7",
+        "176.0.0.0/4",
+        "192.0.0.0/3",
+        "240.0.0.0/4"
+      ],
+      "priority": 212,
+      "protocols": [
+        "TCP",
+        "UDP"
+      ],
+      "rule_id": "DEFAULT",
+      "sport": [
+        [
+          0,
+          65535
+        ]
+      ],
+      "src": [
+        "128.0.0.0/2",
+        "192.0.0.0/5",
+        "200.0.0.0/7",
+        "202.0.0.0/8",
+        "203.0.0.0/18",
+        "203.0.64.0/19",
+        "203.0.96.0/20",
+        "203.0.112.0/24",
+        "203.0.114.0/23",
+        "203.0.116.0/22",
+        "203.0.120.0/21",
+        "203.0.128.0/17",
+        "203.1.0.0/16",
+        "203.2.0.0/15",
+        "203.4.0.0/14",
+        "203.8.0.0/13",
+        "203.16.0.0/12",
+        "203.32.0.0/11",
+        "203.64.0.0/10",
+        "203.128.0.0/9",
+        "204.0.0.0/6",
+        "208.0.0.0/4",
+        "224.0.0.0/4"
+      ]
+    },
+    {
+      "action": "ACCEPT",
+      "category": "default",
+      "cell_id": 213,
+      "dport": [
+        [
+          0,
+          65535
+        ]
+      ],
+      "dst": [
+        "172.20.0.0/16"
+      ],
+      "priority": 213,
+      "protocols": [
+        "UDP"
+      ],
+      "rule_id": "DEFAULT",
+      "sport": [
+        [
+          0,
+          65535
+        ]
+      ],
+      "src": [
+        "128.0.0.0/2",
+        "192.0.0.0/5",
+        "200.0.0.0/7",
+        "202.0.0.0/8",
+        "203.0.0.0/18",
+        "203.0.64.0/19",
+        "203.0.96.0/20",
+        "203.0.112.0/24",
+        "203.0.114.0/23",
+        "203.0.116.0/22",
+        "203.0.120.0/21",
+        "203.0.128.0/17",
+        "203.1.0.0/16",
+        "203.2.0.0/15",
+        "203.4.0.0/14",
+        "203.8.0.0/13",
+        "203.16.0.0/12",
+        "203.32.0.0/11",
+        "203.64.0.0/10",
+        "203.128.0.0/9",
+        "204.0.0.0/6",
+        "208.0.0.0/4",
+        "224.0.0.0/4"
+      ]
+    },
+    {
+      "action": "ACCEPT",
+      "category": "default",
+      "cell_id": 214,
+      "dport": [
+        [
+          0,
+          79
+        ],
+        [
+          81,
+          65535
+        ]
+      ],
+      "dst": [
+        "172.20.0.0/16"
+      ],
+      "priority": 214,
+      "protocols": [
+        "TCP"
+      ],
+      "rule_id": "DEFAULT",
+      "sport": [
+        [
+          0,
+          65535
+        ]
+      ],
+      "src": [
+        "128.0.0.0/2",
+        "192.0.0.0/5",
+        "200.0.0.0/7",
+        "202.0.0.0/8",
+        "203.0.0.0/18",
+        "203.0.64.0/19",
+        "203.0.96.0/20",
+        "203.0.112.0/24",
+        "203.0.114.0/23",
+        "203.0.116.0/22",
+        "203.0.120.0/21",
+        "203.0.128.0/17",
+        "203.1.0.0/16",
+        "203.2.0.0/15",
+        "203.4.0.0/14",
+        "203.8.0.0/13",
+        "203.16.0.0/12",
+        "203.32.0.0/11",
+        "203.64.0.0/10",
+        "203.128.0.0/9",
+        "204.0.0.0/6",
+        "208.0.0.0/4",
+        "224.0.0.0/4"
+      ]
+    },
+    {
+      "action": "ACCEPT",
+      "category": "default",
+      "cell_id": 215,
+      "dport": [
+        [
+          0,
+          65535
+        ]
+      ],
+      "dst": [
+        "0.0.0.0/1",
+        "128.0.0.0/3",
+        "160.0.0.0/5",
+        "168.0.0.0/6",
+        "172.0.0.0/12",
+        "172.16.0.0/14",
+        "172.21.0.0/16",
+        "172.22.0.0/15",
+        "172.24.0.0/13",
+        "172.32.0.0/11",
+        "172.64.0.0/10",
+        "172.128.0.0/9",
+        "173.0.0.0/8",
+        "174.0.0.0/7",
+        "176.0.0.0/4",
+        "192.0.0.0/3",
+        "240.0.0.0/4"
+      ],
+      "priority": 215,
+      "protocols": [
+        "TCP"
+      ],
+      "rule_id": "DEFAULT",
+      "sport": [
+        [
+          0,
+          65535
+        ]
+      ],
+      "src": [
+        "240.0.0.0/4"
+      ]
+    },
+    {
+      "action": "ACCEPT",
+      "category": "default",
+      "cell_id": 216,
+      "dport": [
+        [
+          0,
+          79
+        ],
+        [
+          81,
+          65535
+        ]
+      ],
+      "dst": [
+        "172.20.0.0/16"
+      ],
+      "priority": 216,
+      "protocols": [
+        "TCP"
+      ],
+      "rule_id": "DEFAULT",
+      "sport": [
+        [
+          0,
+          65535
+        ]
+      ],
+      "src": [
+        "240.0.0.0/4"
+      ]
+    },
+    {
+      "action": "ACCEPT",
+      "category": "default",
+      "cell_id": 217,
+      "dport": [
+        [
+          0,
+          65535
+        ]
+      ],
+      "dst": [
+        "0.0.0.0/1",
+        "128.0.0.0/3",
+        "160.0.0.0/5",
+        "168.0.0.0/6",
+        "172.0.0.0/12",
+        "172.16.0.0/14",
+        "172.21.0.0/16",
+        "172.22.0.0/15",
+        "172.24.0.0/13",
+        "172.32.0.0/11",
+        "172.64.0.0/10",
+        "172.128.0.0/9",
+        "173.0.0.0/8",
+        "174.0.0.0/7",
+        "176.0.0.0/4",
+        "192.0.0.0/6",
+        "196.0.0.0/7",
+        "198.0.0.0/11",
+        "198.32.0.0/12",
+        "198.48.0.0/15",
+        "198.50.0.0/16",
+        "198.51.0.0/18",
+        "198.51.64.0/19",
+        "198.51.96.0/22",
+        "198.51.101.0/24",
+        "198.51.102.0/23",
+        "198.51.104.0/21",
+        "198.51.112.0/20",
+        "198.51.128.0/17",
+        "198.52.0.0/14",
+        "198.56.0.0/13",
+        "198.64.0.0/10",
+        "198.128.0.0/9",
+        "199.0.0.0/8",
+        "200.0.0.0/5",
+        "208.0.0.0/4",
+        "240.0.0.0/4"
+      ],
+      "priority": 217,
+      "protocols": [
+        "TCP",
+        "UDP"
+      ],
+      "rule_id": "DEFAULT",
+      "sport": [
+        [
+          0,
+          65535
+        ]
+      ],
+      "src": [
+        "203.0.113.0/24"
+      ]
+    },
+    {
+      "action": "ACCEPT",
+      "category": "default",
+      "cell_id": 218,
+      "dport": [
+        [
+          0,
+          65535
+        ]
+      ],
+      "dst": [
+        "172.20.0.0/16"
+      ],
+      "priority": 218,
+      "protocols": [
+        "UDP"
+      ],
+      "rule_id": "DEFAULT",
+      "sport": [
+        [
+          0,
+          65535
+        ]
+      ],
+      "src": [
+        "203.0.113.0/24"
+      ]
+    },
+    {
+      "action": "ACCEPT",
+      "category": "default",
+      "cell_id": 219,
+      "dport": [
+        [
+          0,
+          79
+        ],
+        [
+          81,
+          65535
+        ]
+      ],
+      "dst": [
+        "172.20.0.0/16"
+      ],
+      "priority": 219,
+      "protocols": [
+        "TCP"
+      ],
+      "rule_id": "DEFAULT",
+      "sport": [
+        [
+          0,
+          65535
+        ]
+      ],
+      "src": [
+        "203.0.113.0/24"
+      ]
+    },
+    {
+      "action": "ACCEPT",
+      "category": "default",
+      "cell_id": 220,
+      "dport": [
+        [
+          0,
+          65535
+        ]
+      ],
+      "dst": [
+        "198.51.100.0/24"
+      ],
+      "priority": 220,
+      "protocols": [
+        "UDP"
+      ],
+      "rule_id": "DEFAULT",
+      "sport": [
+        [
+          0,
+          65535
+        ]
+      ],
+      "src": [
+        "203.0.113.0/24"
+      ]
+    },
+    {
+      "action": "ACCEPT",
+      "category": "default",
+      "cell_id": 221,
+      "dport": [
+        [
+          0,
+          442
+        ],
+        [
+          444,
+          8442
+        ],
+        [
+          8444,
+          65535
+        ]
+      ],
+      "dst": [
+        "198.51.100.0/24"
+      ],
+      "priority": 221,
+      "protocols": [
+        "TCP"
+      ],
+      "rule_id": "DEFAULT",
+      "sport": [
+        [
+          0,
+          65535
+        ]
+      ],
+      "src": [
+        "203.0.113.0/24"
+      ]
+    },
+    {
+      "action": "ACCEPT",
+      "category": "default",
+      "cell_id": 222,
+      "dport": [
+        [
+          0,
+          65535
+        ]
+      ],
+      "dst": [
+        "224.0.0.0/4"
+      ],
+      "priority": 222,
+      "protocols": [
+        "TCP"
+      ],
+      "rule_id": "DEFAULT",
+      "sport": [
+        [
+          0,
+          65535
+        ]
+      ],
+      "src": [
+        "0.0.0.0/5",
+        "8.0.0.0/7",
+        "10.0.0.0/16",
+        "10.8.0.0/13",
+        "10.16.0.0/12",
+        "10.32.0.0/11",
+        "10.64.0.0/10",
+        "10.128.0.0/9",
+        "11.0.0.0/8",
+        "12.0.0.0/6",
+        "16.0.0.0/4",
+        "32.0.0.0/3",
+        "64.0.0.0/2",
+        "128.0.0.0/1"
+      ]
+    },
+    {
+      "action": "ACCEPT",
+      "category": "default",
+      "cell_id": 223,
+      "dport": [
+        [
+          0,
+          65535
+        ]
+      ],
+      "dst": [
+        "0.0.0.0/1",
+        "128.0.0.0/3",
+        "160.0.0.0/5",
+        "168.0.0.0/6",
+        "172.0.0.0/12",
+        "172.16.0.0/14",
+        "172.20.0.0/16",
+        "172.23.0.0/16",
+        "172.24.0.0/13",
+        "172.32.0.0/11",
+        "172.64.0.0/10",
+        "172.128.0.0/9",
+        "173.0.0.0/8",
+        "174.0.0.0/7",
+        "176.0.0.0/4",
+        "192.0.0.0/3",
+        "240.0.0.0/4"
+      ],
+      "priority": 223,
+      "protocols": [
+        "TCP",
+        "UDP"
+      ],
+      "rule_id": "DEFAULT",
+      "sport": [
+        [
+          0,
+          65535
+        ]
+      ],
+      "src": [
+        "10.7.0.0/16"
+      ]
+    },
+    {
+      "action": "ACCEPT",
+      "category": "default",
+      "cell_id": 224,
+      "dport": [
+        [
+          0,
+          65535
+        ]
+      ],
+      "dst": [
+        "224.0.0.0/4"
+      ],
+      "priority": 224,
+      "protocols": [
+        "TCP"
+      ],
+      "rule_id": "DEFAULT",
+      "sport": [
+        [
+          0,
+          65535
+        ]
+      ],
+      "src": [
+        "10.7.0.0/16"
+      ]
+    },
+    {
+      "action": "ACCEPT",
+      "category": "default",
+      "cell_id": 225,
+      "dport": [
+        [
+          0,
+          65535
+        ]
+      ],
+      "dst": [
+        "172.21.0.0/16"
+      ],
+      "priority": 225,
+      "protocols": [
+        "UDP"
+      ],
+      "rule_id": "DEFAULT",
+      "sport": [
+        [
+          0,
+          65535
+        ]
+      ],
+      "src": [
+        "10.7.0.0/16"
+      ]
+    },
+    {
+      "action": "ACCEPT",
+      "category": "default",
+      "cell_id": 226,
+      "dport": [
+        [
+          0,
+          24
+        ],
+        [
+          26,
+          65535
+        ]
+      ],
+      "dst": [
+        "172.21.0.0/16"
+      ],
+      "priority": 226,
+      "protocols": [
+        "TCP"
+      ],
+      "rule_id": "DEFAULT",
+      "sport": [
+        [
+          0,
+          65535
+        ]
+      ],
+      "src": [
+        "10.7.0.0/16"
+      ]
+    },
+    {
+      "action": "ACCEPT",
+      "category": "default",
+      "cell_id": 227,
+      "dport": [
+        [
+          0,
+          65535
+        ]
+      ],
+      "dst": [
+        "172.22.0.0/16"
+      ],
+      "priority": 227,
+      "protocols": [
+        "UDP"
+      ],
+      "rule_id": "DEFAULT",
+      "sport": [
+        [
+          0,
+          65535
+        ]
+      ],
+      "src": [
+        "10.7.0.0/16"
+      ]
+    },
+    {
+      "action": "ACCEPT",
+      "category": "default",
+      "cell_id": 228,
+      "dport": [
+        [
+          0,
+          24
+        ],
+        [
+          26,
+          65535
+        ]
+      ],
+      "dst": [
+        "172.22.0.0/16"
+      ],
+      "priority": 228,
+      "protocols": [
+        "TCP"
+      ],
+      "rule_id": "DEFAULT",
+      "sport": [
+        [
+          0,
+          65535
+        ]
+      ],
+      "src": [
+        "10.7.0.0/16"
+      ]
+    },
+    {
+      "action": "ACCEPT",
+      "category": "default",
+      "cell_id": 229,
+      "dport": [
+        [
+          0,
+          65535
+        ]
+      ],
+      "dst": [
+        "0.0.0.0/1",
+        "128.0.0.0/3",
+        "160.0.0.0/5",
+        "168.0.0.0/6",
+        "172.0.0.0/12",
+        "172.16.0.0/14",
+        "172.20.0.0/16",
+        "172.23.0.0/16",
+        "172.24.0.0/13",
+        "172.32.0.0/11",
+        "172.64.0.0/10",
+        "172.128.0.0/9",
+        "173.0.0.0/8",
+        "174.0.0.0/7",
+        "176.0.0.0/4",
+        "192.0.0.0/3",
+        "240.0.0.0/4"
+      ],
+      "priority": 229,
+      "protocols": [
+        "TCP",
+        "UDP"
+      ],
+      "rule_id": "DEFAULT",
+      "sport": [
+        [
+          0,
+          65535
+        ]
+      ],
+      "src": [
+        "10.6.0.0/16"
+      ]
+    },
+    {
+      "action": "ACCEPT",
+      "category": "default",
+      "cell_id": 230,
+      "dport": [
+        [
+          0,
+          65535
+        ]
+      ],
+      "dst": [
+        "224.0.0.0/4"
+      ],
+      "priority": 230,
+      "protocols": [
+        "TCP"
+      ],
+      "rule_id": "DEFAULT",
+      "sport": [
+        [
+          0,
+          65535
+        ]
+      ],
+      "src": [
+        "10.6.0.0/16"
+      ]
+    },
+    {
+      "action": "ACCEPT",
+      "category": "default",
+      "cell_id": 231,
+      "dport": [
+        [
+          0,
+          65535
+        ]
+      ],
+      "dst": [
+        "172.22.0.0/16"
+      ],
+      "priority": 231,
+      "protocols": [
+        "UDP"
+      ],
+      "rule_id": "DEFAULT",
+      "sport": [
+        [
+          0,
+          65535
+        ]
+      ],
+      "src": [
+        "10.6.0.0/16"
+      ]
+    },
+    {
+      "action": "ACCEPT",
+      "category": "default",
+      "cell_id": 232,
+      "dport": [
+        [
+          0,
+          24
+        ],
+        [
+          26,
+          65535
+        ]
+      ],
+      "dst": [
+        "172.22.0.0/16"
+      ],
+      "priority": 232,
+      "protocols": [
+        "TCP"
+      ],
+      "rule_id": "DEFAULT",
+      "sport": [
+        [
+          0,
+          65535
+        ]
+      ],
+      "src": [
+        "10.6.0.0/16"
+      ]
+    },
+    {
+      "action": "ACCEPT",
+      "category": "default",
+      "cell_id": 233,
+      "dport": [
+        [
+          0,
+          65535
+        ]
+      ],
+      "dst": [
+        "172.21.0.0/16"
+      ],
+      "priority": 233,
+      "protocols": [
+        "UDP"
+      ],
+      "rule_id": "DEFAULT",
+      "sport": [
+        [
+          0,
+          65535
+        ]
+      ],
+      "src": [
+        "10.6.0.0/16"
+      ]
+    },
+    {
+      "action": "ACCEPT",
+      "category": "default",
+      "cell_id": 234,
+      "dport": [
+        [
+          0,
+          24
+        ],
+        [
+          26,
+          65535
+        ]
+      ],
+      "dst": [
+        "172.21.0.0/16"
+      ],
+      "priority": 234,
+      "protocols": [
+        "TCP"
+      ],
+      "rule_id": "DEFAULT",
+      "sport": [
+        [
+          0,
+          65535
+        ]
+      ],
+      "src": [
+        "10.6.0.0/16"
+      ]
+    },
+    {
+      "action": "ACCEPT",
+      "category": "default",
+      "cell_id": 235,
+      "dport": [
+        [
+          0,
+          65535
+        ]
+      ],
+      "dst": [
+        "0.0.0.0/1",
+        "128.0.0.0/3",
+        "160.0.0.0/5",
+        "168.0.0.0/6",
+        "172.0.0.0/12",
+        "172.16.0.0/15",
+        "172.19.0.0/16",
+        "172.20.0.0/14",
+        "172.24.0.0/13",
+        "172.32.0.0/11",
+        "172.64.0.0/10",
+        "172.128.0.0/9",
+        "173.0.0.0/8",
+        "174.0.0.0/7",
+        "176.0.0.0/4",
+        "192.0.0.0/3",
+        "240.0.0.0/4"
+      ],
+      "priority": 235,
+      "protocols": [
+        "TCP",
+        "UDP"
+      ],
+      "rule_id": "DEFAULT",
+      "sport": [
+        [
+          0,
+          65535
+        ]
+      ],
+      "src": [
+        "10.4.0.0/16"
+      ]
+    },
+    {
+      "action": "ACCEPT",
+      "category": "default",
+      "cell_id": 236,
+      "dport": [
+        [
+          0,
+          65535
+        ]
+      ],
+      "dst": [
+        "224.0.0.0/4"
+      ],
+      "priority": 236,
+      "protocols": [
+        "TCP"
+      ],
+      "rule_id": "DEFAULT",
+      "sport": [
+        [
+          0,
+          65535
+        ]
+      ],
+      "src": [
+        "10.4.0.0/16"
+      ]
+    },
+    {
+      "action": "ACCEPT",
+      "category": "default",
+      "cell_id": 237,
+      "dport": [
+        [
+          0,
+          65535
+        ]
+      ],
+      "dst": [
+        "172.18.0.0/16"
+      ],
+      "priority": 237,
+      "protocols": [
+        "UDP"
+      ],
+      "rule_id": "DEFAULT",
+      "sport": [
+        [
+          0,
+          65535
+        ]
+      ],
+      "src": [
+        "10.4.0.0/16"
+      ]
+    },
+    {
+      "action": "ACCEPT",
+      "category": "default",
+      "cell_id": 238,
+      "dport": [
+        [
+          0,
+          98
+        ],
+        [
+          302,
+          65535
+        ]
+      ],
+      "dst": [
+        "172.18.0.0/16"
+      ],
+      "priority": 238,
+      "protocols": [
+        "TCP"
+      ],
+      "rule_id": "DEFAULT",
+      "sport": [
+        [
+          0,
+          65535
+        ]
+      ],
+      "src": [
+        "10.4.0.0/24",
+        "10.4.2.0/23",
+        "10.4.4.0/22",
+        "10.4.8.0/21",
+        "10.4.16.0/20",
+        "10.4.32.0/19",
+        "10.4.64.0/18",
+        "10.4.128.0/17"
+      ]
+    },
+    {
+      "action": "ACCEPT",
+      "category": "default",
+      "cell_id": 239,
+      "dport": [
+        [
+          0,
+          98
+        ],
+        [
+          302,
+          65535
+        ]
+      ],
+      "dst": [
+        "172.18.0.0/24",
+        "172.18.2.0/23",
+        "172.18.4.0/22",
+        "172.18.8.0/21",
+        "172.18.16.0/20",
+        "172.18.32.0/19",
+        "172.18.64.0/18",
+        "172.18.128.0/17"
+      ],
+      "priority": 239,
+      "protocols": [
+        "TCP"
+      ],
+      "rule_id": "DEFAULT",
+      "sport": [
+        [
+          0,
+          65535
+        ]
+      ],
+      "src": [
+        "10.4.1.0/24"
+      ]
+    },
+    {
+      "action": "ACCEPT",
+      "category": "default",
+      "cell_id": 240,
+      "dport": [
+        [
+          0,
+          98
+        ],
+        [
+          302,
+          5431
+        ],
+        [
+          5433,
+          65535
+        ]
+      ],
+      "dst": [
+        "172.18.1.0/24"
+      ],
+      "priority": 240,
+      "protocols": [
+        "TCP"
+      ],
+      "rule_id": "DEFAULT",
+      "sport": [
+        [
+          1024,
+          65535
+        ]
+      ],
+      "src": [
+        "10.4.1.0/24"
+      ]
+    },
+    {
+      "action": "ACCEPT",
+      "category": "default",
+      "cell_id": 241,
+      "dport": [
+        [
+          0,
+          98
+        ],
+        [
+          302,
+          5431
+        ],
+        [
+          5433,
+          65535
+        ]
+      ],
+      "dst": [
+        "172.18.1.0/24"
+      ],
+      "priority": 241,
+      "protocols": [
+        "TCP"
+      ],
+      "rule_id": "DEFAULT",
+      "sport": [
+        [
+          0,
+          1023
+        ]
+      ],
+      "src": [
+        "10.4.1.0/24"
+      ]
+    },
+    {
+      "action": "ACCEPT",
+      "category": "default",
+      "cell_id": 242,
+      "dport": [
+        [
+          0,
+          65535
+        ]
+      ],
+      "dst": [
+        "0.0.0.0/1",
+        "128.0.0.0/3",
+        "160.0.0.0/5",
+        "168.0.0.0/6",
+        "172.0.0.0/12",
+        "172.18.0.0/15",
+        "172.20.0.0/14",
+        "172.24.0.0/13",
+        "172.32.0.0/11",
+        "172.64.0.0/10",
+        "172.128.0.0/9",
+        "173.0.0.0/8",
+        "174.0.0.0/7",
+        "176.0.0.0/4",
+        "192.0.0.0/3",
+        "240.0.0.0/4"
+      ],
+      "priority": 242,
+      "protocols": [
+        "TCP",
+        "UDP"
+      ],
+      "rule_id": "DEFAULT",
+      "sport": [
+        [
+          0,
+          65535
+        ]
+      ],
+      "src": [
+        "10.3.0.0/16"
+      ]
+    },
+    {
+      "action": "ACCEPT",
+      "category": "default",
+      "cell_id": 243,
+      "dport": [
+        [
+          0,
+          65535
+        ]
+      ],
+      "dst": [
+        "224.0.0.0/4"
+      ],
+      "priority": 243,
+      "protocols": [
+        "TCP"
+      ],
+      "rule_id": "DEFAULT",
+      "sport": [
+        [
+          0,
+          65535
+        ]
+      ],
+      "src": [
+        "10.3.0.0/16"
+      ]
+    },
+    {
+      "action": "ACCEPT",
+      "category": "default",
+      "cell_id": 244,
+      "dport": [
+        [
+          0,
+          65535
+        ]
+      ],
+      "dst": [
+        "172.16.0.0/16"
+      ],
+      "priority": 244,
+      "protocols": [
+        "UDP"
+      ],
+      "rule_id": "DEFAULT",
+      "sport": [
+        [
+          0,
+          65535
+        ]
+      ],
+      "src": [
+        "10.3.0.0/16"
+      ]
+    },
+    {
+      "action": "ACCEPT",
+      "category": "default",
+      "cell_id": 245,
+      "dport": [
+        [
+          0,
+          8079
+        ],
+        [
+          8081,
+          65535
+        ]
+      ],
+      "dst": [
+        "172.16.0.0/16"
+      ],
+      "priority": 245,
+      "protocols": [
+        "TCP"
+      ],
+      "rule_id": "DEFAULT",
+      "sport": [
+        [
+          0,
+          65535
+        ]
+      ],
+      "src": [
+        "10.3.0.0/16"
+      ]
+    },
+    {
+      "action": "ACCEPT",
+      "category": "default",
+      "cell_id": 246,
+      "dport": [
+        [
+          0,
+          65535
+        ]
+      ],
+      "dst": [
+        "0.0.0.0/1",
+        "128.0.0.0/3",
+        "160.0.0.0/5",
+        "168.0.0.0/6",
+        "172.0.0.0/12",
+        "172.17.0.0/16",
+        "172.18.0.0/15",
+        "172.20.0.0/14",
+        "172.24.0.0/13",
+        "172.32.0.0/11",
+        "172.64.0.0/10",
+        "172.128.0.0/9",
+        "173.0.0.0/8",
+        "174.0.0.0/7",
+        "176.0.0.0/4",
+        "192.0.0.0/3",
+        "240.0.0.0/4"
+      ],
+      "priority": 246,
+      "protocols": [
+        "TCP",
+        "UDP"
+      ],
+      "rule_id": "DEFAULT",
+      "sport": [
+        [
+          0,
+          65535
+        ]
+      ],
+      "src": [
+        "10.2.0.0/16"
+      ]
+    },
+    {
+      "action": "ACCEPT",
+      "category": "default",
+      "cell_id": 247,
+      "dport": [
+        [
+          0,
+          65535
+        ]
+      ],
+      "dst": [
+        "224.0.0.0/4"
+      ],
+      "priority": 247,
+      "protocols": [
+        "TCP"
+      ],
+      "rule_id": "DEFAULT",
+      "sport": [
+        [
+          0,
+          65535
+        ]
+      ],
+      "src": [
+        "10.2.0.0/16"
+      ]
+    },
+    {
+      "action": "ACCEPT",
+      "category": "default",
+      "cell_id": 248,
+      "dport": [
+        [
+          0,
+          8079
+        ],
+        [
+          8081,
+          65535
+        ]
+      ],
+      "dst": [
+        "172.16.0.0/16"
+      ],
+      "priority": 248,
+      "protocols": [
+        "UDP"
+      ],
+      "rule_id": "DEFAULT",
+      "sport": [
+        [
+          0,
+          65535
+        ]
+      ],
+      "src": [
+        "10.2.0.0/16"
+      ]
+    },
+    {
+      "action": "ACCEPT",
+      "category": "default",
+      "cell_id": 249,
+      "dport": [
+        [
+          0,
+          8079
+        ],
+        [
+          8081,
+          65535
+        ]
+      ],
+      "dst": [
+        "172.16.0.0/16"
+      ],
+      "priority": 249,
+      "protocols": [
+        "TCP"
+      ],
+      "rule_id": "DEFAULT",
+      "sport": [
+        [
+          0,
+          65535
+        ]
+      ],
+      "src": [
+        "10.2.0.0/16"
+      ]
+    },
+    {
+      "action": "ACCEPT",
+      "category": "default",
+      "cell_id": 250,
+      "dport": [
+        [
+          0,
+          65535
+        ]
+      ],
+      "dst": [
+        "0.0.0.0/1",
+        "128.0.0.0/3",
+        "160.0.0.0/5",
+        "168.0.0.0/6",
+        "172.0.0.0/12",
+        "172.16.0.0/15",
+        "172.18.0.0/16",
+        "172.20.0.0/14",
+        "172.24.0.0/13",
+        "172.32.0.0/11",
+        "172.64.0.0/10",
+        "172.128.0.0/9",
+        "173.0.0.0/8",
+        "174.0.0.0/7",
+        "176.0.0.0/4",
+        "192.0.0.0/3",
+        "240.0.0.0/4"
+      ],
+      "priority": 250,
+      "protocols": [
+        "TCP",
+        "UDP"
+      ],
+      "rule_id": "DEFAULT",
+      "sport": [
+        [
+          0,
+          65535
+        ]
+      ],
+      "src": [
+        "10.5.0.0/16"
+      ]
+    },
+    {
+      "action": "ACCEPT",
+      "category": "default",
+      "cell_id": 251,
+      "dport": [
+        [
+          0,
+          65535
+        ]
+      ],
+      "dst": [
+        "224.0.0.0/4"
+      ],
+      "priority": 251,
+      "protocols": [
+        "TCP"
+      ],
+      "rule_id": "DEFAULT",
+      "sport": [
+        [
+          0,
+          65535
+        ]
+      ],
+      "src": [
+        "10.5.0.0/16"
+      ]
+    },
+    {
+      "action": "ACCEPT",
+      "category": "default",
+      "cell_id": 252,
+      "dport": [
+        [
+          0,
+          65535
+        ]
+      ],
+      "dst": [
+        "172.19.0.0/16"
+      ],
+      "priority": 252,
+      "protocols": [
+        "UDP"
+      ],
+      "rule_id": "DEFAULT",
+      "sport": [
+        [
+          0,
+          65535
+        ]
+      ],
+      "src": [
+        "10.5.0.0/16"
+      ]
+    },
+    {
+      "action": "ACCEPT",
+      "category": "default",
+      "cell_id": 253,
+      "dport": [
+        [
+          0,
+          442
+        ],
+        [
+          444,
+          65535
+        ]
+      ],
+      "dst": [
+        "172.19.0.0/16"
+      ],
+      "priority": 253,
+      "protocols": [
+        "TCP"
+      ],
+      "rule_id": "DEFAULT",
+      "sport": [
+        [
+          0,
+          65535
+        ]
+      ],
+      "src": [
+        "10.5.0.0/16"
+      ]
+    },
+    {
+      "action": "ACCEPT",
+      "category": "default",
+      "cell_id": 254,
+      "dport": [
+        [
+          0,
+          65535
+        ]
+      ],
+      "dst": [
+        "0.0.0.0/1",
+        "128.0.0.0/3",
+        "160.0.0.0/5",
+        "168.0.0.0/6",
+        "172.0.0.0/12",
+        "172.17.0.0/16",
+        "172.18.0.0/15",
+        "172.20.0.0/14",
+        "172.24.0.0/13",
+        "172.32.0.0/11",
+        "172.64.0.0/10",
+        "172.128.0.0/9",
+        "173.0.0.0/8",
+        "174.0.0.0/7",
+        "176.0.0.0/4",
+        "192.0.0.0/3",
+        "240.0.0.0/4"
+      ],
+      "priority": 254,
+      "protocols": [
+        "TCP",
+        "UDP"
+      ],
+      "rule_id": "DEFAULT",
+      "sport": [
+        [
+          0,
+          65535
+        ]
+      ],
+      "src": [
+        "10.1.0.0/16"
+      ]
+    },
+    {
+      "action": "ACCEPT",
+      "category": "default",
+      "cell_id": 255,
+      "dport": [
+        [
+          0,
+          65535
+        ]
+      ],
+      "dst": [
+        "224.0.0.0/4"
+      ],
+      "priority": 255,
+      "protocols": [
+        "TCP"
+      ],
+      "rule_id": "DEFAULT",
+      "sport": [
+        [
+          0,
+          65535
+        ]
+      ],
+      "src": [
+        "10.1.0.0/16"
+      ]
+    },
+    {
+      "action": "ACCEPT",
+      "category": "default",
+      "cell_id": 256,
+      "dport": [
+        [
+          0,
+          65535
+        ]
+      ],
+      "dst": [
+        "172.16.0.0/16"
+      ],
+      "priority": 256,
+      "protocols": [
+        "UDP"
+      ],
+      "rule_id": "DEFAULT",
+      "sport": [
+        [
+          0,
+          65535
+        ]
+      ],
+      "src": [
+        "10.1.0.0/16"
+      ]
+    },
+    {
+      "action": "ACCEPT",
+      "category": "default",
+      "cell_id": 257,
+      "dport": [
+        [
+          0,
+          79
+        ],
+        [
+          81,
+          65535
+        ]
+      ],
+      "dst": [
+        "172.16.0.0/16"
+      ],
+      "priority": 257,
+      "protocols": [
+        "TCP"
+      ],
+      "rule_id": "DEFAULT",
+      "sport": [
+        [
+          1024,
+          65535
+        ]
+      ],
+      "src": [
+        "10.1.0.0/16"
+      ]
+    },
+    {
+      "action": "ACCEPT",
+      "category": "default",
+      "cell_id": 258,
+      "dport": [
+        [
+          0,
+          79
+        ],
+        [
+          81,
+          65535
+        ]
+      ],
+      "dst": [
+        "172.16.0.0/16"
+      ],
+      "priority": 258,
+      "protocols": [
+        "TCP"
+      ],
+      "rule_id": "DEFAULT",
+      "sport": [
+        [
+          0,
+          1023
+        ]
+      ],
+      "src": [
+        "10.1.0.0/16"
+      ]
+    }
+  ],
+  "default_cell_id": 70,
+  "equivalence": {
+    "cell_count": 259,
+    "equivalent": true,
+    "issues": [],
+    "pairwise_checked": true,
+    "point_checks": 0,
+    "ruleset_digest": "1b9ae805ffa4c0fe4ab77afab0db0e456c3d71e9dc9ea99efa16fbf989d0ac42"
+  },
+  "rule_order": [
+    "U_A",
+    "U_B",
+    "U_C",
+    "O_DENY",
+    "O_ACCEPT",
+    "N1",
+    "N2",
+    "N3",
+    "N4",
+    "N5",
+    "N6",
+    "B1",
+    "B2",
+    "B3",
+    "B4",
+    "B5",
+    "B6",
+    "B7",
+    "P1",
+    "P2",
+    "P3",
+    "I1",
+    "I2",
+    "I3",
+    "I4",
+    "I5A",
+    "I5B",
+    "M1",
+    "H1",
+    "H2",
+    "H3",
+    "H4",
+    "H5",
+    "F000",
+    "F001",
+    "F002",
+    "F003",
+    "F004",
+    "F005",
+    "F006",
+    "F007",
+    "F008",
+    "F009",
+    "F010",
+    "F011",
+    "F012",
+    "F013",
+    "F014",
+    "F015",
+    "F016",
+    "F017",
+    "F018",
+    "F019",
+    "F020",
+    "F021",
+    "F022",
+    "F023",
+    "F024",
+    "F025",
+    "F026",
+    "F027",
+    "F028",
+    "F029",
+    "F030",
+    "F031",
+    "F032",
+    "F033",
+    "F034",
+    "F035",
+    "F036",
+    "F037",
+    "F038",
+    "F039",
+    "F040",
+    "F041",
+    "F042",
+    "F043",
+    "F044",
+    "F045",
+    "F046"
+  ],
+  "ruleset_digest": "1b9ae805ffa4c0fe4ab77afab0db0e456c3d71e9dc9ea99efa16fbf989d0ac42"
+}
