@@ -1,0 +1,3 @@
+# Test-only dependencies. The production package uses only the standard library.
+pytest>=8
+pillow==11.3.0
