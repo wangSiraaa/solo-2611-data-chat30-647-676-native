@@ -1,0 +1,5 @@
+__pycache__/
+*.pyc
+data/benchmark.db
+data/benchmark.db-wal
+data/benchmark.db-shm
