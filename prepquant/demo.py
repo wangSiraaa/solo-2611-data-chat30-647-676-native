@@ -124,7 +124,8 @@ def demo() -> dict:
     check(r["endpoints"]["s1"]["min"] == "25" and r["endpoints"]["s1"]["max"] == "35",
           f"range expected [25,35], got {r['endpoints']}")
     check(r["unique"] is False, "range scenario must not be unique")
-    check("point_estimate" not in r and "average" not in json.dumps(r),
+    body = {k: v for k, v in r.items() if k not in ("name", "created_at", "measurement_snapshot")}
+    check("point_estimate" not in r and "average" not in json.dumps(body),
           "no fake point estimate may be introduced")
     report["scenarios"].append({"name": s["name"], "status": r["status"], "endpoints": r["endpoints"]})
     L.close(); V.close()

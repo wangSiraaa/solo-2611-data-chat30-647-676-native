@@ -352,11 +352,14 @@ class Ledger:
         self._check_new_container_id(seq, containers, cid)
         volume = positive(q(op["volume"], "volume"), "volume")
         conc = nonneg(q(op["concentration"], "concentration"), "concentration")
-        if cid in containers and not containers[cid].is_empty():
-            raise LedgerError(f"seq {seq}: container {cid!r} already holds liquid; container identity is stable")
+        version = 0
+        if cid in containers:
+            if not containers[cid].is_empty():
+                raise LedgerError(f"seq {seq}: container {cid!r} already holds liquid; container identity is stable")
+            version = containers[cid].version
         mass = LinExpr.constant(volume * conc, unknowns)
         book = {cid: (volume, mass)}
-        container = Container(cid, "standard", volume, mass, book, label=op.get("label"))
+        container = Container(cid, "standard", volume, mass, book, label=op.get("label"), version=version)
         containers[cid] = container
         self._record(seq, "standard", container, unknowns)
 
@@ -368,11 +371,14 @@ class Ledger:
         if name not in unknowns:
             raise LedgerError(f"seq {seq}: sample {name!r} not declared in the unknown ordering")
         volume = positive(q(op["volume"], "volume"), "volume")
-        if cid in containers and not containers[cid].is_empty():
-            raise LedgerError(f"seq {seq}: container {cid!r} already holds liquid; container identity is stable")
+        version = 0
+        if cid in containers:
+            if not containers[cid].is_empty():
+                raise LedgerError(f"seq {seq}: container {cid!r} already holds liquid; container identity is stable")
+            version = containers[cid].version
         mass = LinExpr.variable(name, unknowns, scale=volume)
         book = {cid: (volume, mass)}
-        container = Container(cid, "sample", volume, mass, book, sample=name, label=op.get("label"))
+        container = Container(cid, "sample", volume, mass, book, sample=name, label=op.get("label"), version=version)
         containers[cid] = container
         self._record(seq, "sample", container, unknowns)
 
