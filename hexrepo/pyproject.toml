@@ -1,0 +1,27 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "heximg"
+version = "1.0.0"
+description = "有限 Intel HEX 映像目录与分区差量核对仓（纯本地分析，不连接硬件）"
+requires-python = ">=3.11"
+license = {text = "MIT"}
+authors = [{name = "heximg"}]
+keywords = ["intel-hex", "firmware", "sparse-image", "delta", "partition"]
+classifiers = [
+    "Programming Language :: Python :: 3.11",
+    "Topic :: Software Development :: Embedded Systems",
+    "Operating System :: OS Independent",
+]
+
+[project.scripts]
+heximg = "heximg.cli:main"
+
+[tool.setuptools]
+packages = ["heximg"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+python_files = ["test_*.py"]

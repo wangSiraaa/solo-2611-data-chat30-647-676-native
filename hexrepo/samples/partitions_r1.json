@@ -1,0 +1,8 @@
+{
+  "revision": "r1",
+  "note": "首版分区目录",
+  "partitions": [
+    {"name": "boot",  "start": 0,      "length": 256,  "fill": 255},
+    {"name": "app",   "start": 256,    "length": 1024, "fill": 255}
+  ]
+}

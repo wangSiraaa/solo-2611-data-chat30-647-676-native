@@ -1,0 +1,9 @@
+{
+  "revision": "r2",
+  "note": "app 区拆分为两个分区，验证修订后差量归属变化",
+  "partitions": [
+    {"name": "boot",  "start": 0,      "length": 256,  "fill": 255},
+    {"name": "app_a", "start": 256,    "length": 512,  "fill": 255},
+    {"name": "app_b", "start": 768,    "length": 512,  "fill": 255}
+  ]
+}

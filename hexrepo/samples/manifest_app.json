@@ -1,0 +1,7 @@
+{
+  "name": "app",
+  "entries": [
+    {"path": "dup_same_value.hex", "layer": 0},
+    {"path": "overlay_high.hex", "layer": 1}
+  ]
+}
