@@ -1,0 +1,4 @@
+__pycache__/
+*.pyc
+# Demo artifacts are reproducible via ./run_all.sh
+demo_out/
