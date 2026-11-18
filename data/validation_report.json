@@ -1,0 +1,756 @@
+{
+  "scan_id": "scan-20261118015117-fad756",
+  "detection": {
+    "n_gt_events": 52,
+    "n_matches": 52,
+    "n_linked": 52,
+    "start_error_samples": {
+      "mean": 4417.56,
+      "p95": 14329.65,
+      "max": 19460,
+      "n": 52
+    },
+    "end_error_samples": {
+      "mean": 7519.08,
+      "p95": 22026.2,
+      "max": 39620,
+      "n": 52
+    },
+    "start_error_seconds": {
+      "mean": 0.5522,
+      "p95": 1.7912,
+      "max": 2.4325
+    },
+    "missed_detections": [],
+    "false_alarms": [],
+    "confirmed_precision": 0.8636,
+    "links": [
+      {
+        "event_id": "e044",
+        "play_id": "m009#p03",
+        "material_id": "m009",
+        "kind": "repeated",
+        "certainty": "confirmed",
+        "iou": 0.9989,
+        "start_err": 29,
+        "end_err": 131
+      },
+      {
+        "event_id": "e024",
+        "play_id": "m009#p01",
+        "material_id": "m009",
+        "kind": "full",
+        "certainty": "confirmed",
+        "iou": 0.9988,
+        "start_err": 3,
+        "end_err": 163
+      },
+      {
+        "event_id": "e001",
+        "play_id": "m017#p01",
+        "material_id": "m017",
+        "kind": "full",
+        "certainty": "confirmed",
+        "iou": 0.9964,
+        "start_err": 560,
+        "end_err": 160
+      },
+      {
+        "event_id": "e048",
+        "play_id": "m008#p02",
+        "material_id": "m008",
+        "kind": "volume",
+        "certainty": "confirmed",
+        "iou": 0.9953,
+        "start_err": 32,
+        "end_err": 192
+      },
+      {
+        "event_id": "e034",
+        "play_id": "m005#p02",
+        "material_id": "m005",
+        "kind": "truncated_tail",
+        "certainty": "review",
+        "iou": 0.9912,
+        "start_err": 829,
+        "end_err": 56
+      },
+      {
+        "event_id": "e008",
+        "play_id": "m012#p01",
+        "material_id": "m012",
+        "kind": "full",
+        "certainty": "confirmed",
+        "iou": 0.9883,
+        "start_err": 910,
+        "end_err": 1070
+      },
+      {
+        "event_id": "e009",
+        "play_id": "m024#p01",
+        "material_id": "m024",
+        "kind": "full",
+        "certainty": "confirmed",
+        "iou": 0.9861,
+        "start_err": 2402,
+        "end_err": 158
+      },
+      {
+        "event_id": "e030",
+        "play_id": "m029#p01",
+        "material_id": "m029",
+        "kind": "full",
+        "certainty": "confirmed",
+        "iou": 0.9802,
+        "start_err": 995,
+        "end_err": 1395
+      },
+      {
+        "event_id": "e031",
+        "play_id": "m021#p02",
+        "material_id": "m021",
+        "kind": "truncated_head",
+        "certainty": "review",
+        "iou": 0.9794,
+        "start_err": 449,
+        "end_err": 2014
+      },
+      {
+        "event_id": "e038",
+        "play_id": "m017#p02",
+        "material_id": "m017",
+        "kind": "truncated_tail",
+        "certainty": "review",
+        "iou": 0.979,
+        "start_err": 1555,
+        "end_err": 1224
+      },
+      {
+        "event_id": "e004",
+        "play_id": "m016#p01",
+        "material_id": "m016",
+        "kind": "full",
+        "certainty": "confirmed",
+        "iou": 0.9778,
+        "start_err": 458,
+        "end_err": 618
+      },
+      {
+        "event_id": "e007",
+        "play_id": "m011#p01",
+        "material_id": "m011",
+        "kind": "full",
+        "certainty": "confirmed",
+        "iou": 0.9738,
+        "start_err": 1403,
+        "end_err": 1563
+      },
+      {
+        "event_id": "e045",
+        "play_id": "m011#p02",
+        "material_id": "m011",
+        "kind": "volume",
+        "certainty": "confirmed",
+        "iou": 0.9733,
+        "start_err": 1434,
+        "end_err": 1594
+      },
+      {
+        "event_id": "e015",
+        "play_id": "m003#p01",
+        "material_id": "m003",
+        "kind": "full",
+        "certainty": "confirmed",
+        "iou": 0.9718,
+        "start_err": 2324,
+        "end_err": 2484
+      },
+      {
+        "event_id": "e039",
+        "play_id": "m002#p02",
+        "material_id": "m002",
+        "kind": "repeated",
+        "certainty": "confirmed",
+        "iou": 0.9711,
+        "start_err": 1563,
+        "end_err": 1723
+      },
+      {
+        "event_id": "e032",
+        "play_id": "m007#p02",
+        "material_id": "m007",
+        "kind": "truncated_tail",
+        "certainty": "review",
+        "iou": 0.9689,
+        "start_err": 3270,
+        "end_err": 1129
+      },
+      {
+        "event_id": "e040",
+        "play_id": "m022#p02",
+        "material_id": "m022",
+        "kind": "repeated",
+        "certainty": "confirmed",
+        "iou": 0.9632,
+        "start_err": 2615,
+        "end_err": 2775
+      },
+      {
+        "event_id": "e016",
+        "play_id": "m005#p01",
+        "material_id": "m005",
+        "kind": "full",
+        "certainty": "confirmed",
+        "iou": 0.9604,
+        "start_err": 2173,
+        "end_err": 3933
+      },
+      {
+        "event_id": "e033",
+        "play_id": "m009#p02",
+        "material_id": "m009",
+        "kind": "truncated_head",
+        "certainty": "review",
+        "iou": 0.9578,
+        "start_err": 69,
+        "end_err": 3837
+      },
+      {
+        "event_id": "e053",
+        "play_id": "m012#p02",
+        "material_id": "m012",
+        "kind": "repeated",
+        "certainty": "confirmed",
+        "iou": 0.9567,
+        "start_err": 2560,
+        "end_err": 4720
+      },
+      {
+        "event_id": "e002",
+        "play_id": "m010#p01",
+        "material_id": "m010",
+        "kind": "full",
+        "certainty": "confirmed",
+        "iou": 0.9555,
+        "start_err": 2102,
+        "end_err": 2262
+      },
+      {
+        "event_id": "e051",
+        "play_id": "m021#p04",
+        "material_id": "m021",
+        "kind": "repeated",
+        "certainty": "confirmed",
+        "iou": 0.9529,
+        "start_err": 1379,
+        "end_err": 6979
+      },
+      {
+        "event_id": "e036",
+        "play_id": "m015#p02",
+        "material_id": "m015",
+        "kind": "truncated_tail",
+        "certainty": "review",
+        "iou": 0.9508,
+        "start_err": 5360,
+        "end_err": 3473
+      },
+      {
+        "event_id": "e025",
+        "play_id": "m027#p01",
+        "material_id": "m027",
+        "kind": "full",
+        "certainty": "confirmed",
+        "iou": 0.9508,
+        "start_err": 2932,
+        "end_err": 4692
+      },
+      {
+        "event_id": "e010",
+        "play_id": "m025#p01",
+        "material_id": "m025",
+        "kind": "full",
+        "certainty": "confirmed",
+        "iou": 0.9489,
+        "start_err": 1387,
+        "end_err": 1547
+      },
+      {
+        "event_id": "e046",
+        "play_id": "m029#p03",
+        "material_id": "m029",
+        "kind": "volume",
+        "certainty": "confirmed",
+        "iou": 0.9475,
+        "start_err": 2043,
+        "end_err": 4363
+      },
+      {
+        "event_id": "e014",
+        "play_id": "m020#p01",
+        "material_id": "m020",
+        "kind": "full",
+        "certainty": "confirmed",
+        "iou": 0.9468,
+        "start_err": 1999,
+        "end_err": 10879
+      },
+      {
+        "event_id": "e026",
+        "play_id": "m014#p01",
+        "material_id": "m014",
+        "kind": "full",
+        "certainty": "confirmed",
+        "iou": 0.944,
+        "start_err": 1760,
+        "end_err": 1920
+      },
+      {
+        "event_id": "e003",
+        "play_id": "m026#p01",
+        "material_id": "m026",
+        "kind": "full",
+        "certainty": "confirmed",
+        "iou": 0.9324,
+        "start_err": 2157,
+        "end_err": 2317
+      },
+      {
+        "event_id": "e029",
+        "play_id": "m021#p01",
+        "material_id": "m021",
+        "kind": "full",
+        "certainty": "confirmed",
+        "iou": 0.9279,
+        "start_err": 2725,
+        "end_err": 10165
+      },
+      {
+        "event_id": "e041",
+        "play_id": "m010#p02",
+        "material_id": "m010",
+        "kind": "repeated",
+        "certainty": "confirmed",
+        "iou": 0.9247,
+        "start_err": 3673,
+        "end_err": 3833
+      },
+      {
+        "event_id": "e028",
+        "play_id": "m030#p01",
+        "material_id": "m030",
+        "kind": "full",
+        "certainty": "confirmed",
+        "iou": 0.9101,
+        "start_err": 5606,
+        "end_err": 11446
+      },
+      {
+        "event_id": "e012",
+        "play_id": "m019#p01",
+        "material_id": "m019",
+        "kind": "full",
+        "certainty": "confirmed",
+        "iou": 0.9063,
+        "start_err": 2668,
+        "end_err": 2828
+      },
+      {
+        "event_id": "e023",
+        "play_id": "m015#p01",
+        "material_id": "m015",
+        "kind": "full",
+        "certainty": "confirmed",
+        "iou": 0.9036,
+        "start_err": 5343,
+        "end_err": 18303
+      },
+      {
+        "event_id": "e018",
+        "play_id": "m007#p01",
+        "material_id": "m007",
+        "kind": "full",
+        "certainty": "confirmed",
+        "iou": 0.8989,
+        "start_err": 4878,
+        "end_err": 15838
+      },
+      {
+        "event_id": "e022",
+        "play_id": "m006#p01",
+        "material_id": "m006",
+        "kind": "full",
+        "certainty": "confirmed",
+        "iou": 0.8905,
+        "start_err": 4454,
+        "end_err": 9174
+      },
+      {
+        "event_id": "e021",
+        "play_id": "m028#p01",
+        "material_id": "m028",
+        "kind": "full",
+        "certainty": "confirmed",
+        "iou": 0.8836,
+        "start_err": 10300,
+        "end_err": 10460
+      },
+      {
+        "event_id": "e043",
+        "play_id": "m005#p03",
+        "material_id": "m005",
+        "kind": "repeated",
+        "certainty": "confirmed",
+        "iou": 0.8665,
+        "start_err": 6460,
+        "end_err": 14700
+      },
+      {
+        "event_id": "e042",
+        "play_id": "m021#p03",
+        "material_id": "m021",
+        "kind": "repeated",
+        "certainty": "confirmed",
+        "iou": 0.8631,
+        "start_err": 6921,
+        "end_err": 18121
+      },
+      {
+        "event_id": "e011",
+        "play_id": "m004#p01",
+        "material_id": "m004",
+        "kind": "full",
+        "certainty": "confirmed",
+        "iou": 0.8585,
+        "start_err": 5633,
+        "end_err": 16673
+      },
+      {
+        "event_id": "e019",
+        "play_id": "m018#p01",
+        "material_id": "m018",
+        "kind": "full",
+        "certainty": "confirmed",
+        "iou": 0.8578,
+        "start_err": 7287,
+        "end_err": 21047
+      },
+      {
+        "event_id": "e052",
+        "play_id": "m001#p03",
+        "material_id": "m001",
+        "kind": "repeated",
+        "certainty": "confirmed",
+        "iou": 0.8491,
+        "start_err": 4051,
+        "end_err": 5011
+      },
+      {
+        "event_id": "e047",
+        "play_id": "m018#p02",
+        "material_id": "m018",
+        "kind": "volume",
+        "certainty": "confirmed",
+        "iou": 0.8431,
+        "start_err": 8183,
+        "end_err": 23223
+      },
+      {
+        "event_id": "e020",
+        "play_id": "m001#p01",
+        "material_id": "m001",
+        "kind": "full",
+        "certainty": "confirmed",
+        "iou": 0.8294,
+        "start_err": 5135,
+        "end_err": 5295
+      },
+      {
+        "event_id": "e049",
+        "play_id": "m001#p02",
+        "material_id": "m001",
+        "kind": "volume",
+        "certainty": "confirmed",
+        "iou": 0.8232,
+        "start_err": 4027,
+        "end_err": 6587
+      },
+      {
+        "event_id": "e005",
+        "play_id": "m008#p01",
+        "material_id": "m008",
+        "kind": "full",
+        "certainty": "confirmed",
+        "iou": 0.8059,
+        "start_err": 5070,
+        "end_err": 5230
+      },
+      {
+        "event_id": "e035",
+        "play_id": "m029#p02",
+        "material_id": "m029",
+        "kind": "truncated_head",
+        "certainty": "review",
+        "iou": 0.7938,
+        "start_err": 14526,
+        "end_err": 6601
+      },
+      {
+        "event_id": "e037",
+        "play_id": "m030#p02",
+        "material_id": "m030",
+        "kind": "truncated_head",
+        "certainty": "review",
+        "iou": 0.7821,
+        "start_err": 18767,
+        "end_err": 11512
+      },
+      {
+        "event_id": "e013",
+        "play_id": "m002#p01",
+        "material_id": "m002",
+        "kind": "full",
+        "certainty": "confirmed",
+        "iou": 0.7789,
+        "start_err": 12525,
+        "end_err": 15005
+      },
+      {
+        "event_id": "e006",
+        "play_id": "m023#p01",
+        "material_id": "m023",
+        "kind": "full",
+        "certainty": "confirmed",
+        "iou": 0.7776,
+        "start_err": 11100,
+        "end_err": 18060
+      },
+      {
+        "event_id": "e027",
+        "play_id": "m013#p01",
+        "material_id": "m013",
+        "kind": "full",
+        "certainty": "confirmed",
+        "iou": 0.7651,
+        "start_err": 19460,
+        "end_err": 39620
+      },
+      {
+        "event_id": "e017",
+        "play_id": "m022#p01",
+        "material_id": "m022",
+        "kind": "full",
+        "certainty": "confirmed",
+        "iou": 0.7025,
+        "start_err": 14169,
+        "end_err": 32889
+      }
+    ]
+  },
+  "solver_bruteforce_check": {
+    "cases": [
+      {
+        "case": 1,
+        "n_schedules": 2,
+        "n_plays": 2,
+        "brute_force": {
+          "best_flow": 2,
+          "best_cost": 800,
+          "lex_best_pairs": [
+            [
+              "sA",
+              "p1"
+            ],
+            [
+              "sB",
+              "p2"
+            ]
+          ],
+          "n_tied_optima": 1
+        },
+        "solver_flow": 2,
+        "solver_cost": 800,
+        "solver_pairs": [
+          [
+            "sA",
+            "p1"
+          ],
+          [
+            "sB",
+            "p2"
+          ]
+        ],
+        "flow_optimal": true,
+        "cost_optimal": true,
+        "lex_optimal": true,
+        "deterministic": true,
+        "passed": true
+      },
+      {
+        "case": 2,
+        "n_schedules": 1,
+        "n_plays": 3,
+        "brute_force": {
+          "best_flow": 3,
+          "best_cost": 4800,
+          "lex_best_pairs": [
+            [
+              "sC",
+              "q0"
+            ],
+            [
+              "sC",
+              "q1"
+            ],
+            [
+              "sC",
+              "q2"
+            ]
+          ],
+          "n_tied_optima": 1
+        },
+        "solver_flow": 3,
+        "solver_cost": 4800,
+        "solver_pairs": [
+          [
+            "sC",
+            "q0"
+          ],
+          [
+            "sC",
+            "q1"
+          ],
+          [
+            "sC",
+            "q2"
+          ]
+        ],
+        "flow_optimal": true,
+        "cost_optimal": true,
+        "lex_optimal": true,
+        "deterministic": true,
+        "passed": true
+      },
+      {
+        "case": 3,
+        "n_schedules": 2,
+        "n_plays": 2,
+        "brute_force": {
+          "best_flow": 2,
+          "best_cost": 0,
+          "lex_best_pairs": [
+            [
+              "sD",
+              "a1"
+            ],
+            [
+              "sE",
+              "z9"
+            ]
+          ],
+          "n_tied_optima": 2
+        },
+        "solver_flow": 2,
+        "solver_cost": 0,
+        "solver_pairs": [
+          [
+            "sD",
+            "a1"
+          ],
+          [
+            "sE",
+            "z9"
+          ]
+        ],
+        "flow_optimal": true,
+        "cost_optimal": true,
+        "lex_optimal": true,
+        "deterministic": true,
+        "passed": true
+      },
+      {
+        "case": 4,
+        "n_schedules": 1,
+        "n_plays": 3,
+        "brute_force": {
+          "best_flow": 1,
+          "best_cost": 3000,
+          "lex_best_pairs": [
+            [
+              "sF",
+              "g1"
+            ]
+          ],
+          "n_tied_optima": 1
+        },
+        "solver_flow": 1,
+        "solver_cost": 3000,
+        "solver_pairs": [
+          [
+            "sF",
+            "g1"
+          ]
+        ],
+        "flow_optimal": true,
+        "cost_optimal": true,
+        "lex_optimal": true,
+        "deterministic": true,
+        "passed": true
+      },
+      {
+        "case": 5,
+        "n_schedules": 3,
+        "n_plays": 5,
+        "brute_force": {
+          "best_flow": 4,
+          "best_cost": 3400,
+          "lex_best_pairs": [
+            [
+              "sG",
+              "h1"
+            ],
+            [
+              "sG",
+              "h2"
+            ],
+            [
+              "sH",
+              "h3"
+            ],
+            [
+              "sI",
+              "i1"
+            ]
+          ],
+          "n_tied_optima": 1
+        },
+        "solver_flow": 4,
+        "solver_cost": 3400,
+        "solver_pairs": [
+          [
+            "sG",
+            "h1"
+          ],
+          [
+            "sG",
+            "h2"
+          ],
+          [
+            "sH",
+            "h3"
+          ],
+          [
+            "sI",
+            "i1"
+          ]
+        ],
+        "flow_optimal": true,
+        "cost_optimal": true,
+        "lex_optimal": true,
+        "deterministic": true,
+        "passed": true
+      }
+    ],
+    "all_passed": true
+  }
+}

@@ -1,0 +1,806 @@
+{
+  "format": "adverify-schedules/1",
+  "sr": 8000,
+  "schedules": [
+    {
+      "schedule_id": "s0001",
+      "material_id": "m017",
+      "win_start": 46711,
+      "win_end": 81289,
+      "min_contiguous": 160433,
+      "required_count": 2
+    },
+    {
+      "schedule_id": "s0002",
+      "material_id": "m010",
+      "win_start": 347370,
+      "win_end": 361154,
+      "min_contiguous": 55752,
+      "required_count": 1
+    },
+    {
+      "schedule_id": "s0003",
+      "material_id": "m026",
+      "win_start": 508430,
+      "win_end": 564044,
+      "min_contiguous": 36380,
+      "required_count": 1
+    },
+    {
+      "schedule_id": "s0004",
+      "material_id": "m016",
+      "win_start": 662677,
+      "win_end": 678079,
+      "min_contiguous": 29162,
+      "required_count": 1
+    },
+    {
+      "schedule_id": "s0005",
+      "material_id": "m008",
+      "win_start": 763310,
+      "win_end": 822830,
+      "min_contiguous": 43822,
+      "required_count": 2
+    },
+    {
+      "schedule_id": "s0006",
+      "material_id": "m023",
+      "win_start": 885788,
+      "win_end": 895452,
+      "min_contiguous": 101055,
+      "required_count": 1
+    },
+    {
+      "schedule_id": "s0007",
+      "material_id": "m011",
+      "win_start": 1032744,
+      "win_end": 1081742,
+      "min_contiguous": 81798,
+      "required_count": 2
+    },
+    {
+      "schedule_id": "s0008",
+      "material_id": "m012",
+      "win_start": 1243226,
+      "win_end": 1253634,
+      "min_contiguous": 155572,
+      "required_count": 2
+    },
+    {
+      "schedule_id": "s0009",
+      "material_id": "m024",
+      "win_start": 1469233,
+      "win_end": 1502123,
+      "min_contiguous": 151635,
+      "required_count": 3
+    },
+    {
+      "schedule_id": "s0010",
+      "material_id": "m025",
+      "win_start": 1688108,
+      "win_end": 1742506,
+      "min_contiguous": 50915,
+      "required_count": 1
+    },
+    {
+      "schedule_id": "s0011",
+      "material_id": "m004",
+      "win_start": 1837490,
+      "win_end": 1879856,
+      "min_contiguous": 100165,
+      "required_count": 2
+    },
+    {
+      "schedule_id": "s0012",
+      "material_id": "m019",
+      "win_start": 2047834,
+      "win_end": 2079742,
+      "min_contiguous": 51034,
+      "required_count": 1
+    },
+    {
+      "schedule_id": "s0013",
+      "material_id": "m002",
+      "win_start": 2183716,
+      "win_end": 2231254,
+      "min_contiguous": 73151,
+      "required_count": 2
+    },
+    {
+      "schedule_id": "s0014",
+      "material_id": "m020",
+      "win_start": 2386061,
+      "win_end": 2434417,
+      "min_contiguous": 193849,
+      "required_count": 3
+    },
+    {
+      "schedule_id": "s0015",
+      "material_id": "m003",
+      "win_start": 2709216,
+      "win_end": 2743432,
+      "min_contiguous": 113097,
+      "required_count": 1
+    },
+    {
+      "schedule_id": "s0016",
+      "material_id": "m005",
+      "win_start": 2980889,
+      "win_end": 2994497,
+      "min_contiguous": 100227,
+      "required_count": 1
+    },
+    {
+      "schedule_id": "s0017",
+      "material_id": "m022",
+      "win_start": 3207032,
+      "win_end": 3229466,
+      "min_contiguous": 110594,
+      "required_count": 3
+    },
+    {
+      "schedule_id": "s0018",
+      "material_id": "m007",
+      "win_start": 3422646,
+      "win_end": 3460230,
+      "min_contiguous": 116549,
+      "required_count": 1
+    },
+    {
+      "schedule_id": "s0019",
+      "material_id": "m018",
+      "win_start": 3655807,
+      "win_end": 3697327,
+      "min_contiguous": 158056,
+      "required_count": 1
+    },
+    {
+      "schedule_id": "s0020",
+      "material_id": "m001",
+      "win_start": 3944506,
+      "win_end": 3958884,
+      "min_contiguous": 38657,
+      "required_count": 3
+    },
+    {
+      "schedule_id": "s0021",
+      "material_id": "m028",
+      "win_start": 4089037,
+      "win_end": 4101003,
+      "min_contiguous": 121856,
+      "required_count": 1
+    },
+    {
+      "schedule_id": "s0022",
+      "material_id": "m006",
+      "win_start": 4315120,
+      "win_end": 4336188,
+      "min_contiguous": 79624,
+      "required_count": 2
+    },
+    {
+      "schedule_id": "s0023",
+      "material_id": "m015",
+      "win_start": 4465466,
+      "win_end": 4513380,
+      "min_contiguous": 181739,
+      "required_count": 1
+    },
+    {
+      "schedule_id": "s0024",
+      "material_id": "m009",
+      "win_start": 4754780,
+      "win_end": 4799306,
+      "min_contiguous": 117130,
+      "required_count": 3
+    },
+    {
+      "schedule_id": "s0025",
+      "material_id": "m027",
+      "win_start": 4967204,
+      "win_end": 5029380,
+      "min_contiguous": 92059,
+      "required_count": 2
+    },
+    {
+      "schedule_id": "s0026",
+      "material_id": "m014",
+      "win_start": 5163641,
+      "win_end": 5213479,
+      "min_contiguous": 32226,
+      "required_count": 1
+    },
+    {
+      "schedule_id": "s0027",
+      "material_id": "m013",
+      "win_start": 5318258,
+      "win_end": 5327702,
+      "min_contiguous": 130400,
+      "required_count": 3
+    },
+    {
+      "schedule_id": "s0028",
+      "material_id": "m030",
+      "win_start": 5586573,
+      "win_end": 5636799,
+      "min_contiguous": 156836,
+      "required_count": 2
+    },
+    {
+      "schedule_id": "s0029",
+      "material_id": "m021",
+      "win_start": 5824448,
+      "win_end": 5841802,
+      "min_contiguous": 106814,
+      "required_count": 2
+    },
+    {
+      "schedule_id": "s0030",
+      "material_id": "m029",
+      "win_start": 6034507,
+      "win_end": 6054363,
+      "min_contiguous": 94825,
+      "required_count": 1
+    },
+    {
+      "schedule_id": "s0031",
+      "material_id": "m021",
+      "win_start": 6235591,
+      "win_end": 6255867,
+      "min_contiguous": 97808,
+      "required_count": 1
+    },
+    {
+      "schedule_id": "s0032",
+      "material_id": "m007",
+      "win_start": 6400780,
+      "win_end": 6422560,
+      "min_contiguous": 85303,
+      "required_count": 1
+    },
+    {
+      "schedule_id": "s0033",
+      "material_id": "m009",
+      "win_start": 6571010,
+      "win_end": 6609768,
+      "min_contiguous": 68531,
+      "required_count": 1
+    },
+    {
+      "schedule_id": "s0034",
+      "material_id": "m005",
+      "win_start": 6710823,
+      "win_end": 6739199,
+      "min_contiguous": 89587,
+      "required_count": 1
+    },
+    {
+      "schedule_id": "s0035",
+      "material_id": "m029",
+      "win_start": 6838099,
+      "win_end": 6890793,
+      "min_contiguous": 71848,
+      "required_count": 1
+    },
+    {
+      "schedule_id": "s0036",
+      "material_id": "m015",
+      "win_start": 7014529,
+      "win_end": 7053631,
+      "min_contiguous": 159982,
+      "required_count": 1
+    },
+    {
+      "schedule_id": "s0037",
+      "material_id": "m030",
+      "win_start": 7214421,
+      "win_end": 7276233,
+      "min_contiguous": 95440,
+      "required_count": 1
+    },
+    {
+      "schedule_id": "s0038",
+      "material_id": "m017",
+      "win_start": 7418178,
+      "win_end": 7478072,
+      "min_contiguous": 79622,
+      "required_count": 1
+    },
+    {
+      "schedule_id": "s0039",
+      "material_id": "m002",
+      "win_start": 7653047,
+      "win_end": 7672319,
+      "min_contiguous": 92373,
+      "required_count": 2
+    },
+    {
+      "schedule_id": "s0040",
+      "material_id": "m022",
+      "win_start": 7823674,
+      "win_end": 7871156,
+      "min_contiguous": 120011,
+      "required_count": 1
+    },
+    {
+      "schedule_id": "s0041",
+      "material_id": "m010",
+      "win_start": 8062382,
+      "win_end": 8077284,
+      "min_contiguous": 68477,
+      "required_count": 1
+    },
+    {
+      "schedule_id": "s0042",
+      "material_id": "m021",
+      "win_start": 8174600,
+      "win_end": 8230762,
+      "min_contiguous": 132332,
+      "required_count": 1
+    },
+    {
+      "schedule_id": "s0043",
+      "material_id": "m005",
+      "win_start": 8435750,
+      "win_end": 8490130,
+      "min_contiguous": 82611,
+      "required_count": 1
+    },
+    {
+      "schedule_id": "s0044",
+      "material_id": "m009",
+      "win_start": 8671173,
+      "win_end": 8713249,
+      "min_contiguous": 126953,
+      "required_count": 1
+    },
+    {
+      "schedule_id": "s0045",
+      "material_id": "m011",
+      "win_start": 8844187,
+      "win_end": 8895321,
+      "min_contiguous": 82479,
+      "required_count": 1
+    },
+    {
+      "schedule_id": "s0046",
+      "material_id": "m029",
+      "win_start": 9067226,
+      "win_end": 9079420,
+      "min_contiguous": 63111,
+      "required_count": 1
+    },
+    {
+      "schedule_id": "s0047",
+      "material_id": "m018",
+      "win_start": 9256072,
+      "win_end": 9318854,
+      "min_contiguous": 112804,
+      "required_count": 1
+    },
+    {
+      "schedule_id": "s0048",
+      "material_id": "m008",
+      "win_start": 9517174,
+      "win_end": 9535850,
+      "min_contiguous": 40255,
+      "required_count": 1
+    },
+    {
+      "schedule_id": "s0049",
+      "material_id": "m001",
+      "win_start": 9624291,
+      "win_end": 9633523,
+      "min_contiguous": 29978,
+      "required_count": 1
+    },
+    {
+      "schedule_id": "s0050",
+      "material_id": "m021",
+      "win_start": 9783216,
+      "win_end": 9815062,
+      "min_contiguous": 112813,
+      "required_count": 2
+    },
+    {
+      "schedule_id": "s0051",
+      "material_id": "m001",
+      "win_start": 10031652,
+      "win_end": 10059490,
+      "min_contiguous": 43015,
+      "required_count": 2
+    },
+    {
+      "schedule_id": "s0052",
+      "material_id": "m012",
+      "win_start": 10150823,
+      "win_end": 10166617,
+      "min_contiguous": 126769,
+      "required_count": 1
+    },
+    {
+      "schedule_id": "s0053",
+      "material_id": "m014",
+      "win_start": 13011525,
+      "win_end": 13053127,
+      "min_contiguous": 66542,
+      "required_count": 3
+    },
+    {
+      "schedule_id": "s0054",
+      "material_id": "m028",
+      "win_start": 4540155,
+      "win_end": 4556655,
+      "min_contiguous": 71588,
+      "required_count": 3
+    },
+    {
+      "schedule_id": "s0055",
+      "material_id": "m022",
+      "win_start": 6493921,
+      "win_end": 6514129,
+      "min_contiguous": 91634,
+      "required_count": 1
+    },
+    {
+      "schedule_id": "s0056",
+      "material_id": "m004",
+      "win_start": 3161338,
+      "win_end": 3238880,
+      "min_contiguous": 80262,
+      "required_count": 2
+    },
+    {
+      "schedule_id": "s0057",
+      "material_id": "m025",
+      "win_start": 7743306,
+      "win_end": 7774594,
+      "min_contiguous": 71086,
+      "required_count": 2
+    },
+    {
+      "schedule_id": "s0058",
+      "material_id": "m029",
+      "win_start": 6958570,
+      "win_end": 6995638,
+      "min_contiguous": 58456,
+      "required_count": 1
+    },
+    {
+      "schedule_id": "s0059",
+      "material_id": "m005",
+      "win_start": 9819182,
+      "win_end": 9912908,
+      "min_contiguous": 33586,
+      "required_count": 1
+    },
+    {
+      "schedule_id": "s0060",
+      "material_id": "m007",
+      "win_start": 5457291,
+      "win_end": 5505593,
+      "min_contiguous": 70689,
+      "required_count": 1
+    },
+    {
+      "schedule_id": "s0061",
+      "material_id": "m017",
+      "win_start": 4639840,
+      "win_end": 4687244,
+      "min_contiguous": 91599,
+      "required_count": 1
+    },
+    {
+      "schedule_id": "s0062",
+      "material_id": "m027",
+      "win_start": 6723673,
+      "win_end": 6814599,
+      "min_contiguous": 88239,
+      "required_count": 1
+    },
+    {
+      "schedule_id": "s0063",
+      "material_id": "m023",
+      "win_start": 4107762,
+      "win_end": 4175692,
+      "min_contiguous": 39754,
+      "required_count": 2
+    },
+    {
+      "schedule_id": "s0064",
+      "material_id": "m030",
+      "win_start": 10358521,
+      "win_end": 10416109,
+      "min_contiguous": 40283,
+      "required_count": 1
+    },
+    {
+      "schedule_id": "s0065",
+      "material_id": "m024",
+      "win_start": 10897089,
+      "win_end": 10963655,
+      "min_contiguous": 70266,
+      "required_count": 3
+    },
+    {
+      "schedule_id": "s0066",
+      "material_id": "m001",
+      "win_start": 12735961,
+      "win_end": 12826369,
+      "min_contiguous": 65389,
+      "required_count": 1
+    },
+    {
+      "schedule_id": "s0067",
+      "material_id": "m010",
+      "win_start": 4987753,
+      "win_end": 5031311,
+      "min_contiguous": 55072,
+      "required_count": 1
+    },
+    {
+      "schedule_id": "s0068",
+      "material_id": "m012",
+      "win_start": 13067400,
+      "win_end": 13096428,
+      "min_contiguous": 33421,
+      "required_count": 3
+    },
+    {
+      "schedule_id": "s0069",
+      "material_id": "m018",
+      "win_start": 7668585,
+      "win_end": 7711137,
+      "min_contiguous": 63854,
+      "required_count": 2
+    },
+    {
+      "schedule_id": "s0070",
+      "material_id": "m004",
+      "win_start": 3955736,
+      "win_end": 4049040,
+      "min_contiguous": 93104,
+      "required_count": 3
+    },
+    {
+      "schedule_id": "s0071",
+      "material_id": "m003",
+      "win_start": 6700293,
+      "win_end": 6778467,
+      "min_contiguous": 34479,
+      "required_count": 2
+    },
+    {
+      "schedule_id": "s0072",
+      "material_id": "m020",
+      "win_start": 11632921,
+      "win_end": 11678957,
+      "min_contiguous": 65907,
+      "required_count": 2
+    },
+    {
+      "schedule_id": "s0073",
+      "material_id": "m020",
+      "win_start": 4200323,
+      "win_end": 4295177,
+      "min_contiguous": 36359,
+      "required_count": 3
+    },
+    {
+      "schedule_id": "s0074",
+      "material_id": "m022",
+      "win_start": 1390745,
+      "win_end": 1428299,
+      "min_contiguous": 52199,
+      "required_count": 1
+    },
+    {
+      "schedule_id": "s0075",
+      "material_id": "m001",
+      "win_start": 1041075,
+      "win_end": 1110919,
+      "min_contiguous": 86835,
+      "required_count": 2
+    },
+    {
+      "schedule_id": "s0076",
+      "material_id": "m012",
+      "win_start": 2684849,
+      "win_end": 2728949,
+      "min_contiguous": 30660,
+      "required_count": 3
+    },
+    {
+      "schedule_id": "s0077",
+      "material_id": "m030",
+      "win_start": 12836968,
+      "win_end": 12908666,
+      "min_contiguous": 84428,
+      "required_count": 1
+    },
+    {
+      "schedule_id": "s0078",
+      "material_id": "m030",
+      "win_start": 2181379,
+      "win_end": 2213033,
+      "min_contiguous": 57053,
+      "required_count": 1
+    },
+    {
+      "schedule_id": "s0079",
+      "material_id": "m012",
+      "win_start": 3200649,
+      "win_end": 3272939,
+      "min_contiguous": 26594,
+      "required_count": 2
+    },
+    {
+      "schedule_id": "s0080",
+      "material_id": "m018",
+      "win_start": 7937020,
+      "win_end": 7998986,
+      "min_contiguous": 67852,
+      "required_count": 1
+    },
+    {
+      "schedule_id": "s0081",
+      "material_id": "m005",
+      "win_start": 4384117,
+      "win_end": 4470455,
+      "min_contiguous": 23476,
+      "required_count": 1
+    },
+    {
+      "schedule_id": "s0082",
+      "material_id": "m018",
+      "win_start": 9669009,
+      "win_end": 9747619,
+      "min_contiguous": 64340,
+      "required_count": 1
+    },
+    {
+      "schedule_id": "s0083",
+      "material_id": "m025",
+      "win_start": 2180556,
+      "win_end": 2272996,
+      "min_contiguous": 46313,
+      "required_count": 3
+    },
+    {
+      "schedule_id": "s0084",
+      "material_id": "m005",
+      "win_start": 9169129,
+      "win_end": 9250595,
+      "min_contiguous": 44830,
+      "required_count": 3
+    },
+    {
+      "schedule_id": "s0085",
+      "material_id": "m019",
+      "win_start": 1253744,
+      "win_end": 1344694,
+      "min_contiguous": 75628,
+      "required_count": 1
+    },
+    {
+      "schedule_id": "s0086",
+      "material_id": "m007",
+      "win_start": 5421546,
+      "win_end": 5491786,
+      "min_contiguous": 87270,
+      "required_count": 2
+    },
+    {
+      "schedule_id": "s0087",
+      "material_id": "m001",
+      "win_start": 3205928,
+      "win_end": 3278036,
+      "min_contiguous": 29909,
+      "required_count": 2
+    },
+    {
+      "schedule_id": "s0088",
+      "material_id": "m025",
+      "win_start": 12162714,
+      "win_end": 12224002,
+      "min_contiguous": 40005,
+      "required_count": 2
+    },
+    {
+      "schedule_id": "s0089",
+      "material_id": "m006",
+      "win_start": 9062356,
+      "win_end": 9081464,
+      "min_contiguous": 28428,
+      "required_count": 2
+    },
+    {
+      "schedule_id": "s0090",
+      "material_id": "m015",
+      "win_start": 5977755,
+      "win_end": 6043065,
+      "min_contiguous": 43908,
+      "required_count": 2
+    },
+    {
+      "schedule_id": "s0091",
+      "material_id": "m021",
+      "win_start": 9274070,
+      "win_end": 9347652,
+      "min_contiguous": 44710,
+      "required_count": 3
+    },
+    {
+      "schedule_id": "s0092",
+      "material_id": "m011",
+      "win_start": 14160152,
+      "win_end": 14230944,
+      "min_contiguous": 71639,
+      "required_count": 1
+    },
+    {
+      "schedule_id": "s0093",
+      "material_id": "m008",
+      "win_start": 14024002,
+      "win_end": 14083706,
+      "min_contiguous": 58753,
+      "required_count": 2
+    },
+    {
+      "schedule_id": "s0094",
+      "material_id": "m022",
+      "win_start": 8778494,
+      "win_end": 8820332,
+      "min_contiguous": 67185,
+      "required_count": 3
+    },
+    {
+      "schedule_id": "s0095",
+      "material_id": "m018",
+      "win_start": 8418817,
+      "win_end": 8441461,
+      "min_contiguous": 77892,
+      "required_count": 1
+    },
+    {
+      "schedule_id": "s0096",
+      "material_id": "m009",
+      "win_start": 4805833,
+      "win_end": 4895279,
+      "min_contiguous": 80357,
+      "required_count": 1
+    },
+    {
+      "schedule_id": "s0097",
+      "material_id": "m009",
+      "win_start": 12677752,
+      "win_end": 12746762,
+      "min_contiguous": 35402,
+      "required_count": 2
+    },
+    {
+      "schedule_id": "s0098",
+      "material_id": "m009",
+      "win_start": 3584398,
+      "win_end": 3629228,
+      "min_contiguous": 80496,
+      "required_count": 2
+    },
+    {
+      "schedule_id": "s0099",
+      "material_id": "m022",
+      "win_start": 6511288,
+      "win_end": 6587448,
+      "min_contiguous": 81509,
+      "required_count": 2
+    },
+    {
+      "schedule_id": "s0100",
+      "material_id": "m027",
+      "win_start": 11886793,
+      "win_end": 11972379,
+      "min_contiguous": 45877,
+      "required_count": 3
+    }
+  ]
+}

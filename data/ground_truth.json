@@ -1,0 +1,776 @@
+{
+  "sr": 8000,
+  "program_samples": 14400000,
+  "program_seconds": 1800,
+  "n_materials": 30,
+  "events": [
+    {
+      "event_id": "e001",
+      "material_id": "m017",
+      "kind": "full",
+      "prog_start": 64000,
+      "prog_end": 264000,
+      "mat_start": 0,
+      "mat_end": 200000,
+      "gain": 1.0,
+      "note": "基线完整播放"
+    },
+    {
+      "event_id": "e002",
+      "material_id": "m010",
+      "kind": "full",
+      "prog_start": 354262,
+      "prog_end": 450262,
+      "mat_start": 0,
+      "mat_end": 96000,
+      "gain": 1.0,
+      "note": "基线完整播放"
+    },
+    {
+      "event_id": "e003",
+      "material_id": "m026",
+      "kind": "full",
+      "prog_start": 536237,
+      "prog_end": 600237,
+      "mat_start": 0,
+      "mat_end": 64000,
+      "gain": 1.0,
+      "note": "基线完整播放"
+    },
+    {
+      "event_id": "e004",
+      "material_id": "m016",
+      "kind": "full",
+      "prog_start": 670378,
+      "prog_end": 718378,
+      "mat_start": 0,
+      "mat_end": 48000,
+      "gain": 1.0,
+      "note": "基线完整播放"
+    },
+    {
+      "event_id": "e005",
+      "material_id": "m008",
+      "kind": "full",
+      "prog_start": 793070,
+      "prog_end": 841070,
+      "mat_start": 0,
+      "mat_end": 48000,
+      "gain": 1.0,
+      "note": "基线完整播放"
+    },
+    {
+      "event_id": "e006",
+      "material_id": "m023",
+      "kind": "full",
+      "prog_start": 890620,
+      "prog_end": 1010620,
+      "mat_start": 0,
+      "mat_end": 120000,
+      "gain": 1.0,
+      "note": "基线完整播放"
+    },
+    {
+      "event_id": "e007",
+      "material_id": "m011",
+      "kind": "full",
+      "prog_start": 1057243,
+      "prog_end": 1169243,
+      "mat_start": 0,
+      "mat_end": 112000,
+      "gain": 1.0,
+      "note": "基线完整播放"
+    },
+    {
+      "event_id": "e008",
+      "material_id": "m012",
+      "kind": "full",
+      "prog_start": 1248430,
+      "prog_end": 1416430,
+      "mat_start": 0,
+      "mat_end": 168000,
+      "gain": 1.0,
+      "note": "基线完整播放"
+    },
+    {
+      "event_id": "e009",
+      "material_id": "m024",
+      "kind": "full",
+      "prog_start": 1485678,
+      "prog_end": 1669678,
+      "mat_start": 0,
+      "mat_end": 184000,
+      "gain": 1.0,
+      "note": "基线完整播放"
+    },
+    {
+      "event_id": "e010",
+      "material_id": "m025",
+      "kind": "full",
+      "prog_start": 1715307,
+      "prog_end": 1771307,
+      "mat_start": 0,
+      "mat_end": 56000,
+      "gain": 1.0,
+      "note": "基线完整播放"
+    },
+    {
+      "event_id": "e011",
+      "material_id": "m004",
+      "kind": "full",
+      "prog_start": 1858673,
+      "prog_end": 2010673,
+      "mat_start": 0,
+      "mat_end": 152000,
+      "gain": 1.0,
+      "note": "基线完整播放"
+    },
+    {
+      "event_id": "e012",
+      "material_id": "m019",
+      "kind": "full",
+      "prog_start": 2063788,
+      "prog_end": 2119788,
+      "mat_start": 0,
+      "mat_end": 56000,
+      "gain": 1.0,
+      "note": "基线完整播放"
+    },
+    {
+      "event_id": "e013",
+      "material_id": "m002",
+      "kind": "full",
+      "prog_start": 2207485,
+      "prog_end": 2319485,
+      "mat_start": 0,
+      "mat_end": 112000,
+      "gain": 1.0,
+      "note": "基线完整播放"
+    },
+    {
+      "event_id": "e014",
+      "material_id": "m020",
+      "kind": "full",
+      "prog_start": 2410239,
+      "prog_end": 2650239,
+      "mat_start": 0,
+      "mat_end": 240000,
+      "gain": 1.0,
+      "note": "基线完整播放"
+    },
+    {
+      "event_id": "e015",
+      "material_id": "m003",
+      "kind": "full",
+      "prog_start": 2726324,
+      "prog_end": 2894324,
+      "mat_start": 0,
+      "mat_end": 168000,
+      "gain": 1.0,
+      "note": "基线完整播放"
+    },
+    {
+      "event_id": "e016",
+      "material_id": "m005",
+      "kind": "full",
+      "prog_start": 2987693,
+      "prog_end": 3139693,
+      "mat_start": 0,
+      "mat_end": 152000,
+      "gain": 1.0,
+      "note": "基线完整播放"
+    },
+    {
+      "event_id": "e017",
+      "material_id": "m022",
+      "kind": "full",
+      "prog_start": 3218249,
+      "prog_end": 3362249,
+      "mat_start": 0,
+      "mat_end": 144000,
+      "gain": 1.0,
+      "note": "基线完整播放"
+    },
+    {
+      "event_id": "e018",
+      "material_id": "m007",
+      "kind": "full",
+      "prog_start": 3441438,
+      "prog_end": 3641438,
+      "mat_start": 0,
+      "mat_end": 200000,
+      "gain": 1.0,
+      "note": "基线完整播放"
+    },
+    {
+      "event_id": "e019",
+      "material_id": "m018",
+      "kind": "full",
+      "prog_start": 3676567,
+      "prog_end": 3868567,
+      "mat_start": 0,
+      "mat_end": 192000,
+      "gain": 1.0,
+      "note": "基线完整播放"
+    },
+    {
+      "event_id": "e020",
+      "material_id": "m001",
+      "kind": "full",
+      "prog_start": 3951695,
+      "prog_end": 4007695,
+      "mat_start": 0,
+      "mat_end": 56000,
+      "gain": 1.0,
+      "note": "基线完整播放"
+    },
+    {
+      "event_id": "e021",
+      "material_id": "m028",
+      "kind": "full",
+      "prog_start": 4095020,
+      "prog_end": 4263020,
+      "mat_start": 0,
+      "mat_end": 168000,
+      "gain": 1.0,
+      "note": "基线完整播放"
+    },
+    {
+      "event_id": "e022",
+      "material_id": "m006",
+      "kind": "full",
+      "prog_start": 4325654,
+      "prog_end": 4445654,
+      "mat_start": 0,
+      "mat_end": 120000,
+      "gain": 1.0,
+      "note": "基线完整播放"
+    },
+    {
+      "event_id": "e023",
+      "material_id": "m015",
+      "kind": "full",
+      "prog_start": 4489423,
+      "prog_end": 4729423,
+      "mat_start": 0,
+      "mat_end": 240000,
+      "gain": 1.0,
+      "note": "基线完整播放"
+    },
+    {
+      "event_id": "e024",
+      "material_id": "m009",
+      "kind": "full",
+      "prog_start": 4777043,
+      "prog_end": 4921043,
+      "mat_start": 0,
+      "mat_end": 144000,
+      "gain": 1.0,
+      "note": "基线完整播放"
+    },
+    {
+      "event_id": "e025",
+      "material_id": "m027",
+      "kind": "full",
+      "prog_start": 4998292,
+      "prog_end": 5150292,
+      "mat_start": 0,
+      "mat_end": 152000,
+      "gain": 1.0,
+      "note": "基线完整播放"
+    },
+    {
+      "event_id": "e026",
+      "material_id": "m014",
+      "kind": "full",
+      "prog_start": 5188560,
+      "prog_end": 5252560,
+      "mat_start": 0,
+      "mat_end": 64000,
+      "gain": 1.0,
+      "note": "基线完整播放"
+    },
+    {
+      "event_id": "e027",
+      "material_id": "m013",
+      "kind": "full",
+      "prog_start": 5322980,
+      "prog_end": 5554980,
+      "mat_start": 0,
+      "mat_end": 232000,
+      "gain": 1.0,
+      "note": "基线完整播放"
+    },
+    {
+      "event_id": "e028",
+      "material_id": "m030",
+      "kind": "full",
+      "prog_start": 5611686,
+      "prog_end": 5795686,
+      "mat_start": 0,
+      "mat_end": 184000,
+      "gain": 1.0,
+      "note": "基线完整播放"
+    },
+    {
+      "event_id": "e029",
+      "material_id": "m021",
+      "kind": "full",
+      "prog_start": 5833125,
+      "prog_end": 6009125,
+      "mat_start": 0,
+      "mat_end": 176000,
+      "gain": 1.0,
+      "note": "基线完整播放"
+    },
+    {
+      "event_id": "e030",
+      "material_id": "m029",
+      "kind": "full",
+      "prog_start": 6044435,
+      "prog_end": 6164435,
+      "mat_start": 0,
+      "mat_end": 120000,
+      "gain": 1.0,
+      "note": "基线完整播放"
+    },
+    {
+      "event_id": "e031",
+      "material_id": "m021",
+      "kind": "truncated_head",
+      "prog_start": 6245729,
+      "prog_end": 6364894,
+      "mat_start": 56835,
+      "mat_end": 176000,
+      "gain": 1.0,
+      "note": "头截断 7.1s"
+    },
+    {
+      "event_id": "e032",
+      "material_id": "m007",
+      "kind": "truncated_tail",
+      "prog_start": 6411670,
+      "prog_end": 6549689,
+      "mat_start": 0,
+      "mat_end": 138019,
+      "gain": 1.0,
+      "note": "尾截断至 17.3s"
+    },
+    {
+      "event_id": "e033",
+      "material_id": "m009",
+      "kind": "truncated_head",
+      "prog_start": 6590389,
+      "prog_end": 6682877,
+      "mat_start": 51512,
+      "mat_end": 144000,
+      "gain": 1.0,
+      "note": "头截断 6.4s"
+    },
+    {
+      "event_id": "e034",
+      "material_id": "m005",
+      "kind": "truncated_tail",
+      "prog_start": 6725011,
+      "prog_end": 6825736,
+      "mat_start": 0,
+      "mat_end": 100725,
+      "gain": 1.0,
+      "note": "尾截断至 12.6s"
+    },
+    {
+      "event_id": "e035",
+      "material_id": "m029",
+      "kind": "truncated_head",
+      "prog_start": 6864446,
+      "prog_end": 6952361,
+      "mat_start": 32085,
+      "mat_end": 120000,
+      "gain": 1.0,
+      "note": "头截断 4.0s"
+    },
+    {
+      "event_id": "e036",
+      "material_id": "m015",
+      "kind": "truncated_tail",
+      "prog_start": 7034080,
+      "prog_end": 7208273,
+      "mat_start": 0,
+      "mat_end": 174193,
+      "gain": 1.0,
+      "note": "尾截断至 21.8s"
+    },
+    {
+      "event_id": "e037",
+      "material_id": "m030",
+      "kind": "truncated_head",
+      "prog_start": 7245327,
+      "prog_end": 7365512,
+      "mat_start": 63815,
+      "mat_end": 184000,
+      "gain": 1.0,
+      "note": "头截断 8.0s"
+    },
+    {
+      "event_id": "e038",
+      "material_id": "m017",
+      "kind": "truncated_tail",
+      "prog_start": 7448125,
+      "prog_end": 7580184,
+      "mat_start": 0,
+      "mat_end": 132059,
+      "gain": 1.0,
+      "note": "尾截断至 16.5s"
+    },
+    {
+      "event_id": "e039",
+      "material_id": "m002",
+      "kind": "repeated",
+      "prog_start": 7662683,
+      "prog_end": 7774683,
+      "mat_start": 0,
+      "mat_end": 112000,
+      "gain": 1.0,
+      "note": "重复完整播放"
+    },
+    {
+      "event_id": "e040",
+      "material_id": "m022",
+      "kind": "repeated",
+      "prog_start": 7847415,
+      "prog_end": 7991415,
+      "mat_start": 0,
+      "mat_end": 144000,
+      "gain": 1.0,
+      "note": "重复完整播放"
+    },
+    {
+      "event_id": "e041",
+      "material_id": "m010",
+      "kind": "repeated",
+      "prog_start": 8069833,
+      "prog_end": 8165833,
+      "mat_start": 0,
+      "mat_end": 96000,
+      "gain": 1.0,
+      "note": "重复完整播放"
+    },
+    {
+      "event_id": "e042",
+      "material_id": "m021",
+      "kind": "repeated",
+      "prog_start": 8202681,
+      "prog_end": 8378681,
+      "mat_start": 0,
+      "mat_end": 176000,
+      "gain": 1.0,
+      "note": "重复完整播放"
+    },
+    {
+      "event_id": "e043",
+      "material_id": "m005",
+      "kind": "repeated",
+      "prog_start": 8462940,
+      "prog_end": 8614940,
+      "mat_start": 0,
+      "mat_end": 152000,
+      "gain": 1.0,
+      "note": "重复完整播放"
+    },
+    {
+      "event_id": "e044",
+      "material_id": "m009",
+      "kind": "repeated",
+      "prog_start": 8692211,
+      "prog_end": 8836211,
+      "mat_start": 0,
+      "mat_end": 144000,
+      "gain": 1.0,
+      "note": "重复完整播放"
+    },
+    {
+      "event_id": "e045",
+      "material_id": "m011",
+      "kind": "volume",
+      "prog_start": 8869754,
+      "prog_end": 8981754,
+      "mat_start": 0,
+      "mat_end": 112000,
+      "gain": 1.6,
+      "note": "增益 x1.6"
+    },
+    {
+      "event_id": "e046",
+      "material_id": "m029",
+      "kind": "volume",
+      "prog_start": 9073323,
+      "prog_end": 9193323,
+      "mat_start": 0,
+      "mat_end": 120000,
+      "gain": 0.55,
+      "note": "增益 x0.55"
+    },
+    {
+      "event_id": "e047",
+      "material_id": "m018",
+      "kind": "volume",
+      "prog_start": 9287463,
+      "prog_end": 9479463,
+      "mat_start": 0,
+      "mat_end": 192000,
+      "gain": 0.35,
+      "note": "增益 x0.35"
+    },
+    {
+      "event_id": "e048",
+      "material_id": "m008",
+      "kind": "volume",
+      "prog_start": 9526512,
+      "prog_end": 9574512,
+      "mat_start": 0,
+      "mat_end": 48000,
+      "gain": 0.35,
+      "note": "增益 x0.35"
+    },
+    {
+      "event_id": "e049",
+      "material_id": "m001",
+      "kind": "volume",
+      "prog_start": 9628907,
+      "prog_end": 9684907,
+      "mat_start": 0,
+      "mat_end": 56000,
+      "gain": 0.35,
+      "note": "增益 x0.35"
+    },
+    {
+      "event_id": "e050",
+      "material_id": null,
+      "kind": "shared_jingle",
+      "prog_start": 9730339,
+      "prog_end": 9743139,
+      "mat_start": 0,
+      "mat_end": 12800,
+      "gain": 0.9,
+      "note": "共享短片段单播，竞争素材均不得确认完整播放"
+    },
+    {
+      "event_id": "e051",
+      "material_id": "m021",
+      "kind": "repeated",
+      "prog_start": 9799139,
+      "prog_end": 9975139,
+      "mat_start": 0,
+      "mat_end": 176000,
+      "gain": 0.45,
+      "note": "低增益重复播放"
+    },
+    {
+      "event_id": "e052",
+      "material_id": "m001",
+      "kind": "repeated",
+      "prog_start": 10045571,
+      "prog_end": 10101571,
+      "mat_start": 0,
+      "mat_end": 56000,
+      "gain": 0.45,
+      "note": "低增益重复播放"
+    },
+    {
+      "event_id": "e053",
+      "material_id": "m012",
+      "kind": "repeated",
+      "prog_start": 10158720,
+      "prog_end": 10326720,
+      "mat_start": 0,
+      "mat_end": 168000,
+      "gain": 0.45,
+      "note": "低增益重复播放"
+    }
+  ],
+  "material_meta": [
+    {
+      "material_id": "m001",
+      "duration_s": 7.0,
+      "base_freq": 401.15,
+      "shared_jingle": false
+    },
+    {
+      "material_id": "m002",
+      "duration_s": 14.0,
+      "base_freq": 172.74,
+      "shared_jingle": false
+    },
+    {
+      "material_id": "m003",
+      "duration_s": 21.0,
+      "base_freq": 518.37,
+      "shared_jingle": true,
+      "jinkle_pos": 50400
+    },
+    {
+      "material_id": "m004",
+      "duration_s": 19.0,
+      "base_freq": 249.5,
+      "shared_jingle": false
+    },
+    {
+      "material_id": "m005",
+      "duration_s": 19.0,
+      "base_freq": 161.77,
+      "shared_jingle": false
+    },
+    {
+      "material_id": "m006",
+      "duration_s": 15.0,
+      "base_freq": 406.08,
+      "shared_jingle": false
+    },
+    {
+      "material_id": "m007",
+      "duration_s": 25.0,
+      "base_freq": 514.59,
+      "shared_jingle": false
+    },
+    {
+      "material_id": "m008",
+      "duration_s": 6.0,
+      "base_freq": 162.01,
+      "shared_jingle": false
+    },
+    {
+      "material_id": "m009",
+      "duration_s": 18.0,
+      "base_freq": 367.07,
+      "shared_jingle": false
+    },
+    {
+      "material_id": "m010",
+      "duration_s": 12.0,
+      "base_freq": 281.73,
+      "shared_jingle": false
+    },
+    {
+      "material_id": "m011",
+      "duration_s": 14.0,
+      "base_freq": 507.84,
+      "shared_jingle": false
+    },
+    {
+      "material_id": "m012",
+      "duration_s": 21.0,
+      "base_freq": 222.26,
+      "shared_jingle": false
+    },
+    {
+      "material_id": "m013",
+      "duration_s": 29.0,
+      "base_freq": 380.6,
+      "shared_jingle": false
+    },
+    {
+      "material_id": "m014",
+      "duration_s": 8.0,
+      "base_freq": 318.56,
+      "shared_jingle": false
+    },
+    {
+      "material_id": "m015",
+      "duration_s": 30.0,
+      "base_freq": 413.57,
+      "shared_jingle": false
+    },
+    {
+      "material_id": "m016",
+      "duration_s": 6.0,
+      "base_freq": 159.17,
+      "shared_jingle": false
+    },
+    {
+      "material_id": "m017",
+      "duration_s": 25.0,
+      "base_freq": 329.54,
+      "shared_jingle": true,
+      "jinkle_pos": 124000
+    },
+    {
+      "material_id": "m018",
+      "duration_s": 24.0,
+      "base_freq": 290.34,
+      "shared_jingle": false
+    },
+    {
+      "material_id": "m019",
+      "duration_s": 7.0,
+      "base_freq": 466.82,
+      "shared_jingle": false
+    },
+    {
+      "material_id": "m020",
+      "duration_s": 30.0,
+      "base_freq": 291.12,
+      "shared_jingle": false
+    },
+    {
+      "material_id": "m021",
+      "duration_s": 22.0,
+      "base_freq": 152.89,
+      "shared_jingle": false
+    },
+    {
+      "material_id": "m022",
+      "duration_s": 18.0,
+      "base_freq": 185.31,
+      "shared_jingle": false
+    },
+    {
+      "material_id": "m023",
+      "duration_s": 15.0,
+      "base_freq": 304.5,
+      "shared_jingle": false
+    },
+    {
+      "material_id": "m024",
+      "duration_s": 23.0,
+      "base_freq": 368.54,
+      "shared_jingle": false
+    },
+    {
+      "material_id": "m025",
+      "duration_s": 7.0,
+      "base_freq": 346.32,
+      "shared_jingle": false
+    },
+    {
+      "material_id": "m026",
+      "duration_s": 8.0,
+      "base_freq": 370.75,
+      "shared_jingle": false
+    },
+    {
+      "material_id": "m027",
+      "duration_s": 19.0,
+      "base_freq": 514.5,
+      "shared_jingle": false
+    },
+    {
+      "material_id": "m028",
+      "duration_s": 21.0,
+      "base_freq": 367.34,
+      "shared_jingle": false
+    },
+    {
+      "material_id": "m029",
+      "duration_s": 15.0,
+      "base_freq": 198.35,
+      "shared_jingle": false
+    },
+    {
+      "material_id": "m030",
+      "duration_s": 23.0,
+      "base_freq": 166.2,
+      "shared_jingle": false
+    }
+  ],
+  "note": "真值仅供 validate 路径使用，监测模块不得读取本文件"
+}

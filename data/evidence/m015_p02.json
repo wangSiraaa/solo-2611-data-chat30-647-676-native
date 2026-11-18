@@ -1,0 +1,47 @@
+{
+  "play_id": "m015#p02",
+  "material_id": "m015",
+  "certainty": "review",
+  "program_range": [
+    7028720,
+    7204800
+  ],
+  "material_range": [
+    0,
+    176080
+  ],
+  "program_clip_range_with_pad": [
+    7027760,
+    7205760
+  ],
+  "material_clip_range_with_pad": [
+    0,
+    177040
+  ],
+  "lag_frame": 87859,
+  "mean_score": 0.71163,
+  "matched_frames": 2137,
+  "total_frames": 2201,
+  "contiguous_frames": 2201,
+  "evidence": {
+    "lag_frame": 87859,
+    "recall_score": 0.41133,
+    "local_segment_score": 0.66389,
+    "verify_mean": 0.71163,
+    "coverage": 0.7342,
+    "good_frames": 2137,
+    "merged_candidates": 20,
+    "score_quantiles": [
+      0.25,
+      0.4167,
+      0.5,
+      0.5833,
+      0.8333
+    ],
+    "frame_hop_samples": 80
+  },
+  "clips": {
+    "program": "m015_p02__program.wav",
+    "material": "m015_p02__material.wav"
+  }
+}
