@@ -1,0 +1,43 @@
+{
+  "sections": 6,
+  "interfaces": 101,
+  "packets": 301,
+  "fact_status": {
+    "unsupported": 75,
+    "incomplete": 13,
+    "ok": 213
+  },
+  "flows": 223,
+  "window": {
+    "window": [
+      "5997533/1000000",
+      "5998533/1000000"
+    ],
+    "packet_count": 1,
+    "wire_bytes": 119,
+    "captured_bytes": 119,
+    "complete_udp_payload_bytes": 77,
+    "complete_udp_packet_count": 1,
+    "source_packet_indices": [
+      3
+    ]
+  },
+  "recomputed_window": {
+    "packet_count": 1,
+    "wire_bytes": 119,
+    "captured_bytes": 119,
+    "complete_udp_payload_bytes": 77
+  },
+  "corruptions": [
+    {
+      "byte_range": [
+        45780,
+        45788
+      ],
+      "reason": "block trailing length 3735928559 != leading length 36",
+      "recovered": true,
+      "fatal": true,
+      "section_id": 4
+    }
+  ]
+}
