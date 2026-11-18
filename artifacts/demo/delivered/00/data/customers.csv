@@ -1,0 +1,42 @@
+customer_id,name,email,score
+1,Customer 001 éè,c1@example.test,90.126
+2,Customer 002 éè,c2@example.test,83.069
+3,"Multi, ""quoted""
+line name",c3@example.test,34.288
+4,Customer 004 éè,c4@example.test,4.547
+5,Customer 005 éè,,\N
+6,Customer 006 éè,c6@example.test,1.809
+7,Customer 007 éè,\N,38.13
+8,Customer 008 éè,c8@example.test,49.468
+9,Customer 009 éè,c9@example.test,42.351
+10,Customer 010 éè,c10@example.test,\N
+11,Customer 011 éè,c11@example.test,16.517
+12,Customer 012 éè,c12@example.test,67.72
+13,Customer 013 éè,c13@example.test,0.342
+14,Customer 014 éè,\N,99.107
+15,Customer 015 éè,c15@example.test,\N
+16,Customer 016 éè,c16@example.test,5.351
+17,Customer 017 éè,c17@example.test,0.631
+18,Customer 018 éè,c18@example.test,27.54
+19,Customer 019 éè,c19@example.test,74.345
+20,Customer 020 éè,c20@example.test,\N
+21,Customer 021 éè,\N,57.002
+22,Customer 022 éè,c22@example.test,92.052
+23,Customer 023 éè,c23@example.test,20.842
+24,Customer 024 éè,c24@example.test,14.415
+25,Customer 025 éè,c25@example.test,\N
+26,Customer 026 éè,c26@example.test,58.317
+27,Customer 027 éè,c27@example.test,10.708
+28,Customer 028 éè,\N,42.716
+29,Customer 029 éè,c29@example.test,5.126
+30,Customer 030 éè,c30@example.test,\N
+31,Customer 031 éè,c31@example.test,89.903
+32,Customer 032 éè,c32@example.test,18.052
+33,Customer 033 éè,c33@example.test,82.002
+34,Customer 034 éè,c34@example.test,56.013
+35,Customer 035 éè,\N,\N
+36,Customer 036 éè,c36@example.test,92.667
+37,Customer 037 éè,c37@example.test,15.323
+38,Customer 038 éè,c38@example.test,40.159
+39,Customer 039 éè,c39@example.test,37.582
+40,Customer 040 éè,c40@example.test,\N

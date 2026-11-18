@@ -1,0 +1,88 @@
+{
+  "archive_sha256": "d936f134547aac33776fe825894ce5249ab51fec9159d9ba1fcf650b0ec964e8",
+  "tables": [
+    {
+      "table": "customers",
+      "columns": [
+        [
+          "customer_id",
+          "INTEGER",
+          true
+        ],
+        [
+          "name",
+          "TEXT",
+          false
+        ],
+        [
+          "email",
+          "TEXT",
+          false
+        ],
+        [
+          "score",
+          "REAL",
+          false
+        ]
+      ],
+      "encoding": "utf-8",
+      "entry_ids": [
+        "d936f134547aac33776fe825894ce5249ab51fec9159d9ba1fcf650b0ec964e8:0"
+      ]
+    },
+    {
+      "table": "orders",
+      "columns": [
+        [
+          "order_id",
+          "INTEGER",
+          true
+        ],
+        [
+          "customer_id",
+          "INTEGER",
+          false
+        ],
+        [
+          "note",
+          "TEXT",
+          false
+        ],
+        [
+          "amount",
+          "REAL",
+          false
+        ]
+      ],
+      "encoding": "utf-8",
+      "entry_ids": [
+        "d936f134547aac33776fe825894ce5249ab51fec9159d9ba1fcf650b0ec964e8:2",
+        "d936f134547aac33776fe825894ce5249ab51fec9159d9ba1fcf650b0ec964e8:3"
+      ]
+    },
+    {
+      "table": "events",
+      "columns": [
+        [
+          "event_id",
+          "INTEGER",
+          true
+        ],
+        [
+          "kind",
+          "TEXT",
+          false
+        ],
+        [
+          "payload",
+          "TEXT",
+          false
+        ]
+      ],
+      "encoding": "utf-8",
+      "entry_ids": [
+        "d936f134547aac33776fe825894ce5249ab51fec9159d9ba1fcf650b0ec964e8:4"
+      ]
+    }
+  ]
+}

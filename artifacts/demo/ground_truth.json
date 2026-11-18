@@ -1,0 +1,2051 @@
+{
+  "seed": 20261118,
+  "archive_sha256": "d936f134547aac33776fe825894ce5249ab51fec9159d9ba1fcf650b0ec964e8",
+  "entries": [
+    {
+      "entry_id": "d936f134547aac33776fe825894ce5249ab51fec9159d9ba1fcf650b0ec964e8:0",
+      "index": 0,
+      "name": "data/customers.csv",
+      "method": "deflate",
+      "flags": 2048,
+      "crc32": 1913661862,
+      "compressed_size": 526,
+      "uncompressed_size": 1739,
+      "local_header_offset": 0,
+      "data_range": [
+        48,
+        574
+      ],
+      "extent_range": [
+        0,
+        574
+      ],
+      "has_data_descriptor": false,
+      "utf8_name": true
+    },
+    {
+      "entry_id": "d936f134547aac33776fe825894ce5249ab51fec9159d9ba1fcf650b0ec964e8:1",
+      "index": 1,
+      "name": "data/customers.csv",
+      "method": "deflate",
+      "flags": 2048,
+      "crc32": 1232265798,
+      "compressed_size": 110,
+      "uncompressed_size": 215,
+      "local_header_offset": 574,
+      "data_range": [
+        622,
+        732
+      ],
+      "extent_range": [
+        574,
+        732
+      ],
+      "has_data_descriptor": false,
+      "utf8_name": true
+    },
+    {
+      "entry_id": "d936f134547aac33776fe825894ce5249ab51fec9159d9ba1fcf650b0ec964e8:2",
+      "index": 2,
+      "name": "data/orders-a.csv",
+      "method": "stored",
+      "flags": 2048,
+      "crc32": 226281753,
+      "compressed_size": 819,
+      "uncompressed_size": 819,
+      "local_header_offset": 732,
+      "data_range": [
+        779,
+        1598
+      ],
+      "extent_range": [
+        732,
+        1598
+      ],
+      "has_data_descriptor": false,
+      "utf8_name": true
+    },
+    {
+      "entry_id": "d936f134547aac33776fe825894ce5249ab51fec9159d9ba1fcf650b0ec964e8:3",
+      "index": 3,
+      "name": "data/orders-b.csv",
+      "method": "deflate",
+      "flags": 2056,
+      "crc32": 876434032,
+      "compressed_size": 348,
+      "uncompressed_size": 839,
+      "local_header_offset": 1598,
+      "data_range": [
+        1645,
+        1993
+      ],
+      "extent_range": [
+        1598,
+        2009
+      ],
+      "has_data_descriptor": true,
+      "utf8_name": true
+    },
+    {
+      "entry_id": "d936f134547aac33776fe825894ce5249ab51fec9159d9ba1fcf650b0ec964e8:4",
+      "index": 4,
+      "name": "data/事件-é.csv",
+      "method": "deflate",
+      "flags": 2048,
+      "crc32": 1899391283,
+      "compressed_size": 219,
+      "uncompressed_size": 1081,
+      "local_header_offset": 2009,
+      "data_range": [
+        2057,
+        2276
+      ],
+      "extent_range": [
+        2009,
+        2276
+      ],
+      "has_data_descriptor": false,
+      "utf8_name": true
+    },
+    {
+      "entry_id": "d936f134547aac33776fe825894ce5249ab51fec9159d9ba1fcf650b0ec964e8:5",
+      "index": 5,
+      "name": "data/legacy-café.csv",
+      "method": "deflate",
+      "flags": 0,
+      "crc32": 948981385,
+      "compressed_size": 25,
+      "uncompressed_size": 23,
+      "local_header_offset": 2276,
+      "data_range": [
+        2327,
+        2352
+      ],
+      "extent_range": [
+        2276,
+        2352
+      ],
+      "has_data_descriptor": false,
+      "utf8_name": false
+    }
+  ],
+  "tables": {
+    "customers": {
+      "columns": [
+        "customer_id",
+        "name",
+        "email",
+        "score"
+      ],
+      "all_rows": [
+        [
+          1,
+          "Customer 001 éè",
+          "c1@example.test",
+          90.126
+        ],
+        [
+          2,
+          "Customer 002 éè",
+          "c2@example.test",
+          83.069
+        ],
+        [
+          3,
+          "Multi, \"quoted\"\nline name",
+          "c3@example.test",
+          34.288
+        ],
+        [
+          4,
+          "Customer 004 éè",
+          "c4@example.test",
+          4.547
+        ],
+        [
+          5,
+          "Customer 005 éè",
+          "",
+          null
+        ],
+        [
+          6,
+          "Customer 006 éè",
+          "c6@example.test",
+          1.809
+        ],
+        [
+          7,
+          "Customer 007 éè",
+          null,
+          38.13
+        ],
+        [
+          8,
+          "Customer 008 éè",
+          "c8@example.test",
+          49.468
+        ],
+        [
+          9,
+          "Customer 009 éè",
+          "c9@example.test",
+          42.351
+        ],
+        [
+          10,
+          "Customer 010 éè",
+          "c10@example.test",
+          null
+        ],
+        [
+          11,
+          "Customer 011 éè",
+          "c11@example.test",
+          16.517
+        ],
+        [
+          12,
+          "Customer 012 éè",
+          "c12@example.test",
+          67.72
+        ],
+        [
+          13,
+          "Customer 013 éè",
+          "c13@example.test",
+          0.342
+        ],
+        [
+          14,
+          "Customer 014 éè",
+          null,
+          99.107
+        ],
+        [
+          15,
+          "Customer 015 éè",
+          "c15@example.test",
+          null
+        ],
+        [
+          16,
+          "Customer 016 éè",
+          "c16@example.test",
+          5.351
+        ],
+        [
+          17,
+          "Customer 017 éè",
+          "c17@example.test",
+          0.631
+        ],
+        [
+          18,
+          "Customer 018 éè",
+          "c18@example.test",
+          27.54
+        ],
+        [
+          19,
+          "Customer 019 éè",
+          "c19@example.test",
+          74.345
+        ],
+        [
+          20,
+          "Customer 020 éè",
+          "c20@example.test",
+          null
+        ],
+        [
+          21,
+          "Customer 021 éè",
+          null,
+          57.002
+        ],
+        [
+          22,
+          "Customer 022 éè",
+          "c22@example.test",
+          92.052
+        ],
+        [
+          23,
+          "Customer 023 éè",
+          "c23@example.test",
+          20.842
+        ],
+        [
+          24,
+          "Customer 024 éè",
+          "c24@example.test",
+          14.415
+        ],
+        [
+          25,
+          "Customer 025 éè",
+          "c25@example.test",
+          null
+        ],
+        [
+          26,
+          "Customer 026 éè",
+          "c26@example.test",
+          58.317
+        ],
+        [
+          27,
+          "Customer 027 éè",
+          "c27@example.test",
+          10.708
+        ],
+        [
+          28,
+          "Customer 028 éè",
+          null,
+          42.716
+        ],
+        [
+          29,
+          "Customer 029 éè",
+          "c29@example.test",
+          5.126
+        ],
+        [
+          30,
+          "Customer 030 éè",
+          "c30@example.test",
+          null
+        ],
+        [
+          31,
+          "Customer 031 éè",
+          "c31@example.test",
+          89.903
+        ],
+        [
+          32,
+          "Customer 032 éè",
+          "c32@example.test",
+          18.052
+        ],
+        [
+          33,
+          "Customer 033 éè",
+          "c33@example.test",
+          82.002
+        ],
+        [
+          34,
+          "Customer 034 éè",
+          "c34@example.test",
+          56.013
+        ],
+        [
+          35,
+          "Customer 035 éè",
+          null,
+          null
+        ],
+        [
+          36,
+          "Customer 036 éè",
+          "c36@example.test",
+          92.667
+        ],
+        [
+          37,
+          "Customer 037 éè",
+          "c37@example.test",
+          15.323
+        ],
+        [
+          38,
+          "Customer 038 éè",
+          "c38@example.test",
+          40.159
+        ],
+        [
+          39,
+          "Customer 039 éè",
+          "c39@example.test",
+          37.582
+        ],
+        [
+          40,
+          "Customer 040 éè",
+          "c40@example.test",
+          null
+        ]
+      ],
+      "members": {
+        "d936f134547aac33776fe825894ce5249ab51fec9159d9ba1fcf650b0ec964e8:0": [
+          {
+            "line": 2,
+            "row": [
+              1,
+              "Customer 001 éè",
+              "c1@example.test",
+              90.126
+            ]
+          },
+          {
+            "line": 3,
+            "row": [
+              2,
+              "Customer 002 éè",
+              "c2@example.test",
+              83.069
+            ]
+          },
+          {
+            "line": 4,
+            "row": [
+              3,
+              "Multi, \"quoted\"\nline name",
+              "c3@example.test",
+              34.288
+            ]
+          },
+          {
+            "line": 6,
+            "row": [
+              4,
+              "Customer 004 éè",
+              "c4@example.test",
+              4.547
+            ]
+          },
+          {
+            "line": 7,
+            "row": [
+              5,
+              "Customer 005 éè",
+              "",
+              null
+            ]
+          },
+          {
+            "line": 8,
+            "row": [
+              6,
+              "Customer 006 éè",
+              "c6@example.test",
+              1.809
+            ]
+          },
+          {
+            "line": 9,
+            "row": [
+              7,
+              "Customer 007 éè",
+              null,
+              38.13
+            ]
+          },
+          {
+            "line": 10,
+            "row": [
+              8,
+              "Customer 008 éè",
+              "c8@example.test",
+              49.468
+            ]
+          },
+          {
+            "line": 11,
+            "row": [
+              9,
+              "Customer 009 éè",
+              "c9@example.test",
+              42.351
+            ]
+          },
+          {
+            "line": 12,
+            "row": [
+              10,
+              "Customer 010 éè",
+              "c10@example.test",
+              null
+            ]
+          },
+          {
+            "line": 13,
+            "row": [
+              11,
+              "Customer 011 éè",
+              "c11@example.test",
+              16.517
+            ]
+          },
+          {
+            "line": 14,
+            "row": [
+              12,
+              "Customer 012 éè",
+              "c12@example.test",
+              67.72
+            ]
+          },
+          {
+            "line": 15,
+            "row": [
+              13,
+              "Customer 013 éè",
+              "c13@example.test",
+              0.342
+            ]
+          },
+          {
+            "line": 16,
+            "row": [
+              14,
+              "Customer 014 éè",
+              null,
+              99.107
+            ]
+          },
+          {
+            "line": 17,
+            "row": [
+              15,
+              "Customer 015 éè",
+              "c15@example.test",
+              null
+            ]
+          },
+          {
+            "line": 18,
+            "row": [
+              16,
+              "Customer 016 éè",
+              "c16@example.test",
+              5.351
+            ]
+          },
+          {
+            "line": 19,
+            "row": [
+              17,
+              "Customer 017 éè",
+              "c17@example.test",
+              0.631
+            ]
+          },
+          {
+            "line": 20,
+            "row": [
+              18,
+              "Customer 018 éè",
+              "c18@example.test",
+              27.54
+            ]
+          },
+          {
+            "line": 21,
+            "row": [
+              19,
+              "Customer 019 éè",
+              "c19@example.test",
+              74.345
+            ]
+          },
+          {
+            "line": 22,
+            "row": [
+              20,
+              "Customer 020 éè",
+              "c20@example.test",
+              null
+            ]
+          },
+          {
+            "line": 23,
+            "row": [
+              21,
+              "Customer 021 éè",
+              null,
+              57.002
+            ]
+          },
+          {
+            "line": 24,
+            "row": [
+              22,
+              "Customer 022 éè",
+              "c22@example.test",
+              92.052
+            ]
+          },
+          {
+            "line": 25,
+            "row": [
+              23,
+              "Customer 023 éè",
+              "c23@example.test",
+              20.842
+            ]
+          },
+          {
+            "line": 26,
+            "row": [
+              24,
+              "Customer 024 éè",
+              "c24@example.test",
+              14.415
+            ]
+          },
+          {
+            "line": 27,
+            "row": [
+              25,
+              "Customer 025 éè",
+              "c25@example.test",
+              null
+            ]
+          },
+          {
+            "line": 28,
+            "row": [
+              26,
+              "Customer 026 éè",
+              "c26@example.test",
+              58.317
+            ]
+          },
+          {
+            "line": 29,
+            "row": [
+              27,
+              "Customer 027 éè",
+              "c27@example.test",
+              10.708
+            ]
+          },
+          {
+            "line": 30,
+            "row": [
+              28,
+              "Customer 028 éè",
+              null,
+              42.716
+            ]
+          },
+          {
+            "line": 31,
+            "row": [
+              29,
+              "Customer 029 éè",
+              "c29@example.test",
+              5.126
+            ]
+          },
+          {
+            "line": 32,
+            "row": [
+              30,
+              "Customer 030 éè",
+              "c30@example.test",
+              null
+            ]
+          },
+          {
+            "line": 33,
+            "row": [
+              31,
+              "Customer 031 éè",
+              "c31@example.test",
+              89.903
+            ]
+          },
+          {
+            "line": 34,
+            "row": [
+              32,
+              "Customer 032 éè",
+              "c32@example.test",
+              18.052
+            ]
+          },
+          {
+            "line": 35,
+            "row": [
+              33,
+              "Customer 033 éè",
+              "c33@example.test",
+              82.002
+            ]
+          },
+          {
+            "line": 36,
+            "row": [
+              34,
+              "Customer 034 éè",
+              "c34@example.test",
+              56.013
+            ]
+          },
+          {
+            "line": 37,
+            "row": [
+              35,
+              "Customer 035 éè",
+              null,
+              null
+            ]
+          },
+          {
+            "line": 38,
+            "row": [
+              36,
+              "Customer 036 éè",
+              "c36@example.test",
+              92.667
+            ]
+          },
+          {
+            "line": 39,
+            "row": [
+              37,
+              "Customer 037 éè",
+              "c37@example.test",
+              15.323
+            ]
+          },
+          {
+            "line": 40,
+            "row": [
+              38,
+              "Customer 038 éè",
+              "c38@example.test",
+              40.159
+            ]
+          },
+          {
+            "line": 41,
+            "row": [
+              39,
+              "Customer 039 éè",
+              "c39@example.test",
+              37.582
+            ]
+          },
+          {
+            "line": 42,
+            "row": [
+              40,
+              "Customer 040 éè",
+              "c40@example.test",
+              null
+            ]
+          }
+        ]
+      }
+    },
+    "orders": {
+      "columns": [
+        "order_id",
+        "customer_id",
+        "note",
+        "amount"
+      ],
+      "all_rows": [
+        [
+          1,
+          23,
+          null,
+          29.66
+        ],
+        [
+          2,
+          19,
+          null,
+          171.79
+        ],
+        [
+          3,
+          39,
+          null,
+          189.01
+        ],
+        [
+          4,
+          10,
+          "note with, comma and \"quotes\"",
+          199.78
+        ],
+        [
+          5,
+          18,
+          null,
+          340.12
+        ],
+        [
+          6,
+          22,
+          "line one\nline two\r\nline three",
+          399.19
+        ],
+        [
+          7,
+          8,
+          null,
+          368.21
+        ],
+        [
+          8,
+          37,
+          "note with, comma and \"quotes\"",
+          138.72
+        ],
+        [
+          9,
+          28,
+          "",
+          236.32
+        ],
+        [
+          10,
+          10,
+          null,
+          280.74
+        ],
+        [
+          11,
+          5,
+          null,
+          458.41
+        ],
+        [
+          12,
+          39,
+          "note with, comma and \"quotes\"",
+          121.59
+        ],
+        [
+          13,
+          30,
+          null,
+          207.58
+        ],
+        [
+          14,
+          2,
+          null,
+          139.74
+        ],
+        [
+          15,
+          26,
+          null,
+          47.39
+        ],
+        [
+          16,
+          13,
+          "note with, comma and \"quotes\"",
+          433.71
+        ],
+        [
+          17,
+          23,
+          null,
+          22.18
+        ],
+        [
+          18,
+          7,
+          "line one\nline two\r\nline three",
+          236.8
+        ],
+        [
+          19,
+          35,
+          null,
+          196.98
+        ],
+        [
+          20,
+          13,
+          "note with, comma and \"quotes\"",
+          48.72
+        ],
+        [
+          21,
+          29,
+          null,
+          85.57
+        ],
+        [
+          22,
+          36,
+          null,
+          21.72
+        ],
+        [
+          23,
+          31,
+          null,
+          29.03
+        ],
+        [
+          24,
+          11,
+          "note with, comma and \"quotes\"",
+          73.31
+        ],
+        [
+          25,
+          29,
+          null,
+          262.09
+        ],
+        [
+          26,
+          22,
+          null,
+          495.17
+        ],
+        [
+          27,
+          26,
+          "",
+          151.81
+        ],
+        [
+          28,
+          18,
+          "note with, comma and \"quotes\"",
+          91.9
+        ],
+        [
+          29,
+          27,
+          null,
+          363.45
+        ],
+        [
+          30,
+          2,
+          "line one\nline two\r\nline three",
+          431.76
+        ],
+        [
+          31,
+          38,
+          null,
+          329.11
+        ],
+        [
+          32,
+          30,
+          "note with, comma and \"quotes\"",
+          455.13
+        ],
+        [
+          33,
+          23,
+          null,
+          75.79
+        ],
+        [
+          34,
+          9,
+          null,
+          73.62
+        ],
+        [
+          35,
+          18,
+          null,
+          358.08
+        ],
+        [
+          36,
+          34,
+          "note with, comma and \"quotes\"",
+          320.04
+        ],
+        [
+          37,
+          40,
+          null,
+          320.34
+        ],
+        [
+          38,
+          1,
+          null,
+          414.39
+        ],
+        [
+          39,
+          10,
+          null,
+          453.09
+        ],
+        [
+          40,
+          24,
+          "note with, comma and \"quotes\"",
+          279.86
+        ],
+        [
+          41,
+          11,
+          null,
+          446.36
+        ],
+        [
+          42,
+          18,
+          "line one\nline two\r\nline three",
+          127.94
+        ],
+        [
+          43,
+          40,
+          null,
+          96.72
+        ],
+        [
+          44,
+          20,
+          "note with, comma and \"quotes\"",
+          376.64
+        ],
+        [
+          45,
+          22,
+          "",
+          335.47
+        ],
+        [
+          46,
+          2,
+          null,
+          53.43
+        ],
+        [
+          47,
+          31,
+          null,
+          330.87
+        ],
+        [
+          48,
+          37,
+          "note with, comma and \"quotes\"",
+          465.24
+        ],
+        [
+          49,
+          29,
+          null,
+          106.42
+        ],
+        [
+          50,
+          15,
+          null,
+          264.19
+        ],
+        [
+          51,
+          8,
+          null,
+          372.06
+        ],
+        [
+          52,
+          39,
+          "note with, comma and \"quotes\"",
+          256.75
+        ],
+        [
+          53,
+          27,
+          null,
+          269.65
+        ],
+        [
+          54,
+          32,
+          "line one\nline two\r\nline three",
+          455.82
+        ],
+        [
+          55,
+          31,
+          null,
+          143.57
+        ],
+        [
+          56,
+          15,
+          "note with, comma and \"quotes\"",
+          79.83
+        ],
+        [
+          57,
+          12,
+          null,
+          193.31
+        ],
+        [
+          58,
+          36,
+          null,
+          299.52
+        ],
+        [
+          59,
+          40,
+          null,
+          498.65
+        ],
+        [
+          60,
+          38,
+          "note with, comma and \"quotes\"",
+          159.45
+        ]
+      ],
+      "members": {
+        "d936f134547aac33776fe825894ce5249ab51fec9159d9ba1fcf650b0ec964e8:2": [
+          {
+            "line": 2,
+            "row": [
+              1,
+              23,
+              null,
+              29.66
+            ]
+          },
+          {
+            "line": 3,
+            "row": [
+              2,
+              19,
+              null,
+              171.79
+            ]
+          },
+          {
+            "line": 4,
+            "row": [
+              3,
+              39,
+              null,
+              189.01
+            ]
+          },
+          {
+            "line": 5,
+            "row": [
+              4,
+              10,
+              "note with, comma and \"quotes\"",
+              199.78
+            ]
+          },
+          {
+            "line": 6,
+            "row": [
+              5,
+              18,
+              null,
+              340.12
+            ]
+          },
+          {
+            "line": 7,
+            "row": [
+              6,
+              22,
+              "line one\nline two\r\nline three",
+              399.19
+            ]
+          },
+          {
+            "line": 10,
+            "row": [
+              7,
+              8,
+              null,
+              368.21
+            ]
+          },
+          {
+            "line": 11,
+            "row": [
+              8,
+              37,
+              "note with, comma and \"quotes\"",
+              138.72
+            ]
+          },
+          {
+            "line": 12,
+            "row": [
+              9,
+              28,
+              "",
+              236.32
+            ]
+          },
+          {
+            "line": 13,
+            "row": [
+              10,
+              10,
+              null,
+              280.74
+            ]
+          },
+          {
+            "line": 14,
+            "row": [
+              11,
+              5,
+              null,
+              458.41
+            ]
+          },
+          {
+            "line": 15,
+            "row": [
+              12,
+              39,
+              "note with, comma and \"quotes\"",
+              121.59
+            ]
+          },
+          {
+            "line": 16,
+            "row": [
+              13,
+              30,
+              null,
+              207.58
+            ]
+          },
+          {
+            "line": 17,
+            "row": [
+              14,
+              2,
+              null,
+              139.74
+            ]
+          },
+          {
+            "line": 18,
+            "row": [
+              15,
+              26,
+              null,
+              47.39
+            ]
+          },
+          {
+            "line": 19,
+            "row": [
+              16,
+              13,
+              "note with, comma and \"quotes\"",
+              433.71
+            ]
+          },
+          {
+            "line": 20,
+            "row": [
+              17,
+              23,
+              null,
+              22.18
+            ]
+          },
+          {
+            "line": 21,
+            "row": [
+              18,
+              7,
+              "line one\nline two\r\nline three",
+              236.8
+            ]
+          },
+          {
+            "line": 24,
+            "row": [
+              19,
+              35,
+              null,
+              196.98
+            ]
+          },
+          {
+            "line": 25,
+            "row": [
+              20,
+              13,
+              "note with, comma and \"quotes\"",
+              48.72
+            ]
+          },
+          {
+            "line": 26,
+            "row": [
+              21,
+              29,
+              null,
+              85.57
+            ]
+          },
+          {
+            "line": 27,
+            "row": [
+              22,
+              36,
+              null,
+              21.72
+            ]
+          },
+          {
+            "line": 28,
+            "row": [
+              23,
+              31,
+              null,
+              29.03
+            ]
+          },
+          {
+            "line": 29,
+            "row": [
+              24,
+              11,
+              "note with, comma and \"quotes\"",
+              73.31
+            ]
+          },
+          {
+            "line": 30,
+            "row": [
+              25,
+              29,
+              null,
+              262.09
+            ]
+          },
+          {
+            "line": 31,
+            "row": [
+              26,
+              22,
+              null,
+              495.17
+            ]
+          },
+          {
+            "line": 32,
+            "row": [
+              27,
+              26,
+              "",
+              151.81
+            ]
+          },
+          {
+            "line": 33,
+            "row": [
+              28,
+              18,
+              "note with, comma and \"quotes\"",
+              91.9
+            ]
+          },
+          {
+            "line": 34,
+            "row": [
+              29,
+              27,
+              null,
+              363.45
+            ]
+          },
+          {
+            "line": 35,
+            "row": [
+              30,
+              2,
+              "line one\nline two\r\nline three",
+              431.76
+            ]
+          }
+        ],
+        "d936f134547aac33776fe825894ce5249ab51fec9159d9ba1fcf650b0ec964e8:3": [
+          {
+            "line": 2,
+            "row": [
+              31,
+              38,
+              null,
+              329.11
+            ]
+          },
+          {
+            "line": 3,
+            "row": [
+              32,
+              30,
+              "note with, comma and \"quotes\"",
+              455.13
+            ]
+          },
+          {
+            "line": 4,
+            "row": [
+              33,
+              23,
+              null,
+              75.79
+            ]
+          },
+          {
+            "line": 5,
+            "row": [
+              34,
+              9,
+              null,
+              73.62
+            ]
+          },
+          {
+            "line": 6,
+            "row": [
+              35,
+              18,
+              null,
+              358.08
+            ]
+          },
+          {
+            "line": 7,
+            "row": [
+              36,
+              34,
+              "note with, comma and \"quotes\"",
+              320.04
+            ]
+          },
+          {
+            "line": 8,
+            "row": [
+              37,
+              40,
+              null,
+              320.34
+            ]
+          },
+          {
+            "line": 9,
+            "row": [
+              38,
+              1,
+              null,
+              414.39
+            ]
+          },
+          {
+            "line": 10,
+            "row": [
+              39,
+              10,
+              null,
+              453.09
+            ]
+          },
+          {
+            "line": 11,
+            "row": [
+              40,
+              24,
+              "note with, comma and \"quotes\"",
+              279.86
+            ]
+          },
+          {
+            "line": 12,
+            "row": [
+              41,
+              11,
+              null,
+              446.36
+            ]
+          },
+          {
+            "line": 13,
+            "row": [
+              42,
+              18,
+              "line one\nline two\r\nline three",
+              127.94
+            ]
+          },
+          {
+            "line": 16,
+            "row": [
+              43,
+              40,
+              null,
+              96.72
+            ]
+          },
+          {
+            "line": 17,
+            "row": [
+              44,
+              20,
+              "note with, comma and \"quotes\"",
+              376.64
+            ]
+          },
+          {
+            "line": 18,
+            "row": [
+              45,
+              22,
+              "",
+              335.47
+            ]
+          },
+          {
+            "line": 19,
+            "row": [
+              46,
+              2,
+              null,
+              53.43
+            ]
+          },
+          {
+            "line": 20,
+            "row": [
+              47,
+              31,
+              null,
+              330.87
+            ]
+          },
+          {
+            "line": 21,
+            "row": [
+              48,
+              37,
+              "note with, comma and \"quotes\"",
+              465.24
+            ]
+          },
+          {
+            "line": 22,
+            "row": [
+              49,
+              29,
+              null,
+              106.42
+            ]
+          },
+          {
+            "line": 23,
+            "row": [
+              50,
+              15,
+              null,
+              264.19
+            ]
+          },
+          {
+            "line": 24,
+            "row": [
+              51,
+              8,
+              null,
+              372.06
+            ]
+          },
+          {
+            "line": 25,
+            "row": [
+              52,
+              39,
+              "note with, comma and \"quotes\"",
+              256.75
+            ]
+          },
+          {
+            "line": 26,
+            "row": [
+              53,
+              27,
+              null,
+              269.65
+            ]
+          },
+          {
+            "line": 27,
+            "row": [
+              54,
+              32,
+              "line one\nline two\r\nline three",
+              455.82
+            ]
+          },
+          {
+            "line": 30,
+            "row": [
+              55,
+              31,
+              null,
+              143.57
+            ]
+          },
+          {
+            "line": 31,
+            "row": [
+              56,
+              15,
+              "note with, comma and \"quotes\"",
+              79.83
+            ]
+          },
+          {
+            "line": 32,
+            "row": [
+              57,
+              12,
+              null,
+              193.31
+            ]
+          },
+          {
+            "line": 33,
+            "row": [
+              58,
+              36,
+              null,
+              299.52
+            ]
+          },
+          {
+            "line": 34,
+            "row": [
+              59,
+              40,
+              null,
+              498.65
+            ]
+          },
+          {
+            "line": 35,
+            "row": [
+              60,
+              38,
+              "note with, comma and \"quotes\"",
+              159.45
+            ]
+          }
+        ]
+      }
+    },
+    "events": {
+      "columns": [
+        "event_id",
+        "kind",
+        "payload"
+      ],
+      "all_rows": [
+        [
+          1,
+          "view",
+          "{\"n\":1,\"text\":\"\\u00e9\\n\"}"
+        ],
+        [
+          2,
+          "purchase",
+          "{\"n\":2,\"text\":\"\\u00e9\\n\"}"
+        ],
+        [
+          3,
+          "click",
+          "{\"n\":3,\"text\":\"\\u00e9\\n\"}"
+        ],
+        [
+          4,
+          "view",
+          "{\"n\":4,\"text\":\"\\u00e9\\n\"}"
+        ],
+        [
+          5,
+          "purchase",
+          "{\"n\":5,\"text\":\"\\u00e9\\n\"}"
+        ],
+        [
+          6,
+          "click",
+          "{\"n\":6,\"text\":\"\\u00e9\\n\"}"
+        ],
+        [
+          7,
+          "view",
+          "{\"n\":7,\"text\":\"\\u00e9\\n\"}"
+        ],
+        [
+          8,
+          "purchase",
+          "{\"n\":8,\"text\":\"\\u00e9\\n\"}"
+        ],
+        [
+          9,
+          "click",
+          "{\"n\":9,\"text\":\"\\u00e9\\n\"}"
+        ],
+        [
+          10,
+          "view",
+          "{\"n\":10,\"text\":\"\\u00e9\\n\"}"
+        ],
+        [
+          11,
+          "purchase",
+          null
+        ],
+        [
+          12,
+          "click",
+          "{\"n\":12,\"text\":\"\\u00e9\\n\"}"
+        ],
+        [
+          13,
+          "view",
+          "{\"n\":13,\"text\":\"\\u00e9\\n\"}"
+        ],
+        [
+          14,
+          "purchase",
+          "{\"n\":14,\"text\":\"\\u00e9\\n\"}"
+        ],
+        [
+          15,
+          "click",
+          "{\"n\":15,\"text\":\"\\u00e9\\n\"}"
+        ],
+        [
+          16,
+          "view",
+          "{\"n\":16,\"text\":\"\\u00e9\\n\"}"
+        ],
+        [
+          17,
+          "purchase",
+          "{\"n\":17,\"text\":\"\\u00e9\\n\"}"
+        ],
+        [
+          18,
+          "click",
+          "{\"n\":18,\"text\":\"\\u00e9\\n\"}"
+        ],
+        [
+          19,
+          "view",
+          "{\"n\":19,\"text\":\"\\u00e9\\n\"}"
+        ],
+        [
+          20,
+          "purchase",
+          "{\"n\":20,\"text\":\"\\u00e9\\n\"}"
+        ],
+        [
+          21,
+          "click",
+          "{\"n\":21,\"text\":\"\\u00e9\\n\"}"
+        ],
+        [
+          22,
+          "view",
+          null
+        ],
+        [
+          23,
+          "purchase",
+          "{\"n\":23,\"text\":\"\\u00e9\\n\"}"
+        ],
+        [
+          24,
+          "click",
+          "{\"n\":24,\"text\":\"\\u00e9\\n\"}"
+        ],
+        [
+          25,
+          "view",
+          "{\"n\":25,\"text\":\"\\u00e9\\n\"}"
+        ]
+      ],
+      "members": {
+        "d936f134547aac33776fe825894ce5249ab51fec9159d9ba1fcf650b0ec964e8:4": [
+          {
+            "line": 2,
+            "row": [
+              1,
+              "view",
+              "{\"n\":1,\"text\":\"\\u00e9\\n\"}"
+            ]
+          },
+          {
+            "line": 3,
+            "row": [
+              2,
+              "purchase",
+              "{\"n\":2,\"text\":\"\\u00e9\\n\"}"
+            ]
+          },
+          {
+            "line": 4,
+            "row": [
+              3,
+              "click",
+              "{\"n\":3,\"text\":\"\\u00e9\\n\"}"
+            ]
+          },
+          {
+            "line": 5,
+            "row": [
+              4,
+              "view",
+              "{\"n\":4,\"text\":\"\\u00e9\\n\"}"
+            ]
+          },
+          {
+            "line": 6,
+            "row": [
+              5,
+              "purchase",
+              "{\"n\":5,\"text\":\"\\u00e9\\n\"}"
+            ]
+          },
+          {
+            "line": 7,
+            "row": [
+              6,
+              "click",
+              "{\"n\":6,\"text\":\"\\u00e9\\n\"}"
+            ]
+          },
+          {
+            "line": 8,
+            "row": [
+              7,
+              "view",
+              "{\"n\":7,\"text\":\"\\u00e9\\n\"}"
+            ]
+          },
+          {
+            "line": 9,
+            "row": [
+              8,
+              "purchase",
+              "{\"n\":8,\"text\":\"\\u00e9\\n\"}"
+            ]
+          },
+          {
+            "line": 10,
+            "row": [
+              9,
+              "click",
+              "{\"n\":9,\"text\":\"\\u00e9\\n\"}"
+            ]
+          },
+          {
+            "line": 11,
+            "row": [
+              10,
+              "view",
+              "{\"n\":10,\"text\":\"\\u00e9\\n\"}"
+            ]
+          },
+          {
+            "line": 12,
+            "row": [
+              11,
+              "purchase",
+              null
+            ]
+          },
+          {
+            "line": 13,
+            "row": [
+              12,
+              "click",
+              "{\"n\":12,\"text\":\"\\u00e9\\n\"}"
+            ]
+          },
+          {
+            "line": 14,
+            "row": [
+              13,
+              "view",
+              "{\"n\":13,\"text\":\"\\u00e9\\n\"}"
+            ]
+          },
+          {
+            "line": 15,
+            "row": [
+              14,
+              "purchase",
+              "{\"n\":14,\"text\":\"\\u00e9\\n\"}"
+            ]
+          },
+          {
+            "line": 16,
+            "row": [
+              15,
+              "click",
+              "{\"n\":15,\"text\":\"\\u00e9\\n\"}"
+            ]
+          },
+          {
+            "line": 17,
+            "row": [
+              16,
+              "view",
+              "{\"n\":16,\"text\":\"\\u00e9\\n\"}"
+            ]
+          },
+          {
+            "line": 18,
+            "row": [
+              17,
+              "purchase",
+              "{\"n\":17,\"text\":\"\\u00e9\\n\"}"
+            ]
+          },
+          {
+            "line": 19,
+            "row": [
+              18,
+              "click",
+              "{\"n\":18,\"text\":\"\\u00e9\\n\"}"
+            ]
+          },
+          {
+            "line": 20,
+            "row": [
+              19,
+              "view",
+              "{\"n\":19,\"text\":\"\\u00e9\\n\"}"
+            ]
+          },
+          {
+            "line": 21,
+            "row": [
+              20,
+              "purchase",
+              "{\"n\":20,\"text\":\"\\u00e9\\n\"}"
+            ]
+          },
+          {
+            "line": 22,
+            "row": [
+              21,
+              "click",
+              "{\"n\":21,\"text\":\"\\u00e9\\n\"}"
+            ]
+          },
+          {
+            "line": 23,
+            "row": [
+              22,
+              "view",
+              null
+            ]
+          },
+          {
+            "line": 24,
+            "row": [
+              23,
+              "purchase",
+              "{\"n\":23,\"text\":\"\\u00e9\\n\"}"
+            ]
+          },
+          {
+            "line": 25,
+            "row": [
+              24,
+              "click",
+              "{\"n\":24,\"text\":\"\\u00e9\\n\"}"
+            ]
+          },
+          {
+            "line": 26,
+            "row": [
+              25,
+              "view",
+              "{\"n\":25,\"text\":\"\\u00e9\\n\"}"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "decoy_member": {
+    "d936f134547aac33776fe825894ce5249ab51fec9159d9ba1fcf650b0ec964e8:1": [
+      {
+        "line": 2,
+        "row": [
+          900,
+          "DECOY 0",
+          "decoy0@example.test",
+          0.0
+        ]
+      },
+      {
+        "line": 3,
+        "row": [
+          901,
+          "DECOY 1",
+          "decoy1@example.test",
+          1.0
+        ]
+      },
+      {
+        "line": 4,
+        "row": [
+          902,
+          "DECOY 2",
+          "decoy2@example.test",
+          2.0
+        ]
+      },
+      {
+        "line": 5,
+        "row": [
+          903,
+          "DECOY 3",
+          "decoy3@example.test",
+          3.0
+        ]
+      },
+      {
+        "line": 6,
+        "row": [
+          904,
+          "DECOY 4",
+          "decoy4@example.test",
+          4.0
+        ]
+      }
+    ]
+  }
+}

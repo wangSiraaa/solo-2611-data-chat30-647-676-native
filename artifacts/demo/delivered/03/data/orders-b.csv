@@ -1,0 +1,35 @@
+order_id,customer_id,note,amount
+31,38,\N,329.11
+32,30,"note with, comma and ""quotes""",455.13
+33,23,\N,75.79
+34,9,\N,73.62
+35,18,\N,358.08
+36,34,"note with, comma and ""quotes""",320.04
+37,40,\N,320.34
+38,1,\N,414.39
+39,10,\N,453.09
+40,24,"note with, comma and ""quotes""",279.86
+41,11,\N,446.36
+42,18,"line one
+line two
+line three",127.94
+43,40,\N,96.72
+44,20,"note with, comma and ""quotes""",376.64
+45,22,,335.47
+46,2,\N,53.43
+47,31,\N,330.87
+48,37,"note with, comma and ""quotes""",465.24
+49,29,\N,106.42
+50,15,\N,264.19
+51,8,\N,372.06
+52,39,"note with, comma and ""quotes""",256.75
+53,27,\N,269.65
+54,32,"line one
+line two
+line three",455.82
+55,31,\N,143.57
+56,15,"note with, comma and ""quotes""",79.83
+57,12,\N,193.31
+58,36,\N,299.52
+59,40,\N,498.65
+60,38,"note with, comma and ""quotes""",159.45

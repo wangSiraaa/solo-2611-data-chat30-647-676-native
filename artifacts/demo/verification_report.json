@@ -1,0 +1,117 @@
+{
+  "ok": true,
+  "archive_sha256": "d936f134547aac33776fe825894ce5249ab51fec9159d9ba1fcf650b0ec964e8",
+  "members": 6,
+  "checks": {
+    "members_compared": 4,
+    "rows_compared": 125,
+    "typed_values_compared": 475,
+    "provenance_rows_reverified": 125,
+    "delivered_members": 6
+  },
+  "failures": [],
+  "adversarial_archives": {
+    "duplicate_name.zip": {
+      "expectation": "accepted-duplicate-names",
+      "result": "opened",
+      "names": [
+        "same.csv",
+        "same.csv"
+      ],
+      "bodies_distinct": true
+    },
+    "data_descriptor.zip": {
+      "expectation": "accepted-descriptor",
+      "result": "opened",
+      "descriptor_members": [
+        0
+      ]
+    },
+    "forged_length.zip": {
+      "expectation": "rejected",
+      "result": "rejected",
+      "reason": "0bdc01a60b4960cd491b0c8865c167a6d674af1fc7302a3bd26a37a8c167f81a:0: output exceeded declared 5 bytes at 6"
+    },
+    "fake_central_length.zip": {
+      "expectation": "rejected",
+      "result": "rejected",
+      "reason": "c24fd8ec88796b32e7729ad5ea98fd3a36835a2099952f4257afedd03ec73da5:0: deflate stream ended prematurely"
+    },
+    "crc_corruption.zip": {
+      "expectation": "member-crc-failure",
+      "result": "opened",
+      "crc_failed_ids": [
+        "bb8b1cc7f7202d21bd22dd74a16aa8c5c51cfa4809d85d1ffa49b94ea9002e0f:1"
+      ]
+    },
+    "overlap.zip": {
+      "expectation": "rejected",
+      "result": "rejected",
+      "reason": "entry 1 range overlaps another member's range"
+    },
+    "bad_utf8_name.zip": {
+      "expectation": "rejected",
+      "result": "rejected",
+      "reason": "UTF-8 member name is not valid UTF-8: 'utf-8' codec can't decode byte 0xff in position 1: invalid start byte"
+    }
+  },
+  "delivery_paths": {
+    "/etc/passwd": {
+      "result": "rejected",
+      "reason": "absolute destination path is not allowed: '/etc/passwd'"
+    },
+    "../escape.csv": {
+      "result": "rejected",
+      "reason": "destination path contains an empty, '.' or '..' segment: '../escape.csv'"
+    },
+    "data//double.csv": {
+      "result": "rejected",
+      "reason": "destination path contains an empty, '.' or '..' segment: 'data//double.csv'"
+    },
+    "data/./x.csv": {
+      "result": "rejected",
+      "reason": "destination path contains an empty, '.' or '..' segment: 'data/./x.csv'"
+    },
+    "data\\backslash.csv": {
+      "result": "rejected",
+      "reason": "destination path must use '/' separators"
+    },
+    "C:/drive.csv": {
+      "result": "rejected",
+      "reason": "drive-qualified destination path is not allowed: 'C:/drive.csv'"
+    },
+    "": {
+      "result": "rejected",
+      "reason": "destination path must be a non-empty string"
+    },
+    "data/": {
+      "result": "rejected",
+      "reason": "destination path must name a file, not a directory: 'data/'"
+    },
+    "data/../escape.csv": {
+      "result": "rejected",
+      "reason": "destination path contains an empty, '.' or '..' segment: 'data/../escape.csv'"
+    },
+    "nested/../../escape.csv": {
+      "result": "rejected",
+      "reason": "destination path contains an empty, '.' or '..' segment: 'nested/../../escape.csv'"
+    },
+    "duplicate-destination": {
+      "result": "rejected",
+      "reason": "destination 'a.csv' is assigned more than once"
+    },
+    "case-insensitive": {
+      "result": "rejected",
+      "reason": "destination 'data.csv' collides case-insensitively with another destination"
+    },
+    "file-prefix": {
+      "result": "rejected",
+      "reason": "destination 'out/a.csv' uses a file as a directory prefix"
+    },
+    "empty-segment": {
+      "result": "rejected",
+      "reason": "destination path contains an empty, '.' or '..' segment: 'a//b.csv'"
+    }
+  },
+  "database": "demo/warehouse.sqlite"
+}

@@ -1,0 +1,6 @@
+customer_id,name,email,score
+900,DECOY 0,decoy0@example.test,0.0
+901,DECOY 1,decoy1@example.test,1.0
+902,DECOY 2,decoy2@example.test,2.0
+903,DECOY 3,decoy3@example.test,3.0
+904,DECOY 4,decoy4@example.test,4.0
