@@ -1,0 +1,8 @@
+__pycache__/
+*.pyc
+.venv/
+results/scenario/
+results/run_*/
+result/run_*/
+tests/_generated/
+results/*.json.tmp

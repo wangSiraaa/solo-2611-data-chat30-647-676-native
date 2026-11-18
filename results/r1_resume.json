@@ -1,0 +1,501 @@
+{
+  "device": {
+    "calls": [
+      {
+        "after": 0,
+        "before": 0,
+        "block_count": 100,
+        "drive": "D0",
+        "ok": true,
+        "op": "mount",
+        "seq": 1,
+        "volume": "V2"
+      },
+      {
+        "after": 0,
+        "before": 0,
+        "drive": "D0",
+        "ok": true,
+        "op": "rewind",
+        "seq": 2,
+        "volume": "V2"
+      },
+      {
+        "actual": 2,
+        "after": 2,
+        "before": 0,
+        "drive": "D0",
+        "ok": true,
+        "op": "skip",
+        "requested": 2,
+        "seq": 3,
+        "volume": "V2"
+      },
+      {
+        "after": 0,
+        "before": 0,
+        "block_count": 100,
+        "drive": "D1",
+        "ok": true,
+        "op": "mount",
+        "seq": 4,
+        "volume": "V1"
+      },
+      {
+        "after": 0,
+        "before": 0,
+        "drive": "D1",
+        "ok": true,
+        "op": "rewind",
+        "seq": 5,
+        "volume": "V1"
+      },
+      {
+        "actual": 2,
+        "after": 2,
+        "before": 0,
+        "drive": "D1",
+        "ok": true,
+        "op": "skip",
+        "requested": 2,
+        "seq": 6,
+        "volume": "V1"
+      },
+      {
+        "after": 0,
+        "before": 2,
+        "drive": "D0",
+        "ok": true,
+        "op": "unmount",
+        "seq": 7,
+        "volume": "V2"
+      },
+      {
+        "after": 0,
+        "before": 0,
+        "block_count": 100,
+        "drive": "D0",
+        "ok": true,
+        "op": "mount",
+        "seq": 8,
+        "volume": "V5"
+      },
+      {
+        "after": 1,
+        "before": 0,
+        "block": 0,
+        "bytes_returned": 1024,
+        "drive": "D0",
+        "kind": "data",
+        "ok": true,
+        "op": "read",
+        "seq": 9,
+        "volume": "V5"
+      },
+      {
+        "after": 2,
+        "before": 1,
+        "block": 1,
+        "bytes_returned": 1024,
+        "drive": "D0",
+        "kind": "data",
+        "ok": true,
+        "op": "read",
+        "seq": 10,
+        "volume": "V5"
+      },
+      {
+        "after": 3,
+        "before": 2,
+        "block": 2,
+        "bytes_returned": 1024,
+        "drive": "D0",
+        "kind": "data",
+        "ok": true,
+        "op": "read",
+        "seq": 11,
+        "volume": "V5"
+      },
+      {
+        "after": 0,
+        "before": 2,
+        "drive": "D1",
+        "ok": true,
+        "op": "unmount",
+        "seq": 12,
+        "volume": "V1"
+      },
+      {
+        "after": 0,
+        "before": 0,
+        "block_count": 100,
+        "drive": "D1",
+        "ok": true,
+        "op": "mount",
+        "seq": 13,
+        "volume": "V4"
+      },
+      {
+        "actual": 6,
+        "after": 6,
+        "before": 0,
+        "drive": "D1",
+        "ok": true,
+        "op": "skip",
+        "requested": 6,
+        "seq": 14,
+        "volume": "V4"
+      },
+      {
+        "after": 7,
+        "before": 6,
+        "block": 6,
+        "bytes_returned": 1024,
+        "drive": "D1",
+        "kind": "data",
+        "ok": true,
+        "op": "read",
+        "seq": 15,
+        "volume": "V4"
+      },
+      {
+        "after": 8,
+        "before": 7,
+        "block": 7,
+        "bytes_returned": 1024,
+        "drive": "D1",
+        "kind": "data",
+        "ok": true,
+        "op": "read",
+        "seq": 16,
+        "volume": "V4"
+      },
+      {
+        "actual": 9,
+        "after": 17,
+        "before": 8,
+        "drive": "D1",
+        "ok": true,
+        "op": "skip",
+        "requested": 9,
+        "seq": 17,
+        "volume": "V4"
+      },
+      {
+        "after": 18,
+        "before": 17,
+        "block": 17,
+        "bytes_returned": 1024,
+        "drive": "D1",
+        "kind": "data",
+        "ok": true,
+        "op": "read",
+        "seq": 18,
+        "volume": "V4"
+      },
+      {
+        "after": 19,
+        "before": 18,
+        "block": 18,
+        "bytes_returned": 1024,
+        "drive": "D1",
+        "kind": "data",
+        "ok": true,
+        "op": "read",
+        "seq": 19,
+        "volume": "V4"
+      },
+      {
+        "after": 0,
+        "before": 3,
+        "drive": "D0",
+        "ok": true,
+        "op": "unmount",
+        "seq": 20,
+        "volume": "V5"
+      },
+      {
+        "after": 0,
+        "before": 19,
+        "drive": "D1",
+        "ok": true,
+        "op": "unmount",
+        "seq": 21,
+        "volume": "V4"
+      }
+    ],
+    "mount_events": [
+      {
+        "drive_id": "D0",
+        "ok": true,
+        "volume_id": "V5"
+      },
+      {
+        "drive_id": "D1",
+        "ok": true,
+        "volume_id": "V4"
+      }
+    ],
+    "state": {
+      "drives": [
+        {
+          "block_count": null,
+          "drive_id": "D0",
+          "load_error": null,
+          "mounted_volume": null,
+          "position": 0
+        },
+        {
+          "block_count": null,
+          "drive_id": "D1",
+          "load_error": null,
+          "mounted_volume": null,
+          "position": 0
+        }
+      ],
+      "mounted_volumes": []
+    },
+    "summary": {
+      "blocks_read": 7,
+      "blocks_skipped": 19,
+      "bytes_returned": 7168,
+      "calls": 21,
+      "data_blocks_read": 7,
+      "errors": 0,
+      "filemarks_read": 0,
+      "mount_failures": 0,
+      "mounts": 4,
+      "read_calls": 7,
+      "rewinds": 2,
+      "skip_calls": 4,
+      "unmounts": 4
+    }
+  },
+  "elapsed_seconds": 1794993137.980971,
+  "failed": [],
+  "files": {
+    "F01": {
+      "bytes_published": 3472,
+      "file_id": "F01",
+      "fragments_confirmed": [
+        "F01-00",
+        "F01-01"
+      ],
+      "fragments_failed": [],
+      "path": "docs/f01.bin",
+      "published_path": "/workspace/results/run_r1/out/docs/f01.bin",
+      "reason": null,
+      "status": "complete",
+      "total_length": 3472,
+      "verified": true
+    },
+    "F07": {
+      "bytes_published": 6149,
+      "file_id": "F07",
+      "fragments_confirmed": [
+        "F07-00",
+        "F07-01",
+        "F07-02"
+      ],
+      "fragments_failed": [],
+      "path": "docs/f07.bin",
+      "published_path": "/workspace/results/run_r1/out/docs/f07.bin",
+      "reason": null,
+      "status": "complete",
+      "total_length": 6149,
+      "verified": true
+    },
+    "F12": {
+      "bytes_published": 10247,
+      "file_id": "F12",
+      "fragments_confirmed": [],
+      "fragments_failed": [],
+      "path": "docs/f12.bin",
+      "published_path": "/workspace/results/run_r1/out/docs/f12.bin",
+      "reason": null,
+      "status": "complete",
+      "total_length": 10247,
+      "verified": true
+    }
+  },
+  "invalidation": {
+    "catalog_changed": false,
+    "changed_volumes": [],
+    "dropped_fragments": [],
+    "position_checks": [
+      {
+        "actual": 2,
+        "drive_id": "D0",
+        "expected": 2,
+        "ok": true,
+        "volume_id": "V2"
+      },
+      {
+        "actual": 2,
+        "drive_id": "D1",
+        "expected": 2,
+        "ok": true,
+        "volume_id": "V1"
+      }
+    ],
+    "restarted": false,
+    "restored_fragments": [
+      {
+        "file_id": "F01",
+        "fragment_id": "F01-00"
+      },
+      {
+        "file_id": "F01",
+        "fragment_id": "F01-01"
+      }
+    ]
+  },
+  "journal": {
+    "checkpoint_present": true,
+    "event_counts": {
+      "file_published": 3,
+      "fragment_confirmed": 8,
+      "interrupted": 1,
+      "run_resumed": 1
+    },
+    "events": 13,
+    "run_id": "R1"
+  },
+  "plan": null,
+  "provenance": "simulated-media",
+  "published": [
+    "F01",
+    "F07",
+    "F12"
+  ],
+  "quota_bytes": 32768,
+  "requested": [
+    "F07",
+    "F12",
+    "F01"
+  ],
+  "run_id": "R1",
+  "scratch": {
+    "available_bytes": 32768,
+    "current_bytes": 0,
+    "events": [
+      {
+        "current": 3472,
+        "key": "target:F01",
+        "lease": "L00002",
+        "op": "adopt",
+        "owner": "file:F01",
+        "peak": 10247,
+        "size": 3472
+      },
+      {
+        "current": 9621,
+        "label": "target:F07",
+        "lease": "L00003",
+        "op": "reserve",
+        "owner": "file:F07",
+        "peak": 10247,
+        "size": 6149
+      },
+      {
+        "current": 3472,
+        "lease": "L00003",
+        "op": "release",
+        "owner": "file:F07",
+        "peak": 10247,
+        "reason": "published",
+        "removed": true,
+        "size": 6149
+      },
+      {
+        "current": 0,
+        "lease": "L00002",
+        "op": "release",
+        "owner": "file:F01",
+        "peak": 10247,
+        "reason": "published",
+        "removed": true,
+        "size": 3472
+      }
+    ],
+    "lease_count": 0,
+    "owners": {},
+    "peak_bytes": 10247,
+    "quota_bytes": 32768,
+    "steps": [
+      {
+        "current_bytes": 3472,
+        "file_id": "F01",
+        "fragment_id": null,
+        "lease": "L00002",
+        "peak_bytes": 10247,
+        "phase": "target_adopt",
+        "quota_bytes": 32768,
+        "seq": 1
+      },
+      {
+        "current_bytes": 9621,
+        "file_id": "F07",
+        "fragment_id": null,
+        "lease": "L00003",
+        "peak_bytes": 10247,
+        "phase": "target_open",
+        "quota_bytes": 32768,
+        "seq": 2
+      },
+      {
+        "current_bytes": 9621,
+        "file_id": "F07",
+        "fragment_id": "F07-02",
+        "lease": "L00003",
+        "peak_bytes": 10247,
+        "phase": "fragment",
+        "quota_bytes": 32768,
+        "seq": 3
+      },
+      {
+        "current_bytes": 9621,
+        "file_id": "F07",
+        "fragment_id": "F07-00",
+        "lease": "L00003",
+        "peak_bytes": 10247,
+        "phase": "fragment",
+        "quota_bytes": 32768,
+        "seq": 4
+      },
+      {
+        "current_bytes": 9621,
+        "file_id": "F07",
+        "fragment_id": "F07-01",
+        "lease": "L00003",
+        "peak_bytes": 10247,
+        "phase": "fragment",
+        "quota_bytes": 32768,
+        "seq": 5
+      },
+      {
+        "current_bytes": 3472,
+        "file_id": "F07",
+        "fragment_id": null,
+        "lease": null,
+        "peak_bytes": 10247,
+        "phase": "target_release",
+        "quota_bytes": 32768,
+        "seq": 6
+      },
+      {
+        "current_bytes": 0,
+        "file_id": "F01",
+        "fragment_id": null,
+        "lease": null,
+        "peak_bytes": 10247,
+        "phase": "target_release",
+        "quota_bytes": 32768,
+        "seq": 7
+      }
+    ]
+  },
+  "skipped_quota": [],
+  "strategy_effective": "file",
+  "strategy_requested": "file"
+}

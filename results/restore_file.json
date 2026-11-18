@@ -1,0 +1,3596 @@
+{
+  "device": {
+    "calls": [
+      {
+        "after": 0,
+        "before": 0,
+        "block_count": 100,
+        "drive": "D0",
+        "ok": true,
+        "op": "mount",
+        "seq": 1,
+        "volume": "V1"
+      },
+      {
+        "actual": 11,
+        "after": 11,
+        "before": 0,
+        "drive": "D0",
+        "ok": true,
+        "op": "skip",
+        "requested": 11,
+        "seq": 2,
+        "volume": "V1"
+      },
+      {
+        "after": 12,
+        "before": 11,
+        "block": 11,
+        "bytes_returned": 1024,
+        "drive": "D0",
+        "kind": "data",
+        "ok": true,
+        "op": "read",
+        "seq": 3,
+        "volume": "V1"
+      },
+      {
+        "after": 0,
+        "before": 12,
+        "drive": "D0",
+        "ok": true,
+        "op": "rewind",
+        "seq": 4,
+        "volume": "V1"
+      },
+      {
+        "actual": 6,
+        "after": 6,
+        "before": 0,
+        "drive": "D0",
+        "ok": true,
+        "op": "skip",
+        "requested": 6,
+        "seq": 5,
+        "volume": "V1"
+      },
+      {
+        "after": 7,
+        "before": 6,
+        "block": 6,
+        "bytes_returned": 1024,
+        "drive": "D0",
+        "kind": "data",
+        "ok": true,
+        "op": "read",
+        "seq": 6,
+        "volume": "V1"
+      },
+      {
+        "after": 0,
+        "before": 0,
+        "block_count": 100,
+        "drive": "D1",
+        "ok": true,
+        "op": "mount",
+        "seq": 7,
+        "volume": "V2"
+      },
+      {
+        "actual": 12,
+        "after": 12,
+        "before": 0,
+        "drive": "D1",
+        "ok": true,
+        "op": "skip",
+        "requested": 12,
+        "seq": 8,
+        "volume": "V2"
+      },
+      {
+        "after": 13,
+        "before": 12,
+        "block": 12,
+        "bytes_returned": 1024,
+        "drive": "D1",
+        "kind": "data",
+        "ok": true,
+        "op": "read",
+        "seq": 9,
+        "volume": "V2"
+      },
+      {
+        "after": 0,
+        "before": 13,
+        "drive": "D1",
+        "ok": true,
+        "op": "rewind",
+        "seq": 10,
+        "volume": "V2"
+      },
+      {
+        "actual": 7,
+        "after": 7,
+        "before": 0,
+        "drive": "D1",
+        "ok": true,
+        "op": "skip",
+        "requested": 7,
+        "seq": 11,
+        "volume": "V2"
+      },
+      {
+        "after": 8,
+        "before": 7,
+        "block": 7,
+        "bytes_returned": 1024,
+        "drive": "D1",
+        "kind": "data",
+        "ok": true,
+        "op": "read",
+        "seq": 12,
+        "volume": "V2"
+      },
+      {
+        "actual": 2,
+        "after": 10,
+        "before": 8,
+        "drive": "D1",
+        "ok": true,
+        "op": "skip",
+        "requested": 2,
+        "seq": 13,
+        "volume": "V2"
+      },
+      {
+        "after": 11,
+        "before": 10,
+        "block": 10,
+        "bytes_returned": 1024,
+        "drive": "D1",
+        "kind": "data",
+        "ok": true,
+        "op": "read",
+        "seq": 14,
+        "volume": "V2"
+      },
+      {
+        "after": 0,
+        "before": 7,
+        "drive": "D0",
+        "ok": true,
+        "op": "unmount",
+        "seq": 15,
+        "volume": "V1"
+      },
+      {
+        "after": 0,
+        "before": 0,
+        "block_count": 100,
+        "drive": "D0",
+        "ok": true,
+        "op": "mount",
+        "seq": 16,
+        "volume": "V5"
+      },
+      {
+        "actual": 8,
+        "after": 8,
+        "before": 0,
+        "drive": "D0",
+        "ok": true,
+        "op": "skip",
+        "requested": 8,
+        "seq": 17,
+        "volume": "V5"
+      },
+      {
+        "after": 9,
+        "before": 8,
+        "block": 8,
+        "bytes_returned": 1024,
+        "drive": "D0",
+        "kind": "data",
+        "ok": true,
+        "op": "read",
+        "seq": 18,
+        "volume": "V5"
+      },
+      {
+        "actual": 14,
+        "after": 23,
+        "before": 9,
+        "drive": "D0",
+        "ok": true,
+        "op": "skip",
+        "requested": 14,
+        "seq": 19,
+        "volume": "V5"
+      },
+      {
+        "after": 24,
+        "before": 23,
+        "block": 23,
+        "bytes_returned": 1024,
+        "drive": "D0",
+        "kind": "data",
+        "ok": true,
+        "op": "read",
+        "seq": 20,
+        "volume": "V5"
+      },
+      {
+        "after": 25,
+        "before": 24,
+        "block": 24,
+        "bytes_returned": 1024,
+        "drive": "D0",
+        "kind": "data",
+        "ok": true,
+        "op": "read",
+        "seq": 21,
+        "volume": "V5"
+      },
+      {
+        "after": 0,
+        "before": 11,
+        "drive": "D1",
+        "ok": true,
+        "op": "unmount",
+        "seq": 22,
+        "volume": "V2"
+      },
+      {
+        "after": 0,
+        "before": 0,
+        "block_count": 100,
+        "drive": "D1",
+        "ok": true,
+        "op": "mount",
+        "seq": 23,
+        "volume": "V6"
+      },
+      {
+        "actual": 24,
+        "after": 24,
+        "before": 0,
+        "drive": "D1",
+        "ok": true,
+        "op": "skip",
+        "requested": 24,
+        "seq": 24,
+        "volume": "V6"
+      },
+      {
+        "after": 25,
+        "before": 24,
+        "block": 24,
+        "bytes_returned": 1024,
+        "drive": "D1",
+        "kind": "data",
+        "ok": true,
+        "op": "read",
+        "seq": 25,
+        "volume": "V6"
+      },
+      {
+        "after": 26,
+        "before": 25,
+        "block": 25,
+        "bytes_returned": 1024,
+        "drive": "D1",
+        "kind": "data",
+        "ok": true,
+        "op": "read",
+        "seq": 26,
+        "volume": "V6"
+      },
+      {
+        "after": 27,
+        "before": 26,
+        "block": 26,
+        "bytes_returned": 1024,
+        "drive": "D1",
+        "kind": "data",
+        "ok": true,
+        "op": "read",
+        "seq": 27,
+        "volume": "V6"
+      },
+      {
+        "after": 28,
+        "before": 27,
+        "block": 27,
+        "bytes_returned": 1024,
+        "drive": "D1",
+        "kind": "data",
+        "ok": true,
+        "op": "read",
+        "seq": 28,
+        "volume": "V6"
+      },
+      {
+        "after": 0,
+        "before": 25,
+        "drive": "D0",
+        "ok": true,
+        "op": "unmount",
+        "seq": 29,
+        "volume": "V5"
+      },
+      {
+        "after": 0,
+        "before": 0,
+        "block_count": 100,
+        "drive": "D0",
+        "ok": true,
+        "op": "mount",
+        "seq": 30,
+        "volume": "V4"
+      },
+      {
+        "actual": 4,
+        "after": 4,
+        "before": 0,
+        "drive": "D0",
+        "ok": true,
+        "op": "skip",
+        "requested": 4,
+        "seq": 31,
+        "volume": "V4"
+      },
+      {
+        "after": 5,
+        "before": 4,
+        "block": 4,
+        "bytes_returned": 1024,
+        "drive": "D0",
+        "kind": "data",
+        "ok": true,
+        "op": "read",
+        "seq": 32,
+        "volume": "V4"
+      },
+      {
+        "actual": 4,
+        "after": 9,
+        "before": 5,
+        "drive": "D0",
+        "ok": true,
+        "op": "skip",
+        "requested": 4,
+        "seq": 33,
+        "volume": "V4"
+      },
+      {
+        "after": 10,
+        "before": 9,
+        "block": 9,
+        "bytes_returned": 1024,
+        "drive": "D0",
+        "kind": "data",
+        "ok": true,
+        "op": "read",
+        "seq": 34,
+        "volume": "V4"
+      },
+      {
+        "after": 11,
+        "before": 10,
+        "block": 10,
+        "bytes_returned": 1024,
+        "drive": "D0",
+        "kind": "data",
+        "ok": true,
+        "op": "read",
+        "seq": 35,
+        "volume": "V4"
+      },
+      {
+        "after": 12,
+        "before": 11,
+        "block": 11,
+        "bytes_returned": 1024,
+        "drive": "D0",
+        "kind": "data",
+        "ok": true,
+        "op": "read",
+        "seq": 36,
+        "volume": "V4"
+      },
+      {
+        "after": 0,
+        "before": 28,
+        "drive": "D1",
+        "ok": true,
+        "op": "unmount",
+        "seq": 37,
+        "volume": "V6"
+      },
+      {
+        "after": 0,
+        "before": 0,
+        "block_count": 100,
+        "drive": "D1",
+        "ok": true,
+        "op": "mount",
+        "seq": 38,
+        "volume": "V3"
+      },
+      {
+        "actual": 4,
+        "after": 4,
+        "before": 0,
+        "drive": "D1",
+        "ok": true,
+        "op": "skip",
+        "requested": 4,
+        "seq": 39,
+        "volume": "V3"
+      },
+      {
+        "after": 5,
+        "before": 4,
+        "block": 4,
+        "bytes_returned": 1024,
+        "drive": "D1",
+        "kind": "data",
+        "ok": true,
+        "op": "read",
+        "seq": 40,
+        "volume": "V3"
+      },
+      {
+        "after": 6,
+        "before": 5,
+        "block": 5,
+        "bytes_returned": 1024,
+        "drive": "D1",
+        "kind": "data",
+        "ok": true,
+        "op": "read",
+        "seq": 41,
+        "volume": "V3"
+      },
+      {
+        "actual": 4,
+        "after": 10,
+        "before": 6,
+        "drive": "D1",
+        "ok": true,
+        "op": "skip",
+        "requested": 4,
+        "seq": 42,
+        "volume": "V3"
+      },
+      {
+        "after": 11,
+        "before": 10,
+        "block": 10,
+        "bytes_returned": 1024,
+        "drive": "D1",
+        "kind": "data",
+        "ok": true,
+        "op": "read",
+        "seq": 43,
+        "volume": "V3"
+      },
+      {
+        "after": 12,
+        "before": 11,
+        "block": 11,
+        "bytes_returned": 1024,
+        "drive": "D1",
+        "kind": "data",
+        "ok": true,
+        "op": "read",
+        "seq": 44,
+        "volume": "V3"
+      },
+      {
+        "after": 0,
+        "before": 12,
+        "drive": "D1",
+        "ok": true,
+        "op": "rewind",
+        "seq": 45,
+        "volume": "V3"
+      },
+      {
+        "actual": 2,
+        "after": 2,
+        "before": 0,
+        "drive": "D1",
+        "ok": true,
+        "op": "skip",
+        "requested": 2,
+        "seq": 46,
+        "volume": "V3"
+      },
+      {
+        "after": 3,
+        "before": 2,
+        "block": 2,
+        "bytes_returned": 1024,
+        "drive": "D1",
+        "kind": "data",
+        "ok": true,
+        "op": "read",
+        "seq": 47,
+        "volume": "V3"
+      },
+      {
+        "after": 4,
+        "before": 3,
+        "block": 3,
+        "bytes_returned": 1024,
+        "drive": "D1",
+        "kind": "data",
+        "ok": true,
+        "op": "read",
+        "seq": 48,
+        "volume": "V3"
+      },
+      {
+        "actual": 2,
+        "after": 6,
+        "before": 4,
+        "drive": "D1",
+        "ok": true,
+        "op": "skip",
+        "requested": 2,
+        "seq": 49,
+        "volume": "V3"
+      },
+      {
+        "after": 7,
+        "before": 6,
+        "block": 6,
+        "bytes_returned": 1024,
+        "drive": "D1",
+        "kind": "data",
+        "ok": true,
+        "op": "read",
+        "seq": 50,
+        "volume": "V3"
+      },
+      {
+        "after": 8,
+        "before": 7,
+        "block": 7,
+        "bytes_returned": 1024,
+        "drive": "D1",
+        "kind": "data",
+        "ok": true,
+        "op": "read",
+        "seq": 51,
+        "volume": "V3"
+      },
+      {
+        "actual": 4,
+        "after": 12,
+        "before": 8,
+        "drive": "D1",
+        "ok": true,
+        "op": "skip",
+        "requested": 4,
+        "seq": 52,
+        "volume": "V3"
+      },
+      {
+        "after": 13,
+        "before": 12,
+        "block": 12,
+        "bytes_returned": 1024,
+        "drive": "D1",
+        "kind": "data",
+        "ok": true,
+        "op": "read",
+        "seq": 53,
+        "volume": "V3"
+      },
+      {
+        "after": 14,
+        "before": 13,
+        "block": 13,
+        "bytes_returned": 1024,
+        "drive": "D1",
+        "kind": "data",
+        "ok": true,
+        "op": "read",
+        "seq": 54,
+        "volume": "V3"
+      },
+      {
+        "after": 0,
+        "before": 12,
+        "drive": "D0",
+        "ok": true,
+        "op": "rewind",
+        "seq": 55,
+        "volume": "V4"
+      },
+      {
+        "after": 1,
+        "before": 0,
+        "block": 0,
+        "bytes_returned": 1024,
+        "drive": "D0",
+        "kind": "data",
+        "ok": true,
+        "op": "read",
+        "seq": 56,
+        "volume": "V4"
+      },
+      {
+        "after": 2,
+        "before": 1,
+        "block": 1,
+        "bytes_returned": 1024,
+        "drive": "D0",
+        "kind": "data",
+        "ok": true,
+        "op": "read",
+        "seq": 57,
+        "volume": "V4"
+      },
+      {
+        "after": 3,
+        "before": 2,
+        "block": 2,
+        "bytes_returned": 1024,
+        "drive": "D0",
+        "kind": "data",
+        "ok": true,
+        "op": "read",
+        "seq": 58,
+        "volume": "V4"
+      },
+      {
+        "actual": 11,
+        "after": 14,
+        "before": 3,
+        "drive": "D0",
+        "ok": true,
+        "op": "skip",
+        "requested": 11,
+        "seq": 59,
+        "volume": "V4"
+      },
+      {
+        "after": 15,
+        "before": 14,
+        "block": 14,
+        "bytes_returned": 1024,
+        "drive": "D0",
+        "kind": "data",
+        "ok": true,
+        "op": "read",
+        "seq": 60,
+        "volume": "V4"
+      },
+      {
+        "after": 16,
+        "before": 15,
+        "block": 15,
+        "bytes_returned": 1024,
+        "drive": "D0",
+        "kind": "data",
+        "ok": true,
+        "op": "read",
+        "seq": 61,
+        "volume": "V4"
+      },
+      {
+        "actual": 4,
+        "after": 20,
+        "before": 16,
+        "drive": "D0",
+        "ok": true,
+        "op": "skip",
+        "requested": 4,
+        "seq": 62,
+        "volume": "V4"
+      },
+      {
+        "after": 21,
+        "before": 20,
+        "block": 20,
+        "bytes_returned": 1024,
+        "drive": "D0",
+        "kind": "data",
+        "ok": true,
+        "op": "read",
+        "seq": 63,
+        "volume": "V4"
+      },
+      {
+        "after": 22,
+        "before": 21,
+        "block": 21,
+        "bytes_returned": 1024,
+        "drive": "D0",
+        "kind": "data",
+        "ok": true,
+        "op": "read",
+        "seq": 64,
+        "volume": "V4"
+      },
+      {
+        "after": 23,
+        "before": 22,
+        "block": 22,
+        "bytes_returned": 1024,
+        "drive": "D0",
+        "kind": "data",
+        "ok": true,
+        "op": "read",
+        "seq": 65,
+        "volume": "V4"
+      },
+      {
+        "after": 24,
+        "before": 23,
+        "block": 23,
+        "bytes_returned": 1024,
+        "drive": "D0",
+        "kind": "data",
+        "ok": true,
+        "op": "read",
+        "seq": 66,
+        "volume": "V4"
+      },
+      {
+        "after": 25,
+        "before": 24,
+        "block": 24,
+        "bytes_returned": 1024,
+        "drive": "D0",
+        "kind": "data",
+        "ok": true,
+        "op": "read",
+        "seq": 67,
+        "volume": "V4"
+      },
+      {
+        "after": 0,
+        "before": 14,
+        "drive": "D1",
+        "ok": true,
+        "op": "unmount",
+        "seq": 68,
+        "volume": "V3"
+      },
+      {
+        "after": 0,
+        "before": 0,
+        "block_count": 100,
+        "drive": "D1",
+        "ok": true,
+        "op": "mount",
+        "seq": 69,
+        "volume": "V5"
+      },
+      {
+        "actual": 4,
+        "after": 4,
+        "before": 0,
+        "drive": "D1",
+        "ok": true,
+        "op": "skip",
+        "requested": 4,
+        "seq": 70,
+        "volume": "V5"
+      },
+      {
+        "after": 5,
+        "before": 4,
+        "block": 4,
+        "bytes_returned": 1024,
+        "drive": "D1",
+        "kind": "data",
+        "ok": true,
+        "op": "read",
+        "seq": 71,
+        "volume": "V5"
+      },
+      {
+        "after": 6,
+        "before": 5,
+        "block": 5,
+        "bytes_returned": 1024,
+        "drive": "D1",
+        "kind": "data",
+        "ok": true,
+        "op": "read",
+        "seq": 72,
+        "volume": "V5"
+      },
+      {
+        "after": 7,
+        "before": 6,
+        "block": 6,
+        "bytes_returned": 1024,
+        "drive": "D1",
+        "kind": "data",
+        "ok": true,
+        "op": "read",
+        "seq": 73,
+        "volume": "V5"
+      },
+      {
+        "actual": 4,
+        "after": 11,
+        "before": 7,
+        "drive": "D1",
+        "ok": true,
+        "op": "skip",
+        "requested": 4,
+        "seq": 74,
+        "volume": "V5"
+      },
+      {
+        "after": 12,
+        "before": 11,
+        "block": 11,
+        "bytes_returned": 1024,
+        "drive": "D1",
+        "kind": "data",
+        "ok": true,
+        "op": "read",
+        "seq": 75,
+        "volume": "V5"
+      },
+      {
+        "after": 13,
+        "before": 12,
+        "block": 12,
+        "bytes_returned": 1024,
+        "drive": "D1",
+        "kind": "data",
+        "ok": true,
+        "op": "read",
+        "seq": 76,
+        "volume": "V5"
+      },
+      {
+        "after": 14,
+        "before": 13,
+        "block": 13,
+        "bytes_returned": 1024,
+        "drive": "D1",
+        "kind": "data",
+        "ok": true,
+        "op": "read",
+        "seq": 77,
+        "volume": "V5"
+      },
+      {
+        "actual": 3,
+        "after": 17,
+        "before": 14,
+        "drive": "D1",
+        "ok": true,
+        "op": "skip",
+        "requested": 3,
+        "seq": 78,
+        "volume": "V5"
+      },
+      {
+        "after": 18,
+        "before": 17,
+        "block": 17,
+        "bytes_returned": 1024,
+        "drive": "D1",
+        "kind": "data",
+        "ok": true,
+        "op": "read",
+        "seq": 79,
+        "volume": "V5"
+      },
+      {
+        "after": 19,
+        "before": 18,
+        "block": 18,
+        "bytes_returned": 1024,
+        "drive": "D1",
+        "kind": "data",
+        "ok": true,
+        "op": "read",
+        "seq": 80,
+        "volume": "V5"
+      },
+      {
+        "after": 20,
+        "before": 19,
+        "block": 19,
+        "bytes_returned": 1024,
+        "drive": "D1",
+        "kind": "data",
+        "ok": true,
+        "op": "read",
+        "seq": 81,
+        "volume": "V5"
+      },
+      {
+        "after": 21,
+        "before": 20,
+        "block": 20,
+        "bytes_returned": 1024,
+        "drive": "D1",
+        "kind": "data",
+        "ok": true,
+        "op": "read",
+        "seq": 82,
+        "volume": "V5"
+      },
+      {
+        "after": 22,
+        "before": 21,
+        "block": 21,
+        "bytes_returned": 1024,
+        "drive": "D1",
+        "kind": "data",
+        "ok": true,
+        "op": "read",
+        "seq": 83,
+        "volume": "V5"
+      },
+      {
+        "actual": 3,
+        "after": 25,
+        "before": 22,
+        "drive": "D1",
+        "ok": true,
+        "op": "skip",
+        "requested": 3,
+        "seq": 84,
+        "volume": "V5"
+      },
+      {
+        "after": 26,
+        "before": 25,
+        "block": 25,
+        "bytes_returned": 1024,
+        "drive": "D1",
+        "kind": "data",
+        "ok": true,
+        "op": "read",
+        "seq": 85,
+        "volume": "V5"
+      },
+      {
+        "after": 27,
+        "before": 26,
+        "block": 26,
+        "bytes_returned": 1024,
+        "drive": "D1",
+        "kind": "data",
+        "ok": true,
+        "op": "read",
+        "seq": 86,
+        "volume": "V5"
+      },
+      {
+        "actual": 1,
+        "after": 26,
+        "before": 25,
+        "drive": "D0",
+        "ok": true,
+        "op": "skip",
+        "requested": 1,
+        "seq": 87,
+        "volume": "V4"
+      },
+      {
+        "after": 27,
+        "before": 26,
+        "block": 26,
+        "bytes_returned": 1024,
+        "drive": "D0",
+        "kind": "data",
+        "ok": true,
+        "op": "read",
+        "seq": 88,
+        "volume": "V4"
+      },
+      {
+        "after": 0,
+        "before": 27,
+        "drive": "D1",
+        "ok": true,
+        "op": "unmount",
+        "seq": 89,
+        "volume": "V5"
+      },
+      {
+        "after": 0,
+        "before": 0,
+        "block_count": 100,
+        "drive": "D1",
+        "ok": true,
+        "op": "mount",
+        "seq": 90,
+        "volume": "V3"
+      },
+      {
+        "actual": 8,
+        "after": 8,
+        "before": 0,
+        "drive": "D1",
+        "ok": true,
+        "op": "skip",
+        "requested": 8,
+        "seq": 91,
+        "volume": "V3"
+      },
+      {
+        "after": 9,
+        "before": 8,
+        "block": 8,
+        "bytes_returned": 1024,
+        "drive": "D1",
+        "kind": "data",
+        "ok": true,
+        "op": "read",
+        "seq": 92,
+        "volume": "V3"
+      },
+      {
+        "after": 0,
+        "before": 9,
+        "drive": "D1",
+        "ok": true,
+        "op": "rewind",
+        "seq": 93,
+        "volume": "V3"
+      },
+      {
+        "after": 1,
+        "before": 0,
+        "block": 0,
+        "bytes_returned": 1024,
+        "drive": "D1",
+        "kind": "data",
+        "ok": true,
+        "op": "read",
+        "seq": 94,
+        "volume": "V3"
+      },
+      {
+        "after": 2,
+        "before": 1,
+        "block": 1,
+        "bytes_returned": 1024,
+        "drive": "D1",
+        "kind": "data",
+        "ok": true,
+        "op": "read",
+        "seq": 95,
+        "volume": "V3"
+      },
+      {
+        "after": 0,
+        "before": 27,
+        "drive": "D0",
+        "ok": true,
+        "op": "unmount",
+        "seq": 96,
+        "volume": "V4"
+      },
+      {
+        "after": 0,
+        "before": 0,
+        "block_count": 100,
+        "drive": "D0",
+        "ok": true,
+        "op": "mount",
+        "seq": 97,
+        "volume": "V2"
+      },
+      {
+        "actual": 5,
+        "after": 5,
+        "before": 0,
+        "drive": "D0",
+        "ok": true,
+        "op": "skip",
+        "requested": 5,
+        "seq": 98,
+        "volume": "V2"
+      },
+      {
+        "after": 6,
+        "before": 5,
+        "block": 5,
+        "bytes_returned": 1024,
+        "drive": "D0",
+        "kind": "data",
+        "ok": true,
+        "op": "read",
+        "seq": 99,
+        "volume": "V2"
+      },
+      {
+        "after": 0,
+        "before": 2,
+        "drive": "D1",
+        "ok": true,
+        "op": "unmount",
+        "seq": 100,
+        "volume": "V3"
+      },
+      {
+        "after": 0,
+        "before": 0,
+        "block_count": 100,
+        "drive": "D1",
+        "ok": true,
+        "op": "mount",
+        "seq": 101,
+        "volume": "V1"
+      },
+      {
+        "after": 1,
+        "before": 0,
+        "block": 0,
+        "bytes_returned": 1024,
+        "drive": "D1",
+        "kind": "data",
+        "ok": true,
+        "op": "read",
+        "seq": 102,
+        "volume": "V1"
+      },
+      {
+        "after": 2,
+        "before": 1,
+        "block": 1,
+        "bytes_returned": 1024,
+        "drive": "D1",
+        "kind": "data",
+        "ok": true,
+        "op": "read",
+        "seq": 103,
+        "volume": "V1"
+      },
+      {
+        "after": 0,
+        "before": 6,
+        "drive": "D0",
+        "ok": true,
+        "op": "rewind",
+        "seq": 104,
+        "volume": "V2"
+      },
+      {
+        "after": 1,
+        "before": 0,
+        "block": 0,
+        "bytes_returned": 1024,
+        "drive": "D0",
+        "kind": "data",
+        "ok": true,
+        "op": "read",
+        "seq": 105,
+        "volume": "V2"
+      },
+      {
+        "after": 2,
+        "before": 1,
+        "block": 1,
+        "bytes_returned": 1024,
+        "drive": "D0",
+        "kind": "data",
+        "ok": true,
+        "op": "read",
+        "seq": 106,
+        "volume": "V2"
+      },
+      {
+        "after": 3,
+        "before": 2,
+        "block": 2,
+        "bytes_returned": 1024,
+        "drive": "D0",
+        "kind": "data",
+        "ok": true,
+        "op": "read",
+        "seq": 107,
+        "volume": "V2"
+      },
+      {
+        "after": 4,
+        "before": 3,
+        "block": 3,
+        "bytes_returned": 1024,
+        "drive": "D0",
+        "kind": "data",
+        "ok": true,
+        "op": "read",
+        "seq": 108,
+        "volume": "V2"
+      },
+      {
+        "after": 5,
+        "before": 4,
+        "block": 4,
+        "bytes_returned": 1024,
+        "drive": "D0",
+        "kind": "data",
+        "ok": true,
+        "op": "read",
+        "seq": 109,
+        "volume": "V2"
+      },
+      {
+        "actual": 1,
+        "after": 3,
+        "before": 2,
+        "drive": "D1",
+        "ok": true,
+        "op": "skip",
+        "requested": 1,
+        "seq": 110,
+        "volume": "V1"
+      },
+      {
+        "after": 4,
+        "before": 3,
+        "block": 3,
+        "bytes_returned": 1024,
+        "drive": "D1",
+        "kind": "data",
+        "ok": true,
+        "op": "read",
+        "seq": 111,
+        "volume": "V1"
+      },
+      {
+        "after": 5,
+        "before": 4,
+        "block": 4,
+        "bytes_returned": 1024,
+        "drive": "D1",
+        "kind": "data",
+        "ok": true,
+        "op": "read",
+        "seq": 112,
+        "volume": "V1"
+      },
+      {
+        "after": 0,
+        "before": 5,
+        "drive": "D0",
+        "ok": true,
+        "op": "unmount",
+        "seq": 113,
+        "volume": "V2"
+      },
+      {
+        "after": 0,
+        "before": 0,
+        "block_count": 100,
+        "drive": "D0",
+        "ok": true,
+        "op": "mount",
+        "seq": 114,
+        "volume": "V5"
+      },
+      {
+        "after": 1,
+        "before": 0,
+        "block": 0,
+        "bytes_returned": 1024,
+        "drive": "D0",
+        "kind": "data",
+        "ok": true,
+        "op": "read",
+        "seq": 115,
+        "volume": "V5"
+      },
+      {
+        "after": 2,
+        "before": 1,
+        "block": 1,
+        "bytes_returned": 1024,
+        "drive": "D0",
+        "kind": "data",
+        "ok": true,
+        "op": "read",
+        "seq": 116,
+        "volume": "V5"
+      },
+      {
+        "after": 3,
+        "before": 2,
+        "block": 2,
+        "bytes_returned": 1024,
+        "drive": "D0",
+        "kind": "data",
+        "ok": true,
+        "op": "read",
+        "seq": 117,
+        "volume": "V5"
+      },
+      {
+        "after": 0,
+        "before": 5,
+        "drive": "D1",
+        "ok": true,
+        "op": "unmount",
+        "seq": 118,
+        "volume": "V1"
+      },
+      {
+        "after": 0,
+        "before": 0,
+        "block_count": 100,
+        "drive": "D1",
+        "ok": true,
+        "op": "mount",
+        "seq": 119,
+        "volume": "V4"
+      },
+      {
+        "actual": 6,
+        "after": 6,
+        "before": 0,
+        "drive": "D1",
+        "ok": true,
+        "op": "skip",
+        "requested": 6,
+        "seq": 120,
+        "volume": "V4"
+      },
+      {
+        "after": 7,
+        "before": 6,
+        "block": 6,
+        "bytes_returned": 1024,
+        "drive": "D1",
+        "kind": "data",
+        "ok": true,
+        "op": "read",
+        "seq": 121,
+        "volume": "V4"
+      },
+      {
+        "after": 8,
+        "before": 7,
+        "block": 7,
+        "bytes_returned": 1024,
+        "drive": "D1",
+        "kind": "data",
+        "ok": true,
+        "op": "read",
+        "seq": 122,
+        "volume": "V4"
+      },
+      {
+        "actual": 9,
+        "after": 17,
+        "before": 8,
+        "drive": "D1",
+        "ok": true,
+        "op": "skip",
+        "requested": 9,
+        "seq": 123,
+        "volume": "V4"
+      },
+      {
+        "after": 18,
+        "before": 17,
+        "block": 17,
+        "bytes_returned": 1024,
+        "drive": "D1",
+        "kind": "data",
+        "ok": true,
+        "op": "read",
+        "seq": 124,
+        "volume": "V4"
+      },
+      {
+        "after": 19,
+        "before": 18,
+        "block": 18,
+        "bytes_returned": 1024,
+        "drive": "D1",
+        "kind": "data",
+        "ok": true,
+        "op": "read",
+        "seq": 125,
+        "volume": "V4"
+      },
+      {
+        "after": 0,
+        "before": 3,
+        "drive": "D0",
+        "ok": true,
+        "op": "unmount",
+        "seq": 126,
+        "volume": "V5"
+      },
+      {
+        "after": 0,
+        "before": 0,
+        "block_count": 100,
+        "drive": "D0",
+        "ok": true,
+        "op": "mount",
+        "seq": 127,
+        "volume": "V6"
+      },
+      {
+        "after": 1,
+        "before": 0,
+        "block": 0,
+        "bytes_returned": 1024,
+        "drive": "D0",
+        "kind": "data",
+        "ok": true,
+        "op": "read",
+        "seq": 128,
+        "volume": "V6"
+      },
+      {
+        "after": 2,
+        "before": 1,
+        "block": 1,
+        "bytes_returned": 1024,
+        "drive": "D0",
+        "kind": "data",
+        "ok": true,
+        "op": "read",
+        "seq": 129,
+        "volume": "V6"
+      },
+      {
+        "after": 0,
+        "before": 19,
+        "drive": "D1",
+        "ok": true,
+        "op": "unmount",
+        "seq": 130,
+        "volume": "V4"
+      },
+      {
+        "after": 0,
+        "before": 0,
+        "block_count": 100,
+        "drive": "D1",
+        "ok": true,
+        "op": "mount",
+        "seq": 131,
+        "volume": "V5"
+      },
+      {
+        "actual": 15,
+        "after": 15,
+        "before": 0,
+        "drive": "D1",
+        "ok": true,
+        "op": "skip",
+        "requested": 15,
+        "seq": 132,
+        "volume": "V5"
+      },
+      {
+        "after": 16,
+        "before": 15,
+        "block": 15,
+        "bytes_returned": 1024,
+        "drive": "D1",
+        "kind": "data",
+        "ok": true,
+        "op": "read",
+        "seq": 133,
+        "volume": "V5"
+      },
+      {
+        "actual": 6,
+        "after": 22,
+        "before": 16,
+        "drive": "D1",
+        "ok": true,
+        "op": "skip",
+        "requested": 6,
+        "seq": 134,
+        "volume": "V5"
+      },
+      {
+        "after": 23,
+        "before": 22,
+        "block": 22,
+        "bytes_returned": 1024,
+        "drive": "D1",
+        "kind": "data",
+        "ok": true,
+        "op": "read",
+        "seq": 135,
+        "volume": "V5"
+      },
+      {
+        "after": 0,
+        "before": 2,
+        "drive": "D0",
+        "ok": true,
+        "op": "unmount",
+        "seq": 136,
+        "volume": "V6"
+      },
+      {
+        "after": 0,
+        "before": 0,
+        "block_count": 100,
+        "drive": "D0",
+        "ok": true,
+        "op": "mount",
+        "seq": 137,
+        "volume": "V4"
+      },
+      {
+        "actual": 25,
+        "after": 25,
+        "before": 0,
+        "drive": "D0",
+        "ok": true,
+        "op": "skip",
+        "requested": 25,
+        "seq": 138,
+        "volume": "V4"
+      },
+      {
+        "after": 26,
+        "before": 25,
+        "block": 25,
+        "bytes_returned": 1024,
+        "drive": "D0",
+        "kind": "data",
+        "ok": true,
+        "op": "read",
+        "seq": 139,
+        "volume": "V4"
+      },
+      {
+        "after": 0,
+        "before": 23,
+        "drive": "D1",
+        "ok": true,
+        "op": "unmount",
+        "seq": 140,
+        "volume": "V5"
+      },
+      {
+        "after": 0,
+        "before": 26,
+        "drive": "D0",
+        "ok": true,
+        "op": "unmount",
+        "seq": 141,
+        "volume": "V4"
+      }
+    ],
+    "mount_events": [
+      {
+        "drive_id": "D0",
+        "ok": true,
+        "volume_id": "V1"
+      },
+      {
+        "drive_id": "D1",
+        "ok": true,
+        "volume_id": "V2"
+      },
+      {
+        "drive_id": "D0",
+        "ok": true,
+        "volume_id": "V5"
+      },
+      {
+        "drive_id": "D1",
+        "ok": true,
+        "volume_id": "V6"
+      },
+      {
+        "drive_id": "D0",
+        "ok": true,
+        "volume_id": "V4"
+      },
+      {
+        "drive_id": "D1",
+        "ok": true,
+        "volume_id": "V3"
+      },
+      {
+        "drive_id": "D1",
+        "ok": true,
+        "volume_id": "V5"
+      },
+      {
+        "drive_id": "D1",
+        "ok": true,
+        "volume_id": "V3"
+      },
+      {
+        "drive_id": "D0",
+        "ok": true,
+        "volume_id": "V2"
+      },
+      {
+        "drive_id": "D1",
+        "ok": true,
+        "volume_id": "V1"
+      },
+      {
+        "drive_id": "D0",
+        "ok": true,
+        "volume_id": "V5"
+      },
+      {
+        "drive_id": "D1",
+        "ok": true,
+        "volume_id": "V4"
+      },
+      {
+        "drive_id": "D0",
+        "ok": true,
+        "volume_id": "V6"
+      },
+      {
+        "drive_id": "D1",
+        "ok": true,
+        "volume_id": "V5"
+      },
+      {
+        "drive_id": "D0",
+        "ok": true,
+        "volume_id": "V4"
+      }
+    ],
+    "state": {
+      "drives": [
+        {
+          "block_count": null,
+          "drive_id": "D0",
+          "load_error": null,
+          "mounted_volume": null,
+          "position": 0
+        },
+        {
+          "block_count": null,
+          "drive_id": "D1",
+          "load_error": null,
+          "mounted_volume": null,
+          "position": 0
+        }
+      ],
+      "mounted_volumes": []
+    },
+    "summary": {
+      "blocks_read": 75,
+      "blocks_skipped": 213,
+      "bytes_returned": 76800,
+      "calls": 141,
+      "data_blocks_read": 75,
+      "errors": 0,
+      "filemarks_read": 0,
+      "mount_failures": 0,
+      "mounts": 15,
+      "read_calls": 75,
+      "rewinds": 6,
+      "skip_calls": 30,
+      "unmounts": 15
+    }
+  },
+  "elapsed_seconds": 0.231981,
+  "failed": [
+    "F14",
+    "F18"
+  ],
+  "files": {
+    "F01": {
+      "bytes_published": 3472,
+      "file_id": "F01",
+      "fragments_confirmed": [
+        "F01-00",
+        "F01-01"
+      ],
+      "fragments_failed": [],
+      "path": "docs/f01.bin",
+      "published_path": "/workspace/results/run_file/out/docs/f01.bin",
+      "reason": null,
+      "status": "complete",
+      "total_length": 3472,
+      "verified": true
+    },
+    "F02": {
+      "bytes_published": 4196,
+      "file_id": "F02",
+      "fragments_confirmed": [
+        "F02-00",
+        "F02-01"
+      ],
+      "fragments_failed": [],
+      "path": "docs/f02.bin",
+      "published_path": "/workspace/results/run_file/out/docs/f02.bin",
+      "reason": null,
+      "status": "complete",
+      "total_length": 4196,
+      "verified": true
+    },
+    "F03": {
+      "bytes_published": 1023,
+      "file_id": "F03",
+      "fragments_confirmed": [
+        "F03-00"
+      ],
+      "fragments_failed": [],
+      "path": "docs/f03.bin",
+      "published_path": "/workspace/results/run_file/out/docs/f03.bin",
+      "reason": null,
+      "status": "complete",
+      "total_length": 1023,
+      "verified": true
+    },
+    "F04": {
+      "bytes_published": 0,
+      "file_id": "F04",
+      "fragments_confirmed": [],
+      "fragments_failed": [],
+      "path": "docs/empty.dat",
+      "published_path": "/workspace/results/run_file/out/docs/empty.dat",
+      "reason": null,
+      "status": "complete",
+      "total_length": 0,
+      "verified": true
+    },
+    "F05": {
+      "bytes_published": 2748,
+      "file_id": "F05",
+      "fragments_confirmed": [
+        "F05-00",
+        "F05-01"
+      ],
+      "fragments_failed": [],
+      "path": "docs/f05.bin",
+      "published_path": "/workspace/results/run_file/out/docs/f05.bin",
+      "reason": null,
+      "status": "complete",
+      "total_length": 2748,
+      "verified": true
+    },
+    "F06": {
+      "bytes_published": 5420,
+      "file_id": "F06",
+      "fragments_confirmed": [
+        "F06-00",
+        "F06-01",
+        "F06-02"
+      ],
+      "fragments_failed": [],
+      "path": "docs/f06.bin",
+      "published_path": "/workspace/results/run_file/out/docs/f06.bin",
+      "reason": null,
+      "status": "complete",
+      "total_length": 5420,
+      "verified": true
+    },
+    "F07": {
+      "bytes_published": 6149,
+      "file_id": "F07",
+      "fragments_confirmed": [
+        "F07-00",
+        "F07-01",
+        "F07-02"
+      ],
+      "fragments_failed": [],
+      "path": "docs/f07.bin",
+      "published_path": "/workspace/results/run_file/out/docs/f07.bin",
+      "reason": null,
+      "status": "complete",
+      "total_length": 6149,
+      "verified": true
+    },
+    "F08": {
+      "bytes_published": 2045,
+      "file_id": "F08",
+      "fragments_confirmed": [
+        "F08-00",
+        "F08-01"
+      ],
+      "fragments_failed": [],
+      "path": "docs/f08.bin",
+      "published_path": "/workspace/results/run_file/out/docs/f08.bin",
+      "reason": null,
+      "status": "complete",
+      "total_length": 2045,
+      "verified": true
+    },
+    "F09": {
+      "bytes_published": 10166,
+      "file_id": "F09",
+      "fragments_confirmed": [
+        "F09-00",
+        "F09-01",
+        "F09-02"
+      ],
+      "fragments_failed": [],
+      "path": "docs/f09.bin",
+      "published_path": "/workspace/results/run_file/out/docs/f09.bin",
+      "reason": null,
+      "status": "complete",
+      "total_length": 10166,
+      "verified": true
+    },
+    "F10": {
+      "bytes_published": 0,
+      "file_id": "F10",
+      "fragments_confirmed": [],
+      "fragments_failed": [],
+      "path": "docs/f10.bin",
+      "published_path": null,
+      "reason": "incomplete target needs 42484 B but quota is 32768 B",
+      "status": "skipped_quota",
+      "total_length": 42484,
+      "verified": false
+    },
+    "F11": {
+      "bytes_published": 3073,
+      "file_id": "F11",
+      "fragments_confirmed": [
+        "F11-00"
+      ],
+      "fragments_failed": [],
+      "path": "docs/f11.bin",
+      "published_path": "/workspace/results/run_file/out/docs/f11.bin",
+      "reason": null,
+      "status": "complete",
+      "total_length": 3073,
+      "verified": true
+    },
+    "F12": {
+      "bytes_published": 10247,
+      "file_id": "F12",
+      "fragments_confirmed": [
+        "F12-00",
+        "F12-01",
+        "F12-02"
+      ],
+      "fragments_failed": [],
+      "path": "docs/f12.bin",
+      "published_path": "/workspace/results/run_file/out/docs/f12.bin",
+      "reason": null,
+      "status": "complete",
+      "total_length": 10247,
+      "verified": true
+    },
+    "F13": {
+      "bytes_published": 1024,
+      "file_id": "F13",
+      "fragments_confirmed": [
+        "F13-00"
+      ],
+      "fragments_failed": [],
+      "path": "docs/f13.bin",
+      "published_path": "/workspace/results/run_file/out/docs/f13.bin",
+      "reason": null,
+      "status": "complete",
+      "total_length": 1024,
+      "verified": true
+    },
+    "F14": {
+      "bytes_published": 0,
+      "file_id": "F14",
+      "fragments_confirmed": [],
+      "fragments_failed": [],
+      "path": "docs/f14.bin",
+      "published_path": null,
+      "reason": "fragment sha256 mismatch",
+      "status": "failed_fragment",
+      "total_length": 2057,
+      "verified": false
+    },
+    "F15": {
+      "bytes_published": 3074,
+      "file_id": "F15",
+      "fragments_confirmed": [
+        "F15-00",
+        "F15-01"
+      ],
+      "fragments_failed": [],
+      "path": "docs/f15.bin",
+      "published_path": "/workspace/results/run_file/out/docs/f15.bin",
+      "reason": null,
+      "status": "complete",
+      "total_length": 3074,
+      "verified": true
+    },
+    "F16": {
+      "bytes_published": 4107,
+      "file_id": "F16",
+      "fragments_confirmed": [
+        "F16-00",
+        "F16-01",
+        "F16-02",
+        "F16-03"
+      ],
+      "fragments_failed": [],
+      "path": "docs/f16.bin",
+      "published_path": "/workspace/results/run_file/out/docs/f16.bin",
+      "reason": null,
+      "status": "complete",
+      "total_length": 4107,
+      "verified": true
+    },
+    "F17": {
+      "bytes_published": 1,
+      "file_id": "F17",
+      "fragments_confirmed": [
+        "F17-00"
+      ],
+      "fragments_failed": [],
+      "path": "docs/f17.bin",
+      "published_path": "/workspace/results/run_file/out/docs/f17.bin",
+      "reason": null,
+      "status": "complete",
+      "total_length": 1,
+      "verified": true
+    },
+    "F18": {
+      "bytes_published": 0,
+      "file_id": "F18",
+      "fragments_confirmed": [
+        "F18-01"
+      ],
+      "fragments_failed": [],
+      "path": "docs/f18.bin",
+      "published_path": null,
+      "reason": "fragment sha256 mismatch",
+      "status": "failed_fragment",
+      "total_length": 2052,
+      "verified": false
+    },
+    "F19": {
+      "bytes_published": 3078,
+      "file_id": "F19",
+      "fragments_confirmed": [
+        "F19-00",
+        "F19-01"
+      ],
+      "fragments_failed": [],
+      "path": "docs/f19.bin",
+      "published_path": "/workspace/results/run_file/out/docs/f19.bin",
+      "reason": null,
+      "status": "complete",
+      "total_length": 3078,
+      "verified": true
+    },
+    "F20": {
+      "bytes_published": 2056,
+      "file_id": "F20",
+      "fragments_confirmed": [
+        "F20-00",
+        "F20-01"
+      ],
+      "fragments_failed": [],
+      "path": "docs/f20.bin",
+      "published_path": "/workspace/results/run_file/out/docs/f20.bin",
+      "reason": null,
+      "status": "complete",
+      "total_length": 2056,
+      "verified": true
+    }
+  },
+  "journal": {
+    "checkpoint_present": true,
+    "event_counts": {
+      "file_failed": 2,
+      "file_published": 17,
+      "file_skipped_quota": 1,
+      "fragment_confirmed": 35
+    },
+    "events": 55,
+    "run_id": "20261118T090653Z-496441fb"
+  },
+  "plan": {
+    "file_ids": [
+      "F04",
+      "F17",
+      "F03",
+      "F13",
+      "F08",
+      "F20",
+      "F11",
+      "F15",
+      "F19",
+      "F06",
+      "F09",
+      "F12",
+      "F10",
+      "F18",
+      "F14",
+      "F05",
+      "F01",
+      "F02",
+      "F07",
+      "F16"
+    ],
+    "files": [
+      {
+        "file_id": "F04",
+        "fragment_count": 0,
+        "path": "docs/empty.dat",
+        "total_length": 0,
+        "volumes": []
+      },
+      {
+        "file_id": "F17",
+        "fragment_count": 1,
+        "path": "docs/f17.bin",
+        "total_length": 1,
+        "volumes": [
+          "V1"
+        ]
+      },
+      {
+        "file_id": "F03",
+        "fragment_count": 1,
+        "path": "docs/f03.bin",
+        "total_length": 1023,
+        "volumes": [
+          "V1"
+        ]
+      },
+      {
+        "file_id": "F13",
+        "fragment_count": 1,
+        "path": "docs/f13.bin",
+        "total_length": 1024,
+        "volumes": [
+          "V2"
+        ]
+      },
+      {
+        "file_id": "F08",
+        "fragment_count": 2,
+        "path": "docs/f08.bin",
+        "total_length": 2045,
+        "volumes": [
+          "V2"
+        ]
+      },
+      {
+        "file_id": "F20",
+        "fragment_count": 2,
+        "path": "docs/f20.bin",
+        "total_length": 2056,
+        "volumes": [
+          "V5"
+        ]
+      },
+      {
+        "file_id": "F11",
+        "fragment_count": 1,
+        "path": "docs/f11.bin",
+        "total_length": 3073,
+        "volumes": [
+          "V6"
+        ]
+      },
+      {
+        "file_id": "F15",
+        "fragment_count": 2,
+        "path": "docs/f15.bin",
+        "total_length": 3074,
+        "volumes": [
+          "V4"
+        ]
+      },
+      {
+        "file_id": "F19",
+        "fragment_count": 2,
+        "path": "docs/f19.bin",
+        "total_length": 3078,
+        "volumes": [
+          "V3"
+        ]
+      },
+      {
+        "file_id": "F06",
+        "fragment_count": 3,
+        "path": "docs/f06.bin",
+        "total_length": 5420,
+        "volumes": [
+          "V3"
+        ]
+      },
+      {
+        "file_id": "F09",
+        "fragment_count": 3,
+        "path": "docs/f09.bin",
+        "total_length": 10166,
+        "volumes": [
+          "V4"
+        ]
+      },
+      {
+        "file_id": "F12",
+        "fragment_count": 3,
+        "path": "docs/f12.bin",
+        "total_length": 10247,
+        "volumes": [
+          "V5"
+        ]
+      },
+      {
+        "file_id": "F10",
+        "fragment_count": 2,
+        "path": "docs/f10.bin",
+        "total_length": 42484,
+        "volumes": [
+          "V6"
+        ]
+      },
+      {
+        "file_id": "F18",
+        "fragment_count": 2,
+        "path": "docs/f18.bin",
+        "total_length": 2052,
+        "volumes": [
+          "V4",
+          "V5"
+        ]
+      },
+      {
+        "file_id": "F14",
+        "fragment_count": 3,
+        "path": "docs/f14.bin",
+        "total_length": 2057,
+        "volumes": [
+          "V3",
+          "V4"
+        ]
+      },
+      {
+        "file_id": "F05",
+        "fragment_count": 2,
+        "path": "docs/f05.bin",
+        "total_length": 2748,
+        "volumes": [
+          "V2",
+          "V3"
+        ]
+      },
+      {
+        "file_id": "F01",
+        "fragment_count": 2,
+        "path": "docs/f01.bin",
+        "total_length": 3472,
+        "volumes": [
+          "V1",
+          "V2"
+        ]
+      },
+      {
+        "file_id": "F02",
+        "fragment_count": 2,
+        "path": "docs/f02.bin",
+        "total_length": 4196,
+        "volumes": [
+          "V1",
+          "V2"
+        ]
+      },
+      {
+        "file_id": "F07",
+        "fragment_count": 3,
+        "path": "docs/f07.bin",
+        "total_length": 6149,
+        "volumes": [
+          "V4",
+          "V5"
+        ]
+      },
+      {
+        "file_id": "F16",
+        "fragment_count": 4,
+        "path": "docs/f16.bin",
+        "total_length": 4107,
+        "volumes": [
+          "V4",
+          "V5",
+          "V6"
+        ]
+      }
+    ],
+    "fits": false,
+    "infeasible": [
+      "F10: total length 42484 B exceeds quota 32768 B (needs an incomplete target larger than the work quota); will be skipped, others proceed"
+    ],
+    "notes": [
+      "files finished one at a time; stream fragment -> target offset, free scratch per fragment",
+      "more mounts/rewinds than volume-major but bounded scratch peak"
+    ],
+    "predicted": {
+      "mounts": 41,
+      "reads": 119,
+      "rewinds": 41,
+      "scratch_fits": true,
+      "scratch_peak_bytes": 22004,
+      "skip_blocks": 427
+    },
+    "quota_bytes": 32768,
+    "restorable": true,
+    "runs": [
+      {
+        "end_block": 12,
+        "file_ids": [
+          "F17"
+        ],
+        "fragment_count": 1,
+        "start_block": 11,
+        "volume_id": "V1"
+      },
+      {
+        "end_block": 7,
+        "file_ids": [
+          "F03"
+        ],
+        "fragment_count": 1,
+        "start_block": 6,
+        "volume_id": "V1"
+      },
+      {
+        "end_block": 13,
+        "file_ids": [
+          "F13"
+        ],
+        "fragment_count": 1,
+        "start_block": 12,
+        "volume_id": "V2"
+      },
+      {
+        "end_block": 11,
+        "file_ids": [
+          "F08"
+        ],
+        "fragment_count": 2,
+        "start_block": 7,
+        "volume_id": "V2"
+      },
+      {
+        "end_block": 25,
+        "file_ids": [
+          "F20"
+        ],
+        "fragment_count": 2,
+        "start_block": 8,
+        "volume_id": "V5"
+      },
+      {
+        "end_block": 28,
+        "file_ids": [
+          "F11"
+        ],
+        "fragment_count": 1,
+        "start_block": 24,
+        "volume_id": "V6"
+      },
+      {
+        "end_block": 12,
+        "file_ids": [
+          "F15"
+        ],
+        "fragment_count": 2,
+        "start_block": 4,
+        "volume_id": "V4"
+      },
+      {
+        "end_block": 12,
+        "file_ids": [
+          "F19"
+        ],
+        "fragment_count": 2,
+        "start_block": 4,
+        "volume_id": "V3"
+      },
+      {
+        "end_block": 14,
+        "file_ids": [
+          "F06"
+        ],
+        "fragment_count": 3,
+        "start_block": 2,
+        "volume_id": "V3"
+      },
+      {
+        "end_block": 25,
+        "file_ids": [
+          "F09"
+        ],
+        "fragment_count": 3,
+        "start_block": 0,
+        "volume_id": "V4"
+      },
+      {
+        "end_block": 22,
+        "file_ids": [
+          "F12"
+        ],
+        "fragment_count": 3,
+        "start_block": 4,
+        "volume_id": "V5"
+      },
+      {
+        "end_block": 51,
+        "file_ids": [
+          "F10"
+        ],
+        "fragment_count": 2,
+        "start_block": 3,
+        "volume_id": "V6"
+      },
+      {
+        "end_block": 27,
+        "file_ids": [
+          "F18"
+        ],
+        "fragment_count": 1,
+        "start_block": 26,
+        "volume_id": "V4"
+      },
+      {
+        "end_block": 27,
+        "file_ids": [
+          "F18"
+        ],
+        "fragment_count": 1,
+        "start_block": 25,
+        "volume_id": "V5"
+      },
+      {
+        "end_block": 15,
+        "file_ids": [
+          "F14"
+        ],
+        "fragment_count": 2,
+        "start_block": 8,
+        "volume_id": "V3"
+      },
+      {
+        "end_block": 14,
+        "file_ids": [
+          "F14"
+        ],
+        "fragment_count": 1,
+        "start_block": 13,
+        "volume_id": "V4"
+      },
+      {
+        "end_block": 6,
+        "file_ids": [
+          "F05"
+        ],
+        "fragment_count": 1,
+        "start_block": 5,
+        "volume_id": "V2"
+      },
+      {
+        "end_block": 2,
+        "file_ids": [
+          "F05"
+        ],
+        "fragment_count": 1,
+        "start_block": 0,
+        "volume_id": "V3"
+      },
+      {
+        "end_block": 2,
+        "file_ids": [
+          "F01"
+        ],
+        "fragment_count": 1,
+        "start_block": 0,
+        "volume_id": "V1"
+      },
+      {
+        "end_block": 2,
+        "file_ids": [
+          "F01"
+        ],
+        "fragment_count": 1,
+        "start_block": 0,
+        "volume_id": "V2"
+      },
+      {
+        "end_block": 5,
+        "file_ids": [
+          "F02"
+        ],
+        "fragment_count": 1,
+        "start_block": 3,
+        "volume_id": "V1"
+      },
+      {
+        "end_block": 5,
+        "file_ids": [
+          "F02"
+        ],
+        "fragment_count": 1,
+        "start_block": 2,
+        "volume_id": "V2"
+      },
+      {
+        "end_block": 19,
+        "file_ids": [
+          "F07"
+        ],
+        "fragment_count": 2,
+        "start_block": 6,
+        "volume_id": "V4"
+      },
+      {
+        "end_block": 3,
+        "file_ids": [
+          "F07"
+        ],
+        "fragment_count": 1,
+        "start_block": 0,
+        "volume_id": "V5"
+      },
+      {
+        "end_block": 26,
+        "file_ids": [
+          "F16"
+        ],
+        "fragment_count": 1,
+        "start_block": 25,
+        "volume_id": "V4"
+      },
+      {
+        "end_block": 23,
+        "file_ids": [
+          "F16"
+        ],
+        "fragment_count": 2,
+        "start_block": 15,
+        "volume_id": "V5"
+      },
+      {
+        "end_block": 2,
+        "file_ids": [
+          "F16"
+        ],
+        "fragment_count": 1,
+        "start_block": 0,
+        "volume_id": "V6"
+      }
+    ],
+    "skipped_files": [
+      "F10"
+    ],
+    "strategy": "file",
+    "volume_counts": {
+      "V1": 100,
+      "V2": 100,
+      "V3": 100,
+      "V4": 100,
+      "V5": 100,
+      "V6": 100
+    }
+  },
+  "provenance": "simulated-media",
+  "published": [
+    "F01",
+    "F02",
+    "F03",
+    "F04",
+    "F05",
+    "F06",
+    "F07",
+    "F08",
+    "F09",
+    "F11",
+    "F12",
+    "F13",
+    "F15",
+    "F16",
+    "F17",
+    "F19",
+    "F20"
+  ],
+  "quota_bytes": 32768,
+  "requested": [
+    "F01",
+    "F02",
+    "F03",
+    "F04",
+    "F05",
+    "F06",
+    "F07",
+    "F08",
+    "F09",
+    "F10",
+    "F11",
+    "F12",
+    "F13",
+    "F14",
+    "F15",
+    "F16",
+    "F17",
+    "F18",
+    "F19",
+    "F20"
+  ],
+  "run_id": "20261118T090653Z-496441fb",
+  "scratch": {
+    "available_bytes": 32768,
+    "current_bytes": 0,
+    "events": [
+      {
+        "current": 1,
+        "label": "target:F17",
+        "lease": "L00001",
+        "op": "reserve",
+        "owner": "file:F17",
+        "peak": 1,
+        "size": 1
+      },
+      {
+        "current": 0,
+        "lease": "L00001",
+        "op": "release",
+        "owner": "file:F17",
+        "peak": 1,
+        "reason": "published",
+        "removed": true,
+        "size": 1
+      },
+      {
+        "current": 1023,
+        "label": "target:F03",
+        "lease": "L00002",
+        "op": "reserve",
+        "owner": "file:F03",
+        "peak": 1023,
+        "size": 1023
+      },
+      {
+        "current": 0,
+        "lease": "L00002",
+        "op": "release",
+        "owner": "file:F03",
+        "peak": 1023,
+        "reason": "published",
+        "removed": true,
+        "size": 1023
+      },
+      {
+        "current": 1024,
+        "label": "target:F13",
+        "lease": "L00003",
+        "op": "reserve",
+        "owner": "file:F13",
+        "peak": 1024,
+        "size": 1024
+      },
+      {
+        "current": 0,
+        "lease": "L00003",
+        "op": "release",
+        "owner": "file:F13",
+        "peak": 1024,
+        "reason": "published",
+        "removed": true,
+        "size": 1024
+      },
+      {
+        "current": 2045,
+        "label": "target:F08",
+        "lease": "L00004",
+        "op": "reserve",
+        "owner": "file:F08",
+        "peak": 2045,
+        "size": 2045
+      },
+      {
+        "current": 0,
+        "lease": "L00004",
+        "op": "release",
+        "owner": "file:F08",
+        "peak": 2045,
+        "reason": "published",
+        "removed": true,
+        "size": 2045
+      },
+      {
+        "current": 2056,
+        "label": "target:F20",
+        "lease": "L00005",
+        "op": "reserve",
+        "owner": "file:F20",
+        "peak": 2056,
+        "size": 2056
+      },
+      {
+        "current": 0,
+        "lease": "L00005",
+        "op": "release",
+        "owner": "file:F20",
+        "peak": 2056,
+        "reason": "published",
+        "removed": true,
+        "size": 2056
+      },
+      {
+        "current": 3073,
+        "label": "target:F11",
+        "lease": "L00006",
+        "op": "reserve",
+        "owner": "file:F11",
+        "peak": 3073,
+        "size": 3073
+      },
+      {
+        "current": 0,
+        "lease": "L00006",
+        "op": "release",
+        "owner": "file:F11",
+        "peak": 3073,
+        "reason": "published",
+        "removed": true,
+        "size": 3073
+      },
+      {
+        "current": 3074,
+        "label": "target:F15",
+        "lease": "L00007",
+        "op": "reserve",
+        "owner": "file:F15",
+        "peak": 3074,
+        "size": 3074
+      },
+      {
+        "current": 0,
+        "lease": "L00007",
+        "op": "release",
+        "owner": "file:F15",
+        "peak": 3074,
+        "reason": "published",
+        "removed": true,
+        "size": 3074
+      },
+      {
+        "current": 3078,
+        "label": "target:F19",
+        "lease": "L00008",
+        "op": "reserve",
+        "owner": "file:F19",
+        "peak": 3078,
+        "size": 3078
+      },
+      {
+        "current": 0,
+        "lease": "L00008",
+        "op": "release",
+        "owner": "file:F19",
+        "peak": 3078,
+        "reason": "published",
+        "removed": true,
+        "size": 3078
+      },
+      {
+        "current": 5420,
+        "label": "target:F06",
+        "lease": "L00009",
+        "op": "reserve",
+        "owner": "file:F06",
+        "peak": 5420,
+        "size": 5420
+      },
+      {
+        "current": 0,
+        "lease": "L00009",
+        "op": "release",
+        "owner": "file:F06",
+        "peak": 5420,
+        "reason": "published",
+        "removed": true,
+        "size": 5420
+      },
+      {
+        "current": 10166,
+        "label": "target:F09",
+        "lease": "L00010",
+        "op": "reserve",
+        "owner": "file:F09",
+        "peak": 10166,
+        "size": 10166
+      },
+      {
+        "current": 0,
+        "lease": "L00010",
+        "op": "release",
+        "owner": "file:F09",
+        "peak": 10166,
+        "reason": "published",
+        "removed": true,
+        "size": 10166
+      },
+      {
+        "current": 10247,
+        "label": "target:F12",
+        "lease": "L00011",
+        "op": "reserve",
+        "owner": "file:F12",
+        "peak": 10247,
+        "size": 10247
+      },
+      {
+        "current": 0,
+        "lease": "L00011",
+        "op": "release",
+        "owner": "file:F12",
+        "peak": 10247,
+        "reason": "published",
+        "removed": true,
+        "size": 10247
+      },
+      {
+        "current": 2052,
+        "label": "target:F18",
+        "lease": "L00012",
+        "op": "reserve",
+        "owner": "file:F18",
+        "peak": 10247,
+        "size": 2052
+      },
+      {
+        "current": 0,
+        "lease": "L00012",
+        "op": "release",
+        "owner": "file:F18",
+        "peak": 10247,
+        "reason": "file_failed",
+        "removed": true,
+        "size": 2052
+      },
+      {
+        "current": 2057,
+        "label": "target:F14",
+        "lease": "L00013",
+        "op": "reserve",
+        "owner": "file:F14",
+        "peak": 10247,
+        "size": 2057
+      },
+      {
+        "current": 0,
+        "lease": "L00013",
+        "op": "release",
+        "owner": "file:F14",
+        "peak": 10247,
+        "reason": "file_failed",
+        "removed": true,
+        "size": 2057
+      },
+      {
+        "current": 2748,
+        "label": "target:F05",
+        "lease": "L00014",
+        "op": "reserve",
+        "owner": "file:F05",
+        "peak": 10247,
+        "size": 2748
+      },
+      {
+        "current": 0,
+        "lease": "L00014",
+        "op": "release",
+        "owner": "file:F05",
+        "peak": 10247,
+        "reason": "published",
+        "removed": true,
+        "size": 2748
+      },
+      {
+        "current": 3472,
+        "label": "target:F01",
+        "lease": "L00015",
+        "op": "reserve",
+        "owner": "file:F01",
+        "peak": 10247,
+        "size": 3472
+      },
+      {
+        "current": 0,
+        "lease": "L00015",
+        "op": "release",
+        "owner": "file:F01",
+        "peak": 10247,
+        "reason": "published",
+        "removed": true,
+        "size": 3472
+      },
+      {
+        "current": 4196,
+        "label": "target:F02",
+        "lease": "L00016",
+        "op": "reserve",
+        "owner": "file:F02",
+        "peak": 10247,
+        "size": 4196
+      },
+      {
+        "current": 0,
+        "lease": "L00016",
+        "op": "release",
+        "owner": "file:F02",
+        "peak": 10247,
+        "reason": "published",
+        "removed": true,
+        "size": 4196
+      },
+      {
+        "current": 6149,
+        "label": "target:F07",
+        "lease": "L00017",
+        "op": "reserve",
+        "owner": "file:F07",
+        "peak": 10247,
+        "size": 6149
+      },
+      {
+        "current": 0,
+        "lease": "L00017",
+        "op": "release",
+        "owner": "file:F07",
+        "peak": 10247,
+        "reason": "published",
+        "removed": true,
+        "size": 6149
+      },
+      {
+        "current": 4107,
+        "label": "target:F16",
+        "lease": "L00018",
+        "op": "reserve",
+        "owner": "file:F16",
+        "peak": 10247,
+        "size": 4107
+      },
+      {
+        "current": 0,
+        "lease": "L00018",
+        "op": "release",
+        "owner": "file:F16",
+        "peak": 10247,
+        "reason": "published",
+        "removed": true,
+        "size": 4107
+      }
+    ],
+    "lease_count": 0,
+    "owners": {},
+    "peak_bytes": 10247,
+    "quota_bytes": 32768,
+    "steps": [
+      {
+        "current_bytes": 1,
+        "file_id": "F17",
+        "fragment_id": null,
+        "lease": "L00001",
+        "peak_bytes": 1,
+        "phase": "target_open",
+        "quota_bytes": 32768,
+        "seq": 1
+      },
+      {
+        "current_bytes": 1,
+        "file_id": "F17",
+        "fragment_id": "F17-00",
+        "lease": "L00001",
+        "peak_bytes": 1,
+        "phase": "fragment",
+        "quota_bytes": 32768,
+        "seq": 2
+      },
+      {
+        "current_bytes": 0,
+        "file_id": "F17",
+        "fragment_id": null,
+        "lease": null,
+        "peak_bytes": 1,
+        "phase": "target_release",
+        "quota_bytes": 32768,
+        "seq": 3
+      },
+      {
+        "current_bytes": 1023,
+        "file_id": "F03",
+        "fragment_id": null,
+        "lease": "L00002",
+        "peak_bytes": 1023,
+        "phase": "target_open",
+        "quota_bytes": 32768,
+        "seq": 4
+      },
+      {
+        "current_bytes": 1023,
+        "file_id": "F03",
+        "fragment_id": "F03-00",
+        "lease": "L00002",
+        "peak_bytes": 1023,
+        "phase": "fragment",
+        "quota_bytes": 32768,
+        "seq": 5
+      },
+      {
+        "current_bytes": 0,
+        "file_id": "F03",
+        "fragment_id": null,
+        "lease": null,
+        "peak_bytes": 1023,
+        "phase": "target_release",
+        "quota_bytes": 32768,
+        "seq": 6
+      },
+      {
+        "current_bytes": 1024,
+        "file_id": "F13",
+        "fragment_id": null,
+        "lease": "L00003",
+        "peak_bytes": 1024,
+        "phase": "target_open",
+        "quota_bytes": 32768,
+        "seq": 7
+      },
+      {
+        "current_bytes": 1024,
+        "file_id": "F13",
+        "fragment_id": "F13-00",
+        "lease": "L00003",
+        "peak_bytes": 1024,
+        "phase": "fragment",
+        "quota_bytes": 32768,
+        "seq": 8
+      },
+      {
+        "current_bytes": 0,
+        "file_id": "F13",
+        "fragment_id": null,
+        "lease": null,
+        "peak_bytes": 1024,
+        "phase": "target_release",
+        "quota_bytes": 32768,
+        "seq": 9
+      },
+      {
+        "current_bytes": 2045,
+        "file_id": "F08",
+        "fragment_id": null,
+        "lease": "L00004",
+        "peak_bytes": 2045,
+        "phase": "target_open",
+        "quota_bytes": 32768,
+        "seq": 10
+      },
+      {
+        "current_bytes": 2045,
+        "file_id": "F08",
+        "fragment_id": "F08-00",
+        "lease": "L00004",
+        "peak_bytes": 2045,
+        "phase": "fragment",
+        "quota_bytes": 32768,
+        "seq": 11
+      },
+      {
+        "current_bytes": 2045,
+        "file_id": "F08",
+        "fragment_id": "F08-01",
+        "lease": "L00004",
+        "peak_bytes": 2045,
+        "phase": "fragment",
+        "quota_bytes": 32768,
+        "seq": 12
+      },
+      {
+        "current_bytes": 0,
+        "file_id": "F08",
+        "fragment_id": null,
+        "lease": null,
+        "peak_bytes": 2045,
+        "phase": "target_release",
+        "quota_bytes": 32768,
+        "seq": 13
+      },
+      {
+        "current_bytes": 2056,
+        "file_id": "F20",
+        "fragment_id": null,
+        "lease": "L00005",
+        "peak_bytes": 2056,
+        "phase": "target_open",
+        "quota_bytes": 32768,
+        "seq": 14
+      },
+      {
+        "current_bytes": 2056,
+        "file_id": "F20",
+        "fragment_id": "F20-00",
+        "lease": "L00005",
+        "peak_bytes": 2056,
+        "phase": "fragment",
+        "quota_bytes": 32768,
+        "seq": 15
+      },
+      {
+        "current_bytes": 2056,
+        "file_id": "F20",
+        "fragment_id": "F20-01",
+        "lease": "L00005",
+        "peak_bytes": 2056,
+        "phase": "fragment",
+        "quota_bytes": 32768,
+        "seq": 16
+      },
+      {
+        "current_bytes": 0,
+        "file_id": "F20",
+        "fragment_id": null,
+        "lease": null,
+        "peak_bytes": 2056,
+        "phase": "target_release",
+        "quota_bytes": 32768,
+        "seq": 17
+      },
+      {
+        "current_bytes": 3073,
+        "file_id": "F11",
+        "fragment_id": null,
+        "lease": "L00006",
+        "peak_bytes": 3073,
+        "phase": "target_open",
+        "quota_bytes": 32768,
+        "seq": 18
+      },
+      {
+        "current_bytes": 3073,
+        "file_id": "F11",
+        "fragment_id": "F11-00",
+        "lease": "L00006",
+        "peak_bytes": 3073,
+        "phase": "fragment",
+        "quota_bytes": 32768,
+        "seq": 19
+      },
+      {
+        "current_bytes": 0,
+        "file_id": "F11",
+        "fragment_id": null,
+        "lease": null,
+        "peak_bytes": 3073,
+        "phase": "target_release",
+        "quota_bytes": 32768,
+        "seq": 20
+      },
+      {
+        "current_bytes": 3074,
+        "file_id": "F15",
+        "fragment_id": null,
+        "lease": "L00007",
+        "peak_bytes": 3074,
+        "phase": "target_open",
+        "quota_bytes": 32768,
+        "seq": 21
+      },
+      {
+        "current_bytes": 3074,
+        "file_id": "F15",
+        "fragment_id": "F15-00",
+        "lease": "L00007",
+        "peak_bytes": 3074,
+        "phase": "fragment",
+        "quota_bytes": 32768,
+        "seq": 22
+      },
+      {
+        "current_bytes": 3074,
+        "file_id": "F15",
+        "fragment_id": "F15-01",
+        "lease": "L00007",
+        "peak_bytes": 3074,
+        "phase": "fragment",
+        "quota_bytes": 32768,
+        "seq": 23
+      },
+      {
+        "current_bytes": 0,
+        "file_id": "F15",
+        "fragment_id": null,
+        "lease": null,
+        "peak_bytes": 3074,
+        "phase": "target_release",
+        "quota_bytes": 32768,
+        "seq": 24
+      },
+      {
+        "current_bytes": 3078,
+        "file_id": "F19",
+        "fragment_id": null,
+        "lease": "L00008",
+        "peak_bytes": 3078,
+        "phase": "target_open",
+        "quota_bytes": 32768,
+        "seq": 25
+      },
+      {
+        "current_bytes": 3078,
+        "file_id": "F19",
+        "fragment_id": "F19-00",
+        "lease": "L00008",
+        "peak_bytes": 3078,
+        "phase": "fragment",
+        "quota_bytes": 32768,
+        "seq": 26
+      },
+      {
+        "current_bytes": 3078,
+        "file_id": "F19",
+        "fragment_id": "F19-01",
+        "lease": "L00008",
+        "peak_bytes": 3078,
+        "phase": "fragment",
+        "quota_bytes": 32768,
+        "seq": 27
+      },
+      {
+        "current_bytes": 0,
+        "file_id": "F19",
+        "fragment_id": null,
+        "lease": null,
+        "peak_bytes": 3078,
+        "phase": "target_release",
+        "quota_bytes": 32768,
+        "seq": 28
+      },
+      {
+        "current_bytes": 5420,
+        "file_id": "F06",
+        "fragment_id": null,
+        "lease": "L00009",
+        "peak_bytes": 5420,
+        "phase": "target_open",
+        "quota_bytes": 32768,
+        "seq": 29
+      },
+      {
+        "current_bytes": 5420,
+        "file_id": "F06",
+        "fragment_id": "F06-00",
+        "lease": "L00009",
+        "peak_bytes": 5420,
+        "phase": "fragment",
+        "quota_bytes": 32768,
+        "seq": 30
+      },
+      {
+        "current_bytes": 5420,
+        "file_id": "F06",
+        "fragment_id": "F06-01",
+        "lease": "L00009",
+        "peak_bytes": 5420,
+        "phase": "fragment",
+        "quota_bytes": 32768,
+        "seq": 31
+      },
+      {
+        "current_bytes": 5420,
+        "file_id": "F06",
+        "fragment_id": "F06-02",
+        "lease": "L00009",
+        "peak_bytes": 5420,
+        "phase": "fragment",
+        "quota_bytes": 32768,
+        "seq": 32
+      },
+      {
+        "current_bytes": 0,
+        "file_id": "F06",
+        "fragment_id": null,
+        "lease": null,
+        "peak_bytes": 5420,
+        "phase": "target_release",
+        "quota_bytes": 32768,
+        "seq": 33
+      },
+      {
+        "current_bytes": 10166,
+        "file_id": "F09",
+        "fragment_id": null,
+        "lease": "L00010",
+        "peak_bytes": 10166,
+        "phase": "target_open",
+        "quota_bytes": 32768,
+        "seq": 34
+      },
+      {
+        "current_bytes": 10166,
+        "file_id": "F09",
+        "fragment_id": "F09-00",
+        "lease": "L00010",
+        "peak_bytes": 10166,
+        "phase": "fragment",
+        "quota_bytes": 32768,
+        "seq": 35
+      },
+      {
+        "current_bytes": 10166,
+        "file_id": "F09",
+        "fragment_id": "F09-01",
+        "lease": "L00010",
+        "peak_bytes": 10166,
+        "phase": "fragment",
+        "quota_bytes": 32768,
+        "seq": 36
+      },
+      {
+        "current_bytes": 10166,
+        "file_id": "F09",
+        "fragment_id": "F09-02",
+        "lease": "L00010",
+        "peak_bytes": 10166,
+        "phase": "fragment",
+        "quota_bytes": 32768,
+        "seq": 37
+      },
+      {
+        "current_bytes": 0,
+        "file_id": "F09",
+        "fragment_id": null,
+        "lease": null,
+        "peak_bytes": 10166,
+        "phase": "target_release",
+        "quota_bytes": 32768,
+        "seq": 38
+      },
+      {
+        "current_bytes": 10247,
+        "file_id": "F12",
+        "fragment_id": null,
+        "lease": "L00011",
+        "peak_bytes": 10247,
+        "phase": "target_open",
+        "quota_bytes": 32768,
+        "seq": 39
+      },
+      {
+        "current_bytes": 10247,
+        "file_id": "F12",
+        "fragment_id": "F12-00",
+        "lease": "L00011",
+        "peak_bytes": 10247,
+        "phase": "fragment",
+        "quota_bytes": 32768,
+        "seq": 40
+      },
+      {
+        "current_bytes": 10247,
+        "file_id": "F12",
+        "fragment_id": "F12-01",
+        "lease": "L00011",
+        "peak_bytes": 10247,
+        "phase": "fragment",
+        "quota_bytes": 32768,
+        "seq": 41
+      },
+      {
+        "current_bytes": 10247,
+        "file_id": "F12",
+        "fragment_id": "F12-02",
+        "lease": "L00011",
+        "peak_bytes": 10247,
+        "phase": "fragment",
+        "quota_bytes": 32768,
+        "seq": 42
+      },
+      {
+        "current_bytes": 0,
+        "file_id": "F12",
+        "fragment_id": null,
+        "lease": null,
+        "peak_bytes": 10247,
+        "phase": "target_release",
+        "quota_bytes": 32768,
+        "seq": 43
+      },
+      {
+        "current_bytes": 2052,
+        "file_id": "F18",
+        "fragment_id": null,
+        "lease": "L00012",
+        "peak_bytes": 10247,
+        "phase": "target_open",
+        "quota_bytes": 32768,
+        "seq": 44
+      },
+      {
+        "current_bytes": 2052,
+        "file_id": "F18",
+        "fragment_id": "F18-01",
+        "lease": "L00012",
+        "peak_bytes": 10247,
+        "phase": "fragment",
+        "quota_bytes": 32768,
+        "seq": 45
+      },
+      {
+        "current_bytes": 0,
+        "file_id": "F18",
+        "fragment_id": null,
+        "lease": null,
+        "peak_bytes": 10247,
+        "phase": "target_release",
+        "quota_bytes": 32768,
+        "seq": 46
+      },
+      {
+        "current_bytes": 2057,
+        "file_id": "F14",
+        "fragment_id": null,
+        "lease": "L00013",
+        "peak_bytes": 10247,
+        "phase": "target_open",
+        "quota_bytes": 32768,
+        "seq": 47
+      },
+      {
+        "current_bytes": 0,
+        "file_id": "F14",
+        "fragment_id": null,
+        "lease": null,
+        "peak_bytes": 10247,
+        "phase": "target_release",
+        "quota_bytes": 32768,
+        "seq": 48
+      },
+      {
+        "current_bytes": 2748,
+        "file_id": "F05",
+        "fragment_id": null,
+        "lease": "L00014",
+        "peak_bytes": 10247,
+        "phase": "target_open",
+        "quota_bytes": 32768,
+        "seq": 49
+      },
+      {
+        "current_bytes": 2748,
+        "file_id": "F05",
+        "fragment_id": "F05-01",
+        "lease": "L00014",
+        "peak_bytes": 10247,
+        "phase": "fragment",
+        "quota_bytes": 32768,
+        "seq": 50
+      },
+      {
+        "current_bytes": 2748,
+        "file_id": "F05",
+        "fragment_id": "F05-00",
+        "lease": "L00014",
+        "peak_bytes": 10247,
+        "phase": "fragment",
+        "quota_bytes": 32768,
+        "seq": 51
+      },
+      {
+        "current_bytes": 0,
+        "file_id": "F05",
+        "fragment_id": null,
+        "lease": null,
+        "peak_bytes": 10247,
+        "phase": "target_release",
+        "quota_bytes": 32768,
+        "seq": 52
+      },
+      {
+        "current_bytes": 3472,
+        "file_id": "F01",
+        "fragment_id": null,
+        "lease": "L00015",
+        "peak_bytes": 10247,
+        "phase": "target_open",
+        "quota_bytes": 32768,
+        "seq": 53
+      },
+      {
+        "current_bytes": 3472,
+        "file_id": "F01",
+        "fragment_id": "F01-00",
+        "lease": "L00015",
+        "peak_bytes": 10247,
+        "phase": "fragment",
+        "quota_bytes": 32768,
+        "seq": 54
+      },
+      {
+        "current_bytes": 3472,
+        "file_id": "F01",
+        "fragment_id": "F01-01",
+        "lease": "L00015",
+        "peak_bytes": 10247,
+        "phase": "fragment",
+        "quota_bytes": 32768,
+        "seq": 55
+      },
+      {
+        "current_bytes": 0,
+        "file_id": "F01",
+        "fragment_id": null,
+        "lease": null,
+        "peak_bytes": 10247,
+        "phase": "target_release",
+        "quota_bytes": 32768,
+        "seq": 56
+      },
+      {
+        "current_bytes": 4196,
+        "file_id": "F02",
+        "fragment_id": null,
+        "lease": "L00016",
+        "peak_bytes": 10247,
+        "phase": "target_open",
+        "quota_bytes": 32768,
+        "seq": 57
+      },
+      {
+        "current_bytes": 4196,
+        "file_id": "F02",
+        "fragment_id": "F02-01",
+        "lease": "L00016",
+        "peak_bytes": 10247,
+        "phase": "fragment",
+        "quota_bytes": 32768,
+        "seq": 58
+      },
+      {
+        "current_bytes": 4196,
+        "file_id": "F02",
+        "fragment_id": "F02-00",
+        "lease": "L00016",
+        "peak_bytes": 10247,
+        "phase": "fragment",
+        "quota_bytes": 32768,
+        "seq": 59
+      },
+      {
+        "current_bytes": 0,
+        "file_id": "F02",
+        "fragment_id": null,
+        "lease": null,
+        "peak_bytes": 10247,
+        "phase": "target_release",
+        "quota_bytes": 32768,
+        "seq": 60
+      },
+      {
+        "current_bytes": 6149,
+        "file_id": "F07",
+        "fragment_id": null,
+        "lease": "L00017",
+        "peak_bytes": 10247,
+        "phase": "target_open",
+        "quota_bytes": 32768,
+        "seq": 61
+      },
+      {
+        "current_bytes": 6149,
+        "file_id": "F07",
+        "fragment_id": "F07-02",
+        "lease": "L00017",
+        "peak_bytes": 10247,
+        "phase": "fragment",
+        "quota_bytes": 32768,
+        "seq": 62
+      },
+      {
+        "current_bytes": 6149,
+        "file_id": "F07",
+        "fragment_id": "F07-00",
+        "lease": "L00017",
+        "peak_bytes": 10247,
+        "phase": "fragment",
+        "quota_bytes": 32768,
+        "seq": 63
+      },
+      {
+        "current_bytes": 6149,
+        "file_id": "F07",
+        "fragment_id": "F07-01",
+        "lease": "L00017",
+        "peak_bytes": 10247,
+        "phase": "fragment",
+        "quota_bytes": 32768,
+        "seq": 64
+      },
+      {
+        "current_bytes": 0,
+        "file_id": "F07",
+        "fragment_id": null,
+        "lease": null,
+        "peak_bytes": 10247,
+        "phase": "target_release",
+        "quota_bytes": 32768,
+        "seq": 65
+      },
+      {
+        "current_bytes": 4107,
+        "file_id": "F16",
+        "fragment_id": null,
+        "lease": "L00018",
+        "peak_bytes": 10247,
+        "phase": "target_open",
+        "quota_bytes": 32768,
+        "seq": 66
+      },
+      {
+        "current_bytes": 4107,
+        "file_id": "F16",
+        "fragment_id": "F16-03",
+        "lease": "L00018",
+        "peak_bytes": 10247,
+        "phase": "fragment",
+        "quota_bytes": 32768,
+        "seq": 67
+      },
+      {
+        "current_bytes": 4107,
+        "file_id": "F16",
+        "fragment_id": "F16-01",
+        "lease": "L00018",
+        "peak_bytes": 10247,
+        "phase": "fragment",
+        "quota_bytes": 32768,
+        "seq": 68
+      },
+      {
+        "current_bytes": 4107,
+        "file_id": "F16",
+        "fragment_id": "F16-02",
+        "lease": "L00018",
+        "peak_bytes": 10247,
+        "phase": "fragment",
+        "quota_bytes": 32768,
+        "seq": 69
+      },
+      {
+        "current_bytes": 4107,
+        "file_id": "F16",
+        "fragment_id": "F16-00",
+        "lease": "L00018",
+        "peak_bytes": 10247,
+        "phase": "fragment",
+        "quota_bytes": 32768,
+        "seq": 70
+      },
+      {
+        "current_bytes": 0,
+        "file_id": "F16",
+        "fragment_id": null,
+        "lease": null,
+        "peak_bytes": 10247,
+        "phase": "target_release",
+        "quota_bytes": 32768,
+        "seq": 71
+      }
+    ]
+  },
+  "skipped_quota": [
+    "F10"
+  ],
+  "strategy_effective": "file",
+  "strategy_requested": "file"
+}

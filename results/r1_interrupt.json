@@ -1,0 +1,51 @@
+{
+  "checkpoint": {
+    "confirmed_total": 5,
+    "drives": [
+      {
+        "block_count": 100,
+        "drive_id": "D0",
+        "load_error": null,
+        "mounted_volume": "V2",
+        "position": 2
+      },
+      {
+        "block_count": 100,
+        "drive_id": "D1",
+        "load_error": null,
+        "mounted_volume": "V1",
+        "position": 2
+      }
+    ],
+    "scratch_current": 3472,
+    "scratch_peak": 10247
+  },
+  "device": {
+    "summary": {
+      "blocks_read": 15,
+      "blocks_skipped": 11,
+      "bytes_returned": 15360,
+      "calls": 24,
+      "data_blocks_read": 15,
+      "errors": 0,
+      "filemarks_read": 0,
+      "mount_failures": 0,
+      "mounts": 3,
+      "read_calls": 15,
+      "rewinds": 0,
+      "skip_calls": 3,
+      "unmounts": 3
+    }
+  },
+  "error": {
+    "code": "interrupted",
+    "detail": {
+      "confirmed_fragments": 5,
+      "run_id": "R1"
+    },
+    "message": "simulated interruption"
+  },
+  "resume_hint": "--scenario results/scenario resume --run-id R1 --root results/run_r1",
+  "run_id": "R1",
+  "status": "interrupted"
+}
