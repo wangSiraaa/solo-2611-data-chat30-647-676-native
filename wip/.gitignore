@@ -1,0 +1,8 @@
+__pycache__/
+*.pyc
+
+# 运行时生成的 SQLite 数据库（可用 demo/CLI 复跑重建）
+*.db
+*.db-wal
+*.db-shm
+run.db*

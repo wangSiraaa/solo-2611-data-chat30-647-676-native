@@ -1,0 +1,34 @@
+[
+  {
+    "acceptance_seq": 500,
+    "event_type": "START",
+    "unit_id": "U_MIG",
+    "attempt_id": "m1",
+    "time": 600,
+    "step_id": "t_mach_a",
+    "device_id": "dev_cnc"
+  },
+  {
+    "acceptance_seq": 501,
+    "event_type": "FINISH",
+    "unit_id": "U_MIG",
+    "attempt_id": "m1",
+    "time": 610
+  },
+  {
+    "acceptance_seq": 502,
+    "event_type": "START",
+    "unit_id": "U_MIG",
+    "attempt_id": "m2",
+    "time": 610,
+    "step_id": "t_asm_a",
+    "device_id": "dev_asm"
+  },
+  {
+    "acceptance_seq": 503,
+    "event_type": "FINISH",
+    "unit_id": "U_MIG",
+    "attempt_id": "m2",
+    "time": 615
+  }
+]

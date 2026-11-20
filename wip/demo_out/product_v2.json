@@ -1,0 +1,80 @@
+{
+  "route_id": "R",
+  "version": "v2",
+  "description": "ECN-42",
+  "initial_state": "S0",
+  "accepted_states": [
+    "OK"
+  ],
+  "scrap_states": [
+    "SCRAP"
+  ],
+  "states": {
+    "A": "NORMAL",
+    "B": "NORMAL",
+    "OK": "ACCEPTED",
+    "Q2": "NORMAL",
+    "RW": "NORMAL",
+    "S0": "INITIAL",
+    "SCRAP": "SCRAP"
+  },
+  "steps": [
+    {
+      "step_id": "t_mach_a",
+      "from_state": "S0",
+      "to_state": "A",
+      "device_type": "CNC",
+      "duration": 10
+    },
+    {
+      "step_id": "t_mach_b",
+      "from_state": "S0",
+      "to_state": "B",
+      "device_type": "CNC",
+      "duration": 8
+    },
+    {
+      "step_id": "t_asm_a",
+      "from_state": "A",
+      "to_state": "Q2",
+      "device_type": "ASSEMBLY",
+      "duration": 5
+    },
+    {
+      "step_id": "t_asm_b",
+      "from_state": "B",
+      "to_state": "Q2",
+      "device_type": "ASSEMBLY",
+      "duration": 3
+    },
+    {
+      "step_id": "t_insp2",
+      "from_state": "Q2",
+      "to_state": "OK",
+      "device_type": "INSPECTION",
+      "duration": 7
+    },
+    {
+      "step_id": "t_scrap2",
+      "from_state": "Q2",
+      "to_state": "SCRAP",
+      "device_type": "INSPECTION",
+      "duration": 1
+    },
+    {
+      "step_id": "t_rework_in",
+      "from_state": "Q2",
+      "to_state": "RW",
+      "device_type": "INSPECTION",
+      "duration": 3
+    },
+    {
+      "step_id": "t_rework_out",
+      "from_state": "RW",
+      "to_state": "Q2",
+      "device_type": "REWORK",
+      "duration": 2
+    }
+  ],
+  "published_at": null
+}

@@ -1,0 +1,18 @@
+[
+  {
+    "acceptance_seq": 504,
+    "event_type": "START",
+    "unit_id": "U_MIG",
+    "attempt_id": "m3",
+    "time": 615,
+    "step_id": "t_insp",
+    "device_id": "dev_insp"
+  },
+  {
+    "acceptance_seq": 505,
+    "event_type": "FINISH",
+    "unit_id": "U_MIG",
+    "attempt_id": "m3",
+    "time": 617
+  }
+]

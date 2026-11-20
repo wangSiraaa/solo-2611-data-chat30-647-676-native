@@ -1,0 +1,18 @@
+[
+  {
+    "acceptance_seq": 301,
+    "event_type": "FINISH",
+    "unit_id": "U_OOO",
+    "attempt_id": "o1",
+    "time": 410
+  },
+  {
+    "acceptance_seq": 300,
+    "event_type": "START",
+    "unit_id": "U_OOO",
+    "attempt_id": "o1",
+    "time": 400,
+    "step_id": "t_mach_a",
+    "device_id": "dev_cnc"
+  }
+]

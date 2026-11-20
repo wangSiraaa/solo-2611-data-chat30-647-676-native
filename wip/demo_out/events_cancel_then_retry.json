@@ -1,0 +1,34 @@
+[
+  {
+    "acceptance_seq": 400,
+    "event_type": "START",
+    "unit_id": "U_RETRY",
+    "attempt_id": "r1",
+    "time": 500,
+    "step_id": "t_mach_a",
+    "device_id": "dev_cnc"
+  },
+  {
+    "acceptance_seq": 401,
+    "event_type": "CANCEL",
+    "unit_id": "U_RETRY",
+    "attempt_id": "r1",
+    "time": 503
+  },
+  {
+    "acceptance_seq": 402,
+    "event_type": "START",
+    "unit_id": "U_RETRY",
+    "attempt_id": "r2",
+    "time": 503,
+    "step_id": "t_mach_a",
+    "device_id": "dev_cnc"
+  },
+  {
+    "acceptance_seq": 403,
+    "event_type": "FINISH",
+    "unit_id": "U_RETRY",
+    "attempt_id": "r2",
+    "time": 513
+  }
+]

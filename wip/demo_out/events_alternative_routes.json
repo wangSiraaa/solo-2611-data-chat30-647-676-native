@@ -1,0 +1,98 @@
+[
+  {
+    "acceptance_seq": 1,
+    "event_type": "START",
+    "unit_id": "U_ALT",
+    "attempt_id": "U_ALT-1",
+    "time": 0,
+    "step_id": "t_mach_b",
+    "device_id": "dev_cnc"
+  },
+  {
+    "acceptance_seq": 2,
+    "event_type": "FINISH",
+    "unit_id": "U_ALT",
+    "attempt_id": "U_ALT-1",
+    "time": 8
+  },
+  {
+    "acceptance_seq": 3,
+    "event_type": "START",
+    "unit_id": "U_ALT",
+    "attempt_id": "U_ALT-2",
+    "time": 8,
+    "step_id": "t_asm_b",
+    "device_id": "dev_asm"
+  },
+  {
+    "acceptance_seq": 4,
+    "event_type": "FINISH",
+    "unit_id": "U_ALT",
+    "attempt_id": "U_ALT-2",
+    "time": 11
+  },
+  {
+    "acceptance_seq": 5,
+    "event_type": "START",
+    "unit_id": "U_ALT",
+    "attempt_id": "U_ALT-3",
+    "time": 11,
+    "step_id": "t_insp",
+    "device_id": "dev_insp"
+  },
+  {
+    "acceptance_seq": 6,
+    "event_type": "FINISH",
+    "unit_id": "U_ALT",
+    "attempt_id": "U_ALT-3",
+    "time": 13
+  },
+  {
+    "acceptance_seq": 7,
+    "event_type": "START",
+    "unit_id": "U_ALT2",
+    "attempt_id": "U_ALT2-1",
+    "time": 100,
+    "step_id": "t_mach_a",
+    "device_id": "dev_cnc"
+  },
+  {
+    "acceptance_seq": 8,
+    "event_type": "FINISH",
+    "unit_id": "U_ALT2",
+    "attempt_id": "U_ALT2-1",
+    "time": 110
+  },
+  {
+    "acceptance_seq": 9,
+    "event_type": "START",
+    "unit_id": "U_ALT2",
+    "attempt_id": "U_ALT2-2",
+    "time": 110,
+    "step_id": "t_asm_a",
+    "device_id": "dev_asm"
+  },
+  {
+    "acceptance_seq": 10,
+    "event_type": "FINISH",
+    "unit_id": "U_ALT2",
+    "attempt_id": "U_ALT2-2",
+    "time": 115
+  },
+  {
+    "acceptance_seq": 11,
+    "event_type": "START",
+    "unit_id": "U_ALT2",
+    "attempt_id": "U_ALT2-3",
+    "time": 115,
+    "step_id": "t_insp",
+    "device_id": "dev_insp"
+  },
+  {
+    "acceptance_seq": 12,
+    "event_type": "FINISH",
+    "unit_id": "U_ALT2",
+    "attempt_id": "U_ALT2-3",
+    "time": 117
+  }
+]

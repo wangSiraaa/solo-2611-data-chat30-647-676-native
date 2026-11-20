@@ -1,0 +1,979 @@
+{
+  "route_checks": {
+    "v1_alternative_A": {
+      "valid": true,
+      "initial_state": "S0",
+      "final_state": "OK",
+      "total_duration": 17,
+      "step_ids": [
+        "t_mach_a",
+        "t_asm_a",
+        "t_insp"
+      ],
+      "reason": ""
+    },
+    "v1_alternative_B": {
+      "valid": true,
+      "initial_state": "S0",
+      "final_state": "OK",
+      "total_duration": 13,
+      "step_ids": [
+        "t_mach_b",
+        "t_asm_b",
+        "t_insp"
+      ],
+      "reason": ""
+    },
+    "v1_rework": {
+      "valid": true,
+      "initial_state": "S0",
+      "final_state": "OK",
+      "total_duration": 22,
+      "step_ids": [
+        "t_mach_a",
+        "t_asm_a",
+        "t_rework_in",
+        "t_rework_out",
+        "t_insp"
+      ],
+      "reason": ""
+    },
+    "v1_scrap_not_accepted": {
+      "valid": false,
+      "initial_state": "S0",
+      "final_state": null,
+      "total_duration": 16,
+      "step_ids": [
+        "t_mach_a",
+        "t_asm_a",
+        "t_scrap"
+      ],
+      "reason": "序列结束于报废终态 ['SCRAP']，不计为合格完工"
+    },
+    "v1_shortest_from_S0": 13,
+    "v1_shortest_from_Q": 2,
+    "v2_shortest_from_Q2": 7
+  },
+  "cases": {
+    "alternative_routes": {
+      "batch_id": "demo-alternative_routes",
+      "status": "ACCEPTED",
+      "event_count": 12,
+      "applied_count": 12,
+      "error": null,
+      "op_seq_range": [
+        9,
+        20
+      ]
+    },
+    "legal_rework": {
+      "batch_id": "demo-legal_rework",
+      "status": "ACCEPTED",
+      "event_count": 14,
+      "applied_count": 14,
+      "error": null,
+      "op_seq_range": [
+        21,
+        34
+      ]
+    },
+    "same_second_handoff": {
+      "batch_id": "demo-same_second_handoff",
+      "status": "ACCEPTED",
+      "event_count": 4,
+      "applied_count": 4,
+      "error": null,
+      "op_seq_range": [
+        35,
+        38
+      ]
+    },
+    "out_of_order_finish": {
+      "batch_id": "demo-out_of_order_finish",
+      "status": "ACCEPTED",
+      "event_count": 2,
+      "applied_count": 2,
+      "error": null,
+      "op_seq_range": [
+        39,
+        40
+      ]
+    },
+    "cancel_then_retry": {
+      "batch_id": "demo-cancel_then_retry",
+      "status": "ACCEPTED",
+      "event_count": 4,
+      "applied_count": 4,
+      "error": null,
+      "op_seq_range": [
+        41,
+        44
+      ]
+    },
+    "migration_pre": {
+      "batch_id": "demo-migration-pre",
+      "status": "ACCEPTED",
+      "event_count": 4,
+      "applied_count": 4,
+      "error": null,
+      "op_seq_range": [
+        45,
+        48
+      ]
+    },
+    "migration": {
+      "actor": "migrate_unit",
+      "op_seqs": [
+        49
+      ],
+      "units": 8,
+      "attempts": 20,
+      "events": 40
+    },
+    "migration_old_step_rejected": {
+      "batch_id": "demo-migration-post",
+      "status": "REJECTED",
+      "event_count": 2,
+      "applied_count": 0,
+      "error": {
+        "code": "STEP_NOT_IN_BOUND_PRODUCT",
+        "message": "物料绑定产品 R@v2 中没有 step t_insp（迁移后旧工步按旧产品解释，但新绑定产品必须包含该 step）: 路线 R@v2 没有 step_id 't_insp'",
+        "index": 0,
+        "acceptance_seq": 504,
+        "details": {
+          "route_id": "R",
+          "version": "v2",
+          "step_id": "t_insp"
+        }
+      },
+      "op_seq_range": null
+    }
+  },
+  "summary": {
+    "units": 8,
+    "active": 5,
+    "accepted": 3,
+    "scrap": 0,
+    "attempts": 20,
+    "events": 40,
+    "max_acceptance_seq": 503,
+    "work_and_wait": {
+      "attempt_count": 20,
+      "actual_work_duration": 112,
+      "actual_wait_duration": 0,
+      "units": {
+        "U_ALT": {
+          "attempt_count": 3,
+          "actual_work_duration": 13,
+          "actual_wait_duration": 0
+        },
+        "U_ALT2": {
+          "attempt_count": 3,
+          "actual_work_duration": 17,
+          "actual_wait_duration": 0
+        },
+        "U_HAND1": {
+          "attempt_count": 1,
+          "actual_work_duration": 10,
+          "actual_wait_duration": 0
+        },
+        "U_HAND2": {
+          "attempt_count": 1,
+          "actual_work_duration": 10,
+          "actual_wait_duration": 0
+        },
+        "U_MIG": {
+          "attempt_count": 2,
+          "actual_work_duration": 15,
+          "actual_wait_duration": 0
+        },
+        "U_OOO": {
+          "attempt_count": 1,
+          "actual_work_duration": 10,
+          "actual_wait_duration": 0
+        },
+        "U_RETRY": {
+          "attempt_count": 2,
+          "actual_work_duration": 10,
+          "actual_wait_duration": 0
+        },
+        "U_RW": {
+          "attempt_count": 7,
+          "actual_work_duration": 27,
+          "actual_wait_duration": 0
+        }
+      }
+    }
+  },
+  "units": {
+    "U_ALT": {
+      "unit_id": "U_ALT",
+      "status": "ACCEPTED",
+      "current_state": "OK",
+      "state_kind": "ACCEPTED",
+      "route_id": "R",
+      "version": "v1",
+      "binding_seq": 1,
+      "accepted_counted": true,
+      "in_flight_attempt": null,
+      "expected_remaining_duration": null,
+      "completable": true,
+      "first_event_time": 0,
+      "last_event_time": 13,
+      "terminal_time": 13,
+      "attempt_count": 3
+    },
+    "U_ALT2": {
+      "unit_id": "U_ALT2",
+      "status": "ACCEPTED",
+      "current_state": "OK",
+      "state_kind": "ACCEPTED",
+      "route_id": "R",
+      "version": "v1",
+      "binding_seq": 2,
+      "accepted_counted": true,
+      "in_flight_attempt": null,
+      "expected_remaining_duration": null,
+      "completable": true,
+      "first_event_time": 100,
+      "last_event_time": 117,
+      "terminal_time": 117,
+      "attempt_count": 3
+    },
+    "U_RW": {
+      "unit_id": "U_RW",
+      "status": "ACCEPTED",
+      "current_state": "OK",
+      "state_kind": "ACCEPTED",
+      "route_id": "R",
+      "version": "v1",
+      "binding_seq": 3,
+      "accepted_counted": true,
+      "in_flight_attempt": null,
+      "expected_remaining_duration": null,
+      "completable": true,
+      "first_event_time": 200,
+      "last_event_time": 227,
+      "terminal_time": 227,
+      "attempt_count": 7
+    },
+    "U_HAND1": {
+      "unit_id": "U_HAND1",
+      "status": "ACTIVE",
+      "current_state": "A",
+      "state_kind": "NORMAL",
+      "route_id": "R",
+      "version": "v1",
+      "binding_seq": 4,
+      "accepted_counted": false,
+      "in_flight_attempt": null,
+      "expected_remaining_duration": 7,
+      "completable": true,
+      "first_event_time": 300,
+      "last_event_time": 310,
+      "terminal_time": null,
+      "attempt_count": 1
+    },
+    "U_HAND2": {
+      "unit_id": "U_HAND2",
+      "status": "ACTIVE",
+      "current_state": "A",
+      "state_kind": "NORMAL",
+      "route_id": "R",
+      "version": "v1",
+      "binding_seq": 5,
+      "accepted_counted": false,
+      "in_flight_attempt": null,
+      "expected_remaining_duration": 7,
+      "completable": true,
+      "first_event_time": 310,
+      "last_event_time": 320,
+      "terminal_time": null,
+      "attempt_count": 1
+    },
+    "U_OOO": {
+      "unit_id": "U_OOO",
+      "status": "ACTIVE",
+      "current_state": "A",
+      "state_kind": "NORMAL",
+      "route_id": "R",
+      "version": "v1",
+      "binding_seq": 6,
+      "accepted_counted": false,
+      "in_flight_attempt": null,
+      "expected_remaining_duration": 7,
+      "completable": true,
+      "first_event_time": 400,
+      "last_event_time": 410,
+      "terminal_time": null,
+      "attempt_count": 1
+    },
+    "U_RETRY": {
+      "unit_id": "U_RETRY",
+      "status": "ACTIVE",
+      "current_state": "A",
+      "state_kind": "NORMAL",
+      "route_id": "R",
+      "version": "v1",
+      "binding_seq": 7,
+      "accepted_counted": false,
+      "in_flight_attempt": null,
+      "expected_remaining_duration": 7,
+      "completable": true,
+      "first_event_time": 500,
+      "last_event_time": 513,
+      "terminal_time": null,
+      "attempt_count": 2
+    },
+    "U_MIG": {
+      "unit_id": "U_MIG",
+      "status": "ACTIVE",
+      "current_state": "Q2",
+      "state_kind": "NORMAL",
+      "route_id": "R",
+      "version": "v2",
+      "binding_seq": 9,
+      "accepted_counted": false,
+      "in_flight_attempt": null,
+      "expected_remaining_duration": 7,
+      "completable": true,
+      "first_event_time": 600,
+      "last_event_time": 615,
+      "terminal_time": null,
+      "attempt_count": 2
+    }
+  },
+  "positions": {
+    "U_ALT": {
+      "unit_id": "U_ALT",
+      "status": "ACCEPTED",
+      "current_state": "OK",
+      "route_id": "R",
+      "version": "v1",
+      "on_device": null,
+      "in_flight_attempt": null,
+      "in_flight_step": null,
+      "in_flight_target_state": null,
+      "in_flight_planned_end": null,
+      "expected_remaining_duration": null,
+      "remaining_after_in_flight": null
+    },
+    "U_ALT2": {
+      "unit_id": "U_ALT2",
+      "status": "ACCEPTED",
+      "current_state": "OK",
+      "route_id": "R",
+      "version": "v1",
+      "on_device": null,
+      "in_flight_attempt": null,
+      "in_flight_step": null,
+      "in_flight_target_state": null,
+      "in_flight_planned_end": null,
+      "expected_remaining_duration": null,
+      "remaining_after_in_flight": null
+    },
+    "U_RW": {
+      "unit_id": "U_RW",
+      "status": "ACCEPTED",
+      "current_state": "OK",
+      "route_id": "R",
+      "version": "v1",
+      "on_device": null,
+      "in_flight_attempt": null,
+      "in_flight_step": null,
+      "in_flight_target_state": null,
+      "in_flight_planned_end": null,
+      "expected_remaining_duration": null,
+      "remaining_after_in_flight": null
+    },
+    "U_HAND1": {
+      "unit_id": "U_HAND1",
+      "status": "ACTIVE",
+      "current_state": "A",
+      "route_id": "R",
+      "version": "v1",
+      "on_device": null,
+      "in_flight_attempt": null,
+      "in_flight_step": null,
+      "in_flight_target_state": null,
+      "in_flight_planned_end": null,
+      "expected_remaining_duration": 7,
+      "remaining_after_in_flight": null
+    },
+    "U_HAND2": {
+      "unit_id": "U_HAND2",
+      "status": "ACTIVE",
+      "current_state": "A",
+      "route_id": "R",
+      "version": "v1",
+      "on_device": null,
+      "in_flight_attempt": null,
+      "in_flight_step": null,
+      "in_flight_target_state": null,
+      "in_flight_planned_end": null,
+      "expected_remaining_duration": 7,
+      "remaining_after_in_flight": null
+    },
+    "U_OOO": {
+      "unit_id": "U_OOO",
+      "status": "ACTIVE",
+      "current_state": "A",
+      "route_id": "R",
+      "version": "v1",
+      "on_device": null,
+      "in_flight_attempt": null,
+      "in_flight_step": null,
+      "in_flight_target_state": null,
+      "in_flight_planned_end": null,
+      "expected_remaining_duration": 7,
+      "remaining_after_in_flight": null
+    },
+    "U_RETRY": {
+      "unit_id": "U_RETRY",
+      "status": "ACTIVE",
+      "current_state": "A",
+      "route_id": "R",
+      "version": "v1",
+      "on_device": null,
+      "in_flight_attempt": null,
+      "in_flight_step": null,
+      "in_flight_target_state": null,
+      "in_flight_planned_end": null,
+      "expected_remaining_duration": 7,
+      "remaining_after_in_flight": null
+    },
+    "U_MIG": {
+      "unit_id": "U_MIG",
+      "status": "ACTIVE",
+      "current_state": "Q2",
+      "route_id": "R",
+      "version": "v2",
+      "on_device": null,
+      "in_flight_attempt": null,
+      "in_flight_step": null,
+      "in_flight_target_state": null,
+      "in_flight_planned_end": null,
+      "expected_remaining_duration": 7,
+      "remaining_after_in_flight": null
+    }
+  },
+  "durations": {
+    "attempt_count": 20,
+    "actual_work_duration": 112,
+    "actual_wait_duration": 0,
+    "units": {
+      "U_ALT": {
+        "attempt_count": 3,
+        "actual_work_duration": 13,
+        "actual_wait_duration": 0
+      },
+      "U_ALT2": {
+        "attempt_count": 3,
+        "actual_work_duration": 17,
+        "actual_wait_duration": 0
+      },
+      "U_HAND1": {
+        "attempt_count": 1,
+        "actual_work_duration": 10,
+        "actual_wait_duration": 0
+      },
+      "U_HAND2": {
+        "attempt_count": 1,
+        "actual_work_duration": 10,
+        "actual_wait_duration": 0
+      },
+      "U_MIG": {
+        "attempt_count": 2,
+        "actual_work_duration": 15,
+        "actual_wait_duration": 0
+      },
+      "U_OOO": {
+        "attempt_count": 1,
+        "actual_work_duration": 10,
+        "actual_wait_duration": 0
+      },
+      "U_RETRY": {
+        "attempt_count": 2,
+        "actual_work_duration": 10,
+        "actual_wait_duration": 0
+      },
+      "U_RW": {
+        "attempt_count": 7,
+        "actual_work_duration": 27,
+        "actual_wait_duration": 0
+      }
+    }
+  },
+  "device_facts": {
+    "dev_cnc": {
+      "device_id": "dev_cnc",
+      "device_type": "CNC",
+      "busy_now": null,
+      "timeline": [
+        {
+          "device_id": "dev_cnc",
+          "attempt_id": "U_ALT-1",
+          "unit_id": "U_ALT",
+          "step_id": "t_mach_b",
+          "status": "DONE",
+          "interval": [
+            0,
+            8
+          ],
+          "actual": [
+            0,
+            8
+          ]
+        },
+        {
+          "device_id": "dev_cnc",
+          "attempt_id": "U_ALT2-1",
+          "unit_id": "U_ALT2",
+          "step_id": "t_mach_a",
+          "status": "DONE",
+          "interval": [
+            100,
+            110
+          ],
+          "actual": [
+            100,
+            110
+          ]
+        },
+        {
+          "device_id": "dev_cnc",
+          "attempt_id": "rw-1",
+          "unit_id": "U_RW",
+          "step_id": "t_mach_a",
+          "status": "DONE",
+          "interval": [
+            200,
+            210
+          ],
+          "actual": [
+            200,
+            210
+          ]
+        },
+        {
+          "device_id": "dev_cnc",
+          "attempt_id": "h1",
+          "unit_id": "U_HAND1",
+          "step_id": "t_mach_a",
+          "status": "DONE",
+          "interval": [
+            300,
+            310
+          ],
+          "actual": [
+            300,
+            310
+          ]
+        },
+        {
+          "device_id": "dev_cnc",
+          "attempt_id": "h2",
+          "unit_id": "U_HAND2",
+          "step_id": "t_mach_a",
+          "status": "DONE",
+          "interval": [
+            310,
+            320
+          ],
+          "actual": [
+            310,
+            320
+          ]
+        },
+        {
+          "device_id": "dev_cnc",
+          "attempt_id": "o1",
+          "unit_id": "U_OOO",
+          "step_id": "t_mach_a",
+          "status": "DONE",
+          "interval": [
+            400,
+            410
+          ],
+          "actual": [
+            400,
+            410
+          ]
+        },
+        {
+          "device_id": "dev_cnc",
+          "attempt_id": "r1",
+          "unit_id": "U_RETRY",
+          "step_id": "t_mach_a",
+          "status": "CANCELLED",
+          "interval": [
+            500,
+            503
+          ],
+          "actual": [
+            500,
+            503
+          ]
+        },
+        {
+          "device_id": "dev_cnc",
+          "attempt_id": "r2",
+          "unit_id": "U_RETRY",
+          "step_id": "t_mach_a",
+          "status": "DONE",
+          "interval": [
+            503,
+            513
+          ],
+          "actual": [
+            503,
+            513
+          ]
+        },
+        {
+          "device_id": "dev_cnc",
+          "attempt_id": "m1",
+          "unit_id": "U_MIG",
+          "step_id": "t_mach_a",
+          "status": "DONE",
+          "interval": [
+            600,
+            610
+          ],
+          "actual": [
+            600,
+            610
+          ]
+        }
+      ]
+    },
+    "dev_asm": {
+      "device_id": "dev_asm",
+      "device_type": "ASSEMBLY",
+      "busy_now": null,
+      "timeline": [
+        {
+          "device_id": "dev_asm",
+          "attempt_id": "U_ALT-2",
+          "unit_id": "U_ALT",
+          "step_id": "t_asm_b",
+          "status": "DONE",
+          "interval": [
+            8,
+            11
+          ],
+          "actual": [
+            8,
+            11
+          ]
+        },
+        {
+          "device_id": "dev_asm",
+          "attempt_id": "U_ALT2-2",
+          "unit_id": "U_ALT2",
+          "step_id": "t_asm_a",
+          "status": "DONE",
+          "interval": [
+            110,
+            115
+          ],
+          "actual": [
+            110,
+            115
+          ]
+        },
+        {
+          "device_id": "dev_asm",
+          "attempt_id": "rw-2",
+          "unit_id": "U_RW",
+          "step_id": "t_asm_a",
+          "status": "DONE",
+          "interval": [
+            210,
+            215
+          ],
+          "actual": [
+            210,
+            215
+          ]
+        },
+        {
+          "device_id": "dev_asm",
+          "attempt_id": "m2",
+          "unit_id": "U_MIG",
+          "step_id": "t_asm_a",
+          "status": "DONE",
+          "interval": [
+            610,
+            615
+          ],
+          "actual": [
+            610,
+            615
+          ]
+        }
+      ]
+    },
+    "dev_insp": {
+      "device_id": "dev_insp",
+      "device_type": "INSPECTION",
+      "busy_now": null,
+      "timeline": [
+        {
+          "device_id": "dev_insp",
+          "attempt_id": "U_ALT-3",
+          "unit_id": "U_ALT",
+          "step_id": "t_insp",
+          "status": "DONE",
+          "interval": [
+            11,
+            13
+          ],
+          "actual": [
+            11,
+            13
+          ]
+        },
+        {
+          "device_id": "dev_insp",
+          "attempt_id": "U_ALT2-3",
+          "unit_id": "U_ALT2",
+          "step_id": "t_insp",
+          "status": "DONE",
+          "interval": [
+            115,
+            117
+          ],
+          "actual": [
+            115,
+            117
+          ]
+        },
+        {
+          "device_id": "dev_insp",
+          "attempt_id": "rw-3",
+          "unit_id": "U_RW",
+          "step_id": "t_rework_in",
+          "status": "DONE",
+          "interval": [
+            215,
+            218
+          ],
+          "actual": [
+            215,
+            218
+          ]
+        },
+        {
+          "device_id": "dev_insp",
+          "attempt_id": "rw-5",
+          "unit_id": "U_RW",
+          "step_id": "t_rework_in",
+          "status": "DONE",
+          "interval": [
+            220,
+            223
+          ],
+          "actual": [
+            220,
+            223
+          ]
+        },
+        {
+          "device_id": "dev_insp",
+          "attempt_id": "rw-7",
+          "unit_id": "U_RW",
+          "step_id": "t_insp",
+          "status": "DONE",
+          "interval": [
+            225,
+            227
+          ],
+          "actual": [
+            225,
+            227
+          ]
+        }
+      ]
+    },
+    "dev_rw": {
+      "device_id": "dev_rw",
+      "device_type": "REWORK",
+      "busy_now": null,
+      "timeline": [
+        {
+          "device_id": "dev_rw",
+          "attempt_id": "rw-4",
+          "unit_id": "U_RW",
+          "step_id": "t_rework_out",
+          "status": "DONE",
+          "interval": [
+            218,
+            220
+          ],
+          "actual": [
+            218,
+            220
+          ]
+        },
+        {
+          "device_id": "dev_rw",
+          "attempt_id": "rw-6",
+          "unit_id": "U_RW",
+          "step_id": "t_rework_out",
+          "status": "DONE",
+          "interval": [
+            223,
+            225
+          ],
+          "actual": [
+            223,
+            225
+          ]
+        }
+      ]
+    }
+  },
+  "unit_explain_U_MIG": {
+    "unit_id": "U_MIG",
+    "current": {
+      "unit_id": "U_MIG",
+      "status": "ACTIVE",
+      "current_state": "Q2",
+      "state_kind": "NORMAL",
+      "route_id": "R",
+      "version": "v2",
+      "binding_seq": 9,
+      "accepted_counted": false,
+      "in_flight_attempt": null,
+      "expected_remaining_duration": 7,
+      "completable": true,
+      "first_event_time": 600,
+      "last_event_time": 615,
+      "terminal_time": null,
+      "attempt_count": 2
+    },
+    "position": {
+      "unit_id": "U_MIG",
+      "status": "ACTIVE",
+      "current_state": "Q2",
+      "route_id": "R",
+      "version": "v2",
+      "on_device": null,
+      "in_flight_attempt": null,
+      "in_flight_step": null,
+      "in_flight_target_state": null,
+      "in_flight_planned_end": null,
+      "expected_remaining_duration": 7,
+      "remaining_after_in_flight": null
+    },
+    "journey": [
+      {
+        "binding_seq": 8,
+        "route_id": "R",
+        "version": "v1",
+        "state_at_bind": "S0",
+        "reason": "create",
+        "from": null
+      },
+      {
+        "binding_seq": 9,
+        "route_id": "R",
+        "version": "v2",
+        "state_at_bind": "Q2",
+        "reason": "ECN-42 演示",
+        "from": {
+          "route_id": "R",
+          "version": "v1",
+          "state": "Q"
+        }
+      }
+    ],
+    "attempts": [
+      {
+        "attempt_id": "m1",
+        "step_id": "t_mach_a",
+        "device_id": "dev_cnc",
+        "route_id": "R",
+        "version": "v1",
+        "binding_seq": 8,
+        "from_state": "S0",
+        "to_state": "A",
+        "status": "DONE",
+        "start_time": 600,
+        "end_time": 610
+      },
+      {
+        "attempt_id": "m2",
+        "step_id": "t_asm_a",
+        "device_id": "dev_asm",
+        "route_id": "R",
+        "version": "v1",
+        "binding_seq": 8,
+        "from_state": "A",
+        "to_state": "Q",
+        "status": "DONE",
+        "start_time": 610,
+        "end_time": 615
+      }
+    ],
+    "accepted_counted": false
+  },
+  "explain_start_after_migration": {
+    "allowed": false,
+    "unit_id": "U_MIG",
+    "step_id": "t_insp",
+    "device_id": "dev_insp",
+    "time": 20,
+    "reasons": [
+      {
+        "code": "STEP_NOT_IN_BOUND_PRODUCT",
+        "message": "路线 R@v2 没有 step_id 't_insp'"
+      }
+    ],
+    "occupying_attempt": null,
+    "current": {
+      "unit_id": "U_MIG",
+      "status": "ACTIVE",
+      "current_state": "Q2",
+      "state_kind": "NORMAL",
+      "route_id": "R",
+      "version": "v2",
+      "binding_seq": 9,
+      "accepted_counted": false,
+      "in_flight_attempt": null,
+      "expected_remaining_duration": 7,
+      "completable": true,
+      "first_event_time": 600,
+      "last_event_time": 615,
+      "terminal_time": null,
+      "attempt_count": 2
+    }
+  },
+  "explain_start_new_step": {
+    "allowed": true,
+    "unit_id": "U_MIG",
+    "step_id": "t_insp2",
+    "device_id": "dev_insp",
+    "time": 20,
+    "reasons": [],
+    "occupying_attempt": null,
+    "current": {
+      "unit_id": "U_MIG",
+      "status": "ACTIVE",
+      "current_state": "Q2",
+      "state_kind": "NORMAL",
+      "route_id": "R",
+      "version": "v2",
+      "binding_seq": 9,
+      "accepted_counted": false,
+      "in_flight_attempt": null,
+      "expected_remaining_duration": 7,
+      "completable": true,
+      "first_event_time": 600,
+      "last_event_time": 615,
+      "terminal_time": null,
+      "attempt_count": 2
+    }
+  }
+}

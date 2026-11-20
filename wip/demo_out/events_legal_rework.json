@@ -1,0 +1,114 @@
+[
+  {
+    "acceptance_seq": 100,
+    "event_type": "START",
+    "unit_id": "U_RW",
+    "attempt_id": "rw-1",
+    "time": 200,
+    "step_id": "t_mach_a",
+    "device_id": "dev_cnc"
+  },
+  {
+    "acceptance_seq": 101,
+    "event_type": "FINISH",
+    "unit_id": "U_RW",
+    "attempt_id": "rw-1",
+    "time": 210
+  },
+  {
+    "acceptance_seq": 102,
+    "event_type": "START",
+    "unit_id": "U_RW",
+    "attempt_id": "rw-2",
+    "time": 210,
+    "step_id": "t_asm_a",
+    "device_id": "dev_asm"
+  },
+  {
+    "acceptance_seq": 103,
+    "event_type": "FINISH",
+    "unit_id": "U_RW",
+    "attempt_id": "rw-2",
+    "time": 215
+  },
+  {
+    "acceptance_seq": 104,
+    "event_type": "START",
+    "unit_id": "U_RW",
+    "attempt_id": "rw-3",
+    "time": 215,
+    "step_id": "t_rework_in",
+    "device_id": "dev_insp"
+  },
+  {
+    "acceptance_seq": 105,
+    "event_type": "FINISH",
+    "unit_id": "U_RW",
+    "attempt_id": "rw-3",
+    "time": 218
+  },
+  {
+    "acceptance_seq": 106,
+    "event_type": "START",
+    "unit_id": "U_RW",
+    "attempt_id": "rw-4",
+    "time": 218,
+    "step_id": "t_rework_out",
+    "device_id": "dev_rw"
+  },
+  {
+    "acceptance_seq": 107,
+    "event_type": "FINISH",
+    "unit_id": "U_RW",
+    "attempt_id": "rw-4",
+    "time": 220
+  },
+  {
+    "acceptance_seq": 108,
+    "event_type": "START",
+    "unit_id": "U_RW",
+    "attempt_id": "rw-5",
+    "time": 220,
+    "step_id": "t_rework_in",
+    "device_id": "dev_insp"
+  },
+  {
+    "acceptance_seq": 109,
+    "event_type": "FINISH",
+    "unit_id": "U_RW",
+    "attempt_id": "rw-5",
+    "time": 223
+  },
+  {
+    "acceptance_seq": 110,
+    "event_type": "START",
+    "unit_id": "U_RW",
+    "attempt_id": "rw-6",
+    "time": 223,
+    "step_id": "t_rework_out",
+    "device_id": "dev_rw"
+  },
+  {
+    "acceptance_seq": 111,
+    "event_type": "FINISH",
+    "unit_id": "U_RW",
+    "attempt_id": "rw-6",
+    "time": 225
+  },
+  {
+    "acceptance_seq": 112,
+    "event_type": "START",
+    "unit_id": "U_RW",
+    "attempt_id": "rw-7",
+    "time": 225,
+    "step_id": "t_insp",
+    "device_id": "dev_insp"
+  },
+  {
+    "acceptance_seq": 113,
+    "event_type": "FINISH",
+    "unit_id": "U_RW",
+    "attempt_id": "rw-7",
+    "time": 227
+  }
+]
