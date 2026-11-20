@@ -1,0 +1,414 @@
+{
+  "scope": {
+    "rooms": 12,
+    "bookings": 20,
+    "days": 30
+  },
+  "gallery": {
+    "capacity_without_continuity": {
+      "nightly_availability": {
+        "G1": [
+          [
+            2,
+            8
+          ]
+        ],
+        "G2": [
+          [
+            0,
+            2
+          ],
+          [
+            4,
+            8
+          ]
+        ]
+      },
+      "satisfied": 0,
+      "reason": "no_legal_room",
+      "detail": {
+        "checked_product_version": 4,
+        "product_digest": "b25e044b6966149239d6b42f54d1336bff99ba8368e757c3d13b18639a65bfb4",
+        "rooms_rejected_by": {
+          "capacity": [],
+          "horizon": [],
+          "level": [],
+          "maintenance": [
+            "G1",
+            "G2"
+          ]
+        }
+      }
+    },
+    "half_open_boundary": {
+      "maintenance": [
+        2,
+        5
+      ],
+      "satisfied": [
+        "BOUND-BEFORE",
+        "BOUND-END"
+      ],
+      "unsatisfied": [
+        "BOUND-START"
+      ]
+    },
+    "cleaning_interval": {
+      "cleaning_days": 2,
+      "satisfied": [
+        "CLEAN-A",
+        "CLEAN-C"
+      ],
+      "unsatisfied": {
+        "CLEAN-B": "competition"
+      },
+      "note": "one room, so 0-2 and 4-6 fit and 3-5 must be dropped"
+    },
+    "upgrade_preemption": {
+      "assignments": {
+        "UP-FLEX": "UP1",
+        "UP-SUITE": "UP2"
+      },
+      "upgrade_sum": 0
+    },
+    "equal_cost_tie": {
+      "assignments": {
+        "TIE-1": "TIE-A",
+        "TIE-2": "TIE-B"
+      },
+      "lexicographic_vector": [
+        [
+          "TIE-1",
+          "TIE-A"
+        ],
+        [
+          "TIE-2",
+          "TIE-B"
+        ]
+      ],
+      "note": "sorted booking ids decide, not submission order"
+    },
+    "maintenance_revocation": {
+      "blocked_satisfied": 0,
+      "after_revoke_satisfied": 1,
+      "blocked_reason": "no_legal_room",
+      "old_plan_unchanged": true
+    },
+    "explicit_product": {
+      "old_satisfied": 1,
+      "new_satisfied": 2,
+      "old_rooms": [
+        "OLD-1"
+      ],
+      "old_product_digest": "66c35b90ebb8719ef0e04a0eb9132cce1a276cae6e5b517087d66fcfd424c8c5",
+      "new_product_digest": "5deebb804a197fb81effa17018659ac82506614110ed190ac859b61c85d0331c",
+      "old_plan_reloaded_satisfied": 1
+    }
+  },
+  "initial_plan": {
+    "plan_id": 1,
+    "label": "initial",
+    "state_version": 15,
+    "product_digest": "1d98163d2dacf2918c927b2b1ddae7100e7168b6f6a4e8d25a5fdef493110c48",
+    "slice_digest": "1bce4306b6131b8301ce877c8638ba4086c2aebcc4848cac0f893642a39f7f4c",
+    "slice_watermark": 20,
+    "objective": {
+      "lexicographic_room_vector": [
+        [
+          "BK01",
+          "R01"
+        ],
+        [
+          "BK02",
+          "R05"
+        ],
+        [
+          "BK03",
+          "R02"
+        ],
+        [
+          "BK04",
+          "R06"
+        ],
+        [
+          "BK05",
+          "R09"
+        ],
+        [
+          "BK06",
+          "R01"
+        ],
+        [
+          "BK07",
+          "R05"
+        ],
+        [
+          "BK08",
+          "R02"
+        ],
+        [
+          "BK09",
+          "R06"
+        ],
+        [
+          "BK10",
+          "R01"
+        ],
+        [
+          "BK11",
+          "R02"
+        ],
+        [
+          "BK12",
+          "R03"
+        ],
+        [
+          "BK13",
+          "R09"
+        ],
+        [
+          "BK14",
+          "R01"
+        ],
+        [
+          "BK15",
+          "R05"
+        ],
+        [
+          "BK16",
+          "R02"
+        ],
+        [
+          "BK17",
+          "R06"
+        ],
+        [
+          "BK18",
+          "R09"
+        ],
+        [
+          "BK19",
+          "R10"
+        ],
+        [
+          "BK20",
+          "R07"
+        ]
+      ],
+      "priority": [
+        "max_satisfied",
+        "min_upgrade_sum",
+        "lexicographic_room_ids_with_unsatisfied_last"
+      ],
+      "satisfied": 20,
+      "solver": "OR-Tools CP-SAT",
+      "total_bookings": 20,
+      "unsatisfied_sorts_after_all_room_ids": true,
+      "upgrade_sum": 2
+    },
+    "satisfied": 20,
+    "unsatisfied": 0,
+    "created_at": "2026-11-18T08:22:34.706418+00:00"
+  },
+  "replanned_plan": {
+    "plan_id": 2,
+    "label": "after repair",
+    "state_version": 16,
+    "product_digest": "0e3b867037770f1c2c94f3fbaa863619daf80a386f6ad0c28d957984e239d2bf",
+    "slice_digest": "1bce4306b6131b8301ce877c8638ba4086c2aebcc4848cac0f893642a39f7f4c",
+    "slice_watermark": 20,
+    "objective": {
+      "lexicographic_room_vector": [
+        [
+          "BK01",
+          "R01"
+        ],
+        [
+          "BK02",
+          "R05"
+        ],
+        [
+          "BK03",
+          "R02"
+        ],
+        [
+          "BK04",
+          "R06"
+        ],
+        [
+          "BK05",
+          "R09"
+        ],
+        [
+          "BK06",
+          "R02"
+        ],
+        [
+          "BK07",
+          "R05"
+        ],
+        [
+          "BK08",
+          "R01"
+        ],
+        [
+          "BK09",
+          "R06"
+        ],
+        [
+          "BK10",
+          "R02"
+        ],
+        [
+          "BK11",
+          "R01"
+        ],
+        [
+          "BK12",
+          "R03"
+        ],
+        [
+          "BK13",
+          "R09"
+        ],
+        [
+          "BK14",
+          "R02"
+        ],
+        [
+          "BK15",
+          "R05"
+        ],
+        [
+          "BK16",
+          "R01"
+        ],
+        [
+          "BK17",
+          "R06"
+        ],
+        [
+          "BK18",
+          "R09"
+        ],
+        [
+          "BK19",
+          "R10"
+        ],
+        [
+          "BK20",
+          "R07"
+        ]
+      ],
+      "priority": [
+        "max_satisfied",
+        "min_upgrade_sum",
+        "lexicographic_room_ids_with_unsatisfied_last"
+      ],
+      "satisfied": 20,
+      "solver": "OR-Tools CP-SAT",
+      "total_bookings": 20,
+      "unsatisfied_sorts_after_all_room_ids": true,
+      "upgrade_sum": 2
+    },
+    "satisfied": 20,
+    "unsatisfied": 0,
+    "created_at": "2026-11-18T08:22:34.785276+00:00"
+  },
+  "moves": [
+    {
+      "booking_id": "BK06",
+      "before": "R01",
+      "after": "R02"
+    },
+    {
+      "booking_id": "BK08",
+      "before": "R02",
+      "after": "R01"
+    },
+    {
+      "booking_id": "BK10",
+      "before": "R01",
+      "after": "R02"
+    },
+    {
+      "booking_id": "BK11",
+      "before": "R02",
+      "after": "R01"
+    },
+    {
+      "booking_id": "BK14",
+      "before": "R01",
+      "after": "R02"
+    },
+    {
+      "booking_id": "BK16",
+      "before": "R02",
+      "after": "R01"
+    }
+  ],
+  "untouched_bookings_that_moved": [
+    {
+      "booking_id": "BK08",
+      "before": "R02",
+      "after": "R01"
+    },
+    {
+      "booking_id": "BK10",
+      "before": "R01",
+      "after": "R02"
+    },
+    {
+      "booking_id": "BK11",
+      "before": "R02",
+      "after": "R01"
+    },
+    {
+      "booking_id": "BK14",
+      "before": "R01",
+      "after": "R02"
+    },
+    {
+      "booking_id": "BK16",
+      "before": "R02",
+      "after": "R01"
+    }
+  ],
+  "old_plan_stable": true,
+  "oracle": {
+    "rooms": 4,
+    "bookings": 6,
+    "solver_satisfied": 6,
+    "solver_upgrade_sum": 1,
+    "solver_assignments": {
+      "O-A": "O2",
+      "O-B": "O4",
+      "O-C": "O3",
+      "O-D": "O1",
+      "O-E": "O2",
+      "O-F": "O3"
+    },
+    "oracle_satisfied": 6,
+    "oracle_upgrade_sum": 1,
+    "oracle_assignments": {
+      "O-A": "O2",
+      "O-B": "O4",
+      "O-C": "O3",
+      "O-D": "O1",
+      "O-E": "O2",
+      "O-F": "O3"
+    },
+    "match": true
+  },
+  "revision_rules": {
+    "replay_same_revision": "no-op",
+    "same_revision_different_content": "rejected: maintenance 'MX04' revision 1 already committed with different content",
+    "older_revision": "rejected: maintenance 'MX04' revision 2 is older than head revision 3",
+    "revived_after_revoke": "rejected: maintenance 'MX04' is revoked; it cannot be revived"
+  },
+  "persisted": {
+    "plans": 2,
+    "assignments": 40,
+    "state_products": 2
+  }
+}

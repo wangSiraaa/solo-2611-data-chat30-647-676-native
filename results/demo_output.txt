@@ -1,0 +1,339 @@
+
+==============================================================================
+0. Fresh SQLite database
+==============================================================================
+database: /workspace/results/hotel.sqlite3
+The room-state service works without any booking; the fulfilment
+vault only sees products and booking slices it is handed.
+
+==============================================================================
+1. Focused scenario gallery
+==============================================================================
+{
+  "capacity_without_continuity": {
+    "nightly_availability": {
+      "G1": [
+        [
+          2,
+          8
+        ]
+      ],
+      "G2": [
+        [
+          0,
+          2
+        ],
+        [
+          4,
+          8
+        ]
+      ]
+    },
+    "satisfied": 0,
+    "reason": "no_legal_room",
+    "detail": {
+      "checked_product_version": 4,
+      "product_digest": "b25e044b6966149239d6b42f54d1336bff99ba8368e757c3d13b18639a65bfb4",
+      "rooms_rejected_by": {
+        "capacity": [],
+        "horizon": [],
+        "level": [],
+        "maintenance": [
+          "G1",
+          "G2"
+        ]
+      }
+    }
+  },
+  "half_open_boundary": {
+    "maintenance": [
+      2,
+      5
+    ],
+    "satisfied": [
+      "BOUND-BEFORE",
+      "BOUND-END"
+    ],
+    "unsatisfied": [
+      "BOUND-START"
+    ]
+  },
+  "cleaning_interval": {
+    "cleaning_days": 2,
+    "satisfied": [
+      "CLEAN-A",
+      "CLEAN-C"
+    ],
+    "unsatisfied": {
+      "CLEAN-B": "competition"
+    },
+    "note": "one room, so 0-2 and 4-6 fit and 3-5 must be dropped"
+  },
+  "upgrade_preemption": {
+    "assignments": {
+      "UP-FLEX": "UP1",
+      "UP-SUITE": "UP2"
+    },
+    "upgrade_sum": 0
+  },
+  "equal_cost_tie": {
+    "assignments": {
+      "TIE-1": "TIE-A",
+      "TIE-2": "TIE-B"
+    },
+    "lexicographic_vector": [
+      [
+        "TIE-1",
+        "TIE-A"
+      ],
+      [
+        "TIE-2",
+        "TIE-B"
+      ]
+    ],
+    "note": "sorted booking ids decide, not submission order"
+  },
+  "maintenance_revocation": {
+    "blocked_satisfied": 0,
+    "after_revoke_satisfied": 1,
+    "blocked_reason": "no_legal_room",
+    "old_plan_unchanged": true
+  },
+  "explicit_product": {
+    "old_satisfied": 1,
+    "new_satisfied": 2,
+    "old_rooms": [
+      "OLD-1"
+    ],
+    "old_product_digest": "66c35b90ebb8719ef0e04a0eb9132cce1a276cae6e5b517087d66fcfd424c8c5",
+    "new_product_digest": "5deebb804a197fb81effa17018659ac82506614110ed190ac859b61c85d0331c",
+    "old_plan_reloaded_satisfied": 1
+  }
+}
+
+==============================================================================
+2. 12 rooms / 20 bookings / 30 days
+==============================================================================
+
+Initial plan: {'plan_id': 1, 'label': 'initial', 'state_version': 15, 'product_digest': '1d98163d2dacf2918c927b2b1ddae7100e7168b6f6a4e8d25a5fdef493110c48', 'slice_digest': '1bce4306b6131b8301ce877c8638ba4086c2aebcc4848cac0f893642a39f7f4c', 'slice_watermark': 20, 'objective': {'lexicographic_room_vector': [['BK01', 'R01'], ['BK02', 'R05'], ['BK03', 'R02'], ['BK04', 'R06'], ['BK05', 'R09'], ['BK06', 'R01'], ['BK07', 'R05'], ['BK08', 'R02'], ['BK09', 'R06'], ['BK10', 'R01'], ['BK11', 'R02'], ['BK12', 'R03'], ['BK13', 'R09'], ['BK14', 'R01'], ['BK15', 'R05'], ['BK16', 'R02'], ['BK17', 'R06'], ['BK18', 'R09'], ['BK19', 'R10'], ['BK20', 'R07']], 'priority': ['max_satisfied', 'min_upgrade_sum', 'lexicographic_room_ids_with_unsatisfied_last'], 'satisfied': 20, 'solver': 'OR-Tools CP-SAT', 'total_bookings': 20, 'unsatisfied_sorts_after_all_room_ids': True, 'upgrade_sum': 2}, 'satisfied': 20, 'unsatisfied': 0, 'created_at': '2026-11-18T08:22:34.706418+00:00'}
+  BK01  -> R01  days [ 0, 3) level 1 (requested 1-1, upgrade 0)
+  BK02  -> R05  days [ 0, 2) level 2 (requested 1-2, upgrade 1)
+  BK03  -> R02  days [ 1, 4) level 1 (requested 1-3, upgrade 0)
+  BK04  -> R06  days [ 2, 5) level 2 (requested 2-2, upgrade 0)
+  BK05  -> R09  days [ 3, 6) level 3 (requested 3-3, upgrade 0)
+  BK06  -> R01  days [ 5, 8) level 1 (requested 1-2, upgrade 0)
+  BK07  -> R05  days [ 6, 9) level 2 (requested 2-2, upgrade 0)
+  BK08  -> R02  days [ 8,11) level 1 (requested 1-1, upgrade 0)
+  BK09  -> R06  days [ 9,12) level 2 (requested 2-2, upgrade 0)
+  BK10  -> R01  days [11,14) level 1 (requested 1-3, upgrade 0)
+  BK11  -> R02  days [13,16) level 1 (requested 1-2, upgrade 0)
+  BK12  -> R03  days [14,17) level 1 (requested 1-1, upgrade 0)
+  BK13  -> R09  days [15,18) level 3 (requested 3-3, upgrade 0)
+  BK14  -> R01  days [16,19) level 1 (requested 1-2, upgrade 0)
+  BK15  -> R05  days [17,20) level 2 (requested 2-3, upgrade 0)
+  BK16  -> R02  days [18,21) level 1 (requested 1-1, upgrade 0)
+  BK17  -> R06  days [19,23) level 2 (requested 2-2, upgrade 0)
+  BK18  -> R09  days [20,24) level 3 (requested 3-3, upgrade 0)
+  BK19  -> R10  days [22,26) level 3 (requested 2-3, upgrade 1)
+  BK20  -> R07  days [ 4, 7) level 2 (requested 2-2, upgrade 0)
+
+After repair on R01 [5,8): {'plan_id': 2, 'label': 'after repair', 'state_version': 16, 'product_digest': '0e3b867037770f1c2c94f3fbaa863619daf80a386f6ad0c28d957984e239d2bf', 'slice_digest': '1bce4306b6131b8301ce877c8638ba4086c2aebcc4848cac0f893642a39f7f4c', 'slice_watermark': 20, 'objective': {'lexicographic_room_vector': [['BK01', 'R01'], ['BK02', 'R05'], ['BK03', 'R02'], ['BK04', 'R06'], ['BK05', 'R09'], ['BK06', 'R02'], ['BK07', 'R05'], ['BK08', 'R01'], ['BK09', 'R06'], ['BK10', 'R02'], ['BK11', 'R01'], ['BK12', 'R03'], ['BK13', 'R09'], ['BK14', 'R02'], ['BK15', 'R05'], ['BK16', 'R01'], ['BK17', 'R06'], ['BK18', 'R09'], ['BK19', 'R10'], ['BK20', 'R07']], 'priority': ['max_satisfied', 'min_upgrade_sum', 'lexicographic_room_ids_with_unsatisfied_last'], 'satisfied': 20, 'solver': 'OR-Tools CP-SAT', 'total_bookings': 20, 'unsatisfied_sorts_after_all_room_ids': True, 'upgrade_sum': 2}, 'satisfied': 20, 'unsatisfied': 0, 'created_at': '2026-11-18T08:22:34.785276+00:00'}
+  BK01  -> R01  days [ 0, 3) level 1 (requested 1-1, upgrade 0)
+  BK02  -> R05  days [ 0, 2) level 2 (requested 1-2, upgrade 1)
+  BK03  -> R02  days [ 1, 4) level 1 (requested 1-3, upgrade 0)
+  BK04  -> R06  days [ 2, 5) level 2 (requested 2-2, upgrade 0)
+  BK05  -> R09  days [ 3, 6) level 3 (requested 3-3, upgrade 0)
+  BK06  -> R02  days [ 5, 8) level 1 (requested 1-2, upgrade 0)
+  BK07  -> R05  days [ 6, 9) level 2 (requested 2-2, upgrade 0)
+  BK08  -> R01  days [ 8,11) level 1 (requested 1-1, upgrade 0)
+  BK09  -> R06  days [ 9,12) level 2 (requested 2-2, upgrade 0)
+  BK10  -> R02  days [11,14) level 1 (requested 1-3, upgrade 0)
+  BK11  -> R01  days [13,16) level 1 (requested 1-2, upgrade 0)
+  BK12  -> R03  days [14,17) level 1 (requested 1-1, upgrade 0)
+  BK13  -> R09  days [15,18) level 3 (requested 3-3, upgrade 0)
+  BK14  -> R02  days [16,19) level 1 (requested 1-2, upgrade 0)
+  BK15  -> R05  days [17,20) level 2 (requested 2-3, upgrade 0)
+  BK16  -> R01  days [18,21) level 1 (requested 1-1, upgrade 0)
+  BK17  -> R06  days [19,23) level 2 (requested 2-2, upgrade 0)
+  BK18  -> R09  days [20,24) level 3 (requested 3-3, upgrade 0)
+  BK19  -> R10  days [22,26) level 3 (requested 2-3, upgrade 1)
+  BK20  -> R07  days [ 4, 7) level 2 (requested 2-2, upgrade 0)
+
+Moves caused by the repair:
+  BK06: R01 -> R02
+  BK08: R02 -> R01
+  BK10: R01 -> R02
+  BK11: R02 -> R01
+  BK14: R01 -> R02
+  BK16: R02 -> R01
+
+Moved bookings whose own stay does not intersect the repair (global re-optimisation, not first-night checks):
+  BK08 stay [8,11) did not touch [5,8) but moved R02 -> R01
+  BK10 stay [11,14) did not touch [5,8) but moved R01 -> R02
+  BK11 stay [13,16) did not touch [5,8) but moved R02 -> R01
+  BK14 stay [16,19) did not touch [5,8) but moved R01 -> R02
+  BK16 stay [18,21) did not touch [5,8) but moved R02 -> R01
+
+==============================================================================
+3. Explanations, calendars, unsatisfied reasons
+==============================================================================
+{
+  "plan_id": 2,
+  "booking_id": "BK01",
+  "status": "satisfied",
+  "room_id": "R01",
+  "room_level": 1,
+  "upgrade_delta": 0,
+  "arrival": 0,
+  "departure": 3,
+  "nights": 3,
+  "party_size": 2,
+  "capacity": 2,
+  "cleaning_days_after_stay": 1,
+  "maintenance_in_room": [
+    {
+      "end": 8,
+      "maintenance_id": "MX04",
+      "revision": 1,
+      "start": 5
+    }
+  ],
+  "why": "one room for the whole stay; level 1 is within [1, 1], capacity 2 >= 2, and no maintenance overlaps the stay"
+}
+
+Calendar for R01:
+{
+  "plan_id": 2,
+  "room_id": "R01",
+  "level": 1,
+  "capacity": 2,
+  "cleaning_days": 1,
+  "horizon": [
+    0,
+    30
+  ],
+  "maintenance": [
+    {
+      "maintenance_id": "MX04",
+      "revision": 1,
+      "start": 5,
+      "end": 8
+    }
+  ],
+  "bookings": [
+    {
+      "booking_id": "BK01",
+      "arrival": 0,
+      "departure": 3,
+      "party_size": 2
+    },
+    {
+      "booking_id": "BK08",
+      "arrival": 8,
+      "departure": 11,
+      "party_size": 2
+    },
+    {
+      "booking_id": "BK11",
+      "arrival": 13,
+      "departure": 16,
+      "party_size": 2
+    },
+    {
+      "booking_id": "BK16",
+      "arrival": 18,
+      "departure": 21,
+      "party_size": 2
+    }
+  ],
+  "cleaning_windows": [
+    {
+      "after_booking": "BK01",
+      "start": 3,
+      "end": 4
+    },
+    {
+      "after_booking": "BK08",
+      "start": 11,
+      "end": 12
+    },
+    {
+      "after_booking": "BK11",
+      "start": 16,
+      "end": 17
+    },
+    {
+      "after_booking": "BK16",
+      "start": 21,
+      "end": 22
+    }
+  ],
+  "free": [
+    [
+      3,
+      5
+    ],
+    [
+      11,
+      13
+    ],
+    [
+      16,
+      18
+    ],
+    [
+      21,
+      30
+    ]
+  ]
+}
+
+==============================================================================
+4. Reopen the database; old plan must be byte-for-byte stable
+==============================================================================
+old plan stable across reopen: True
+old product still answers with its own availability: [(0, 30)]
+plan count after reopen: 2 (old plans are kept)
+
+==============================================================================
+5. Independent exhaustive check: 4 rooms / 6 bookings
+==============================================================================
+{
+  "rooms": 4,
+  "bookings": 6,
+  "solver_satisfied": 6,
+  "solver_upgrade_sum": 1,
+  "solver_assignments": {
+    "O-A": "O2",
+    "O-B": "O4",
+    "O-C": "O3",
+    "O-D": "O1",
+    "O-E": "O2",
+    "O-F": "O3"
+  },
+  "oracle_satisfied": 6,
+  "oracle_upgrade_sum": 1,
+  "oracle_assignments": {
+    "O-A": "O2",
+    "O-B": "O4",
+    "O-C": "O3",
+    "O-D": "O1",
+    "O-E": "O2",
+    "O-F": "O3"
+  },
+  "match": true
+}
+
+==============================================================================
+6. Revision rules on the live database
+==============================================================================
+{
+  "replay_same_revision": "no-op",
+  "same_revision_different_content": "rejected: maintenance 'MX04' revision 1 already committed with different content",
+  "older_revision": "rejected: maintenance 'MX04' revision 2 is older than head revision 3",
+  "revived_after_revoke": "rejected: maintenance 'MX04' is revoked; it cannot be revived"
+}
+
+persisted: 2 plans, 40 assignments, 2 immutable state products
+
+wrote /workspace/results/report.json
