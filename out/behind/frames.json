@@ -1,0 +1,42 @@
+{
+  "frames": {
+    "cam_behind": {
+      "frame_id": "cam_behind",
+      "intrinsics": {
+        "cx": 649.3307019635303,
+        "cy": 352.8433908424943,
+        "fx": 1132.3987935082932,
+        "fy": 1172.6332074322459,
+        "height": 720,
+        "width": 1280
+      }
+    },
+    "cam_f": {
+      "frame_id": "cam_f",
+      "intrinsics": {
+        "cx": 649.3307019635303,
+        "cy": 352.8433908424943,
+        "fx": 1132.3987935082932,
+        "fy": 1172.6332074322459,
+        "height": 720,
+        "width": 1280
+      }
+    },
+    "cam_g": {
+      "frame_id": "cam_g",
+      "intrinsics": {
+        "cx": 649.3307019635303,
+        "cy": 352.8433908424943,
+        "fx": 1132.3987935082932,
+        "fy": 1172.6332074322459,
+        "height": 720,
+        "width": 1280
+      }
+    },
+    "world": {
+      "frame_id": "world",
+      "intrinsics": null
+    }
+  },
+  "world_root": "world"
+}

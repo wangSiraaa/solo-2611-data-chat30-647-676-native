@@ -1,0 +1,10 @@
+{"camera_id": "cam_par_a", "obs_id": "track_parallel@000@cam_par_a", "t": 0, "track_id": "track_parallel", "u": 680.1602330706847, "v": 306.5574177632667, "weight": 1.0}
+{"camera_id": "cam_par_b", "obs_id": "track_parallel@000@cam_par_b", "t": 0, "track_id": "track_parallel", "u": 687.1602330706847, "v": 306.5574177632667, "weight": 1.0}
+{"camera_id": "cam_par_a", "obs_id": "track_parallel@001@cam_par_a", "t": 1, "track_id": "track_parallel", "u": 681.6448443643641, "v": 306.5574177632667, "weight": 1.0}
+{"camera_id": "cam_par_b", "obs_id": "track_parallel@001@cam_par_b", "t": 1, "track_id": "track_parallel", "u": 688.6448443643641, "v": 306.5574177632667, "weight": 1.0}
+{"camera_id": "cam_par_a", "obs_id": "track_parallel@002@cam_par_a", "t": 2, "track_id": "track_parallel", "u": 683.1294556580434, "v": 306.5574177632667, "weight": 1.0}
+{"camera_id": "cam_par_b", "obs_id": "track_parallel@002@cam_par_b", "t": 2, "track_id": "track_parallel", "u": 690.1294556580434, "v": 306.5574177632667, "weight": 1.0}
+{"camera_id": "cam_par_a", "obs_id": "track_parallel@003@cam_par_a", "t": 3, "track_id": "track_parallel", "u": 684.6140669517227, "v": 306.5574177632667, "weight": 1.0}
+{"camera_id": "cam_par_b", "obs_id": "track_parallel@003@cam_par_b", "t": 3, "track_id": "track_parallel", "u": 691.6140669517227, "v": 306.5574177632667, "weight": 1.0}
+{"camera_id": "cam_par_a", "obs_id": "track_parallel@004@cam_par_a", "t": 4, "track_id": "track_parallel", "u": 686.0986782454021, "v": 306.5574177632667, "weight": 1.0}
+{"camera_id": "cam_par_b", "obs_id": "track_parallel@004@cam_par_b", "t": 4, "track_id": "track_parallel", "u": 693.0986782454021, "v": 306.5574177632667, "weight": 1.0}

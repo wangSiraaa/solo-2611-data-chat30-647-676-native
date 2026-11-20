@@ -1,0 +1,12 @@
+{
+  "extras": {
+    "expect_reason": "near",
+    "expect_status": "degenerate"
+  },
+  "scenarios": {
+    "track_near": {
+      "description": "1e-4 baseline; eigen ratio below default threshold",
+      "kind": "near_degenerate"
+    }
+  }
+}

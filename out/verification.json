@@ -1,0 +1,578 @@
+{
+  "artifacts": {
+    "graph_db": "./db/calibration_graph.sqlite",
+    "pipeline_summary": "./out/pipeline_summary.json",
+    "scene_dir": "./out/main",
+    "warehouse_db": "./db/trajectory_warehouse.sqlite"
+  },
+  "checks_failed": 0,
+  "checks_passed": 72,
+  "checks_total": 72,
+  "failures": [],
+  "ok": true,
+  "results": [
+    {
+      "check": "scale.frames_20",
+      "detail": 20,
+      "ok": true
+    },
+    {
+      "check": "scale.cameras_8",
+      "detail": [
+        "cam_00",
+        "cam_01",
+        "cam_02",
+        "cam_03",
+        "cam_04",
+        "cam_05",
+        "cam_06",
+        "cam_07"
+      ],
+      "ok": true
+    },
+    {
+      "check": "scale.targets_100",
+      "detail": {
+        "track_gap": {
+          "description": "gap t=2..40 > max_gap",
+          "kind": "time_gap"
+        },
+        "track_single": {
+          "description": "only one camera; no depth",
+          "kind": "single_camera"
+        }
+      },
+      "ok": true
+    },
+    {
+      "check": "scale.base_targets_100",
+      "detail": 100,
+      "ok": true
+    },
+    {
+      "check": "scale.each_target_100_times",
+      "detail": null,
+      "ok": true
+    },
+    {
+      "check": "scale.observations_noise_free_generated",
+      "detail": 80020,
+      "ok": true
+    },
+    {
+      "check": "product_v1.integrity",
+      "detail": "c9e0143a7ab7ac4d",
+      "ok": true
+    },
+    {
+      "check": "product_v2.integrity",
+      "detail": "6e773091ba8ff707",
+      "ok": true
+    },
+    {
+      "check": "product_v1_is_not_v2",
+      "detail": null,
+      "ok": true
+    },
+    {
+      "check": "product_v1.transforms_valid",
+      "detail": [],
+      "ok": true
+    },
+    {
+      "check": "product_v2.transforms_valid",
+      "detail": [],
+      "ok": true
+    },
+    {
+      "check": "product_v2.matches_truth_all_cameras",
+      "detail": {
+        "cam_00": 1.887379141862766e-15,
+        "cam_01": 4.218847493575595e-15,
+        "cam_02": 3.219646771412954e-15,
+        "cam_03": 5.995204332975845e-15,
+        "cam_04": 4.9960036108132044e-15,
+        "cam_05": 6.106226635438361e-15,
+        "cam_06": 2.4424906541753444e-15,
+        "cam_07": 2.4424906541753444e-15
+      },
+      "ok": true
+    },
+    {
+      "check": "product_v1.stale_camera_differs",
+      "detail": 0.3199109032283334,
+      "ok": true
+    },
+    {
+      "check": "product_v1.other_cameras_match",
+      "detail": {
+        "cam_00": 1.887379141862766e-15,
+        "cam_01": 4.218847493575595e-15,
+        "cam_02": 3.219646771412954e-15,
+        "cam_04": 4.9960036108132044e-15,
+        "cam_05": 6.106226635438361e-15,
+        "cam_06": 2.4424906541753444e-15,
+        "cam_07": 2.4424906541753444e-15
+      },
+      "ok": true
+    },
+    {
+      "check": "product_v2.all_cameras_reachable",
+      "detail": [
+        "cam_00",
+        "cam_01",
+        "cam_02",
+        "cam_03",
+        "cam_04",
+        "cam_05",
+        "cam_06",
+        "cam_07"
+      ],
+      "ok": true
+    },
+    {
+      "check": "product_v2.no_unreachable",
+      "detail": {},
+      "ok": true
+    },
+    {
+      "check": "graph.path_composition_invariant",
+      "detail": {
+        "rot": 6.661338147750939e-16,
+        "trans": 6.661338147750939e-16
+      },
+      "ok": true
+    },
+    {
+      "check": "graph.camera_to_world_matches_product",
+      "detail": null,
+      "ok": true
+    },
+    {
+      "check": "graph.round_trip_identity",
+      "detail": null,
+      "ok": true
+    },
+    {
+      "check": "graph.consistent_no_cycle_conflicts",
+      "detail": [],
+      "ok": true
+    },
+    {
+      "check": "warehouse.two_runs_same_dataset",
+      "detail": [
+        {
+          "created_at": 1794984893.988652,
+          "dataset_id": "ds_51632805a30c8a55",
+          "max_gap": 1,
+          "min_eigen_ratio": 0.001,
+          "n_degenerate": 5,
+          "n_inconsistent": 0,
+          "n_points": 10010,
+          "n_published": 10005,
+          "n_segments_allowed": 9903,
+          "n_segments_blocked": 5,
+          "product_id": "main-v1",
+          "run_id": "run_a79b9b0b1875480e"
+        },
+        {
+          "created_at": 1794984895.4401915,
+          "dataset_id": "ds_51632805a30c8a55",
+          "max_gap": 1,
+          "min_eigen_ratio": 0.001,
+          "n_degenerate": 5,
+          "n_inconsistent": 0,
+          "n_points": 10010,
+          "n_published": 10005,
+          "n_segments_allowed": 9903,
+          "n_segments_blocked": 5,
+          "product_id": "main-v2",
+          "run_id": "run_202969e0276740a1"
+        }
+      ],
+      "ok": true
+    },
+    {
+      "check": "warehouse.old_run_preserved_after_rebuild",
+      "detail": null,
+      "ok": true
+    },
+    {
+      "check": "warehouse.old_run_keeps_its_product",
+      "detail": null,
+      "ok": true
+    },
+    {
+      "check": "solver.agrees_with_independent_lstsq",
+      "detail": 1.3354095566024866e-14,
+      "ok": true
+    },
+    {
+      "check": "points.match_synthetic_truth",
+      "detail": 3.477320601100914e-15,
+      "ok": true
+    },
+    {
+      "check": "pixel_reprojection_independent",
+      "detail": 6.915300366811402e-13,
+      "ok": true
+    },
+    {
+      "check": "ray_formula_matches_normalization",
+      "detail": 7.771561172376096e-16,
+      "ok": true
+    },
+    {
+      "check": "no_unexpected_behind_camera_in_sample",
+      "detail": [],
+      "ok": true
+    },
+    {
+      "check": "sample_has_published_points",
+      "detail": {
+        "degenerate": 0,
+        "inconsistent": 0,
+        "published": 400
+      },
+      "ok": true
+    },
+    {
+      "check": "stored_pixel_residuals_zero_run2",
+      "detail": {
+        "avg": 2.324470412154795e-13,
+        "max": 7.031142602530156e-13
+      },
+      "ok": true
+    },
+    {
+      "check": "stale_calibration_visible_in_run1",
+      "detail": {
+        "run1_max": 64.33597332249435,
+        "run2_max": 6.355287432313019e-13
+      },
+      "ok": true
+    },
+    {
+      "check": "gap.segment_blocked",
+      "detail": {
+        "interpolate_allowed": 0,
+        "reason": "time gap 38 > max_gap 1",
+        "run_id": "run_202969e0276740a1",
+        "t0": 2,
+        "t1": 40,
+        "track_id": "track_gap"
+      },
+      "ok": true
+    },
+    {
+      "check": "gap.no_interpolated_position",
+      "detail": {
+        "available": false,
+        "reason": "time gap 38 > max_gap 1",
+        "t0": 2,
+        "t1": 40
+      },
+      "ok": true
+    },
+    {
+      "check": "single_camera.degenerate",
+      "detail": [
+        "degenerate",
+        "degenerate",
+        "degenerate",
+        "degenerate",
+        "degenerate"
+      ],
+      "ok": true
+    },
+    {
+      "check": "single_camera.no_interpolation",
+      "detail": {
+        "available": false,
+        "reason": "endpoint t=1 unavailable (degenerate)",
+        "t0": 1,
+        "t1": 2
+      },
+      "ok": true
+    },
+    {
+      "check": "trace.links_point_to_observations",
+      "detail": {
+        "expected": [
+          "track_091@028@cam_00",
+          "track_091@028@cam_01",
+          "track_091@028@cam_02",
+          "track_091@028@cam_03",
+          "track_091@028@cam_04",
+          "track_091@028@cam_05",
+          "track_091@028@cam_06",
+          "track_091@028@cam_07"
+        ],
+        "obs": [
+          "track_091@028@cam_00",
+          "track_091@028@cam_01",
+          "track_091@028@cam_02",
+          "track_091@028@cam_03",
+          "track_091@028@cam_04",
+          "track_091@028@cam_05",
+          "track_091@028@cam_06",
+          "track_091@028@cam_07"
+        ]
+      },
+      "ok": true
+    },
+    {
+      "check": "trace.uses_product_transforms",
+      "detail": null,
+      "ok": true
+    },
+    {
+      "check": "warehouse.works_without_graph_db",
+      "detail": null,
+      "ok": true
+    },
+    {
+      "check": "parallel.all_degenerate",
+      "detail": [
+        "degenerate",
+        "degenerate",
+        "degenerate",
+        "degenerate",
+        "degenerate"
+      ],
+      "ok": true
+    },
+    {
+      "check": "parallel.rank_below_3",
+      "detail": [
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "ok": true
+    },
+    {
+      "check": "parallel.keeps_failure_evidence",
+      "detail": "normal matrix rank 2/3, eigen ratio 0.000e+00 < threshold 1.000e-03; rays do not constrain depth",
+      "ok": true
+    },
+    {
+      "check": "parallel.no_fabricated_xyz",
+      "detail": null,
+      "ok": true
+    },
+    {
+      "check": "parallel.no_interpolation",
+      "detail": null,
+      "ok": true
+    },
+    {
+      "check": "near.all_degenerate",
+      "detail": [
+        "degenerate",
+        "degenerate",
+        "degenerate",
+        "degenerate",
+        "degenerate"
+      ],
+      "ok": true
+    },
+    {
+      "check": "near.ratio_below_threshold",
+      "detail": [
+        6.009614299405273e-08,
+        6.009614299405273e-08,
+        6.009614299405273e-08,
+        6.009614299405273e-08,
+        6.009614299405273e-08
+      ],
+      "ok": true
+    },
+    {
+      "check": "near.no_fabricated_xyz",
+      "detail": null,
+      "ok": true
+    },
+    {
+      "check": "behind.inconsistent",
+      "detail": [
+        "inconsistent",
+        "inconsistent",
+        "inconsistent",
+        "inconsistent",
+        "inconsistent"
+      ],
+      "ok": true
+    },
+    {
+      "check": "behind.observations_retained",
+      "detail": [
+        "cam_behind",
+        "cam_f",
+        "cam_g"
+      ],
+      "ok": true
+    },
+    {
+      "check": "behind.flags_negative_depth_camera",
+      "detail": [
+        "cam_behind"
+      ],
+      "ok": true
+    },
+    {
+      "check": "behind.point_still_stored",
+      "detail": null,
+      "ok": true
+    },
+    {
+      "check": "behind.no_interpolation",
+      "detail": null,
+      "ok": true
+    },
+    {
+      "check": "unreachable.listed_explicitly",
+      "detail": {
+        "cam_iso": "no path to world root"
+      },
+      "ok": true
+    },
+    {
+      "check": "unreachable.not_in_calibrated",
+      "detail": null,
+      "ok": true
+    },
+    {
+      "check": "unreachable.not_identity_in_product",
+      "detail": null,
+      "ok": true
+    },
+    {
+      "check": "unreachable.reachable_control_ok",
+      "detail": [
+        "published",
+        "published",
+        "published",
+        "published"
+      ],
+      "ok": true
+    },
+    {
+      "check": "loop.conflicting_cycle_rejected",
+      "detail": {
+        "error": "inconsistent cycle rejected: edge edge_bad_cycle gives link_x two transforms (rotation 2.061e+01 deg, translation 1.863e+00)",
+        "graph_version_unchanged": true,
+        "label": "conflicting_cycle",
+        "rejected": true
+      },
+      "ok": true
+    },
+    {
+      "check": "loop.non_orthogonal_R_rejected",
+      "detail": {
+        "error": "edge edge_nonorth: R is not orthogonal under tol=1e-09 (max err 1.000e-01)",
+        "graph_version_unchanged": true,
+        "label": "non_orthogonal_R",
+        "rejected": true
+      },
+      "ok": true
+    },
+    {
+      "check": "loop.det_minus_one_rejected",
+      "detail": {
+        "error": "edge edge_mirror: det(R)=-1.000000000000 differs from 1 by more than tol=1e-09",
+        "graph_version_unchanged": true,
+        "label": "det_minus_one",
+        "rejected": true
+      },
+      "ok": true
+    },
+    {
+      "check": "loop.nan_matrix_rejected",
+      "detail": {
+        "error": "edge edge_nan: R contains non-finite entries",
+        "graph_version_unchanged": true,
+        "label": "nan_matrix",
+        "rejected": true
+      },
+      "ok": true
+    },
+    {
+      "check": "loop.inf_translation_rejected",
+      "detail": {
+        "error": "edge edge_inf: R contains non-finite entries",
+        "graph_version_unchanged": true,
+        "label": "inf_translation",
+        "rejected": true
+      },
+      "ok": true
+    },
+    {
+      "check": "loop.graph_version_unchanged_by_rejections",
+      "detail": 4,
+      "ok": true
+    },
+    {
+      "check": "loop.all_rejections_atomic",
+      "detail": {
+        "atomic": 5,
+        "expected": 5
+      },
+      "ok": true
+    },
+    {
+      "check": "observations.duplicate_identity_rejected",
+      "detail": null,
+      "ok": true
+    },
+    {
+      "check": "observations.nonpositive_weight_rejected",
+      "detail": null,
+      "ok": true
+    },
+    {
+      "check": "observations.noninteger_time_rejected",
+      "detail": null,
+      "ok": true
+    },
+    {
+      "check": "observations.duplicate_obs_id_rejected",
+      "detail": null,
+      "ok": true
+    },
+    {
+      "check": "rebuild.new_run_id",
+      "detail": null,
+      "ok": true
+    },
+    {
+      "check": "rebuild.same_dataset",
+      "detail": null,
+      "ok": true
+    },
+    {
+      "check": "rebuild.old_run_counts_unchanged",
+      "detail": null,
+      "ok": true
+    },
+    {
+      "check": "rebuild.both_runs_queryable",
+      "detail": null,
+      "ok": true
+    },
+    {
+      "check": "rebuild.old_run_points_preserved",
+      "detail": null,
+      "ok": true
+    },
+    {
+      "check": "rebuild.correction_changes_solution",
+      "detail": 0.19006108076235378,
+      "ok": true
+    }
+  ],
+  "temp_workspace": "/tmp/trajcalib_verify_57rf_sci/ws",
+  "workspace": "."
+}

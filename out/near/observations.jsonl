@@ -1,0 +1,10 @@
+{"camera_id": "cam_near_a", "obs_id": "track_near@000@cam_near_a", "t": 0, "track_id": "track_near", "u": 630.6796115361929, "v": 350.37874231254324, "weight": 1.0}
+{"camera_id": "cam_near_b", "obs_id": "track_near@000@cam_near_b", "t": 0, "track_id": "track_near", "u": 630.2749198955481, "v": 350.37874231254324, "weight": 1.0}
+{"camera_id": "cam_near_a", "obs_id": "track_near@001@cam_near_a", "t": 1, "track_id": "track_near", "u": 630.6796115361929, "v": 350.37874231254324, "weight": 1.0}
+{"camera_id": "cam_near_b", "obs_id": "track_near@001@cam_near_b", "t": 1, "track_id": "track_near", "u": 630.2749198955481, "v": 350.37874231254324, "weight": 1.0}
+{"camera_id": "cam_near_a", "obs_id": "track_near@002@cam_near_a", "t": 2, "track_id": "track_near", "u": 630.6796115361929, "v": 350.37874231254324, "weight": 1.0}
+{"camera_id": "cam_near_b", "obs_id": "track_near@002@cam_near_b", "t": 2, "track_id": "track_near", "u": 630.2749198955481, "v": 350.37874231254324, "weight": 1.0}
+{"camera_id": "cam_near_a", "obs_id": "track_near@003@cam_near_a", "t": 3, "track_id": "track_near", "u": 630.6796115361929, "v": 350.37874231254324, "weight": 1.0}
+{"camera_id": "cam_near_b", "obs_id": "track_near@003@cam_near_b", "t": 3, "track_id": "track_near", "u": 630.2749198955481, "v": 350.37874231254324, "weight": 1.0}
+{"camera_id": "cam_near_a", "obs_id": "track_near@004@cam_near_a", "t": 4, "track_id": "track_near", "u": 630.6796115361929, "v": 350.37874231254324, "weight": 1.0}
+{"camera_id": "cam_near_b", "obs_id": "track_near@004@cam_near_b", "t": 4, "track_id": "track_near", "u": 630.2749198955481, "v": 350.37874231254324, "weight": 1.0}

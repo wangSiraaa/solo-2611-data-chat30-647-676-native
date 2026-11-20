@@ -1,0 +1,8 @@
+{"camera_id": "cam_r0", "obs_id": "track_unreachable_case@000@cam_r0", "t": 0, "track_id": "track_unreachable_case", "u": 667.8332833309713, "v": 347.66822108105146, "weight": 1.0}
+{"camera_id": "cam_r1", "obs_id": "track_unreachable_case@000@cam_r1", "t": 0, "track_id": "track_unreachable_case", "u": 658.1142035302438, "v": 350.3383295331703, "weight": 1.0}
+{"camera_id": "cam_r0", "obs_id": "track_unreachable_case@001@cam_r0", "t": 1, "track_id": "track_unreachable_case", "u": 667.8332833309713, "v": 347.66822108105146, "weight": 1.0}
+{"camera_id": "cam_r1", "obs_id": "track_unreachable_case@001@cam_r1", "t": 1, "track_id": "track_unreachable_case", "u": 658.1142035302438, "v": 350.3383295331703, "weight": 1.0}
+{"camera_id": "cam_r0", "obs_id": "track_unreachable_case@002@cam_r0", "t": 2, "track_id": "track_unreachable_case", "u": 667.8332833309713, "v": 347.66822108105146, "weight": 1.0}
+{"camera_id": "cam_r1", "obs_id": "track_unreachable_case@002@cam_r1", "t": 2, "track_id": "track_unreachable_case", "u": 658.1142035302438, "v": 350.3383295331703, "weight": 1.0}
+{"camera_id": "cam_r0", "obs_id": "track_unreachable_case@003@cam_r0", "t": 3, "track_id": "track_unreachable_case", "u": 667.8332833309713, "v": 347.66822108105146, "weight": 1.0}
+{"camera_id": "cam_r1", "obs_id": "track_unreachable_case@003@cam_r1", "t": 3, "track_id": "track_unreachable_case", "u": 658.1142035302438, "v": 350.3383295331703, "weight": 1.0}

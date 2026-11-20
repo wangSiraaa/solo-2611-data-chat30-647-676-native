@@ -1,0 +1,315 @@
+{
+  "extras": {
+    "stale_camera": "cam_03"
+  },
+  "scenarios": {
+    "track_000": {
+      "kind": "basic"
+    },
+    "track_001": {
+      "kind": "basic"
+    },
+    "track_002": {
+      "kind": "basic"
+    },
+    "track_003": {
+      "kind": "basic"
+    },
+    "track_004": {
+      "kind": "basic"
+    },
+    "track_005": {
+      "kind": "basic"
+    },
+    "track_006": {
+      "kind": "basic"
+    },
+    "track_007": {
+      "kind": "basic"
+    },
+    "track_008": {
+      "kind": "basic"
+    },
+    "track_009": {
+      "kind": "basic"
+    },
+    "track_010": {
+      "kind": "basic"
+    },
+    "track_011": {
+      "kind": "basic"
+    },
+    "track_012": {
+      "kind": "basic"
+    },
+    "track_013": {
+      "kind": "basic"
+    },
+    "track_014": {
+      "kind": "basic"
+    },
+    "track_015": {
+      "kind": "basic"
+    },
+    "track_016": {
+      "kind": "basic"
+    },
+    "track_017": {
+      "kind": "basic"
+    },
+    "track_018": {
+      "kind": "basic"
+    },
+    "track_019": {
+      "kind": "basic"
+    },
+    "track_020": {
+      "kind": "basic"
+    },
+    "track_021": {
+      "kind": "basic"
+    },
+    "track_022": {
+      "kind": "basic"
+    },
+    "track_023": {
+      "kind": "basic"
+    },
+    "track_024": {
+      "kind": "basic"
+    },
+    "track_025": {
+      "kind": "basic"
+    },
+    "track_026": {
+      "kind": "basic"
+    },
+    "track_027": {
+      "kind": "basic"
+    },
+    "track_028": {
+      "kind": "basic"
+    },
+    "track_029": {
+      "kind": "basic"
+    },
+    "track_030": {
+      "kind": "basic"
+    },
+    "track_031": {
+      "kind": "basic"
+    },
+    "track_032": {
+      "kind": "basic"
+    },
+    "track_033": {
+      "kind": "basic"
+    },
+    "track_034": {
+      "kind": "basic"
+    },
+    "track_035": {
+      "kind": "basic"
+    },
+    "track_036": {
+      "kind": "basic"
+    },
+    "track_037": {
+      "kind": "basic"
+    },
+    "track_038": {
+      "kind": "basic"
+    },
+    "track_039": {
+      "kind": "basic"
+    },
+    "track_040": {
+      "kind": "basic"
+    },
+    "track_041": {
+      "kind": "basic"
+    },
+    "track_042": {
+      "kind": "basic"
+    },
+    "track_043": {
+      "kind": "basic"
+    },
+    "track_044": {
+      "kind": "basic"
+    },
+    "track_045": {
+      "kind": "basic"
+    },
+    "track_046": {
+      "kind": "basic"
+    },
+    "track_047": {
+      "kind": "basic"
+    },
+    "track_048": {
+      "kind": "basic"
+    },
+    "track_049": {
+      "kind": "basic"
+    },
+    "track_050": {
+      "kind": "basic"
+    },
+    "track_051": {
+      "kind": "basic"
+    },
+    "track_052": {
+      "kind": "basic"
+    },
+    "track_053": {
+      "kind": "basic"
+    },
+    "track_054": {
+      "kind": "basic"
+    },
+    "track_055": {
+      "kind": "basic"
+    },
+    "track_056": {
+      "kind": "basic"
+    },
+    "track_057": {
+      "kind": "basic"
+    },
+    "track_058": {
+      "kind": "basic"
+    },
+    "track_059": {
+      "kind": "basic"
+    },
+    "track_060": {
+      "kind": "basic"
+    },
+    "track_061": {
+      "kind": "basic"
+    },
+    "track_062": {
+      "kind": "basic"
+    },
+    "track_063": {
+      "kind": "basic"
+    },
+    "track_064": {
+      "kind": "basic"
+    },
+    "track_065": {
+      "kind": "basic"
+    },
+    "track_066": {
+      "kind": "basic"
+    },
+    "track_067": {
+      "kind": "basic"
+    },
+    "track_068": {
+      "kind": "basic"
+    },
+    "track_069": {
+      "kind": "basic"
+    },
+    "track_070": {
+      "kind": "basic"
+    },
+    "track_071": {
+      "kind": "basic"
+    },
+    "track_072": {
+      "kind": "basic"
+    },
+    "track_073": {
+      "kind": "basic"
+    },
+    "track_074": {
+      "kind": "basic"
+    },
+    "track_075": {
+      "kind": "basic"
+    },
+    "track_076": {
+      "kind": "basic"
+    },
+    "track_077": {
+      "kind": "basic"
+    },
+    "track_078": {
+      "kind": "basic"
+    },
+    "track_079": {
+      "kind": "basic"
+    },
+    "track_080": {
+      "kind": "basic"
+    },
+    "track_081": {
+      "kind": "basic"
+    },
+    "track_082": {
+      "kind": "basic"
+    },
+    "track_083": {
+      "kind": "basic"
+    },
+    "track_084": {
+      "kind": "basic"
+    },
+    "track_085": {
+      "kind": "basic"
+    },
+    "track_086": {
+      "kind": "basic"
+    },
+    "track_087": {
+      "kind": "basic"
+    },
+    "track_088": {
+      "kind": "basic"
+    },
+    "track_089": {
+      "kind": "basic"
+    },
+    "track_090": {
+      "kind": "basic"
+    },
+    "track_091": {
+      "kind": "basic"
+    },
+    "track_092": {
+      "kind": "basic"
+    },
+    "track_093": {
+      "kind": "basic"
+    },
+    "track_094": {
+      "kind": "basic"
+    },
+    "track_095": {
+      "kind": "basic"
+    },
+    "track_096": {
+      "kind": "basic"
+    },
+    "track_097": {
+      "kind": "basic"
+    },
+    "track_098": {
+      "kind": "basic"
+    },
+    "track_099": {
+      "kind": "basic"
+    },
+    "track_gap": {
+      "description": "gap t=2..40 > max_gap",
+      "kind": "time_gap"
+    },
+    "track_single": {
+      "description": "only one camera; no depth",
+      "kind": "single_camera"
+    }
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "frames": {
+    "cam_near_a": {
+      "frame_id": "cam_near_a",
+      "intrinsics": {
+        "cx": 630.6796115361929,
+        "cy": 350.37874231254324,
+        "fx": 825.4122290542231,
+        "fy": 862.2877632944363,
+        "height": 720,
+        "width": 1280
+      }
+    },
+    "cam_near_b": {
+      "frame_id": "cam_near_b",
+      "intrinsics": {
+        "cx": 630.6796115361929,
+        "cy": 350.37874231254324,
+        "fx": 825.4122290542231,
+        "fy": 862.2877632944363,
+        "height": 720,
+        "width": 1280
+      }
+    },
+    "world": {
+      "frame_id": "world",
+      "intrinsics": null
+    }
+  },
+  "world_root": "world"
+}

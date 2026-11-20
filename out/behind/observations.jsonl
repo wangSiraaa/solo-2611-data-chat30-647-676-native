@@ -1,0 +1,15 @@
+{"camera_id": "cam_behind", "obs_id": "track_behind@000@cam_behind", "t": 0, "track_id": "track_behind", "u": 649.3307019635303, "v": 352.8433908424943, "weight": 1.0}
+{"camera_id": "cam_f", "obs_id": "track_behind@000@cam_f", "t": 0, "track_id": "track_behind", "u": 649.3307019635303, "v": 352.8433908424943, "weight": 1.0}
+{"camera_id": "cam_g", "obs_id": "track_behind@000@cam_g", "t": 0, "track_id": "track_behind", "u": 649.3307019635303, "v": 352.8433908424943, "weight": 1.0}
+{"camera_id": "cam_behind", "obs_id": "track_behind@001@cam_behind", "t": 1, "track_id": "track_behind", "u": 687.0773284138068, "v": 372.3872776330317, "weight": 1.0}
+{"camera_id": "cam_f", "obs_id": "track_behind@001@cam_f", "t": 1, "track_id": "track_behind", "u": 660.3816561171527, "v": 351.72125380188925, "weight": 1.0}
+{"camera_id": "cam_g", "obs_id": "track_behind@001@cam_g", "t": 1, "track_id": "track_behind", "u": 654.9366471531106, "v": 355.1203485268287, "weight": 1.0}
+{"camera_id": "cam_behind", "obs_id": "track_behind@002@cam_behind", "t": 2, "track_id": "track_behind", "u": 724.8239548640831, "v": 391.93116442356916, "weight": 1.0}
+{"camera_id": "cam_f", "obs_id": "track_behind@002@cam_f", "t": 2, "track_id": "track_behind", "u": 671.3273630883597, "v": 350.6098037807186, "weight": 1.0}
+{"camera_id": "cam_g", "obs_id": "track_behind@002@cam_g", "t": 2, "track_id": "track_behind", "u": 660.6525128366042, "v": 357.44195244026776, "weight": 1.0}
+{"camera_id": "cam_behind", "obs_id": "track_behind@003@cam_behind", "t": 3, "track_id": "track_behind", "u": 762.5705813143596, "v": 411.47505121410654, "weight": 1.0}
+{"camera_id": "cam_f", "obs_id": "track_behind@003@cam_f", "t": 3, "track_id": "track_behind", "u": 682.1693192825884, "v": 349.5088888308386, "weight": 1.0}
+{"camera_id": "cam_g", "obs_id": "track_behind@003@cam_g", "t": 3, "track_id": "track_behind", "u": 666.4815639791769, "v": 359.80952870842845, "weight": 1.0}
+{"camera_id": "cam_behind", "obs_id": "track_behind@004@cam_behind", "t": 4, "track_id": "track_behind", "u": 800.317207764636, "v": 431.018938004644, "weight": 1.0}
+{"camera_id": "cam_f", "obs_id": "track_behind@004@cam_f", "t": 4, "track_id": "track_behind", "u": 692.9089928712111, "v": 348.41835987105185, "weight": 1.0}
+{"camera_id": "cam_g", "obs_id": "track_behind@004@cam_g", "t": 4, "track_id": "track_behind", "u": 672.4271961446011, "v": 362.22445650195226, "weight": 1.0}

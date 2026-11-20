@@ -1,0 +1,141 @@
+{
+  "frames": {
+    "cam_00": {
+      "frame_id": "cam_00",
+      "intrinsics": {
+        "cx": 634.3863427449237,
+        "cy": 370.91223299418067,
+        "fx": 929.1555260266996,
+        "fy": 885.7371886410255,
+        "height": 720,
+        "width": 1280
+      }
+    },
+    "cam_01": {
+      "frame_id": "cam_01",
+      "intrinsics": {
+        "cx": 640.7048092983954,
+        "cy": 362.92390885383924,
+        "fx": 1126.2402646121332,
+        "fy": 1130.9707899362484,
+        "height": 720,
+        "width": 1280
+      }
+    },
+    "cam_02": {
+      "frame_id": "cam_02",
+      "intrinsics": {
+        "cx": 651.3660332947173,
+        "cy": 370.82265563695876,
+        "fx": 830.8630962118968,
+        "fy": 828.525440166057,
+        "height": 720,
+        "width": 1280
+      }
+    },
+    "cam_03": {
+      "frame_id": "cam_03",
+      "intrinsics": {
+        "cx": 641.7550796187588,
+        "cy": 365.64612225382757,
+        "fx": 926.5306757032306,
+        "fy": 914.7923133922772,
+        "height": 720,
+        "width": 1280
+      }
+    },
+    "cam_04": {
+      "frame_id": "cam_04",
+      "intrinsics": {
+        "cx": 625.7514547996678,
+        "cy": 368.73876601650346,
+        "fx": 957.3652699152204,
+        "fy": 941.0619148369267,
+        "height": 720,
+        "width": 1280
+      }
+    },
+    "cam_05": {
+      "frame_id": "cam_05",
+      "intrinsics": {
+        "cx": 625.1482364538093,
+        "cy": 366.9371663856162,
+        "fx": 1029.347941590877,
+        "fy": 988.3517048032945,
+        "height": 720,
+        "width": 1280
+      }
+    },
+    "cam_06": {
+      "frame_id": "cam_06",
+      "intrinsics": {
+        "cx": 646.6737478846268,
+        "cy": 345.19664107672816,
+        "fx": 1044.4730330654836,
+        "fy": 1095.8738493072794,
+        "height": 720,
+        "width": 1280
+      }
+    },
+    "cam_07": {
+      "frame_id": "cam_07",
+      "intrinsics": {
+        "cx": 640.5204482087239,
+        "cy": 351.58323089588214,
+        "fx": 1150.5192166152626,
+        "fy": 1100.6792436469632,
+        "height": 720,
+        "width": 1280
+      }
+    },
+    "link_00": {
+      "frame_id": "link_00",
+      "intrinsics": null
+    },
+    "link_01": {
+      "frame_id": "link_01",
+      "intrinsics": null
+    },
+    "link_02": {
+      "frame_id": "link_02",
+      "intrinsics": null
+    },
+    "link_03": {
+      "frame_id": "link_03",
+      "intrinsics": null
+    },
+    "link_04": {
+      "frame_id": "link_04",
+      "intrinsics": null
+    },
+    "link_05": {
+      "frame_id": "link_05",
+      "intrinsics": null
+    },
+    "link_06": {
+      "frame_id": "link_06",
+      "intrinsics": null
+    },
+    "link_07": {
+      "frame_id": "link_07",
+      "intrinsics": null
+    },
+    "link_08": {
+      "frame_id": "link_08",
+      "intrinsics": null
+    },
+    "link_09": {
+      "frame_id": "link_09",
+      "intrinsics": null
+    },
+    "link_10": {
+      "frame_id": "link_10",
+      "intrinsics": null
+    },
+    "world": {
+      "frame_id": "world",
+      "intrinsics": null
+    }
+  },
+  "world_root": "world"
+}

@@ -1,0 +1,4183 @@
+{
+  "boundary_tracks": {
+    "v1": {
+      "track_000": {
+        "points": [
+          {
+            "X": [
+              0.8476256704625534,
+              -0.437967545958704,
+              1.9318319759686904
+            ],
+            "eigen_ratio": 0.504551183416778,
+            "rank": 3,
+            "status": "published",
+            "t": 0
+          },
+          {
+            "X": [
+              0.8477131342594931,
+              -0.4264427588284376,
+              1.9357646821457801
+            ],
+            "eigen_ratio": 0.5111685790480611,
+            "rank": 3,
+            "status": "published",
+            "t": 1
+          },
+          {
+            "X": [
+              0.8478675311461856,
+              -0.4150225144471381,
+              1.939504033591932
+            ],
+            "eigen_ratio": 0.5173894140985259,
+            "rank": 3,
+            "status": "published",
+            "t": 2
+          },
+          {
+            "X": [
+              0.8480232396695876,
+              -0.40372116815641024,
+              1.9430756553662138
+            ],
+            "eigen_ratio": 0.5206638820872767,
+            "rank": 3,
+            "status": "published",
+            "t": 3
+          },
+          {
+            "X": [
+              0.8481422536632878,
+              -0.3924882882041684,
+              1.9464880377101612
+            ],
+            "eigen_ratio": 0.5163994422473408,
+            "rank": 3,
+            "status": "published",
+            "t": 4
+          },
+          {
+            "X": [
+              0.8482846587673375,
+              -0.38117653485137754,
+              1.9497442070297883
+            ],
+            "eigen_ratio": 0.5097700195554468,
+            "rank": 3,
+            "status": "published",
+            "t": 5
+          },
+          {
+            "X": [
+              0.8487080160150908,
+              -0.3694946677265543,
+              1.952859991537365
+            ],
+            "eigen_ratio": 0.5032498304182242,
+            "rank": 3,
+            "status": "published",
+            "t": 6
+          },
+          {
+            "X": [
+              0.8500076384739663,
+              -0.356953968804737,
+              1.9558985523723345
+            ],
+            "eigen_ratio": 0.498077021867049,
+            "rank": 3,
+            "status": "published",
+            "t": 7
+          },
+          {
+            "X": [
+              0.8532185154383778,
+              -0.3428917089556367,
+              1.9590259456961436
+            ],
+            "eigen_ratio": 0.4961962701928436,
+            "rank": 3,
+            "status": "published",
+            "t": 8
+          },
+          {
+            "X": [
+              0.8594926407286096,
+              -0.32685495388240526,
+              1.9625497692745157
+            ],
+            "eigen_ratio": 0.5004954455234195,
+            "rank": 3,
+            "status": "published",
+            "t": 9
+          },
+          {
+            "X": [
+              0.8686995408829405,
+              -0.3096706721291572,
+              1.966812060980208
+            ],
+            "eigen_ratio": 0.5131580123917098,
+            "rank": 3,
+            "status": "published",
+            "t": 10
+          },
+          {
+            "X": [
+              0.8778385544940929,
+              -0.2941778328254759,
+              1.9718975081549994
+            ],
+            "eigen_ratio": 0.5180020543910673,
+            "rank": 3,
+            "status": "published",
+            "t": 11
+          },
+          {
+            "X": [
+              0.8827678115629736,
+              -0.28308965135370223,
+              1.9774882072643938
+            ],
+            "eigen_ratio": 0.500392042432022,
+            "rank": 3,
+            "status": "published",
+            "t": 12
+          },
+          {
+            "X": [
+              0.8819766289813847,
+              -0.27612997767797226,
+              1.9830547571420276
+            ],
+            "eigen_ratio": 0.48989276223657907,
+            "rank": 3,
+            "status": "published",
+            "t": 13
+          },
+          {
+            "X": [
+              0.8766815708892031,
+              -0.27112889352103986,
+              1.9881910406761734
+            ],
+            "eigen_ratio": 0.48733899461463476,
+            "rank": 3,
+            "status": "published",
+            "t": 14
+          },
+          {
+            "X": [
+              0.8686343582481746,
+              -0.2663707714646401,
+              1.992781982619971
+            ],
+            "eigen_ratio": 0.4900595475931359,
+            "rank": 3,
+            "status": "published",
+            "t": 15
+          },
+          {
+            "X": [
+              0.859032507729299,
+              -0.2610968366870652,
+              1.9968969761331197
+            ],
+            "eigen_ratio": 0.4954488252554186,
+            "rank": 3,
+            "status": "published",
+            "t": 16
+          },
+          {
+            "X": [
+              0.848509141818353,
+              -0.2550845214416482,
+              2.0006447715617615
+            ],
+            "eigen_ratio": 0.5019401688739475,
+            "rank": 3,
+            "status": "published",
+            "t": 17
+          },
+          {
+            "X": [
+              0.8373729726287116,
+              -0.2482990904389881,
+              2.004110860108762
+            ],
+            "eigen_ratio": 0.5087314485867455,
+            "rank": 3,
+            "status": "published",
+            "t": 18
+          },
+          {
+            "X": [
+              0.8257911725292509,
+              -0.24073738072090656,
+              2.0073478859306575
+            ],
+            "eigen_ratio": 0.5152717950529685,
+            "rank": 3,
+            "status": "published",
+            "t": 19
+          },
+          {
+            "X": [
+              0.8138961778076815,
+              -0.23236842548137837,
+              2.0103824840232
+            ],
+            "eigen_ratio": 0.519362485283875,
+            "rank": 3,
+            "status": "published",
+            "t": 20
+          },
+          {
+            "X": [
+              0.8018541850957487,
+              -0.2231050563551523,
+              2.0132248270872504
+            ],
+            "eigen_ratio": 0.5151485795664232,
+            "rank": 3,
+            "status": "published",
+            "t": 21
+          },
+          {
+            "X": [
+              0.7899334829014281,
+              -0.2127746528321888,
+              2.015879581830238
+            ],
+            "eigen_ratio": 0.5083805302252844,
+            "rank": 3,
+            "status": "published",
+            "t": 22
+          },
+          {
+            "X": [
+              0.7786015505318159,
+              -0.20107532314232648,
+              2.018363059503792
+            ],
+            "eigen_ratio": 0.5017950211984165,
+            "rank": 3,
+            "status": "published",
+            "t": 23
+          },
+          {
+            "X": [
+              0.7686635399469568,
+              -0.18752925376489657,
+              2.0207359394093407
+            ],
+            "eigen_ratio": 0.4966178066275008,
+            "rank": 3,
+            "status": "published",
+            "t": 24
+          },
+          {
+            "X": [
+              0.7613591096486757,
+              -0.1715164559387892,
+              2.0231559100961185
+            ],
+            "eigen_ratio": 0.4948122046351104,
+            "rank": 3,
+            "status": "published",
+            "t": 25
+          },
+          {
+            "X": [
+              0.7580200364850805,
+              -0.15266967137312268,
+              2.0259155274144414
+            ],
+            "eigen_ratio": 0.4992875689509599,
+            "rank": 3,
+            "status": "published",
+            "t": 26
+          },
+          {
+            "X": [
+              0.7586389277041011,
+              -0.13192375215213265,
+              2.0293453625624536
+            ],
+            "eigen_ratio": 0.5121526928661347,
+            "rank": 3,
+            "status": "published",
+            "t": 27
+          },
+          {
+            "X": [
+              0.7603042365372537,
+              -0.11215236034077553,
+              2.0335444739438535
+            ],
+            "eigen_ratio": 0.5143440738406008,
+            "rank": 3,
+            "status": "published",
+            "t": 28
+          },
+          {
+            "X": [
+              0.7590147189179307,
+              -0.09597510438436117,
+              2.038232798944053
+            ],
+            "eigen_ratio": 0.496622454364672,
+            "rank": 3,
+            "status": "published",
+            "t": 29
+          },
+          {
+            "X": [
+              0.7534221919349844,
+              -0.08303050408496411,
+              2.0429103283553918
+            ],
+            "eigen_ratio": 0.4861652383953569,
+            "rank": 3,
+            "status": "published",
+            "t": 30
+          },
+          {
+            "X": [
+              0.7448426353941259,
+              -0.07119408730398862,
+              2.047183080534258
+            ],
+            "eigen_ratio": 0.48376371262684725,
+            "rank": 3,
+            "status": "published",
+            "t": 31
+          },
+          {
+            "X": [
+              0.735072661868939,
+              -0.05887645330920988,
+              2.050937336414779
+            ],
+            "eigen_ratio": 0.48668103976899124,
+            "rank": 3,
+            "status": "published",
+            "t": 32
+          },
+          {
+            "X": [
+              0.7253289180293316,
+              -0.045454520787696066,
+              2.0542393672597603
+            ],
+            "eigen_ratio": 0.49229459886846477,
+            "rank": 3,
+            "status": "published",
+            "t": 33
+          },
+          {
+            "X": [
+              0.7162430920851321,
+              -0.03083080813658613,
+              2.0571951982942442
+            ],
+            "eigen_ratio": 0.4990407652803535,
+            "rank": 3,
+            "status": "published",
+            "t": 34
+          },
+          {
+            "X": [
+              0.708100135875622,
+              -0.015085816961897622,
+              2.0598895044602537
+            ],
+            "eigen_ratio": 0.5061392369044151,
+            "rank": 3,
+            "status": "published",
+            "t": 35
+          },
+          {
+            "X": [
+              0.7010193857518416,
+              0.0016731292610237534,
+              2.062375939859586
+            ],
+            "eigen_ratio": 0.5131451742566727,
+            "rank": 3,
+            "status": "published",
+            "t": 36
+          },
+          {
+            "X": [
+              0.6950605379103549,
+              0.01936781377189862,
+              2.0646835007991515
+            ],
+            "eigen_ratio": 0.5185448258700439,
+            "rank": 3,
+            "status": "published",
+            "t": 37
+          },
+          {
+            "X": [
+              0.6902939717402808,
+              0.0379759131209234,
+              2.0668253608441445
+            ],
+            "eigen_ratio": 0.5145922781386322,
+            "rank": 3,
+            "status": "published",
+            "t": 38
+          },
+          {
+            "X": [
+              0.6868706047422329,
+              0.057557906479677054,
+              2.06880926860706
+            ],
+            "eigen_ratio": 0.5076660444102512,
+            "rank": 3,
+            "status": "published",
+            "t": 39
+          },
+          {
+            "X": [
+              0.685121249784044,
+              0.07829472811152917,
+              2.070653996455371
+            ],
+            "eigen_ratio": 0.5010625551713103,
+            "rank": 3,
+            "status": "published",
+            "t": 40
+          },
+          {
+            "X": [
+              0.6856963072370125,
+              0.10052376672035986,
+              2.0724204554488637
+            ],
+            "eigen_ratio": 0.4959734957488607,
+            "rank": 3,
+            "status": "published",
+            "t": 41
+          },
+          {
+            "X": [
+              0.6896566841903858,
+              0.1246854782396039,
+              2.0742622930324357
+            ],
+            "eigen_ratio": 0.49436367988904395,
+            "rank": 3,
+            "status": "published",
+            "t": 42
+          },
+          {
+            "X": [
+              0.6981139112166552,
+              0.1509186255519139,
+              2.076463504074869
+            ],
+            "eigen_ratio": 0.4991091338187868,
+            "rank": 3,
+            "status": "published",
+            "t": 43
+          },
+          {
+            "X": [
+              0.7107915957672165,
+              0.17807649481754143,
+              2.0793499758907514
+            ],
+            "eigen_ratio": 0.511937036537019,
+            "rank": 3,
+            "status": "published",
+            "t": 44
+          },
+          {
+            "X": [
+              0.7245362758595384,
+              0.20326011790932222,
+              2.083034273489866
+            ],
+            "eigen_ratio": 0.5102417042052804,
+            "rank": 3,
+            "status": "published",
+            "t": 45
+          },
+          {
+            "X": [
+              0.735222745292871,
+              0.22405916883662116,
+              2.087255996122615
+            ],
+            "eigen_ratio": 0.49271879306660826,
+            "rank": 3,
+            "status": "published",
+            "t": 46
+          },
+          {
+            "X": [
+              0.7413992138456432,
+              0.24102835099249004,
+              2.091521059451736
+            ],
+            "eigen_ratio": 0.48252741477788935,
+            "rank": 3,
+            "status": "published",
+            "t": 47
+          },
+          {
+            "X": [
+              0.7442003302029198,
+              0.2562960600470734,
+              2.0954369853675026
+            ],
+            "eigen_ratio": 0.48046494234213527,
+            "rank": 3,
+            "status": "published",
+            "t": 48
+          },
+          {
+            "X": [
+              0.7452049289566732,
+              0.27133789121694035,
+              2.0988941488655635
+            ],
+            "eigen_ratio": 0.48371560409343856,
+            "rank": 3,
+            "status": "published",
+            "t": 49
+          },
+          {
+            "X": [
+              0.7454240243303526,
+              0.28665826698364383,
+              2.101961748517826
+            ],
+            "eigen_ratio": 0.4896370790895331,
+            "rank": 3,
+            "status": "published",
+            "t": 50
+          },
+          {
+            "X": [
+              0.7453087703869531,
+              0.30227419589410437,
+              2.1047466038915807
+            ],
+            "eigen_ratio": 0.496674103498239,
+            "rank": 3,
+            "status": "published",
+            "t": 51
+          },
+          {
+            "X": [
+              0.7449873832260314,
+              0.31806154929198044,
+              2.1073335051616016
+            ],
+            "eigen_ratio": 0.5040755515128922,
+            "rank": 3,
+            "status": "published",
+            "t": 52
+          },
+          {
+            "X": [
+              0.7444455890804059,
+              0.33389723797675225,
+              2.1097761899575147
+            ],
+            "eigen_ratio": 0.5115046278739476,
+            "rank": 3,
+            "status": "published",
+            "t": 53
+          },
+          {
+            "X": [
+              0.7436328202885445,
+              0.34970734087792277,
+              2.1121038671370886
+            ],
+            "eigen_ratio": 0.5185171965108129,
+            "rank": 3,
+            "status": "published",
+            "t": 54
+          },
+          {
+            "X": [
+              0.7425331058678475,
+              0.3654877372530227,
+              2.1143300859559173
+            ],
+            "eigen_ratio": 0.5148842437960631,
+            "rank": 3,
+            "status": "published",
+            "t": 55
+          },
+          {
+            "X": [
+              0.7412357865004224,
+              0.3813251786894962,
+              2.1164628132626278
+            ],
+            "eigen_ratio": 0.5076593417183102,
+            "rank": 3,
+            "status": "published",
+            "t": 56
+          },
+          {
+            "X": [
+              0.7400344712827119,
+              0.3974271590916567,
+              2.1185202935991234
+            ],
+            "eigen_ratio": 0.5009757004432326,
+            "rank": 3,
+            "status": "published",
+            "t": 57
+          },
+          {
+            "X": [
+              0.7395644788524854,
+              0.4141459981127561,
+              2.120560632136955
+            ],
+            "eigen_ratio": 0.49588501661599627,
+            "rank": 3,
+            "status": "published",
+            "t": 58
+          },
+          {
+            "X": [
+              0.7408863452028404,
+              0.4319099950556009,
+              2.1227302913275503
+            ],
+            "eigen_ratio": 0.4943183291827447,
+            "rank": 3,
+            "status": "published",
+            "t": 59
+          },
+          {
+            "X": [
+              0.7451150604988649,
+              0.45082483946591495,
+              2.125299823921071
+            ],
+            "eigen_ratio": 0.4990709328460197,
+            "rank": 3,
+            "status": "published",
+            "t": 60
+          },
+          {
+            "X": [
+              0.7519918300670139,
+              0.4697640894417491,
+              2.128581606276111
+            ],
+            "eigen_ratio": 0.5111820621987996,
+            "rank": 3,
+            "status": "published",
+            "t": 61
+          },
+          {
+            "X": [
+              0.7584693558250709,
+              0.4860407888335302,
+              2.1326866458464466
+            ],
+            "eigen_ratio": 0.5065909859613944,
+            "rank": 3,
+            "status": "published",
+            "t": 62
+          },
+          {
+            "X": [
+              0.7606569472909688,
+              0.49762913651573865,
+              2.137361003156495
+            ],
+            "eigen_ratio": 0.4894093290309549,
+            "rank": 3,
+            "status": "published",
+            "t": 63
+          },
+          {
+            "X": [
+              0.7573364801317121,
+              0.5053940791074408,
+              2.142115132673575
+            ],
+            "eigen_ratio": 0.47949806806624173,
+            "rank": 3,
+            "status": "published",
+            "t": 64
+          },
+          {
+            "X": [
+              0.7497971772421248,
+              0.5115719584314845,
+              2.146564331691303
+            ],
+            "eigen_ratio": 0.4776978003354958,
+            "rank": 3,
+            "status": "published",
+            "t": 65
+          },
+          {
+            "X": [
+              0.7397480310208355,
+              0.5176460709280237,
+              2.150605835096762
+            ],
+            "eigen_ratio": 0.4811660740926052,
+            "rank": 3,
+            "status": "published",
+            "t": 66
+          },
+          {
+            "X": [
+              0.7283513959585848,
+              0.5241361001323674,
+              2.1543093536124434
+            ],
+            "eigen_ratio": 0.4872701950801819,
+            "rank": 3,
+            "status": "published",
+            "t": 67
+          },
+          {
+            "X": [
+              0.7162351030962933,
+              0.531109695262697,
+              2.1577779101963266
+            ],
+            "eigen_ratio": 0.494472959022898,
+            "rank": 3,
+            "status": "published",
+            "t": 68
+          },
+          {
+            "X": [
+              0.7037214528236484,
+              0.5385202445390381,
+              2.161090803126125
+            ],
+            "eigen_ratio": 0.5020404911482557,
+            "rank": 3,
+            "status": "published",
+            "t": 69
+          },
+          {
+            "X": [
+              0.6909984230527945,
+              0.5463346952425132,
+              2.164296364852859
+            ],
+            "eigen_ratio": 0.5096634140462775,
+            "rank": 3,
+            "status": "published",
+            "t": 70
+          },
+          {
+            "X": [
+              0.6782202939601167,
+              0.5545729377932147,
+              2.1674186361287466
+            ],
+            "eigen_ratio": 0.5171807150495825,
+            "rank": 3,
+            "status": "published",
+            "t": 71
+          },
+          {
+            "X": [
+              0.6655738201250565,
+              0.5633224438802175,
+              2.1704660927664525
+            ],
+            "eigen_ratio": 0.5137549053918371,
+            "rank": 3,
+            "status": "published",
+            "t": 72
+          },
+          {
+            "X": [
+              0.6533455641897216,
+              0.572755072221042,
+              2.173441254652174
+            ],
+            "eigen_ratio": 0.5062806464507423,
+            "rank": 3,
+            "status": "published",
+            "t": 73
+          },
+          {
+            "X": [
+              0.642018819930416,
+              0.5831533229638233,
+              2.176355400610869
+            ],
+            "eigen_ratio": 0.4994292328851658,
+            "rank": 3,
+            "status": "published",
+            "t": 74
+          },
+          {
+            "X": [
+              0.632409097818067,
+              0.5949285389267351,
+              2.1792564062027324
+            ],
+            "eigen_ratio": 0.4942284632144547,
+            "rank": 3,
+            "status": "published",
+            "t": 75
+          },
+          {
+            "X": [
+              0.6257426220239113,
+              0.6085446027789484,
+              2.1822744634067024
+            ],
+            "eigen_ratio": 0.49263600742948604,
+            "rank": 3,
+            "status": "published",
+            "t": 76
+          },
+          {
+            "X": [
+              0.6232671759927926,
+              0.6241115270839926,
+              2.1856577475965815
+            ],
+            "eigen_ratio": 0.497442855492974,
+            "rank": 3,
+            "status": "published",
+            "t": 77
+          },
+          {
+            "X": [
+              0.6247990710141132,
+              0.6404983729288033,
+              2.189700227682764
+            ],
+            "eigen_ratio": 0.5091636739961367,
+            "rank": 3,
+            "status": "published",
+            "t": 78
+          },
+          {
+            "X": [
+              0.627339149352942,
+              0.6550777301725134,
+              2.1945195962105943
+            ],
+            "eigen_ratio": 0.503247086338391,
+            "rank": 3,
+            "status": "published",
+            "t": 79
+          },
+          {
+            "X": [
+              0.6270918164987951,
+              0.6659758605463866,
+              2.1998910828960945
+            ],
+            "eigen_ratio": 0.4860498363604934,
+            "rank": 3,
+            "status": "published",
+            "t": 80
+          },
+          {
+            "X": [
+              0.6229353784454674,
+              0.6741727186582255,
+              2.20534840076424
+            ],
+            "eigen_ratio": 0.47622042436312456,
+            "rank": 3,
+            "status": "published",
+            "t": 81
+          },
+          {
+            "X": [
+              0.616184528972124,
+              0.6818981184391645,
+              2.210512831833182
+            ],
+            "eigen_ratio": 0.47457785220915816,
+            "rank": 3,
+            "status": "published",
+            "t": 82
+          },
+          {
+            "X": [
+              0.6085208533108786,
+              0.690567419782226,
+              2.2152745955726587
+            ],
+            "eigen_ratio": 0.4782262177270716,
+            "rank": 3,
+            "status": "published",
+            "t": 83
+          },
+          {
+            "X": [
+              0.601054399167059,
+              0.700630150216605,
+              2.21969142785481
+            ],
+            "eigen_ratio": 0.48451725190078376,
+            "rank": 3,
+            "status": "published",
+            "t": 84
+          },
+          {
+            "X": [
+              0.5943420454780128,
+              0.7120921567649428,
+              2.223855194439241
+            ],
+            "eigen_ratio": 0.4919114054671837,
+            "rank": 3,
+            "status": "published",
+            "t": 85
+          },
+          {
+            "X": [
+              0.5886151609955838,
+              0.7248477001902633,
+              2.227836628327537
+            ],
+            "eigen_ratio": 0.49967483519275213,
+            "rank": 3,
+            "status": "published",
+            "t": 86
+          },
+          {
+            "X": [
+              0.5839496583043811,
+              0.738800658124732,
+              2.2316779249828955
+            ],
+            "eigen_ratio": 0.507498873324294,
+            "rank": 3,
+            "status": "published",
+            "t": 87
+          },
+          {
+            "X": [
+              0.5803675140032446,
+              0.7539015904570714,
+              2.2353985644993495
+            ],
+            "eigen_ratio": 0.5152466544451872,
+            "rank": 3,
+            "status": "published",
+            "t": 88
+          },
+          {
+            "X": [
+              0.5779048606024297,
+              0.7701601518362976,
+              2.2390034213187584
+            ],
+            "eigen_ratio": 0.5121892606417354,
+            "rank": 3,
+            "status": "published",
+            "t": 89
+          },
+          {
+            "X": [
+              0.5766817274351846,
+              0.7876604757338781,
+              2.2424916709607996
+            ],
+            "eigen_ratio": 0.5046211189191301,
+            "rank": 3,
+            "status": "published",
+            "t": 90
+          },
+          {
+            "X": [
+              0.5770013398659426,
+              0.8065828875754285,
+              2.245870510468308
+            ],
+            "eigen_ratio": 0.4977272983897041,
+            "rank": 3,
+            "status": "published",
+            "t": 91
+          },
+          {
+            "X": [
+              0.5794852307990079,
+              0.8272122536867715,
+              2.2491813815386297
+            ],
+            "eigen_ratio": 0.4925466237392845,
+            "rank": 3,
+            "status": "published",
+            "t": 92
+          },
+          {
+            "X": [
+              0.5851453697173935,
+              0.849845966756432,
+              2.2525432593654418
+            ],
+            "eigen_ratio": 0.49104311506049536,
+            "rank": 3,
+            "status": "published",
+            "t": 93
+          },
+          {
+            "X": [
+              0.5949778172158122,
+              0.8743793530848022,
+              2.256188322768277
+            ],
+            "eigen_ratio": 0.49591338903374804,
+            "rank": 3,
+            "status": "published",
+            "t": 94
+          },
+          {
+            "X": [
+              0.6085121705491116,
+              0.8994698432323222,
+              2.260400607084601
+            ],
+            "eigen_ratio": 0.506677118592551,
+            "rank": 3,
+            "status": "published",
+            "t": 95
+          },
+          {
+            "X": [
+              0.6225208605049685,
+              0.9224251070246196,
+              2.265310221467454
+            ],
+            "eigen_ratio": 0.49934271952486986,
+            "rank": 3,
+            "status": "published",
+            "t": 96
+          },
+          {
+            "X": [
+              0.6331187126608976,
+              0.9414909682222534,
+              2.270716708276497
+            ],
+            "eigen_ratio": 0.4824226558929678,
+            "rank": 3,
+            "status": "published",
+            "t": 97
+          },
+          {
+            "X": [
+              0.6391151447509691,
+              0.9577519601113814,
+              2.276165369627558
+            ],
+            "eigen_ratio": 0.472869149222449,
+            "rank": 3,
+            "status": "published",
+            "t": 98
+          },
+          {
+            "X": [
+              0.6416756651911637,
+              0.9733831987554423,
+              2.2812797637688496
+            ],
+            "eigen_ratio": 0.47151007222868574,
+            "rank": 3,
+            "status": "published",
+            "t": 99
+          }
+        ],
+        "segments": [
+          {
+            "interpolate_allowed": 1,
+            "reason": "both endpoints published and gap within limit",
+            "run_id": "run_dc993e2bb1724f05",
+            "t0": 0,
+            "t1": 1,
+            "track_id": "track_000"
+          },
+          {
+            "interpolate_allowed": 1,
+            "reason": "both endpoints published and gap within limit",
+            "run_id": "run_dc993e2bb1724f05",
+            "t0": 1,
+            "t1": 2,
+            "track_id": "track_000"
+          },
+          {
+            "interpolate_allowed": 1,
+            "reason": "both endpoints published and gap within limit",
+            "run_id": "run_dc993e2bb1724f05",
+            "t0": 2,
+            "t1": 3,
+            "track_id": "track_000"
+          },
+          {
+            "interpolate_allowed": 1,
+            "reason": "both endpoints published and gap within limit",
+            "run_id": "run_dc993e2bb1724f05",
+            "t0": 3,
+            "t1": 4,
+            "track_id": "track_000"
+          },
+          {
+            "interpolate_allowed": 1,
+            "reason": "both endpoints published and gap within limit",
+            "run_id": "run_dc993e2bb1724f05",
+            "t0": 4,
+            "t1": 5,
+            "track_id": "track_000"
+          },
+          {
+            "interpolate_allowed": 1,
+            "reason": "both endpoints published and gap within limit",
+            "run_id": "run_dc993e2bb1724f05",
+            "t0": 5,
+            "t1": 6,
+            "track_id": "track_000"
+          },
+          {
+            "interpolate_allowed": 1,
+            "reason": "both endpoints published and gap within limit",
+            "run_id": "run_dc993e2bb1724f05",
+            "t0": 6,
+            "t1": 7,
+            "track_id": "track_000"
+          },
+          {
+            "interpolate_allowed": 1,
+            "reason": "both endpoints published and gap within limit",
+            "run_id": "run_dc993e2bb1724f05",
+            "t0": 7,
+            "t1": 8,
+            "track_id": "track_000"
+          },
+          {
+            "interpolate_allowed": 1,
+            "reason": "both endpoints published and gap within limit",
+            "run_id": "run_dc993e2bb1724f05",
+            "t0": 8,
+            "t1": 9,
+            "track_id": "track_000"
+          },
+          {
+            "interpolate_allowed": 1,
+            "reason": "both endpoints published and gap within limit",
+            "run_id": "run_dc993e2bb1724f05",
+            "t0": 9,
+            "t1": 10,
+            "track_id": "track_000"
+          },
+          {
+            "interpolate_allowed": 1,
+            "reason": "both endpoints published and gap within limit",
+            "run_id": "run_dc993e2bb1724f05",
+            "t0": 10,
+            "t1": 11,
+            "track_id": "track_000"
+          },
+          {
+            "interpolate_allowed": 1,
+            "reason": "both endpoints published and gap within limit",
+            "run_id": "run_dc993e2bb1724f05",
+            "t0": 11,
+            "t1": 12,
+            "track_id": "track_000"
+          },
+          {
+            "interpolate_allowed": 1,
+            "reason": "both endpoints published and gap within limit",
+            "run_id": "run_dc993e2bb1724f05",
+            "t0": 12,
+            "t1": 13,
+            "track_id": "track_000"
+          },
+          {
+            "interpolate_allowed": 1,
+            "reason": "both endpoints published and gap within limit",
+            "run_id": "run_dc993e2bb1724f05",
+            "t0": 13,
+            "t1": 14,
+            "track_id": "track_000"
+          },
+          {
+            "interpolate_allowed": 1,
+            "reason": "both endpoints published and gap within limit",
+            "run_id": "run_dc993e2bb1724f05",
+            "t0": 14,
+            "t1": 15,
+            "track_id": "track_000"
+          },
+          {
+            "interpolate_allowed": 1,
+            "reason": "both endpoints published and gap within limit",
+            "run_id": "run_dc993e2bb1724f05",
+            "t0": 15,
+            "t1": 16,
+            "track_id": "track_000"
+          },
+          {
+            "interpolate_allowed": 1,
+            "reason": "both endpoints published and gap within limit",
+            "run_id": "run_dc993e2bb1724f05",
+            "t0": 16,
+            "t1": 17,
+            "track_id": "track_000"
+          },
+          {
+            "interpolate_allowed": 1,
+            "reason": "both endpoints published and gap within limit",
+            "run_id": "run_dc993e2bb1724f05",
+            "t0": 17,
+            "t1": 18,
+            "track_id": "track_000"
+          },
+          {
+            "interpolate_allowed": 1,
+            "reason": "both endpoints published and gap within limit",
+            "run_id": "run_dc993e2bb1724f05",
+            "t0": 18,
+            "t1": 19,
+            "track_id": "track_000"
+          },
+          {
+            "interpolate_allowed": 1,
+            "reason": "both endpoints published and gap within limit",
+            "run_id": "run_dc993e2bb1724f05",
+            "t0": 19,
+            "t1": 20,
+            "track_id": "track_000"
+          },
+          {
+            "interpolate_allowed": 1,
+            "reason": "both endpoints published and gap within limit",
+            "run_id": "run_dc993e2bb1724f05",
+            "t0": 20,
+            "t1": 21,
+            "track_id": "track_000"
+          },
+          {
+            "interpolate_allowed": 1,
+            "reason": "both endpoints published and gap within limit",
+            "run_id": "run_dc993e2bb1724f05",
+            "t0": 21,
+            "t1": 22,
+            "track_id": "track_000"
+          },
+          {
+            "interpolate_allowed": 1,
+            "reason": "both endpoints published and gap within limit",
+            "run_id": "run_dc993e2bb1724f05",
+            "t0": 22,
+            "t1": 23,
+            "track_id": "track_000"
+          },
+          {
+            "interpolate_allowed": 1,
+            "reason": "both endpoints published and gap within limit",
+            "run_id": "run_dc993e2bb1724f05",
+            "t0": 23,
+            "t1": 24,
+            "track_id": "track_000"
+          },
+          {
+            "interpolate_allowed": 1,
+            "reason": "both endpoints published and gap within limit",
+            "run_id": "run_dc993e2bb1724f05",
+            "t0": 24,
+            "t1": 25,
+            "track_id": "track_000"
+          },
+          {
+            "interpolate_allowed": 1,
+            "reason": "both endpoints published and gap within limit",
+            "run_id": "run_dc993e2bb1724f05",
+            "t0": 25,
+            "t1": 26,
+            "track_id": "track_000"
+          },
+          {
+            "interpolate_allowed": 1,
+            "reason": "both endpoints published and gap within limit",
+            "run_id": "run_dc993e2bb1724f05",
+            "t0": 26,
+            "t1": 27,
+            "track_id": "track_000"
+          },
+          {
+            "interpolate_allowed": 1,
+            "reason": "both endpoints published and gap within limit",
+            "run_id": "run_dc993e2bb1724f05",
+            "t0": 27,
+            "t1": 28,
+            "track_id": "track_000"
+          },
+          {
+            "interpolate_allowed": 1,
+            "reason": "both endpoints published and gap within limit",
+            "run_id": "run_dc993e2bb1724f05",
+            "t0": 28,
+            "t1": 29,
+            "track_id": "track_000"
+          },
+          {
+            "interpolate_allowed": 1,
+            "reason": "both endpoints published and gap within limit",
+            "run_id": "run_dc993e2bb1724f05",
+            "t0": 29,
+            "t1": 30,
+            "track_id": "track_000"
+          },
+          {
+            "interpolate_allowed": 1,
+            "reason": "both endpoints published and gap within limit",
+            "run_id": "run_dc993e2bb1724f05",
+            "t0": 30,
+            "t1": 31,
+            "track_id": "track_000"
+          },
+          {
+            "interpolate_allowed": 1,
+            "reason": "both endpoints published and gap within limit",
+            "run_id": "run_dc993e2bb1724f05",
+            "t0": 31,
+            "t1": 32,
+            "track_id": "track_000"
+          },
+          {
+            "interpolate_allowed": 1,
+            "reason": "both endpoints published and gap within limit",
+            "run_id": "run_dc993e2bb1724f05",
+            "t0": 32,
+            "t1": 33,
+            "track_id": "track_000"
+          },
+          {
+            "interpolate_allowed": 1,
+            "reason": "both endpoints published and gap within limit",
+            "run_id": "run_dc993e2bb1724f05",
+            "t0": 33,
+            "t1": 34,
+            "track_id": "track_000"
+          },
+          {
+            "interpolate_allowed": 1,
+            "reason": "both endpoints published and gap within limit",
+            "run_id": "run_dc993e2bb1724f05",
+            "t0": 34,
+            "t1": 35,
+            "track_id": "track_000"
+          },
+          {
+            "interpolate_allowed": 1,
+            "reason": "both endpoints published and gap within limit",
+            "run_id": "run_dc993e2bb1724f05",
+            "t0": 35,
+            "t1": 36,
+            "track_id": "track_000"
+          },
+          {
+            "interpolate_allowed": 1,
+            "reason": "both endpoints published and gap within limit",
+            "run_id": "run_dc993e2bb1724f05",
+            "t0": 36,
+            "t1": 37,
+            "track_id": "track_000"
+          },
+          {
+            "interpolate_allowed": 1,
+            "reason": "both endpoints published and gap within limit",
+            "run_id": "run_dc993e2bb1724f05",
+            "t0": 37,
+            "t1": 38,
+            "track_id": "track_000"
+          },
+          {
+            "interpolate_allowed": 1,
+            "reason": "both endpoints published and gap within limit",
+            "run_id": "run_dc993e2bb1724f05",
+            "t0": 38,
+            "t1": 39,
+            "track_id": "track_000"
+          },
+          {
+            "interpolate_allowed": 1,
+            "reason": "both endpoints published and gap within limit",
+            "run_id": "run_dc993e2bb1724f05",
+            "t0": 39,
+            "t1": 40,
+            "track_id": "track_000"
+          },
+          {
+            "interpolate_allowed": 1,
+            "reason": "both endpoints published and gap within limit",
+            "run_id": "run_dc993e2bb1724f05",
+            "t0": 40,
+            "t1": 41,
+            "track_id": "track_000"
+          },
+          {
+            "interpolate_allowed": 1,
+            "reason": "both endpoints published and gap within limit",
+            "run_id": "run_dc993e2bb1724f05",
+            "t0": 41,
+            "t1": 42,
+            "track_id": "track_000"
+          },
+          {
+            "interpolate_allowed": 1,
+            "reason": "both endpoints published and gap within limit",
+            "run_id": "run_dc993e2bb1724f05",
+            "t0": 42,
+            "t1": 43,
+            "track_id": "track_000"
+          },
+          {
+            "interpolate_allowed": 1,
+            "reason": "both endpoints published and gap within limit",
+            "run_id": "run_dc993e2bb1724f05",
+            "t0": 43,
+            "t1": 44,
+            "track_id": "track_000"
+          },
+          {
+            "interpolate_allowed": 1,
+            "reason": "both endpoints published and gap within limit",
+            "run_id": "run_dc993e2bb1724f05",
+            "t0": 44,
+            "t1": 45,
+            "track_id": "track_000"
+          },
+          {
+            "interpolate_allowed": 1,
+            "reason": "both endpoints published and gap within limit",
+            "run_id": "run_dc993e2bb1724f05",
+            "t0": 45,
+            "t1": 46,
+            "track_id": "track_000"
+          },
+          {
+            "interpolate_allowed": 1,
+            "reason": "both endpoints published and gap within limit",
+            "run_id": "run_dc993e2bb1724f05",
+            "t0": 46,
+            "t1": 47,
+            "track_id": "track_000"
+          },
+          {
+            "interpolate_allowed": 1,
+            "reason": "both endpoints published and gap within limit",
+            "run_id": "run_dc993e2bb1724f05",
+            "t0": 47,
+            "t1": 48,
+            "track_id": "track_000"
+          },
+          {
+            "interpolate_allowed": 1,
+            "reason": "both endpoints published and gap within limit",
+            "run_id": "run_dc993e2bb1724f05",
+            "t0": 48,
+            "t1": 49,
+            "track_id": "track_000"
+          },
+          {
+            "interpolate_allowed": 1,
+            "reason": "both endpoints published and gap within limit",
+            "run_id": "run_dc993e2bb1724f05",
+            "t0": 49,
+            "t1": 50,
+            "track_id": "track_000"
+          },
+          {
+            "interpolate_allowed": 1,
+            "reason": "both endpoints published and gap within limit",
+            "run_id": "run_dc993e2bb1724f05",
+            "t0": 50,
+            "t1": 51,
+            "track_id": "track_000"
+          },
+          {
+            "interpolate_allowed": 1,
+            "reason": "both endpoints published and gap within limit",
+            "run_id": "run_dc993e2bb1724f05",
+            "t0": 51,
+            "t1": 52,
+            "track_id": "track_000"
+          },
+          {
+            "interpolate_allowed": 1,
+            "reason": "both endpoints published and gap within limit",
+            "run_id": "run_dc993e2bb1724f05",
+            "t0": 52,
+            "t1": 53,
+            "track_id": "track_000"
+          },
+          {
+            "interpolate_allowed": 1,
+            "reason": "both endpoints published and gap within limit",
+            "run_id": "run_dc993e2bb1724f05",
+            "t0": 53,
+            "t1": 54,
+            "track_id": "track_000"
+          },
+          {
+            "interpolate_allowed": 1,
+            "reason": "both endpoints published and gap within limit",
+            "run_id": "run_dc993e2bb1724f05",
+            "t0": 54,
+            "t1": 55,
+            "track_id": "track_000"
+          },
+          {
+            "interpolate_allowed": 1,
+            "reason": "both endpoints published and gap within limit",
+            "run_id": "run_dc993e2bb1724f05",
+            "t0": 55,
+            "t1": 56,
+            "track_id": "track_000"
+          },
+          {
+            "interpolate_allowed": 1,
+            "reason": "both endpoints published and gap within limit",
+            "run_id": "run_dc993e2bb1724f05",
+            "t0": 56,
+            "t1": 57,
+            "track_id": "track_000"
+          },
+          {
+            "interpolate_allowed": 1,
+            "reason": "both endpoints published and gap within limit",
+            "run_id": "run_dc993e2bb1724f05",
+            "t0": 57,
+            "t1": 58,
+            "track_id": "track_000"
+          },
+          {
+            "interpolate_allowed": 1,
+            "reason": "both endpoints published and gap within limit",
+            "run_id": "run_dc993e2bb1724f05",
+            "t0": 58,
+            "t1": 59,
+            "track_id": "track_000"
+          },
+          {
+            "interpolate_allowed": 1,
+            "reason": "both endpoints published and gap within limit",
+            "run_id": "run_dc993e2bb1724f05",
+            "t0": 59,
+            "t1": 60,
+            "track_id": "track_000"
+          },
+          {
+            "interpolate_allowed": 1,
+            "reason": "both endpoints published and gap within limit",
+            "run_id": "run_dc993e2bb1724f05",
+            "t0": 60,
+            "t1": 61,
+            "track_id": "track_000"
+          },
+          {
+            "interpolate_allowed": 1,
+            "reason": "both endpoints published and gap within limit",
+            "run_id": "run_dc993e2bb1724f05",
+            "t0": 61,
+            "t1": 62,
+            "track_id": "track_000"
+          },
+          {
+            "interpolate_allowed": 1,
+            "reason": "both endpoints published and gap within limit",
+            "run_id": "run_dc993e2bb1724f05",
+            "t0": 62,
+            "t1": 63,
+            "track_id": "track_000"
+          },
+          {
+            "interpolate_allowed": 1,
+            "reason": "both endpoints published and gap within limit",
+            "run_id": "run_dc993e2bb1724f05",
+            "t0": 63,
+            "t1": 64,
+            "track_id": "track_000"
+          },
+          {
+            "interpolate_allowed": 1,
+            "reason": "both endpoints published and gap within limit",
+            "run_id": "run_dc993e2bb1724f05",
+            "t0": 64,
+            "t1": 65,
+            "track_id": "track_000"
+          },
+          {
+            "interpolate_allowed": 1,
+            "reason": "both endpoints published and gap within limit",
+            "run_id": "run_dc993e2bb1724f05",
+            "t0": 65,
+            "t1": 66,
+            "track_id": "track_000"
+          },
+          {
+            "interpolate_allowed": 1,
+            "reason": "both endpoints published and gap within limit",
+            "run_id": "run_dc993e2bb1724f05",
+            "t0": 66,
+            "t1": 67,
+            "track_id": "track_000"
+          },
+          {
+            "interpolate_allowed": 1,
+            "reason": "both endpoints published and gap within limit",
+            "run_id": "run_dc993e2bb1724f05",
+            "t0": 67,
+            "t1": 68,
+            "track_id": "track_000"
+          },
+          {
+            "interpolate_allowed": 1,
+            "reason": "both endpoints published and gap within limit",
+            "run_id": "run_dc993e2bb1724f05",
+            "t0": 68,
+            "t1": 69,
+            "track_id": "track_000"
+          },
+          {
+            "interpolate_allowed": 1,
+            "reason": "both endpoints published and gap within limit",
+            "run_id": "run_dc993e2bb1724f05",
+            "t0": 69,
+            "t1": 70,
+            "track_id": "track_000"
+          },
+          {
+            "interpolate_allowed": 1,
+            "reason": "both endpoints published and gap within limit",
+            "run_id": "run_dc993e2bb1724f05",
+            "t0": 70,
+            "t1": 71,
+            "track_id": "track_000"
+          },
+          {
+            "interpolate_allowed": 1,
+            "reason": "both endpoints published and gap within limit",
+            "run_id": "run_dc993e2bb1724f05",
+            "t0": 71,
+            "t1": 72,
+            "track_id": "track_000"
+          },
+          {
+            "interpolate_allowed": 1,
+            "reason": "both endpoints published and gap within limit",
+            "run_id": "run_dc993e2bb1724f05",
+            "t0": 72,
+            "t1": 73,
+            "track_id": "track_000"
+          },
+          {
+            "interpolate_allowed": 1,
+            "reason": "both endpoints published and gap within limit",
+            "run_id": "run_dc993e2bb1724f05",
+            "t0": 73,
+            "t1": 74,
+            "track_id": "track_000"
+          },
+          {
+            "interpolate_allowed": 1,
+            "reason": "both endpoints published and gap within limit",
+            "run_id": "run_dc993e2bb1724f05",
+            "t0": 74,
+            "t1": 75,
+            "track_id": "track_000"
+          },
+          {
+            "interpolate_allowed": 1,
+            "reason": "both endpoints published and gap within limit",
+            "run_id": "run_dc993e2bb1724f05",
+            "t0": 75,
+            "t1": 76,
+            "track_id": "track_000"
+          },
+          {
+            "interpolate_allowed": 1,
+            "reason": "both endpoints published and gap within limit",
+            "run_id": "run_dc993e2bb1724f05",
+            "t0": 76,
+            "t1": 77,
+            "track_id": "track_000"
+          },
+          {
+            "interpolate_allowed": 1,
+            "reason": "both endpoints published and gap within limit",
+            "run_id": "run_dc993e2bb1724f05",
+            "t0": 77,
+            "t1": 78,
+            "track_id": "track_000"
+          },
+          {
+            "interpolate_allowed": 1,
+            "reason": "both endpoints published and gap within limit",
+            "run_id": "run_dc993e2bb1724f05",
+            "t0": 78,
+            "t1": 79,
+            "track_id": "track_000"
+          },
+          {
+            "interpolate_allowed": 1,
+            "reason": "both endpoints published and gap within limit",
+            "run_id": "run_dc993e2bb1724f05",
+            "t0": 79,
+            "t1": 80,
+            "track_id": "track_000"
+          },
+          {
+            "interpolate_allowed": 1,
+            "reason": "both endpoints published and gap within limit",
+            "run_id": "run_dc993e2bb1724f05",
+            "t0": 80,
+            "t1": 81,
+            "track_id": "track_000"
+          },
+          {
+            "interpolate_allowed": 1,
+            "reason": "both endpoints published and gap within limit",
+            "run_id": "run_dc993e2bb1724f05",
+            "t0": 81,
+            "t1": 82,
+            "track_id": "track_000"
+          },
+          {
+            "interpolate_allowed": 1,
+            "reason": "both endpoints published and gap within limit",
+            "run_id": "run_dc993e2bb1724f05",
+            "t0": 82,
+            "t1": 83,
+            "track_id": "track_000"
+          },
+          {
+            "interpolate_allowed": 1,
+            "reason": "both endpoints published and gap within limit",
+            "run_id": "run_dc993e2bb1724f05",
+            "t0": 83,
+            "t1": 84,
+            "track_id": "track_000"
+          },
+          {
+            "interpolate_allowed": 1,
+            "reason": "both endpoints published and gap within limit",
+            "run_id": "run_dc993e2bb1724f05",
+            "t0": 84,
+            "t1": 85,
+            "track_id": "track_000"
+          },
+          {
+            "interpolate_allowed": 1,
+            "reason": "both endpoints published and gap within limit",
+            "run_id": "run_dc993e2bb1724f05",
+            "t0": 85,
+            "t1": 86,
+            "track_id": "track_000"
+          },
+          {
+            "interpolate_allowed": 1,
+            "reason": "both endpoints published and gap within limit",
+            "run_id": "run_dc993e2bb1724f05",
+            "t0": 86,
+            "t1": 87,
+            "track_id": "track_000"
+          },
+          {
+            "interpolate_allowed": 1,
+            "reason": "both endpoints published and gap within limit",
+            "run_id": "run_dc993e2bb1724f05",
+            "t0": 87,
+            "t1": 88,
+            "track_id": "track_000"
+          },
+          {
+            "interpolate_allowed": 1,
+            "reason": "both endpoints published and gap within limit",
+            "run_id": "run_dc993e2bb1724f05",
+            "t0": 88,
+            "t1": 89,
+            "track_id": "track_000"
+          },
+          {
+            "interpolate_allowed": 1,
+            "reason": "both endpoints published and gap within limit",
+            "run_id": "run_dc993e2bb1724f05",
+            "t0": 89,
+            "t1": 90,
+            "track_id": "track_000"
+          },
+          {
+            "interpolate_allowed": 1,
+            "reason": "both endpoints published and gap within limit",
+            "run_id": "run_dc993e2bb1724f05",
+            "t0": 90,
+            "t1": 91,
+            "track_id": "track_000"
+          },
+          {
+            "interpolate_allowed": 1,
+            "reason": "both endpoints published and gap within limit",
+            "run_id": "run_dc993e2bb1724f05",
+            "t0": 91,
+            "t1": 92,
+            "track_id": "track_000"
+          },
+          {
+            "interpolate_allowed": 1,
+            "reason": "both endpoints published and gap within limit",
+            "run_id": "run_dc993e2bb1724f05",
+            "t0": 92,
+            "t1": 93,
+            "track_id": "track_000"
+          },
+          {
+            "interpolate_allowed": 1,
+            "reason": "both endpoints published and gap within limit",
+            "run_id": "run_dc993e2bb1724f05",
+            "t0": 93,
+            "t1": 94,
+            "track_id": "track_000"
+          },
+          {
+            "interpolate_allowed": 1,
+            "reason": "both endpoints published and gap within limit",
+            "run_id": "run_dc993e2bb1724f05",
+            "t0": 94,
+            "t1": 95,
+            "track_id": "track_000"
+          },
+          {
+            "interpolate_allowed": 1,
+            "reason": "both endpoints published and gap within limit",
+            "run_id": "run_dc993e2bb1724f05",
+            "t0": 95,
+            "t1": 96,
+            "track_id": "track_000"
+          },
+          {
+            "interpolate_allowed": 1,
+            "reason": "both endpoints published and gap within limit",
+            "run_id": "run_dc993e2bb1724f05",
+            "t0": 96,
+            "t1": 97,
+            "track_id": "track_000"
+          },
+          {
+            "interpolate_allowed": 1,
+            "reason": "both endpoints published and gap within limit",
+            "run_id": "run_dc993e2bb1724f05",
+            "t0": 97,
+            "t1": 98,
+            "track_id": "track_000"
+          },
+          {
+            "interpolate_allowed": 1,
+            "reason": "both endpoints published and gap within limit",
+            "run_id": "run_dc993e2bb1724f05",
+            "t0": 98,
+            "t1": 99,
+            "track_id": "track_000"
+          }
+        ]
+      },
+      "track_gap": {
+        "points": [
+          {
+            "X": [
+              -0.7999999999999993,
+              0.7000000000000034,
+              1.9999999999999971
+            ],
+            "eigen_ratio": 0.320035606988044,
+            "rank": 3,
+            "status": "published",
+            "t": 0
+          },
+          {
+            "X": [
+              -0.794999999999999,
+              0.7000000000000034,
+              1.999999999999997
+            ],
+            "eigen_ratio": 0.3212199599712664,
+            "rank": 3,
+            "status": "published",
+            "t": 1
+          },
+          {
+            "X": [
+              -0.7899999999999999,
+              0.7000000000000021,
+              1.9999999999999973
+            ],
+            "eigen_ratio": 0.32220131993819334,
+            "rank": 3,
+            "status": "published",
+            "t": 2
+          },
+          {
+            "X": [
+              -0.599999999999998,
+              0.7000000000000043,
+              1.999999999999997
+            ],
+            "eigen_ratio": 0.3191903784904648,
+            "rank": 3,
+            "status": "published",
+            "t": 40
+          },
+          {
+            "X": [
+              -0.5949999999999974,
+              0.7000000000000034,
+              1.9999999999999971
+            ],
+            "eigen_ratio": 0.3186703858275773,
+            "rank": 3,
+            "status": "published",
+            "t": 41
+          }
+        ],
+        "segments": [
+          {
+            "interpolate_allowed": 1,
+            "reason": "both endpoints published and gap within limit",
+            "run_id": "run_dc993e2bb1724f05",
+            "t0": 0,
+            "t1": 1,
+            "track_id": "track_gap"
+          },
+          {
+            "interpolate_allowed": 1,
+            "reason": "both endpoints published and gap within limit",
+            "run_id": "run_dc993e2bb1724f05",
+            "t0": 1,
+            "t1": 2,
+            "track_id": "track_gap"
+          },
+          {
+            "interpolate_allowed": 0,
+            "reason": "time gap 38 > max_gap 1",
+            "run_id": "run_dc993e2bb1724f05",
+            "t0": 2,
+            "t1": 40,
+            "track_id": "track_gap"
+          },
+          {
+            "interpolate_allowed": 1,
+            "reason": "both endpoints published and gap within limit",
+            "run_id": "run_dc993e2bb1724f05",
+            "t0": 40,
+            "t1": 41,
+            "track_id": "track_gap"
+          }
+        ]
+      },
+      "track_single": {
+        "points": [
+          {
+            "X": null,
+            "eigen_ratio": 7.406636912367441e-17,
+            "rank": 2,
+            "status": "degenerate",
+            "t": 0
+          },
+          {
+            "X": null,
+            "eigen_ratio": 1.456938548094184e-16,
+            "rank": 2,
+            "status": "degenerate",
+            "t": 1
+          },
+          {
+            "X": null,
+            "eigen_ratio": 4.0517677091094784e-17,
+            "rank": 2,
+            "status": "degenerate",
+            "t": 2
+          },
+          {
+            "X": null,
+            "eigen_ratio": 1.39242417953144e-16,
+            "rank": 2,
+            "status": "degenerate",
+            "t": 3
+          },
+          {
+            "X": null,
+            "eigen_ratio": 0.0,
+            "rank": 2,
+            "status": "degenerate",
+            "t": 4
+          }
+        ],
+        "segments": [
+          {
+            "interpolate_allowed": 0,
+            "reason": "endpoint t=0 unavailable (degenerate)",
+            "run_id": "run_dc993e2bb1724f05",
+            "t0": 0,
+            "t1": 1,
+            "track_id": "track_single"
+          },
+          {
+            "interpolate_allowed": 0,
+            "reason": "endpoint t=1 unavailable (degenerate)",
+            "run_id": "run_dc993e2bb1724f05",
+            "t0": 1,
+            "t1": 2,
+            "track_id": "track_single"
+          },
+          {
+            "interpolate_allowed": 0,
+            "reason": "endpoint t=2 unavailable (degenerate)",
+            "run_id": "run_dc993e2bb1724f05",
+            "t0": 2,
+            "t1": 3,
+            "track_id": "track_single"
+          },
+          {
+            "interpolate_allowed": 0,
+            "reason": "endpoint t=3 unavailable (degenerate)",
+            "run_id": "run_dc993e2bb1724f05",
+            "t0": 3,
+            "t1": 4,
+            "track_id": "track_single"
+          }
+        ]
+      }
+    },
+    "v2": {
+      "track_000": {
+        "points": [
+          {
+            "X": [
+              0.9493759240380464,
+              -0.2815254765723998,
+              1.8958322642475165
+            ],
+            "eigen_ratio": 0.509326001989654,
+            "rank": 3,
+            "status": "published",
+            "t": 0
+          },
+          {
+            "X": [
+              0.9536130599591639,
+              -0.26704085728318405,
+              1.9000631023073147
+            ],
+            "eigen_ratio": 0.5163057006267503,
+            "rank": 3,
+            "status": "published",
+            "t": 1
+          },
+          {
+            "X": [
+              0.957736005467692,
+              -0.25318335686619825,
+              1.9042903641218512
+            ],
+            "eigen_ratio": 0.5231855375280325,
+            "rank": 3,
+            "status": "published",
+            "t": 2
+          },
+          {
+            "X": [
+              0.9616324972527149,
+              -0.23994158153917539,
+              1.9085104909623163
+            ],
+            "eigen_ratio": 0.521140357454012,
+            "rank": 3,
+            "status": "published",
+            "t": 3
+          },
+          {
+            "X": [
+              0.9651940936844969,
+              -0.227296694755597,
+              1.9127199590469954
+            ],
+            "eigen_ratio": 0.5137676482908315,
+            "rank": 3,
+            "status": "published",
+            "t": 4
+          },
+          {
+            "X": [
+              0.9683180048984682,
+              -0.21522264489716011,
+              1.916915296800756
+            ],
+            "eigen_ratio": 0.506445311909819,
+            "rank": 3,
+            "status": "published",
+            "t": 5
+          },
+          {
+            "X": [
+              0.970908827498833,
+              -0.20368648018065375,
+              1.9210931018588202
+            ],
+            "eigen_ratio": 0.4996487589642548,
+            "rank": 3,
+            "status": "published",
+            "t": 6
+          },
+          {
+            "X": [
+              0.9728801546065615,
+              -0.19264874697264564,
+              1.9252500577315428
+            ],
+            "eigen_ratio": 0.494338608251187,
+            "rank": 3,
+            "status": "published",
+            "t": 7
+          },
+          {
+            "X": [
+              0.9741560340802422,
+              -0.1820639666972822,
+              1.9293829500485786
+            ],
+            "eigen_ratio": 0.4923915290449517,
+            "rank": 3,
+            "status": "published",
+            "t": 8
+          },
+          {
+            "X": [
+              0.9746722503005668,
+              -0.1718811855723954,
+              1.9334886823028656
+            ],
+            "eigen_ratio": 0.4966493463361673,
+            "rank": 3,
+            "status": "published",
+            "t": 9
+          },
+          {
+            "X": [
+              0.9743774078867724,
+              -0.16204459052884088,
+              1.9375642910173165
+            ],
+            "eigen_ratio": 0.5091330966892591,
+            "rank": 3,
+            "status": "published",
+            "t": 10
+          },
+          {
+            "X": [
+              0.9732337990560156,
+              -0.1524941838679548,
+              1.9416069602599277
+            ],
+            "eigen_ratio": 0.520209525086495,
+            "rank": 3,
+            "status": "published",
+            "t": 11
+          },
+          {
+            "X": [
+              0.9712180399879246,
+              -0.14316650850196516,
+              1.945614035436208
+            ],
+            "eigen_ratio": 0.5041907339064133,
+            "rank": 3,
+            "status": "published",
+            "t": 12
+          },
+          {
+            "X": [
+              0.9683214654549277,
+              -0.13399541501084425,
+              1.949583036291388
+            ],
+            "eigen_ratio": 0.49393742260763546,
+            "rank": 3,
+            "status": "published",
+            "t": 13
+          },
+          {
+            "X": [
+              0.9645502750584749,
+              -0.12491286124353701,
+              1.953511669058705
+            ],
+            "eigen_ratio": 0.4915930270305722,
+            "rank": 3,
+            "status": "published",
+            "t": 14
+          },
+          {
+            "X": [
+              0.9599254286032431,
+              -0.11584973479815514,
+              1.957397837694267
+            ],
+            "eigen_ratio": 0.4945214644577577,
+            "rank": 3,
+            "status": "published",
+            "t": 15
+          },
+          {
+            "X": [
+              0.954482292375022,
+              -0.10673668843914606,
+              1.96123965414348
+            ],
+            "eigen_ratio": 0.5001183592484316,
+            "rank": 3,
+            "status": "published",
+            "t": 16
+          },
+          {
+            "X": [
+              0.9482700422917513,
+              -0.09750497835309735,
+              1.9650354475887348
+            ],
+            "eigen_ratio": 0.5068325788300326,
+            "rank": 3,
+            "status": "published",
+            "t": 17
+          },
+          {
+            "X": [
+              0.9413508340002846,
+              -0.08808729511047461,
+              1.968783772633074
+            ],
+            "eigen_ratio": 0.5139131589069816,
+            "rank": 3,
+            "status": "published",
+            "t": 18
+          },
+          {
+            "X": [
+              0.9337987539244683,
+              -0.07841857728883526,
+              1.9724834163797427
+            ],
+            "eigen_ratio": 0.52099136829657,
+            "rank": 3,
+            "status": "published",
+            "t": 19
+          },
+          {
+            "X": [
+              0.9256985689669192,
+              -0.06843679792253526,
+              1.9761334043729566
+            ],
+            "eigen_ratio": 0.5194434067419826,
+            "rank": 3,
+            "status": "published",
+            "t": 20
+          },
+          {
+            "X": [
+              0.9171442959647402,
+              -0.05808371427255854,
+              1.9797330053707893
+            ],
+            "eigen_ratio": 0.5120000156459218,
+            "rank": 3,
+            "status": "published",
+            "t": 21
+          },
+          {
+            "X": [
+              0.9082376150414114,
+              -0.047305571853322695,
+              1.98328173492679
+            ],
+            "eigen_ratio": 0.5046452017827981,
+            "rank": 3,
+            "status": "published",
+            "t": 22
+          },
+          {
+            "X": [
+              0.8990861536313917,
+              -0.036053754206374196,
+              1.986779357762803
+            ],
+            "eigen_ratio": 0.4978369966283375,
+            "rank": 3,
+            "status": "published",
+            "t": 23
+          },
+          {
+            "X": [
+              0.8898016701366719,
+              -0.024285370566613285,
+              1.9902258889213664
+            ],
+            "eigen_ratio": 0.4925521960536475,
+            "rank": 3,
+            "status": "published",
+            "t": 24
+          },
+          {
+            "X": [
+              0.8804981678682219,
+              -0.011963774317455923,
+              1.9936215936920227
+            ],
+            "eigen_ratio": 0.4906966585479672,
+            "rank": 3,
+            "status": "published",
+            "t": 25
+          },
+          {
+            "X": [
+              0.8712899711018749,
+              0.0009409940320359495,
+              1.9969669863119404
+            ],
+            "eigen_ratio": 0.49513181385834315,
+            "rank": 3,
+            "status": "published",
+            "t": 26
+          },
+          {
+            "X": [
+              0.8622897957175559,
+              0.014451844702706166,
+              2.0002628274471737
+            ],
+            "eigen_ratio": 0.5077683383510625,
+            "rank": 3,
+            "status": "published",
+            "t": 27
+          },
+          {
+            "X": [
+              0.8536068469821265,
+              0.028584361711040132,
+              2.003510120466927
+            ],
+            "eigen_ratio": 0.5166243774807842,
+            "rank": 3,
+            "status": "published",
+            "t": 28
+          },
+          {
+            "X": [
+              0.8453449765780883,
+              0.043346614492625064,
+              2.006710106529049
+            ],
+            "eigen_ratio": 0.5004753693015564,
+            "rank": 3,
+            "status": "published",
+            "t": 29
+          },
+          {
+            "X": [
+              0.837600929980512,
+              0.058739060360393495,
+              2.00986425850084
+            ],
+            "eigen_ratio": 0.49029769837728715,
+            "rank": 3,
+            "status": "published",
+            "t": 30
+          },
+          {
+            "X": [
+              0.8304627137598382,
+              0.07475453897671784,
+              2.012974273744956
+            ],
+            "eigen_ratio": 0.48811971341498384,
+            "rank": 3,
+            "status": "published",
+            "t": 31
+          },
+          {
+            "X": [
+              0.8240081103642874,
+              0.09137835890616701,
+              2.016042065805718
+            ],
+            "eigen_ratio": 0.4912509019154714,
+            "rank": 3,
+            "status": "published",
+            "t": 32
+          },
+          {
+            "X": [
+              0.8183033654467224,
+              0.108588475202697,
+              2.0190697550365813
+            ],
+            "eigen_ratio": 0.49706936188773126,
+            "rank": 3,
+            "status": "published",
+            "t": 33
+          },
+          {
+            "X": [
+              0.8134020698889384,
+              0.1263557558846402,
+              2.0220596582146415
+            ],
+            "eigen_ratio": 0.5040202997252328,
+            "rank": 3,
+            "status": "published",
+            "t": 34
+          },
+          {
+            "X": [
+              0.8093442553905413,
+              0.14464433407639926,
+              2.0250142771930606
+            ],
+            "eigen_ratio": 0.5113539469000328,
+            "rank": 3,
+            "status": "published",
+            "t": 35
+          },
+          {
+            "X": [
+              0.8061557188854814,
+              0.163412041560204,
+              2.027936286646992
+            ],
+            "eigen_ratio": 0.5187471907336312,
+            "rank": 3,
+            "status": "published",
+            "t": 36
+          },
+          {
+            "X": [
+              0.8038475871875149,
+              0.1826109184972696,
+              2.0308285209730235
+            ],
+            "eigen_ratio": 0.5182771197446709,
+            "rank": 3,
+            "status": "published",
+            "t": 37
+          },
+          {
+            "X": [
+              0.8024161292117186,
+              0.20218779315693253,
+              2.0336939604063065
+            ],
+            "eigen_ratio": 0.510735641752925,
+            "rank": 3,
+            "status": "published",
+            "t": 38
+          },
+          {
+            "X": [
+              0.8018428189410813,
+              0.2220849246461163,
+              2.0365357164233617
+            ],
+            "eigen_ratio": 0.5033529466507826,
+            "rank": 3,
+            "status": "published",
+            "t": 39
+          },
+          {
+            "X": [
+              0.802094648075505,
+              0.24224070086992458,
+              2.0393570165020694
+            ],
+            "eigen_ratio": 0.4965775802250143,
+            "rank": 3,
+            "status": "published",
+            "t": 40
+          },
+          {
+            "X": [
+              0.80312468308689,
+              0.2625903832865902,
+              2.042161188313491
+            ],
+            "eigen_ratio": 0.4914049799129887,
+            "rank": 3,
+            "status": "published",
+            "t": 41
+          },
+          {
+            "X": [
+              0.8048728572793333,
+              0.28306688945426667,
+              2.044951643422924
+            ],
+            "eigen_ratio": 0.4897606475334797,
+            "rank": 3,
+            "status": "published",
+            "t": 42
+          },
+          {
+            "X": [
+              0.8072669844874562,
+              0.30360160391045876,
+              2.0477318605800714
+            ],
+            "eigen_ratio": 0.4944794405166004,
+            "rank": 3,
+            "status": "published",
+            "t": 43
+          },
+          {
+            "X": [
+              0.8102239773054797,
+              0.32412520758227875,
+              2.05050536868012
+            ],
+            "eigen_ratio": 0.5071622754447969,
+            "rank": 3,
+            "status": "published",
+            "t": 44
+          },
+          {
+            "X": [
+              0.8136512492879429,
+              0.34456851570182495,
+              2.0532757294792128
+            ],
+            "eigen_ratio": 0.5128517683894511,
+            "rank": 3,
+            "status": "published",
+            "t": 45
+          },
+          {
+            "X": [
+              0.817448277458234,
+              0.36486331409810296,
+              2.056046520148976
+            ],
+            "eigen_ratio": 0.49680247966578156,
+            "rank": 3,
+            "status": "published",
+            "t": 46
+          },
+          {
+            "X": [
+              0.8215082987557224,
+              0.38494318375655484,
+              2.0588213157555235
+            ],
+            "eigen_ratio": 0.4869120262613418,
+            "rank": 3,
+            "status": "published",
+            "t": 47
+          },
+          {
+            "X": [
+              0.8257201117918553,
+              0.40474430367910075,
+              2.061603671748795
+            ],
+            "eigen_ratio": 0.4850782017638494,
+            "rank": 3,
+            "status": "published",
+            "t": 48
+          },
+          {
+            "X": [
+              0.8299699535084316,
+              0.42420622233985555,
+              2.064397106547959
+            ],
+            "eigen_ratio": 0.4885370005852377,
+            "rank": 3,
+            "status": "published",
+            "t": 49
+          },
+          {
+            "X": [
+              0.8341434190671572,
+              0.4432725884113323,
+              2.067205084308197
+            ],
+            "eigen_ratio": 0.4946437511349298,
+            "rank": 3,
+            "status": "published",
+            "t": 50
+          },
+          {
+            "X": [
+              0.838127392570009,
+              0.4618918319282534,
+              2.070030997953276
+            ],
+            "eigen_ratio": 0.5018428668006395,
+            "rank": 3,
+            "status": "published",
+            "t": 51
+          },
+          {
+            "X": [
+              0.8418119560271873,
+              0.48001778765517716,
+              2.072878152557007
+            ],
+            "eigen_ratio": 0.5093868383523169,
+            "rank": 3,
+            "status": "published",
+            "t": 52
+          },
+          {
+            "X": [
+              0.8450922443564585,
+              0.49761025312283164,
+              2.075749749154999
+            ],
+            "eigen_ratio": 0.516934427863163,
+            "rank": 3,
+            "status": "published",
+            "t": 53
+          },
+          {
+            "X": [
+              0.8478702151085941,
+              0.5146354745876757,
+              2.0786488690659812
+            ],
+            "eigen_ratio": 0.5175249304282271,
+            "rank": 3,
+            "status": "published",
+            "t": 54
+          },
+          {
+            "X": [
+              0.8500563030525695,
+              0.5310665550405484,
+              2.081578458799513
+            ],
+            "eigen_ratio": 0.5100184676078837,
+            "rank": 3,
+            "status": "published",
+            "t": 55
+          },
+          {
+            "X": [
+              0.8515709316974492,
+              0.5468837793324381,
+              2.084541315623976
+            ],
+            "eigen_ratio": 0.5026579480537203,
+            "rank": 3,
+            "status": "published",
+            "t": 56
+          },
+          {
+            "X": [
+              0.852345856242158,
+              0.5620748524873457,
+              2.0875400738655623
+            ],
+            "eigen_ratio": 0.495927867117266,
+            "rank": 3,
+            "status": "published",
+            "t": 57
+          },
+          {
+            "X": [
+              0.8523253152892637,
+              0.5766350483215432,
+              2.090577192005333
+            ],
+            "eigen_ratio": 0.49083328986370706,
+            "rank": 3,
+            "status": "published",
+            "t": 58
+          },
+          {
+            "X": [
+              0.8514669718861531,
+              0.59056726657276,
+              2.0936549406375935
+            ],
+            "eigen_ratio": 0.48930193698304886,
+            "rank": 3,
+            "status": "published",
+            "t": 59
+          },
+          {
+            "X": [
+              0.8497426280124628,
+              0.6038819978487178,
+              2.0967753913485168
+            ],
+            "eigen_ratio": 0.4941167020663884,
+            "rank": 3,
+            "status": "published",
+            "t": 60
+          },
+          {
+            "X": [
+              0.8471387004558528,
+              0.6165971968187229,
+              2.0999404065695133
+            ],
+            "eigen_ratio": 0.5064978654306467,
+            "rank": 3,
+            "status": "published",
+            "t": 61
+          },
+          {
+            "X": [
+              0.8436564500451912,
+              0.628738065181139,
+              2.1031516304550486
+            ],
+            "eigen_ratio": 0.5095475101958673,
+            "rank": 3,
+            "status": "published",
+            "t": 62
+          },
+          {
+            "X": [
+              0.8393119603725352,
+              0.6403367470301911,
+              2.106410480829572
+            ],
+            "eigen_ratio": 0.4936915809166453,
+            "rank": 3,
+            "status": "published",
+            "t": 63
+          },
+          {
+            "X": [
+              0.8341358663630147,
+              0.651431940304466,
+              2.1097181422430134
+            ],
+            "eigen_ratio": 0.4840638397790384,
+            "rank": 3,
+            "status": "published",
+            "t": 64
+          },
+          {
+            "X": [
+              0.8281728372733252,
+              0.6620684290137892,
+              2.1130755601688587
+            ],
+            "eigen_ratio": 0.482474671774264,
+            "rank": 3,
+            "status": "published",
+            "t": 65
+          },
+          {
+            "X": [
+              0.8214808228438512,
+              0.6722965418989137,
+              2.1164834363732226
+            ],
+            "eigen_ratio": 0.4861316840020578,
+            "rank": 3,
+            "status": "published",
+            "t": 66
+          },
+          {
+            "X": [
+              0.8141300753265319,
+              0.6821715440675405,
+              2.119942225477595
+            ],
+            "eigen_ratio": 0.4923980301562487,
+            "rank": 3,
+            "status": "published",
+            "t": 67
+          },
+          {
+            "X": [
+              0.8062019638929285,
+              0.6917529689605351,
+              2.1234521327321096
+            ],
+            "eigen_ratio": 0.4997328414331695,
+            "rank": 3,
+            "status": "published",
+            "t": 68
+          },
+          {
+            "X": [
+              0.797787601430778,
+              0.7011038987233563,
+              2.127013113010224
+            ],
+            "eigen_ratio": 0.5073953730322137,
+            "rank": 3,
+            "status": "published",
+            "t": 69
+          },
+          {
+            "X": [
+              0.7889863069035418,
+              0.7102902016814387,
+              2.1306248710297555
+            ],
+            "eigen_ratio": 0.5150071185285311,
+            "rank": 3,
+            "status": "published",
+            "t": 70
+          },
+          {
+            "X": [
+              0.7799039292224618,
+              0.7193797361367794,
+              2.1342868627991676
+            ],
+            "eigen_ratio": 0.5161041179661289,
+            "rank": 3,
+            "status": "published",
+            "t": 71
+          },
+          {
+            "X": [
+              0.7706510609178299,
+              0.7284415301100763,
+              2.1379982982820396
+            ],
+            "eigen_ratio": 0.5085588717086468,
+            "rank": 3,
+            "status": "published",
+            "t": 72
+          },
+          {
+            "X": [
+              0.7613411717559484,
+              0.7375449469435469,
+              2.1417581452666727
+            ],
+            "eigen_ratio": 0.5010681291808279,
+            "rank": 3,
+            "status": "published",
+            "t": 73
+          },
+          {
+            "X": [
+              0.7520886937992243,
+              0.7467588468504176,
+              2.145565134421855
+            ],
+            "eigen_ratio": 0.49421485501070994,
+            "rank": 3,
+            "status": "published",
+            "t": 74
+          },
+          {
+            "X": [
+              0.743007090226362,
+              0.7561507545461822,
+              2.1494177655140456
+            ],
+            "eigen_ratio": 0.48903885946441883,
+            "rank": 3,
+            "status": "published",
+            "t": 75
+          },
+          {
+            "X": [
+              0.7342069405036413,
+              0.7657860430230458,
+              2.15331431475552
+            ],
+            "eigen_ratio": 0.4875082651660268,
+            "rank": 3,
+            "status": "published",
+            "t": 76
+          },
+          {
+            "X": [
+              0.7257940742223411,
+              0.7757271433340184,
+              2.1572528432474822
+            ],
+            "eigen_ratio": 0.4924207224762,
+            "rank": 3,
+            "status": "published",
+            "t": 77
+          },
+          {
+            "X": [
+              0.7178677850960531,
+              0.7860327899385683,
+              2.1612312064767867
+            ],
+            "eigen_ratio": 0.5047155718345784,
+            "rank": 3,
+            "status": "published",
+            "t": 78
+          },
+          {
+            "X": [
+              0.7105191552588703,
+              0.7967573107319925,
+              2.1652470648197637
+            ],
+            "eigen_ratio": 0.5062722851865745,
+            "rank": 3,
+            "status": "published",
+            "t": 79
+          },
+          {
+            "X": [
+              0.7038295181439355,
+              0.8079499703404488,
+              2.1692978950017
+            ],
+            "eigen_ratio": 0.49035883411729314,
+            "rank": 3,
+            "status": "published",
+            "t": 80
+          },
+          {
+            "X": [
+              0.6978690858831196,
+              0.8196543746198206,
+              2.1733810024558307
+            ],
+            "eigen_ratio": 0.4808206716908036,
+            "rank": 3,
+            "status": "published",
+            "t": 81
+          },
+          {
+            "X": [
+              0.6926957643921747,
+              0.8319079435566603,
+              2.177493534521325
+            ],
+            "eigen_ratio": 0.47939259729358247,
+            "rank": 3,
+            "status": "published",
+            "t": 82
+          },
+          {
+            "X": [
+              0.6883541761381803,
+              0.844741458942731,
+              2.1816324944156236
+            ],
+            "eigen_ratio": 0.4832310735792424,
+            "rank": 3,
+            "status": "published",
+            "t": 83
+          },
+          {
+            "X": [
+              0.6848749070813066,
+              0.8581786922907434,
+              2.1857947559126756
+            ],
+            "eigen_ratio": 0.48968386714658885,
+            "rank": 3,
+            "status": "published",
+            "t": 84
+          },
+          {
+            "X": [
+              0.682273990499655,
+              0.8722361174889514,
+              2.1899770786551906
+            ],
+            "eigen_ratio": 0.4972060010388521,
+            "rank": 3,
+            "status": "published",
+            "t": 85
+          },
+          {
+            "X": [
+              0.680552636408237,
+              0.8869227116680343,
+              2.1941761240259074
+            ],
+            "eigen_ratio": 0.5050496195873458,
+            "rank": 3,
+            "status": "published",
+            "t": 86
+          },
+          {
+            "X": [
+              0.6796972111385134,
+              0.9022398466872891,
+              2.1983884715001407
+            ],
+            "eigen_ratio": 0.5127911255810904,
+            "rank": 3,
+            "status": "published",
+            "t": 87
+          },
+          {
+            "X": [
+              0.6796794674230798,
+              0.9181812725518702,
+              2.2026106353995116
+            ],
+            "eigen_ratio": 0.5143200743298606,
+            "rank": 3,
+            "status": "published",
+            "t": 88
+          },
+          {
+            "X": [
+              0.6804570211025518,
+              0.9347331929615006,
+              2.206839081964791
+            ],
+            "eigen_ratio": 0.5067983615059203,
+            "rank": 3,
+            "status": "published",
+            "t": 89
+          },
+          {
+            "X": [
+              0.681974066409654,
+              0.9518744320774484,
+              2.2110702466642596
+            ],
+            "eigen_ratio": 0.49924435771995523,
+            "rank": 3,
+            "status": "published",
+            "t": 90
+          },
+          {
+            "X": [
+              0.6841623177592122,
+              0.9695766904919098,
+              2.2153005516527737
+            ],
+            "eigen_ratio": 0.49236202796652634,
+            "rank": 3,
+            "status": "published",
+            "t": 91
+          },
+          {
+            "X": [
+              0.6869421621501974,
+              0.9878048873057176,
+              2.2195264232960605
+            ],
+            "eigen_ratio": 0.4872218751771402,
+            "rank": 3,
+            "status": "published",
+            "t": 92
+          },
+          {
+            "X": [
+              0.6902240027316554,
+              1.0065175841793657,
+              2.2237443096743617
+            ],
+            "eigen_ratio": 0.48581268323894977,
+            "rank": 3,
+            "status": "published",
+            "t": 93
+          },
+          {
+            "X": [
+              0.693909770858219,
+              1.0256674862315531,
+              2.2279506979797485
+            ],
+            "eigen_ratio": 0.4908845906007527,
+            "rank": 3,
+            "status": "published",
+            "t": 94
+          },
+          {
+            "X": [
+              0.6978945811174024,
+              1.0452020137304283,
+              2.232142131721846
+            ],
+            "eigen_ratio": 0.5028657733566133,
+            "rank": 3,
+            "status": "published",
+            "t": 95
+          },
+          {
+            "X": [
+              0.7020685013981224,
+              1.0650639376670943,
+              2.2363152276577214
+            ],
+            "eigen_ratio": 0.5026293825695485,
+            "rank": 3,
+            "status": "published",
+            "t": 96
+          },
+          {
+            "X": [
+              0.706318408128374,
+              1.085192071528657,
+              2.2404666923630088
+            ],
+            "eigen_ratio": 0.48688739480100524,
+            "rank": 3,
+            "status": "published",
+            "t": 97
+          },
+          {
+            "X": [
+              0.710529895372679,
+              1.105522010908804,
+              2.244593338363098
+            ],
+            "eigen_ratio": 0.4776156239947252,
+            "rank": 3,
+            "status": "published",
+            "t": 98
+          },
+          {
+            "X": [
+              0.7145892055709683,
+              1.1259869120156498,
+              2.2486920997453863
+            ],
+            "eigen_ratio": 0.4764657253698782,
+            "rank": 3,
+            "status": "published",
+            "t": 99
+          }
+        ],
+        "segments": [
+          {
+            "interpolate_allowed": 1,
+            "reason": "both endpoints published and gap within limit",
+            "run_id": "run_1f855b1ee90a40f8",
+            "t0": 0,
+            "t1": 1,
+            "track_id": "track_000"
+          },
+          {
+            "interpolate_allowed": 1,
+            "reason": "both endpoints published and gap within limit",
+            "run_id": "run_1f855b1ee90a40f8",
+            "t0": 1,
+            "t1": 2,
+            "track_id": "track_000"
+          },
+          {
+            "interpolate_allowed": 1,
+            "reason": "both endpoints published and gap within limit",
+            "run_id": "run_1f855b1ee90a40f8",
+            "t0": 2,
+            "t1": 3,
+            "track_id": "track_000"
+          },
+          {
+            "interpolate_allowed": 1,
+            "reason": "both endpoints published and gap within limit",
+            "run_id": "run_1f855b1ee90a40f8",
+            "t0": 3,
+            "t1": 4,
+            "track_id": "track_000"
+          },
+          {
+            "interpolate_allowed": 1,
+            "reason": "both endpoints published and gap within limit",
+            "run_id": "run_1f855b1ee90a40f8",
+            "t0": 4,
+            "t1": 5,
+            "track_id": "track_000"
+          },
+          {
+            "interpolate_allowed": 1,
+            "reason": "both endpoints published and gap within limit",
+            "run_id": "run_1f855b1ee90a40f8",
+            "t0": 5,
+            "t1": 6,
+            "track_id": "track_000"
+          },
+          {
+            "interpolate_allowed": 1,
+            "reason": "both endpoints published and gap within limit",
+            "run_id": "run_1f855b1ee90a40f8",
+            "t0": 6,
+            "t1": 7,
+            "track_id": "track_000"
+          },
+          {
+            "interpolate_allowed": 1,
+            "reason": "both endpoints published and gap within limit",
+            "run_id": "run_1f855b1ee90a40f8",
+            "t0": 7,
+            "t1": 8,
+            "track_id": "track_000"
+          },
+          {
+            "interpolate_allowed": 1,
+            "reason": "both endpoints published and gap within limit",
+            "run_id": "run_1f855b1ee90a40f8",
+            "t0": 8,
+            "t1": 9,
+            "track_id": "track_000"
+          },
+          {
+            "interpolate_allowed": 1,
+            "reason": "both endpoints published and gap within limit",
+            "run_id": "run_1f855b1ee90a40f8",
+            "t0": 9,
+            "t1": 10,
+            "track_id": "track_000"
+          },
+          {
+            "interpolate_allowed": 1,
+            "reason": "both endpoints published and gap within limit",
+            "run_id": "run_1f855b1ee90a40f8",
+            "t0": 10,
+            "t1": 11,
+            "track_id": "track_000"
+          },
+          {
+            "interpolate_allowed": 1,
+            "reason": "both endpoints published and gap within limit",
+            "run_id": "run_1f855b1ee90a40f8",
+            "t0": 11,
+            "t1": 12,
+            "track_id": "track_000"
+          },
+          {
+            "interpolate_allowed": 1,
+            "reason": "both endpoints published and gap within limit",
+            "run_id": "run_1f855b1ee90a40f8",
+            "t0": 12,
+            "t1": 13,
+            "track_id": "track_000"
+          },
+          {
+            "interpolate_allowed": 1,
+            "reason": "both endpoints published and gap within limit",
+            "run_id": "run_1f855b1ee90a40f8",
+            "t0": 13,
+            "t1": 14,
+            "track_id": "track_000"
+          },
+          {
+            "interpolate_allowed": 1,
+            "reason": "both endpoints published and gap within limit",
+            "run_id": "run_1f855b1ee90a40f8",
+            "t0": 14,
+            "t1": 15,
+            "track_id": "track_000"
+          },
+          {
+            "interpolate_allowed": 1,
+            "reason": "both endpoints published and gap within limit",
+            "run_id": "run_1f855b1ee90a40f8",
+            "t0": 15,
+            "t1": 16,
+            "track_id": "track_000"
+          },
+          {
+            "interpolate_allowed": 1,
+            "reason": "both endpoints published and gap within limit",
+            "run_id": "run_1f855b1ee90a40f8",
+            "t0": 16,
+            "t1": 17,
+            "track_id": "track_000"
+          },
+          {
+            "interpolate_allowed": 1,
+            "reason": "both endpoints published and gap within limit",
+            "run_id": "run_1f855b1ee90a40f8",
+            "t0": 17,
+            "t1": 18,
+            "track_id": "track_000"
+          },
+          {
+            "interpolate_allowed": 1,
+            "reason": "both endpoints published and gap within limit",
+            "run_id": "run_1f855b1ee90a40f8",
+            "t0": 18,
+            "t1": 19,
+            "track_id": "track_000"
+          },
+          {
+            "interpolate_allowed": 1,
+            "reason": "both endpoints published and gap within limit",
+            "run_id": "run_1f855b1ee90a40f8",
+            "t0": 19,
+            "t1": 20,
+            "track_id": "track_000"
+          },
+          {
+            "interpolate_allowed": 1,
+            "reason": "both endpoints published and gap within limit",
+            "run_id": "run_1f855b1ee90a40f8",
+            "t0": 20,
+            "t1": 21,
+            "track_id": "track_000"
+          },
+          {
+            "interpolate_allowed": 1,
+            "reason": "both endpoints published and gap within limit",
+            "run_id": "run_1f855b1ee90a40f8",
+            "t0": 21,
+            "t1": 22,
+            "track_id": "track_000"
+          },
+          {
+            "interpolate_allowed": 1,
+            "reason": "both endpoints published and gap within limit",
+            "run_id": "run_1f855b1ee90a40f8",
+            "t0": 22,
+            "t1": 23,
+            "track_id": "track_000"
+          },
+          {
+            "interpolate_allowed": 1,
+            "reason": "both endpoints published and gap within limit",
+            "run_id": "run_1f855b1ee90a40f8",
+            "t0": 23,
+            "t1": 24,
+            "track_id": "track_000"
+          },
+          {
+            "interpolate_allowed": 1,
+            "reason": "both endpoints published and gap within limit",
+            "run_id": "run_1f855b1ee90a40f8",
+            "t0": 24,
+            "t1": 25,
+            "track_id": "track_000"
+          },
+          {
+            "interpolate_allowed": 1,
+            "reason": "both endpoints published and gap within limit",
+            "run_id": "run_1f855b1ee90a40f8",
+            "t0": 25,
+            "t1": 26,
+            "track_id": "track_000"
+          },
+          {
+            "interpolate_allowed": 1,
+            "reason": "both endpoints published and gap within limit",
+            "run_id": "run_1f855b1ee90a40f8",
+            "t0": 26,
+            "t1": 27,
+            "track_id": "track_000"
+          },
+          {
+            "interpolate_allowed": 1,
+            "reason": "both endpoints published and gap within limit",
+            "run_id": "run_1f855b1ee90a40f8",
+            "t0": 27,
+            "t1": 28,
+            "track_id": "track_000"
+          },
+          {
+            "interpolate_allowed": 1,
+            "reason": "both endpoints published and gap within limit",
+            "run_id": "run_1f855b1ee90a40f8",
+            "t0": 28,
+            "t1": 29,
+            "track_id": "track_000"
+          },
+          {
+            "interpolate_allowed": 1,
+            "reason": "both endpoints published and gap within limit",
+            "run_id": "run_1f855b1ee90a40f8",
+            "t0": 29,
+            "t1": 30,
+            "track_id": "track_000"
+          },
+          {
+            "interpolate_allowed": 1,
+            "reason": "both endpoints published and gap within limit",
+            "run_id": "run_1f855b1ee90a40f8",
+            "t0": 30,
+            "t1": 31,
+            "track_id": "track_000"
+          },
+          {
+            "interpolate_allowed": 1,
+            "reason": "both endpoints published and gap within limit",
+            "run_id": "run_1f855b1ee90a40f8",
+            "t0": 31,
+            "t1": 32,
+            "track_id": "track_000"
+          },
+          {
+            "interpolate_allowed": 1,
+            "reason": "both endpoints published and gap within limit",
+            "run_id": "run_1f855b1ee90a40f8",
+            "t0": 32,
+            "t1": 33,
+            "track_id": "track_000"
+          },
+          {
+            "interpolate_allowed": 1,
+            "reason": "both endpoints published and gap within limit",
+            "run_id": "run_1f855b1ee90a40f8",
+            "t0": 33,
+            "t1": 34,
+            "track_id": "track_000"
+          },
+          {
+            "interpolate_allowed": 1,
+            "reason": "both endpoints published and gap within limit",
+            "run_id": "run_1f855b1ee90a40f8",
+            "t0": 34,
+            "t1": 35,
+            "track_id": "track_000"
+          },
+          {
+            "interpolate_allowed": 1,
+            "reason": "both endpoints published and gap within limit",
+            "run_id": "run_1f855b1ee90a40f8",
+            "t0": 35,
+            "t1": 36,
+            "track_id": "track_000"
+          },
+          {
+            "interpolate_allowed": 1,
+            "reason": "both endpoints published and gap within limit",
+            "run_id": "run_1f855b1ee90a40f8",
+            "t0": 36,
+            "t1": 37,
+            "track_id": "track_000"
+          },
+          {
+            "interpolate_allowed": 1,
+            "reason": "both endpoints published and gap within limit",
+            "run_id": "run_1f855b1ee90a40f8",
+            "t0": 37,
+            "t1": 38,
+            "track_id": "track_000"
+          },
+          {
+            "interpolate_allowed": 1,
+            "reason": "both endpoints published and gap within limit",
+            "run_id": "run_1f855b1ee90a40f8",
+            "t0": 38,
+            "t1": 39,
+            "track_id": "track_000"
+          },
+          {
+            "interpolate_allowed": 1,
+            "reason": "both endpoints published and gap within limit",
+            "run_id": "run_1f855b1ee90a40f8",
+            "t0": 39,
+            "t1": 40,
+            "track_id": "track_000"
+          },
+          {
+            "interpolate_allowed": 1,
+            "reason": "both endpoints published and gap within limit",
+            "run_id": "run_1f855b1ee90a40f8",
+            "t0": 40,
+            "t1": 41,
+            "track_id": "track_000"
+          },
+          {
+            "interpolate_allowed": 1,
+            "reason": "both endpoints published and gap within limit",
+            "run_id": "run_1f855b1ee90a40f8",
+            "t0": 41,
+            "t1": 42,
+            "track_id": "track_000"
+          },
+          {
+            "interpolate_allowed": 1,
+            "reason": "both endpoints published and gap within limit",
+            "run_id": "run_1f855b1ee90a40f8",
+            "t0": 42,
+            "t1": 43,
+            "track_id": "track_000"
+          },
+          {
+            "interpolate_allowed": 1,
+            "reason": "both endpoints published and gap within limit",
+            "run_id": "run_1f855b1ee90a40f8",
+            "t0": 43,
+            "t1": 44,
+            "track_id": "track_000"
+          },
+          {
+            "interpolate_allowed": 1,
+            "reason": "both endpoints published and gap within limit",
+            "run_id": "run_1f855b1ee90a40f8",
+            "t0": 44,
+            "t1": 45,
+            "track_id": "track_000"
+          },
+          {
+            "interpolate_allowed": 1,
+            "reason": "both endpoints published and gap within limit",
+            "run_id": "run_1f855b1ee90a40f8",
+            "t0": 45,
+            "t1": 46,
+            "track_id": "track_000"
+          },
+          {
+            "interpolate_allowed": 1,
+            "reason": "both endpoints published and gap within limit",
+            "run_id": "run_1f855b1ee90a40f8",
+            "t0": 46,
+            "t1": 47,
+            "track_id": "track_000"
+          },
+          {
+            "interpolate_allowed": 1,
+            "reason": "both endpoints published and gap within limit",
+            "run_id": "run_1f855b1ee90a40f8",
+            "t0": 47,
+            "t1": 48,
+            "track_id": "track_000"
+          },
+          {
+            "interpolate_allowed": 1,
+            "reason": "both endpoints published and gap within limit",
+            "run_id": "run_1f855b1ee90a40f8",
+            "t0": 48,
+            "t1": 49,
+            "track_id": "track_000"
+          },
+          {
+            "interpolate_allowed": 1,
+            "reason": "both endpoints published and gap within limit",
+            "run_id": "run_1f855b1ee90a40f8",
+            "t0": 49,
+            "t1": 50,
+            "track_id": "track_000"
+          },
+          {
+            "interpolate_allowed": 1,
+            "reason": "both endpoints published and gap within limit",
+            "run_id": "run_1f855b1ee90a40f8",
+            "t0": 50,
+            "t1": 51,
+            "track_id": "track_000"
+          },
+          {
+            "interpolate_allowed": 1,
+            "reason": "both endpoints published and gap within limit",
+            "run_id": "run_1f855b1ee90a40f8",
+            "t0": 51,
+            "t1": 52,
+            "track_id": "track_000"
+          },
+          {
+            "interpolate_allowed": 1,
+            "reason": "both endpoints published and gap within limit",
+            "run_id": "run_1f855b1ee90a40f8",
+            "t0": 52,
+            "t1": 53,
+            "track_id": "track_000"
+          },
+          {
+            "interpolate_allowed": 1,
+            "reason": "both endpoints published and gap within limit",
+            "run_id": "run_1f855b1ee90a40f8",
+            "t0": 53,
+            "t1": 54,
+            "track_id": "track_000"
+          },
+          {
+            "interpolate_allowed": 1,
+            "reason": "both endpoints published and gap within limit",
+            "run_id": "run_1f855b1ee90a40f8",
+            "t0": 54,
+            "t1": 55,
+            "track_id": "track_000"
+          },
+          {
+            "interpolate_allowed": 1,
+            "reason": "both endpoints published and gap within limit",
+            "run_id": "run_1f855b1ee90a40f8",
+            "t0": 55,
+            "t1": 56,
+            "track_id": "track_000"
+          },
+          {
+            "interpolate_allowed": 1,
+            "reason": "both endpoints published and gap within limit",
+            "run_id": "run_1f855b1ee90a40f8",
+            "t0": 56,
+            "t1": 57,
+            "track_id": "track_000"
+          },
+          {
+            "interpolate_allowed": 1,
+            "reason": "both endpoints published and gap within limit",
+            "run_id": "run_1f855b1ee90a40f8",
+            "t0": 57,
+            "t1": 58,
+            "track_id": "track_000"
+          },
+          {
+            "interpolate_allowed": 1,
+            "reason": "both endpoints published and gap within limit",
+            "run_id": "run_1f855b1ee90a40f8",
+            "t0": 58,
+            "t1": 59,
+            "track_id": "track_000"
+          },
+          {
+            "interpolate_allowed": 1,
+            "reason": "both endpoints published and gap within limit",
+            "run_id": "run_1f855b1ee90a40f8",
+            "t0": 59,
+            "t1": 60,
+            "track_id": "track_000"
+          },
+          {
+            "interpolate_allowed": 1,
+            "reason": "both endpoints published and gap within limit",
+            "run_id": "run_1f855b1ee90a40f8",
+            "t0": 60,
+            "t1": 61,
+            "track_id": "track_000"
+          },
+          {
+            "interpolate_allowed": 1,
+            "reason": "both endpoints published and gap within limit",
+            "run_id": "run_1f855b1ee90a40f8",
+            "t0": 61,
+            "t1": 62,
+            "track_id": "track_000"
+          },
+          {
+            "interpolate_allowed": 1,
+            "reason": "both endpoints published and gap within limit",
+            "run_id": "run_1f855b1ee90a40f8",
+            "t0": 62,
+            "t1": 63,
+            "track_id": "track_000"
+          },
+          {
+            "interpolate_allowed": 1,
+            "reason": "both endpoints published and gap within limit",
+            "run_id": "run_1f855b1ee90a40f8",
+            "t0": 63,
+            "t1": 64,
+            "track_id": "track_000"
+          },
+          {
+            "interpolate_allowed": 1,
+            "reason": "both endpoints published and gap within limit",
+            "run_id": "run_1f855b1ee90a40f8",
+            "t0": 64,
+            "t1": 65,
+            "track_id": "track_000"
+          },
+          {
+            "interpolate_allowed": 1,
+            "reason": "both endpoints published and gap within limit",
+            "run_id": "run_1f855b1ee90a40f8",
+            "t0": 65,
+            "t1": 66,
+            "track_id": "track_000"
+          },
+          {
+            "interpolate_allowed": 1,
+            "reason": "both endpoints published and gap within limit",
+            "run_id": "run_1f855b1ee90a40f8",
+            "t0": 66,
+            "t1": 67,
+            "track_id": "track_000"
+          },
+          {
+            "interpolate_allowed": 1,
+            "reason": "both endpoints published and gap within limit",
+            "run_id": "run_1f855b1ee90a40f8",
+            "t0": 67,
+            "t1": 68,
+            "track_id": "track_000"
+          },
+          {
+            "interpolate_allowed": 1,
+            "reason": "both endpoints published and gap within limit",
+            "run_id": "run_1f855b1ee90a40f8",
+            "t0": 68,
+            "t1": 69,
+            "track_id": "track_000"
+          },
+          {
+            "interpolate_allowed": 1,
+            "reason": "both endpoints published and gap within limit",
+            "run_id": "run_1f855b1ee90a40f8",
+            "t0": 69,
+            "t1": 70,
+            "track_id": "track_000"
+          },
+          {
+            "interpolate_allowed": 1,
+            "reason": "both endpoints published and gap within limit",
+            "run_id": "run_1f855b1ee90a40f8",
+            "t0": 70,
+            "t1": 71,
+            "track_id": "track_000"
+          },
+          {
+            "interpolate_allowed": 1,
+            "reason": "both endpoints published and gap within limit",
+            "run_id": "run_1f855b1ee90a40f8",
+            "t0": 71,
+            "t1": 72,
+            "track_id": "track_000"
+          },
+          {
+            "interpolate_allowed": 1,
+            "reason": "both endpoints published and gap within limit",
+            "run_id": "run_1f855b1ee90a40f8",
+            "t0": 72,
+            "t1": 73,
+            "track_id": "track_000"
+          },
+          {
+            "interpolate_allowed": 1,
+            "reason": "both endpoints published and gap within limit",
+            "run_id": "run_1f855b1ee90a40f8",
+            "t0": 73,
+            "t1": 74,
+            "track_id": "track_000"
+          },
+          {
+            "interpolate_allowed": 1,
+            "reason": "both endpoints published and gap within limit",
+            "run_id": "run_1f855b1ee90a40f8",
+            "t0": 74,
+            "t1": 75,
+            "track_id": "track_000"
+          },
+          {
+            "interpolate_allowed": 1,
+            "reason": "both endpoints published and gap within limit",
+            "run_id": "run_1f855b1ee90a40f8",
+            "t0": 75,
+            "t1": 76,
+            "track_id": "track_000"
+          },
+          {
+            "interpolate_allowed": 1,
+            "reason": "both endpoints published and gap within limit",
+            "run_id": "run_1f855b1ee90a40f8",
+            "t0": 76,
+            "t1": 77,
+            "track_id": "track_000"
+          },
+          {
+            "interpolate_allowed": 1,
+            "reason": "both endpoints published and gap within limit",
+            "run_id": "run_1f855b1ee90a40f8",
+            "t0": 77,
+            "t1": 78,
+            "track_id": "track_000"
+          },
+          {
+            "interpolate_allowed": 1,
+            "reason": "both endpoints published and gap within limit",
+            "run_id": "run_1f855b1ee90a40f8",
+            "t0": 78,
+            "t1": 79,
+            "track_id": "track_000"
+          },
+          {
+            "interpolate_allowed": 1,
+            "reason": "both endpoints published and gap within limit",
+            "run_id": "run_1f855b1ee90a40f8",
+            "t0": 79,
+            "t1": 80,
+            "track_id": "track_000"
+          },
+          {
+            "interpolate_allowed": 1,
+            "reason": "both endpoints published and gap within limit",
+            "run_id": "run_1f855b1ee90a40f8",
+            "t0": 80,
+            "t1": 81,
+            "track_id": "track_000"
+          },
+          {
+            "interpolate_allowed": 1,
+            "reason": "both endpoints published and gap within limit",
+            "run_id": "run_1f855b1ee90a40f8",
+            "t0": 81,
+            "t1": 82,
+            "track_id": "track_000"
+          },
+          {
+            "interpolate_allowed": 1,
+            "reason": "both endpoints published and gap within limit",
+            "run_id": "run_1f855b1ee90a40f8",
+            "t0": 82,
+            "t1": 83,
+            "track_id": "track_000"
+          },
+          {
+            "interpolate_allowed": 1,
+            "reason": "both endpoints published and gap within limit",
+            "run_id": "run_1f855b1ee90a40f8",
+            "t0": 83,
+            "t1": 84,
+            "track_id": "track_000"
+          },
+          {
+            "interpolate_allowed": 1,
+            "reason": "both endpoints published and gap within limit",
+            "run_id": "run_1f855b1ee90a40f8",
+            "t0": 84,
+            "t1": 85,
+            "track_id": "track_000"
+          },
+          {
+            "interpolate_allowed": 1,
+            "reason": "both endpoints published and gap within limit",
+            "run_id": "run_1f855b1ee90a40f8",
+            "t0": 85,
+            "t1": 86,
+            "track_id": "track_000"
+          },
+          {
+            "interpolate_allowed": 1,
+            "reason": "both endpoints published and gap within limit",
+            "run_id": "run_1f855b1ee90a40f8",
+            "t0": 86,
+            "t1": 87,
+            "track_id": "track_000"
+          },
+          {
+            "interpolate_allowed": 1,
+            "reason": "both endpoints published and gap within limit",
+            "run_id": "run_1f855b1ee90a40f8",
+            "t0": 87,
+            "t1": 88,
+            "track_id": "track_000"
+          },
+          {
+            "interpolate_allowed": 1,
+            "reason": "both endpoints published and gap within limit",
+            "run_id": "run_1f855b1ee90a40f8",
+            "t0": 88,
+            "t1": 89,
+            "track_id": "track_000"
+          },
+          {
+            "interpolate_allowed": 1,
+            "reason": "both endpoints published and gap within limit",
+            "run_id": "run_1f855b1ee90a40f8",
+            "t0": 89,
+            "t1": 90,
+            "track_id": "track_000"
+          },
+          {
+            "interpolate_allowed": 1,
+            "reason": "both endpoints published and gap within limit",
+            "run_id": "run_1f855b1ee90a40f8",
+            "t0": 90,
+            "t1": 91,
+            "track_id": "track_000"
+          },
+          {
+            "interpolate_allowed": 1,
+            "reason": "both endpoints published and gap within limit",
+            "run_id": "run_1f855b1ee90a40f8",
+            "t0": 91,
+            "t1": 92,
+            "track_id": "track_000"
+          },
+          {
+            "interpolate_allowed": 1,
+            "reason": "both endpoints published and gap within limit",
+            "run_id": "run_1f855b1ee90a40f8",
+            "t0": 92,
+            "t1": 93,
+            "track_id": "track_000"
+          },
+          {
+            "interpolate_allowed": 1,
+            "reason": "both endpoints published and gap within limit",
+            "run_id": "run_1f855b1ee90a40f8",
+            "t0": 93,
+            "t1": 94,
+            "track_id": "track_000"
+          },
+          {
+            "interpolate_allowed": 1,
+            "reason": "both endpoints published and gap within limit",
+            "run_id": "run_1f855b1ee90a40f8",
+            "t0": 94,
+            "t1": 95,
+            "track_id": "track_000"
+          },
+          {
+            "interpolate_allowed": 1,
+            "reason": "both endpoints published and gap within limit",
+            "run_id": "run_1f855b1ee90a40f8",
+            "t0": 95,
+            "t1": 96,
+            "track_id": "track_000"
+          },
+          {
+            "interpolate_allowed": 1,
+            "reason": "both endpoints published and gap within limit",
+            "run_id": "run_1f855b1ee90a40f8",
+            "t0": 96,
+            "t1": 97,
+            "track_id": "track_000"
+          },
+          {
+            "interpolate_allowed": 1,
+            "reason": "both endpoints published and gap within limit",
+            "run_id": "run_1f855b1ee90a40f8",
+            "t0": 97,
+            "t1": 98,
+            "track_id": "track_000"
+          },
+          {
+            "interpolate_allowed": 1,
+            "reason": "both endpoints published and gap within limit",
+            "run_id": "run_1f855b1ee90a40f8",
+            "t0": 98,
+            "t1": 99,
+            "track_id": "track_000"
+          }
+        ]
+      },
+      "track_gap": {
+        "points": [
+          {
+            "X": [
+              -0.7999999999999993,
+              0.7000000000000034,
+              1.9999999999999971
+            ],
+            "eigen_ratio": 0.320035606988044,
+            "rank": 3,
+            "status": "published",
+            "t": 0
+          },
+          {
+            "X": [
+              -0.794999999999999,
+              0.7000000000000034,
+              1.999999999999997
+            ],
+            "eigen_ratio": 0.3212199599712664,
+            "rank": 3,
+            "status": "published",
+            "t": 1
+          },
+          {
+            "X": [
+              -0.7899999999999999,
+              0.7000000000000021,
+              1.9999999999999973
+            ],
+            "eigen_ratio": 0.32220131993819334,
+            "rank": 3,
+            "status": "published",
+            "t": 2
+          },
+          {
+            "X": [
+              -0.599999999999998,
+              0.7000000000000043,
+              1.999999999999997
+            ],
+            "eigen_ratio": 0.3191903784904648,
+            "rank": 3,
+            "status": "published",
+            "t": 40
+          },
+          {
+            "X": [
+              -0.5949999999999974,
+              0.7000000000000034,
+              1.9999999999999971
+            ],
+            "eigen_ratio": 0.3186703858275773,
+            "rank": 3,
+            "status": "published",
+            "t": 41
+          }
+        ],
+        "segments": [
+          {
+            "interpolate_allowed": 1,
+            "reason": "both endpoints published and gap within limit",
+            "run_id": "run_1f855b1ee90a40f8",
+            "t0": 0,
+            "t1": 1,
+            "track_id": "track_gap"
+          },
+          {
+            "interpolate_allowed": 1,
+            "reason": "both endpoints published and gap within limit",
+            "run_id": "run_1f855b1ee90a40f8",
+            "t0": 1,
+            "t1": 2,
+            "track_id": "track_gap"
+          },
+          {
+            "interpolate_allowed": 0,
+            "reason": "time gap 38 > max_gap 1",
+            "run_id": "run_1f855b1ee90a40f8",
+            "t0": 2,
+            "t1": 40,
+            "track_id": "track_gap"
+          },
+          {
+            "interpolate_allowed": 1,
+            "reason": "both endpoints published and gap within limit",
+            "run_id": "run_1f855b1ee90a40f8",
+            "t0": 40,
+            "t1": 41,
+            "track_id": "track_gap"
+          }
+        ]
+      },
+      "track_single": {
+        "points": [
+          {
+            "X": null,
+            "eigen_ratio": 7.406636912367441e-17,
+            "rank": 2,
+            "status": "degenerate",
+            "t": 0
+          },
+          {
+            "X": null,
+            "eigen_ratio": 1.456938548094184e-16,
+            "rank": 2,
+            "status": "degenerate",
+            "t": 1
+          },
+          {
+            "X": null,
+            "eigen_ratio": 4.0517677091094784e-17,
+            "rank": 2,
+            "status": "degenerate",
+            "t": 2
+          },
+          {
+            "X": null,
+            "eigen_ratio": 1.39242417953144e-16,
+            "rank": 2,
+            "status": "degenerate",
+            "t": 3
+          },
+          {
+            "X": null,
+            "eigen_ratio": 0.0,
+            "rank": 2,
+            "status": "degenerate",
+            "t": 4
+          }
+        ],
+        "segments": [
+          {
+            "interpolate_allowed": 0,
+            "reason": "endpoint t=0 unavailable (degenerate)",
+            "run_id": "run_1f855b1ee90a40f8",
+            "t0": 0,
+            "t1": 1,
+            "track_id": "track_single"
+          },
+          {
+            "interpolate_allowed": 0,
+            "reason": "endpoint t=1 unavailable (degenerate)",
+            "run_id": "run_1f855b1ee90a40f8",
+            "t0": 1,
+            "t1": 2,
+            "track_id": "track_single"
+          },
+          {
+            "interpolate_allowed": 0,
+            "reason": "endpoint t=2 unavailable (degenerate)",
+            "run_id": "run_1f855b1ee90a40f8",
+            "t0": 2,
+            "t1": 3,
+            "track_id": "track_single"
+          },
+          {
+            "interpolate_allowed": 0,
+            "reason": "endpoint t=3 unavailable (degenerate)",
+            "run_id": "run_1f855b1ee90a40f8",
+            "t0": 3,
+            "t1": 4,
+            "track_id": "track_single"
+          }
+        ]
+      }
+    }
+  },
+  "dataset_id": "ds_51632805a30c8a55",
+  "products": [
+    {
+      "created_at": 1794984881.830378,
+      "graph_version": 23,
+      "integrity": "12821d70bb54f039500e8927ae41f590ac4c72824123df33944cefe8d1d5b297",
+      "product_id": "main-v1",
+      "world_root": "world"
+    },
+    {
+      "created_at": 1794984884.3277764,
+      "graph_version": 24,
+      "integrity": "f8f6c46418a7710020a64c2971c76474d954b56ffcd112e743dae6134d70e9f7",
+      "product_id": "main-v2",
+      "world_root": "world"
+    }
+  ],
+  "runs": [
+    {
+      "created_at": 1794984883.8607683,
+      "dataset_id": "ds_51632805a30c8a55",
+      "max_gap": 1,
+      "min_eigen_ratio": 0.001,
+      "n_degenerate": 5,
+      "n_inconsistent": 0,
+      "n_points": 10010,
+      "n_published": 10005,
+      "n_segments_allowed": 9903,
+      "n_segments_blocked": 5,
+      "product_id": "main-v1",
+      "run_id": "run_dc993e2bb1724f05"
+    },
+    {
+      "created_at": 1794984885.6318007,
+      "dataset_id": "ds_51632805a30c8a55",
+      "max_gap": 1,
+      "min_eigen_ratio": 0.001,
+      "n_degenerate": 5,
+      "n_inconsistent": 0,
+      "n_points": 10010,
+      "n_published": 10005,
+      "n_segments_allowed": 9903,
+      "n_segments_blocked": 5,
+      "product_id": "main-v2",
+      "run_id": "run_1f855b1ee90a40f8"
+    }
+  ]
+}

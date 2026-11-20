@@ -1,0 +1,582 @@
+{
+  "dataset_id": "ds_51632805a30c8a55",
+  "fixtures": {
+    "behind": {
+      "components": {
+        "cam_behind": [
+          "cam_behind",
+          "cam_f",
+          "cam_g",
+          "world"
+        ]
+      },
+      "graph_consistent": true,
+      "point_status": {
+        "track_behind": [
+          {
+            "X": [
+              -7.635401744827728e-16,
+              7.635401744827728e-16,
+              0.9999999999999996
+            ],
+            "eigen_ratio": 0.7538358218529807,
+            "min_eigen_ratio_threshold": 0.001,
+            "n_cameras": 3,
+            "rank": 3,
+            "rationale": "solution has non-positive depth in camera(s) cam_behind; retained as geometric inconsistency, observations not removed",
+            "status": "inconsistent",
+            "t": 0
+          },
+          {
+            "X": [
+              0.09999999999999888,
+              0.050000000000000544,
+              0.9999999999999998
+            ],
+            "eigen_ratio": 0.7609843211675915,
+            "min_eigen_ratio_threshold": 0.001,
+            "n_cameras": 3,
+            "rank": 3,
+            "rationale": "solution has non-positive depth in camera(s) cam_behind; retained as geometric inconsistency, observations not removed",
+            "status": "inconsistent",
+            "t": 1
+          },
+          {
+            "X": [
+              0.2000000000000003,
+              0.10000000000000062,
+              0.9999999999999998
+            ],
+            "eigen_ratio": 0.7645838162361713,
+            "min_eigen_ratio_threshold": 0.001,
+            "n_cameras": 3,
+            "rank": 3,
+            "rationale": "solution has non-positive depth in camera(s) cam_behind; retained as geometric inconsistency, observations not removed",
+            "status": "inconsistent",
+            "t": 2
+          },
+          {
+            "X": [
+              0.3000000000000005,
+              0.15000000000000002,
+              0.9999999999999999
+            ],
+            "eigen_ratio": 0.7644943826183982,
+            "min_eigen_ratio_threshold": 0.001,
+            "n_cameras": 3,
+            "rank": 3,
+            "rationale": "solution has non-positive depth in camera(s) cam_behind; retained as geometric inconsistency, observations not removed",
+            "status": "inconsistent",
+            "t": 3
+          },
+          {
+            "X": [
+              0.3999999999999986,
+              0.19999999999999968,
+              0.9999999999999999
+            ],
+            "eigen_ratio": 0.7608223803544102,
+            "min_eigen_ratio_threshold": 0.001,
+            "n_cameras": 3,
+            "rank": 3,
+            "rationale": "solution has non-positive depth in camera(s) cam_behind; retained as geometric inconsistency, observations not removed",
+            "status": "inconsistent",
+            "t": 4
+          }
+        ]
+      },
+      "product": {
+        "id": "behind-v1",
+        "n_calibrated_cameras": 3,
+        "path": "./out/behind/products/calibration_v1.json",
+        "reachable_frames": [
+          "cam_behind",
+          "cam_f",
+          "cam_g",
+          "world"
+        ],
+        "unreachable_cameras": {}
+      },
+      "run": {
+        "dataset_id": "ds_4aa0dd9af25ea8e8",
+        "n_degenerate": 0,
+        "n_inconsistent": 5,
+        "n_points": 5,
+        "n_published": 0,
+        "n_segments_allowed": 0,
+        "n_segments_blocked": 4,
+        "product_id": "behind-v1",
+        "run_id": "run_d2a00d9f24f440f6"
+      },
+      "tracks": {
+        "track_behind": {
+          "n": 5,
+          "n_published": 0,
+          "t_max": 4,
+          "t_min": 0,
+          "track_id": "track_behind"
+        }
+      },
+      "warehouse_db": "./db/warehouse_behind.sqlite"
+    },
+    "loop_conflict": {
+      "components": {
+        "cam_a": [
+          "cam_a",
+          "cam_b",
+          "link_x",
+          "world"
+        ]
+      },
+      "graph_consistent": true,
+      "graph_version_after_rejections": 4,
+      "point_status": {
+        "track_loop_ok": [
+          {
+            "X": [
+              -1.4988010832439615e-15,
+              1.4186183092432559e-15,
+              0.9999999999999996
+            ],
+            "eigen_ratio": 0.4807692307692306,
+            "min_eigen_ratio_threshold": 0.001,
+            "n_cameras": 2,
+            "rank": 3,
+            "rationale": "solved; depth and pixel checks filled from product poses",
+            "status": "published",
+            "t": 0
+          },
+          {
+            "X": [
+              -1.4988010832439615e-15,
+              1.4186183092432559e-15,
+              0.9999999999999996
+            ],
+            "eigen_ratio": 0.4807692307692306,
+            "min_eigen_ratio_threshold": 0.001,
+            "n_cameras": 2,
+            "rank": 3,
+            "rationale": "solved; depth and pixel checks filled from product poses",
+            "status": "published",
+            "t": 1
+          },
+          {
+            "X": [
+              -1.4988010832439615e-15,
+              1.4186183092432559e-15,
+              0.9999999999999996
+            ],
+            "eigen_ratio": 0.4807692307692306,
+            "min_eigen_ratio_threshold": 0.001,
+            "n_cameras": 2,
+            "rank": 3,
+            "rationale": "solved; depth and pixel checks filled from product poses",
+            "status": "published",
+            "t": 2
+          }
+        ]
+      },
+      "product": {
+        "id": "loop_conflict-v1",
+        "n_calibrated_cameras": 2,
+        "path": "./out/loop_conflict/products/calibration_v1.json",
+        "reachable_frames": [
+          "cam_a",
+          "cam_b",
+          "link_x",
+          "world"
+        ],
+        "unreachable_cameras": {}
+      },
+      "rejected_mutations": [
+        {
+          "error": "inconsistent cycle rejected: edge edge_bad_cycle gives link_x two transforms (rotation 2.061e+01 deg, translation 1.863e+00)",
+          "graph_version_unchanged": true,
+          "label": "conflicting_cycle",
+          "rejected": true
+        },
+        {
+          "error": "edge edge_nonorth: R is not orthogonal under tol=1e-09 (max err 1.000e-01)",
+          "graph_version_unchanged": true,
+          "label": "non_orthogonal_R",
+          "rejected": true
+        },
+        {
+          "error": "edge edge_mirror: det(R)=-1.000000000000 differs from 1 by more than tol=1e-09",
+          "graph_version_unchanged": true,
+          "label": "det_minus_one",
+          "rejected": true
+        },
+        {
+          "error": "edge edge_nan: R contains non-finite entries",
+          "graph_version_unchanged": true,
+          "label": "nan_matrix",
+          "rejected": true
+        },
+        {
+          "error": "edge edge_inf: R contains non-finite entries",
+          "graph_version_unchanged": true,
+          "label": "inf_translation",
+          "rejected": true
+        }
+      ],
+      "run": {
+        "dataset_id": "ds_5bb60c38ff83a99f",
+        "n_degenerate": 0,
+        "n_inconsistent": 0,
+        "n_points": 3,
+        "n_published": 3,
+        "n_segments_allowed": 2,
+        "n_segments_blocked": 0,
+        "product_id": "loop_conflict-v1",
+        "run_id": "run_145f1ef5da2b4b5a"
+      },
+      "tracks": {
+        "track_loop_ok": {
+          "n": 3,
+          "n_published": 3,
+          "t_max": 2,
+          "t_min": 0,
+          "track_id": "track_loop_ok"
+        }
+      },
+      "warehouse_db": "./db/warehouse_loop_conflict.sqlite"
+    },
+    "near": {
+      "components": {
+        "cam_near_a": [
+          "cam_near_a",
+          "cam_near_b",
+          "world"
+        ]
+      },
+      "graph_consistent": true,
+      "point_status": {
+        "track_near": [
+          {
+            "X": null,
+            "eigen_ratio": 6.009614299405273e-08,
+            "min_eigen_ratio_threshold": 0.001,
+            "n_cameras": 2,
+            "rank": 3,
+            "rationale": "normal matrix rank 3/3, eigen ratio 6.010e-08 < threshold 1.000e-03; rays do not constrain depth",
+            "status": "degenerate",
+            "t": 0
+          },
+          {
+            "X": null,
+            "eigen_ratio": 6.009614299405273e-08,
+            "min_eigen_ratio_threshold": 0.001,
+            "n_cameras": 2,
+            "rank": 3,
+            "rationale": "normal matrix rank 3/3, eigen ratio 6.010e-08 < threshold 1.000e-03; rays do not constrain depth",
+            "status": "degenerate",
+            "t": 1
+          },
+          {
+            "X": null,
+            "eigen_ratio": 6.009614299405273e-08,
+            "min_eigen_ratio_threshold": 0.001,
+            "n_cameras": 2,
+            "rank": 3,
+            "rationale": "normal matrix rank 3/3, eigen ratio 6.010e-08 < threshold 1.000e-03; rays do not constrain depth",
+            "status": "degenerate",
+            "t": 2
+          },
+          {
+            "X": null,
+            "eigen_ratio": 6.009614299405273e-08,
+            "min_eigen_ratio_threshold": 0.001,
+            "n_cameras": 2,
+            "rank": 3,
+            "rationale": "normal matrix rank 3/3, eigen ratio 6.010e-08 < threshold 1.000e-03; rays do not constrain depth",
+            "status": "degenerate",
+            "t": 3
+          },
+          {
+            "X": null,
+            "eigen_ratio": 6.009614299405273e-08,
+            "min_eigen_ratio_threshold": 0.001,
+            "n_cameras": 2,
+            "rank": 3,
+            "rationale": "normal matrix rank 3/3, eigen ratio 6.010e-08 < threshold 1.000e-03; rays do not constrain depth",
+            "status": "degenerate",
+            "t": 4
+          }
+        ]
+      },
+      "product": {
+        "id": "near-v1",
+        "n_calibrated_cameras": 2,
+        "path": "./out/near/products/calibration_v1.json",
+        "reachable_frames": [
+          "cam_near_a",
+          "cam_near_b",
+          "world"
+        ],
+        "unreachable_cameras": {}
+      },
+      "run": {
+        "dataset_id": "ds_d457c9d08540e1f9",
+        "n_degenerate": 5,
+        "n_inconsistent": 0,
+        "n_points": 5,
+        "n_published": 0,
+        "n_segments_allowed": 0,
+        "n_segments_blocked": 4,
+        "product_id": "near-v1",
+        "run_id": "run_5287a86f18524679"
+      },
+      "tracks": {
+        "track_near": {
+          "n": 5,
+          "n_published": 0,
+          "t_max": 4,
+          "t_min": 0,
+          "track_id": "track_near"
+        }
+      },
+      "warehouse_db": "./db/warehouse_near.sqlite"
+    },
+    "parallel": {
+      "components": {
+        "cam_par_a": [
+          "cam_par_a",
+          "cam_par_b",
+          "world"
+        ]
+      },
+      "graph_consistent": true,
+      "point_status": {
+        "track_parallel": [
+          {
+            "X": null,
+            "eigen_ratio": 0.0,
+            "min_eigen_ratio_threshold": 0.001,
+            "n_cameras": 2,
+            "rank": 2,
+            "rationale": "normal matrix rank 2/3, eigen ratio 0.000e+00 < threshold 1.000e-03; rays do not constrain depth",
+            "status": "degenerate",
+            "t": 0
+          },
+          {
+            "X": null,
+            "eigen_ratio": 0.0,
+            "min_eigen_ratio_threshold": 0.001,
+            "n_cameras": 2,
+            "rank": 2,
+            "rationale": "normal matrix rank 2/3, eigen ratio 0.000e+00 < threshold 1.000e-03; rays do not constrain depth",
+            "status": "degenerate",
+            "t": 1
+          },
+          {
+            "X": null,
+            "eigen_ratio": 6.231198571531277e-17,
+            "min_eigen_ratio_threshold": 0.001,
+            "n_cameras": 2,
+            "rank": 2,
+            "rationale": "normal matrix rank 2/3, eigen ratio 6.231e-17 < threshold 1.000e-03; rays do not constrain depth",
+            "status": "degenerate",
+            "t": 2
+          },
+          {
+            "X": null,
+            "eigen_ratio": 1.7836256272291838e-17,
+            "min_eigen_ratio_threshold": 0.001,
+            "n_cameras": 2,
+            "rank": 2,
+            "rationale": "normal matrix rank 2/3, eigen ratio 1.784e-17 < threshold 1.000e-03; rays do not constrain depth",
+            "status": "degenerate",
+            "t": 3
+          },
+          {
+            "X": null,
+            "eigen_ratio": 0.0,
+            "min_eigen_ratio_threshold": 0.001,
+            "n_cameras": 2,
+            "rank": 2,
+            "rationale": "normal matrix rank 2/3, eigen ratio 0.000e+00 < threshold 1.000e-03; rays do not constrain depth",
+            "status": "degenerate",
+            "t": 4
+          }
+        ]
+      },
+      "product": {
+        "id": "parallel-v1",
+        "n_calibrated_cameras": 2,
+        "path": "./out/parallel/products/calibration_v1.json",
+        "reachable_frames": [
+          "cam_par_a",
+          "cam_par_b",
+          "world"
+        ],
+        "unreachable_cameras": {}
+      },
+      "run": {
+        "dataset_id": "ds_fed66bcf15e77719",
+        "n_degenerate": 5,
+        "n_inconsistent": 0,
+        "n_points": 5,
+        "n_published": 0,
+        "n_segments_allowed": 0,
+        "n_segments_blocked": 4,
+        "product_id": "parallel-v1",
+        "run_id": "run_72fafc27776c49a5"
+      },
+      "tracks": {
+        "track_parallel": {
+          "n": 5,
+          "n_published": 0,
+          "t_max": 4,
+          "t_min": 0,
+          "track_id": "track_parallel"
+        }
+      },
+      "warehouse_db": "./db/warehouse_parallel.sqlite"
+    },
+    "unreachable": {
+      "components": {
+        "cam_iso": [
+          "cam_iso",
+          "orphan_link"
+        ],
+        "cam_r0": [
+          "cam_r0",
+          "cam_r1",
+          "world"
+        ]
+      },
+      "graph_consistent": true,
+      "point_status": {
+        "track_unreachable_case": [
+          {
+            "X": [
+              0.20000000000000048,
+              0.10000000000000059,
+              1.1999999999999993
+            ],
+            "eigen_ratio": 0.4888015176849835,
+            "min_eigen_ratio_threshold": 0.001,
+            "n_cameras": 2,
+            "rank": 3,
+            "rationale": "solved; depth and pixel checks filled from product poses",
+            "status": "published",
+            "t": 0
+          },
+          {
+            "X": [
+              0.20000000000000048,
+              0.10000000000000059,
+              1.1999999999999993
+            ],
+            "eigen_ratio": 0.4888015176849835,
+            "min_eigen_ratio_threshold": 0.001,
+            "n_cameras": 2,
+            "rank": 3,
+            "rationale": "solved; depth and pixel checks filled from product poses",
+            "status": "published",
+            "t": 1
+          },
+          {
+            "X": [
+              0.20000000000000048,
+              0.10000000000000059,
+              1.1999999999999993
+            ],
+            "eigen_ratio": 0.4888015176849835,
+            "min_eigen_ratio_threshold": 0.001,
+            "n_cameras": 2,
+            "rank": 3,
+            "rationale": "solved; depth and pixel checks filled from product poses",
+            "status": "published",
+            "t": 2
+          },
+          {
+            "X": [
+              0.20000000000000048,
+              0.10000000000000059,
+              1.1999999999999993
+            ],
+            "eigen_ratio": 0.4888015176849835,
+            "min_eigen_ratio_threshold": 0.001,
+            "n_cameras": 2,
+            "rank": 3,
+            "rationale": "solved; depth and pixel checks filled from product poses",
+            "status": "published",
+            "t": 3
+          }
+        ]
+      },
+      "product": {
+        "id": "unreachable-v1",
+        "n_calibrated_cameras": 2,
+        "path": "./out/unreachable/products/calibration_v1.json",
+        "reachable_frames": [
+          "cam_r0",
+          "cam_r1",
+          "world"
+        ],
+        "unreachable_cameras": {
+          "cam_iso": "no path to world root"
+        }
+      },
+      "run": {
+        "dataset_id": "ds_dcca6c61301787d5",
+        "n_degenerate": 0,
+        "n_inconsistent": 0,
+        "n_points": 4,
+        "n_published": 4,
+        "n_segments_allowed": 3,
+        "n_segments_blocked": 0,
+        "product_id": "unreachable-v1",
+        "run_id": "run_408ac57c26e74d76"
+      },
+      "tracks": {
+        "track_unreachable_case": {
+          "n": 4,
+          "n_published": 4,
+          "t_max": 3,
+          "t_min": 0,
+          "track_id": "track_unreachable_case"
+        }
+      },
+      "warehouse_db": "./db/warehouse_unreachable.sqlite"
+    }
+  },
+  "graph_db": "./db/calibration_graph.sqlite",
+  "graph_versions": 24,
+  "max_gap": 1,
+  "min_eigen_ratio": 0.001,
+  "product_v1": {
+    "id": "main-v1",
+    "path": "./out/main/products/calibration_v1.json",
+    "run": {
+      "dataset_id": "ds_51632805a30c8a55",
+      "n_degenerate": 5,
+      "n_inconsistent": 0,
+      "n_points": 10010,
+      "n_published": 10005,
+      "n_segments_allowed": 9903,
+      "n_segments_blocked": 5,
+      "product_id": "main-v1",
+      "run_id": "run_dc993e2bb1724f05"
+    }
+  },
+  "product_v2": {
+    "id": "main-v2",
+    "path": "./out/main/products/calibration_v2.json",
+    "run": {
+      "dataset_id": "ds_51632805a30c8a55",
+      "n_degenerate": 5,
+      "n_inconsistent": 0,
+      "n_points": 10010,
+      "n_published": 10005,
+      "n_segments_allowed": 9903,
+      "n_segments_blocked": 5,
+      "product_id": "main-v2",
+      "run_id": "run_1f855b1ee90a40f8"
+    }
+  },
+  "warehouse_db": "./db/trajectory_warehouse.sqlite",
+  "world_root": "world"
+}

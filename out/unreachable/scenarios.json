@@ -1,0 +1,13 @@
+{
+  "extras": {
+    "expect_unreachable": [
+      "cam_iso"
+    ]
+  },
+  "scenarios": {
+    "track_unreachable_case": {
+      "description": "control track in the reachable component",
+      "kind": "reachable_control"
+    }
+  }
+}

@@ -1,0 +1,192 @@
+{
+  "extras": {
+    "rejected_mutations": [
+      {
+        "expect_error": "inconsistent cycle",
+        "label": "conflicting_cycle",
+        "ops": [
+          {
+            "dst": "world",
+            "edge_id": "edge_bad_cycle",
+            "op": "add_edge",
+            "src": "link_x",
+            "transform": {
+              "R": [
+                [
+                  1.0,
+                  0.0,
+                  0.0
+                ],
+                [
+                  0.0,
+                  0.9961946980917455,
+                  -0.08715574274765817
+                ],
+                [
+                  0.0,
+                  0.08715574274765817,
+                  0.9961946980917455
+                ]
+              ],
+              "t": [
+                0.5,
+                0.0,
+                0.0
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "expect_error": "not orthogonal",
+        "label": "non_orthogonal_R",
+        "ops": [
+          {
+            "dst": "link_x",
+            "edge_id": "edge_nonorth",
+            "op": "add_edge",
+            "src": "world",
+            "transform": {
+              "R": [
+                [
+                  1.0,
+                  0.1,
+                  0.0
+                ],
+                [
+                  0.0,
+                  1.0,
+                  0.0
+                ],
+                [
+                  0.0,
+                  0.0,
+                  1.0
+                ]
+              ],
+              "t": [
+                0.0,
+                0.0,
+                0.0
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "expect_error": "det(R)",
+        "label": "det_minus_one",
+        "ops": [
+          {
+            "dst": "link_x",
+            "edge_id": "edge_mirror",
+            "op": "add_edge",
+            "src": "world",
+            "transform": {
+              "R": [
+                [
+                  1.0,
+                  0.0,
+                  0.0
+                ],
+                [
+                  0.0,
+                  1.0,
+                  0.0
+                ],
+                [
+                  0.0,
+                  0.0,
+                  -1.0
+                ]
+              ],
+              "t": [
+                0.0,
+                0.0,
+                0.0
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "expect_error": "non-finite",
+        "label": "nan_matrix",
+        "ops": [
+          {
+            "dst": "link_x",
+            "edge_id": "edge_nan",
+            "op": "add_edge",
+            "src": "world",
+            "transform": {
+              "R": [
+                [
+                  "NaN",
+                  0.0,
+                  0.0
+                ],
+                [
+                  0.0,
+                  1.0,
+                  0.0
+                ],
+                [
+                  0.0,
+                  0.0,
+                  1.0
+                ]
+              ],
+              "t": [
+                0.0,
+                0.0,
+                0.0
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "expect_error": "non-finite",
+        "label": "inf_translation",
+        "ops": [
+          {
+            "dst": "world",
+            "edge_id": "edge_inf",
+            "op": "add_edge",
+            "src": "cam_a",
+            "transform": {
+              "R": [
+                [
+                  "Infinity",
+                  0.0,
+                  0.0
+                ],
+                [
+                  0.0,
+                  1.0,
+                  0.0
+                ],
+                [
+                  0.0,
+                  0.0,
+                  1.0
+                ]
+              ],
+              "t": [
+                0.0,
+                0.0,
+                0.0
+              ]
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "scenarios": {
+    "track_loop_ok": {
+      "description": "valid observations on the consistent base graph",
+      "kind": "basic"
+    }
+  }
+}

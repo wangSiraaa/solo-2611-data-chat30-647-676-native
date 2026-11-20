@@ -1,0 +1,6 @@
+{"camera_id": "cam_a", "obs_id": "track_loop_ok@000@cam_a", "t": 0, "track_id": "track_loop_ok", "u": 635.3322027337857, "v": 346.3451452707126, "weight": 1.0}
+{"camera_id": "cam_b", "obs_id": "track_loop_ok@000@cam_b", "t": 0, "track_id": "track_loop_ok", "u": 646.5631413062641, "v": 355.3606951222752, "weight": 1.0}
+{"camera_id": "cam_a", "obs_id": "track_loop_ok@001@cam_a", "t": 1, "track_id": "track_loop_ok", "u": 635.3322027337857, "v": 346.3451452707126, "weight": 1.0}
+{"camera_id": "cam_b", "obs_id": "track_loop_ok@001@cam_b", "t": 1, "track_id": "track_loop_ok", "u": 646.5631413062641, "v": 355.3606951222752, "weight": 1.0}
+{"camera_id": "cam_a", "obs_id": "track_loop_ok@002@cam_a", "t": 2, "track_id": "track_loop_ok", "u": 635.3322027337857, "v": 346.3451452707126, "weight": 1.0}
+{"camera_id": "cam_b", "obs_id": "track_loop_ok@002@cam_b", "t": 2, "track_id": "track_loop_ok", "u": 646.5631413062641, "v": 355.3606951222752, "weight": 1.0}

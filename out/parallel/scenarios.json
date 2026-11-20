@@ -1,0 +1,12 @@
+{
+  "extras": {
+    "expect_reason": "parallel",
+    "expect_status": "degenerate"
+  },
+  "scenarios": {
+    "track_parallel": {
+      "description": "identical poses -> identical rays -> normal matrix rank 1",
+      "kind": "parallel_rays"
+    }
+  }
+}

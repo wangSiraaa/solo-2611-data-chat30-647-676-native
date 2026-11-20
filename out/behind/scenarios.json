@@ -1,0 +1,12 @@
+{
+  "extras": {
+    "expect_behind_camera": "cam_behind",
+    "expect_status": "inconsistent"
+  },
+  "scenarios": {
+    "track_behind": {
+      "description": "rays meet at a point behind cam_behind; must be flagged inconsistent",
+      "kind": "behind_camera"
+    }
+  }
+}
