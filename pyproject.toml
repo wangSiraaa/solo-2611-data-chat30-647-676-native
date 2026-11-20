@@ -1,0 +1,12 @@
+[project]
+name = "coldchain"
+version = "1.0.0"
+description = "Rotatable cold-chain 2D packing and sealed-box transport loading"
+requires-python = ">=3.11"
+dependencies = []
+
+[project.optional-dependencies]
+test = ["pytest"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
