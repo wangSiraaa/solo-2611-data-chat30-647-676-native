@@ -1,0 +1,93 @@
+[
+  {
+    "product_id": "prod-43f2e2e9e18644ee",
+    "product_version": 1,
+    "kind": "internal",
+    "source_product_id": null,
+    "design_id": "design-8743be80e8b34b7f",
+    "payload_sha256": "1c514b6f1ef5792ed760a79c9c932acff28cf3744853281c9b1ef7489caa97fa",
+    "created_at": "2026-11-18T07:04:13.461992+00:00",
+    "status_summary": {
+      "calibrated": 16,
+      "uncalibratable": 0
+    }
+  },
+  {
+    "product_id": "prod-9a2a1621ed6e439d",
+    "product_version": 2,
+    "kind": "internal",
+    "source_product_id": null,
+    "design_id": "design-b501cbfc00e54d04",
+    "payload_sha256": "ab5326539d3455b2bc0e2af9bac751c3ea3913d36d2baafa22c9424987fe95d7",
+    "created_at": "2026-11-18T07:04:13.470499+00:00",
+    "status_summary": {
+      "calibrated": 3,
+      "uncalibratable": 0
+    }
+  },
+  {
+    "product_id": "prod-d468ca9d6cff496b",
+    "product_version": 3,
+    "kind": "internal",
+    "source_product_id": null,
+    "design_id": "design-3389c7e94e9b4f08",
+    "payload_sha256": "c3f65e8faba1eae6df6c0d24f9008c3966554f4154328b328561e3e5ab9a9869",
+    "created_at": "2026-11-18T07:04:13.477794+00:00",
+    "status_summary": {
+      "calibrated": 4,
+      "uncalibratable": 0
+    }
+  },
+  {
+    "product_id": "prod-d22e91f5a1b4443e",
+    "product_version": 4,
+    "kind": "internal",
+    "source_product_id": null,
+    "design_id": "design-d282ab49f4334c0d",
+    "payload_sha256": "d3890df550e133837c9284e2edbe97d4ab484e326536384aa7b64670bbdd5e55",
+    "created_at": "2026-11-18T07:04:13.488600+00:00",
+    "status_summary": {
+      "calibrated": 0,
+      "uncalibratable": 3
+    }
+  },
+  {
+    "product_id": "prod-c020ed16c8ad4b59",
+    "product_version": 5,
+    "kind": "internal",
+    "source_product_id": null,
+    "design_id": "design-b949f063a48349ef",
+    "payload_sha256": "dc234b0afc0234227844e48a15159933d20d8bfdbe46bcae3ac2b55c2f8f57b0",
+    "created_at": "2026-11-18T07:04:13.507985+00:00",
+    "status_summary": {
+      "calibrated": 2,
+      "uncalibratable": 1
+    }
+  },
+  {
+    "product_id": "prod-809d3942253344af",
+    "product_version": 6,
+    "kind": "internal",
+    "source_product_id": null,
+    "design_id": "design-8743be80e8b34b7f",
+    "payload_sha256": "cc033c57fb4ea214b1b51f6dfe37fd01da517cd44d178c1f125b2a1df5f44bb9",
+    "created_at": "2026-11-18T07:04:15.895435+00:00",
+    "status_summary": {
+      "calibrated": 16,
+      "uncalibratable": 0
+    }
+  },
+  {
+    "product_id": "prod-441280ffadde4d24",
+    "product_version": 7,
+    "kind": "internal",
+    "source_product_id": null,
+    "design_id": "design-8743be80e8b34b7f",
+    "payload_sha256": "3574a70ce0c658c86039903ad88258867fe59cbc4204e80a65eb1cf6f1433eb1",
+    "created_at": "2026-11-18T07:04:15.904669+00:00",
+    "status_summary": {
+      "calibrated": 16,
+      "uncalibratable": 0
+    }
+  }
+]

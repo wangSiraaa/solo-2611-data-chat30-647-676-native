@@ -1,0 +1,68 @@
+{
+  "config": {
+    "angle_period_deg": 180.0,
+    "constraint_atol": 1e-09,
+    "constraint_rtol": 1e-09,
+    "distinct_atol": 1e-12,
+    "distinct_rtol": 1e-12,
+    "min_channels_for_inversion": 3,
+    "rank_tol": 1e-10,
+    "zero_tol": 1e-12
+  },
+  "disclaimer": "All numbers below are outputs of the task-defined synthetic model (s=(I+Q*cos(2theta)+U*sin(2theta))/2, y=g*s+b, g>0). They are not medical, astronomical, or real-instrument measurements.",
+  "inversion_counts": {
+    "consistent": 1000,
+    "insufficient_channels": 0,
+    "model_inconsistent": 0,
+    "rank_deficient": 0
+  },
+  "model_statement": "LIMITED SYNTHETIC MODEL ONLY: s = (I + Q*cos(2*theta) + U*sin(2*theta)) / 2 ; y = g*s + b, g > 0. No instrument is connected. This is not a real physical, medical, or astronomical measurement and no such accuracy is claimed.",
+  "n_channels": 16,
+  "n_exposures": 1000,
+  "n_references": 100,
+  "product_after_retraction": {
+    "product_id": "prod-441280ffadde4d24",
+    "product_version": 7,
+    "sha256": "3574a70ce0c658c86039903ad88258867fe59cbc4204e80a65eb1cf6f1433eb1",
+    "status_summary": {
+      "calibrated": 16,
+      "uncalibratable": 0
+    }
+  },
+  "product_biased_with_R042": {
+    "note": "contains the deliberately inconsistent reference R042.",
+    "product_id": "prod-809d3942253344af",
+    "product_version": 6,
+    "sha256": "cc033c57fb4ea214b1b51f6dfe37fd01da517cd44d178c1f125b2a1df5f44bb9",
+    "status_summary": {
+      "calibrated": 16,
+      "uncalibratable": 0
+    }
+  },
+  "product_v1_clean": {
+    "note": "100 clean references; used for sections 3-4.",
+    "product_id": "prod-43f2e2e9e18644ee",
+    "product_version": 1,
+    "sha256": "1c514b6f1ef5792ed760a79c9c932acff28cf3744853281c9b1ef7489caa97fa",
+    "status_summary": {
+      "calibrated": 16,
+      "uncalibratable": 0
+    }
+  },
+  "recovery_max_abs_error": {
+    "I": 1.5418385421739345e-06,
+    "Q": 2.594005026335111e-06,
+    "U": 1.8770179633920137e-06
+  },
+  "retraction": {
+    "gain_after": 0.757140405538399,
+    "gain_before": 0.756964327055753,
+    "new_product": "prod-441280ffadde4d24",
+    "new_run": "run-75c8021d521d4ebc",
+    "offset_after": 0.17036058410248398,
+    "offset_before": 0.17073804518949579,
+    "old_product": "prod-809d3942253344af",
+    "old_run": "run-b5524f085ce74dbd",
+    "reference_id": "R042"
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "exposures": 1009,
+  "runs_for_target": [
+    {
+      "run_id": "run-d3c58c00056a4d5e",
+      "exposure_id": "EXP0000",
+      "product_id": "prod-43f2e2e9e18644ee",
+      "product_version": 1,
+      "created_at": "2026-11-18T07:04:14.383628+00:00",
+      "run_status": "solved",
+      "solution_status": "consistent",
+      "I": 1.1108553505735463,
+      "Q": -0.6197169751917629,
+      "U": -0.04648541065323165,
+      "reof_of": null
+    },
+    {
+      "run_id": "run-b5524f085ce74dbd",
+      "exposure_id": "EXP0000",
+      "product_id": "prod-809d3942253344af",
+      "product_version": 6,
+      "created_at": "2026-11-18T07:04:15.899053+00:00",
+      "run_status": "solved",
+      "solution_status": "consistent",
+      "I": 1.1103159347710618,
+      "Q": -0.6198509628658347,
+      "U": -0.04646851626140667,
+      "reof_of": null
+    },
+    {
+      "run_id": "run-75c8021d521d4ebc",
+      "exposure_id": "EXP0000",
+      "product_id": "prod-441280ffadde4d24",
+      "product_version": 7,
+      "created_at": "2026-11-18T07:04:15.908622+00:00",
+      "run_status": "solved",
+      "solution_status": "consistent",
+      "I": 1.1108553505735466,
+      "Q": -0.6197169751917629,
+      "U": -0.046485410653231564,
+      "reof_of": "run-b5524f085ce74dbd"
+    }
+  ]
+}
