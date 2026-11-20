@@ -1,0 +1,669 @@
+{
+  "scenarios": {
+    "1_overbuy_cheaper_and_idempotency": {
+      "case": "多买反而便宜（全量阶梯价）+ 同号复读/异文拒绝",
+      "buy_8": {
+        "qty": 8,
+        "total_price": 96,
+        "unit_price": 12
+      },
+      "buy_10": {
+        "qty": 10,
+        "total_price": 80,
+        "unit_price": 8
+      },
+      "cheaper_by_buying_more": true,
+      "replay_same_quote_no": true,
+      "same_no_diff_body_rejected": {
+        "rejected": true,
+        "code": "DUPLICATE_REQUEST",
+        "message": "请求号 REQ-OB-8 已用于不同请求体"
+      }
+    },
+    "2_packaging": {
+      "case": "包装倍数使需求无法恰好满足，穷举选择最省的凑整组合",
+      "single_demand_qty": 4,
+      "s1_pack5_feasible_up_to_10": [
+        0,
+        5,
+        10
+      ],
+      "exact_4_possible_at_s1": false,
+      "needed": 8,
+      "enumerated_allocation_count_for_sku_b": 11,
+      "chosen_sku_b_plan": {
+        "sku": "SKU-B",
+        "needed": 8,
+        "bought": 9,
+        "overbuy": 1,
+        "suppliers": [
+          {
+            "supplier_id": "S1",
+            "qty": 0,
+            "unit_price": 0,
+            "line_price": 0,
+            "pack_multiple": 5
+          },
+          {
+            "supplier_id": "S2",
+            "qty": 9,
+            "unit_price": 8,
+            "line_price": 72,
+            "pack_multiple": 3
+          },
+          {
+            "supplier_id": "S3",
+            "qty": 0,
+            "unit_price": 0,
+            "line_price": 0,
+            "pack_multiple": 4
+          }
+        ]
+      },
+      "overbuy_b": 1,
+      "forced_overbuy": true
+    },
+    "3_expired_quote": {
+      "case": "低价规则版本到期：过期接受不产生承诺，重新报价价格回升",
+      "early_quote": {
+        "quote_no": "Q-REQ-EXP-C",
+        "version": "V-S3-EARLY",
+        "total_price": 70,
+        "status_after_expired_accept": "OPEN"
+      },
+      "in_window_accept_works": true,
+      "expired_accept": {
+        "rejected": true,
+        "code": "QUOTE_EXPIRED",
+        "message": "报价 Q-REQ-EXP-C 已过期：当前 2026-12-02T10:00:00，有效窗口 [2026-11-01T00:00:00, 2026-11-09T00:00:00)"
+      },
+      "no_commitment_created": true,
+      "active_version_switched_to": "V-S3-MAIN",
+      "main_window_quote": {
+        "quote_no": "Q-REQ-LATE-C",
+        "version": "V-S3-MAIN",
+        "total_price": 130
+      },
+      "price_increased_after_expiry": true
+    },
+    "4_shortage_two_stores": {
+      "case": "到货不足：两门店争 SKU-D，按优先级/到期日/需求ID分配，余额入中央库存",
+      "committed_d": 16,
+      "delivered_d": 8,
+      "receipts": [
+        {
+          "receipt_id": "R-01",
+          "leftover": {
+            "SKU-A": 1,
+            "SKU-C": 0,
+            "SKU-D": 0,
+            "SKU-E": 1
+          }
+        },
+        {
+          "receipt_id": "R-02",
+          "leftover": {
+            "SKU-B": 1
+          }
+        }
+      ],
+      "d_demand_status": [
+        {
+          "demand_id": "D09",
+          "qty": 4,
+          "allocated": 4,
+          "status": "DONE",
+          "priority": 5,
+          "due_date": "2026-11-19"
+        },
+        {
+          "demand_id": "D10",
+          "qty": 4,
+          "allocated": 4,
+          "status": "DONE",
+          "priority": 5,
+          "due_date": "2026-11-20"
+        },
+        {
+          "demand_id": "D11",
+          "qty": 3,
+          "allocated": 0,
+          "status": "OPEN",
+          "priority": 3,
+          "due_date": "2026-11-22"
+        },
+        {
+          "demand_id": "D12",
+          "qty": 3,
+          "allocated": 0,
+          "status": "OPEN",
+          "priority": 2,
+          "due_date": "2026-11-24"
+        },
+        {
+          "demand_id": "D20",
+          "qty": 1,
+          "allocated": 0,
+          "status": "OPEN",
+          "priority": 1,
+          "due_date": "2026-11-30"
+        }
+      ],
+      "outstanding_after_shortage": [
+        {
+          "demand_id": "D11",
+          "sku": "SKU-D",
+          "qty": 3,
+          "priority": 3,
+          "due_date": "2026-11-22",
+          "status": "OPEN",
+          "allocated_qty": 0,
+          "remaining": 3
+        },
+        {
+          "demand_id": "D12",
+          "sku": "SKU-D",
+          "qty": 3,
+          "priority": 2,
+          "due_date": "2026-11-24",
+          "status": "OPEN",
+          "allocated_qty": 0,
+          "remaining": 3
+        },
+        {
+          "demand_id": "D20",
+          "sku": "SKU-D",
+          "qty": 1,
+          "priority": 1,
+          "due_date": "2026-11-30",
+          "status": "OPEN",
+          "allocated_qty": 0,
+          "remaining": 1
+        }
+      ],
+      "central_stock": {
+        "SKU-A": {
+          "received": 14,
+          "allocated": 13,
+          "central": 1
+        },
+        "SKU-B": {
+          "received": 9,
+          "allocated": 8,
+          "central": 1
+        },
+        "SKU-C": {
+          "received": 12,
+          "allocated": 12,
+          "central": 0
+        },
+        "SKU-D": {
+          "received": 8,
+          "allocated": 8,
+          "central": 0
+        },
+        "SKU-E": {
+          "received": 12,
+          "allocated": 11,
+          "central": 1
+        }
+      }
+    },
+    "5_receipt_replay": {
+      "case": "一个到货身份只能分配一次；累计到货不得超过承诺数量",
+      "first_receipt": "R-REPLAY",
+      "duplicate_receipt_rejected": {
+        "rejected": true,
+        "code": "RECEIPT_ALREADY_PROCESSED",
+        "message": "到货身份 R-REPLAY 已处理，一个到货身份只能分配一次"
+      },
+      "over_commitment_receipt_rejected": {
+        "rejected": true,
+        "code": "RULE_VIOLATION",
+        "message": "SKU SKU-E 累计到货 3 超过承诺数量 2",
+        "attempted_qty": 2
+      },
+      "valid_second_receipt": "R-REPLAY-REST",
+      "commitment_total_received": 2
+    },
+    "6_conservation_correction_cancel": {
+      "case": "更正重排未发库存、取消不退回实物；从原始记录独立核库存守恒",
+      "conservation_before": {
+        "ok": true,
+        "problems": [],
+        "details": {
+          "SKU-A": {
+            "received": 14,
+            "allocated": 13,
+            "central": 1,
+            "cross_check_leftover": 1
+          },
+          "SKU-B": {
+            "received": 9,
+            "allocated": 8,
+            "central": 1,
+            "cross_check_leftover": 1
+          },
+          "SKU-C": {
+            "received": 12,
+            "allocated": 12,
+            "central": 0,
+            "cross_check_leftover": 0
+          },
+          "SKU-D": {
+            "received": 8,
+            "allocated": 8,
+            "central": 0,
+            "cross_check_leftover": 0
+          },
+          "SKU-E": {
+            "received": 14,
+            "allocated": 11,
+            "central": 3,
+            "cross_check_leftover": 3
+          }
+        }
+      },
+      "correction": {
+        "demand_id": "D11",
+        "new_qty": 5,
+        "allocated_kept": 0
+      },
+      "shrink_below_allocated_rejected": {
+        "rejected": true,
+        "code": "RULE_VIOLATION",
+        "message": "更正后数量必须为正（取消请用 cancel_demand）"
+      },
+      "cancel": {
+        "demand_id": "D12",
+        "status": "CANCELLED",
+        "allocated_kept": 0
+      },
+      "conservation_after": {
+        "ok": true,
+        "problems": [],
+        "details": {
+          "SKU-A": {
+            "received": 14,
+            "allocated": 13,
+            "central": 1,
+            "cross_check_leftover": 1
+          },
+          "SKU-B": {
+            "received": 9,
+            "allocated": 8,
+            "central": 1,
+            "cross_check_leftover": 1
+          },
+          "SKU-C": {
+            "received": 12,
+            "allocated": 12,
+            "central": 0,
+            "cross_check_leftover": 0
+          },
+          "SKU-D": {
+            "received": 8,
+            "allocated": 8,
+            "central": 0,
+            "cross_check_leftover": 0
+          },
+          "SKU-E": {
+            "received": 14,
+            "allocated": 11,
+            "central": 3,
+            "cross_check_leftover": 3
+          }
+        }
+      },
+      "allocations_append_only_count": 17,
+      "physical_stock_never_returns_to_supplier": true
+    },
+    "7_infeasible_gap": {
+      "case": "无可行计划：明确逐 SKU 缺口，不拼造承诺",
+      "infeasible_reported": true,
+      "code": "INFEASIBLE_PLAN",
+      "message": "存在无法满足的 SKU 缺口（包装/最低量/上限/超买限制下无可行采购量）",
+      "gaps": {
+        "SKU-D": {
+          "needed": 35,
+          "overbuy_cap": 0,
+          "max_attainable": 1,
+          "shortage": 34,
+          "per_supplier": {
+            "S1": {
+              "max": 0,
+              "options": [
+                0
+              ]
+            },
+            "S2": {
+              "max": 1,
+              "options": [
+                0,
+                1
+              ]
+            },
+            "S3": {
+              "max": 0,
+              "options": [
+                0
+              ]
+            }
+          }
+        }
+      }
+    },
+    "8_capacity_no_oversell": {
+      "case": "凭旧报价也不能超卖：接受时重核同版本剩余额度",
+      "capacity": 10,
+      "result": {
+        "oversold": false,
+        "code": "OVER_CAPACITY",
+        "message": "SKU SKU-X 额度不足：已接受 10 + 本次 2 > 上限 10",
+        "details": {
+          "sku": "SKU-X",
+          "used": 10,
+          "qty": 2,
+          "capacity": 10
+        }
+      },
+      "remaining_after": 0
+    }
+  },
+  "main_plan": {
+    "estimated_cost": 726,
+    "actual_cost": 726,
+    "cost_matches_estimate": true,
+    "overbuy": {
+      "SKU-A": 1,
+      "SKU-B": 1,
+      "SKU-C": 0,
+      "SKU-D": 0,
+      "SKU-E": 1
+    },
+    "quantities": {
+      "S1|SKU-A": 14,
+      "S1|SKU-B": 0,
+      "S1|SKU-C": 12,
+      "S1|SKU-D": 8,
+      "S1|SKU-E": 12,
+      "S2|SKU-A": 0,
+      "S2|SKU-B": 9,
+      "S2|SKU-C": 0,
+      "S2|SKU-D": 3,
+      "S2|SKU-E": 0,
+      "S3|SKU-A": 0,
+      "S3|SKU-B": 0,
+      "S3|SKU-C": 0,
+      "S3|SKU-D": 4,
+      "S3|SKU-E": 0
+    },
+    "commitment_nos": [
+      "C-MAIN-S1",
+      "C-MAIN-S2",
+      "C-MAIN-S3"
+    ],
+    "explanation": {
+      "objective_order": [
+        "可行性(覆盖需求且不超超买上限)",
+        "总报价最小",
+        "超买件数最小",
+        "(供应商ID,SKU)向量字典序"
+      ],
+      "estimated_cost": 726,
+      "actual_cost": 726,
+      "overbuy_total": 3,
+      "lines": [
+        {
+          "sku": "SKU-A",
+          "needed": 13,
+          "bought": 14,
+          "overbuy": 1,
+          "suppliers": [
+            {
+              "supplier_id": "S1",
+              "qty": 14,
+              "unit_price": 8,
+              "line_price": 112,
+              "pack_multiple": 2
+            },
+            {
+              "supplier_id": "S2",
+              "qty": 0,
+              "unit_price": 0,
+              "line_price": 0,
+              "pack_multiple": 3
+            },
+            {
+              "supplier_id": "S3",
+              "qty": 0,
+              "unit_price": 0,
+              "line_price": 0,
+              "pack_multiple": 4
+            }
+          ]
+        },
+        {
+          "sku": "SKU-B",
+          "needed": 8,
+          "bought": 9,
+          "overbuy": 1,
+          "suppliers": [
+            {
+              "supplier_id": "S1",
+              "qty": 0,
+              "unit_price": 0,
+              "line_price": 0,
+              "pack_multiple": 5
+            },
+            {
+              "supplier_id": "S2",
+              "qty": 9,
+              "unit_price": 8,
+              "line_price": 72,
+              "pack_multiple": 3
+            },
+            {
+              "supplier_id": "S3",
+              "qty": 0,
+              "unit_price": 0,
+              "line_price": 0,
+              "pack_multiple": 4
+            }
+          ]
+        },
+        {
+          "sku": "SKU-C",
+          "needed": 12,
+          "bought": 12,
+          "overbuy": 0,
+          "suppliers": [
+            {
+              "supplier_id": "S1",
+              "qty": 12,
+              "unit_price": 12,
+              "line_price": 144,
+              "pack_multiple": 2
+            },
+            {
+              "supplier_id": "S2",
+              "qty": 0,
+              "unit_price": 0,
+              "line_price": 0,
+              "pack_multiple": 3
+            },
+            {
+              "supplier_id": "S3",
+              "qty": 0,
+              "unit_price": 0,
+              "line_price": 0,
+              "pack_multiple": 2
+            }
+          ]
+        },
+        {
+          "sku": "SKU-D",
+          "needed": 15,
+          "bought": 15,
+          "overbuy": 0,
+          "suppliers": [
+            {
+              "supplier_id": "S1",
+              "qty": 8,
+              "unit_price": 20,
+              "line_price": 160,
+              "pack_multiple": 2
+            },
+            {
+              "supplier_id": "S2",
+              "qty": 3,
+              "unit_price": 22,
+              "line_price": 66,
+              "pack_multiple": 1
+            },
+            {
+              "supplier_id": "S3",
+              "qty": 4,
+              "unit_price": 25,
+              "line_price": 100,
+              "pack_multiple": 2
+            }
+          ]
+        },
+        {
+          "sku": "SKU-E",
+          "needed": 11,
+          "bought": 12,
+          "overbuy": 1,
+          "suppliers": [
+            {
+              "supplier_id": "S1",
+              "qty": 12,
+              "unit_price": 6,
+              "line_price": 72,
+              "pack_multiple": 2
+            },
+            {
+              "supplier_id": "S2",
+              "qty": 0,
+              "unit_price": 0,
+              "line_price": 0,
+              "pack_multiple": 3
+            },
+            {
+              "supplier_id": "S3",
+              "qty": 0,
+              "unit_price": 0,
+              "line_price": 0,
+              "pack_multiple": 4
+            }
+          ]
+        }
+      ]
+    },
+    "tradeoffs": {
+      "exhaustive_search": "全量搜索：合法采购量=包装倍数网格（每 SKU ≤30 件时网格点极少），先枚举单 SKU 跨供应商分配并按 (SKU, needed, overbuy_cap) 缓存子问题，再做跨 SKU 笛卡尔积；目标键 (成本, 超买, 向量序) 一次比较完成三层优选。代价是候选数随供应商数指数增长，仅适合题面小规格；更大规模应换 MILP/DP。",
+      "subproblem_cache": "子问题缓存：同一 SKU 在不同超买上界/需求组合下复用 lru_cache 结果，避免重复生成网格与笛卡尔组合；缓存键只依赖不可变目录快照。",
+      "serial_txn": "库存串行事务：SQLite 单库多连接下写事务一律 BEGIN IMMEDIATE 取写锁，配合台账条件更新 (allocated_qty + n <= demand.qty) 做版本条件更新，两个连接争同一库存时后者阻塞后读到已提交状态，天然不会超发；吞吐让位于正确性与可审计性，发放记录只追加、从不改写。"
+    }
+  },
+  "final_conservation": {
+    "ok": true,
+    "problems": [],
+    "details": {
+      "SKU-A": {
+        "received": 14,
+        "allocated": 13,
+        "central": 1,
+        "cross_check_leftover": 1
+      },
+      "SKU-B": {
+        "received": 9,
+        "allocated": 8,
+        "central": 1,
+        "cross_check_leftover": 1
+      },
+      "SKU-C": {
+        "received": 12,
+        "allocated": 12,
+        "central": 0,
+        "cross_check_leftover": 0
+      },
+      "SKU-D": {
+        "received": 8,
+        "allocated": 8,
+        "central": 0,
+        "cross_check_leftover": 0
+      },
+      "SKU-E": {
+        "received": 14,
+        "allocated": 11,
+        "central": 3,
+        "cross_check_leftover": 3
+      }
+    }
+  },
+  "final_stock_levels": {
+    "SKU-A": {
+      "received": 14,
+      "allocated": 13,
+      "central": 1
+    },
+    "SKU-B": {
+      "received": 9,
+      "allocated": 8,
+      "central": 1
+    },
+    "SKU-C": {
+      "received": 12,
+      "allocated": 12,
+      "central": 0
+    },
+    "SKU-D": {
+      "received": 8,
+      "allocated": 8,
+      "central": 0
+    },
+    "SKU-E": {
+      "received": 14,
+      "allocated": 11,
+      "central": 3
+    }
+  },
+  "independent_sql_audit": {
+    "ok": true,
+    "problems": [],
+    "by_sku": {
+      "SKU-A": {
+        "received": 14,
+        "allocated": 13,
+        "central": 1,
+        "cross_check_leftover": 1
+      },
+      "SKU-B": {
+        "received": 9,
+        "allocated": 8,
+        "central": 1,
+        "cross_check_leftover": 1
+      },
+      "SKU-C": {
+        "received": 12,
+        "allocated": 12,
+        "central": 0,
+        "cross_check_leftover": 0
+      },
+      "SKU-D": {
+        "received": 8,
+        "allocated": 8,
+        "central": 0,
+        "cross_check_leftover": 0
+      },
+      "SKU-E": {
+        "received": 14,
+        "allocated": 11,
+        "central": 3,
+        "cross_check_leftover": 3
+      }
+    }
+  }
+}

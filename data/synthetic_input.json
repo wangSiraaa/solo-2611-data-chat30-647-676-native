@@ -1,0 +1,450 @@
+{
+  "versions": {
+    "V-S1-MAIN": {
+      "supplier_id": "S1",
+      "window": [
+        "2026-11-09T00:00:00",
+        "2026-12-01T00:00:00"
+      ],
+      "sku_rules": {
+        "SKU-A": {
+          "pack_multiple": 2,
+          "min_qty": 0,
+          "capacity": 20,
+          "tiers": [
+            [
+              0,
+              12
+            ],
+            [
+              10,
+              8
+            ]
+          ]
+        },
+        "SKU-B": {
+          "pack_multiple": 5,
+          "min_qty": 0,
+          "capacity": 20,
+          "tiers": [
+            [
+              0,
+              10
+            ],
+            [
+              10,
+              9
+            ]
+          ]
+        },
+        "SKU-C": {
+          "pack_multiple": 2,
+          "min_qty": 2,
+          "capacity": 20,
+          "tiers": [
+            [
+              0,
+              15
+            ],
+            [
+              8,
+              12
+            ]
+          ]
+        },
+        "SKU-D": {
+          "pack_multiple": 2,
+          "min_qty": 0,
+          "capacity": 8,
+          "tiers": [
+            [
+              0,
+              20
+            ]
+          ]
+        },
+        "SKU-E": {
+          "pack_multiple": 2,
+          "min_qty": 0,
+          "capacity": 16,
+          "tiers": [
+            [
+              0,
+              7
+            ],
+            [
+              10,
+              6
+            ]
+          ]
+        }
+      }
+    },
+    "V-S2-MAIN": {
+      "supplier_id": "S2",
+      "window": [
+        "2026-11-09T00:00:00",
+        "2026-12-01T00:00:00"
+      ],
+      "sku_rules": {
+        "SKU-A": {
+          "pack_multiple": 3,
+          "min_qty": 0,
+          "capacity": 12,
+          "tiers": [
+            [
+              0,
+              11
+            ],
+            [
+              9,
+              9
+            ]
+          ]
+        },
+        "SKU-B": {
+          "pack_multiple": 3,
+          "min_qty": 0,
+          "capacity": 15,
+          "tiers": [
+            [
+              0,
+              11
+            ],
+            [
+              9,
+              8
+            ]
+          ]
+        },
+        "SKU-C": {
+          "pack_multiple": 3,
+          "min_qty": 3,
+          "capacity": 12,
+          "tiers": [
+            [
+              0,
+              14
+            ]
+          ]
+        },
+        "SKU-D": {
+          "pack_multiple": 1,
+          "min_qty": 0,
+          "capacity": 4,
+          "tiers": [
+            [
+              0,
+              22
+            ]
+          ]
+        },
+        "SKU-E": {
+          "pack_multiple": 3,
+          "min_qty": 0,
+          "capacity": 9,
+          "tiers": [
+            [
+              0,
+              8
+            ]
+          ]
+        }
+      }
+    },
+    "V-S3-EARLY": {
+      "supplier_id": "S3",
+      "window": [
+        "2026-11-01T00:00:00",
+        "2026-11-09T00:00:00"
+      ],
+      "sku_rules": {
+        "SKU-A": {
+          "pack_multiple": 4,
+          "min_qty": 0,
+          "capacity": 12,
+          "tiers": [
+            [
+              0,
+              13
+            ]
+          ]
+        },
+        "SKU-B": {
+          "pack_multiple": 4,
+          "min_qty": 0,
+          "capacity": 12,
+          "tiers": [
+            [
+              0,
+              12
+            ]
+          ]
+        },
+        "SKU-C": {
+          "pack_multiple": 2,
+          "min_qty": 2,
+          "capacity": 18,
+          "tiers": [
+            [
+              0,
+              9
+            ],
+            [
+              10,
+              7
+            ]
+          ]
+        },
+        "SKU-E": {
+          "pack_multiple": 4,
+          "min_qty": 0,
+          "capacity": 12,
+          "tiers": [
+            [
+              0,
+              9
+            ]
+          ]
+        }
+      }
+    },
+    "V-S3-MAIN": {
+      "supplier_id": "S3",
+      "window": [
+        "2026-11-09T00:00:00",
+        "2026-12-01T00:00:00"
+      ],
+      "sku_rules": {
+        "SKU-A": {
+          "pack_multiple": 4,
+          "min_qty": 0,
+          "capacity": 12,
+          "tiers": [
+            [
+              0,
+              13
+            ]
+          ]
+        },
+        "SKU-B": {
+          "pack_multiple": 4,
+          "min_qty": 0,
+          "capacity": 12,
+          "tiers": [
+            [
+              0,
+              12
+            ]
+          ]
+        },
+        "SKU-C": {
+          "pack_multiple": 2,
+          "min_qty": 2,
+          "capacity": 18,
+          "tiers": [
+            [
+              0,
+              16
+            ],
+            [
+              10,
+              13
+            ]
+          ]
+        },
+        "SKU-D": {
+          "pack_multiple": 2,
+          "min_qty": 0,
+          "capacity": 4,
+          "tiers": [
+            [
+              0,
+              25
+            ]
+          ]
+        },
+        "SKU-E": {
+          "pack_multiple": 4,
+          "min_qty": 0,
+          "capacity": 12,
+          "tiers": [
+            [
+              0,
+              9
+            ]
+          ]
+        }
+      }
+    }
+  },
+  "overbuy_caps": {
+    "SKU-A": 4,
+    "SKU-B": 4,
+    "SKU-C": 3,
+    "SKU-D": 0,
+    "SKU-E": 2
+  },
+  "demands": [
+    {
+      "demand_id": "D01",
+      "store_id": "STORE-1",
+      "sku": "SKU-A",
+      "qty": 6,
+      "priority": 5,
+      "due_date": "2026-11-20"
+    },
+    {
+      "demand_id": "D02",
+      "store_id": "STORE-2",
+      "sku": "SKU-A",
+      "qty": 3,
+      "priority": 3,
+      "due_date": "2026-11-22"
+    },
+    {
+      "demand_id": "D03",
+      "store_id": "STORE-1",
+      "sku": "SKU-A",
+      "qty": 2,
+      "priority": 4,
+      "due_date": "2026-11-25"
+    },
+    {
+      "demand_id": "D04",
+      "store_id": "STORE-1",
+      "sku": "SKU-B",
+      "qty": 4,
+      "priority": 5,
+      "due_date": "2026-11-21"
+    },
+    {
+      "demand_id": "D05",
+      "store_id": "STORE-2",
+      "sku": "SKU-B",
+      "qty": 3,
+      "priority": 2,
+      "due_date": "2026-11-23"
+    },
+    {
+      "demand_id": "D06",
+      "store_id": "STORE-1",
+      "sku": "SKU-C",
+      "qty": 5,
+      "priority": 4,
+      "due_date": "2026-11-24"
+    },
+    {
+      "demand_id": "D07",
+      "store_id": "STORE-2",
+      "sku": "SKU-C",
+      "qty": 3,
+      "priority": 4,
+      "due_date": "2026-11-26"
+    },
+    {
+      "demand_id": "D08",
+      "store_id": "STORE-1",
+      "sku": "SKU-C",
+      "qty": 2,
+      "priority": 1,
+      "due_date": "2026-11-28"
+    },
+    {
+      "demand_id": "D09",
+      "store_id": "STORE-1",
+      "sku": "SKU-D",
+      "qty": 4,
+      "priority": 5,
+      "due_date": "2026-11-19"
+    },
+    {
+      "demand_id": "D10",
+      "store_id": "STORE-2",
+      "sku": "SKU-D",
+      "qty": 4,
+      "priority": 5,
+      "due_date": "2026-11-20"
+    },
+    {
+      "demand_id": "D11",
+      "store_id": "STORE-1",
+      "sku": "SKU-D",
+      "qty": 3,
+      "priority": 3,
+      "due_date": "2026-11-22"
+    },
+    {
+      "demand_id": "D12",
+      "store_id": "STORE-2",
+      "sku": "SKU-D",
+      "qty": 3,
+      "priority": 2,
+      "due_date": "2026-11-24"
+    },
+    {
+      "demand_id": "D13",
+      "store_id": "STORE-1",
+      "sku": "SKU-E",
+      "qty": 4,
+      "priority": 3,
+      "due_date": "2026-11-23"
+    },
+    {
+      "demand_id": "D14",
+      "store_id": "STORE-2",
+      "sku": "SKU-E",
+      "qty": 4,
+      "priority": 3,
+      "due_date": "2026-11-23"
+    },
+    {
+      "demand_id": "D15",
+      "store_id": "STORE-1",
+      "sku": "SKU-E",
+      "qty": 2,
+      "priority": 2,
+      "due_date": "2026-11-27"
+    },
+    {
+      "demand_id": "D16",
+      "store_id": "STORE-1",
+      "sku": "SKU-A",
+      "qty": 2,
+      "priority": 4,
+      "due_date": "2026-11-25"
+    },
+    {
+      "demand_id": "D17",
+      "store_id": "STORE-2",
+      "sku": "SKU-B",
+      "qty": 1,
+      "priority": 5,
+      "due_date": "2026-11-21"
+    },
+    {
+      "demand_id": "D18",
+      "store_id": "STORE-1",
+      "sku": "SKU-C",
+      "qty": 2,
+      "priority": 5,
+      "due_date": "2026-11-18"
+    },
+    {
+      "demand_id": "D19",
+      "store_id": "STORE-2",
+      "sku": "SKU-E",
+      "qty": 1,
+      "priority": 1,
+      "due_date": "2026-11-29"
+    },
+    {
+      "demand_id": "D20",
+      "store_id": "STORE-1",
+      "sku": "SKU-D",
+      "qty": 1,
+      "priority": 1,
+      "due_date": "2026-11-30"
+    }
+  ]
+}
