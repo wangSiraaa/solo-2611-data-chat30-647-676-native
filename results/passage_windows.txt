@@ -1,0 +1,248 @@
+[R01] channel=C1_sine_hand  range=[0,24]  FEASIBLE
+    note: hand-checkable single sine, sin>=0, 6h window
+    INTERVAL s in [0.000000000, 6.000000000] (width 6.000000000 h)
+        start boundary: tide constraint, segment 1 (port P1 rev 1), binding tide_time=0.000000000 h, residual=0.000e+00
+        end boundary: tide constraint, segment 1 (port P1 rev 1), binding tide_time=12.000000000 h, residual=1.072e-81
+    ISOLATED-POINT s in [24.000000000, 24.000000000] (width 0.000000000 h)
+        start boundary: tide constraint, segment 1 (port P1 rev 1), binding tide_time=24.000000000 h, residual=-2.143e-81
+        end boundary: tide constraint, segment 1 (port P1 rev 1), binding tide_time=24.000000000 h, residual=-2.143e-81
+
+[R02] channel=C2_cos_tangent  range=[0,24]  FEASIBLE
+    note: cos>=0 safe width == 12h window -> isolated tangency
+    ISOLATED-POINT s in [18.000000000, 18.000000000] (width 0.000000000 h)
+        start boundary: tide constraint, segment 1 (port P3 rev 1), binding tide_time=18.000000000 h, residual=5.009e-82
+        end boundary: tide constraint, segment 1 (port P3 rev 1), binding tide_time=18.000000000 h, residual=5.009e-82
+
+[R03] channel=C2_cos_tangent  range=[12,36]  FEASIBLE
+    note: same tangency inside range [12,36]
+    ISOLATED-POINT s in [18.000000000, 18.000000000] (width 0.000000000 h)
+        start boundary: tide constraint, segment 1 (port P3 rev 1), binding tide_time=18.000000000 h, residual=5.009e-82
+        end boundary: tide constraint, segment 1 (port P3 rev 1), binding tide_time=18.000000000 h, residual=5.009e-82
+
+[R04] channel=C3_valley  range=[0,48]  FEASIBLE
+    note: rich tide: interior valleys split into windows
+    INTERVAL s in [22.200362007, 22.847179247] (width 0.646817240 h)
+        start boundary: tide constraint, segment 1 (port P2 rev 1), binding tide_time=22.200362007 h, residual=3.331e-16
+        end boundary: tide constraint, segment 1 (port P2 rev 1), binding tide_time=30.847179247 h, residual=-9.992e-16
+    INTERVAL s in [46.200362007, 46.847179247] (width 0.646817240 h)
+        start boundary: tide constraint, segment 1 (port P2 rev 1), binding tide_time=46.200362007 h, residual=2.554e-15
+        end boundary: tide constraint, segment 1 (port P2 rev 1), binding tide_time=54.847179247 h, residual=-9.992e-16
+
+[R05] channel=C3_valley  range=[5,29]  FEASIBLE
+    note: same channel, narrower range
+    INTERVAL s in [22.200362007, 22.847179247] (width 0.646817240 h)
+        start boundary: tide constraint, segment 1 (port P2 rev 1), binding tide_time=22.200362007 h, residual=3.331e-16
+        end boundary: tide constraint, segment 1 (port P2 rev 1), binding tide_time=30.847179247 h, residual=-9.992e-16
+
+[R29] channel=C3_valley  range=[0,48]  FEASIBLE
+    note: shallow draft on rich tide -> wide windows
+    INTERVAL s in [13.879067360, 23.961999859] (width 10.082932499 h)
+        start boundary: tide constraint, segment 1 (port P2 rev 1), binding tide_time=13.879067360 h, residual=-4.441e-16
+        end boundary: tide constraint, segment 1 (port P2 rev 1), binding tide_time=31.961999859 h, residual=8.882e-16
+    INTERVAL s in [37.879067360, 47.961999859] (width 10.082932499 h)
+        start boundary: tide constraint, segment 1 (port P2 rev 1), binding tide_time=37.879067360 h, residual=1.638e-15
+        end boundary: tide constraint, segment 1 (port P2 rev 1), binding tide_time=55.961999859 h, residual=8.882e-16
+
+[R06] channel=C4_mixed_ports  range=[0,24]  FEASIBLE
+    note: different ports + 2h offset; naive raw intersection is wrong
+    INTERVAL s in [0.000000000, 2.000000000] (width 2.000000000 h)
+        start boundary: tide constraint, segment 1 (port P1 rev 1), binding tide_time=0.000000000 h, residual=0.000e+00
+        end boundary: tide constraint, segment 2 (port P3 rev 1), binding tide_time=6.000000000 h, residual=5.358e-82
+    ISOLATED-POINT s in [24.000000000, 24.000000000] (width 0.000000000 h)
+        start boundary: tide constraint, segment 1 (port P1 rev 1), binding tide_time=24.000000000 h, residual=-2.143e-81
+        end boundary: tide constraint, segment 1 (port P1 rev 1), binding tide_time=24.000000000 h, residual=-2.143e-81
+
+[R07] channel=C4_mixed_ports  range=[0,48]  FEASIBLE
+    note: same mixed-offset channel over two periods
+    INTERVAL s in [0.000000000, 2.000000000] (width 2.000000000 h)
+        start boundary: tide constraint, segment 1 (port P1 rev 1), binding tide_time=0.000000000 h, residual=0.000e+00
+        end boundary: tide constraint, segment 2 (port P3 rev 1), binding tide_time=6.000000000 h, residual=5.358e-82
+    INTERVAL s in [24.000000000, 26.000000000] (width 2.000000000 h)
+        start boundary: tide constraint, segment 1 (port P1 rev 1), binding tide_time=24.000000000 h, residual=-2.143e-81
+        end boundary: tide constraint, segment 2 (port P3 rev 1), binding tide_time=30.000000000 h, residual=4.788e-81
+    ISOLATED-POINT s in [48.000000000, 48.000000000] (width 0.000000000 h)
+        start boundary: tide constraint, segment 1 (port P1 rev 1), binding tide_time=48.000000000 h, residual=-4.287e-81
+        end boundary: tide constraint, segment 1 (port P1 rev 1), binding tide_time=48.000000000 h, residual=-4.287e-81
+
+[R26] channel=C4_mixed_ports  range=[24,48]  FEASIBLE
+    note: mixed-offset channel, second period
+    INTERVAL s in [24.000000000, 26.000000000] (width 2.000000000 h)
+        start boundary: tide constraint, segment 1 (port P1 rev 1), binding tide_time=24.000000000 h, residual=-2.143e-81
+        end boundary: tide constraint, segment 2 (port P3 rev 1), binding tide_time=30.000000000 h, residual=4.788e-81
+    ISOLATED-POINT s in [48.000000000, 48.000000000] (width 0.000000000 h)
+        start boundary: tide constraint, segment 1 (port P1 rev 1), binding tide_time=48.000000000 h, residual=-4.287e-81
+        end boundary: tide constraint, segment 1 (port P1 rev 1), binding tide_time=48.000000000 h, residual=-4.287e-81
+
+[R08] channel=C5_const_ok  range=[0,24]  FEASIBLE
+    note: constant 2/3 >= req 1/2 -> whole [0,24] feasible
+    INTERVAL s in [0.000000000, 24.000000000] (width 24.000000000 h)
+        start boundary: range limit (request S/E), residual=1.667e-01
+        end boundary: range limit (request S/E), residual=1.667e-01
+
+[R30] channel=C5_const_ok  range=[24,48]  FEASIBLE
+    note: constant model over [24,48]
+    INTERVAL s in [24.000000000, 48.000000000] (width 24.000000000 h)
+        start boundary: range limit (request S/E), residual=1.667e-01
+        end boundary: range limit (request S/E), residual=1.667e-01
+
+[R09] channel=C6_const_exact  range=[0,24]  FEASIBLE
+    note: constant 1 > req 1/2 -> whole range feasible
+    INTERVAL s in [0.000000000, 24.000000000] (width 24.000000000 h)
+        start boundary: range limit (request S/E), residual=1.000e+00
+        end boundary: range limit (request S/E), residual=1.000e+00
+
+[R10] channel=C6_const_exact  range=[0,24]  FEASIBLE
+    note: constant exactly at threshold req=1 (equality) -> feasible
+    INTERVAL s in [0.000000000, 24.000000000] (width 24.000000000 h)
+        start boundary: tide constraint, segment 1 (port P5 rev 1), binding tide_time=0.000000000 h, residual=0.000e+00
+        end boundary: tide constraint, segment 1 (port P5 rev 1), binding tide_time=24.000000000 h, residual=0.000e+00
+
+[R11] channel=C7_const_low  range=[0,24]  INFEASIBLE
+    note: constant 2/3 < req 1 -> INFEASIBLE
+
+[R12] channel=C7_const_low  range=[24,48]  INFEASIBLE
+    note: same, second period -> INFEASIBLE
+
+[R13] channel=C8_long  range=[0,48]  INFEASIBLE
+    note: 8-segment channel, offsets accumulate over two periods
+
+[R28] channel=C8_long  range=[12,36]  INFEASIBLE
+    note: 8-segment channel, higher draft, shifted range
+
+[R14] channel=C9_p2_current  range=[0,48]  FEASIBLE
+    note: consumes CURRENT P2 (corrected product)
+    INTERVAL s in [0.000000000, 1.410791521] (width 1.410791521 h)
+        start boundary: range limit (request S/E), residual=1.050e+00
+        end boundary: tide constraint, segment 1 (port P2 rev 2), binding tide_time=7.410791521 h, residual=3.331e-16
+    INTERVAL s in [15.194073888, 25.410791521] (width 10.216717632 h)
+        start boundary: tide constraint, segment 1 (port P2 rev 2), binding tide_time=15.194073888 h, residual=-2.220e-16
+        end boundary: tide constraint, segment 1 (port P2 rev 2), binding tide_time=31.410791521 h, residual=-6.106e-16
+    INTERVAL s in [39.194073888, 48.000000000] (width 8.805926112 h)
+        start boundary: tide constraint, segment 1 (port P2 rev 2), binding tide_time=39.194073888 h, residual=-1.721e-15
+        end boundary: range limit (request S/E), residual=1.050e+00
+
+[R15] channel=C10_p2_rev1  range=[0,48]  FEASIBLE
+    note: pinned to P2 rev 1; unaffected by correction
+    INTERVAL s in [0.000000000, 1.318463797] (width 1.318463797 h)
+        start boundary: range limit (request S/E), residual=9.500e-01
+        end boundary: tide constraint, segment 1 (port P2 rev 1), binding tide_time=7.318463797 h, residual=-4.441e-16
+    INTERVAL s in [21.185752202, 25.318463797] (width 4.132711595 h)
+        start boundary: tide constraint, segment 1 (port P2 rev 1), binding tide_time=21.185752202 h, residual=1.110e-16
+        end boundary: tide constraint, segment 1 (port P2 rev 1), binding tide_time=31.318463797 h, residual=-2.331e-15
+    INTERVAL s in [45.185752202, 48.000000000] (width 2.814247798 h)
+        start boundary: tide constraint, segment 1 (port P2 rev 1), binding tide_time=45.185752202 h, residual=1.110e-16
+        end boundary: range limit (request S/E), residual=9.500e-01
+
+[R16] channel=C11_short  range=[0,24]  FEASIBLE
+    note: 1h sine window
+    INTERVAL s in [0.000000000, 11.000000000] (width 11.000000000 h)
+        start boundary: tide constraint, segment 1 (port P1 rev 1), binding tide_time=0.000000000 h, residual=0.000e+00
+        end boundary: tide constraint, segment 1 (port P1 rev 1), binding tide_time=12.000000000 h, residual=1.072e-81
+    ISOLATED-POINT s in [24.000000000, 24.000000000] (width 0.000000000 h)
+        start boundary: tide constraint, segment 1 (port P1 rev 1), binding tide_time=24.000000000 h, residual=-2.143e-81
+        end boundary: tide constraint, segment 1 (port P1 rev 1), binding tide_time=24.000000000 h, residual=-2.143e-81
+
+[R17] channel=C11_short  range=[6,30]  FEASIBLE
+    note: margin raises the required level
+    INTERVAL s in [6.000000000, 10.617388635] (width 4.617388635 h)
+        start boundary: range limit (request S/E), residual=8.659e-01
+        end boundary: tide constraint, segment 1 (port P1 rev 1), binding tide_time=11.617388635 h, residual=-4.163e-17
+    INTERVAL s in [24.382611365, 30.000000000] (width 5.617388635 h)
+        start boundary: tide constraint, segment 1 (port P1 rev 1), binding tide_time=24.382611365 h, residual=4.163e-16
+        end boundary: range limit (request S/E), residual=8.659e-01
+
+[R18] channel=C12_two_sine  range=[0,24]  FEASIBLE
+    note: two sine segments, offsets 0 and 6
+    ISOLATED-POINT s in [0.000000000, 0.000000000] (width 0.000000000 h)
+        start boundary: tide constraint, segment 1 (port P1 rev 1), binding tide_time=0.000000000 h, residual=0.000e+00
+        end boundary: tide constraint, segment 1 (port P1 rev 1), binding tide_time=0.000000000 h, residual=0.000e+00
+    ISOLATED-POINT s in [24.000000000, 24.000000000] (width 0.000000000 h)
+        start boundary: tide constraint, segment 1 (port P1 rev 1), binding tide_time=24.000000000 h, residual=-2.143e-81
+        end boundary: tide constraint, segment 1 (port P1 rev 1), binding tide_time=24.000000000 h, residual=-2.143e-81
+
+[R19] channel=C12_two_sine  range=[0,48]  FEASIBLE
+    note: same over two periods
+    ISOLATED-POINT s in [0.000000000, 0.000000000] (width 0.000000000 h)
+        start boundary: tide constraint, segment 1 (port P1 rev 1), binding tide_time=0.000000000 h, residual=0.000e+00
+        end boundary: tide constraint, segment 1 (port P1 rev 1), binding tide_time=0.000000000 h, residual=0.000e+00
+    ISOLATED-POINT s in [24.000000000, 24.000000000] (width 0.000000000 h)
+        start boundary: tide constraint, segment 1 (port P1 rev 1), binding tide_time=24.000000000 h, residual=-2.143e-81
+        end boundary: tide constraint, segment 1 (port P1 rev 1), binding tide_time=24.000000000 h, residual=-2.143e-81
+    ISOLATED-POINT s in [48.000000000, 48.000000000] (width 0.000000000 h)
+        start boundary: tide constraint, segment 1 (port P1 rev 1), binding tide_time=48.000000000 h, residual=-4.287e-81
+        end boundary: tide constraint, segment 1 (port P1 rev 1), binding tide_time=48.000000000 h, residual=-4.287e-81
+
+[R20] channel=C13_p2_deep  range=[0,48]  FEASIBLE
+    note: high draft on rich tide
+    INTERVAL s in [0.000000000, 2.785970931] (width 2.785970931 h)
+        start boundary: range limit (request S/E), residual=5.468e-01
+        end boundary: tide constraint, segment 1 (port P2 rev 1), binding tide_time=6.785970931 h, residual=0.000e+00
+    INTERVAL s in [22.278945389, 26.785970931] (width 4.507025542 h)
+        start boundary: tide constraint, segment 1 (port P2 rev 1), binding tide_time=22.278945389 h, residual=-3.331e-16
+        end boundary: tide constraint, segment 1 (port P2 rev 1), binding tide_time=30.785970931 h, residual=-5.551e-16
+    INTERVAL s in [46.278945389, 48.000000000] (width 1.721054611 h)
+        start boundary: tide constraint, segment 1 (port P2 rev 1), binding tide_time=46.278945389 h, residual=-3.331e-16
+        end boundary: range limit (request S/E), residual=5.468e-01
+
+[R21] channel=C13_p2_deep  range=[0,48]  FEASIBLE
+    note: moderate draft on rich tide
+    INTERVAL s in [0.000000000, 3.318463797] (width 3.318463797 h)
+        start boundary: range limit (request S/E), residual=1.047e+00
+        end boundary: tide constraint, segment 1 (port P2 rev 1), binding tide_time=7.318463797 h, residual=-4.441e-16
+    INTERVAL s in [15.436598830, 16.167326396] (width 0.730727566 h)
+        start boundary: tide constraint, segment 1 (port P2 rev 1), binding tide_time=15.436598830 h, residual=2.220e-16
+        end boundary: tide constraint, segment 1 (port P2 rev 1), binding tide_time=20.167326396 h, residual=-5.551e-17
+    INTERVAL s in [21.185752202, 27.318463797] (width 6.132711595 h)
+        start boundary: tide constraint, segment 1 (port P2 rev 1), binding tide_time=21.185752202 h, residual=1.110e-16
+        end boundary: tide constraint, segment 1 (port P2 rev 1), binding tide_time=31.318463797 h, residual=-2.331e-15
+    INTERVAL s in [39.436598830, 40.167326396] (width 0.730727566 h)
+        start boundary: tide constraint, segment 1 (port P2 rev 1), binding tide_time=39.436598830 h, residual=2.220e-16
+        end boundary: tide constraint, segment 1 (port P2 rev 1), binding tide_time=44.167326396 h, residual=-5.551e-17
+    INTERVAL s in [45.185752202, 48.000000000] (width 2.814247798 h)
+        start boundary: tide constraint, segment 1 (port P2 rev 1), binding tide_time=45.185752202 h, residual=1.110e-16
+        end boundary: range limit (request S/E), residual=1.047e+00
+
+[R22] channel=C13_p2_deep  range=[0,24]  FEASIBLE
+    note: margin tightens the windows
+    INTERVAL s in [0.000000000, 3.070938882] (width 3.070938882 h)
+        start boundary: range limit (request S/E), residual=7.968e-01
+        end boundary: tide constraint, segment 1 (port P2 rev 1), binding tide_time=7.070938882 h, residual=-3.331e-16
+    INTERVAL s in [21.851986672, 24.000000000] (width 2.148013328 h)
+        start boundary: tide constraint, segment 1 (port P2 rev 1), binding tide_time=21.851986672 h, residual=-5.551e-16
+        end boundary: range limit (request S/E), residual=7.968e-01
+
+[R23] channel=C14_cos  range=[0,24]  FEASIBLE
+    note: cos>=0 with a 6h window
+    ISOLATED-POINT s in [0.000000000, 0.000000000] (width 0.000000000 h)
+        start boundary: tide constraint, segment 1 (port P3 rev 1), binding tide_time=6.000000000 h, residual=5.358e-82
+        end boundary: tide constraint, segment 1 (port P3 rev 1), binding tide_time=6.000000000 h, residual=5.358e-82
+    INTERVAL s in [18.000000000, 24.000000000] (width 6.000000000 h)
+        start boundary: tide constraint, segment 1 (port P3 rev 1), binding tide_time=18.000000000 h, residual=5.009e-82
+        end boundary: tide constraint, segment 1 (port P3 rev 1), binding tide_time=30.000000000 h, residual=4.788e-81
+
+[R24] channel=C14_cos  range=[0,24]  FEASIBLE
+    note: cos>=1/2 -> windows near crests t=0,24
+    INTERVAL s in [20.000000000, 22.000000000] (width 2.000000000 h)
+        start boundary: tide constraint, segment 1 (port P3 rev 1), binding tide_time=20.000000000 h, residual=0.000e+00
+        end boundary: tide constraint, segment 1 (port P3 rev 1), binding tide_time=28.000000000 h, residual=0.000e+00
+
+[R25] channel=C15_mixed_tight  range=[0,48]  FEASIBLE
+    note: mixed sine/cos/constant, tight offsets
+    INTERVAL s in [0.000000000, 2.000000000] (width 2.000000000 h)
+        start boundary: tide constraint, segment 1 (port P1 rev 1), binding tide_time=0.000000000 h, residual=0.000e+00
+        end boundary: tide constraint, segment 2 (port P3 rev 1), binding tide_time=6.000000000 h, residual=5.358e-82
+    INTERVAL s in [24.000000000, 26.000000000] (width 2.000000000 h)
+        start boundary: tide constraint, segment 1 (port P1 rev 1), binding tide_time=24.000000000 h, residual=-2.143e-81
+        end boundary: tide constraint, segment 2 (port P3 rev 1), binding tide_time=30.000000000 h, residual=4.788e-81
+    ISOLATED-POINT s in [48.000000000, 48.000000000] (width 0.000000000 h)
+        start boundary: tide constraint, segment 1 (port P1 rev 1), binding tide_time=48.000000000 h, residual=-4.287e-81
+        end boundary: tide constraint, segment 1 (port P1 rev 1), binding tide_time=48.000000000 h, residual=-4.287e-81
+
+[R27] channel=C1_sine_hand  range=[12,36]  FEASIBLE
+    note: sine with margin, second period
+    INTERVAL s in [24.382611365, 29.617388635] (width 5.234777270 h)
+        start boundary: tide constraint, segment 1 (port P1 rev 1), binding tide_time=24.382611365 h, residual=4.163e-16
+        end boundary: tide constraint, segment 1 (port P1 rev 1), binding tide_time=35.617388635 h, residual=4.163e-16
+
+======================================================================
+26/30 requests feasible; 14 isolated points total

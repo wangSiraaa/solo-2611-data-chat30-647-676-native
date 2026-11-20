@@ -1,0 +1,507 @@
+{
+  "channels": [
+    {
+      "name": "C1_sine_hand",
+      "segments": [
+        {
+          "port": "P1",
+          "revision": 1,
+          "depth": "1/2",
+          "duration": "6"
+        }
+      ]
+    },
+    {
+      "name": "C2_cos_tangent",
+      "segments": [
+        {
+          "port": "P3",
+          "revision": 1,
+          "depth": "1/2",
+          "duration": "12"
+        }
+      ]
+    },
+    {
+      "name": "C3_valley",
+      "segments": [
+        {
+          "port": "P2",
+          "revision": 1,
+          "depth": "3/4",
+          "duration": "8"
+        }
+      ]
+    },
+    {
+      "name": "C4_mixed_ports",
+      "segments": [
+        {
+          "port": "P1",
+          "revision": 1,
+          "depth": "1/2",
+          "duration": "2"
+        },
+        {
+          "port": "P3",
+          "revision": 1,
+          "depth": "1/2",
+          "duration": "2"
+        }
+      ]
+    },
+    {
+      "name": "C5_const_ok",
+      "segments": [
+        {
+          "port": "P4",
+          "revision": 1,
+          "depth": "0",
+          "duration": "6"
+        }
+      ]
+    },
+    {
+      "name": "C6_const_exact",
+      "segments": [
+        {
+          "port": "P5",
+          "revision": 1,
+          "depth": "1/2",
+          "duration": "6"
+        }
+      ]
+    },
+    {
+      "name": "C7_const_low",
+      "segments": [
+        {
+          "port": "P4",
+          "revision": 1,
+          "depth": "0",
+          "duration": "6"
+        }
+      ]
+    },
+    {
+      "name": "C8_long",
+      "segments": [
+        {
+          "port": "P1",
+          "revision": 1,
+          "depth": "1/2",
+          "duration": "3"
+        },
+        {
+          "port": "P2",
+          "revision": 1,
+          "depth": "1",
+          "duration": "4"
+        },
+        {
+          "port": "P3",
+          "revision": 1,
+          "depth": "1/2",
+          "duration": "2"
+        },
+        {
+          "port": "P1",
+          "revision": 1,
+          "depth": "1/2",
+          "duration": "3"
+        },
+        {
+          "port": "P2",
+          "revision": 1,
+          "depth": "1",
+          "duration": "3"
+        },
+        {
+          "port": "P3",
+          "revision": 1,
+          "depth": "1/2",
+          "duration": "2"
+        },
+        {
+          "port": "P1",
+          "revision": 1,
+          "depth": "1/2",
+          "duration": "3"
+        },
+        {
+          "port": "P2",
+          "revision": 1,
+          "depth": "1",
+          "duration": "2"
+        }
+      ]
+    },
+    {
+      "name": "C9_p2_current",
+      "segments": [
+        {
+          "port": "P2",
+          "revision": "current",
+          "depth": "1",
+          "duration": "6"
+        }
+      ]
+    },
+    {
+      "name": "C10_p2_rev1",
+      "segments": [
+        {
+          "port": "P2",
+          "revision": 1,
+          "depth": "1",
+          "duration": "6"
+        }
+      ]
+    },
+    {
+      "name": "C11_short",
+      "segments": [
+        {
+          "port": "P1",
+          "revision": 1,
+          "depth": "1/2",
+          "duration": "1"
+        }
+      ]
+    },
+    {
+      "name": "C12_two_sine",
+      "segments": [
+        {
+          "port": "P1",
+          "revision": 1,
+          "depth": "1/2",
+          "duration": "6"
+        },
+        {
+          "port": "P1",
+          "revision": 1,
+          "depth": "1/2",
+          "duration": "6"
+        }
+      ]
+    },
+    {
+      "name": "C13_p2_deep",
+      "segments": [
+        {
+          "port": "P2",
+          "revision": 1,
+          "depth": "1",
+          "duration": "4"
+        }
+      ]
+    },
+    {
+      "name": "C14_cos",
+      "segments": [
+        {
+          "port": "P3",
+          "revision": 1,
+          "depth": "1/2",
+          "duration": "6"
+        }
+      ]
+    },
+    {
+      "name": "C15_mixed_tight",
+      "segments": [
+        {
+          "port": "P1",
+          "revision": 1,
+          "depth": "1/2",
+          "duration": "2"
+        },
+        {
+          "port": "P3",
+          "revision": 1,
+          "depth": "1/2",
+          "duration": "2"
+        },
+        {
+          "port": "P5",
+          "revision": 1,
+          "depth": "1/2",
+          "duration": "2"
+        }
+      ]
+    }
+  ],
+  "requests": [
+    {
+      "id": "R01",
+      "channel": "C1_sine_hand",
+      "draft": "1/2",
+      "margin": "0",
+      "S": "0",
+      "E": "24",
+      "note": "hand-checkable single sine, sin>=0, 6h window"
+    },
+    {
+      "id": "R02",
+      "channel": "C2_cos_tangent",
+      "draft": "1/2",
+      "margin": "0",
+      "S": "0",
+      "E": "24",
+      "note": "cos>=0 safe width == 12h window -> isolated tangency"
+    },
+    {
+      "id": "R03",
+      "channel": "C2_cos_tangent",
+      "draft": "1/2",
+      "margin": "0",
+      "S": "12",
+      "E": "36",
+      "note": "same tangency inside range [12,36]"
+    },
+    {
+      "id": "R04",
+      "channel": "C3_valley",
+      "draft": "3/2",
+      "margin": "1/5",
+      "S": "0",
+      "E": "48",
+      "note": "rich tide: interior valleys split into windows"
+    },
+    {
+      "id": "R05",
+      "channel": "C3_valley",
+      "draft": "3/2",
+      "margin": "1/5",
+      "S": "5",
+      "E": "29",
+      "note": "same channel, narrower range"
+    },
+    {
+      "id": "R29",
+      "channel": "C3_valley",
+      "draft": "1/2",
+      "margin": "0",
+      "S": "0",
+      "E": "48",
+      "note": "shallow draft on rich tide -> wide windows"
+    },
+    {
+      "id": "R06",
+      "channel": "C4_mixed_ports",
+      "draft": "1/2",
+      "margin": "0",
+      "S": "0",
+      "E": "24",
+      "note": "different ports + 2h offset; naive raw intersection is wrong"
+    },
+    {
+      "id": "R07",
+      "channel": "C4_mixed_ports",
+      "draft": "1/2",
+      "margin": "0",
+      "S": "0",
+      "E": "48",
+      "note": "same mixed-offset channel over two periods"
+    },
+    {
+      "id": "R26",
+      "channel": "C4_mixed_ports",
+      "draft": "1/2",
+      "margin": "0",
+      "S": "24",
+      "E": "48",
+      "note": "mixed-offset channel, second period"
+    },
+    {
+      "id": "R08",
+      "channel": "C5_const_ok",
+      "draft": "1/2",
+      "margin": "0",
+      "S": "0",
+      "E": "24",
+      "note": "constant 2/3 >= req 1/2 -> whole [0,24] feasible"
+    },
+    {
+      "id": "R30",
+      "channel": "C5_const_ok",
+      "draft": "1/2",
+      "margin": "0",
+      "S": "24",
+      "E": "48",
+      "note": "constant model over [24,48]"
+    },
+    {
+      "id": "R09",
+      "channel": "C6_const_exact",
+      "draft": "1/2",
+      "margin": "0",
+      "S": "0",
+      "E": "24",
+      "note": "constant 1 > req 1/2 -> whole range feasible"
+    },
+    {
+      "id": "R10",
+      "channel": "C6_const_exact",
+      "draft": "3/2",
+      "margin": "0",
+      "S": "0",
+      "E": "24",
+      "note": "constant exactly at threshold req=1 (equality) -> feasible"
+    },
+    {
+      "id": "R11",
+      "channel": "C7_const_low",
+      "draft": "1",
+      "margin": "0",
+      "S": "0",
+      "E": "24",
+      "note": "constant 2/3 < req 1 -> INFEASIBLE"
+    },
+    {
+      "id": "R12",
+      "channel": "C7_const_low",
+      "draft": "1",
+      "margin": "0",
+      "S": "24",
+      "E": "48",
+      "note": "same, second period -> INFEASIBLE"
+    },
+    {
+      "id": "R13",
+      "channel": "C8_long",
+      "draft": "1/2",
+      "margin": "0",
+      "S": "0",
+      "E": "48",
+      "note": "8-segment channel, offsets accumulate over two periods"
+    },
+    {
+      "id": "R28",
+      "channel": "C8_long",
+      "draft": "3/2",
+      "margin": "0",
+      "S": "12",
+      "E": "36",
+      "note": "8-segment channel, higher draft, shifted range"
+    },
+    {
+      "id": "R14",
+      "channel": "C9_p2_current",
+      "draft": "3/2",
+      "margin": "0",
+      "S": "0",
+      "E": "48",
+      "note": "consumes CURRENT P2 (corrected product)"
+    },
+    {
+      "id": "R15",
+      "channel": "C10_p2_rev1",
+      "draft": "3/2",
+      "margin": "0",
+      "S": "0",
+      "E": "48",
+      "note": "pinned to P2 rev 1; unaffected by correction"
+    },
+    {
+      "id": "R16",
+      "channel": "C11_short",
+      "draft": "1/2",
+      "margin": "0",
+      "S": "0",
+      "E": "24",
+      "note": "1h sine window"
+    },
+    {
+      "id": "R17",
+      "channel": "C11_short",
+      "draft": "1/2",
+      "margin": "1/10",
+      "S": "6",
+      "E": "30",
+      "note": "margin raises the required level"
+    },
+    {
+      "id": "R18",
+      "channel": "C12_two_sine",
+      "draft": "1/2",
+      "margin": "0",
+      "S": "0",
+      "E": "24",
+      "note": "two sine segments, offsets 0 and 6"
+    },
+    {
+      "id": "R19",
+      "channel": "C12_two_sine",
+      "draft": "1/2",
+      "margin": "0",
+      "S": "0",
+      "E": "48",
+      "note": "same over two periods"
+    },
+    {
+      "id": "R20",
+      "channel": "C13_p2_deep",
+      "draft": "2",
+      "margin": "0",
+      "S": "0",
+      "E": "48",
+      "note": "high draft on rich tide"
+    },
+    {
+      "id": "R21",
+      "channel": "C13_p2_deep",
+      "draft": "3/2",
+      "margin": "0",
+      "S": "0",
+      "E": "48",
+      "note": "moderate draft on rich tide"
+    },
+    {
+      "id": "R22",
+      "channel": "C13_p2_deep",
+      "draft": "3/2",
+      "margin": "1/4",
+      "S": "0",
+      "E": "24",
+      "note": "margin tightens the windows"
+    },
+    {
+      "id": "R23",
+      "channel": "C14_cos",
+      "draft": "1/2",
+      "margin": "0",
+      "S": "0",
+      "E": "24",
+      "note": "cos>=0 with a 6h window"
+    },
+    {
+      "id": "R24",
+      "channel": "C14_cos",
+      "draft": "1",
+      "margin": "0",
+      "S": "0",
+      "E": "24",
+      "note": "cos>=1/2 -> windows near crests t=0,24"
+    },
+    {
+      "id": "R25",
+      "channel": "C15_mixed_tight",
+      "draft": "1/2",
+      "margin": "0",
+      "S": "0",
+      "E": "48",
+      "note": "mixed sine/cos/constant, tight offsets"
+    },
+    {
+      "id": "R27",
+      "channel": "C1_sine_hand",
+      "draft": "1/2",
+      "margin": "1/10",
+      "S": "12",
+      "E": "36",
+      "note": "sine with margin, second period"
+    }
+  ]
+}

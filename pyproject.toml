@@ -1,0 +1,13 @@
+[project]
+name = "tidewin"
+version = "0.1.0"
+description = "Independent synthetic tide catalog and vessel passage window vault"
+requires-python = ">=3.11"
+dependencies = ["mpmath>=1.4"]
+
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+packages = ["tidewin"]

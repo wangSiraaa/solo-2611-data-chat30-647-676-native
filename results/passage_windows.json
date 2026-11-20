@@ -1,0 +1,3894 @@
+[
+  {
+    "status": "FEASIBLE",
+    "S": 0.0,
+    "E": 24.0,
+    "channel": "C1_sine_hand",
+    "vessel": {
+      "draft": "1/2",
+      "margin": "0"
+    },
+    "windows": [
+      {
+        "start": 0.0,
+        "end": 6.0,
+        "width": 6.0,
+        "isolated": false,
+        "start_boundary": {
+          "time": 0.0,
+          "kind": "tide",
+          "segment_index": 1,
+          "port": "P1",
+          "revision": 1,
+          "tide_time": 0.0,
+          "residual": 0.0,
+          "all_constraints": [
+            {
+              "segment_index": 1,
+              "port": "P1",
+              "revision": 1,
+              "depth": "1/2",
+              "duration": "6",
+              "window": [
+                0.0,
+                6.0
+              ],
+              "tide_time": 0.0,
+              "residual": 0.0,
+              "satisfied": true
+            }
+          ]
+        },
+        "end_boundary": {
+          "time": 6.0,
+          "kind": "tide",
+          "segment_index": 1,
+          "port": "P1",
+          "revision": 1,
+          "tide_time": 12.0,
+          "residual": 1.0716696564844047e-81,
+          "all_constraints": [
+            {
+              "segment_index": 1,
+              "port": "P1",
+              "revision": 1,
+              "depth": "1/2",
+              "duration": "6",
+              "window": [
+                6.0,
+                12.0
+              ],
+              "tide_time": 12.0,
+              "residual": 1.0716696564844047e-81,
+              "satisfied": true
+            }
+          ]
+        }
+      },
+      {
+        "start": 24.0,
+        "end": 24.0,
+        "width": 0.0,
+        "isolated": true,
+        "start_boundary": {
+          "time": 24.0,
+          "kind": "tide",
+          "segment_index": 1,
+          "port": "P1",
+          "revision": 1,
+          "tide_time": 24.0,
+          "residual": -2.1433393129688094e-81,
+          "all_constraints": [
+            {
+              "segment_index": 1,
+              "port": "P1",
+              "revision": 1,
+              "depth": "1/2",
+              "duration": "6",
+              "window": [
+                24.0,
+                30.0
+              ],
+              "tide_time": 24.0,
+              "residual": -2.1433393129688094e-81,
+              "satisfied": true
+            }
+          ]
+        },
+        "end_boundary": {
+          "time": 24.0,
+          "kind": "tide",
+          "segment_index": 1,
+          "port": "P1",
+          "revision": 1,
+          "tide_time": 24.0,
+          "residual": -2.1433393129688094e-81,
+          "all_constraints": [
+            {
+              "segment_index": 1,
+              "port": "P1",
+              "revision": 1,
+              "depth": "1/2",
+              "duration": "6",
+              "window": [
+                24.0,
+                30.0
+              ],
+              "tide_time": 24.0,
+              "residual": -2.1433393129688094e-81,
+              "satisfied": true
+            }
+          ]
+        }
+      }
+    ],
+    "n_windows": 2,
+    "n_isolated": 1,
+    "id": "R01",
+    "note": "hand-checkable single sine, sin>=0, 6h window"
+  },
+  {
+    "status": "FEASIBLE",
+    "S": 0.0,
+    "E": 24.0,
+    "channel": "C2_cos_tangent",
+    "vessel": {
+      "draft": "1/2",
+      "margin": "0"
+    },
+    "windows": [
+      {
+        "start": 18.0,
+        "end": 18.0,
+        "width": 0.0,
+        "isolated": true,
+        "start_boundary": {
+          "time": 18.0,
+          "kind": "tide",
+          "segment_index": 1,
+          "port": "P3",
+          "revision": 1,
+          "tide_time": 18.0,
+          "residual": 5.009351039194974e-82,
+          "all_constraints": [
+            {
+              "segment_index": 1,
+              "port": "P3",
+              "revision": 1,
+              "depth": "1/2",
+              "duration": "12",
+              "window": [
+                18.0,
+                30.0
+              ],
+              "tide_time": 18.0,
+              "residual": 5.009351039194974e-82,
+              "satisfied": true
+            }
+          ]
+        },
+        "end_boundary": {
+          "time": 18.0,
+          "kind": "tide",
+          "segment_index": 1,
+          "port": "P3",
+          "revision": 1,
+          "tide_time": 18.0,
+          "residual": 5.009351039194974e-82,
+          "all_constraints": [
+            {
+              "segment_index": 1,
+              "port": "P3",
+              "revision": 1,
+              "depth": "1/2",
+              "duration": "12",
+              "window": [
+                18.0,
+                30.0
+              ],
+              "tide_time": 18.0,
+              "residual": 5.009351039194974e-82,
+              "satisfied": true
+            }
+          ]
+        }
+      }
+    ],
+    "n_windows": 1,
+    "n_isolated": 1,
+    "id": "R02",
+    "note": "cos>=0 safe width == 12h window -> isolated tangency"
+  },
+  {
+    "status": "FEASIBLE",
+    "S": 12.0,
+    "E": 36.0,
+    "channel": "C2_cos_tangent",
+    "vessel": {
+      "draft": "1/2",
+      "margin": "0"
+    },
+    "windows": [
+      {
+        "start": 18.0,
+        "end": 18.0,
+        "width": 0.0,
+        "isolated": true,
+        "start_boundary": {
+          "time": 18.0,
+          "kind": "tide",
+          "segment_index": 1,
+          "port": "P3",
+          "revision": 1,
+          "tide_time": 18.0,
+          "residual": 5.009351039194974e-82,
+          "all_constraints": [
+            {
+              "segment_index": 1,
+              "port": "P3",
+              "revision": 1,
+              "depth": "1/2",
+              "duration": "12",
+              "window": [
+                18.0,
+                30.0
+              ],
+              "tide_time": 18.0,
+              "residual": 5.009351039194974e-82,
+              "satisfied": true
+            }
+          ]
+        },
+        "end_boundary": {
+          "time": 18.0,
+          "kind": "tide",
+          "segment_index": 1,
+          "port": "P3",
+          "revision": 1,
+          "tide_time": 18.0,
+          "residual": 5.009351039194974e-82,
+          "all_constraints": [
+            {
+              "segment_index": 1,
+              "port": "P3",
+              "revision": 1,
+              "depth": "1/2",
+              "duration": "12",
+              "window": [
+                18.0,
+                30.0
+              ],
+              "tide_time": 18.0,
+              "residual": 5.009351039194974e-82,
+              "satisfied": true
+            }
+          ]
+        }
+      }
+    ],
+    "n_windows": 1,
+    "n_isolated": 1,
+    "id": "R03",
+    "note": "same tangency inside range [12,36]"
+  },
+  {
+    "status": "FEASIBLE",
+    "S": 0.0,
+    "E": 48.0,
+    "channel": "C3_valley",
+    "vessel": {
+      "draft": "3/2",
+      "margin": "1/5"
+    },
+    "windows": [
+      {
+        "start": 22.20036200707221,
+        "end": 22.847179247240433,
+        "width": 0.6468172401682217,
+        "isolated": false,
+        "start_boundary": {
+          "time": 22.20036200707221,
+          "kind": "tide",
+          "segment_index": 1,
+          "port": "P2",
+          "revision": 1,
+          "tide_time": 22.20036200707221,
+          "residual": 3.3306690738754696e-16,
+          "all_constraints": [
+            {
+              "segment_index": 1,
+              "port": "P2",
+              "revision": 1,
+              "depth": "3/4",
+              "duration": "8",
+              "window": [
+                22.20036200707221,
+                30.20036200707221
+              ],
+              "tide_time": 22.20036200707221,
+              "residual": 3.3306690738754696e-16,
+              "satisfied": true
+            }
+          ]
+        },
+        "end_boundary": {
+          "time": 22.847179247240433,
+          "kind": "tide",
+          "segment_index": 1,
+          "port": "P2",
+          "revision": 1,
+          "tide_time": 30.847179247240433,
+          "residual": -9.992007221626409e-16,
+          "all_constraints": [
+            {
+              "segment_index": 1,
+              "port": "P2",
+              "revision": 1,
+              "depth": "3/4",
+              "duration": "8",
+              "window": [
+                22.847179247240433,
+                30.847179247240433
+              ],
+              "tide_time": 30.847179247240433,
+              "residual": -9.992007221626409e-16,
+              "satisfied": true
+            }
+          ]
+        }
+      },
+      {
+        "start": 46.200362007072215,
+        "end": 46.84717924724043,
+        "width": 0.6468172401682182,
+        "isolated": false,
+        "start_boundary": {
+          "time": 46.200362007072215,
+          "kind": "tide",
+          "segment_index": 1,
+          "port": "P2",
+          "revision": 1,
+          "tide_time": 46.200362007072215,
+          "residual": 2.55351295663786e-15,
+          "all_constraints": [
+            {
+              "segment_index": 1,
+              "port": "P2",
+              "revision": 1,
+              "depth": "3/4",
+              "duration": "8",
+              "window": [
+                46.200362007072215,
+                54.200362007072215
+              ],
+              "tide_time": 46.200362007072215,
+              "residual": 2.55351295663786e-15,
+              "satisfied": true
+            }
+          ]
+        },
+        "end_boundary": {
+          "time": 46.84717924724043,
+          "kind": "tide",
+          "segment_index": 1,
+          "port": "P2",
+          "revision": 1,
+          "tide_time": 54.84717924724043,
+          "residual": -9.992007221626409e-16,
+          "all_constraints": [
+            {
+              "segment_index": 1,
+              "port": "P2",
+              "revision": 1,
+              "depth": "3/4",
+              "duration": "8",
+              "window": [
+                46.84717924724043,
+                54.84717924724043
+              ],
+              "tide_time": 54.84717924724043,
+              "residual": -9.992007221626409e-16,
+              "satisfied": true
+            }
+          ]
+        }
+      }
+    ],
+    "n_windows": 2,
+    "n_isolated": 0,
+    "id": "R04",
+    "note": "rich tide: interior valleys split into windows"
+  },
+  {
+    "status": "FEASIBLE",
+    "S": 5.0,
+    "E": 29.0,
+    "channel": "C3_valley",
+    "vessel": {
+      "draft": "3/2",
+      "margin": "1/5"
+    },
+    "windows": [
+      {
+        "start": 22.20036200707221,
+        "end": 22.847179247240433,
+        "width": 0.6468172401682217,
+        "isolated": false,
+        "start_boundary": {
+          "time": 22.20036200707221,
+          "kind": "tide",
+          "segment_index": 1,
+          "port": "P2",
+          "revision": 1,
+          "tide_time": 22.20036200707221,
+          "residual": 3.3306690738754696e-16,
+          "all_constraints": [
+            {
+              "segment_index": 1,
+              "port": "P2",
+              "revision": 1,
+              "depth": "3/4",
+              "duration": "8",
+              "window": [
+                22.20036200707221,
+                30.20036200707221
+              ],
+              "tide_time": 22.20036200707221,
+              "residual": 3.3306690738754696e-16,
+              "satisfied": true
+            }
+          ]
+        },
+        "end_boundary": {
+          "time": 22.847179247240433,
+          "kind": "tide",
+          "segment_index": 1,
+          "port": "P2",
+          "revision": 1,
+          "tide_time": 30.847179247240433,
+          "residual": -9.992007221626409e-16,
+          "all_constraints": [
+            {
+              "segment_index": 1,
+              "port": "P2",
+              "revision": 1,
+              "depth": "3/4",
+              "duration": "8",
+              "window": [
+                22.847179247240433,
+                30.847179247240433
+              ],
+              "tide_time": 30.847179247240433,
+              "residual": -9.992007221626409e-16,
+              "satisfied": true
+            }
+          ]
+        }
+      }
+    ],
+    "n_windows": 1,
+    "n_isolated": 0,
+    "id": "R05",
+    "note": "same channel, narrower range"
+  },
+  {
+    "status": "FEASIBLE",
+    "S": 0.0,
+    "E": 48.0,
+    "channel": "C3_valley",
+    "vessel": {
+      "draft": "1/2",
+      "margin": "0"
+    },
+    "windows": [
+      {
+        "start": 13.879067360427978,
+        "end": 23.961999859097517,
+        "width": 10.082932498669539,
+        "isolated": false,
+        "start_boundary": {
+          "time": 13.879067360427978,
+          "kind": "tide",
+          "segment_index": 1,
+          "port": "P2",
+          "revision": 1,
+          "tide_time": 13.879067360427978,
+          "residual": -4.440892098500626e-16,
+          "all_constraints": [
+            {
+              "segment_index": 1,
+              "port": "P2",
+              "revision": 1,
+              "depth": "3/4",
+              "duration": "8",
+              "window": [
+                13.879067360427978,
+                21.879067360427978
+              ],
+              "tide_time": 13.879067360427978,
+              "residual": -4.440892098500626e-16,
+              "satisfied": true
+            }
+          ]
+        },
+        "end_boundary": {
+          "time": 23.961999859097517,
+          "kind": "tide",
+          "segment_index": 1,
+          "port": "P2",
+          "revision": 1,
+          "tide_time": 31.961999859097517,
+          "residual": 8.881784197001252e-16,
+          "all_constraints": [
+            {
+              "segment_index": 1,
+              "port": "P2",
+              "revision": 1,
+              "depth": "3/4",
+              "duration": "8",
+              "window": [
+                23.961999859097517,
+                31.961999859097517
+              ],
+              "tide_time": 31.961999859097517,
+              "residual": 8.881784197001252e-16,
+              "satisfied": true
+            }
+          ]
+        }
+      },
+      {
+        "start": 37.87906736042798,
+        "end": 47.96199985909752,
+        "width": 10.082932498669535,
+        "isolated": false,
+        "start_boundary": {
+          "time": 37.87906736042798,
+          "kind": "tide",
+          "segment_index": 1,
+          "port": "P2",
+          "revision": 1,
+          "tide_time": 37.87906736042798,
+          "residual": 1.6375789613221059e-15,
+          "all_constraints": [
+            {
+              "segment_index": 1,
+              "port": "P2",
+              "revision": 1,
+              "depth": "3/4",
+              "duration": "8",
+              "window": [
+                37.87906736042798,
+                45.87906736042798
+              ],
+              "tide_time": 37.87906736042798,
+              "residual": 1.6375789613221059e-15,
+              "satisfied": true
+            }
+          ]
+        },
+        "end_boundary": {
+          "time": 47.96199985909752,
+          "kind": "tide",
+          "segment_index": 1,
+          "port": "P2",
+          "revision": 1,
+          "tide_time": 55.96199985909752,
+          "residual": 8.881784197001252e-16,
+          "all_constraints": [
+            {
+              "segment_index": 1,
+              "port": "P2",
+              "revision": 1,
+              "depth": "3/4",
+              "duration": "8",
+              "window": [
+                47.96199985909752,
+                55.96199985909752
+              ],
+              "tide_time": 55.96199985909752,
+              "residual": 8.881784197001252e-16,
+              "satisfied": true
+            }
+          ]
+        }
+      }
+    ],
+    "n_windows": 2,
+    "n_isolated": 0,
+    "id": "R29",
+    "note": "shallow draft on rich tide -> wide windows"
+  },
+  {
+    "status": "FEASIBLE",
+    "S": 0.0,
+    "E": 24.0,
+    "channel": "C4_mixed_ports",
+    "vessel": {
+      "draft": "1/2",
+      "margin": "0"
+    },
+    "windows": [
+      {
+        "start": 0.0,
+        "end": 2.0,
+        "width": 2.0,
+        "isolated": false,
+        "start_boundary": {
+          "time": 0.0,
+          "kind": "tide",
+          "segment_index": 1,
+          "port": "P1",
+          "revision": 1,
+          "tide_time": 0.0,
+          "residual": 0.0,
+          "all_constraints": [
+            {
+              "segment_index": 1,
+              "port": "P1",
+              "revision": 1,
+              "depth": "1/2",
+              "duration": "2",
+              "window": [
+                0.0,
+                2.0
+              ],
+              "tide_time": 0.0,
+              "residual": 0.0,
+              "satisfied": true
+            },
+            {
+              "segment_index": 2,
+              "port": "P3",
+              "revision": 1,
+              "depth": "1/2",
+              "duration": "2",
+              "window": [
+                2.0,
+                4.0
+              ],
+              "tide_time": 4.0,
+              "residual": 0.5,
+              "satisfied": true
+            }
+          ]
+        },
+        "end_boundary": {
+          "time": 2.0,
+          "kind": "tide",
+          "segment_index": 2,
+          "port": "P3",
+          "revision": 1,
+          "tide_time": 6.0,
+          "residual": 5.358348282422023e-82,
+          "all_constraints": [
+            {
+              "segment_index": 1,
+              "port": "P1",
+              "revision": 1,
+              "depth": "1/2",
+              "duration": "2",
+              "window": [
+                2.0,
+                4.0
+              ],
+              "tide_time": 2.0,
+              "residual": 0.5,
+              "satisfied": true
+            },
+            {
+              "segment_index": 2,
+              "port": "P3",
+              "revision": 1,
+              "depth": "1/2",
+              "duration": "2",
+              "window": [
+                4.0,
+                6.0
+              ],
+              "tide_time": 6.0,
+              "residual": 5.358348282422023e-82,
+              "satisfied": true
+            }
+          ]
+        }
+      },
+      {
+        "start": 24.0,
+        "end": 24.0,
+        "width": 0.0,
+        "isolated": true,
+        "start_boundary": {
+          "time": 24.0,
+          "kind": "tide",
+          "segment_index": 1,
+          "port": "P1",
+          "revision": 1,
+          "tide_time": 24.0,
+          "residual": -2.1433393129688094e-81,
+          "all_constraints": [
+            {
+              "segment_index": 1,
+              "port": "P1",
+              "revision": 1,
+              "depth": "1/2",
+              "duration": "2",
+              "window": [
+                24.0,
+                26.0
+              ],
+              "tide_time": 24.0,
+              "residual": -2.1433393129688094e-81,
+              "satisfied": true
+            },
+            {
+              "segment_index": 2,
+              "port": "P3",
+              "revision": 1,
+              "depth": "1/2",
+              "duration": "2",
+              "window": [
+                26.0,
+                28.0
+              ],
+              "tide_time": 28.0,
+              "residual": 0.5,
+              "satisfied": true
+            }
+          ]
+        },
+        "end_boundary": {
+          "time": 24.0,
+          "kind": "tide",
+          "segment_index": 1,
+          "port": "P1",
+          "revision": 1,
+          "tide_time": 24.0,
+          "residual": -2.1433393129688094e-81,
+          "all_constraints": [
+            {
+              "segment_index": 1,
+              "port": "P1",
+              "revision": 1,
+              "depth": "1/2",
+              "duration": "2",
+              "window": [
+                24.0,
+                26.0
+              ],
+              "tide_time": 24.0,
+              "residual": -2.1433393129688094e-81,
+              "satisfied": true
+            },
+            {
+              "segment_index": 2,
+              "port": "P3",
+              "revision": 1,
+              "depth": "1/2",
+              "duration": "2",
+              "window": [
+                26.0,
+                28.0
+              ],
+              "tide_time": 28.0,
+              "residual": 0.5,
+              "satisfied": true
+            }
+          ]
+        }
+      }
+    ],
+    "n_windows": 2,
+    "n_isolated": 1,
+    "id": "R06",
+    "note": "different ports + 2h offset; naive raw intersection is wrong"
+  },
+  {
+    "status": "FEASIBLE",
+    "S": 0.0,
+    "E": 48.0,
+    "channel": "C4_mixed_ports",
+    "vessel": {
+      "draft": "1/2",
+      "margin": "0"
+    },
+    "windows": [
+      {
+        "start": 0.0,
+        "end": 2.0,
+        "width": 2.0,
+        "isolated": false,
+        "start_boundary": {
+          "time": 0.0,
+          "kind": "tide",
+          "segment_index": 1,
+          "port": "P1",
+          "revision": 1,
+          "tide_time": 0.0,
+          "residual": 0.0,
+          "all_constraints": [
+            {
+              "segment_index": 1,
+              "port": "P1",
+              "revision": 1,
+              "depth": "1/2",
+              "duration": "2",
+              "window": [
+                0.0,
+                2.0
+              ],
+              "tide_time": 0.0,
+              "residual": 0.0,
+              "satisfied": true
+            },
+            {
+              "segment_index": 2,
+              "port": "P3",
+              "revision": 1,
+              "depth": "1/2",
+              "duration": "2",
+              "window": [
+                2.0,
+                4.0
+              ],
+              "tide_time": 4.0,
+              "residual": 0.5,
+              "satisfied": true
+            }
+          ]
+        },
+        "end_boundary": {
+          "time": 2.0,
+          "kind": "tide",
+          "segment_index": 2,
+          "port": "P3",
+          "revision": 1,
+          "tide_time": 6.0,
+          "residual": 5.358348282422023e-82,
+          "all_constraints": [
+            {
+              "segment_index": 1,
+              "port": "P1",
+              "revision": 1,
+              "depth": "1/2",
+              "duration": "2",
+              "window": [
+                2.0,
+                4.0
+              ],
+              "tide_time": 2.0,
+              "residual": 0.5,
+              "satisfied": true
+            },
+            {
+              "segment_index": 2,
+              "port": "P3",
+              "revision": 1,
+              "depth": "1/2",
+              "duration": "2",
+              "window": [
+                4.0,
+                6.0
+              ],
+              "tide_time": 6.0,
+              "residual": 5.358348282422023e-82,
+              "satisfied": true
+            }
+          ]
+        }
+      },
+      {
+        "start": 24.0,
+        "end": 26.0,
+        "width": 2.0,
+        "isolated": false,
+        "start_boundary": {
+          "time": 24.0,
+          "kind": "tide",
+          "segment_index": 1,
+          "port": "P1",
+          "revision": 1,
+          "tide_time": 24.0,
+          "residual": -2.1433393129688094e-81,
+          "all_constraints": [
+            {
+              "segment_index": 1,
+              "port": "P1",
+              "revision": 1,
+              "depth": "1/2",
+              "duration": "2",
+              "window": [
+                24.0,
+                26.0
+              ],
+              "tide_time": 24.0,
+              "residual": -2.1433393129688094e-81,
+              "satisfied": true
+            },
+            {
+              "segment_index": 2,
+              "port": "P3",
+              "revision": 1,
+              "depth": "1/2",
+              "duration": "2",
+              "window": [
+                26.0,
+                28.0
+              ],
+              "tide_time": 28.0,
+              "residual": 0.5,
+              "satisfied": true
+            }
+          ]
+        },
+        "end_boundary": {
+          "time": 26.0,
+          "kind": "tide",
+          "segment_index": 2,
+          "port": "P3",
+          "revision": 1,
+          "tide_time": 30.0,
+          "residual": 4.787613729857117e-81,
+          "all_constraints": [
+            {
+              "segment_index": 1,
+              "port": "P1",
+              "revision": 1,
+              "depth": "1/2",
+              "duration": "2",
+              "window": [
+                26.0,
+                28.0
+              ],
+              "tide_time": 26.0,
+              "residual": 0.5,
+              "satisfied": true
+            },
+            {
+              "segment_index": 2,
+              "port": "P3",
+              "revision": 1,
+              "depth": "1/2",
+              "duration": "2",
+              "window": [
+                28.0,
+                30.0
+              ],
+              "tide_time": 30.0,
+              "residual": 4.787613729857117e-81,
+              "satisfied": true
+            }
+          ]
+        }
+      },
+      {
+        "start": 48.0,
+        "end": 48.0,
+        "width": 0.0,
+        "isolated": true,
+        "start_boundary": {
+          "time": 48.0,
+          "kind": "tide",
+          "segment_index": 1,
+          "port": "P1",
+          "revision": 1,
+          "tide_time": 48.0,
+          "residual": -4.286678625937619e-81,
+          "all_constraints": [
+            {
+              "segment_index": 1,
+              "port": "P1",
+              "revision": 1,
+              "depth": "1/2",
+              "duration": "2",
+              "window": [
+                48.0,
+                50.0
+              ],
+              "tide_time": 48.0,
+              "residual": -4.286678625937619e-81,
+              "satisfied": true
+            },
+            {
+              "segment_index": 2,
+              "port": "P3",
+              "revision": 1,
+              "depth": "1/2",
+              "duration": "2",
+              "window": [
+                50.0,
+                52.0
+              ],
+              "tide_time": 52.0,
+              "residual": 0.5,
+              "satisfied": true
+            }
+          ]
+        },
+        "end_boundary": {
+          "time": 48.0,
+          "kind": "tide",
+          "segment_index": 1,
+          "port": "P1",
+          "revision": 1,
+          "tide_time": 48.0,
+          "residual": -4.286678625937619e-81,
+          "all_constraints": [
+            {
+              "segment_index": 1,
+              "port": "P1",
+              "revision": 1,
+              "depth": "1/2",
+              "duration": "2",
+              "window": [
+                48.0,
+                50.0
+              ],
+              "tide_time": 48.0,
+              "residual": -4.286678625937619e-81,
+              "satisfied": true
+            },
+            {
+              "segment_index": 2,
+              "port": "P3",
+              "revision": 1,
+              "depth": "1/2",
+              "duration": "2",
+              "window": [
+                50.0,
+                52.0
+              ],
+              "tide_time": 52.0,
+              "residual": 0.5,
+              "satisfied": true
+            }
+          ]
+        }
+      }
+    ],
+    "n_windows": 3,
+    "n_isolated": 1,
+    "id": "R07",
+    "note": "same mixed-offset channel over two periods"
+  },
+  {
+    "status": "FEASIBLE",
+    "S": 24.0,
+    "E": 48.0,
+    "channel": "C4_mixed_ports",
+    "vessel": {
+      "draft": "1/2",
+      "margin": "0"
+    },
+    "windows": [
+      {
+        "start": 24.0,
+        "end": 26.0,
+        "width": 2.0,
+        "isolated": false,
+        "start_boundary": {
+          "time": 24.0,
+          "kind": "tide",
+          "segment_index": 1,
+          "port": "P1",
+          "revision": 1,
+          "tide_time": 24.0,
+          "residual": -2.1433393129688094e-81,
+          "all_constraints": [
+            {
+              "segment_index": 1,
+              "port": "P1",
+              "revision": 1,
+              "depth": "1/2",
+              "duration": "2",
+              "window": [
+                24.0,
+                26.0
+              ],
+              "tide_time": 24.0,
+              "residual": -2.1433393129688094e-81,
+              "satisfied": true
+            },
+            {
+              "segment_index": 2,
+              "port": "P3",
+              "revision": 1,
+              "depth": "1/2",
+              "duration": "2",
+              "window": [
+                26.0,
+                28.0
+              ],
+              "tide_time": 28.0,
+              "residual": 0.5,
+              "satisfied": true
+            }
+          ]
+        },
+        "end_boundary": {
+          "time": 26.0,
+          "kind": "tide",
+          "segment_index": 2,
+          "port": "P3",
+          "revision": 1,
+          "tide_time": 30.0,
+          "residual": 4.787613729857117e-81,
+          "all_constraints": [
+            {
+              "segment_index": 1,
+              "port": "P1",
+              "revision": 1,
+              "depth": "1/2",
+              "duration": "2",
+              "window": [
+                26.0,
+                28.0
+              ],
+              "tide_time": 26.0,
+              "residual": 0.5,
+              "satisfied": true
+            },
+            {
+              "segment_index": 2,
+              "port": "P3",
+              "revision": 1,
+              "depth": "1/2",
+              "duration": "2",
+              "window": [
+                28.0,
+                30.0
+              ],
+              "tide_time": 30.0,
+              "residual": 4.787613729857117e-81,
+              "satisfied": true
+            }
+          ]
+        }
+      },
+      {
+        "start": 48.0,
+        "end": 48.0,
+        "width": 0.0,
+        "isolated": true,
+        "start_boundary": {
+          "time": 48.0,
+          "kind": "tide",
+          "segment_index": 1,
+          "port": "P1",
+          "revision": 1,
+          "tide_time": 48.0,
+          "residual": -4.286678625937619e-81,
+          "all_constraints": [
+            {
+              "segment_index": 1,
+              "port": "P1",
+              "revision": 1,
+              "depth": "1/2",
+              "duration": "2",
+              "window": [
+                48.0,
+                50.0
+              ],
+              "tide_time": 48.0,
+              "residual": -4.286678625937619e-81,
+              "satisfied": true
+            },
+            {
+              "segment_index": 2,
+              "port": "P3",
+              "revision": 1,
+              "depth": "1/2",
+              "duration": "2",
+              "window": [
+                50.0,
+                52.0
+              ],
+              "tide_time": 52.0,
+              "residual": 0.5,
+              "satisfied": true
+            }
+          ]
+        },
+        "end_boundary": {
+          "time": 48.0,
+          "kind": "tide",
+          "segment_index": 1,
+          "port": "P1",
+          "revision": 1,
+          "tide_time": 48.0,
+          "residual": -4.286678625937619e-81,
+          "all_constraints": [
+            {
+              "segment_index": 1,
+              "port": "P1",
+              "revision": 1,
+              "depth": "1/2",
+              "duration": "2",
+              "window": [
+                48.0,
+                50.0
+              ],
+              "tide_time": 48.0,
+              "residual": -4.286678625937619e-81,
+              "satisfied": true
+            },
+            {
+              "segment_index": 2,
+              "port": "P3",
+              "revision": 1,
+              "depth": "1/2",
+              "duration": "2",
+              "window": [
+                50.0,
+                52.0
+              ],
+              "tide_time": 52.0,
+              "residual": 0.5,
+              "satisfied": true
+            }
+          ]
+        }
+      }
+    ],
+    "n_windows": 2,
+    "n_isolated": 1,
+    "id": "R26",
+    "note": "mixed-offset channel, second period"
+  },
+  {
+    "status": "FEASIBLE",
+    "S": 0.0,
+    "E": 24.0,
+    "channel": "C5_const_ok",
+    "vessel": {
+      "draft": "1/2",
+      "margin": "0"
+    },
+    "windows": [
+      {
+        "start": 0.0,
+        "end": 24.0,
+        "width": 24.0,
+        "isolated": false,
+        "start_boundary": {
+          "time": 0.0,
+          "kind": "range",
+          "segment_index": 0,
+          "port": null,
+          "revision": null,
+          "tide_time": 0.0,
+          "residual": 0.16666666666666663,
+          "all_constraints": [
+            {
+              "segment_index": 1,
+              "port": "P4",
+              "revision": 1,
+              "depth": "0",
+              "duration": "6",
+              "window": [
+                0.0,
+                6.0
+              ],
+              "tide_time": 0.0,
+              "residual": 0.16666666666666663,
+              "satisfied": true
+            }
+          ]
+        },
+        "end_boundary": {
+          "time": 24.0,
+          "kind": "range",
+          "segment_index": 0,
+          "port": null,
+          "revision": null,
+          "tide_time": 24.0,
+          "residual": 0.16666666666666663,
+          "all_constraints": [
+            {
+              "segment_index": 1,
+              "port": "P4",
+              "revision": 1,
+              "depth": "0",
+              "duration": "6",
+              "window": [
+                24.0,
+                30.0
+              ],
+              "tide_time": 24.0,
+              "residual": 0.16666666666666663,
+              "satisfied": true
+            }
+          ]
+        }
+      }
+    ],
+    "n_windows": 1,
+    "n_isolated": 0,
+    "id": "R08",
+    "note": "constant 2/3 >= req 1/2 -> whole [0,24] feasible"
+  },
+  {
+    "status": "FEASIBLE",
+    "S": 24.0,
+    "E": 48.0,
+    "channel": "C5_const_ok",
+    "vessel": {
+      "draft": "1/2",
+      "margin": "0"
+    },
+    "windows": [
+      {
+        "start": 24.0,
+        "end": 48.0,
+        "width": 24.0,
+        "isolated": false,
+        "start_boundary": {
+          "time": 24.0,
+          "kind": "range",
+          "segment_index": 0,
+          "port": null,
+          "revision": null,
+          "tide_time": 24.0,
+          "residual": 0.16666666666666663,
+          "all_constraints": [
+            {
+              "segment_index": 1,
+              "port": "P4",
+              "revision": 1,
+              "depth": "0",
+              "duration": "6",
+              "window": [
+                24.0,
+                30.0
+              ],
+              "tide_time": 24.0,
+              "residual": 0.16666666666666663,
+              "satisfied": true
+            }
+          ]
+        },
+        "end_boundary": {
+          "time": 48.0,
+          "kind": "range",
+          "segment_index": 0,
+          "port": null,
+          "revision": null,
+          "tide_time": 48.0,
+          "residual": 0.16666666666666663,
+          "all_constraints": [
+            {
+              "segment_index": 1,
+              "port": "P4",
+              "revision": 1,
+              "depth": "0",
+              "duration": "6",
+              "window": [
+                48.0,
+                54.0
+              ],
+              "tide_time": 48.0,
+              "residual": 0.16666666666666663,
+              "satisfied": true
+            }
+          ]
+        }
+      }
+    ],
+    "n_windows": 1,
+    "n_isolated": 0,
+    "id": "R30",
+    "note": "constant model over [24,48]"
+  },
+  {
+    "status": "FEASIBLE",
+    "S": 0.0,
+    "E": 24.0,
+    "channel": "C6_const_exact",
+    "vessel": {
+      "draft": "1/2",
+      "margin": "0"
+    },
+    "windows": [
+      {
+        "start": 0.0,
+        "end": 24.0,
+        "width": 24.0,
+        "isolated": false,
+        "start_boundary": {
+          "time": 0.0,
+          "kind": "range",
+          "segment_index": 0,
+          "port": null,
+          "revision": null,
+          "tide_time": 0.0,
+          "residual": 1.0,
+          "all_constraints": [
+            {
+              "segment_index": 1,
+              "port": "P5",
+              "revision": 1,
+              "depth": "1/2",
+              "duration": "6",
+              "window": [
+                0.0,
+                6.0
+              ],
+              "tide_time": 0.0,
+              "residual": 1.0,
+              "satisfied": true
+            }
+          ]
+        },
+        "end_boundary": {
+          "time": 24.0,
+          "kind": "range",
+          "segment_index": 0,
+          "port": null,
+          "revision": null,
+          "tide_time": 24.0,
+          "residual": 1.0,
+          "all_constraints": [
+            {
+              "segment_index": 1,
+              "port": "P5",
+              "revision": 1,
+              "depth": "1/2",
+              "duration": "6",
+              "window": [
+                24.0,
+                30.0
+              ],
+              "tide_time": 24.0,
+              "residual": 1.0,
+              "satisfied": true
+            }
+          ]
+        }
+      }
+    ],
+    "n_windows": 1,
+    "n_isolated": 0,
+    "id": "R09",
+    "note": "constant 1 > req 1/2 -> whole range feasible"
+  },
+  {
+    "status": "FEASIBLE",
+    "S": 0.0,
+    "E": 24.0,
+    "channel": "C6_const_exact",
+    "vessel": {
+      "draft": "3/2",
+      "margin": "0"
+    },
+    "windows": [
+      {
+        "start": 0.0,
+        "end": 24.0,
+        "width": 24.0,
+        "isolated": false,
+        "start_boundary": {
+          "time": 0.0,
+          "kind": "tide",
+          "segment_index": 1,
+          "port": "P5",
+          "revision": 1,
+          "tide_time": 0.0,
+          "residual": 0.0,
+          "all_constraints": [
+            {
+              "segment_index": 1,
+              "port": "P5",
+              "revision": 1,
+              "depth": "1/2",
+              "duration": "6",
+              "window": [
+                0.0,
+                6.0
+              ],
+              "tide_time": 0.0,
+              "residual": 0.0,
+              "satisfied": true
+            }
+          ]
+        },
+        "end_boundary": {
+          "time": 24.0,
+          "kind": "tide",
+          "segment_index": 1,
+          "port": "P5",
+          "revision": 1,
+          "tide_time": 24.0,
+          "residual": 0.0,
+          "all_constraints": [
+            {
+              "segment_index": 1,
+              "port": "P5",
+              "revision": 1,
+              "depth": "1/2",
+              "duration": "6",
+              "window": [
+                24.0,
+                30.0
+              ],
+              "tide_time": 24.0,
+              "residual": 0.0,
+              "satisfied": true
+            }
+          ]
+        }
+      }
+    ],
+    "n_windows": 1,
+    "n_isolated": 0,
+    "id": "R10",
+    "note": "constant exactly at threshold req=1 (equality) -> feasible"
+  },
+  {
+    "status": "INFEASIBLE",
+    "S": 0.0,
+    "E": 24.0,
+    "channel": "C7_const_low",
+    "vessel": {
+      "draft": "1",
+      "margin": "0"
+    },
+    "windows": [],
+    "n_windows": 0,
+    "n_isolated": 0,
+    "id": "R11",
+    "note": "constant 2/3 < req 1 -> INFEASIBLE"
+  },
+  {
+    "status": "INFEASIBLE",
+    "S": 24.0,
+    "E": 48.0,
+    "channel": "C7_const_low",
+    "vessel": {
+      "draft": "1",
+      "margin": "0"
+    },
+    "windows": [],
+    "n_windows": 0,
+    "n_isolated": 0,
+    "id": "R12",
+    "note": "same, second period -> INFEASIBLE"
+  },
+  {
+    "status": "INFEASIBLE",
+    "S": 0.0,
+    "E": 48.0,
+    "channel": "C8_long",
+    "vessel": {
+      "draft": "1/2",
+      "margin": "0"
+    },
+    "windows": [],
+    "n_windows": 0,
+    "n_isolated": 0,
+    "id": "R13",
+    "note": "8-segment channel, offsets accumulate over two periods"
+  },
+  {
+    "status": "INFEASIBLE",
+    "S": 12.0,
+    "E": 36.0,
+    "channel": "C8_long",
+    "vessel": {
+      "draft": "3/2",
+      "margin": "0"
+    },
+    "windows": [],
+    "n_windows": 0,
+    "n_isolated": 0,
+    "id": "R28",
+    "note": "8-segment channel, higher draft, shifted range"
+  },
+  {
+    "status": "FEASIBLE",
+    "S": 0.0,
+    "E": 48.0,
+    "channel": "C9_p2_current",
+    "vessel": {
+      "draft": "3/2",
+      "margin": "0"
+    },
+    "windows": [
+      {
+        "start": 0.0,
+        "end": 1.4107915207196795,
+        "width": 1.4107915207196795,
+        "isolated": false,
+        "start_boundary": {
+          "time": 0.0,
+          "kind": "range",
+          "segment_index": 0,
+          "port": null,
+          "revision": null,
+          "tide_time": 6.0,
+          "residual": 1.05,
+          "all_constraints": [
+            {
+              "segment_index": 1,
+              "port": "P2",
+              "revision": 2,
+              "depth": "1",
+              "duration": "6",
+              "window": [
+                0.0,
+                6.0
+              ],
+              "tide_time": 6.0,
+              "residual": 1.05,
+              "satisfied": true
+            }
+          ]
+        },
+        "end_boundary": {
+          "time": 1.4107915207196795,
+          "kind": "tide",
+          "segment_index": 1,
+          "port": "P2",
+          "revision": 2,
+          "tide_time": 7.4107915207196795,
+          "residual": 3.3306690738754696e-16,
+          "all_constraints": [
+            {
+              "segment_index": 1,
+              "port": "P2",
+              "revision": 2,
+              "depth": "1",
+              "duration": "6",
+              "window": [
+                1.4107915207196795,
+                7.4107915207196795
+              ],
+              "tide_time": 7.4107915207196795,
+              "residual": 3.3306690738754696e-16,
+              "satisfied": true
+            }
+          ]
+        }
+      },
+      {
+        "start": 15.194073888321359,
+        "end": 25.41079152071968,
+        "width": 10.216717632398321,
+        "isolated": false,
+        "start_boundary": {
+          "time": 15.194073888321359,
+          "kind": "tide",
+          "segment_index": 1,
+          "port": "P2",
+          "revision": 2,
+          "tide_time": 15.194073888321359,
+          "residual": -2.220446049250313e-16,
+          "all_constraints": [
+            {
+              "segment_index": 1,
+              "port": "P2",
+              "revision": 2,
+              "depth": "1",
+              "duration": "6",
+              "window": [
+                15.194073888321359,
+                21.19407388832136
+              ],
+              "tide_time": 15.194073888321359,
+              "residual": -2.220446049250313e-16,
+              "satisfied": true
+            }
+          ]
+        },
+        "end_boundary": {
+          "time": 25.41079152071968,
+          "kind": "tide",
+          "segment_index": 1,
+          "port": "P2",
+          "revision": 2,
+          "tide_time": 31.41079152071968,
+          "residual": -6.106226635438361e-16,
+          "all_constraints": [
+            {
+              "segment_index": 1,
+              "port": "P2",
+              "revision": 2,
+              "depth": "1",
+              "duration": "6",
+              "window": [
+                25.41079152071968,
+                31.41079152071968
+              ],
+              "tide_time": 31.41079152071968,
+              "residual": -6.106226635438361e-16,
+              "satisfied": true
+            }
+          ]
+        }
+      },
+      {
+        "start": 39.194073888321356,
+        "end": 48.0,
+        "width": 8.805926111678644,
+        "isolated": false,
+        "start_boundary": {
+          "time": 39.194073888321356,
+          "kind": "tide",
+          "segment_index": 1,
+          "port": "P2",
+          "revision": 2,
+          "tide_time": 39.194073888321356,
+          "residual": -1.7208456881689926e-15,
+          "all_constraints": [
+            {
+              "segment_index": 1,
+              "port": "P2",
+              "revision": 2,
+              "depth": "1",
+              "duration": "6",
+              "window": [
+                39.194073888321356,
+                45.194073888321356
+              ],
+              "tide_time": 39.194073888321356,
+              "residual": -1.7208456881689926e-15,
+              "satisfied": true
+            }
+          ]
+        },
+        "end_boundary": {
+          "time": 48.0,
+          "kind": "range",
+          "segment_index": 0,
+          "port": null,
+          "revision": null,
+          "tide_time": 54.0,
+          "residual": 1.05,
+          "all_constraints": [
+            {
+              "segment_index": 1,
+              "port": "P2",
+              "revision": 2,
+              "depth": "1",
+              "duration": "6",
+              "window": [
+                48.0,
+                54.0
+              ],
+              "tide_time": 54.0,
+              "residual": 1.05,
+              "satisfied": true
+            }
+          ]
+        }
+      }
+    ],
+    "n_windows": 3,
+    "n_isolated": 0,
+    "id": "R14",
+    "note": "consumes CURRENT P2 (corrected product)"
+  },
+  {
+    "status": "FEASIBLE",
+    "S": 0.0,
+    "E": 48.0,
+    "channel": "C10_p2_rev1",
+    "vessel": {
+      "draft": "3/2",
+      "margin": "0"
+    },
+    "windows": [
+      {
+        "start": 0.0,
+        "end": 1.3184637967197244,
+        "width": 1.3184637967197244,
+        "isolated": false,
+        "start_boundary": {
+          "time": 0.0,
+          "kind": "range",
+          "segment_index": 0,
+          "port": null,
+          "revision": null,
+          "tide_time": 6.0,
+          "residual": 0.95,
+          "all_constraints": [
+            {
+              "segment_index": 1,
+              "port": "P2",
+              "revision": 1,
+              "depth": "1",
+              "duration": "6",
+              "window": [
+                0.0,
+                6.0
+              ],
+              "tide_time": 6.0,
+              "residual": 0.95,
+              "satisfied": true
+            }
+          ]
+        },
+        "end_boundary": {
+          "time": 1.3184637967197244,
+          "kind": "tide",
+          "segment_index": 1,
+          "port": "P2",
+          "revision": 1,
+          "tide_time": 7.318463796719724,
+          "residual": -4.440892098500626e-16,
+          "all_constraints": [
+            {
+              "segment_index": 1,
+              "port": "P2",
+              "revision": 1,
+              "depth": "1",
+              "duration": "6",
+              "window": [
+                1.3184637967197244,
+                7.318463796719724
+              ],
+              "tide_time": 7.318463796719724,
+              "residual": -4.440892098500626e-16,
+              "satisfied": true
+            }
+          ]
+        }
+      },
+      {
+        "start": 21.185752201991313,
+        "end": 25.318463796719726,
+        "width": 4.132711594728413,
+        "isolated": false,
+        "start_boundary": {
+          "time": 21.185752201991313,
+          "kind": "tide",
+          "segment_index": 1,
+          "port": "P2",
+          "revision": 1,
+          "tide_time": 21.185752201991313,
+          "residual": 1.1102230246251565e-16,
+          "all_constraints": [
+            {
+              "segment_index": 1,
+              "port": "P2",
+              "revision": 1,
+              "depth": "1",
+              "duration": "6",
+              "window": [
+                21.185752201991313,
+                27.185752201991313
+              ],
+              "tide_time": 21.185752201991313,
+              "residual": 1.1102230246251565e-16,
+              "satisfied": true
+            }
+          ]
+        },
+        "end_boundary": {
+          "time": 25.318463796719726,
+          "kind": "tide",
+          "segment_index": 1,
+          "port": "P2",
+          "revision": 1,
+          "tide_time": 31.318463796719726,
+          "residual": -2.3314683517128287e-15,
+          "all_constraints": [
+            {
+              "segment_index": 1,
+              "port": "P2",
+              "revision": 1,
+              "depth": "1",
+              "duration": "6",
+              "window": [
+                25.318463796719726,
+                31.318463796719726
+              ],
+              "tide_time": 31.318463796719726,
+              "residual": -2.3314683517128287e-15,
+              "satisfied": true
+            }
+          ]
+        }
+      },
+      {
+        "start": 45.18575220199131,
+        "end": 48.0,
+        "width": 2.8142477980086866,
+        "isolated": false,
+        "start_boundary": {
+          "time": 45.18575220199131,
+          "kind": "tide",
+          "segment_index": 1,
+          "port": "P2",
+          "revision": 1,
+          "tide_time": 45.18575220199131,
+          "residual": 1.1102230246251565e-16,
+          "all_constraints": [
+            {
+              "segment_index": 1,
+              "port": "P2",
+              "revision": 1,
+              "depth": "1",
+              "duration": "6",
+              "window": [
+                45.18575220199131,
+                51.18575220199131
+              ],
+              "tide_time": 45.18575220199131,
+              "residual": 1.1102230246251565e-16,
+              "satisfied": true
+            }
+          ]
+        },
+        "end_boundary": {
+          "time": 48.0,
+          "kind": "range",
+          "segment_index": 0,
+          "port": null,
+          "revision": null,
+          "tide_time": 54.0,
+          "residual": 0.95,
+          "all_constraints": [
+            {
+              "segment_index": 1,
+              "port": "P2",
+              "revision": 1,
+              "depth": "1",
+              "duration": "6",
+              "window": [
+                48.0,
+                54.0
+              ],
+              "tide_time": 54.0,
+              "residual": 0.95,
+              "satisfied": true
+            }
+          ]
+        }
+      }
+    ],
+    "n_windows": 3,
+    "n_isolated": 0,
+    "id": "R15",
+    "note": "pinned to P2 rev 1; unaffected by correction"
+  },
+  {
+    "status": "FEASIBLE",
+    "S": 0.0,
+    "E": 24.0,
+    "channel": "C11_short",
+    "vessel": {
+      "draft": "1/2",
+      "margin": "0"
+    },
+    "windows": [
+      {
+        "start": 0.0,
+        "end": 11.0,
+        "width": 11.0,
+        "isolated": false,
+        "start_boundary": {
+          "time": 0.0,
+          "kind": "tide",
+          "segment_index": 1,
+          "port": "P1",
+          "revision": 1,
+          "tide_time": 0.0,
+          "residual": 0.0,
+          "all_constraints": [
+            {
+              "segment_index": 1,
+              "port": "P1",
+              "revision": 1,
+              "depth": "1/2",
+              "duration": "1",
+              "window": [
+                0.0,
+                1.0
+              ],
+              "tide_time": 0.0,
+              "residual": 0.0,
+              "satisfied": true
+            }
+          ]
+        },
+        "end_boundary": {
+          "time": 11.0,
+          "kind": "tide",
+          "segment_index": 1,
+          "port": "P1",
+          "revision": 1,
+          "tide_time": 12.0,
+          "residual": 1.0716696564844047e-81,
+          "all_constraints": [
+            {
+              "segment_index": 1,
+              "port": "P1",
+              "revision": 1,
+              "depth": "1/2",
+              "duration": "1",
+              "window": [
+                11.0,
+                12.0
+              ],
+              "tide_time": 12.0,
+              "residual": 1.0716696564844047e-81,
+              "satisfied": true
+            }
+          ]
+        }
+      },
+      {
+        "start": 24.0,
+        "end": 24.0,
+        "width": 0.0,
+        "isolated": true,
+        "start_boundary": {
+          "time": 24.0,
+          "kind": "tide",
+          "segment_index": 1,
+          "port": "P1",
+          "revision": 1,
+          "tide_time": 24.0,
+          "residual": -2.1433393129688094e-81,
+          "all_constraints": [
+            {
+              "segment_index": 1,
+              "port": "P1",
+              "revision": 1,
+              "depth": "1/2",
+              "duration": "1",
+              "window": [
+                24.0,
+                25.0
+              ],
+              "tide_time": 24.0,
+              "residual": -2.1433393129688094e-81,
+              "satisfied": true
+            }
+          ]
+        },
+        "end_boundary": {
+          "time": 24.0,
+          "kind": "tide",
+          "segment_index": 1,
+          "port": "P1",
+          "revision": 1,
+          "tide_time": 24.0,
+          "residual": -2.1433393129688094e-81,
+          "all_constraints": [
+            {
+              "segment_index": 1,
+              "port": "P1",
+              "revision": 1,
+              "depth": "1/2",
+              "duration": "1",
+              "window": [
+                24.0,
+                25.0
+              ],
+              "tide_time": 24.0,
+              "residual": -2.1433393129688094e-81,
+              "satisfied": true
+            }
+          ]
+        }
+      }
+    ],
+    "n_windows": 2,
+    "n_isolated": 1,
+    "id": "R16",
+    "note": "1h sine window"
+  },
+  {
+    "status": "FEASIBLE",
+    "S": 6.0,
+    "E": 30.0,
+    "channel": "C11_short",
+    "vessel": {
+      "draft": "1/2",
+      "margin": "1/10"
+    },
+    "windows": [
+      {
+        "start": 6.0,
+        "end": 10.617388634848881,
+        "width": 4.617388634848881,
+        "isolated": false,
+        "start_boundary": {
+          "time": 6.0,
+          "kind": "range",
+          "segment_index": 0,
+          "port": null,
+          "revision": null,
+          "tide_time": 7.0,
+          "residual": 0.8659258262890683,
+          "all_constraints": [
+            {
+              "segment_index": 1,
+              "port": "P1",
+              "revision": 1,
+              "depth": "1/2",
+              "duration": "1",
+              "window": [
+                6.0,
+                7.0
+              ],
+              "tide_time": 7.0,
+              "residual": 0.8659258262890683,
+              "satisfied": true
+            }
+          ]
+        },
+        "end_boundary": {
+          "time": 10.617388634848881,
+          "kind": "tide",
+          "segment_index": 1,
+          "port": "P1",
+          "revision": 1,
+          "tide_time": 11.617388634848881,
+          "residual": -4.163336342344337e-17,
+          "all_constraints": [
+            {
+              "segment_index": 1,
+              "port": "P1",
+              "revision": 1,
+              "depth": "1/2",
+              "duration": "1",
+              "window": [
+                10.617388634848881,
+                11.617388634848881
+              ],
+              "tide_time": 11.617388634848881,
+              "residual": -4.163336342344337e-17,
+              "satisfied": true
+            }
+          ]
+        }
+      },
+      {
+        "start": 24.38261136515112,
+        "end": 30.0,
+        "width": 5.617388634848879,
+        "isolated": false,
+        "start_boundary": {
+          "time": 24.38261136515112,
+          "kind": "tide",
+          "segment_index": 1,
+          "port": "P1",
+          "revision": 1,
+          "tide_time": 24.38261136515112,
+          "residual": 4.163336342344337e-16,
+          "all_constraints": [
+            {
+              "segment_index": 1,
+              "port": "P1",
+              "revision": 1,
+              "depth": "1/2",
+              "duration": "1",
+              "window": [
+                24.38261136515112,
+                25.38261136515112
+              ],
+              "tide_time": 24.38261136515112,
+              "residual": 4.163336342344337e-16,
+              "satisfied": true
+            }
+          ]
+        },
+        "end_boundary": {
+          "time": 30.0,
+          "kind": "range",
+          "segment_index": 0,
+          "port": null,
+          "revision": null,
+          "tide_time": 31.0,
+          "residual": 0.8659258262890683,
+          "all_constraints": [
+            {
+              "segment_index": 1,
+              "port": "P1",
+              "revision": 1,
+              "depth": "1/2",
+              "duration": "1",
+              "window": [
+                30.0,
+                31.0
+              ],
+              "tide_time": 31.0,
+              "residual": 0.8659258262890683,
+              "satisfied": true
+            }
+          ]
+        }
+      }
+    ],
+    "n_windows": 2,
+    "n_isolated": 0,
+    "id": "R17",
+    "note": "margin raises the required level"
+  },
+  {
+    "status": "FEASIBLE",
+    "S": 0.0,
+    "E": 24.0,
+    "channel": "C12_two_sine",
+    "vessel": {
+      "draft": "1/2",
+      "margin": "0"
+    },
+    "windows": [
+      {
+        "start": 0.0,
+        "end": 0.0,
+        "width": 0.0,
+        "isolated": true,
+        "start_boundary": {
+          "time": 0.0,
+          "kind": "tide",
+          "segment_index": 1,
+          "port": "P1",
+          "revision": 1,
+          "tide_time": 0.0,
+          "residual": 0.0,
+          "all_constraints": [
+            {
+              "segment_index": 1,
+              "port": "P1",
+              "revision": 1,
+              "depth": "1/2",
+              "duration": "6",
+              "window": [
+                0.0,
+                6.0
+              ],
+              "tide_time": 0.0,
+              "residual": 0.0,
+              "satisfied": true
+            },
+            {
+              "segment_index": 2,
+              "port": "P1",
+              "revision": 1,
+              "depth": "1/2",
+              "duration": "6",
+              "window": [
+                6.0,
+                12.0
+              ],
+              "tide_time": 12.0,
+              "residual": 1.0716696564844047e-81,
+              "satisfied": true
+            }
+          ]
+        },
+        "end_boundary": {
+          "time": 0.0,
+          "kind": "tide",
+          "segment_index": 1,
+          "port": "P1",
+          "revision": 1,
+          "tide_time": 0.0,
+          "residual": 0.0,
+          "all_constraints": [
+            {
+              "segment_index": 1,
+              "port": "P1",
+              "revision": 1,
+              "depth": "1/2",
+              "duration": "6",
+              "window": [
+                0.0,
+                6.0
+              ],
+              "tide_time": 0.0,
+              "residual": 0.0,
+              "satisfied": true
+            },
+            {
+              "segment_index": 2,
+              "port": "P1",
+              "revision": 1,
+              "depth": "1/2",
+              "duration": "6",
+              "window": [
+                6.0,
+                12.0
+              ],
+              "tide_time": 12.0,
+              "residual": 1.0716696564844047e-81,
+              "satisfied": true
+            }
+          ]
+        }
+      },
+      {
+        "start": 24.0,
+        "end": 24.0,
+        "width": 0.0,
+        "isolated": true,
+        "start_boundary": {
+          "time": 24.0,
+          "kind": "tide",
+          "segment_index": 1,
+          "port": "P1",
+          "revision": 1,
+          "tide_time": 24.0,
+          "residual": -2.1433393129688094e-81,
+          "all_constraints": [
+            {
+              "segment_index": 1,
+              "port": "P1",
+              "revision": 1,
+              "depth": "1/2",
+              "duration": "6",
+              "window": [
+                24.0,
+                30.0
+              ],
+              "tide_time": 24.0,
+              "residual": -2.1433393129688094e-81,
+              "satisfied": true
+            },
+            {
+              "segment_index": 2,
+              "port": "P1",
+              "revision": 1,
+              "depth": "1/2",
+              "duration": "6",
+              "window": [
+                30.0,
+                36.0
+              ],
+              "tide_time": 36.0,
+              "residual": -1.0018702078389949e-81,
+              "satisfied": true
+            }
+          ]
+        },
+        "end_boundary": {
+          "time": 24.0,
+          "kind": "tide",
+          "segment_index": 1,
+          "port": "P1",
+          "revision": 1,
+          "tide_time": 24.0,
+          "residual": -2.1433393129688094e-81,
+          "all_constraints": [
+            {
+              "segment_index": 1,
+              "port": "P1",
+              "revision": 1,
+              "depth": "1/2",
+              "duration": "6",
+              "window": [
+                24.0,
+                30.0
+              ],
+              "tide_time": 24.0,
+              "residual": -2.1433393129688094e-81,
+              "satisfied": true
+            },
+            {
+              "segment_index": 2,
+              "port": "P1",
+              "revision": 1,
+              "depth": "1/2",
+              "duration": "6",
+              "window": [
+                30.0,
+                36.0
+              ],
+              "tide_time": 36.0,
+              "residual": -1.0018702078389949e-81,
+              "satisfied": true
+            }
+          ]
+        }
+      }
+    ],
+    "n_windows": 2,
+    "n_isolated": 2,
+    "id": "R18",
+    "note": "two sine segments, offsets 0 and 6"
+  },
+  {
+    "status": "FEASIBLE",
+    "S": 0.0,
+    "E": 48.0,
+    "channel": "C12_two_sine",
+    "vessel": {
+      "draft": "1/2",
+      "margin": "0"
+    },
+    "windows": [
+      {
+        "start": 0.0,
+        "end": 0.0,
+        "width": 0.0,
+        "isolated": true,
+        "start_boundary": {
+          "time": 0.0,
+          "kind": "tide",
+          "segment_index": 1,
+          "port": "P1",
+          "revision": 1,
+          "tide_time": 0.0,
+          "residual": 0.0,
+          "all_constraints": [
+            {
+              "segment_index": 1,
+              "port": "P1",
+              "revision": 1,
+              "depth": "1/2",
+              "duration": "6",
+              "window": [
+                0.0,
+                6.0
+              ],
+              "tide_time": 0.0,
+              "residual": 0.0,
+              "satisfied": true
+            },
+            {
+              "segment_index": 2,
+              "port": "P1",
+              "revision": 1,
+              "depth": "1/2",
+              "duration": "6",
+              "window": [
+                6.0,
+                12.0
+              ],
+              "tide_time": 12.0,
+              "residual": 1.0716696564844047e-81,
+              "satisfied": true
+            }
+          ]
+        },
+        "end_boundary": {
+          "time": 0.0,
+          "kind": "tide",
+          "segment_index": 1,
+          "port": "P1",
+          "revision": 1,
+          "tide_time": 0.0,
+          "residual": 0.0,
+          "all_constraints": [
+            {
+              "segment_index": 1,
+              "port": "P1",
+              "revision": 1,
+              "depth": "1/2",
+              "duration": "6",
+              "window": [
+                0.0,
+                6.0
+              ],
+              "tide_time": 0.0,
+              "residual": 0.0,
+              "satisfied": true
+            },
+            {
+              "segment_index": 2,
+              "port": "P1",
+              "revision": 1,
+              "depth": "1/2",
+              "duration": "6",
+              "window": [
+                6.0,
+                12.0
+              ],
+              "tide_time": 12.0,
+              "residual": 1.0716696564844047e-81,
+              "satisfied": true
+            }
+          ]
+        }
+      },
+      {
+        "start": 24.0,
+        "end": 24.0,
+        "width": 0.0,
+        "isolated": true,
+        "start_boundary": {
+          "time": 24.0,
+          "kind": "tide",
+          "segment_index": 1,
+          "port": "P1",
+          "revision": 1,
+          "tide_time": 24.0,
+          "residual": -2.1433393129688094e-81,
+          "all_constraints": [
+            {
+              "segment_index": 1,
+              "port": "P1",
+              "revision": 1,
+              "depth": "1/2",
+              "duration": "6",
+              "window": [
+                24.0,
+                30.0
+              ],
+              "tide_time": 24.0,
+              "residual": -2.1433393129688094e-81,
+              "satisfied": true
+            },
+            {
+              "segment_index": 2,
+              "port": "P1",
+              "revision": 1,
+              "depth": "1/2",
+              "duration": "6",
+              "window": [
+                30.0,
+                36.0
+              ],
+              "tide_time": 36.0,
+              "residual": -1.0018702078389949e-81,
+              "satisfied": true
+            }
+          ]
+        },
+        "end_boundary": {
+          "time": 24.0,
+          "kind": "tide",
+          "segment_index": 1,
+          "port": "P1",
+          "revision": 1,
+          "tide_time": 24.0,
+          "residual": -2.1433393129688094e-81,
+          "all_constraints": [
+            {
+              "segment_index": 1,
+              "port": "P1",
+              "revision": 1,
+              "depth": "1/2",
+              "duration": "6",
+              "window": [
+                24.0,
+                30.0
+              ],
+              "tide_time": 24.0,
+              "residual": -2.1433393129688094e-81,
+              "satisfied": true
+            },
+            {
+              "segment_index": 2,
+              "port": "P1",
+              "revision": 1,
+              "depth": "1/2",
+              "duration": "6",
+              "window": [
+                30.0,
+                36.0
+              ],
+              "tide_time": 36.0,
+              "residual": -1.0018702078389949e-81,
+              "satisfied": true
+            }
+          ]
+        }
+      },
+      {
+        "start": 48.0,
+        "end": 48.0,
+        "width": 0.0,
+        "isolated": true,
+        "start_boundary": {
+          "time": 48.0,
+          "kind": "tide",
+          "segment_index": 1,
+          "port": "P1",
+          "revision": 1,
+          "tide_time": 48.0,
+          "residual": -4.286678625937619e-81,
+          "all_constraints": [
+            {
+              "segment_index": 1,
+              "port": "P1",
+              "revision": 1,
+              "depth": "1/2",
+              "duration": "6",
+              "window": [
+                48.0,
+                54.0
+              ],
+              "tide_time": 48.0,
+              "residual": -4.286678625937619e-81,
+              "satisfied": true
+            },
+            {
+              "segment_index": 2,
+              "port": "P1",
+              "revision": 1,
+              "depth": "1/2",
+              "duration": "6",
+              "window": [
+                54.0,
+                60.0
+              ],
+              "tide_time": 60.0,
+              "residual": 9.575227459714234e-81,
+              "satisfied": true
+            }
+          ]
+        },
+        "end_boundary": {
+          "time": 48.0,
+          "kind": "tide",
+          "segment_index": 1,
+          "port": "P1",
+          "revision": 1,
+          "tide_time": 48.0,
+          "residual": -4.286678625937619e-81,
+          "all_constraints": [
+            {
+              "segment_index": 1,
+              "port": "P1",
+              "revision": 1,
+              "depth": "1/2",
+              "duration": "6",
+              "window": [
+                48.0,
+                54.0
+              ],
+              "tide_time": 48.0,
+              "residual": -4.286678625937619e-81,
+              "satisfied": true
+            },
+            {
+              "segment_index": 2,
+              "port": "P1",
+              "revision": 1,
+              "depth": "1/2",
+              "duration": "6",
+              "window": [
+                54.0,
+                60.0
+              ],
+              "tide_time": 60.0,
+              "residual": 9.575227459714234e-81,
+              "satisfied": true
+            }
+          ]
+        }
+      }
+    ],
+    "n_windows": 3,
+    "n_isolated": 3,
+    "id": "R19",
+    "note": "same over two periods"
+  },
+  {
+    "status": "FEASIBLE",
+    "S": 0.0,
+    "E": 48.0,
+    "channel": "C13_p2_deep",
+    "vessel": {
+      "draft": "2",
+      "margin": "0"
+    },
+    "windows": [
+      {
+        "start": 0.0,
+        "end": 2.7859709306393112,
+        "width": 2.7859709306393112,
+        "isolated": false,
+        "start_boundary": {
+          "time": 0.0,
+          "kind": "range",
+          "segment_index": 0,
+          "port": null,
+          "revision": null,
+          "tide_time": 4.0,
+          "residual": 0.5468481522075892,
+          "all_constraints": [
+            {
+              "segment_index": 1,
+              "port": "P2",
+              "revision": 1,
+              "depth": "1",
+              "duration": "4",
+              "window": [
+                0.0,
+                4.0
+              ],
+              "tide_time": 4.0,
+              "residual": 0.5468481522075892,
+              "satisfied": true
+            }
+          ]
+        },
+        "end_boundary": {
+          "time": 2.7859709306393112,
+          "kind": "tide",
+          "segment_index": 1,
+          "port": "P2",
+          "revision": 1,
+          "tide_time": 6.785970930639311,
+          "residual": 0.0,
+          "all_constraints": [
+            {
+              "segment_index": 1,
+              "port": "P2",
+              "revision": 1,
+              "depth": "1",
+              "duration": "4",
+              "window": [
+                2.7859709306393112,
+                6.785970930639311
+              ],
+              "tide_time": 6.785970930639311,
+              "residual": 0.0,
+              "satisfied": true
+            }
+          ]
+        }
+      },
+      {
+        "start": 22.27894538857374,
+        "end": 26.785970930639312,
+        "width": 4.507025542065573,
+        "isolated": false,
+        "start_boundary": {
+          "time": 22.27894538857374,
+          "kind": "tide",
+          "segment_index": 1,
+          "port": "P2",
+          "revision": 1,
+          "tide_time": 22.27894538857374,
+          "residual": -3.3306690738754696e-16,
+          "all_constraints": [
+            {
+              "segment_index": 1,
+              "port": "P2",
+              "revision": 1,
+              "depth": "1",
+              "duration": "4",
+              "window": [
+                22.27894538857374,
+                26.27894538857374
+              ],
+              "tide_time": 22.27894538857374,
+              "residual": -3.3306690738754696e-16,
+              "satisfied": true
+            }
+          ]
+        },
+        "end_boundary": {
+          "time": 26.785970930639312,
+          "kind": "tide",
+          "segment_index": 1,
+          "port": "P2",
+          "revision": 1,
+          "tide_time": 30.785970930639312,
+          "residual": -5.551115123125783e-16,
+          "all_constraints": [
+            {
+              "segment_index": 1,
+              "port": "P2",
+              "revision": 1,
+              "depth": "1",
+              "duration": "4",
+              "window": [
+                26.785970930639312,
+                30.785970930639312
+              ],
+              "tide_time": 30.785970930639312,
+              "residual": -5.551115123125783e-16,
+              "satisfied": true
+            }
+          ]
+        }
+      },
+      {
+        "start": 46.27894538857374,
+        "end": 48.0,
+        "width": 1.7210546114262613,
+        "isolated": false,
+        "start_boundary": {
+          "time": 46.27894538857374,
+          "kind": "tide",
+          "segment_index": 1,
+          "port": "P2",
+          "revision": 1,
+          "tide_time": 46.27894538857374,
+          "residual": -3.3306690738754696e-16,
+          "all_constraints": [
+            {
+              "segment_index": 1,
+              "port": "P2",
+              "revision": 1,
+              "depth": "1",
+              "duration": "4",
+              "window": [
+                46.27894538857374,
+                50.27894538857374
+              ],
+              "tide_time": 46.27894538857374,
+              "residual": -3.3306690738754696e-16,
+              "satisfied": true
+            }
+          ]
+        },
+        "end_boundary": {
+          "time": 48.0,
+          "kind": "range",
+          "segment_index": 0,
+          "port": null,
+          "revision": null,
+          "tide_time": 52.0,
+          "residual": 0.5468481522075892,
+          "all_constraints": [
+            {
+              "segment_index": 1,
+              "port": "P2",
+              "revision": 1,
+              "depth": "1",
+              "duration": "4",
+              "window": [
+                48.0,
+                52.0
+              ],
+              "tide_time": 52.0,
+              "residual": 0.5468481522075892,
+              "satisfied": true
+            }
+          ]
+        }
+      }
+    ],
+    "n_windows": 3,
+    "n_isolated": 0,
+    "id": "R20",
+    "note": "high draft on rich tide"
+  },
+  {
+    "status": "FEASIBLE",
+    "S": 0.0,
+    "E": 48.0,
+    "channel": "C13_p2_deep",
+    "vessel": {
+      "draft": "3/2",
+      "margin": "0"
+    },
+    "windows": [
+      {
+        "start": 0.0,
+        "end": 3.3184637967197244,
+        "width": 3.3184637967197244,
+        "isolated": false,
+        "start_boundary": {
+          "time": 0.0,
+          "kind": "range",
+          "segment_index": 0,
+          "port": null,
+          "revision": null,
+          "tide_time": 4.0,
+          "residual": 1.0468481522075892,
+          "all_constraints": [
+            {
+              "segment_index": 1,
+              "port": "P2",
+              "revision": 1,
+              "depth": "1",
+              "duration": "4",
+              "window": [
+                0.0,
+                4.0
+              ],
+              "tide_time": 4.0,
+              "residual": 1.0468481522075892,
+              "satisfied": true
+            }
+          ]
+        },
+        "end_boundary": {
+          "time": 3.3184637967197244,
+          "kind": "tide",
+          "segment_index": 1,
+          "port": "P2",
+          "revision": 1,
+          "tide_time": 7.318463796719724,
+          "residual": -4.440892098500626e-16,
+          "all_constraints": [
+            {
+              "segment_index": 1,
+              "port": "P2",
+              "revision": 1,
+              "depth": "1",
+              "duration": "4",
+              "window": [
+                3.3184637967197244,
+                7.318463796719724
+              ],
+              "tide_time": 7.318463796719724,
+              "residual": -4.440892098500626e-16,
+              "satisfied": true
+            }
+          ]
+        }
+      },
+      {
+        "start": 15.43659882978077,
+        "end": 16.16732639563093,
+        "width": 0.7307275658501595,
+        "isolated": false,
+        "start_boundary": {
+          "time": 15.43659882978077,
+          "kind": "tide",
+          "segment_index": 1,
+          "port": "P2",
+          "revision": 1,
+          "tide_time": 15.43659882978077,
+          "residual": 2.220446049250313e-16,
+          "all_constraints": [
+            {
+              "segment_index": 1,
+              "port": "P2",
+              "revision": 1,
+              "depth": "1",
+              "duration": "4",
+              "window": [
+                15.43659882978077,
+                19.43659882978077
+              ],
+              "tide_time": 15.43659882978077,
+              "residual": 2.220446049250313e-16,
+              "satisfied": true
+            }
+          ]
+        },
+        "end_boundary": {
+          "time": 16.16732639563093,
+          "kind": "tide",
+          "segment_index": 1,
+          "port": "P2",
+          "revision": 1,
+          "tide_time": 20.16732639563093,
+          "residual": -5.551115123125783e-17,
+          "all_constraints": [
+            {
+              "segment_index": 1,
+              "port": "P2",
+              "revision": 1,
+              "depth": "1",
+              "duration": "4",
+              "window": [
+                16.16732639563093,
+                20.16732639563093
+              ],
+              "tide_time": 20.16732639563093,
+              "residual": -5.551115123125783e-17,
+              "satisfied": true
+            }
+          ]
+        }
+      },
+      {
+        "start": 21.185752201991313,
+        "end": 27.318463796719726,
+        "width": 6.132711594728413,
+        "isolated": false,
+        "start_boundary": {
+          "time": 21.185752201991313,
+          "kind": "tide",
+          "segment_index": 1,
+          "port": "P2",
+          "revision": 1,
+          "tide_time": 21.185752201991313,
+          "residual": 1.1102230246251565e-16,
+          "all_constraints": [
+            {
+              "segment_index": 1,
+              "port": "P2",
+              "revision": 1,
+              "depth": "1",
+              "duration": "4",
+              "window": [
+                21.185752201991313,
+                25.185752201991313
+              ],
+              "tide_time": 21.185752201991313,
+              "residual": 1.1102230246251565e-16,
+              "satisfied": true
+            }
+          ]
+        },
+        "end_boundary": {
+          "time": 27.318463796719726,
+          "kind": "tide",
+          "segment_index": 1,
+          "port": "P2",
+          "revision": 1,
+          "tide_time": 31.318463796719726,
+          "residual": -2.3314683517128287e-15,
+          "all_constraints": [
+            {
+              "segment_index": 1,
+              "port": "P2",
+              "revision": 1,
+              "depth": "1",
+              "duration": "4",
+              "window": [
+                27.318463796719726,
+                31.318463796719726
+              ],
+              "tide_time": 31.318463796719726,
+              "residual": -2.3314683517128287e-15,
+              "satisfied": true
+            }
+          ]
+        }
+      },
+      {
+        "start": 39.43659882978077,
+        "end": 40.16732639563093,
+        "width": 0.7307275658501595,
+        "isolated": false,
+        "start_boundary": {
+          "time": 39.43659882978077,
+          "kind": "tide",
+          "segment_index": 1,
+          "port": "P2",
+          "revision": 1,
+          "tide_time": 39.43659882978077,
+          "residual": 2.220446049250313e-16,
+          "all_constraints": [
+            {
+              "segment_index": 1,
+              "port": "P2",
+              "revision": 1,
+              "depth": "1",
+              "duration": "4",
+              "window": [
+                39.43659882978077,
+                43.43659882978077
+              ],
+              "tide_time": 39.43659882978077,
+              "residual": 2.220446049250313e-16,
+              "satisfied": true
+            }
+          ]
+        },
+        "end_boundary": {
+          "time": 40.16732639563093,
+          "kind": "tide",
+          "segment_index": 1,
+          "port": "P2",
+          "revision": 1,
+          "tide_time": 44.16732639563093,
+          "residual": -5.551115123125783e-17,
+          "all_constraints": [
+            {
+              "segment_index": 1,
+              "port": "P2",
+              "revision": 1,
+              "depth": "1",
+              "duration": "4",
+              "window": [
+                40.16732639563093,
+                44.16732639563093
+              ],
+              "tide_time": 44.16732639563093,
+              "residual": -5.551115123125783e-17,
+              "satisfied": true
+            }
+          ]
+        }
+      },
+      {
+        "start": 45.18575220199131,
+        "end": 48.0,
+        "width": 2.8142477980086866,
+        "isolated": false,
+        "start_boundary": {
+          "time": 45.18575220199131,
+          "kind": "tide",
+          "segment_index": 1,
+          "port": "P2",
+          "revision": 1,
+          "tide_time": 45.18575220199131,
+          "residual": 1.1102230246251565e-16,
+          "all_constraints": [
+            {
+              "segment_index": 1,
+              "port": "P2",
+              "revision": 1,
+              "depth": "1",
+              "duration": "4",
+              "window": [
+                45.18575220199131,
+                49.18575220199131
+              ],
+              "tide_time": 45.18575220199131,
+              "residual": 1.1102230246251565e-16,
+              "satisfied": true
+            }
+          ]
+        },
+        "end_boundary": {
+          "time": 48.0,
+          "kind": "range",
+          "segment_index": 0,
+          "port": null,
+          "revision": null,
+          "tide_time": 52.0,
+          "residual": 1.0468481522075892,
+          "all_constraints": [
+            {
+              "segment_index": 1,
+              "port": "P2",
+              "revision": 1,
+              "depth": "1",
+              "duration": "4",
+              "window": [
+                48.0,
+                52.0
+              ],
+              "tide_time": 52.0,
+              "residual": 1.0468481522075892,
+              "satisfied": true
+            }
+          ]
+        }
+      }
+    ],
+    "n_windows": 5,
+    "n_isolated": 0,
+    "id": "R21",
+    "note": "moderate draft on rich tide"
+  },
+  {
+    "status": "FEASIBLE",
+    "S": 0.0,
+    "E": 24.0,
+    "channel": "C13_p2_deep",
+    "vessel": {
+      "draft": "3/2",
+      "margin": "1/4"
+    },
+    "windows": [
+      {
+        "start": 0.0,
+        "end": 3.0709388822950148,
+        "width": 3.0709388822950148,
+        "isolated": false,
+        "start_boundary": {
+          "time": 0.0,
+          "kind": "range",
+          "segment_index": 0,
+          "port": null,
+          "revision": null,
+          "tide_time": 4.0,
+          "residual": 0.7968481522075892,
+          "all_constraints": [
+            {
+              "segment_index": 1,
+              "port": "P2",
+              "revision": 1,
+              "depth": "1",
+              "duration": "4",
+              "window": [
+                0.0,
+                4.0
+              ],
+              "tide_time": 4.0,
+              "residual": 0.7968481522075892,
+              "satisfied": true
+            }
+          ]
+        },
+        "end_boundary": {
+          "time": 3.0709388822950148,
+          "kind": "tide",
+          "segment_index": 1,
+          "port": "P2",
+          "revision": 1,
+          "tide_time": 7.070938882295015,
+          "residual": -3.3306690738754696e-16,
+          "all_constraints": [
+            {
+              "segment_index": 1,
+              "port": "P2",
+              "revision": 1,
+              "depth": "1",
+              "duration": "4",
+              "window": [
+                3.0709388822950148,
+                7.070938882295015
+              ],
+              "tide_time": 7.070938882295015,
+              "residual": -3.3306690738754696e-16,
+              "satisfied": true
+            }
+          ]
+        }
+      },
+      {
+        "start": 21.85198667170328,
+        "end": 24.0,
+        "width": 2.14801332829672,
+        "isolated": false,
+        "start_boundary": {
+          "time": 21.85198667170328,
+          "kind": "tide",
+          "segment_index": 1,
+          "port": "P2",
+          "revision": 1,
+          "tide_time": 21.85198667170328,
+          "residual": -5.551115123125783e-16,
+          "all_constraints": [
+            {
+              "segment_index": 1,
+              "port": "P2",
+              "revision": 1,
+              "depth": "1",
+              "duration": "4",
+              "window": [
+                21.85198667170328,
+                25.85198667170328
+              ],
+              "tide_time": 21.85198667170328,
+              "residual": -5.551115123125783e-16,
+              "satisfied": true
+            }
+          ]
+        },
+        "end_boundary": {
+          "time": 24.0,
+          "kind": "range",
+          "segment_index": 0,
+          "port": null,
+          "revision": null,
+          "tide_time": 28.0,
+          "residual": 0.7968481522075892,
+          "all_constraints": [
+            {
+              "segment_index": 1,
+              "port": "P2",
+              "revision": 1,
+              "depth": "1",
+              "duration": "4",
+              "window": [
+                24.0,
+                28.0
+              ],
+              "tide_time": 28.0,
+              "residual": 0.7968481522075892,
+              "satisfied": true
+            }
+          ]
+        }
+      }
+    ],
+    "n_windows": 2,
+    "n_isolated": 0,
+    "id": "R22",
+    "note": "margin tightens the windows"
+  },
+  {
+    "status": "FEASIBLE",
+    "S": 0.0,
+    "E": 24.0,
+    "channel": "C14_cos",
+    "vessel": {
+      "draft": "1/2",
+      "margin": "0"
+    },
+    "windows": [
+      {
+        "start": 0.0,
+        "end": 0.0,
+        "width": 0.0,
+        "isolated": true,
+        "start_boundary": {
+          "time": 0.0,
+          "kind": "tide",
+          "segment_index": 1,
+          "port": "P3",
+          "revision": 1,
+          "tide_time": 6.0,
+          "residual": 5.358348282422023e-82,
+          "all_constraints": [
+            {
+              "segment_index": 1,
+              "port": "P3",
+              "revision": 1,
+              "depth": "1/2",
+              "duration": "6",
+              "window": [
+                0.0,
+                6.0
+              ],
+              "tide_time": 6.0,
+              "residual": 5.358348282422023e-82,
+              "satisfied": true
+            }
+          ]
+        },
+        "end_boundary": {
+          "time": 0.0,
+          "kind": "tide",
+          "segment_index": 1,
+          "port": "P3",
+          "revision": 1,
+          "tide_time": 6.0,
+          "residual": 5.358348282422023e-82,
+          "all_constraints": [
+            {
+              "segment_index": 1,
+              "port": "P3",
+              "revision": 1,
+              "depth": "1/2",
+              "duration": "6",
+              "window": [
+                0.0,
+                6.0
+              ],
+              "tide_time": 6.0,
+              "residual": 5.358348282422023e-82,
+              "satisfied": true
+            }
+          ]
+        }
+      },
+      {
+        "start": 18.0,
+        "end": 24.0,
+        "width": 6.0,
+        "isolated": false,
+        "start_boundary": {
+          "time": 18.0,
+          "kind": "tide",
+          "segment_index": 1,
+          "port": "P3",
+          "revision": 1,
+          "tide_time": 18.0,
+          "residual": 5.009351039194974e-82,
+          "all_constraints": [
+            {
+              "segment_index": 1,
+              "port": "P3",
+              "revision": 1,
+              "depth": "1/2",
+              "duration": "6",
+              "window": [
+                18.0,
+                24.0
+              ],
+              "tide_time": 18.0,
+              "residual": 5.009351039194974e-82,
+              "satisfied": true
+            }
+          ]
+        },
+        "end_boundary": {
+          "time": 24.0,
+          "kind": "tide",
+          "segment_index": 1,
+          "port": "P3",
+          "revision": 1,
+          "tide_time": 30.0,
+          "residual": 4.787613729857117e-81,
+          "all_constraints": [
+            {
+              "segment_index": 1,
+              "port": "P3",
+              "revision": 1,
+              "depth": "1/2",
+              "duration": "6",
+              "window": [
+                24.0,
+                30.0
+              ],
+              "tide_time": 30.0,
+              "residual": 4.787613729857117e-81,
+              "satisfied": true
+            }
+          ]
+        }
+      }
+    ],
+    "n_windows": 2,
+    "n_isolated": 1,
+    "id": "R23",
+    "note": "cos>=0 with a 6h window"
+  },
+  {
+    "status": "FEASIBLE",
+    "S": 0.0,
+    "E": 24.0,
+    "channel": "C14_cos",
+    "vessel": {
+      "draft": "1",
+      "margin": "0"
+    },
+    "windows": [
+      {
+        "start": 20.0,
+        "end": 22.0,
+        "width": 2.0,
+        "isolated": false,
+        "start_boundary": {
+          "time": 20.0,
+          "kind": "tide",
+          "segment_index": 1,
+          "port": "P3",
+          "revision": 1,
+          "tide_time": 20.0,
+          "residual": 0.0,
+          "all_constraints": [
+            {
+              "segment_index": 1,
+              "port": "P3",
+              "revision": 1,
+              "depth": "1/2",
+              "duration": "6",
+              "window": [
+                20.0,
+                26.0
+              ],
+              "tide_time": 20.0,
+              "residual": 0.0,
+              "satisfied": true
+            }
+          ]
+        },
+        "end_boundary": {
+          "time": 22.0,
+          "kind": "tide",
+          "segment_index": 1,
+          "port": "P3",
+          "revision": 1,
+          "tide_time": 28.0,
+          "residual": 0.0,
+          "all_constraints": [
+            {
+              "segment_index": 1,
+              "port": "P3",
+              "revision": 1,
+              "depth": "1/2",
+              "duration": "6",
+              "window": [
+                22.0,
+                28.0
+              ],
+              "tide_time": 28.0,
+              "residual": 0.0,
+              "satisfied": true
+            }
+          ]
+        }
+      }
+    ],
+    "n_windows": 1,
+    "n_isolated": 0,
+    "id": "R24",
+    "note": "cos>=1/2 -> windows near crests t=0,24"
+  },
+  {
+    "status": "FEASIBLE",
+    "S": 0.0,
+    "E": 48.0,
+    "channel": "C15_mixed_tight",
+    "vessel": {
+      "draft": "1/2",
+      "margin": "0"
+    },
+    "windows": [
+      {
+        "start": 0.0,
+        "end": 2.0,
+        "width": 2.0,
+        "isolated": false,
+        "start_boundary": {
+          "time": 0.0,
+          "kind": "tide",
+          "segment_index": 1,
+          "port": "P1",
+          "revision": 1,
+          "tide_time": 0.0,
+          "residual": 0.0,
+          "all_constraints": [
+            {
+              "segment_index": 1,
+              "port": "P1",
+              "revision": 1,
+              "depth": "1/2",
+              "duration": "2",
+              "window": [
+                0.0,
+                2.0
+              ],
+              "tide_time": 0.0,
+              "residual": 0.0,
+              "satisfied": true
+            },
+            {
+              "segment_index": 2,
+              "port": "P3",
+              "revision": 1,
+              "depth": "1/2",
+              "duration": "2",
+              "window": [
+                2.0,
+                4.0
+              ],
+              "tide_time": 4.0,
+              "residual": 0.5,
+              "satisfied": true
+            },
+            {
+              "segment_index": 3,
+              "port": "P5",
+              "revision": 1,
+              "depth": "1/2",
+              "duration": "2",
+              "window": [
+                4.0,
+                6.0
+              ],
+              "tide_time": 4.0,
+              "residual": 1.0,
+              "satisfied": true
+            }
+          ]
+        },
+        "end_boundary": {
+          "time": 2.0,
+          "kind": "tide",
+          "segment_index": 2,
+          "port": "P3",
+          "revision": 1,
+          "tide_time": 6.0,
+          "residual": 5.358348282422023e-82,
+          "all_constraints": [
+            {
+              "segment_index": 1,
+              "port": "P1",
+              "revision": 1,
+              "depth": "1/2",
+              "duration": "2",
+              "window": [
+                2.0,
+                4.0
+              ],
+              "tide_time": 2.0,
+              "residual": 0.5,
+              "satisfied": true
+            },
+            {
+              "segment_index": 2,
+              "port": "P3",
+              "revision": 1,
+              "depth": "1/2",
+              "duration": "2",
+              "window": [
+                4.0,
+                6.0
+              ],
+              "tide_time": 6.0,
+              "residual": 5.358348282422023e-82,
+              "satisfied": true
+            },
+            {
+              "segment_index": 3,
+              "port": "P5",
+              "revision": 1,
+              "depth": "1/2",
+              "duration": "2",
+              "window": [
+                6.0,
+                8.0
+              ],
+              "tide_time": 6.0,
+              "residual": 1.0,
+              "satisfied": true
+            }
+          ]
+        }
+      },
+      {
+        "start": 24.0,
+        "end": 26.0,
+        "width": 2.0,
+        "isolated": false,
+        "start_boundary": {
+          "time": 24.0,
+          "kind": "tide",
+          "segment_index": 1,
+          "port": "P1",
+          "revision": 1,
+          "tide_time": 24.0,
+          "residual": -2.1433393129688094e-81,
+          "all_constraints": [
+            {
+              "segment_index": 1,
+              "port": "P1",
+              "revision": 1,
+              "depth": "1/2",
+              "duration": "2",
+              "window": [
+                24.0,
+                26.0
+              ],
+              "tide_time": 24.0,
+              "residual": -2.1433393129688094e-81,
+              "satisfied": true
+            },
+            {
+              "segment_index": 2,
+              "port": "P3",
+              "revision": 1,
+              "depth": "1/2",
+              "duration": "2",
+              "window": [
+                26.0,
+                28.0
+              ],
+              "tide_time": 28.0,
+              "residual": 0.5,
+              "satisfied": true
+            },
+            {
+              "segment_index": 3,
+              "port": "P5",
+              "revision": 1,
+              "depth": "1/2",
+              "duration": "2",
+              "window": [
+                28.0,
+                30.0
+              ],
+              "tide_time": 28.0,
+              "residual": 1.0,
+              "satisfied": true
+            }
+          ]
+        },
+        "end_boundary": {
+          "time": 26.0,
+          "kind": "tide",
+          "segment_index": 2,
+          "port": "P3",
+          "revision": 1,
+          "tide_time": 30.0,
+          "residual": 4.787613729857117e-81,
+          "all_constraints": [
+            {
+              "segment_index": 1,
+              "port": "P1",
+              "revision": 1,
+              "depth": "1/2",
+              "duration": "2",
+              "window": [
+                26.0,
+                28.0
+              ],
+              "tide_time": 26.0,
+              "residual": 0.5,
+              "satisfied": true
+            },
+            {
+              "segment_index": 2,
+              "port": "P3",
+              "revision": 1,
+              "depth": "1/2",
+              "duration": "2",
+              "window": [
+                28.0,
+                30.0
+              ],
+              "tide_time": 30.0,
+              "residual": 4.787613729857117e-81,
+              "satisfied": true
+            },
+            {
+              "segment_index": 3,
+              "port": "P5",
+              "revision": 1,
+              "depth": "1/2",
+              "duration": "2",
+              "window": [
+                30.0,
+                32.0
+              ],
+              "tide_time": 30.0,
+              "residual": 1.0,
+              "satisfied": true
+            }
+          ]
+        }
+      },
+      {
+        "start": 48.0,
+        "end": 48.0,
+        "width": 0.0,
+        "isolated": true,
+        "start_boundary": {
+          "time": 48.0,
+          "kind": "tide",
+          "segment_index": 1,
+          "port": "P1",
+          "revision": 1,
+          "tide_time": 48.0,
+          "residual": -4.286678625937619e-81,
+          "all_constraints": [
+            {
+              "segment_index": 1,
+              "port": "P1",
+              "revision": 1,
+              "depth": "1/2",
+              "duration": "2",
+              "window": [
+                48.0,
+                50.0
+              ],
+              "tide_time": 48.0,
+              "residual": -4.286678625937619e-81,
+              "satisfied": true
+            },
+            {
+              "segment_index": 2,
+              "port": "P3",
+              "revision": 1,
+              "depth": "1/2",
+              "duration": "2",
+              "window": [
+                50.0,
+                52.0
+              ],
+              "tide_time": 52.0,
+              "residual": 0.5,
+              "satisfied": true
+            },
+            {
+              "segment_index": 3,
+              "port": "P5",
+              "revision": 1,
+              "depth": "1/2",
+              "duration": "2",
+              "window": [
+                52.0,
+                54.0
+              ],
+              "tide_time": 52.0,
+              "residual": 1.0,
+              "satisfied": true
+            }
+          ]
+        },
+        "end_boundary": {
+          "time": 48.0,
+          "kind": "tide",
+          "segment_index": 1,
+          "port": "P1",
+          "revision": 1,
+          "tide_time": 48.0,
+          "residual": -4.286678625937619e-81,
+          "all_constraints": [
+            {
+              "segment_index": 1,
+              "port": "P1",
+              "revision": 1,
+              "depth": "1/2",
+              "duration": "2",
+              "window": [
+                48.0,
+                50.0
+              ],
+              "tide_time": 48.0,
+              "residual": -4.286678625937619e-81,
+              "satisfied": true
+            },
+            {
+              "segment_index": 2,
+              "port": "P3",
+              "revision": 1,
+              "depth": "1/2",
+              "duration": "2",
+              "window": [
+                50.0,
+                52.0
+              ],
+              "tide_time": 52.0,
+              "residual": 0.5,
+              "satisfied": true
+            },
+            {
+              "segment_index": 3,
+              "port": "P5",
+              "revision": 1,
+              "depth": "1/2",
+              "duration": "2",
+              "window": [
+                52.0,
+                54.0
+              ],
+              "tide_time": 52.0,
+              "residual": 1.0,
+              "satisfied": true
+            }
+          ]
+        }
+      }
+    ],
+    "n_windows": 3,
+    "n_isolated": 1,
+    "id": "R25",
+    "note": "mixed sine/cos/constant, tight offsets"
+  },
+  {
+    "status": "FEASIBLE",
+    "S": 12.0,
+    "E": 36.0,
+    "channel": "C1_sine_hand",
+    "vessel": {
+      "draft": "1/2",
+      "margin": "1/10"
+    },
+    "windows": [
+      {
+        "start": 24.38261136515112,
+        "end": 29.61738863484888,
+        "width": 5.234777269697759,
+        "isolated": false,
+        "start_boundary": {
+          "time": 24.38261136515112,
+          "kind": "tide",
+          "segment_index": 1,
+          "port": "P1",
+          "revision": 1,
+          "tide_time": 24.38261136515112,
+          "residual": 4.163336342344337e-16,
+          "all_constraints": [
+            {
+              "segment_index": 1,
+              "port": "P1",
+              "revision": 1,
+              "depth": "1/2",
+              "duration": "6",
+              "window": [
+                24.38261136515112,
+                30.38261136515112
+              ],
+              "tide_time": 24.38261136515112,
+              "residual": 4.163336342344337e-16,
+              "satisfied": true
+            }
+          ]
+        },
+        "end_boundary": {
+          "time": 29.61738863484888,
+          "kind": "tide",
+          "segment_index": 1,
+          "port": "P1",
+          "revision": 1,
+          "tide_time": 35.61738863484888,
+          "residual": 4.163336342344337e-16,
+          "all_constraints": [
+            {
+              "segment_index": 1,
+              "port": "P1",
+              "revision": 1,
+              "depth": "1/2",
+              "duration": "6",
+              "window": [
+                29.61738863484888,
+                35.61738863484888
+              ],
+              "tide_time": 35.61738863484888,
+              "residual": 4.163336342344337e-16,
+              "satisfied": true
+            }
+          ]
+        }
+      }
+    ],
+    "n_windows": 1,
+    "n_isolated": 0,
+    "id": "R27",
+    "note": "sine with margin, second period"
+  }
+]
