@@ -1,0 +1,15 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+
+# 虚拟环境
+.venv/
+venv/
+
+# 运行时数据（SQLite 与合成输入，全部可由 demo/verify 重新生成）
+data/
+data_*/
+*.sqlite
+*.sqlite3
