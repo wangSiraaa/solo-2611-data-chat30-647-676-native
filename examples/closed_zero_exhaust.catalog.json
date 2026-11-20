@@ -1,0 +1,44 @@
+{
+  "canonical": {
+    "edges": [
+      {
+        "dst": "B",
+        "flow": {
+          "den": 5,
+          "num": 1
+        },
+        "src": "A"
+      },
+      {
+        "dst": "A",
+        "flow": {
+          "den": 5,
+          "num": 1
+        },
+        "src": "B"
+      }
+    ],
+    "name": "closed-zero-exhaust",
+    "revision": 0,
+    "rooms": [
+      {
+        "name": "A",
+        "volume": {
+          "den": 1,
+          "num": 25
+        }
+      },
+      {
+        "name": "B",
+        "volume": {
+          "den": 1,
+          "num": 25
+        }
+      }
+    ]
+  },
+  "identity": "sha256:feed92eb437885c33306f98637ae2f5cbe55cc61a143e3d0401154031c7bd5c5",
+  "parent_identity": null,
+  "published": true,
+  "revision": 0
+}

@@ -1,0 +1,31 @@
+{
+  "boundary_flow": {
+    "catalog": "examples/boundary_flow.catalog.json",
+    "catalog_identity": "sha256:d0c12be64b0be0b9bf662eb7638a04305e14cd189c676765510a025be971a16b",
+    "experiment": "examples/boundary_flow.experiment.json"
+  },
+  "closed_zero_exhaust": {
+    "catalog": "examples/closed_zero_exhaust.catalog.json",
+    "catalog_identity": "sha256:feed92eb437885c33306f98637ae2f5cbe55cc61a143e3d0401154031c7bd5c5",
+    "experiment": "examples/closed_zero_exhaust.experiment.json"
+  },
+  "legit_flow_correction": {
+    "balanced_revision": {
+      "A->B": "0.08",
+      "B->A": "0.08"
+    },
+    "catalog": "examples/legit_flow_correction.catalog.json",
+    "catalog_identity": "sha256:24b3ddc79c3732a1003fad08311e45d440e3dca192caaf0f1434c8f65f09be5f",
+    "experiment": "examples/legit_flow_correction.experiment.json"
+  },
+  "piecewise_source": {
+    "catalog": "examples/piecewise_source.catalog.json",
+    "catalog_identity": "sha256:16678976a9b1f8b94351b68dd4c84ff1aefe708e8c69eb52bce911c57496b41e",
+    "experiment": "examples/piecewise_source.experiment.json"
+  },
+  "two_room_exchange": {
+    "catalog": "examples/two_room_exchange.catalog.json",
+    "catalog_identity": "sha256:2b9679bb8841fa29710888bcbc6099ea069b0cb72f6198b2817bef6488fcb33e",
+    "experiment": "examples/two_room_exchange.experiment.json"
+  }
+}

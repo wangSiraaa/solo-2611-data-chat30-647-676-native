@@ -1,0 +1,76 @@
+{
+  "canonical": {
+    "edges": [
+      {
+        "dst": "B",
+        "flow": {
+          "den": 50,
+          "num": 1
+        },
+        "src": "A"
+      },
+      {
+        "dst": "OUT",
+        "flow": {
+          "den": 10,
+          "num": 1
+        },
+        "src": "A"
+      },
+      {
+        "dst": "A",
+        "flow": {
+          "den": 50,
+          "num": 1
+        },
+        "src": "B"
+      },
+      {
+        "dst": "OUT",
+        "flow": {
+          "den": 10,
+          "num": 1
+        },
+        "src": "B"
+      },
+      {
+        "dst": "A",
+        "flow": {
+          "den": 10,
+          "num": 1
+        },
+        "src": "OUT"
+      },
+      {
+        "dst": "B",
+        "flow": {
+          "den": 10,
+          "num": 1
+        },
+        "src": "OUT"
+      }
+    ],
+    "name": "legit-flow-correction",
+    "revision": 0,
+    "rooms": [
+      {
+        "name": "A",
+        "volume": {
+          "den": 1,
+          "num": 30
+        }
+      },
+      {
+        "name": "B",
+        "volume": {
+          "den": 1,
+          "num": 30
+        }
+      }
+    ]
+  },
+  "identity": "sha256:24b3ddc79c3732a1003fad08311e45d440e3dca192caaf0f1434c8f65f09be5f",
+  "parent_identity": null,
+  "published": true,
+  "revision": 0
+}

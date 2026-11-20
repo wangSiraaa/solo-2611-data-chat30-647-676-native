@@ -1,0 +1,38 @@
+{
+  "initial_concentration": {
+    "A": 0,
+    "B": 0
+  },
+  "source_events": [
+    {
+      "room": "A",
+      "strength": "3.0",
+      "time": 0
+    },
+    {
+      "room": "A",
+      "strength": 0,
+      "time": 150
+    }
+  ],
+  "visits": [
+    {
+      "end": 200,
+      "person": "erin",
+      "room": "A",
+      "start": 0,
+      "visit_id": "a1"
+    },
+    {
+      "end": 400,
+      "person": "erin",
+      "room": "B",
+      "start": 200,
+      "visit_id": "b1"
+    }
+  ],
+  "window": [
+    0,
+    400
+  ]
+}

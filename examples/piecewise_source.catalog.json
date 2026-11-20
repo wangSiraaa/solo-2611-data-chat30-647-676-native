@@ -1,0 +1,37 @@
+{
+  "canonical": {
+    "edges": [
+      {
+        "dst": "OUT",
+        "flow": {
+          "den": 10,
+          "num": 3
+        },
+        "src": "A"
+      },
+      {
+        "dst": "A",
+        "flow": {
+          "den": 10,
+          "num": 3
+        },
+        "src": "OUT"
+      }
+    ],
+    "name": "piecewise-source",
+    "revision": 0,
+    "rooms": [
+      {
+        "name": "A",
+        "volume": {
+          "den": 1,
+          "num": 12
+        }
+      }
+    ]
+  },
+  "identity": "sha256:16678976a9b1f8b94351b68dd4c84ff1aefe708e8c69eb52bce911c57496b41e",
+  "parent_identity": null,
+  "published": true,
+  "revision": 0
+}

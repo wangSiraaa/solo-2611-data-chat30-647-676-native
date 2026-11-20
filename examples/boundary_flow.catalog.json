@@ -1,0 +1,68 @@
+{
+  "canonical": {
+    "edges": [
+      {
+        "dst": "B",
+        "flow": {
+          "den": 10,
+          "num": 1
+        },
+        "src": "A"
+      },
+      {
+        "dst": "OUT",
+        "flow": {
+          "den": 10,
+          "num": 1
+        },
+        "src": "A"
+      },
+      {
+        "dst": "A",
+        "flow": {
+          "den": 5,
+          "num": 1
+        },
+        "src": "B"
+      },
+      {
+        "dst": "OUT",
+        "flow": {
+          "den": 10,
+          "num": 1
+        },
+        "src": "B"
+      },
+      {
+        "dst": "B",
+        "flow": {
+          "den": 5,
+          "num": 1
+        },
+        "src": "OUT"
+      }
+    ],
+    "name": "boundary-flow",
+    "revision": 0,
+    "rooms": [
+      {
+        "name": "A",
+        "volume": {
+          "den": 1,
+          "num": 40
+        }
+      },
+      {
+        "name": "B",
+        "volume": {
+          "den": 1,
+          "num": 40
+        }
+      }
+    ]
+  },
+  "identity": "sha256:d0c12be64b0be0b9bf662eb7638a04305e14cd189c676765510a025be971a16b",
+  "parent_identity": null,
+  "published": true,
+  "revision": 0
+}

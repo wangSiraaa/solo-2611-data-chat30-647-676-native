@@ -1,0 +1,20 @@
+{
+  "initial_concentration": {
+    "A": "5.0",
+    "B": 0
+  },
+  "source_events": [],
+  "visits": [
+    {
+      "end": 500,
+      "person": "carol",
+      "room": "A",
+      "start": 0,
+      "visit_id": "a1"
+    }
+  ],
+  "window": [
+    0,
+    500
+  ]
+}

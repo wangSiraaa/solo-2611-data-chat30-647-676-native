@@ -1,0 +1,45 @@
+{
+  "initial_concentration": {
+    "A": 0,
+    "B": 0
+  },
+  "source_events": [
+    {
+      "room": "A",
+      "strength": "1.0",
+      "time": 0
+    },
+    {
+      "room": "A",
+      "strength": 0,
+      "time": 60
+    }
+  ],
+  "visits": [
+    {
+      "end": 120,
+      "person": "alice",
+      "room": "A",
+      "start": 0,
+      "visit_id": "a1"
+    },
+    {
+      "end": 300,
+      "person": "alice",
+      "room": "B",
+      "start": 120,
+      "visit_id": "b1"
+    },
+    {
+      "end": 90,
+      "person": "bob",
+      "room": "A",
+      "start": 30,
+      "visit_id": "a2"
+    }
+  ],
+  "window": [
+    0,
+    300
+  ]
+}
